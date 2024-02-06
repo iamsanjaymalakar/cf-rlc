@@ -5,17 +5,42 @@
 # script with values that make sense for your project; the values there
 # now are examples.
 
+# This scripts the projects path as an argument to run the WPI on.
+PROJECT_PATH=$1
+
+# Global variables
+CF_BINARY="../rlfixer/code/tools/checker-framework-3.42.0/checker/bin/javac"
+COMPILED_CLASSES_FOLDER="$PROJECT_PATH/classes"
+lib_folder="$PROJECT_PATH/lib"
+SRC_FILES="$PROJECT_PATH/cf_srcs.txt"
+
+# Populate the source files information in SRC_FILES
+find $PROJECT_PATH/src -name "*.java" > "$SRC_FILES"
 
 # The compile and clean commands for the project's build system.
-BUILD_CMD="./gradlew compileJava"
-CLEAN_CMD="./gradlew clean"
+BUILD_CMD="$CF_BINARY \
+-processor org.checkerframework.checker.resourceleak.ResourceLeakChecker \
+-Adetailedmsgtext \
+-Aajava=$PROJECT_PATH/wpi-out \
+-Ainfer=ajava \
+-Awarns \
+-AshowPrefixInWarningMessages \
+-AdisableReturnsReceiver \
+-J-Xmx32G \
+-g \
+-d $COMPILED_CLASSES_FOLDER \
+-cp $lib_folder \
+@${SRC_FILES}"
+
+CLEAN_CMD="rm -rf ./classes"
+
 ${BUILD_CMD} # Compile the program so that WPIOUTDIR is created.
 
 # Where should the output be placed at the end? This directory is also
 # used to store intermediate WPI results. The directory does not need to
 # exist. If it does exist when this script starts, it will be deleted.
 # If you are using the subprojects script, set WPITEMPDIR to "$1"
-WPITEMPDIR=tmp
+WPITEMPDIR=$PROJECT_PATH/wpi-out
 # Where is WPI's output placed by the Checker Framework? This is some
 # directory ending in build/whole-program-inference. For most projects,
 # this directory is just ./build/whole-program-inference .
@@ -31,7 +56,7 @@ WPITEMPDIR=tmp
 
 # Program needs to compiled before running script so WPI creates this directory.
 # If you are using the subprojects script, set WPIOUTDIR to "$2"
-WPIOUTDIR=~/.gradle/workers/build/whole-program-inference 
+WPIOUTDIR=build/whole-program-inference 
 
 # Whether to run in debug mode. In debug mode, output is printed to the terminal
 # at the beginning of each iteration, and the diff between each pair of iterations is
@@ -43,10 +68,19 @@ DEBUG=1
 
 rm -rf ${WPITEMPDIR}
 mkdir -p ${WPITEMPDIR}
+# Clean up
+rm $SRC_FILES iteration*.diff
+rm -rf $PROJECT_PATH/build build
+
+# Store all the intermediate ajava files for each iterations
+WPIITERATIONOUTPUTS=$PROJECT_PATH/wpi-iterations
+rm -rf ${WPIITERATIONOUTPUTS}
+mkdir -p ${WPIITERATIONOUTPUTS}
 
 count=1
 while : ; do
     if [[ ${DEBUG} == 1 ]]; then
+    SECONDS=0
 	echo "entering iteration ${count}"
     fi
     ${BUILD_CMD}
@@ -62,5 +96,14 @@ while : ; do
     [[ "$DIFF_RESULT" != "" ]] || break
     rm -rf ${WPITEMPDIR}
     mv ${WPIOUTDIR} ${WPITEMPDIR}
+    # Also store the intermediate WPI results
+    mkdir -p "${WPIITERATIONOUTPUTS}/iteration${count}"
+    cp -rf ${WPITEMPDIR}/* "${WPIITERATIONOUTPUTS}/iteration${count}"
+    echo "ending iteration ${count}, time taken: $SECONDS seconds"
+    echo
     ((count++))
 done
+
+# Clean up
+rm $SRC_FILES iteration*.diff
+rm -rf $PROJECT_PATH/build build

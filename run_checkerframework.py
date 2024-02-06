@@ -6,14 +6,17 @@ the top of the file before executing.
 import os
 import shutil
 import time
+import subprocess
+import shlex
 
-BENCHMARKS_FOLDER = "../../../dataset/june2020_dataset"
-RESULTS_FOLDER = "checkerframework_3.42.0_results"
+BENCHMARKS_FOLDER = "../dataset/june2020_dataset"
+RESULTS_FOLDER = "checkerframework_3.42.0_results_WPI"
 COMPILED_CLASSES_FOLDER = "cf_classes"
 SRC_FILES = "cf_srcs.txt"
-CF_BINARY = "../tools/checker-framework-3.42.0/checker/bin/javac"
+CF_BINARY = "../rlfixer/code/tools/checker-framework-3.42.0/checker/bin/javac"
 CF_COMMAND = "-processor org.checkerframework.checker.resourceleak.ResourceLeakChecker -Adetailedmsgtext"
 SKIP_COMPLETED = True #skips if the output file is already there.
+WPI_TIMEOUT = 60 * 60 #60 minutes
 
 #create the output folder if it doesn't exist
 if not os.path.exists(RESULTS_FOLDER):
@@ -21,8 +24,9 @@ if not os.path.exists(RESULTS_FOLDER):
 
 #Loop through the benchmarks
 print("Completed Benchmarks")
+i, total = 1, len(os.listdir(BENCHMARKS_FOLDER))
 for benchmark in os.listdir(BENCHMARKS_FOLDER):
-    print(benchmark)
+    print(f"{i} of {total}: {benchmark}")
     if (SKIP_COMPLETED):
         if os.path.exists(f'{RESULTS_FOLDER}/{benchmark}.txt'):
             print("skipping completed benchmark.")
@@ -30,6 +34,16 @@ for benchmark in os.listdir(BENCHMARKS_FOLDER):
     #skip non-directories
     if not os.path.isdir(f'{BENCHMARKS_FOLDER}/{benchmark}'):
         continue
+
+    # Run WPI.
+    print(f"Running WPI on {benchmark}")
+    with open(f'{BENCHMARKS_FOLDER}/{benchmark}/wpi-log.txt', 'w') as file:
+        try:
+            result = subprocess.run(shlex.split(f'./wpi/wpi.sh {BENCHMARKS_FOLDER}/{benchmark}'), stdout=file, stderr=subprocess.STDOUT, timeout=WPI_TIMEOUT)
+        except subprocess.TimeoutExpired as e:
+            print(f"Command timed out after {WPI_TIMEOUT} seconds")
+            e.process.kill()
+            e.process.wait()
     
     #create a folder for the compiled classes if it doesn't exist
     if not os.path.exists(COMPILED_CLASSES_FOLDER):
@@ -46,7 +60,9 @@ for benchmark in os.listdir(BENCHMARKS_FOLDER):
     time_start = time.time()
     command = (CF_BINARY
         + " " + CF_COMMAND
-        + " " + "-J-Xmx8G"
+        + " " + "-Aajava=" + BENCHMARKS_FOLDER + "/" + benchmark + "/" + "/wpi-out"
+        + " " + "-AdisableReturnsReceiver"
+        + " " + "-J-Xmx32G"
         + " " + "-d"
         + " " + COMPILED_CLASSES_FOLDER
         + " -cp " + lib_folder
@@ -62,3 +78,5 @@ for benchmark in os.listdir(BENCHMARKS_FOLDER):
     
     #remove the classes folder
     shutil.rmtree(COMPILED_CLASSES_FOLDER)
+    print("-------------------------------------------------- \n")
+    i += 1
