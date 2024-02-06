@@ -38,12 +38,13 @@ for benchmark in os.listdir(BENCHMARKS_FOLDER):
     # Run WPI.
     print(f"Running WPI on {benchmark}")
     with open(f'{BENCHMARKS_FOLDER}/{benchmark}/wpi-log.txt', 'w') as file:
+        process = subprocess.Popen(shlex.split(f'./wpi/wpi.sh {BENCHMARKS_FOLDER}/{benchmark}'), stdout=file, stderr=subprocess.STDOUT)
         try:
-            result = subprocess.run(shlex.split(f'./wpi/wpi.sh {BENCHMARKS_FOLDER}/{benchmark}'), stdout=file, stderr=subprocess.STDOUT, timeout=WPI_TIMEOUT)
+            process.communicate(timeout=WPI_TIMEOUT)
         except subprocess.TimeoutExpired as e:
             print(f"Command timed out after {WPI_TIMEOUT} seconds")
-            e.process.kill()
-            e.process.wait()
+            process.kill()
+            process.wait()
     
     #create a folder for the compiled classes if it doesn't exist
     if not os.path.exists(COMPILED_CLASSES_FOLDER):
