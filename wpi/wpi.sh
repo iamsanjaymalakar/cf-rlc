@@ -69,8 +69,7 @@ DEBUG=1
 rm -rf ${WPITEMPDIR}
 mkdir -p ${WPITEMPDIR}
 # Clean up
-rm $SRC_FILES iteration*.diff
-rm -rf $PROJECT_PATH/build build
+rm -f iteration*.diff
 
 # Store all the intermediate ajava files for each iterations
 WPIITERATIONOUTPUTS=$PROJECT_PATH/wpi-iterations
@@ -105,5 +104,5 @@ while : ; do
 done
 
 # Clean up
-rm $SRC_FILES iteration*.diff
+rm -f $SRC_FILES iteration*.diff
 rm -rf $PROJECT_PATH/build build

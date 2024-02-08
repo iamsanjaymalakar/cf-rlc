@@ -30,6 +30,7 @@ for benchmark in os.listdir(BENCHMARKS_FOLDER):
     if (SKIP_COMPLETED):
         if os.path.exists(f'{RESULTS_FOLDER}/{benchmark}.txt'):
             print("skipping completed benchmark.")
+            i += 1
             continue
     #skip non-directories
     if not os.path.isdir(f'{BENCHMARKS_FOLDER}/{benchmark}'):
@@ -41,10 +42,11 @@ for benchmark in os.listdir(BENCHMARKS_FOLDER):
         process = subprocess.Popen(shlex.split(f'./wpi/wpi.sh {BENCHMARKS_FOLDER}/{benchmark}'), stdout=file, stderr=subprocess.STDOUT)
         try:
             process.communicate(timeout=WPI_TIMEOUT)
-        except subprocess.TimeoutExpired as e:
+        except subprocess.TimeoutExpired:
             print(f"Command timed out after {WPI_TIMEOUT} seconds")
             process.kill()
             process.wait()
+            os.system("killall -9 java")
     
     #create a folder for the compiled classes if it doesn't exist
     if not os.path.exists(COMPILED_CLASSES_FOLDER):
