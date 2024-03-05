@@ -9,7 +9,12 @@
 PROJECT_PATH=$1
 
 # Global variables
-CF_BINARY="../rlfixer/code/tools/checker-framework-3.42.0/checker/bin/javac"
+CF_ROOT="/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0"
+JAVAC_WITH_FLAGS="javac \
+-J-Xbootclasspath/p:$CF_ROOT/checker/dist/javac.jar"
+CF_BINARY="$CF_ROOT/checker/bin/javac"
+CF_DIST_JAR_ARG="-processorpath $CF_ROOT/checker/dist/checker.jar"
+CHECKER_QUAL_JAR="$CF_ROOT/checker/dist/checker-qual.jar"
 COMPILED_CLASSES_FOLDER="$PROJECT_PATH/classes"
 lib_folder="$PROJECT_PATH/lib"
 SRC_FILES="$PROJECT_PATH/cf_srcs.txt"
@@ -18,7 +23,8 @@ SRC_FILES="$PROJECT_PATH/cf_srcs.txt"
 find $PROJECT_PATH/src -name "*.java" > "$SRC_FILES"
 
 # The compile and clean commands for the project's build system.
-BUILD_CMD="$CF_BINARY \
+BUILD_CMD="$JAVAC_WITH_FLAGS \
+$CF_DIST_JAR_ARG \
 -processor org.checkerframework.checker.resourceleak.ResourceLeakChecker \
 -Adetailedmsgtext \
 -Aajava=$PROJECT_PATH/wpi-out \
@@ -27,10 +33,14 @@ BUILD_CMD="$CF_BINARY \
 -AshowPrefixInWarningMessages \
 -AdisableReturnsReceiver \
 -J-Xmx32G \
+-J-ea \
 -g \
 -d $COMPILED_CLASSES_FOLDER \
--cp $lib_folder \
-@${SRC_FILES}"
+-cp $lib_folder:$CHECKER_QUAL_JAR \
+@${SRC_FILES} \
+-source 8 -target 8"
+
+echo $BUILD_CMD
 
 CLEAN_CMD="rm -rf ./classes"
 

@@ -13,7 +13,11 @@ BENCHMARKS_FOLDER = "../dataset/june2020_dataset"
 RESULTS_FOLDER = "checkerframework_3.42.0_results_WPI"
 COMPILED_CLASSES_FOLDER = "cf_classes"
 SRC_FILES = "cf_srcs.txt"
-CF_BINARY = "../rlfixer/code/tools/checker-framework-3.42.0/checker/bin/javac"
+CF_ROOT= "/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0"
+JAVAC_WITH_FLAGS = f"javac -J-Xbootclasspath/p:{CF_ROOT}/checker/dist/javac.jar"
+CF_BINARY = f"{CF_ROOT}/checker/bin/javac"
+CF_DIST_JAR_ARG=f"-processorpath {CF_ROOT}/checker/dist/checker.jar"
+CHECKER_QUAL_JAR=f"{CF_ROOT}/checker/dist/checker-qual.jar"
 CF_COMMAND = "-processor org.checkerframework.checker.resourceleak.ResourceLeakChecker -Adetailedmsgtext"
 SKIP_COMPLETED = True #skips if the output file is already there.
 WPI_TIMEOUT = 60 * 60 #60 minutes
@@ -46,7 +50,7 @@ for benchmark in os.listdir(BENCHMARKS_FOLDER):
             print(f"Command timed out after {WPI_TIMEOUT} seconds")
             process.kill()
             process.wait()
-            os.system("killall -9 java")
+            os.system("killall -9 javac")
     
     #create a folder for the compiled classes if it doesn't exist
     if not os.path.exists(COMPILED_CLASSES_FOLDER):
@@ -61,15 +65,18 @@ for benchmark in os.listdir(BENCHMARKS_FOLDER):
 
     #execute infer on the source files
     time_start = time.time()
-    command = (CF_BINARY
+    command = (JAVAC_WITH_FLAGS
+        + " " + CF_DIST_JAR_ARG
         + " " + CF_COMMAND
         + " " + "-Aajava=" + BENCHMARKS_FOLDER + "/" + benchmark + "/" + "/wpi-out"
         + " " + "-AdisableReturnsReceiver"
         + " " + "-J-Xmx32G"
+        + " " + "-J-ea"
         + " " + "-d"
         + " " + COMPILED_CLASSES_FOLDER
-        + " -cp " + lib_folder
+        + " -cp " + f"{lib_folder}:{CHECKER_QUAL_JAR}"
         + " @" + SRC_FILES
+        + " " + "-source 8 -target 8"
         + " 2> " +  RESULTS_FOLDER
         + "/" + benchmark + ".txt"
     )
