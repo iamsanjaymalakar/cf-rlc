@@ -9,8 +9,7 @@ def find_errors_in_log(file_path):
             r"(The Checker Framework crashed\..+?at com\.sun\.tools\.javac\.Main\.main\(Main\.java:43\))",
             re.DOTALL
         )
-        print(content)
-    return pattern.findall(content)
+    return set(pattern.findall(content))
 
 def parse_logs_in_directory(root_dir):
     errors_by_project = {}
