@@ -1,0 +1,5 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^Sender.java^14^Sender.<init>(Ljava/util/concurrent/BlockingQueue;)V^5 = new <Application,Ljava/net/DatagramSocket>@5^NULL^FIELD,^false^true^Field escape;
+1^Main.java^28^Main.initialiseAsJoining([Ljava/lang/String;)V^14 = new <Application,Ljava/net/DatagramSocket>@25^NULL^INVOKE,FIELD,^false^true^Field escape;
+2^Main.java^47^Main.initialiseAsBootstrap([Ljava/lang/String;)V^13 = new <Application,Ljava/net/DatagramSocket>@24^NULL^INVOKE,FIELD,^false^true^Field escape;
+3^Main.java^65^Main.initialiseSimulation()V^7 = new <Application,Ljava/net/DatagramSocket>@20^Main.initialiseSimulation()V#15,^INVOKE,FIELD,^false^true^Field escape;

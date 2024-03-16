@@ -1,0 +1,80 @@
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamConsumer.java:47: error: (contracts.postcondition) $$ 3 $$ stop $$ no information about this.socket $$ this.socket is @CalledMethods("close") $$ ( 1749, 2013 ) $$ postcondition of stop is not satisfied.
+    public void stop()  {
+                ^
+  found   : no information about this.socket
+  required: this.socket is @CalledMethods("close")
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamConsumer.java:67: error: (contracts.postcondition) $$ 3 $$ makeConnection $$ no information about this.socket $$ this.socket is @CalledMethods("close") $$ ( 2168, 4400 ) $$ postcondition of makeConnection is not satisfied.
+    private void makeConnection(){
+                 ^
+  found   : no information about this.socket
+  required: this.socket is @CalledMethods("close")
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamConsumer.java:67: error: (missing.creates.mustcall.for) $$ 3 $$ makeConnection $$ this $$ socket $$ ( 2168, 4400 ) $$ Method makeConnection re-assigns the non-final, owning field this.socket, but does not have a corresponding @CreatesMustCallFor annotation.
+    private void makeConnection(){
+                 ^
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamConsumer.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ SelectorProvider.provider().openSelector() $$ java.nio.channels.spi.AbstractSelector $$ regular method exit $$ ( 2291, 2333 ) $$ @MustCall method close may not have been invoked on SelectorProvider.provider().openSelector() or any of its aliases.
+            selector = SelectorProvider.provider().openSelector();
+                                                               ^
+  The type of object is: java.nio.channels.spi.AbstractSelector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamConsumer.java:78: error: (required.method.not.called) $$ 4 $$ method close $$ field socket $$ java.nio.channels.SocketChannel $$  Non-final owning field might be overwritten $$ ( 2653, 2674 ) $$ @MustCall method close may not have been invoked on field socket or any of its aliases.
+                        socket = openSocket();
+                               ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpGenericManager.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ field socket $$ java.nio.channels.SocketChannel $$  The enclosing element org.vit.unsafeutils.tcp.TcpGenericManager has an empty @MustCall annotation $$ ( 1838, 1869 ) $$ @MustCall method close may not have been invoked on field socket or any of its aliases.
+    protected SocketChannel socket;
+                            ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope:  The enclosing element org.vit.unsafeutils.tcp.TcpGenericManager has an empty @MustCall annotation
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpGenericManager.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ field serverChannel $$ java.nio.channels.ServerSocketChannel $$  The enclosing element org.vit.unsafeutils.tcp.TcpGenericManager has an empty @MustCall annotation $$ ( 1911, 1955 ) $$ @MustCall method close may not have been invoked on field serverChannel or any of its aliases.
+    protected ServerSocketChannel serverChannel;
+                                  ^
+  The type of object is: java.nio.channels.ServerSocketChannel.
+  Reason for going out of scope:  The enclosing element org.vit.unsafeutils.tcp.TcpGenericManager has an empty @MustCall annotation
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpGenericManager.java:46: error: (type.argument) $$ 4 $$ K $$ Map $$ @MustCall("close") SocketChannel $$ @MustCall Object $$ ( 1591, 1604 ) $$ incompatible type argument for type parameter K of Map.
+    protected Map<SocketChannel, ConcurrentLinkedQueue<byte[]>> pendingData = new HashMap<SocketChannel, ConcurrentLinkedQueue<byte[]>>();
+                  ^
+  found   : @MustCall("close") SocketChannel
+  required: @MustCall Object
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpGenericManager.java:46: error: (type.argument) $$ 4 $$ K $$ HashMap $$ @MustCall("close") SocketChannel $$ @MustCall Object $$ ( 1663, 1676 ) $$ incompatible type argument for type parameter K of HashMap.
+    protected Map<SocketChannel, ConcurrentLinkedQueue<byte[]>> pendingData = new HashMap<SocketChannel, ConcurrentLinkedQueue<byte[]>>();
+                                                                                          ^
+  found   : @MustCall("close") SocketChannel
+  required: @MustCall Object
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamProducer.java:37: error: (contracts.postcondition) $$ 3 $$ stop $$ no information about this.serverChannel $$ this.serverChannel is @CalledMethods("close") $$ ( 1317, 1601 ) $$ postcondition of stop is not satisfied.
+    public void stop() {
+                ^
+  found   : no information about this.serverChannel
+  required: this.serverChannel is @CalledMethods("close")
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamProducer.java:51: error: (required.method.not.called) $$ 4 $$ method close $$ initSelector() $$ java.nio.channels.Selector $$ regular method exit $$ ( 1737, 1751 ) $$ @MustCall method close may not have been invoked on initSelector() or any of its aliases.
+            selector = initSelector();
+                                   ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamProducer.java:63: error: (missing.creates.mustcall.for) $$ 3 $$ initSelector $$ this $$ serverChannel $$ ( 1968, 2504 ) $$ Method initSelector re-assigns the non-final, owning field this.serverChannel, but does not have a corresponding @CreatesMustCallFor annotation.
+    private Selector initSelector() throws IOException {
+                     ^
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamProducer.java:64: error: (required.method.not.called) $$ 4 $$ method close $$ socketSelector $$ java.nio.channels.Selector $$ possible exceptional exit due to ServerSocketChannel.open() with exception type java.io.IOException $$ ( 2029, 2098 ) $$ @MustCall method close may not have been invoked on socketSelector or any of its aliases.
+        Selector socketSelector = SelectorProvider.provider().openSelector();
+                 ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: possible exceptional exit due to ServerSocketChannel.open() with exception type java.io.IOException
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamProducer.java:65: error: (required.method.not.called) $$ 4 $$ method close $$ field serverChannel $$ java.nio.channels.ServerSocketChannel $$  Non-final owning field might be overwritten $$ ( 2107, 2149 ) $$ @MustCall method close may not have been invoked on field serverChannel or any of its aliases.
+        serverChannel = ServerSocketChannel.open();
+                      ^
+  The type of object is: java.nio.channels.ServerSocketChannel.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamProducer.java:69: error: (reset.not.owning) $$ 2 $$ bind $$ this.serverChannel.socket() $$ ( 2361, 2393 ) $$ Calling method bind resets the must-call obligations of the expression this.serverChannel.socket(), which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+        serverChannel.socket().bind(isa);
+                                   ^
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamProducer.java:134: error: (type.argument) $$ 4 $$ E $$ Iterator $$ @MustCall("close") SocketChannel $$ @MustCall Object $$ ( 4990, 5003 ) $$ incompatible type argument for type parameter E of Iterator.
+            Iterator<SocketChannel> iterator = pendingData.keySet().iterator();
+                     ^
+  found   : @MustCall("close") SocketChannel
+  required: @MustCall Object
+../dataset/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamProducer.java:136: error: (required.method.not.called) $$ 4 $$ method close $$ channel $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 5105, 5145 ) $$ @MustCall method close may not have been invoked on channel or any of its aliases.
+                SocketChannel channel = iterator.next();
+                              ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+17 errors

@@ -1,0 +1,45 @@
+../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/input/TBInputEngine.java:103: error: (required.method.not.called) $$ 4 $$ method close $$ fstream $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 2593, 2645 ) $$ @MustCall method close may not have been invoked on fstream or any of its aliases.
+			FileInputStream fstream = new FileInputStream(file);
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/input/TBInputEngine.java:142: error: (required.method.not.called) $$ 4 $$ method close $$ fstream $$ java.io.FileWriter $$ possible exceptional exit due to out.write(event.toString() + "\n") with exception type java.io.IOException $$ ( 4014, 4056 ) $$ @MustCall method close may not have been invoked on fstream or any of its aliases.
+			FileWriter fstream = new FileWriter(file);
+			           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(event.toString() + "\n") with exception type java.io.IOException
+../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/serialization/SBufferedImage.java:39: error: (required.method.not.called) $$ 4 $$ method close $$ ImageIO.createImageOutputStream(out) $$ javax.imageio.stream.ImageOutputStream $$ possible exceptional exit due to writer.write(null, new IIOImage(image, null, null), param) with exception type java.io.IOException $$ ( 1112, 1148 ) $$ @MustCall method close may not have been invoked on ImageIO.createImageOutputStream(out) or any of its aliases.
+	        writer.setOutput(ImageIO.createImageOutputStream(out));
+	                                                        ^
+  The type of object is: javax.imageio.stream.ImageOutputStream.
+  Reason for going out of scope: possible exceptional exit due to writer.write(null, new IIOImage(image, null, null), param) with exception type java.io.IOException
+../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/serialization/SBufferedImage.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ ImageIO.createImageInputStream(in) $$ javax.imageio.stream.ImageInputStream $$ possible exceptional exit due to ImageIO.read(ImageIO.createImageInputStream(in)) with exception type java.io.IOException $$ ( 1556, 1590 ) $$ @MustCall method close may not have been invoked on ImageIO.createImageInputStream(in) or any of its aliases.
+    image=ImageIO.read(ImageIO.createImageInputStream(in));
+                                                     ^
+  The type of object is: javax.imageio.stream.ImageInputStream.
+  Reason for going out of scope: possible exceptional exit due to ImageIO.read(ImageIO.createImageInputStream(in)) with exception type java.io.IOException
+../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/editmode/CommandLoad.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ fileIn $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(fileIn) with exception type java.io.IOException $$ ( 1730, 1788 ) $$ @MustCall method close may not have been invoked on fileIn or any of its aliases.
+				FileInputStream fileIn =
+				                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(fileIn) with exception type java.io.IOException
+../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/editmode/CommandLoad.java:105: error: (required.method.not.called) $$ 4 $$ method close $$ fileIn $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(fileIn) with exception type java.io.IOException $$ ( 2154, 2212 ) $$ @MustCall method close may not have been invoked on fileIn or any of its aliases.
+				FileInputStream fileIn =
+				                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(fileIn) with exception type java.io.IOException
+../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/editmode/CommandSave.java:68: error: (required.method.not.called) $$ 4 $$ method close $$ fileOut $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(fileOut) with exception type java.io.IOException $$ ( 1559, 1622 ) $$ @MustCall method close may not have been invoked on fileOut or any of its aliases.
+			FileOutputStream fileOut =
+			                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(fileOut) with exception type java.io.IOException
+../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/editmode/CommandSave.java:96: error: (required.method.not.called) $$ 4 $$ method close $$ fileOut $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(fileOut) with exception type java.io.IOException $$ ( 2155, 2218 ) $$ @MustCall method close may not have been invoked on fileOut or any of its aliases.
+			FileOutputStream fileOut =
+			                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(fileOut) with exception type java.io.IOException
+Note: ../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/GUI/EditModeGUI.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+8 errors

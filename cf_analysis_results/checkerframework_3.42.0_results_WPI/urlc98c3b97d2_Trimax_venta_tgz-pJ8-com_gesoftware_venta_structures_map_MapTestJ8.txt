@@ -1,0 +1,315 @@
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/actors/ActorsTest.java:32: error: (required.method.not.called) $$ 4 $$ method finish $$ theater $$ com.gesoftware.venta.actors.Theater $$ regular method exit $$ ( 555, 593 ) $$ @MustCall method finish may not have been invoked on theater or any of its aliases.
+        Theater theater = new Theater(c_Port);
+                ^
+  The type of object is: com.gesoftware.venta.actors.Theater.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/actors/ActorsTest.java:73: error: (required.method.not.called) $$ 4 $$ method finish $$ puppeteer $$ com.gesoftware.venta.actors.Puppeteer $$ regular method exit $$ ( 1817, 1880 ) $$ @MustCall method finish may not have been invoked on puppeteer or any of its aliases.
+        final Puppeteer puppeteer = new Puppeteer("localhost", c_Port);
+                        ^
+  The type of object is: com.gesoftware.venta.actors.Puppeteer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Connection.java:92: error: (missing.creates.mustcall.for) $$ 3 $$ connect $$ this $$ m_Reader $$ ( 3047, 4039 ) $$ Method connect re-assigns the non-final, owning field this.m_Reader, but does not have a corresponding @CreatesMustCallFor annotation.
+    public final boolean connect() {
+                         ^
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Connection.java:92: error: (missing.creates.mustcall.for) $$ 3 $$ connect $$ this $$ m_Writer $$ ( 3047, 4039 ) $$ Method connect re-assigns the non-final, owning field this.m_Writer, but does not have a corresponding @CreatesMustCallFor annotation.
+    public final boolean connect() {
+                         ^
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Connection.java:100: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.Socket $$ regular method exit $$ ( 3248, 3283 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+                final Socket socket = new Socket();
+                             ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Connection.java:103: error: (required.method.not.called) $$ 4 $$ method close $$ field m_Reader $$ java.io.ObjectInputStream $$  Non-final owning field might be overwritten $$ ( 3390, 3447 ) $$ @MustCall method close may not have been invoked on field m_Reader or any of its aliases.
+                m_Reader = new ObjectInputStream(socket.getInputStream());
+                         ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Connection.java:104: error: (required.method.not.called) $$ 4 $$ method close $$ field m_Writer $$ java.io.ObjectOutputStream $$  Non-final owning field might be overwritten $$ ( 3465, 3524 ) $$ @MustCall method close may not have been invoked on field m_Writer or any of its aliases.
+                m_Writer = new ObjectOutputStream(socket.getOutputStream());
+                         ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Connection.java:171: error: (required.method.not.called) $$ 4 $$ method close $$ field m_Reader $$ java.io.ObjectInputStream $$  Non-final owning field might be overwritten $$ ( 5415, 5430 ) $$ @MustCall method close may not have been invoked on field m_Reader or any of its aliases.
+            m_Reader = null;
+                     ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:54: error: (required.method.not.called) $$ 4 $$ method close $$ field m_Socket $$ java.net.Socket $$  The enclosing element com.gesoftware.venta.network.Server.Client has an empty @MustCall annotation $$ ( 1976, 2006 ) $$ @MustCall method close may not have been invoked on field m_Socket or any of its aliases.
+        private final Socket m_Socket;
+                             ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope:  The enclosing element com.gesoftware.venta.network.Server.Client has an empty @MustCall annotation
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:69: error: (required.method.not.called) $$ 4 $$ method stop $$ field m_Receiver $$ com.gesoftware.venta.network.Server.Client.ClientReceiver $$  The enclosing element com.gesoftware.venta.network.Server.Client has an empty @MustCall annotation $$ ( 2522, 2556 ) $$ @MustCall method stop may not have been invoked on field m_Receiver or any of its aliases.
+        private ClientReceiver m_Receiver;
+                               ^
+  The type of object is: com.gesoftware.venta.network.Server.Client.ClientReceiver.
+  Reason for going out of scope:  The enclosing element com.gesoftware.venta.network.Server.Client has an empty @MustCall annotation
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:85: error: (required.method.not.called) $$ 4 $$ method close $$ field m_Reader $$ java.io.ObjectInputStream $$  Non-final owning field might be overwritten $$ ( 3133, 3192 ) $$ @MustCall method close may not have been invoked on field m_Reader or any of its aliases.
+                    m_Reader = new ObjectInputStream(m_Socket.getInputStream());
+                             ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:136: error: (contracts.postcondition) $$ 3 $$ run $$ no information about this.m_Reader $$ this.m_Reader is @CalledMethods("close") $$ ( 5240, 6132 ) $$ postcondition of run is not satisfied.
+            public final void run() {
+                              ^
+  found   : no information about this.m_Reader
+  required: this.m_Reader is @CalledMethods("close")
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:164: error: (contracts.postcondition) $$ 3 $$ stop $$ no information about this.m_Reader $$ this.m_Reader is @CalledMethods("close") $$ ( 6311, 6564 ) $$ postcondition of stop is not satisfied.
+            public final void stop() {
+                              ^
+  found   : no information about this.m_Reader
+  required: this.m_Reader is @CalledMethods("close")
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:184: error: (required.method.not.called) $$ 4 $$ method close $$ field m_Writer $$ java.io.ObjectOutputStream $$  Non-final owning field might be overwritten $$ ( 7074, 7135 ) $$ @MustCall method close may not have been invoked on field m_Writer or any of its aliases.
+                    m_Writer = new ObjectOutputStream(m_Socket.getOutputStream());
+                             ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:205: error: (contracts.postcondition) $$ 3 $$ run $$ no information about this.m_Writer $$ this.m_Writer is @CalledMethods("close") $$ ( 7928, 9241 ) $$ postcondition of run is not satisfied.
+            public final void run() {
+                              ^
+  found   : no information about this.m_Writer
+  required: this.m_Writer is @CalledMethods("close")
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:280: error: (missing.creates.mustcall.for) $$ 3 $$ start $$ this $$ m_Receiver $$ ( 10636, 11066 ) $$ Method start re-assigns the non-final, owning field this.m_Receiver, but does not have a corresponding @CreatesMustCallFor annotation.
+        public final void start() {
+                          ^
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:282: error: (required.method.not.called) $$ 4 $$ method run $$ new ClientSender() $$ com.gesoftware.venta.network.Server.Client.ClientSender $$ regular method exit $$ ( 10747, 10765 ) $$ @MustCall method run may not have been invoked on new ClientSender() or any of its aliases.
+            m_Sender       = new ClientSender();
+                             ^
+  The type of object is: com.gesoftware.venta.network.Server.Client.ClientSender.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:287: error: (required.method.not.called) $$ 4 $$ method stop $$ field m_Receiver $$ com.gesoftware.venta.network.Server.Client.ClientReceiver $$  Non-final owning field might be overwritten $$ ( 10923, 10962 ) $$ @MustCall method stop may not have been invoked on field m_Receiver or any of its aliases.
+            m_Receiver       = new ClientReceiver();
+                             ^
+  The type of object is: com.gesoftware.venta.network.Server.Client.ClientReceiver.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:464: error: (missing.creates.mustcall.for) $$ 3 $$ openServerSocket $$ this $$ m_ServerSocket $$ ( 17176, 17640 ) $$ Method openServerSocket re-assigns the non-final, owning field this.m_ServerSocket, but does not have a corresponding @CreatesMustCallFor annotation.
+    private boolean openServerSocket() {
+                    ^
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:466: error: (required.method.not.called) $$ 4 $$ method close $$ field m_ServerSocket $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 17239, 17280 ) $$ @MustCall method close may not have been invoked on field m_ServerSocket or any of its aliases.
+            m_ServerSocket = new ServerSocket(m_Port);
+                           ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:559: error: (contracts.postcondition) $$ 3 $$ stop $$ no information about this.m_ServerSocket $$ this.m_ServerSocket is @CalledMethods("close") $$ ( 20555, 20903 ) $$ postcondition of stop is not satisfied.
+    public final void stop() {
+                      ^
+  found   : no information about this.m_ServerSocket
+  required: this.m_ServerSocket is @CalledMethods("close")
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ field m_Connection $$ java.sql.Connection $$  The enclosing element com.gesoftware.venta.db.DBConnection.DBStatement has an empty @MustCall annotation $$ ( 776, 814 ) $$ @MustCall method close may not have been invoked on field m_Connection or any of its aliases.
+        private final Connection m_Connection;
+                                 ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope:  The enclosing element com.gesoftware.venta.db.DBConnection.DBStatement has an empty @MustCall annotation
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:148: error: (required.method.not.called) $$ 4 $$ method close $$ field m_Connection $$ java.sql.Connection $$  The enclosing element com.gesoftware.venta.db.DBConnection.DBMultipleStatement has an empty @MustCall annotation $$ ( 5350, 5388 ) $$ @MustCall method close may not have been invoked on field m_Connection or any of its aliases.
+        private final Connection m_Connection;
+                                 ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope:  The enclosing element com.gesoftware.venta.db.DBConnection.DBMultipleStatement has an empty @MustCall annotation
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:39: error: (assignment) $$ 2 $$ @PolyMustCall Connection $$ @MustCall("close") Connection $$ ( 1163, 1173 ) $$ incompatible types in assignment.
+            m_Connection = connection;
+                           ^
+  found   : @PolyMustCall Connection
+  required: @MustCall("close") Connection
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:157: error: (assignment) $$ 2 $$ @PolyMustCall Connection $$ @MustCall("close") Connection $$ ( 5749, 5759 ) $$ incompatible types in assignment.
+            m_Connection = connection;
+                           ^
+  found   : @PolyMustCall Connection
+  required: @MustCall("close") Connection
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:333: error: (required.method.not.called) $$ 4 $$ method close $$ connection $$ java.sql.Connection $$ possible exceptional exit due to connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS) with exception type java.sql.SQLException $$ ( 13011, 13064 ) $$ @MustCall method close may not have been invoked on connection or any of its aliases.
+            final Connection connection = m_Pool.getConnection();
+                             ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: possible exceptional exit due to connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS) with exception type java.sql.SQLException
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:334: error: (return) $$ 2 $$ @MustCall DBConnection.@MustCall("close") DBStatement $$ @MustCall DBConnection.@MustCall DBStatement $$ ( 13084, 13180 ) $$ incompatible types in return.
+            return new DBStatement(connection, connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS));
+                   ^
+  type of expression: @MustCall DBConnection.@MustCall("close") DBStatement
+  method return type: @MustCall DBConnection.@MustCall DBStatement
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:355: error: (required.method.not.called) $$ 4 $$ method close $$ connection $$ java.sql.Connection $$ possible exceptional exit due to connection.setAutoCommit(false) with exception type java.sql.SQLException $$ ( 13916, 13969 ) $$ @MustCall method close may not have been invoked on connection or any of its aliases.
+            final Connection connection = m_Pool.getConnection();
+                             ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: possible exceptional exit due to connection.setAutoCommit(false) with exception type java.sql.SQLException
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:365: error: (return) $$ 2 $$ @MustCall DBConnection.@MustCall("close") DBMultipleStatement $$ @MustCall DBConnection.@MustCall DBMultipleStatement $$ ( 14361, 14421 ) $$ incompatible types in return.
+            return new DBConnection.DBMultipleStatement(connection, statements);
+                   ^
+  type of expression: @MustCall DBConnection.@MustCall("close") DBMultipleStatement
+  method return type: @MustCall DBConnection.@MustCall DBMultipleStatement
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:380: error: (flowexpr.parse.error) $$ 1 $$ 'this.m_Connection' in the postcondition EnsuresCalledMethods on the declaration of method 'closeStatement': Invalid 'm_Connection' because field or class m_Connection not found in this $$ ( 14918, 15395 ) $$ cannot parse the expression 'this.m_Connection' in the postcondition EnsuresCalledMethods on the declaration of method 'closeStatement': Invalid 'm_Connection' because field or class m_Connection not found in this
+    private void closeStatement(final DBStatement query) {
+                 ^
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:402: error: (flowexpr.parse.error) $$ 1 $$ 'this.m_Connection' in the postcondition EnsuresCalledMethods on the declaration of method 'closeStatement': Invalid 'm_Connection' because field or class m_Connection not found in this $$ ( 15585, 16290 ) $$ cannot parse the expression 'this.m_Connection' in the postcondition EnsuresCalledMethods on the declaration of method 'closeStatement': Invalid 'm_Connection' because field or class m_Connection not found in this
+    private void closeStatement(final DBMultipleStatement query) {
+                 ^
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:443: error: (flowexpr.parse.error.postcondition) $$ 2 $$ closeStatement(DBStatement) $$ Invalid 'm_Connection' because field or class m_Connection not found in this $$ ( 17096, 17117 ) $$ error parsing the postcondition expression for closeStatement(DBStatement)
+            closeStatement(query);
+                          ^
+  cannot parse the expression Invalid 'm_Connection' because field or class m_Connection not found in this
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:474: error: (flowexpr.parse.error.postcondition) $$ 2 $$ closeStatement(DBMultipleStatement) $$ Invalid 'm_Connection' because field or class m_Connection not found in this $$ ( 18097, 18118 ) $$ error parsing the postcondition expression for closeStatement(DBMultipleStatement)
+            closeStatement(query);
+                          ^
+  cannot parse the expression Invalid 'm_Connection' because field or class m_Connection not found in this
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:494: error: (flowexpr.parse.error.postcondition) $$ 2 $$ closeStatement(DBStatement) $$ Invalid 'm_Connection' because field or class m_Connection not found in this $$ ( 18767, 18788 ) $$ error parsing the postcondition expression for closeStatement(DBStatement)
+            closeStatement(query);
+                          ^
+  cannot parse the expression Invalid 'm_Connection' because field or class m_Connection not found in this
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:525: error: (flowexpr.parse.error.postcondition) $$ 2 $$ closeStatement(DBMultipleStatement) $$ Invalid 'm_Connection' because field or class m_Connection not found in this $$ ( 19772, 19793 ) $$ error parsing the postcondition expression for closeStatement(DBMultipleStatement)
+            closeStatement(query);
+                          ^
+  cannot parse the expression Invalid 'm_Connection' because field or class m_Connection not found in this
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:578: error: (flowexpr.parse.error.postcondition) $$ 2 $$ closeStatement(DBStatement) $$ Invalid 'm_Connection' because field or class m_Connection not found in this $$ ( 21816, 21837 ) $$ error parsing the postcondition expression for closeStatement(DBStatement)
+            closeStatement(query);
+                          ^
+  cannot parse the expression Invalid 'm_Connection' because field or class m_Connection not found in this
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/SafeNetworkTest.java:17: error: (required.method.not.called) $$ 4 $$ method stop $$ server $$ com.gesoftware.venta.network.SafeServer $$ regular method exit $$ ( 549, 1306 ) $$ @MustCall method stop may not have been invoked on server or any of its aliases.
+        final SafeServer server = new SafeServer(c_Port, c_Bits, new IServerHandler() {
+                         ^
+  The type of object is: com.gesoftware.venta.network.SafeServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/SafeNetworkTest.java:53: error: (required.method.not.called) $$ 4 $$ method disconnect $$ connection $$ com.gesoftware.venta.network.SafeConnection $$ regular method exit $$ ( 1772, 2230 ) $$ @MustCall method disconnect may not have been invoked on connection or any of its aliases.
+        final SafeConnection connection = new SafeConnection("localhost", c_Port, c_Bits, new IClientHandler() {
+                             ^
+  The type of object is: com.gesoftware.venta.network.SafeConnection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/SafeConnection.java:139: error: (required.method.not.called) $$ 4 $$ method disconnect $$ field m_Connection $$ com.gesoftware.venta.network.Connection $$  Non-final owning field might be overwritten $$ ( 5377, 5443 ) $$ @MustCall method disconnect may not have been invoked on field m_Connection or any of its aliases.
+        m_Connection = new Connection(host, port, new SafeClientHandler());
+                     ^
+  The type of object is: com.gesoftware.venta.network.Connection.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/NetworkTest.java:16: error: (required.method.not.called) $$ 4 $$ method stop $$ server $$ com.gesoftware.venta.network.Server $$ regular method exit $$ ( 507, 1248 ) $$ @MustCall method stop may not have been invoked on server or any of its aliases.
+        final Server server = new Server(c_Port, new IServerHandler() {
+                     ^
+  The type of object is: com.gesoftware.venta.network.Server.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/NetworkTest.java:52: error: (required.method.not.called) $$ 4 $$ method disconnect $$ connection $$ com.gesoftware.venta.network.Connection $$ regular method exit $$ ( 1706, 2148 ) $$ @MustCall method disconnect may not have been invoked on connection or any of its aliases.
+        final Connection connection = new Connection("localhost", c_Port, new IClientHandler() {
+                         ^
+  The type of object is: com.gesoftware.venta.network.Connection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileLoader.java:6: error: (required.method.not.called) $$ 4 $$ method close $$ field m_ObjectInputStream $$ java.io.ObjectInputStream $$  The enclosing element com.gesoftware.venta.io.FileLoader has an empty @MustCall annotation $$ ( 89, 135 ) $$ @MustCall method close may not have been invoked on field m_ObjectInputStream or any of its aliases.
+    private ObjectInputStream m_ObjectInputStream;
+                              ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope:  The enclosing element com.gesoftware.venta.io.FileLoader has an empty @MustCall annotation
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileLoader.java:7: error: (required.method.not.called) $$ 4 $$ method close $$ field m_FileInputStream $$ java.io.FileInputStream $$  The enclosing element com.gesoftware.venta.io.FileLoader has an empty @MustCall annotation $$ ( 140, 182 ) $$ @MustCall method close may not have been invoked on field m_FileInputStream or any of its aliases.
+    private FileInputStream m_FileInputStream;
+                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope:  The enclosing element com.gesoftware.venta.io.FileLoader has an empty @MustCall annotation
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileLoader.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ field m_FileInputStream $$ java.io.FileInputStream $$  Non-final owning field might be overwritten $$ ( 410, 459 ) $$ @MustCall method close may not have been invoked on field m_FileInputStream or any of its aliases.
+            m_FileInputStream = new FileInputStream(fileName);
+                              ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileLoader.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(fileName) $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(m_FileInputStream) with exception type java.io.IOException $$ ( 430, 459 ) $$ @MustCall method close may not have been invoked on new FileInputStream(fileName) or any of its aliases.
+            m_FileInputStream = new FileInputStream(fileName);
+                                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(m_FileInputStream) with exception type java.io.IOException
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileLoader.java:17: error: (required.method.not.called) $$ 4 $$ method close $$ field m_ObjectInputStream $$ java.io.ObjectInputStream $$  Non-final owning field might be overwritten $$ ( 473, 535 ) $$ @MustCall method close may not have been invoked on field m_ObjectInputStream or any of its aliases.
+            m_ObjectInputStream = new ObjectInputStream(m_FileInputStream);
+                                ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileLoader.java:54: error: (required.method.not.called) $$ 4 $$ method close $$ field m_ObjectInputStream $$ java.io.ObjectInputStream $$  Non-final owning field might be overwritten $$ ( 1570, 1596 ) $$ @MustCall method close may not have been invoked on field m_ObjectInputStream or any of its aliases.
+        m_ObjectInputStream = null;
+                            ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileSaver.java:9: error: (required.method.not.called) $$ 4 $$ method close $$ field m_ObjectOutputStream $$ java.io.ObjectOutputStream $$  The enclosing element com.gesoftware.venta.io.FileSaver has an empty @MustCall annotation $$ ( 117, 165 ) $$ @MustCall method close may not have been invoked on field m_ObjectOutputStream or any of its aliases.
+    private ObjectOutputStream m_ObjectOutputStream;
+                               ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope:  The enclosing element com.gesoftware.venta.io.FileSaver has an empty @MustCall annotation
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileSaver.java:10: error: (required.method.not.called) $$ 4 $$ method close $$ field m_FileOutputStream $$ java.io.FileOutputStream $$  The enclosing element com.gesoftware.venta.io.FileSaver has an empty @MustCall annotation $$ ( 170, 214 ) $$ @MustCall method close may not have been invoked on field m_FileOutputStream or any of its aliases.
+    private FileOutputStream m_FileOutputStream;
+                             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope:  The enclosing element com.gesoftware.venta.io.FileSaver has an empty @MustCall annotation
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileSaver.java:19: error: (required.method.not.called) $$ 4 $$ method close $$ field m_FileOutputStream $$ java.io.FileOutputStream $$  Non-final owning field might be overwritten $$ ( 435, 486 ) $$ @MustCall method close may not have been invoked on field m_FileOutputStream or any of its aliases.
+            m_FileOutputStream = new FileOutputStream(fileName);
+                               ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileSaver.java:19: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(fileName) $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(m_FileOutputStream) with exception type java.io.IOException $$ ( 456, 486 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(fileName) or any of its aliases.
+            m_FileOutputStream = new FileOutputStream(fileName);
+                                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(m_FileOutputStream) with exception type java.io.IOException
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileSaver.java:20: error: (required.method.not.called) $$ 4 $$ method close $$ field m_ObjectOutputStream $$ java.io.ObjectOutputStream $$  Non-final owning field might be overwritten $$ ( 500, 565 ) $$ @MustCall method close may not have been invoked on field m_ObjectOutputStream or any of its aliases.
+            m_ObjectOutputStream = new ObjectOutputStream(m_FileOutputStream);
+                                 ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileSaver.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ field m_ObjectOutputStream $$ java.io.ObjectOutputStream $$  Non-final owning field might be overwritten $$ ( 1649, 1676 ) $$ @MustCall method close may not have been invoked on field m_ObjectOutputStream or any of its aliases.
+        m_ObjectOutputStream = null;
+                             ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/structures/option/Option.java:35: error: (mustcallalias.out.of.scope) $$ 1 $$ regular method exit $$ ( 868, 887 ) $$ This @MustCallAlias parameter might go out of scope without being assigned into an owning field of this object (if this is a constructor) or returned.
+    public final T get(final T replacement) {
+                               ^
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/structures/map/SharedMap.java:49: error: (required.method.not.called) $$ 4 $$ method finish $$ field m_Theater $$ com.gesoftware.venta.actors.Theater $$  Non-final owning field might be overwritten $$ ( 2339, 2368 ) $$ @MustCall method finish may not have been invoked on field m_Theater or any of its aliases.
+        m_Theater = new Theater(port);
+                  ^
+  The type of object is: com.gesoftware.venta.actors.Theater.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/structures/map/SharedMap.java:222: error: (contracts.postcondition) $$ 3 $$ finalize $$ no information about this.m_Theater $$ this.m_Theater is @CalledMethods("finish") $$ ( 8878, 9003 ) $$ postcondition of finalize is not satisfied.
+    protected final void finalize() throws Throwable {
+                         ^
+  found   : no information about this.m_Theater
+  required: this.m_Theater is @CalledMethods("finish")
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/structures/map/MapTest.java:7: error: (required.method.not.called) $$ 4 $$ method finalize $$ remoteMap $$ com.gesoftware.venta.structures.map.RemoteMap<java.lang.String,java.lang.String> $$ regular method exit $$ ( 178, 271 ) $$ @MustCall method finalize may not have been invoked on remoteMap or any of its aliases.
+        final RemoteMap<String, String> remoteMap = new RemoteMap<String, String>("localhost", 5555);
+                                        ^
+  The type of object is: com.gesoftware.venta.structures.map.RemoteMap<java.lang.String,java.lang.String>.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/structures/map/MapTest.java:17: error: (required.method.not.called) $$ 4 $$ method finalize $$ remoteMap $$ com.gesoftware.venta.structures.map.RemoteMap<java.lang.String,java.lang.String> $$ regular method exit $$ ( 571, 664 ) $$ @MustCall method finalize may not have been invoked on remoteMap or any of its aliases.
+        final RemoteMap<String, String> remoteMap = new RemoteMap<String, String>("localhost", 5555);
+                                        ^
+  The type of object is: com.gesoftware.venta.structures.map.RemoteMap<java.lang.String,java.lang.String>.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/structures/map/MapTest.java:27: error: (required.method.not.called) $$ 4 $$ method finalize $$ sharedMap $$ com.gesoftware.venta.structures.map.SharedMap<java.lang.String,java.lang.String> $$ regular method exit $$ ( 995, 1075 ) $$ @MustCall method finalize may not have been invoked on sharedMap or any of its aliases.
+        final SharedMap<String, String> sharedMap = new SharedMap<String, String>(5555);
+                                        ^
+  The type of object is: com.gesoftware.venta.structures.map.SharedMap<java.lang.String,java.lang.String>.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/logging/LoggingUtility.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ fileWriter $$ java.io.FileWriter $$ possible exceptional exit due to bufferedWriter.write(outputString + "\r\n") with exception type java.io.IOException $$ ( 3977, 4042 ) $$ @MustCall method close may not have been invoked on fileWriter or any of its aliases.
+            final FileWriter fileWriter = new FileWriter(m_OutputFile, true);
+                             ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bufferedWriter.write(outputString + "\r\n") with exception type java.io.IOException
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/utility/ApplicationUtility.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ field m_LockChannel $$ java.nio.channels.FileChannel $$  The enclosing element com.gesoftware.venta.utility.ApplicationUtility has an empty @MustCall annotation $$ ( 462, 503 ) $$ @MustCall method close may not have been invoked on field m_LockChannel or any of its aliases.
+    private FileChannel m_LockChannel = null;
+                        ^
+  The type of object is: java.nio.channels.FileChannel.
+  Reason for going out of scope:  The enclosing element com.gesoftware.venta.utility.ApplicationUtility has an empty @MustCall annotation
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/utility/ApplicationUtility.java:24: error: (required.method.not.called) $$ 4 $$ method close $$ field m_LockStream $$ java.io.FileOutputStream $$  The enclosing element com.gesoftware.venta.utility.ApplicationUtility has an empty @MustCall annotation $$ ( 537, 582 ) $$ @MustCall method close may not have been invoked on field m_LockStream or any of its aliases.
+    private FileOutputStream m_LockStream = null;
+                             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope:  The enclosing element com.gesoftware.venta.utility.ApplicationUtility has an empty @MustCall annotation
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/utility/ApplicationUtility.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ field m_LockStream $$ java.io.FileOutputStream $$  Non-final owning field might be overwritten $$ ( 1391, 1438 ) $$ @MustCall method close may not have been invoked on field m_LockStream or any of its aliases.
+        m_LockStream = new FileOutputStream(m_LockFile);
+                     ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/utility/ApplicationUtility.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(m_LockFile) $$ java.io.FileOutputStream $$ possible exceptional exit due to m_LockStream.write(f_content.getBytes()) with exception type java.io.IOException $$ ( 1406, 1438 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(m_LockFile) or any of its aliases.
+        m_LockStream = new FileOutputStream(m_LockFile);
+                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to m_LockStream.write(f_content.getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/utility/ApplicationUtility.java:52: error: (required.method.not.called) $$ 4 $$ method close $$ field m_LockChannel $$ java.nio.channels.FileChannel $$  Non-final owning field might be overwritten $$ ( 1619, 1660 ) $$ @MustCall method close may not have been invoked on field m_LockChannel or any of its aliases.
+        m_LockChannel = m_LockStream.getChannel();
+                      ^
+  The type of object is: java.nio.channels.FileChannel.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/utility/PropertiesUtility.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(configurationFile) $$ java.io.FileInputStream $$ possible exceptional exit due to properties.load(new FileInputStream(configurationFile)) with exception type java.io.IOException $$ ( 631, 669 ) $$ @MustCall method close may not have been invoked on new FileInputStream(configurationFile) or any of its aliases.
+            properties.load(new FileInputStream(configurationFile));
+                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(new FileInputStream(configurationFile)) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+66 errors

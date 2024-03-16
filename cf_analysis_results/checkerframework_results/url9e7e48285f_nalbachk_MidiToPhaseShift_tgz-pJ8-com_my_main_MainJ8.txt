@@ -1,0 +1,6 @@
+../../../../datasets/june2020_dataset/url9e7e48285f_nalbachk_MidiToPhaseShift_tgz-pJ8-com_my_main_MainJ8/src/com/my/config/ConfigFile.java:17: error: (assignment) $$ 2 $$ @MustCall Class<capture#896 extends @MustCallUnknown Config> $$ @MustCallUnknown Class<? extends @MustCall Config> $$ ( 477, 494 ) $$ incompatible types in assignment.
+		Class<? extends Config> clazz = config.getClass();
+		                                               ^
+  found   : @MustCall Class<capture#896 extends @MustCallUnknown Config>
+  required: @MustCallUnknown Class<? extends @MustCall Config>
+1 error

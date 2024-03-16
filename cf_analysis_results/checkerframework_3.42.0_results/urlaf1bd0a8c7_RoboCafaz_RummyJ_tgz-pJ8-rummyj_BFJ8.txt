@@ -1,0 +1,6 @@
+../dataset/june2020_dataset/urlaf1bd0a8c7_RoboCafaz_RummyJ_tgz-pJ8-rummyj_BFJ8/src/rummyj/FilePrinter.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(fileName + "." + fileExtension) $$ java.io.FileWriter $$ regular method exit $$ ( 529, 575 ) $$ @MustCall method close may not have been invoked on new FileWriter(fileName + "." + fileExtension) or any of its aliases.
+      fileStream = new FileWriter(fileName + "." + fileExtension);
+                   ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+1 error

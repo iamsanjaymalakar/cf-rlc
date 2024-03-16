@@ -1,0 +1,37 @@
+../../../../datasets/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamConsumer.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-213 $$ java.nio.channels.spi.AbstractSelector $$ regular method exit $$ ( 2291, 2333 ) $$ @MustCall method close may not have been invoked on temp-var-213 or any of its aliases.
+            selector = SelectorProvider.provider().openSelector();
+                                                               ^
+  The type of object is: java.nio.channels.spi.AbstractSelector.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamConsumer.java:78: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-215 $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 2662, 2674 ) $$ @MustCall method close may not have been invoked on temp-var-215 or any of its aliases.
+                        socket = openSocket();
+                                           ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamConsumer.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-217 $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 2822, 2834 ) $$ @MustCall method close may not have been invoked on temp-var-217 or any of its aliases.
+                        socket = openSocket();
+                                           ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamConsumer.java:84: error: (reset.not.owning) $$ 2 $$ connect $$ this.socket $$ ( 2988, 3044 ) $$ Calling method connect resets the must-call obligations of the expression this.socket, which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+                    boolean success = socket.connect(new InetSocketAddress(hostAddress, port));
+                                                    ^
+../../../../datasets/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamProducer.java:51: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-364 $$ java.nio.channels.Selector $$ regular method exit $$ ( 1737, 1751 ) $$ @MustCall method close may not have been invoked on temp-var-364 or any of its aliases.
+            selector = initSelector();
+                                   ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamProducer.java:64: error: (required.method.not.called) $$ 4 $$ method close $$ socketSelector $$ java.nio.channels.Selector $$ possible exceptional exit due to ServerSocketChannel.open() with exception type java.io.IOException $$ ( 2029, 2098 ) $$ @MustCall method close may not have been invoked on socketSelector or any of its aliases.
+        Selector socketSelector = SelectorProvider.provider().openSelector();
+                 ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: possible exceptional exit due to ServerSocketChannel.open() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamProducer.java:69: error: (reset.not.owning) $$ 2 $$ bind $$ this.serverChannel.socket() $$ ( 2361, 2393 ) $$ Calling method bind resets the must-call obligations of the expression this.serverChannel.socket(), which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+        serverChannel.socket().bind(isa);
+                                   ^
+../../../../datasets/june2020_dataset/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/tcp/TcpStreamProducer.java:136: error: (required.method.not.called) $$ 4 $$ method close $$ channel $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 5105, 5145 ) $$ @MustCall method close may not have been invoked on channel or any of its aliases.
+                SocketChannel channel = iterator.next();
+                              ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+8 errors

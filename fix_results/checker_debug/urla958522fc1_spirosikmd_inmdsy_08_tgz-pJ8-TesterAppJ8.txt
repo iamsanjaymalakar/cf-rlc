@@ -1,0 +1,15 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^ft2client.java^14^ft2client.main([Ljava/lang/String;)V^4 = new <Application,Ljava/net/Socket>@6^ft2client.main([Ljava/lang/String;)V#20,ft2client.main([Ljava/lang/String;)V#25,^INVOKE,^false^false^Try-catch Fix;
+1^ft2client.java^28^ft2client.main([Ljava/lang/String;)V^39 = new <Application,Ljava/io/FileOutputStream>@104^NULL^INVOKE,^false^false^Normal Fix;
+2^Peer.java^33^Peer.initNet()V^3 = new <Application,Ljava/net/MulticastSocket>@1^NULL^FIELD,^false^true^Field escape;
+3^ft2server.java^10^ft2server.main([Ljava/lang/String;)V^4 = new <Application,Ljava/net/ServerSocket>@2^ft2server.main([Ljava/lang/String;)V#14,^INVOKE,^false^false^Try-catch Fix;
+4^ft2server.java^20^ft2server.main([Ljava/lang/String;)V^16 = invokevirtual < Application, Ljava/net/ServerSocket, accept()Ljava/net/Socket; > 14 @32 exception:15^ft2server.main([Ljava/lang/String;)V#29,ft2server.main([Ljava/lang/String;)V#36,^INVOKE,^false^false^Try-catch Fix;
+5^ft2server.java^37^ft2server.main([Ljava/lang/String;)V^74 = new <Application,Ljava/io/FileReader>@184^NULL^^false^false^Try-catch Fix;
+6^ft2server.java^41^ft2server.main([Ljava/lang/String;)V^76 = new <Application,Ljava/io/BufferedReader>@195^ft2server.main([Ljava/lang/String;)V#77,^INVOKE,^false^false^Try-catch Fix;
+7^nl/rug/peerbox/middleware/ReliableMulticast.java^51^nl.rug.peerbox.middleware.ReliableMulticast.createPeer(Ljava/lang/String;I)Lnl/rug/peerbox/middleware/Multicast;^6 = new <Application,Ljava/net/MulticastSocket>@5^NULL^FIELD,INVOKE,^false^true^Field escape;
+8^nl/rug/peerbox/logic/filesystem/Filelist.java^42^nl.rug.peerbox.logic.filesystem.Filelist.deserialize(Ljava/lang/String;Ljava/lang/String;)Lnl/rug/peerbox/logic/filesystem/Filelist;^5 = new <Application,Ljava/io/FileInputStream>@2^nl.rug.peerbox.logic.filesystem.Filelist.deserialize(Ljava/lang/String;Ljava/lang/String;)Lnl/rug/peerbox/logic/filesystem/Filelist;#20,nl.rug.peerbox.logic.filesystem.Filelist.deserialize(Ljava/lang/String;Ljava/lang/String;)Lnl/rug/peerbox/logic/filesystem/Filelist;#22,^INVOKE,^false^false^Try-catch Fix;
+9^nl/rug/peerbox/logic/filesystem/FileServer.java^42^nl.rug.peerbox.logic.filesystem.FileServer.run()V^44 = invokevirtual < Application, Ljava/net/ServerSocket, accept()Ljava/net/Socket; > 19 @99 exception:43^NULL^FIELD,INVOKE,^false^true^Field escape;
+10^nl/rug/peerbox/logic/filesystem/FileRequestTask.java^73^nl.rug.peerbox.logic.filesystem.FileRequestTask.run()V^77 = new <Application,Ljava/io/FileOutputStream>@185^nl.rug.peerbox.logic.filesystem.FileRequestTask.run()V#79,^INVOKE,^false^false^Try-catch Fix;
+11^nl/rug/peerbox/ui/LogView.java^61^nl.rug.peerbox.ui.LogView.<init>(Lorg/eclipse/swt/widgets/Composite;)V^41 = new <Application,Ljava/io/BufferedReader>@152^nl.rug.peerbox.ui.LogView.<init>(Lorg/eclipse/swt/widgets/Composite;)V#42,^INVOKE,^false^false^Try-catch Fix;
+12^nl/rug/peerbox/middleware/ReliableMulticast.java^43^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+13^nl/rug/peerbox/logic/filesystem/FileServer.java^79^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

@@ -1,0 +1,43 @@
+../../../../datasets/june2020_dataset/url78f6619d18_IntersectAustralia_rifcs_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionJ8/src/org/ands/rifcs/example/SampleRIFCSRead.java:28: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-559 $$ java.io.FileInputStream $$ possible exceptional exit due to rr.mapToDOM(new FileInputStream(args[0])) with exception type org.xml.sax.SAXException $$ ( 1192, 1220 ) $$ @MustCall method close may not have been invoked on temp-var-559 or any of its aliases.
+/* 44 */     rr.mapToDOM(new FileInputStream(args[0]));
+                         ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to rr.mapToDOM(new FileInputStream(args[0])) with exception type org.xml.sax.SAXException
+../../../../datasets/june2020_dataset/url78f6619d18_IntersectAustralia_rifcs_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionJ8/src/org/ands/rifcs/base/RIFCSWrapper.java:128: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1238 $$ java.io.InputStream $$ possible exceptional exit due to builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/registryObjects.xsd").openStream()) with exception type org.xml.sax.SAXException $$ ( 5276, 5366 ) $$ @MustCall method close may not have been invoked on temp-var-1238 or any of its aliases.
+/* 222 */     Document docRO = builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/registryObjects.xsd").openStream());
+                                                                                                                                     ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/registryObjects.xsd").openStream()) with exception type org.xml.sax.SAXException
+../../../../datasets/june2020_dataset/url78f6619d18_IntersectAustralia_rifcs_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionJ8/src/org/ands/rifcs/base/RIFCSWrapper.java:129: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1241 $$ java.io.InputStream $$ possible exceptional exit due to builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/activity.xsd").openStream()) with exception type org.xml.sax.SAXException $$ ( 5420, 5503 ) $$ @MustCall method close may not have been invoked on temp-var-1241 or any of its aliases.
+/* 223 */     Document docActivity = builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/activity.xsd").openStream());
+                                                                                                                                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/activity.xsd").openStream()) with exception type org.xml.sax.SAXException
+../../../../datasets/june2020_dataset/url78f6619d18_IntersectAustralia_rifcs_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionJ8/src/org/ands/rifcs/base/RIFCSWrapper.java:130: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1244 $$ java.io.InputStream $$ possible exceptional exit due to builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/collection.xsd").openStream()) with exception type org.xml.sax.SAXException $$ ( 5559, 5644 ) $$ @MustCall method close may not have been invoked on temp-var-1244 or any of its aliases.
+/* 224 */     Document docCollection = builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/collection.xsd").openStream());
+                                                                                                                                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/collection.xsd").openStream()) with exception type org.xml.sax.SAXException
+../../../../datasets/june2020_dataset/url78f6619d18_IntersectAustralia_rifcs_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionJ8/src/org/ands/rifcs/base/RIFCSWrapper.java:131: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1247 $$ java.io.InputStream $$ possible exceptional exit due to builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/party.xsd").openStream()) with exception type org.xml.sax.SAXException $$ ( 5695, 5775 ) $$ @MustCall method close may not have been invoked on temp-var-1247 or any of its aliases.
+/* 225 */     Document docParty = builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/party.xsd").openStream());
+                                                                                                                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/party.xsd").openStream()) with exception type org.xml.sax.SAXException
+../../../../datasets/june2020_dataset/url78f6619d18_IntersectAustralia_rifcs_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionJ8/src/org/ands/rifcs/base/RIFCSWrapper.java:132: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1250 $$ java.io.InputStream $$ possible exceptional exit due to builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/service.xsd").openStream()) with exception type org.xml.sax.SAXException $$ ( 5828, 5910 ) $$ @MustCall method close may not have been invoked on temp-var-1250 or any of its aliases.
+/* 226 */     Document docService = builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/service.xsd").openStream());
+                                                                                                                                  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/service.xsd").openStream()) with exception type org.xml.sax.SAXException
+../../../../datasets/june2020_dataset/url78f6619d18_IntersectAustralia_rifcs_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionJ8/src/org/ands/rifcs/base/RIFCSWrapper.java:133: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1253 $$ java.io.InputStream $$ possible exceptional exit due to builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/registryTypes.xsd").openStream()) with exception type org.xml.sax.SAXException $$ ( 5961, 6049 ) $$ @MustCall method close may not have been invoked on temp-var-1253 or any of its aliases.
+/* 227 */     Document docTypes = builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/registryTypes.xsd").openStream());
+                                                                                                                                      ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to builder.parse(new URL("http://services.ands.org.au/home/orca/schemata/registryTypes.xsd").openStream()) with exception type org.xml.sax.SAXException
+../../../../datasets/june2020_dataset/url78f6619d18_IntersectAustralia_rifcs_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionJ8/src/org/ands/rifcs/base/RIFCSWrapper.java:191: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1287 $$ java.io.InputStream $$ possible exceptional exit due to factory.newSchema(schemaFile) with exception type org.xml.sax.SAXException $$ ( 8493, 8515 ) $$ @MustCall method close may not have been invoked on temp-var-1287 or any of its aliases.
+/* 310 */     Source schemaFile = new StreamSource(theSchema.openStream());
+                                                                       ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to factory.newSchema(schemaFile) with exception type org.xml.sax.SAXException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+8 errors

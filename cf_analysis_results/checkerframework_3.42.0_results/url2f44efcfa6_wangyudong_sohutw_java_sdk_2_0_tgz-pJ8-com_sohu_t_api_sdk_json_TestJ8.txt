@@ -1,0 +1,68 @@
+../dataset/june2020_dataset/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/http/Response.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ method.getResponseBodyAsStream() $$ java.io.InputStream $$ regular method exit $$ ( 2676, 2708 ) $$ @MustCall method close may not have been invoked on method.getResponseBodyAsStream() or any of its aliases.
+    	this.is = method.getResponseBodyAsStream();
+    	                                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/http/Response.java:76: error: (required.method.not.called) $$ 4 $$ method close $$ con.getErrorStream() $$ java.io.InputStream $$ possible exceptional exit due to con.getInputStream() with exception type java.io.IOException $$ ( 2910, 2930 ) $$ @MustCall method close may not have been invoked on con.getErrorStream() or any of its aliases.
+        if(null == (is = con.getErrorStream())){
+                                           ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to con.getInputStream() with exception type java.io.IOException
+../dataset/june2020_dataset/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/http/Response.java:77: error: (required.method.not.called) $$ 4 $$ method close $$ con.getInputStream() $$ java.io.InputStream $$ regular method exit $$ ( 2951, 2971 ) $$ @MustCall method close may not have been invoked on con.getInputStream() or any of its aliases.
+            is = con.getInputStream();
+                                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/http/Response.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ stream $$ java.io.InputStream $$ possible exceptional exit due to throw new TBlogException(ioe.getMessage(), ioe); with exception type com.sohu.t.api.sdk.TBlogException $$ ( 4339, 4371 ) $$ @MustCall method close may not have been invoked on stream or any of its aliases.
+                InputStream stream = asStream();
+                            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to throw new TBlogException(ioe.getMessage(), ioe); with exception type com.sohu.t.api.sdk.TBlogException
+../dataset/june2020_dataset/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/json/JSONObject.java:1554: error: (required.method.not.called) $$ 4 $$ method close $$ ((JSONObject)v).write(writer) $$ java.io.Writer $$ regular method exit $$ ( 52135, 52164 ) $$ @MustCall method close may not have been invoked on ((JSONObject)v).write(writer) or any of its aliases.
+                    ((JSONObject)v).write(writer);
+                                         ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/json/JSONObject.java:1556: error: (required.method.not.called) $$ 4 $$ method close $$ ((JSONArray)v).write(writer) $$ java.io.Writer $$ regular method exit $$ ( 52239, 52267 ) $$ @MustCall method close may not have been invoked on ((JSONArray)v).write(writer) or any of its aliases.
+                    ((JSONArray)v).write(writer);
+                                        ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/json/JSONArray.java:920: error: (required.method.not.called) $$ 4 $$ method close $$ ((JSONObject)v).write(writer) $$ java.io.Writer $$ regular method exit $$ ( 29745, 29774 ) $$ @MustCall method close may not have been invoked on ((JSONObject)v).write(writer) or any of its aliases.
+                    ((JSONObject)v).write(writer);
+                                         ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/json/JSONArray.java:922: error: (required.method.not.called) $$ 4 $$ method close $$ ((JSONArray)v).write(writer) $$ java.io.Writer $$ regular method exit $$ ( 29849, 29877 ) $$ @MustCall method close may not have been invoked on ((JSONArray)v).write(writer) or any of its aliases.
+                    ((JSONArray)v).write(writer);
+                                        ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/Configuration.java:80: error: (required.method.not.called) $$ 4 $$ method close $$ Configuration.class.getResourceAsStream("/WEB-INF/" + sdkProps) $$ java.io.InputStream $$ regular method exit $$ ( 3754, 3817 ) $$ @MustCall method close may not have been invoked on Configuration.class.getResourceAsStream("/WEB-INF/" + sdkProps) or any of its aliases.
+                loadProperties(defaultProperty, Configuration.class.getResourceAsStream("/WEB-INF/" + sdkProps)) ||
+                                                                                       ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/Configuration.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ Configuration.class.getResourceAsStream("/" + sdkProps) $$ java.io.InputStream $$ regular method exit $$ ( 3870, 3925 ) $$ @MustCall method close may not have been invoked on Configuration.class.getResourceAsStream("/" + sdkProps) or any of its aliases.
+                loadProperties(defaultProperty, Configuration.class.getResourceAsStream("/" + sdkProps));
+                                                                                       ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/Configuration.java:88: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(file) $$ java.io.FileInputStream $$ possible exceptional exit due to props.load(new FileInputStream(file)) with exception type java.io.IOException $$ ( 4139, 4164 ) $$ @MustCall method close may not have been invoked on new FileInputStream(file) or any of its aliases.
+                props.load(new FileInputStream(file));
+                           ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to props.load(new FileInputStream(file)) with exception type java.io.IOException
+../dataset/june2020_dataset/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/json/Test.java:442: error: (required.method.not.called) $$ 4 $$ method close $$ j.write(new StringWriter()) $$ java.io.Writer $$ possible exceptional exit due to XML.toJSONObject(s) with exception type com.sohu.t.api.sdk.json.JSONException $$ ( 22437, 22464 ) $$ @MustCall method close may not have been invoked on j.write(new StringWriter()) or any of its aliases.
+            System.out.println(j.write(new StringWriter()));
+                                      ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: possible exceptional exit due to XML.toJSONObject(s) with exception type com.sohu.t.api.sdk.json.JSONException
+../dataset/june2020_dataset/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/https/MySSLSocketFactory.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.Socket $$ possible exceptional exit due to socket.connect(remoteaddr, timeout) with exception type java.io.IOException $$ ( 3012, 3057 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+			Socket socket = socketfactory.createSocket();
+			       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to socket.connect(remoteaddr, timeout) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+13 errors

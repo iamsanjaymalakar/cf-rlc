@@ -1,0 +1,15 @@
+21340
+78
+
+SOURCE LEVEL FIXES
+
+4] ../../../dataset/june2020_dataset/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/gui/quantum/Item.java; Line number 74
+vim +74 ../../../dataset/june2020_dataset/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/gui/quantum/Item.java
+
++++ Add following code below line: 77 (martin/gui/quantum/Item.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 74
+
+--------------------------------------------

@@ -1,0 +1,198 @@
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/Test.java:275: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(outFile) $$ java.io.FileWriter $$ possible exceptional exit due to out.write(output) with exception type java.io.IOException $$ ( 9617, 9640 ) $$ @MustCall method close may not have been invoked on new FileWriter(outFile) or any of its aliases.
+			BufferedWriter  out = new BufferedWriter(new FileWriter(outFile));
+			                                         ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(output) with exception type java.io.IOException
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/Ticker.java:272: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter("[\n\r]+") $$ java.util.Scanner $$ regular method exit $$ ( 7188, 7213 ) $$ @MustCall method close may not have been invoked on s.useDelimiter("[\n\r]+") or any of its aliases.
+			s.useDelimiter("[\n\r]+");
+			              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/Ticker.java:315: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter("[\n\r]+") $$ java.util.Scanner $$ regular method exit $$ ( 8295, 8320 ) $$ @MustCall method close may not have been invoked on s.useDelimiter("[\n\r]+") or any of its aliases.
+		s.useDelimiter("[\n\r]+");
+		              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTester.java:141: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter("TestResults/" + testName + "/" + filename) $$ java.io.FileWriter $$ possible exceptional exit due to out.write(result) with exception type java.io.IOException $$ ( 4501, 4571 ) $$ @MustCall method close may not have been invoked on new FileWriter("TestResults/" + testName + "/" + filename) or any of its aliases.
+						        BufferedWriter out = new BufferedWriter(new 
+						                                                ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(result) with exception type java.io.IOException
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTestSummarizer.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(file) $$ java.io.FileReader $$ possible exceptional exit due to in.readLine() with exception type java.io.IOException $$ ( 1225, 1245 ) $$ @MustCall method close may not have been invoked on new FileReader(file) or any of its aliases.
+				BufferedReader in = new BufferedReader(new FileReader(file));
+				                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to in.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTestSummarizer.java:101: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(outFile) $$ java.io.FileWriter $$ possible exceptional exit due to out.write(byYear.output("Year", true)) with exception type java.io.IOException $$ ( 3076, 3099 ) $$ @MustCall method close may not have been invoked on new FileWriter(outFile) or any of its aliases.
+			BufferedWriter out = new BufferedWriter(new FileWriter(outFile));
+			                                        ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(byYear.output("Year", true)) with exception type java.io.IOException
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTestSummarizer.java:111: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(outFile) $$ java.io.FileWriter $$ possible exceptional exit due to out.write(byTrainingTime.output("Training Time (years)", true)) with exception type java.io.IOException $$ ( 3424, 3447 ) $$ @MustCall method close may not have been invoked on new FileWriter(outFile) or any of its aliases.
+			out = new BufferedWriter(new FileWriter(outFile));
+			                         ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(byTrainingTime.output("Training Time (years)", true)) with exception type java.io.IOException
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTestSummarizer.java:121: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(outFile) $$ java.io.FileWriter $$ possible exceptional exit due to out.write(byLookback.output("Lookback (days)", true)) with exception type java.io.IOException $$ ( 3826, 3849 ) $$ @MustCall method close may not have been invoked on new FileWriter(outFile) or any of its aliases.
+			out = new BufferedWriter(new FileWriter(outFile));
+			                         ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(byLookback.output("Lookback (days)", true)) with exception type java.io.IOException
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTestSummarizer.java:131: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(outFile) $$ java.io.FileWriter $$ possible exceptional exit due to out.write(byForecast.output("Forecast (days)", true)) with exception type java.io.IOException $$ ( 4208, 4231 ) $$ @MustCall method close may not have been invoked on new FileWriter(outFile) or any of its aliases.
+			out = new BufferedWriter(new FileWriter(outFile));
+			                         ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(byForecast.output("Forecast (days)", true)) with exception type java.io.IOException
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/GoogleFinanceAutoNASDAQ.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter("[\n\r]+") $$ java.util.Scanner $$ regular method exit $$ ( 994, 1019 ) $$ @MustCall method close may not have been invoked on s.useDelimiter("[\n\r]+") or any of its aliases.
+			s.useDelimiter("[\n\r]+");
+			              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/index/TickerIndex.java:64: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ regular method exit $$ ( 1602, 1637 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+			fis = new FileInputStream(fileName);
+			    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/CSVReader.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter(",") $$ java.util.Scanner $$ regular method exit $$ ( 1688, 1707 ) $$ @MustCall method close may not have been invoked on s.useDelimiter(",") or any of its aliases.
+			s.useDelimiter(",");
+			              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/CSVReader.java:64: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter("\\s*\n") $$ java.util.Scanner $$ regular method exit $$ ( 1764, 1788 ) $$ @MustCall method close may not have been invoked on s.useDelimiter("\\s*\n") or any of its aliases.
+			s.useDelimiter("\\s*\n");
+			              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/CSVReader.java:66: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter(",") $$ java.util.Scanner $$ regular method exit $$ ( 1806, 1825 ) $$ @MustCall method close may not have been invoked on s.useDelimiter(",") or any of its aliases.
+			s.useDelimiter(",");
+			              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/CSVReader.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter(",") $$ java.util.Scanner $$ regular method exit $$ ( 1879, 1898 ) $$ @MustCall method close may not have been invoked on s.useDelimiter(",") or any of its aliases.
+					s.useDelimiter(",");
+					              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/CSVReader.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter("\n") $$ java.util.Scanner $$ possible exceptional exit due to Double.parseDouble(vol.substring(1)) with exception type java.lang.NumberFormatException $$ ( 2147, 2167 ) $$ @MustCall method close may not have been invoked on s.useDelimiter("\n") or any of its aliases.
+					s.useDelimiter("\n");
+					              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: possible exceptional exit due to Double.parseDouble(vol.substring(1)) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/CSVReader.java:148: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter(",") $$ java.util.Scanner $$ regular method exit $$ ( 3865, 3884 ) $$ @MustCall method close may not have been invoked on s.useDelimiter(",") or any of its aliases.
+			s.useDelimiter(",");
+			              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/CSVReader.java:153: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter("\\s*\n") $$ java.util.Scanner $$ regular method exit $$ ( 3941, 3965 ) $$ @MustCall method close may not have been invoked on s.useDelimiter("\\s*\n") or any of its aliases.
+			s.useDelimiter("\\s*\n");
+			              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/CSVReader.java:155: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter(",") $$ java.util.Scanner $$ regular method exit $$ ( 3983, 4002 ) $$ @MustCall method close may not have been invoked on s.useDelimiter(",") or any of its aliases.
+			s.useDelimiter(",");
+			              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/CSVReader.java:158: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter(",") $$ java.util.Scanner $$ regular method exit $$ ( 4056, 4075 ) $$ @MustCall method close may not have been invoked on s.useDelimiter(",") or any of its aliases.
+					s.useDelimiter(",");
+					              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/CSVReader.java:170: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter("\n") $$ java.util.Scanner $$ possible exceptional exit due to Double.parseDouble(vol.substring(1)) with exception type java.lang.NumberFormatException $$ ( 4325, 4345 ) $$ @MustCall method close may not have been invoked on s.useDelimiter("\n") or any of its aliases.
+					s.useDelimiter("\n");
+					              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: possible exceptional exit due to Double.parseDouble(vol.substring(1)) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ReutersNews.java:76: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter("[\n\r]+") $$ java.util.Scanner $$ regular method exit $$ ( 2042, 2067 ) $$ @MustCall method close may not have been invoked on s.useDelimiter("[\n\r]+") or any of its aliases.
+			s.useDelimiter("[\n\r]+");
+			              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ReutersNews.java:106: error: (required.method.not.called) $$ 4 $$ method close $$ reutersurl.openStream() $$ java.io.InputStream $$ possible exceptional exit due to new URL(extractor2.substring(extractor2.indexOf('\"') + 1, extractor2.indexOf('>') - 1) + "?sp=true") with exception type java.net.MalformedURLException $$ ( 3007, 3030 ) $$ @MustCall method close may not have been invoked on reutersurl.openStream() or any of its aliases.
+				BufferedReader reutersreader = new BufferedReader(new InputStreamReader(reutersurl.openStream()));
+				                                                                                             ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new URL(extractor2.substring(extractor2.indexOf('\"') + 1, extractor2.indexOf('>') - 1) + "?sp=true") with exception type java.net.MalformedURLException
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ReutersNews.java:109: error: (required.method.not.called) $$ 4 $$ method close $$ s3.useDelimiter("[\n\r]+") $$ java.util.Scanner $$ regular method exit $$ ( 3143, 3169 ) $$ @MustCall method close may not have been invoked on s3.useDelimiter("[\n\r]+") or any of its aliases.
+				s3.useDelimiter("[\n\r]+");
+				               ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ReutersNews.java:161: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter("[\n\r]+") $$ java.util.Scanner $$ regular method exit $$ ( 4831, 4856 ) $$ @MustCall method close may not have been invoked on s.useDelimiter("[\n\r]+") or any of its aliases.
+		s.useDelimiter("[\n\r]+");
+		              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/reuters/URLExploreJob.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter("[\n\r]+") $$ java.util.Scanner $$ regular method exit $$ ( 1077, 1102 ) $$ @MustCall method close may not have been invoked on s.useDelimiter("[\n\r]+") or any of its aliases.
+		s.useDelimiter("[\n\r]+");
+		              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/proquest/URLExploreJob.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter("[\n\r]+") $$ java.util.Scanner $$ regular method exit $$ ( 1295, 1320 ) $$ @MustCall method close may not have been invoked on s.useDelimiter("[\n\r]+") or any of its aliases.
+		s.useDelimiter("[\n\r]+");
+		              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java:100: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter("[\n\r]+") $$ java.util.Scanner $$ regular method exit $$ ( 2829, 2854 ) $$ @MustCall method close may not have been invoked on s.useDelimiter("[\n\r]+") or any of its aliases.
+			s.useDelimiter("[\n\r]+");
+			              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java:163: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter("[\n\r]+") $$ java.util.Scanner $$ regular method exit $$ ( 5840, 5865 ) $$ @MustCall method close may not have been invoked on s.useDelimiter("[\n\r]+") or any of its aliases.
+			s.useDelimiter("[\n\r]+");
+			              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java:211: error: (required.method.not.called) $$ 4 $$ method close $$ proquesturl.openStream() $$ java.io.InputStream $$ possible exceptional exit due to Integer.valueOf(resex) with exception type java.lang.NumberFormatException $$ ( 7211, 7235 ) $$ @MustCall method close may not have been invoked on proquesturl.openStream() or any of its aliases.
+				BufferedReader proquestsearchreader = new BufferedReader(new InputStreamReader(proquesturl.openStream()));
+				                                                                                                     ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to Integer.valueOf(resex) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java:214: error: (required.method.not.called) $$ 4 $$ method close $$ s3.useDelimiter("[\n\r]+") $$ java.util.Scanner $$ possible exceptional exit due to proquestsearchreader.close() with exception type java.io.IOException $$ ( 7355, 7381 ) $$ @MustCall method close may not have been invoked on s3.useDelimiter("[\n\r]+") or any of its aliases.
+				s3.useDelimiter("[\n\r]+");
+				               ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: possible exceptional exit due to proquestsearchreader.close() with exception type java.io.IOException
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ReutersGoogleFinanceNYSE.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter("[\n\r]+") $$ java.util.Scanner $$ regular method exit $$ ( 1519, 1544 ) $$ @MustCall method close may not have been invoked on s.useDelimiter("[\n\r]+") or any of its aliases.
+			s.useDelimiter("[\n\r]+");
+			              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ReutersGoogleFinanceNYSE.java:102: error: (required.method.not.called) $$ 4 $$ method close $$ reutersurl.openStream() $$ java.io.InputStream $$ possible exceptional exit due to new URL(extractor2.substring(extractor2.indexOf('\"') + 1, extractor2.indexOf('>') - 1) + "?sp=true") with exception type java.net.MalformedURLException $$ ( 3861, 3884 ) $$ @MustCall method close may not have been invoked on reutersurl.openStream() or any of its aliases.
+				BufferedReader reutersreader = new BufferedReader(new InputStreamReader(reutersurl.openStream()));
+				                                                                                             ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new URL(extractor2.substring(extractor2.indexOf('\"') + 1, extractor2.indexOf('>') - 1) + "?sp=true") with exception type java.net.MalformedURLException
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ReutersGoogleFinanceNYSE.java:105: error: (required.method.not.called) $$ 4 $$ method close $$ s3.useDelimiter("[\n\r]+") $$ java.util.Scanner $$ regular method exit $$ ( 3997, 4023 ) $$ @MustCall method close may not have been invoked on s3.useDelimiter("[\n\r]+") or any of its aliases.
+				s3.useDelimiter("[\n\r]+");
+				               ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/GoogleFinanceAutoNYSE.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter("[\n\r]+") $$ java.util.Scanner $$ regular method exit $$ ( 988, 1013 ) $$ @MustCall method close may not have been invoked on s.useDelimiter("[\n\r]+") or any of its aliases.
+			s.useDelimiter("[\n\r]+");
+			              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/FileManager.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ input $$ java.io.BufferedReader $$ regular method exit $$ ( 744, 783 ) $$ @MustCall method close may not have been invoked on input or any of its aliases.
+			BufferedReader input = getReader(page);
+			               ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/FileManager.java:61: error: (required.method.not.called) $$ 4 $$ method close $$ input $$ java.io.BufferedReader $$ regular method exit $$ ( 1341, 1380 ) $$ @MustCall method close may not have been invoked on input or any of its aliases.
+			BufferedReader input = getReader(page);
+			               ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/utility/DefaultSerializer.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ regular method exit $$ ( 455, 486 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+			fis = new FileInputStream(file);
+			    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/utility/DefaultSerializer.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ regular method exit $$ ( 832, 864 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+			fos = new FileOutputStream(file);
+			    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+39 errors

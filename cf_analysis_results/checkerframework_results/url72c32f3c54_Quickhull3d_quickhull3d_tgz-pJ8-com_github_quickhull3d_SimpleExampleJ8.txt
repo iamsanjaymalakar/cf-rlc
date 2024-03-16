@@ -1,0 +1,13 @@
+../../../../datasets/june2020_dataset/url72c32f3c54_Quickhull3d_quickhull3d_tgz-pJ8-com_github_quickhull3d_SimpleExampleJ8/src/com/github/quickhull3d/QuickHull3D.java:354: error: (required.method.not.called) $$ 4 $$ method close $$ es $$ java.io.InputStream $$ possible exceptional exit due to es.available() with exception type java.io.IOException $$ ( 13142, 13181 ) $$ @MustCall method close may not have been invoked on es or any of its aliases.
+        InputStream es = proc.getErrorStream();
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to es.available() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url72c32f3c54_Quickhull3d_quickhull3d_tgz-pJ8-com_github_quickhull3d_SimpleExampleJ8/src/com/github/quickhull3d/QuickHull3D.java:374: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-266 $$ java.io.InputStream $$ possible exceptional exit due to printQhullErrors(proc) with exception type java.io.IOException $$ ( 13919, 13940 ) $$ @MustCall method close may not have been invoked on temp-var-266 or any of its aliases.
+            StreamTokenizer stok = new StreamTokenizer(new InputStreamReader(proc.getInputStream(), Charset.defaultCharset()));
+                                                                                                ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to printQhullErrors(proc) with exception type java.io.IOException
+Note: ../../../../datasets/june2020_dataset/url72c32f3c54_Quickhull3d_quickhull3d_tgz-pJ8-com_github_quickhull3d_SimpleExampleJ8/src/com/github/quickhull3d/QuickHull3D.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors

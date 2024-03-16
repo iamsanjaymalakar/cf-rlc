@@ -1,0 +1,13 @@
+../dataset/june2020_dataset/urlfaa9045c2e_Azmisov_racko_ai_tgz-pJ8-client_TestingJ8/src/NeuralNetworks/Network.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ s.useDelimiter(splitter) $$ java.util.Scanner $$ possible exceptional exit due to x.close() with exception type java.lang.Exception $$ ( 1032, 1056 ) $$ @MustCall method close may not have been invoked on s.useDelimiter(splitter) or any of its aliases.
+			s.useDelimiter(splitter);
+			              ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: possible exceptional exit due to x.close() with exception type java.lang.Exception
+../dataset/june2020_dataset/urlfaa9045c2e_Azmisov_racko_ai_tgz-pJ8-client_TestingJ8/src/models/ModelBaltar.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileReader $$ possible exceptional exit due to buff.readLine() with exception type java.io.IOException $$ ( 1763, 1804 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			FileReader in = new FileReader(filename);
+			           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to buff.readLine() with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors

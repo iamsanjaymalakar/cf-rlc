@@ -1,0 +1,3 @@
+warning: (annotation.not.completed) $$ 2 $$ com.google.common.base $$ @ParametersAreNonnullByDefault $$  $$ Element com.google.common.base contains annotation @ParametersAreNonnullByDefault which can't be found. Make sure your classpath is set correctly.
+warning: (annotation.not.completed) $$ 2 $$ com.google.common.base.Function.apply(F) $$ @Nullable $$  $$ Element com.google.common.base.Function.apply(F) contains annotation @Nullable which can't be found. Make sure your classpath is set correctly.
+2 warnings

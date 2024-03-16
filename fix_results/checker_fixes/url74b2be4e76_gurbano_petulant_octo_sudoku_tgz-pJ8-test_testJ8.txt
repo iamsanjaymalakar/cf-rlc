@@ -1,0 +1,19 @@
+15224
+138
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url74b2be4e76_gurbano_petulant_octo_sudoku_tgz-pJ8-test_testJ8/src/ocr/MainEntry.java; Line number 399
+vim +399 ../../../dataset/june2020_dataset/url74b2be4e76_gurbano_petulant_octo_sudoku_tgz-pJ8-test_testJ8/src/ocr/MainEntry.java
+
++++ Add following code below line: 431 (ocr/MainEntry.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 399
+
++++ Delete Line number 420 (ocr/MainEntry.java)
+
++++ Delete Line number 421 (ocr/MainEntry.java)
+
+--------------------------------------------

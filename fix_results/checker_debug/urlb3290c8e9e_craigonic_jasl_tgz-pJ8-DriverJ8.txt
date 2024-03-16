@@ -1,0 +1,3 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^jasl/utilities/Serialization.java^70^jasl.utilities.Serialization.serializeToFile(Ljava/lang/Object;Ljava/lang/String;)V^9 = new <Application,Ljava/io/ObjectOutputStream>@53^jasl.utilities.Serialization.serializeToFile(Ljava/lang/Object;Ljava/lang/String;)V#10,^INVOKE,^false^false^Try-catch Fix;
+1^jasl/utilities/Serialization.java^123^jasl.utilities.Serialization.deserializeFromFile(Ljava/lang/String;)Ljava/lang/Object;^8 = new <Application,Ljava/io/ObjectInputStream>@50^jasl.utilities.Serialization.deserializeFromFile(Ljava/lang/String;)Ljava/lang/Object;#9,^INVOKE,^false^false^Try-catch Fix;

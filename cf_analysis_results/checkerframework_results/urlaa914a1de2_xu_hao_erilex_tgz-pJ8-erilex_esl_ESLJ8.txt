@@ -1,0 +1,234 @@
+../../../../datasets/june2020_dataset/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/tree/DeepTreeTransformer.java:117: error: (assignment) $$ 2 $$ S extends @MustCallUnknown Object $$ S extends @MustCall Object $$ ( 4692, 4716 ) $$ incompatible types in assignment.
+            state1 = transform((D) s, state1);
+                              ^
+  found   : S extends @MustCallUnknown Object
+  required: S extends @MustCall Object
+../../../../datasets/june2020_dataset/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/data/generic/Triple.java:59: error: (return) $$ 2 $$ @MustCallUnknown Object @MustCall [] $$ @MustCall Object @MustCall [] $$ ( 1952, 1986 ) $$ incompatible types in return.
+        return new Object[]{first, second, third};
+               ^
+  type of expression: @MustCallUnknown Object @MustCall []
+  method return type: @MustCall Object @MustCall []
+../../../../datasets/june2020_dataset/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/data/FileStream.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-368 $$ java.io.RandomAccessFile $$ regular method exit $$ ( 1287, 1318 ) $$ @MustCall method close may not have been invoked on temp-var-368 or any of its aliases.
+        this.reader = new RandomAccessFile(file, "r");
+                      ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/codegen/Class.java:109: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-588 $$ java.io.FileWriter $$ possible exceptional exit due to codeGen(w) with exception type java.io.IOException $$ ( 3205, 3225 ) $$ @MustCall method close may not have been invoked on temp-var-588 or any of its aliases.
+        Writer w = new BufferedWriter(new FileWriter(file));
+                                      ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to codeGen(w) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/codegen/embedded/TransformerLanguageGenerator.java:516: error: (return) $$ 2 $$ @MustCallUnknown Object $$ @MustCall Object $$ ( 24207, 24239 ) $$ incompatible types in return.
+            return exprVal == null ? expr : exprVal;
+                                   ^
+  type of expression: @MustCallUnknown Object
+  method return type: @MustCall Object
+../../../../datasets/june2020_dataset/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/codegen/embedded/TransformerLanguageGeneratorStringMode.java:135: error: (type.argument) $$ 4 $$ C extends @MustCall GenericTreeTransformer</*INFERENCE FAILED for:*/ ? extends @MustCall Tree</*INFERENCE FAILED for:*/ ? extends @MustCallUnknown Object>, /*INFERENCE FAILED for:*/ ? extends @MustCallUnknown Object> $$ addTransformer $$ capture#422 extends @MustCallUnknown Object $$ @MustCall GenericTreeTransformer</*INFERENCE FAILED for:*/ ? extends @MustCall Tree</*INFERENCE FAILED for:*/ ? extends @MustCallUnknown Object>, /*INFERENCE FAILED for:*/ ? extends @MustCallUnknown Object> $$ ( 5444, 5470 ) $$ incompatible type argument for type parameter C extends @MustCall GenericTreeTransformer</*INFERENCE FAILED for:*/ ? extends @MustCall Tree</*INFERENCE FAILED for:*/ ? extends @MustCallUnknown Object>, /*INFERENCE FAILED for:*/ ? extends @MustCallUnknown Object> of addTransformer.
+                state.addTransformer(a, c);
+                                    ^
+  found   : capture#422 extends @MustCallUnknown Object
+  required: @MustCall GenericTreeTransformer</*INFERENCE FAILED for:*/ ? extends @MustCall Tree</*INFERENCE FAILED for:*/ ? extends @MustCallUnknown Object>, /*INFERENCE FAILED for:*/ ? extends @MustCallUnknown Object>
+error: SourceChecker.typeProcess: unexpected Throwable (NullPointerException) while processing ../../../../datasets/june2020_dataset/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/esl/ESL.java
+  ; The Checker Framework crashed.  Please report the crash.
+  Compilation unit: ../../../../datasets/june2020_dataset/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/esl/ESL.java
+  Last visited tree at line 348 column 29:
+                              ((String[]) prod2[2])[i] = pnNew;
+  Exception: java.lang.NullPointerException; java.lang.NullPointerException
+  	at org.checkerframework.checker.mustcall.MustCallVisitor.commonAssignmentCheck(MustCallVisitor.java:153)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitAssignment(BaseTypeVisitor.java:1568)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitAssignment(BaseTypeVisitor.java:180)
+  	at com.sun.tools.javac.tree.JCTree$JCAssign.accept(JCTree.java:1878)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)
+  	at org.checkerframework.framework.source.SourceVisitor.scan(SourceVisitor.java:88)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:349)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:180)
+  	at com.sun.source.util.TreeScanner.visitExpressionStatement(TreeScanner.java:433)
+  	at com.sun.tools.javac.tree.JCTree$JCExpressionStatement.accept(JCTree.java:1454)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)
+  	at org.checkerframework.framework.source.SourceVisitor.scan(SourceVisitor.java:88)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:349)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:180)
+  	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)
+  	at com.sun.source.util.TreeScanner.visitBlock(TreeScanner.java:248)
+  	at com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:1026)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)
+  	at org.checkerframework.framework.source.SourceVisitor.scan(SourceVisitor.java:88)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:349)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:180)
+  	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)
+  	at com.sun.source.util.TreeScanner.visitIf(TreeScanner.java:419)
+  	at com.sun.tools.javac.tree.JCTree$JCIf.accept(JCTree.java:1427)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)
+  	at org.checkerframework.framework.source.SourceVisitor.scan(SourceVisitor.java:88)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:349)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:180)
+  	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)
+  	at com.sun.source.util.TreeScanner.visitBlock(TreeScanner.java:248)
+  	at com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:1026)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)
+  	at org.checkerframework.framework.source.SourceVisitor.scan(SourceVisitor.java:88)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:349)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:180)
+  	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)
+  	at com.sun.source.util.TreeScanner.visitForLoop(TreeScanner.java:291)
+  	at com.sun.tools.javac.tree.JCTree$JCForLoop.accept(JCTree.java:1132)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)
+  	at org.checkerframework.framework.source.SourceVisitor.scan(SourceVisitor.java:88)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:349)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:180)
+  	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)
+  	at com.sun.source.util.TreeScanner.visitBlock(TreeScanner.java:248)
+  	at com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:1026)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)
+  	at org.checkerframework.framework.source.SourceVisitor.scan(SourceVisitor.java:88)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:349)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:180)
+  	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)
+  	at com.sun.source.util.TreeScanner.visitEnhancedForLoop(TreeScanner.java:306)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitEnhancedForLoop(BaseTypeVisitor.java:1586)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitEnhancedForLoop(BaseTypeVisitor.java:180)
+  	at com.sun.tools.javac.tree.JCTree$JCEnhancedForLoop.accept(JCTree.java:1166)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)
+  	at org.checkerframework.framework.source.SourceVisitor.scan(SourceVisitor.java:88)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:349)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:180)
+  	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)
+  	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)
+  	at com.sun.source.util.TreeScanner.visitBlock(TreeScanner.java:248)
+  	at com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:1026)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)
+  	at org.checkerframework.framework.source.SourceVisitor.scan(SourceVisitor.java:88)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:349)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:180)
+  	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)
+  	at com.sun.source.util.TreeScanner.visitMethod(TreeScanner.java:206)
+  	at org.checkerframework.framework.source.SourceVisitor.visitMethod(SourceVisitor.java:106)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitMethod(BaseTypeVisitor.java:955)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitMethod(BaseTypeVisitor.java:180)
+  	at com.sun.tools.javac.tree.JCTree$JCMethodDecl.accept(JCTree.java:898)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)
+  	at org.checkerframework.framework.source.SourceVisitor.scan(SourceVisitor.java:88)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:349)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:180)
+  	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)
+  	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)
+  	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:113)
+  	at com.sun.source.util.TreeScanner.visitClass(TreeScanner.java:187)
+  	at org.checkerframework.framework.source.SourceVisitor.visitClass(SourceVisitor.java:94)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.processClassTree(BaseTypeVisitor.java:539)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:485)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:180)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)
+  	at org.checkerframework.framework.source.SourceVisitor.scan(SourceVisitor.java:88)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:349)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitNewClass(BaseTypeVisitor.java:1950)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitNewClass(BaseTypeVisitor.java:180)
+  	at com.sun.tools.javac.tree.JCTree$JCNewClass.accept(JCTree.java:1705)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)
+  	at org.checkerframework.framework.source.SourceVisitor.scan(SourceVisitor.java:88)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:349)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.checkArguments(BaseTypeVisitor.java:3266)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitMethodInvocation(BaseTypeVisitor.java:1644)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitMethodInvocation(BaseTypeVisitor.java:180)
+  	at com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1644)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)
+  	at org.checkerframework.framework.source.SourceVisitor.scan(SourceVisitor.java:88)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:349)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:180)
+  	at com.sun.source.util.TreeScanner.visitExpressionStatement(TreeScanner.java:433)
+  	at com.sun.tools.javac.tree.JCTree$JCExpressionStatement.accept(JCTree.java:1454)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)
+  	at org.checkerframework.framework.source.SourceVisitor.scan(SourceVisitor.java:88)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:349)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:180)
+  	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)
+  	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)
+  	at com.sun.source.util.TreeScanner.visitBlock(TreeScanner.java:248)
+  	at com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:1026)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)
+  	at org.checkerframework.framework.source.SourceVisitor.scan(SourceVisitor.java:88)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:349)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:180)
+  	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)
+  	at com.sun.source.util.TreeScanner.visitMethod(TreeScanner.java:206)
+  	at org.checkerframework.framework.source.SourceVisitor.visitMethod(SourceVisitor.java:106)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitMethod(BaseTypeVisitor.java:955)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitMethod(BaseTypeVisitor.java:180)
+  	at com.sun.tools.javac.tree.JCTree$JCMethodDecl.accept(JCTree.java:898)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)
+  	at org.checkerframework.framework.source.SourceVisitor.scan(SourceVisitor.java:88)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:349)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.scan(BaseTypeVisitor.java:180)
+  	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)
+  	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)
+  	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:113)
+  	at com.sun.source.util.TreeScanner.visitClass(TreeScanner.java:187)
+  	at org.checkerframework.framework.source.SourceVisitor.visitClass(SourceVisitor.java:94)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.processClassTree(BaseTypeVisitor.java:539)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:485)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:180)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:82)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:987)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:542)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:535)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+error: SourceChecker.typeProcess: unexpected Throwable (NullPointerException) while processing ../../../../datasets/june2020_dataset/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/esl/ESL.java
+  ; The Checker Framework crashed.  Please report the crash.
+  Compilation unit: ../../../../datasets/june2020_dataset/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/esl/ESL.java
+  Last visited tree at line 48 column 1:
+  public class ESL extends LanguageBuilder<SupportCodeGenerator> {
+  Exception: java.lang.NullPointerException; java.lang.NullPointerException
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.updateObligationsForAssignment(MustCallConsistencyAnalyzer.java:1016)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.analyze(MustCallConsistencyAnalyzer.java:493)
+  	at org.checkerframework.checker.resourceleak.ResourceLeakAnnotatedTypeFactory.postAnalyze(ResourceLeakAnnotatedTypeFactory.java:119)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.analyze(GenericAnnotatedTypeFactory.java:1559)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1394)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1828)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:414)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:475)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:180)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:82)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:987)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:542)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+../../../../datasets/june2020_dataset/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/tree/TreeTransformerAdapter.java:40: error: (assignment) $$ 2 $$ S extends @MustCallUnknown Object $$ S extends @MustCall Object $$ ( 1158, 1186 ) $$ incompatible types in assignment.
+        state = transformBefore(node, state);
+                               ^
+  found   : S extends @MustCallUnknown Object
+  required: S extends @MustCall Object
+../../../../datasets/june2020_dataset/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/tree/TreeTransformerAdapter.java:42: error: (assignment) $$ 2 $$ S extends @MustCallUnknown Object $$ S extends @MustCall Object $$ ( 1261, 1289 ) $$ incompatible types in assignment.
+            state = subtreeTransformer(s, state);
+                                      ^
+  found   : S extends @MustCallUnknown Object
+  required: S extends @MustCall Object
+../../../../datasets/june2020_dataset/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/tree/TreeTransformerAdapter.java:44: error: (assignment) $$ 2 $$ S extends @MustCallUnknown Object $$ S extends @MustCall Object $$ ( 1317, 1344 ) $$ incompatible types in assignment.
+        state = transformAfter(node, state);
+                              ^
+  found   : S extends @MustCallUnknown Object
+  required: S extends @MustCall Object
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+11 errors

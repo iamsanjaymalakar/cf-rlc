@@ -1,0 +1,93 @@
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/KadServer.java:74: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-53 $$ java.net.DatagramSocket $$ regular method exit $$ ( 2242, 2269 ) $$ @MustCall method close may not have been invoked on temp-var-53 or any of its aliases.
+        this.socket = new DatagramSocket(udpPort);
+                      ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:203: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-133 $$ java.io.FileInputStream $$ possible exceptional exit due to new JsonSerializer<JKademliaNode>().read(din) with exception type java.io.IOException $$ ( 6941, 7034 ) $$ @MustCall method close may not have been invoked on temp-var-133 or any of its aliases.
+        din = new DataInputStream(new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "kad.kns"));
+                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new JsonSerializer<JKademliaNode>().read(din) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:209: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-138 $$ java.io.FileInputStream $$ possible exceptional exit due to new JsonRoutingTableSerializer(iconfig).read(din) with exception type java.io.IOException $$ ( 7215, 7317 ) $$ @MustCall method close may not have been invoked on temp-var-138 or any of its aliases.
+        din = new DataInputStream(new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "routingtable.kns"));
+                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new JsonRoutingTableSerializer(iconfig).read(din) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:215: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-143 $$ java.io.FileInputStream $$ possible exceptional exit due to new JsonSerializer<Node>().read(din) with exception type java.io.IOException $$ ( 7507, 7601 ) $$ @MustCall method close may not have been invoked on temp-var-143 or any of its aliases.
+        din = new DataInputStream(new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "node.kns"));
+                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new JsonSerializer<Node>().read(din) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:221: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-148 $$ java.io.FileInputStream $$ possible exceptional exit due to new JsonDHTSerializer().read(din) with exception type java.io.IOException $$ ( 7755, 7848 ) $$ @MustCall method close may not have been invoked on temp-var-148 or any of its aliases.
+        din = new DataInputStream(new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "dht.kns"));
+                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new JsonDHTSerializer().read(din) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:344: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-172 $$ java.io.FileOutputStream $$ possible exceptional exit due to new JsonSerializer<JKademliaNode>().write(this, dout) with exception type java.io.IOException $$ ( 11061, 11164 ) $$ @MustCall method close may not have been invoked on temp-var-172 or any of its aliases.
+        dout = new DataOutputStream(new FileOutputStream(getStateStorageFolderName(this.ownerId, this.config) + File.separator + "kad.kns"));
+                                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new JsonSerializer<JKademliaNode>().write(this, dout) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:350: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-177 $$ java.io.FileOutputStream $$ possible exceptional exit due to new JsonSerializer<Node>().write(this.localNode, dout) with exception type java.io.IOException $$ ( 11331, 11435 ) $$ @MustCall method close may not have been invoked on temp-var-177 or any of its aliases.
+        dout = new DataOutputStream(new FileOutputStream(getStateStorageFolderName(this.ownerId, this.config) + File.separator + "node.kns"));
+                                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new JsonSerializer<Node>().write(this.localNode, dout) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:358: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-182 $$ java.io.FileOutputStream $$ possible exceptional exit due to new JsonRoutingTableSerializer(this.config).write(this.getRoutingTable(), dout) with exception type java.io.IOException $$ ( 11847, 11959 ) $$ @MustCall method close may not have been invoked on temp-var-182 or any of its aliases.
+        dout = new DataOutputStream(new FileOutputStream(getStateStorageFolderName(this.ownerId, this.config) + File.separator + "routingtable.kns"));
+                                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new JsonRoutingTableSerializer(this.config).write(this.getRoutingTable(), dout) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:364: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-188 $$ java.io.FileOutputStream $$ regular method exit $$ ( 12145, 12248 ) $$ @MustCall method close may not have been invoked on temp-var-188 or any of its aliases.
+        dout = new DataOutputStream(new FileOutputStream(getStateStorageFolderName(this.ownerId, this.config) + File.separator + "dht.kns"));
+                                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/util/serializer/JsonRoutingTableSerializer.java:74: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-488 $$ com.google.gson.stream.JsonWriter $$ possible exceptional exit due to gson.toJson(data, JKademliaRoutingTable.class, writer) with exception type com.google.gson.JsonIOException $$ ( 1904, 1923 ) $$ @MustCall method close may not have been invoked on temp-var-488 or any of its aliases.
+            writer.beginArray();
+                             ^
+  The type of object is: com.google.gson.stream.JsonWriter.
+  Reason for going out of scope: possible exceptional exit due to gson.toJson(data, JKademliaRoutingTable.class, writer) with exception type com.google.gson.JsonIOException
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/util/serializer/JsonRoutingTableSerializer.java:82: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-492 $$ com.google.gson.stream.JsonWriter $$ regular method exit $$ ( 2185, 2202 ) $$ @MustCall method close may not have been invoked on temp-var-492 or any of its aliases.
+            writer.endArray();
+                           ^
+  The type of object is: com.google.gson.stream.JsonWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/util/serializer/JsonRoutingTableSerializer.java:109: error: (return) $$ 2 $$ @MustCallUnknown KademliaRoutingTable $$ @MustCall KademliaRoutingTable $$ ( 3118, 3121 ) $$ incompatible types in return.
+            return tbl;
+                   ^
+  type of expression: @MustCallUnknown KademliaRoutingTable
+  method return type: @MustCall KademliaRoutingTable
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/util/serializer/JsonDHTSerializer.java:62: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-512 $$ com.google.gson.stream.JsonWriter $$ possible exceptional exit due to gson.toJson(data, DHT.class, writer) with exception type com.google.gson.JsonIOException $$ ( 1709, 1728 ) $$ @MustCall method close may not have been invoked on temp-var-512 or any of its aliases.
+            writer.beginArray();
+                             ^
+  The type of object is: com.google.gson.stream.JsonWriter.
+  Reason for going out of scope: possible exceptional exit due to gson.toJson(data, DHT.class, writer) with exception type com.google.gson.JsonIOException
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/util/serializer/JsonDHTSerializer.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-516 $$ com.google.gson.stream.JsonWriter $$ regular method exit $$ ( 1968, 1985 ) $$ @MustCall method close may not have been invoked on temp-var-516 or any of its aliases.
+            writer.endArray();
+                           ^
+  The type of object is: com.google.gson.stream.JsonWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/util/serializer/JsonDHTSerializer.java:92: error: (return) $$ 2 $$ @MustCallUnknown DHT $$ @MustCall KademliaDHT $$ ( 2700, 2703 ) $$ incompatible types in return.
+            return dht;
+                   ^
+  type of expression: @MustCallUnknown DHT
+  method return type: @MustCall KademliaDHT
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/util/serializer/JsonSerializer.java:36: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-531 $$ com.google.gson.stream.JsonWriter $$ possible exceptional exit due to gson.toJson(data.getClass().getName(), String.class, writer) with exception type com.google.gson.JsonIOException $$ ( 806, 825 ) $$ @MustCall method close may not have been invoked on temp-var-531 or any of its aliases.
+            writer.beginArray();
+                             ^
+  The type of object is: com.google.gson.stream.JsonWriter.
+  Reason for going out of scope: possible exceptional exit due to gson.toJson(data.getClass().getName(), String.class, writer) with exception type com.google.gson.JsonIOException
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/util/serializer/JsonSerializer.java:44: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-537 $$ com.google.gson.stream.JsonWriter $$ regular method exit $$ ( 1053, 1070 ) $$ @MustCall method close may not have been invoked on temp-var-537 or any of its aliases.
+            writer.endArray();
+                           ^
+  The type of object is: com.google.gson.stream.JsonWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/dht/DHT.java:136: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-751 $$ java.io.FileInputStream $$ possible exceptional exit due to this.getSerializer().read(din) with exception type java.io.IOException $$ ( 4668, 4732 ) $$ @MustCall method close may not have been invoked on temp-var-751 or any of its aliases.
+        DataInputStream din = new DataInputStream(new FileInputStream(folder + File.separator + hashCode + ".kct"));
+                                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to this.getSerializer().read(din) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+18 errors

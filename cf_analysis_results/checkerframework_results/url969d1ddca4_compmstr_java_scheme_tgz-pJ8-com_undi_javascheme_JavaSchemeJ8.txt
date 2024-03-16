@@ -1,0 +1,6 @@
+../../../../datasets/june2020_dataset/url969d1ddca4_compmstr_java_scheme_tgz-pJ8-com_undi_javascheme_JavaSchemeJ8/src/com/undi/util/Reflector.java:259: error: (return) $$ 2 $$ capture#336 extends @MustCallUnknown Object $$ @MustCall Object $$ ( 8477, 8496 ) $$ incompatible types in return.
+      return paramType.cast(arg);
+                           ^
+  type of expression: capture#336 extends @MustCallUnknown Object
+  method return type: @MustCall Object
+1 error

@@ -1,0 +1,55 @@
+../../../../datasets/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/MyParser.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ logfile $$ java.io.FileWriter $$ variable overwritten by assignment logfile = new FileWriter(args[i]) $$ ( 748, 781 ) $$ @MustCall method close may not have been invoked on logfile or any of its aliases.
+						logfile = new FileWriter(args[i]);         
+						        ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: variable overwritten by assignment logfile = new FileWriter(args[i])
+../../../../datasets/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/MyParser.java:42: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-6093 $$ java.io.FileOutputStream $$ regular method exit $$ ( 1069, 1098 ) $$ @MustCall method close may not have been invoked on temp-var-6093 or any of its aliases.
+						BasicFunctions.setLogWriter(new FileOutputStream(args[i]));
+						                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/MyParser.java:51: error: (required.method.not.called) $$ 4 $$ method close $$ infile $$ java.io.FileInputStream $$ variable overwritten by assignment infile = new FileInputStream(args[i]) $$ ( 1298, 1335 ) $$ @MustCall method close may not have been invoked on infile or any of its aliases.
+					infile = new FileInputStream(args[i]); 
+					       ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: variable overwritten by assignment infile = new FileInputStream(args[i])
+../../../../datasets/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/MyParser.java:73: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ coho.interp.PromptingReader $$ regular method exit $$ ( 1834, 1869 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			in = new PromptingReader(System.in);
+			   ^
+  The type of object is: coho.interp.PromptingReader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/MyParser.java:75: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ coho.interp.PromptingReader $$ regular method exit $$ ( 1882, 1945 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			in = new PromptingReader(new CopyingReader(System.in, logfile));
+			   ^
+  The type of object is: coho.interp.PromptingReader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/MyParser.java:75: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-6109 $$ coho.interp.CopyingReader $$ regular method exit $$ ( 1907, 1944 ) $$ @MustCall method close may not have been invoked on temp-var-6109 or any of its aliases.
+			in = new PromptingReader(new CopyingReader(System.in, logfile));
+			                         ^
+  The type of object is: coho.interp.CopyingReader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/BasicFunctions.java:116: error: (required.method.not.called) $$ 4 $$ method close $$ rd $$ java.io.FileReader $$ possible exceptional exit due to throw new EvalException("INTERNAL ERROR: BasicFunctions.load -- can\'t find the parser."); with exception type coho.interp.EvalException $$ ( 3904, 3930 ) $$ @MustCall method close may not have been invoked on rd or any of its aliases.
+				try { rd = new FileReader(fname); }
+				         ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to throw new EvalException("INTERNAL ERROR: BasicFunctions.load -- can\'t find the parser."); with exception type coho.interp.EvalException
+../../../../datasets/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/BasicFunctions.java:201: error: (required.method.not.called) $$ 4 $$ method close $$ ww $$ java.io.Writer $$ possible exceptional exit due to args.value(0).print(ww, opt) with exception type coho.interp.EvalException $$ ( 6455, 6496 ) $$ @MustCall method close may not have been invoked on ww or any of its aliases.
+					ww = new LineBreakingWriter(w, lineLimit);
+					   ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: possible exceptional exit due to args.value(0).print(ww, opt) with exception type coho.interp.EvalException
+../../../../datasets/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/BasicFunctions.java:203: error: (required.method.not.called) $$ 4 $$ method close $$ logWW $$ java.io.Writer $$ possible exceptional exit due to args.value(0).print(ww, opt) with exception type coho.interp.EvalException $$ ( 6524, 6571 ) $$ @MustCall method close may not have been invoked on logWW or any of its aliases.
+						logWW = new LineBreakingWriter(logW, lineLimit);
+						      ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: possible exceptional exit due to args.value(0).print(ww, opt) with exception type coho.interp.EvalException
+../../../../datasets/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/ParserThread.java:52: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-6400 $$ coho.interp.PromptingReader $$ regular method exit $$ ( 1606, 1645 ) $$ @MustCall method close may not have been invoked on temp-var-6400 or any of its aliases.
+			((PromptingReader)(in)).setPrompt(null);
+			                                 ^
+  The type of object is: coho.interp.PromptingReader.
+  Reason for going out of scope: regular method exit
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+10 errors

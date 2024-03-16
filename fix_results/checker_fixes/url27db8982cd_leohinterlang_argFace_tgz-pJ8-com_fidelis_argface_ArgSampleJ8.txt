@@ -1,0 +1,15 @@
+13013
+49
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url27db8982cd_leohinterlang_argFace_tgz-pJ8-com_fidelis_argface_ArgSampleJ8/src/com/fidelis/argface/sample/Sample.java; Line number 83
+vim +83 ../../../dataset/june2020_dataset/url27db8982cd_leohinterlang_argFace_tgz-pJ8-com_fidelis_argface_ArgSampleJ8/src/com/fidelis/argface/sample/Sample.java
+
++++ Add following code below line: 100 (com/fidelis/argface/sample/Sample.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 83
+
+--------------------------------------------

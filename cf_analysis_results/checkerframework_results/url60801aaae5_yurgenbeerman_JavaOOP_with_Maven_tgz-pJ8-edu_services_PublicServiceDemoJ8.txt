@@ -1,0 +1,13 @@
+../../../../datasets/june2020_dataset/url60801aaae5_yurgenbeerman_JavaOOP_with_Maven_tgz-pJ8-edu_services_PublicServiceDemoJ8/src/edu/sandbox/collectionsandthreads/SynchroHTML.java:14: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-578 $$ java.io.FileWriter $$ regular method exit $$ ( 391, 426 ) $$ @MustCall method close may not have been invoked on temp-var-578 or any of its aliases.
+        fileWriter = new FileWriter(HTMLFilePath, false);
+                     ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url60801aaae5_yurgenbeerman_JavaOOP_with_Maven_tgz-pJ8-edu_services_PublicServiceDemoJ8/src/edu/sandbox/collectionsandthreads/CollectionsTests.java:524: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-855 $$ java.io.FileWriter $$ regular method exit $$ ( 19794, 19821 ) $$ @MustCall method close may not have been invoked on temp-var-855 or any of its aliases.
+            fileWriter = new FileWriter(file, false);
+                         ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors

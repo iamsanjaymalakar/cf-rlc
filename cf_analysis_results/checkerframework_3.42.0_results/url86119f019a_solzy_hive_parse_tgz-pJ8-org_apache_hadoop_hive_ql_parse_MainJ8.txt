@@ -1,0 +1,9 @@
+error: OutOfMemoryError (max memory = 30542397440, total memory = 30542397440, free memory = 3858438424)
+warning: Garbage collection consumed 82% of CPU during the past 60 seconds.
+    max memory = 30542397440
+  total memory = 30542397440
+   free memory = 3836638672
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+1 warning

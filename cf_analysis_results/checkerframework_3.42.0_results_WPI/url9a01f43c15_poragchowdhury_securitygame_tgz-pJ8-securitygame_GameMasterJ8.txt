@@ -1,0 +1,58 @@
+warning: MustCallChecker did not find annotation file or directory ../dataset/june2020_dataset/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+warning: ResourceLeakChecker did not find annotation file or directory ../dataset/june2020_dataset/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+../dataset/june2020_dataset/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/DefenderHelper.java:46: error: (required.method.not.called) $$ 4 $$ method close $$ new PrintWriter(name + "-" + graphFile + ".defence", "UTF-8") $$ java.io.PrintWriter $$ regular method exit $$ ( 1570, 1627 ) $$ @MustCall method close may not have been invoked on new PrintWriter(name + "-" + graphFile + ".defence", "UTF-8") or any of its aliases.
+            pw = new PrintWriter(name+"-"+graphFile + ".defence", "UTF-8");
+                 ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/DefenderHelper.java:66: error: (required.method.not.called) $$ 4 $$ method close $$ parser $$ org.apache.commons.csv.CSVParser $$ possible exceptional exit due to Integer.parseInt(itr.next()) with exception type java.lang.NumberFormatException $$ ( 2300, 2386 ) $$ @MustCall method close may not have been invoked on parser or any of its aliases.
+			CSVParser parser = CSVParser.parse(csv, StandardCharsets.US_ASCII, CSVFormat.DEFAULT);
+			          ^
+  The type of object is: org.apache.commons.csv.CSVParser.
+  Reason for going out of scope: possible exceptional exit due to Integer.parseInt(itr.next()) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/AttackerHelper.java:39: error: (required.method.not.called) $$ 4 $$ method close $$ new PrintWriter(attackerName + "-" + defenderName + "-" + graphName + ".attack", "UTF-8") $$ java.io.PrintWriter $$ regular method exit $$ ( 1406, 1495 ) $$ @MustCall method close may not have been invoked on new PrintWriter(attackerName + "-" + defenderName + "-" + graphName + ".attack", "UTF-8") or any of its aliases.
+            apw = new PrintWriter(attackerName + "-" + defenderName + "-" + graphName + ".attack", "UTF-8");
+                  ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/AttackerMonitor.java:62: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(attackerName + "-" + defenderName + "-" + graphName + ".history", false) $$ java.io.FileWriter $$ regular method exit $$ ( 2127, 2214 ) $$ @MustCall method close may not have been invoked on new FileWriter(attackerName + "-" + defenderName + "-" + graphName + ".history", false) or any of its aliases.
+        history = new PrintWriter(new FileWriter(attackerName + "-" + defenderName + "-" + graphName + ".history", false));
+                                  ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/AttackerMonitor.java:84: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(attackerName + "-" + defenderName + "-" + graphName + ".history", true) $$ java.io.FileWriter $$ possible exceptional exit due to CSVParser.parse(csv, StandardCharsets.US_ASCII, CSVFormat.DEFAULT) with exception type java.io.IOException $$ ( 3157, 3243 ) $$ @MustCall method close may not have been invoked on new FileWriter(attackerName + "-" + defenderName + "-" + graphName + ".history", true) or any of its aliases.
+			history = new PrintWriter(new FileWriter(attackerName + "-" + defenderName + "-" + graphName + ".history", true));
+			                          ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to CSVParser.parse(csv, StandardCharsets.US_ASCII, CSVFormat.DEFAULT) with exception type java.io.IOException
+../dataset/june2020_dataset/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/AttackerMonitor.java:86: error: (required.method.not.called) $$ 4 $$ method close $$ parser $$ org.apache.commons.csv.CSVParser $$ possible exceptional exit due to Integer.parseInt(itr.next()) with exception type java.lang.NumberFormatException $$ ( 3338, 3424 ) $$ @MustCall method close may not have been invoked on parser or any of its aliases.
+			CSVParser parser = CSVParser.parse(csv, StandardCharsets.US_ASCII, CSVFormat.DEFAULT);
+			          ^
+  The type of object is: org.apache.commons.csv.CSVParser.
+  Reason for going out of scope: possible exceptional exit due to Integer.parseInt(itr.next()) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/Parser.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ parser $$ org.apache.commons.csv.CSVParser $$ possible exceptional exit due to CSVParser.parse(gFile, StandardCharsets.US_ASCII, CSVFormat.DEFAULT) with exception type java.io.IOException $$ ( 687, 775 ) $$ @MustCall method close may not have been invoked on parser or any of its aliases.
+			CSVParser parser = CSVParser.parse(gFile, StandardCharsets.US_ASCII, CSVFormat.DEFAULT);
+			          ^
+  The type of object is: org.apache.commons.csv.CSVParser.
+  Reason for going out of scope: possible exceptional exit due to CSVParser.parse(gFile, StandardCharsets.US_ASCII, CSVFormat.DEFAULT) with exception type java.io.IOException
+../dataset/june2020_dataset/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/Parser.java:32: error: (required.method.not.called) $$ 4 $$ method close $$ parseRecords $$ org.apache.commons.csv.CSVParser $$ possible exceptional exit due to parseRecords.getRecords() with exception type java.io.IOException $$ ( 779, 872 ) $$ @MustCall method close may not have been invoked on parseRecords or any of its aliases.
+			CSVParser parseRecords= CSVParser.parse(gFile, StandardCharsets.US_ASCII, CSVFormat.DEFAULT);
+			          ^
+  The type of object is: org.apache.commons.csv.CSVParser.
+  Reason for going out of scope: possible exceptional exit due to parseRecords.getRecords() with exception type java.io.IOException
+../dataset/june2020_dataset/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/Parser.java:105: error: (required.method.not.called) $$ 4 $$ method close $$ parser $$ org.apache.commons.csv.CSVParser $$ possible exceptional exit due to iter#num0.next() with exception type java.lang.NumberFormatException $$ ( 2861, 2956 ) $$ @MustCall method close may not have been invoked on parser or any of its aliases.
+			CSVParser parser = CSVParser.parse(csvTrainData, StandardCharsets.US_ASCII, CSVFormat.DEFAULT);
+			          ^
+  The type of object is: org.apache.commons.csv.CSVParser.
+  Reason for going out of scope: possible exceptional exit due to iter#num0.next() with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/Parser.java:226: error: (required.method.not.called) $$ 4 $$ method close $$ parser $$ org.apache.commons.csv.CSVParser $$ regular method exit $$ ( 6708, 6803 ) $$ @MustCall method close may not have been invoked on parser or any of its aliases.
+			CSVParser parser = CSVParser.parse(csvTrainData, StandardCharsets.US_ASCII, CSVFormat.DEFAULT);
+			          ^
+  The type of object is: org.apache.commons.csv.CSVParser.
+  Reason for going out of scope: regular method exit
+10 errors
+2 warnings

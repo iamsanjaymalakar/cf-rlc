@@ -1,0 +1,62 @@
+../../../../datasets/june2020_dataset/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/util/Base64.java:1414: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-121 $$ java.io.FileOutputStream $$ possible exceptional exit due to bos.write(dataToEncode) with exception type java.io.IOException $$ ( 63324, 63364 ) $$ @MustCall method close may not have been invoked on temp-var-121 or any of its aliases.
+                  new java.io.FileOutputStream( filename ), Base64.ENCODE );
+                  ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to bos.write(dataToEncode) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/util/Base64.java:1446: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-125 $$ java.io.FileOutputStream $$ possible exceptional exit due to bos.write(dataToDecode.getBytes(PREFERRED_ENCODING)) with exception type java.io.IOException $$ ( 64503, 64543 ) $$ @MustCall method close may not have been invoked on temp-var-125 or any of its aliases.
+                      new java.io.FileOutputStream( filename ), Base64.DECODE );
+                      ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to bos.write(dataToDecode.getBytes(PREFERRED_ENCODING)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/util/Base64.java:1498: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-133 $$ java.io.FileInputStream $$ possible exceptional exit due to bis.read(buffer, length, 4096) with exception type java.io.IOException $$ ( 66406, 66441 ) $$ @MustCall method close may not have been invoked on temp-var-133 or any of its aliases.
+                      new java.io.FileInputStream( file ) ), Base64.DECODE );
+                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to bis.read(buffer, length, 4096) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/util/Base64.java:1552: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-139 $$ java.io.FileInputStream $$ possible exceptional exit due to bis.read(buffer, length, 4096) with exception type java.io.IOException $$ ( 68408, 68443 ) $$ @MustCall method close may not have been invoked on temp-var-139 or any of its aliases.
+                      new java.io.FileInputStream( file ) ), Base64.ENCODE );
+                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to bis.read(buffer, length, 4096) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:286: error: (reset.not.owning) $$ 2 $$ bind $$ socket $$ ( 10310, 10332 ) $$ Calling method bind resets the must-call obligations of the expression socket, which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+			socket.bind( address );
+			           ^
+../../../../datasets/june2020_dataset/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:287: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-330 $$ java.nio.channels.Selector $$ possible exceptional exit due to server.register(selector, server.validOps()) with exception type java.nio.channels.ClosedChannelException $$ ( 10348, 10363 ) $$ @MustCall method close may not have been invoked on temp-var-330 or any of its aliases.
+			selector = Selector.open();
+			                        ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: possible exceptional exit due to server.register(selector, server.validOps()) with exception type java.nio.channels.ClosedChannelException
+../../../../datasets/june2020_dataset/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:320: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-341 $$ java.nio.channels.ByteChannel $$ regular method exit $$ ( 11266, 11299 ) $$ @MustCall method close may not have been invoked on temp-var-341 or any of its aliases.
+							w.channel = wsf.wrapChannel( channel, w.key );
+							                           ^
+  The type of object is: java.nio.channels.ByteChannel.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:630: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-413 $$ java.net.Socket $$ regular method exit $$ ( 20409, 20426 ) $$ @MustCall method close may not have been invoked on temp-var-413 or any of its aliases.
+		return (InetSocketAddress) getSocket( conn ).getLocalSocketAddress();
+		                                    ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:635: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-415 $$ java.net.Socket $$ regular method exit $$ ( 20565, 20582 ) $$ @MustCall method close may not have been invoked on temp-var-415 or any of its aliases.
+		return (InetSocketAddress) getSocket( conn ).getRemoteSocketAddress();
+		                                    ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/SSLSocketChannel2.java:318: error: (reset.not.owning) $$ 2 $$ connect $$ this.socketChannel $$ ( 10409, 10440 ) $$ Calling method connect resets the must-call obligations of the expression this.socketChannel, which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+		return socketChannel.connect( remote );
+		                            ^
+../../../../datasets/june2020_dataset/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/SSLSocketChannel2.java:335: error: (contracts.conditional.postcondition) $$ 4 $$ isOpen $$ false $$ no information about this $$ this is @CalledMethods("close") $$ ( 10720, 10750 ) $$ conditional postcondition is not satisfied when isOpen returns false.
+		return socketChannel.isOpen();
+		^
+  found   : no information about this
+  required: this is @CalledMethods("close")
+../../../../datasets/june2020_dataset/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/AbstractWrappedByteChannel.java:30: error: (contracts.conditional.postcondition) $$ 4 $$ isOpen $$ false $$ no information about this $$ this is @CalledMethods("close") $$ ( 649, 673 ) $$ conditional postcondition is not satisfied when isOpen returns false.
+		return channel.isOpen();
+		^
+  found   : no information about this
+  required: this is @CalledMethods("close")
+../../../../datasets/june2020_dataset/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/client/WebSocketClient.java:167: error: (reset.not.owning) $$ 2 $$ connect $$ this.socket $$ ( 5058, 5141 ) $$ Calling method connect resets the must-call obligations of the expression this.socket, which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+				socket.connect( new InetSocketAddress( uri.getHost(), getPort() ), connectTimeout );
+				              ^
+Note: ../../../../datasets/june2020_dataset/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/handlers/MessageHandler.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+13 errors

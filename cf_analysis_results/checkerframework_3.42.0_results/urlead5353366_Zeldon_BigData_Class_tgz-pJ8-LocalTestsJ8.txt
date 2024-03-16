@@ -1,0 +1,59 @@
+../dataset/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/sg/edu/nus/cs5344/spring14/twitter/datastructure/collections/Pair.java:55: error: (argument) $$ 4 $$ arg0 $$ Comparable.compareTo $$ T extends @CalledMethods WritableComparable</*RAW*/> $$ ? extends @CalledMethods Object $$ ( 1463, 1474 ) $$ incompatible argument for parameter arg0 of Comparable.compareTo.
+		final int compare = first.compareTo(other.first);
+		                                         ^
+  found   : T extends @CalledMethods WritableComparable</*RAW*/>
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/sg/edu/nus/cs5344/spring14/twitter/datastructure/collections/Pair.java:59: error: (argument) $$ 4 $$ arg0 $$ Comparable.compareTo $$ S extends @CalledMethods WritableComparable</*RAW*/> $$ ? extends @CalledMethods Object $$ ( 1560, 1572 ) $$ incompatible argument for parameter arg0 of Comparable.compareTo.
+			return second.compareTo(other.second);
+			                             ^
+  found   : S extends @CalledMethods WritableComparable</*RAW*/>
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/sg/edu/nus/cs5344/spring14/twitter/datastructure/collections/TopKList.java:55: error: (bound) $$ 4 $$ wildcard $$ ? extends @MustCall Object super E extends @MustCallUnknown WritableComparable<?> & @MustCallUnknown Copyable<E> $$ @MustCall Object $$ E[ extends @MustCallUnknown WritableComparable<?[ extends @MustCall Object super E]> & @MustCallUnknown Copyable<E> super @MustCallUnknown Void] $$ ( 1455, 1485 ) $$ incompatible bounds in wildcard
+			final E buttom = queue.peek();
+			        ^
+  type: ? extends @MustCall Object super E extends @MustCallUnknown WritableComparable<?> & @MustCallUnknown Copyable<E>
+  upper bound: @MustCall Object
+  lower bound: E[ extends @MustCallUnknown WritableComparable<?[ extends @MustCall Object super E]> & @MustCallUnknown Copyable<E> super @MustCallUnknown Void]
+../dataset/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/sg/edu/nus/cs5344/spring14/twitter/Jobs/JobEFilterTweets.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ fs $$ org.apache.hadoop.fs.FileSystem $$ possible exceptional exit due to FileUtils.getAllParts(dataStatsFolder, fs) with exception type java.io.IOException $$ ( 1152, 1189 ) $$ @MustCall method close may not have been invoked on fs or any of its aliases.
+		FileSystem fs = FileSystem.get(conf);
+		           ^
+  The type of object is: org.apache.hadoop.fs.FileSystem.
+  Reason for going out of scope: possible exceptional exit due to FileUtils.getAllParts(dataStatsFolder, fs) with exception type java.io.IOException
+../dataset/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/sg/edu/nus/cs5344/spring14/twitter/Jobs/JobFTweetsForTrends.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ fs $$ org.apache.hadoop.fs.FileSystem $$ possible exceptional exit due to FileUtils.getAllParts(trendsFolder, fs) with exception type java.io.IOException $$ ( 1237, 1274 ) $$ @MustCall method close may not have been invoked on fs or any of its aliases.
+		FileSystem fs = FileSystem.get(conf);
+		           ^
+  The type of object is: org.apache.hadoop.fs.FileSystem.
+  Reason for going out of scope: possible exceptional exit due to FileUtils.getAllParts(trendsFolder, fs) with exception type java.io.IOException
+../dataset/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/sg/edu/nus/cs5344/spring14/twitter/TwMain.java:228: error: (required.method.not.called) $$ 4 $$ method close $$ fs $$ org.apache.hadoop.fs.FileSystem $$ possible exceptional exit due to fileStream.close() with exception type java.io.IOException $$ ( 9317, 9354 ) $$ @MustCall method close may not have been invoked on fs or any of its aliases.
+		FileSystem fs = FileSystem.get(conf);
+		           ^
+  The type of object is: org.apache.hadoop.fs.FileSystem.
+  Reason for going out of scope: possible exceptional exit due to fileStream.close() with exception type java.io.IOException
+../dataset/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/sg/edu/nus/cs5344/spring14/twitter/TwMain.java:243: error: (required.method.not.called) $$ 4 $$ method close $$ fs $$ org.apache.hadoop.fs.FileSystem $$ possible exceptional exit due to fileStream.close() with exception type java.io.IOException $$ ( 9857, 9894 ) $$ @MustCall method close may not have been invoked on fs or any of its aliases.
+		FileSystem fs = FileSystem.get(conf);
+		           ^
+  The type of object is: org.apache.hadoop.fs.FileSystem.
+  Reason for going out of scope: possible exceptional exit due to fileStream.close() with exception type java.io.IOException
+../dataset/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/sg/edu/nus/cs5344/spring14/twitter/TwMain.java:268: error: (required.method.not.called) $$ 4 $$ method close $$ fs $$ org.apache.hadoop.fs.FileSystem $$ possible exceptional exit due to FileUtils.getAllParts(folder, fs) with exception type java.io.IOException $$ ( 10684, 10721 ) $$ @MustCall method close may not have been invoked on fs or any of its aliases.
+		FileSystem fs = FileSystem.get(conf);
+		           ^
+  The type of object is: org.apache.hadoop.fs.FileSystem.
+  Reason for going out of scope: possible exceptional exit due to FileUtils.getAllParts(folder, fs) with exception type java.io.IOException
+../dataset/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/sg/edu/nus/cs5344/spring14/twitter/TwMain.java:291: error: (required.method.not.called) $$ 4 $$ method close $$ fs $$ org.apache.hadoop.fs.FileSystem $$ possible exceptional exit due to fs.delete(dir, true) with exception type java.io.IOException $$ ( 11262, 11305 ) $$ @MustCall method close may not have been invoked on fs or any of its aliases.
+		final FileSystem fs = FileSystem.get(conf);
+		                 ^
+  The type of object is: org.apache.hadoop.fs.FileSystem.
+  Reason for going out of scope: possible exceptional exit due to fs.delete(dir, true) with exception type java.io.IOException
+../dataset/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/com/beust/jcommander/JCommander.java:482: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(fileName) $$ java.io.FileReader $$ possible exceptional exit due to bufRead.readLine() with exception type java.io.IOException $$ ( 15049, 15073 ) $$ @MustCall method close may not have been invoked on new FileReader(fileName) or any of its aliases.
+      BufferedReader bufRead = new BufferedReader(new FileReader(fileName));
+                                                  ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to bufRead.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/com/beust/jcommander/defaultprovider/PropertyFileDefaultProvider.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ url.openStream() $$ java.io.InputStream $$ possible exceptional exit due to m_properties.load(url.openStream()) with exception type java.io.IOException $$ ( 1593, 1609 ) $$ @MustCall method close may not have been invoked on url.openStream() or any of its aliases.
+        m_properties.load(url.openStream());
+                                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to m_properties.load(url.openStream()) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+11 errors

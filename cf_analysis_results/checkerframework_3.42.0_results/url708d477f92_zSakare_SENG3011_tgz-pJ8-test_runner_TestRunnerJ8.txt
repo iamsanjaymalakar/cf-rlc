@@ -1,0 +1,30 @@
+error: Error in AnnotatedTypeMirror.fromExpression(MustCallAnnotatedTypeFactory, createChart): class file for org.jfree.ui.Drawable not found
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/url708d477f92_zSakare_SENG3011_tgz-pJ8-test_runner_TestRunnerJ8/src/main/gui/view/TradeGraphPlotter.java
+  Last visited tree at line 27 column 1:
+  public class TradeGraphPlotter extends JDialog {
+  Exception: com.sun.tools.javac.code.Symbol$CompletionFailure: class file for org.jfree.ui.Drawable not found; com.sun.tools.javac.code.Symbol$CompletionFailure: class file for org.jfree.ui.Drawable not found
+error: SourceChecker.typeProcess: unexpected Throwable (CompletionFailure) while processing ../dataset/june2020_dataset/url708d477f92_zSakare_SENG3011_tgz-pJ8-test_runner_TestRunnerJ8/src/main/gui/view/TradeGraphPlotter.java; message: class file for org.jfree.date.MonthConstants not found
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/url708d477f92_zSakare_SENG3011_tgz-pJ8-test_runner_TestRunnerJ8/src/main/gui/view/TradeGraphPlotter.java
+  Last visited tree at line 27 column 1:
+  public class TradeGraphPlotter extends JDialog {
+  Exception: com.sun.tools.javac.code.Symbol$CompletionFailure: class file for org.jfree.date.MonthConstants not found; com.sun.tools.javac.code.Symbol$CompletionFailure: class file for org.jfree.date.MonthConstants not found
+../dataset/june2020_dataset/url708d477f92_zSakare_SENG3011_tgz-pJ8-test_runner_TestRunnerJ8/src/main/gui/view/RunnerGUI.java:229: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.OutputStream $$ regular method exit $$ ( 8056, 8465 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+		OutputStream out = new OutputStream() {
+		             ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url708d477f92_zSakare_SENG3011_tgz-pJ8-test_runner_TestRunnerJ8/src/main/parser/SircaCSVParser.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ csvReader $$ au.com.bytecode.opencsv.CSVReader $$ regular method exit $$ ( 1237, 1305 ) $$ @MustCall method close may not have been invoked on csvReader or any of its aliases.
+			csvReader = new CSVReader(new FileReader(csvFilename), ',', '\'', 2);
+			          ^
+  The type of object is: au.com.bytecode.opencsv.CSVReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url708d477f92_zSakare_SENG3011_tgz-pJ8-test_runner_TestRunnerJ8/src/main/parser/SircaCSVParser.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(csvFilename) $$ java.io.FileReader $$ regular method exit $$ ( 1263, 1290 ) $$ @MustCall method close may not have been invoked on new FileReader(csvFilename) or any of its aliases.
+			csvReader = new CSVReader(new FileReader(csvFilename), ',', '\'', 2);
+			                          ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors

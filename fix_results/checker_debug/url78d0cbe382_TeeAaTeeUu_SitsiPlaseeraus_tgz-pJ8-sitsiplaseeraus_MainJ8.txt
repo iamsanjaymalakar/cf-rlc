@@ -1,0 +1,5 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^Lataaja/AsetustenTulostaja.java^79^Lataaja.AsetustenTulostaja.laitaTiedostoon()V^11 = new <Application,Ljava/io/FileWriter>@25^NULL^FIELD,^false^true^Field escape;
+1^Lataaja/AsetustenTulostaja.java^80^Lataaja.AsetustenTulostaja.laitaTiedostoon()V^15 = new <Application,Ljava/io/BufferedWriter>@40^Lataaja.AsetustenTulostaja.laitaTiedostoon()V#16,^FIELD,^false^true^Field escape;
+2^Lataaja/TiedostonKasittelija.java^92^Lataaja.TiedostonKasittelija.run()V^13 = new <Application,Ljava/io/BufferedReader>@30^Lataaja.TiedostonKasittelija.run()V#14,Lataaja.TiedostonKasittelija.run()V#24,^INVOKE,^false^false^Try-catch Fix;
+3^Lataaja/AsetustenTulostaja.java^20^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

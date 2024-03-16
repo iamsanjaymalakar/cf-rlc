@@ -1,0 +1,51 @@
+../../../../datasets/june2020_dataset/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/Game_World/GameWorld.java:374: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(this.locations) with exception type java.io.IOException $$ ( 9826, 9879 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+			ObjectOutputStream oos = new ObjectOutputStream(bos);
+			                   ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(this.locations) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/Game_World/GameWorld.java:401: error: (required.method.not.called) $$ 4 $$ method close $$ ois $$ java.io.ObjectInputStream $$ regular method exit $$ ( 10536, 10587 ) $$ @MustCall method close may not have been invoked on ois or any of its aliases.
+			ObjectInputStream ois = new ObjectInputStream(bis);
+			                  ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/User_Interface/MediaPlayer.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1042 $$ javax.sound.sampled.AudioInputStream $$ possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException $$ ( 1078, 1140 ) $$ @MustCall method close may not have been invoked on temp-var-1042 or any of its aliases.
+					.getAudioInputStream(new File(welcomeScreen));
+					                    ^
+  The type of object is: javax.sound.sampled.AudioInputStream.
+  Reason for going out of scope: possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException
+../../../../datasets/june2020_dataset/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/User_Interface/MediaPlayer.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1049 $$ javax.sound.sampled.AudioInputStream $$ possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException $$ ( 1357, 1415 ) $$ @MustCall method close may not have been invoked on temp-var-1049 or any of its aliases.
+					.getAudioInputStream(new File(mainTheme));
+					                    ^
+  The type of object is: javax.sound.sampled.AudioInputStream.
+  Reason for going out of scope: possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException
+../../../../datasets/june2020_dataset/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/User_Interface/MediaPlayer.java:61: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1056 $$ javax.sound.sampled.AudioInputStream $$ possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException $$ ( 1635, 1696 ) $$ @MustCall method close may not have been invoked on temp-var-1056 or any of its aliases.
+					.getAudioInputStream(new File(winningTheme));
+					                    ^
+  The type of object is: javax.sound.sampled.AudioInputStream.
+  Reason for going out of scope: possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException
+../../../../datasets/june2020_dataset/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/Graphics_Renderer/MapEditor.java:351: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1335 $$ java.io.FileWriter $$ possible exceptional exit due to writer.write(imageLayers.getItemAt(i).toString()) with exception type java.io.IOException $$ ( 9666, 9686 ) $$ @MustCall method close may not have been invoked on temp-var-1335 or any of its aliases.
+				writer = new BufferedWriter(new FileWriter(file));
+				                            ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to writer.write(imageLayers.getItemAt(i).toString()) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/Data_Storage/XMLWriter.java:44: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2801 $$ java.io.FileOutputStream $$ regular method exit $$ ( 1379, 1418 ) $$ @MustCall method close may not have been invoked on temp-var-2801 or any of its aliases.
+		fileStream = new FileOutputStream(fileName + ".xml");
+		             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/Data_Storage/XMLWriter.java:65: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2809 $$ java.io.FileOutputStream $$ regular method exit $$ ( 2147, 2173 ) $$ @MustCall method close may not have been invoked on temp-var-2809 or any of its aliases.
+		fileStream = new FileOutputStream(file);
+		             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/Data_Storage/XMLReader.java:28: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2816 $$ java.io.FileInputStream $$ regular method exit $$ ( 666, 695 ) $$ @MustCall method close may not have been invoked on temp-var-2816 or any of its aliases.
+		fileStream = new FileInputStream(fileName);
+		             ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/Data_Storage/XMLReader.java:41: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2821 $$ java.io.FileInputStream $$ regular method exit $$ ( 1082, 1107 ) $$ @MustCall method close may not have been invoked on temp-var-2821 or any of its aliases.
+			fileStream = new FileInputStream(file);
+			             ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+10 errors

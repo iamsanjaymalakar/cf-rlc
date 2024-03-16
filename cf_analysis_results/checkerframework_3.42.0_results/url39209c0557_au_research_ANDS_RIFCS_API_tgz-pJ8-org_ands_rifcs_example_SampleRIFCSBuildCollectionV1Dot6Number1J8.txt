@@ -1,0 +1,48 @@
+../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java:244: error: (required.method.not.called) $$ 4 $$ method close $$ new URL(Constants.SCHEMA_REGISTRY_OBJECTS).openStream() $$ java.io.InputStream $$ possible exceptional exit due to builder.parse(new URL(Constants.SCHEMA_REGISTRY_OBJECTS).openStream()) with exception type org.xml.sax.SAXException $$ ( 8253, 8325 ) $$ @MustCall method close may not have been invoked on new URL(Constants.SCHEMA_REGISTRY_OBJECTS).openStream() or any of its aliases.
+                Constants.SCHEMA_REGISTRY_OBJECTS).openStream());
+                                                             ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to builder.parse(new URL(Constants.SCHEMA_REGISTRY_OBJECTS).openStream()) with exception type org.xml.sax.SAXException
+../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java:246: error: (required.method.not.called) $$ 4 $$ method close $$ new URL(Constants.SCHEMA_EXTRIF).openStream() $$ java.io.InputStream $$ possible exceptional exit due to builder.parse(new URL(Constants.SCHEMA_EXTRIF).openStream()) with exception type org.xml.sax.SAXException $$ ( 8371, 8433 ) $$ @MustCall method close may not have been invoked on new URL(Constants.SCHEMA_EXTRIF).openStream() or any of its aliases.
+                Constants.SCHEMA_EXTRIF).openStream());
+                                                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to builder.parse(new URL(Constants.SCHEMA_EXTRIF).openStream()) with exception type org.xml.sax.SAXException
+../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java:248: error: (required.method.not.called) $$ 4 $$ method close $$ new URL(Constants.SCHEMA_ACTIVITY).openStream() $$ java.io.InputStream $$ possible exceptional exit due to builder.parse(new URL(Constants.SCHEMA_ACTIVITY).openStream()) with exception type org.xml.sax.SAXException $$ ( 8481, 8545 ) $$ @MustCall method close may not have been invoked on new URL(Constants.SCHEMA_ACTIVITY).openStream() or any of its aliases.
+                Constants.SCHEMA_ACTIVITY).openStream());
+                                                     ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to builder.parse(new URL(Constants.SCHEMA_ACTIVITY).openStream()) with exception type org.xml.sax.SAXException
+../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java:250: error: (required.method.not.called) $$ 4 $$ method close $$ new URL(Constants.SCHEMA_COLLECTION).openStream() $$ java.io.InputStream $$ possible exceptional exit due to builder.parse(new URL(Constants.SCHEMA_COLLECTION).openStream()) with exception type org.xml.sax.SAXException $$ ( 8595, 8661 ) $$ @MustCall method close may not have been invoked on new URL(Constants.SCHEMA_COLLECTION).openStream() or any of its aliases.
+                Constants.SCHEMA_COLLECTION).openStream());
+                                                       ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to builder.parse(new URL(Constants.SCHEMA_COLLECTION).openStream()) with exception type org.xml.sax.SAXException
+../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java:252: error: (required.method.not.called) $$ 4 $$ method close $$ new URL(Constants.SCHEMA_PARTY).openStream() $$ java.io.InputStream $$ possible exceptional exit due to builder.parse(new URL(Constants.SCHEMA_PARTY).openStream()) with exception type org.xml.sax.SAXException $$ ( 8706, 8767 ) $$ @MustCall method close may not have been invoked on new URL(Constants.SCHEMA_PARTY).openStream() or any of its aliases.
+                Constants.SCHEMA_PARTY).openStream());
+                                                  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to builder.parse(new URL(Constants.SCHEMA_PARTY).openStream()) with exception type org.xml.sax.SAXException
+../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java:254: error: (required.method.not.called) $$ 4 $$ method close $$ new URL(Constants.SCHEMA_SERVICE).openStream() $$ java.io.InputStream $$ possible exceptional exit due to builder.parse(new URL(Constants.SCHEMA_SERVICE).openStream()) with exception type org.xml.sax.SAXException $$ ( 8814, 8877 ) $$ @MustCall method close may not have been invoked on new URL(Constants.SCHEMA_SERVICE).openStream() or any of its aliases.
+                Constants.SCHEMA_SERVICE).openStream());
+                                                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to builder.parse(new URL(Constants.SCHEMA_SERVICE).openStream()) with exception type org.xml.sax.SAXException
+../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java:256: error: (required.method.not.called) $$ 4 $$ method close $$ new URL(Constants.SCHEMA_REGISTRY_TYPES).openStream() $$ java.io.InputStream $$ possible exceptional exit due to builder.parse(new URL(Constants.SCHEMA_REGISTRY_TYPES).openStream()) with exception type org.xml.sax.SAXException $$ ( 8922, 8992 ) $$ @MustCall method close may not have been invoked on new URL(Constants.SCHEMA_REGISTRY_TYPES).openStream() or any of its aliases.
+                Constants.SCHEMA_REGISTRY_TYPES).openStream());
+                                                           ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to builder.parse(new URL(Constants.SCHEMA_REGISTRY_TYPES).openStream()) with exception type org.xml.sax.SAXException
+../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java:362: error: (required.method.not.called) $$ 4 $$ method close $$ theSchema.openStream() $$ java.io.InputStream $$ possible exceptional exit due to factory.newSchema(schemaFile) with exception type org.xml.sax.SAXException $$ ( 13094, 13116 ) $$ @MustCall method close may not have been invoked on theSchema.openStream() or any of its aliases.
+        Source schemaFile = new StreamSource(theSchema.openStream());
+                                                                 ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to factory.newSchema(schemaFile) with exception type org.xml.sax.SAXException
+../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/example/SampleRIFCSRead.java:62: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(args[0]) $$ java.io.FileInputStream $$ possible exceptional exit due to rr.mapToDOM(new FileInputStream(args[0])) with exception type org.xml.sax.SAXException $$ ( 2223, 2251 ) $$ @MustCall method close may not have been invoked on new FileInputStream(args[0]) or any of its aliases.
+        rr.mapToDOM(new FileInputStream(args[0]));
+                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to rr.mapToDOM(new FileInputStream(args[0])) with exception type org.xml.sax.SAXException
+Note: ../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/example/SampleRIFCSBuildCollectionV1Dot3Number1.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+9 errors

@@ -1,0 +1,21 @@
+../../../../datasets/june2020_dataset/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/learning/InputReader.java:25: error: (required.method.not.called) $$ 4 $$ method close $$ fstream $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 584, 643 ) $$ @MustCall method close may not have been invoked on fstream or any of its aliases.
+			FileInputStream fstream = new FileInputStream(weightsFile);
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/learning/InputReader.java:55: error: (required.method.not.called) $$ 4 $$ method close $$ fstream $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 1303, 1363 ) $$ @MustCall method close may not have been invoked on fstream or any of its aliases.
+			FileInputStream fstream = new FileInputStream(trainingFile);
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/hypergraph/BaseTest.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ fstream $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 3182, 3219 ) $$ @MustCall method close may not have been invoked on fstream or any of its aliases.
+			fstream = new FileInputStream(counts);
+			        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/hypergraph/BaseTest.java:139: error: (required.method.not.called) $$ 4 $$ method close $$ fstream $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 5269, 5306 ) $$ @MustCall method close may not have been invoked on fstream or any of its aliases.
+			fstream = new FileInputStream(counts);
+			        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+4 errors

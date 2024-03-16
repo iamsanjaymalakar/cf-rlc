@@ -1,0 +1,6 @@
+../dataset/june2020_dataset/urlc4364d0d12_ahmedelmorsy_cafetria_simulation_tgz-pJ8-main_MainJ8/src/simulation/logging/FileLogger.java:13: error: (required.method.not.called) $$ 4 $$ method close $$ new PrintWriter(f) $$ java.io.PrintWriter $$ regular method exit $$ ( 271, 289 ) $$ @MustCall method close may not have been invoked on new PrintWriter(f) or any of its aliases.
+            this.out = new PrintWriter(f);
+                       ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+1 error

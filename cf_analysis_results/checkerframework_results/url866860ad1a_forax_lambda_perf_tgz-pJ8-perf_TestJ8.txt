@@ -1,0 +1,31 @@
+../../../../datasets/june2020_dataset/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/perf/StreamWithReducer.java:130: error: (return) $$ 2 $$ T extends @MustCallUnknown Object $$ @MustCall Object $$ ( 3488, 3520 ) $$ incompatible types in return.
+        return op.operate((T)element, (T)value);
+                         ^
+  type of expression: T extends @MustCallUnknown Object
+  method return type: @MustCall Object
+../../../../datasets/june2020_dataset/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/perf/StreamWithIterable.java:34: error: (assignment) $$ 2 $$ T extends @MustCallUnknown Object $$ @MustCall Object $$ ( 968, 975 ) $$ incompatible types in assignment.
+                next = element;
+                       ^
+  found   : T extends @MustCallUnknown Object
+  required: @MustCall Object
+../../../../datasets/june2020_dataset/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/perf/StreamWithIterable.java:74: error: (argument) $$ 4 $$ t $$ map $$ capture#820[ extends T[ extends @MustCallUnknown Object super @MustCall Void] super @MustCall Void] $$ capture#216[ extends @MustCallUnknown Object super T[ extends @MustCallUnknown Object super @MustCallUnknown Void]] $$ ( 1998, 2007 ) $$ incompatible argument for parameter t of map.
+            return mapper.map(it.next());
+                                     ^
+  found   : capture#820[ extends T[ extends @MustCallUnknown Object super @MustCall Void] super @MustCall Void]
+  required: capture#216[ extends @MustCallUnknown Object super T[ extends @MustCallUnknown Object super @MustCallUnknown Void]]
+../../../../datasets/june2020_dataset/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/perf/StreamWithIterable.java:74: error: (argument) $$ 4 $$ t $$ map $$ capture#426 extends T extends @CalledMethods Object $$ capture#889 extends @CalledMethods Object super T extends @CalledMethods Object $$ ( 1998, 2007 ) $$ incompatible argument for parameter t of map.
+            return mapper.map(it.next());
+                                     ^
+  found   : capture#426 extends T extends @CalledMethods Object
+  required: capture#889 extends @CalledMethods Object super T extends @CalledMethods Object
+../../../../datasets/june2020_dataset/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/perf/StreamWithIterable.java:114: error: (argument) $$ 4 $$ right $$ operate $$ @MustCallUnknown Integer $$ @MustCall int $$ ( 2805, 2821 ) $$ incompatible argument for parameter right of operate.
+      value = op.operate(value, (Integer)element);
+                                ^
+  found   : @MustCallUnknown Integer
+  required: @MustCall int
+../../../../datasets/june2020_dataset/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/perf/StreamWithAdhocImpl.java:159: error: (return) $$ 2 $$ T extends @MustCallUnknown Object $$ @MustCall Object $$ ( 4356, 4388 ) $$ incompatible types in return.
+        return op.operate((T)element, (T)value);
+                         ^
+  type of expression: T extends @MustCallUnknown Object
+  method return type: @MustCall Object
+6 errors

@@ -1,0 +1,557 @@
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/KyoroFileForKyoroSocket.java:26: error: (required.method.not.called) $$ 4 $$ method close $$ field mVf $$ net.hetimatan.io.filen.CashKyoroFile $$  Non-final owning field might be overwritten $$ ( 676, 717 ) $$ @MustCall method close may not have been invoked on field mVf or any of its aliases.
+		mVf = new CashKyoroFile(writeCashSize, 2);
+		    ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/KyoroFileForKyoroSocket.java:94: error: (contracts.exceptional.postcondition) $$ 3 $$ close $$ no information about this.mVf $$ this.mVf is @CalledMethods("close") $$ ( 2138, 2313 ) $$ on exception, postcondition of close is not satisfied.
+	public void close() throws IOException {
+	            ^
+  found   : no information about this.mVf
+  required: this.mVf is @CalledMethods("close")
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/KyoroFileForKyoroSocket.java:94: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.mVf $$ this.mVf is @CalledMethods("close") $$ ( 2138, 2313 ) $$ postcondition of close is not satisfied.
+	public void close() throws IOException {
+	            ^
+  found   : no information about this.mVf
+  required: this.mVf is @CalledMethods("close")
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/filen/CashKyoroFile.java:71: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.mRAFile $$ this.mRAFile is @CalledMethods("close") $$ ( 1833, 2047 ) $$ postcondition of close is not satisfied.
+	public void close() throws IOException {
+	            ^
+  found   : no information about this.mRAFile
+  required: this.mRAFile is @CalledMethods("close")
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/filen/CashKyoroFile.java:236: error: (missing.creates.mustcall.for) $$ 3 $$ syncWrite $$ this $$ mRAFile $$ ( 5479, 5743 ) $$ Method syncWrite re-assigns the non-final, owning field this.mRAFile, but does not have a corresponding @CreatesMustCallFor annotation.
+	public ByteKyoroFile syncWrite(int index) throws IOException {
+	                     ^
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/filen/CashKyoroFile.java:251: error: (required.method.not.called) $$ 4 $$ method close $$ new MyOutputStream() $$ net.hetimatan.io.filen.CashKyoroFile.MyOutputStream $$ regular method exit $$ ( 5878, 5898 ) $$ @MustCall method close may not have been invoked on new MyOutputStream() or any of its aliases.
+			mLastOutput = new MyOutputStream();
+			              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.MyOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroSelector.java:27: error: (type.argument) $$ 4 $$ K $$ WeakHashMap $$ @MustCall("close") SelectableChannel $$ @MustCall Object $$ ( 875, 892 ) $$ incompatible type argument for type parameter K of WeakHashMap.
+	private WeakHashMap<SelectableChannel, KyoroSelectable> mClientList 
+	                    ^
+  found   : @MustCall("close") SelectableChannel
+  required: @MustCall Object
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroSelector.java:28: error: (type.argument) $$ 4 $$ K $$ WeakHashMap $$ @MustCall("close") SelectableChannel $$ @MustCall Object $$ ( 944, 961 ) $$ incompatible type argument for type parameter K of WeakHashMap.
+	= new WeakHashMap<SelectableChannel, KyoroSelectable>();
+	                  ^
+  found   : @MustCall("close") SelectableChannel
+  required: @MustCall Object
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroSelector.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ channel $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 1225, 1271 ) $$ @MustCall method close may not have been invoked on channel or any of its aliases.
+		SelectableChannel channel = s.getRawChannel();
+		                  ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroSelector.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ Selector.open() $$ java.nio.channels.Selector $$ regular method exit $$ ( 1480, 1495 ) $$ @MustCall method close may not have been invoked on Selector.open() or any of its aliases.
+			mRawSelector = Selector.open();
+			                            ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/filen/ByteKyoroFile.java:238: error: (required.method.not.called) $$ 4 $$ method close $$ new MyOutputStream() $$ net.hetimatan.io.filen.ByteKyoroFile.MyOutputStream $$ regular method exit $$ ( 5429, 5449 ) $$ @MustCall method close may not have been invoked on new MyOutputStream() or any of its aliases.
+			mLastOutput = new MyOutputStream();
+			              ^
+  The type of object is: net.hetimatan.io.filen.ByteKyoroFile.MyOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/KyoroFileForFiles.java:20: error: (assignment) $$ 2 $$ @MustCall("close") CashKyoroFile $$ @MustCall KyoroFile $$ ( 502, 529 ) $$ incompatible types in assignment.
+			tmp[i] = new CashKyoroFile(f,512, 2);
+			         ^
+  found   : @MustCall("close") CashKyoroFile
+  required: @MustCall KyoroFile
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/KyoroFileForFiles.java:20: error: (required.method.not.called) $$ 4 $$ method close $$ new CashKyoroFile(f, 512, 2) $$ net.hetimatan.io.filen.CashKyoroFile $$ regular method exit $$ ( 502, 529 ) $$ @MustCall method close may not have been invoked on new CashKyoroFile(f, 512, 2) or any of its aliases.
+			tmp[i] = new CashKyoroFile(f,512, 2);
+			         ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/KyoroFileForFiles.java:110: error: (contracts.exceptional.postcondition) $$ 3 $$ close $$ no information about this.mVf $$ this.mVf is @CalledMethods("close") $$ ( 2390, 2550 ) $$ on exception, postcondition of close is not satisfied.
+	public void close() throws IOException {
+	            ^
+  found   : no information about this.mVf
+  required: this.mVf is @CalledMethods("close")
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/KyoroFileForFiles.java:110: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.mVf $$ this.mVf is @CalledMethods("close") $$ ( 2390, 2550 ) $$ postcondition of close is not satisfied.
+	public void close() throws IOException {
+	            ^
+  found   : no information about this.mVf
+  required: this.mVf is @CalledMethods("close")
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ new CashKyoroFile("\u3042\u3044\u3046".getBytes()) $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to new KyoroFileForFiles(files) with exception type java.io.IOException $$ ( 567, 602 ) $$ @MustCall method close may not have been invoked on new CashKyoroFile("\u3042\u3044\u3046".getBytes()) or any of its aliases.
+		files[0] = new CashKyoroFile("あいう".getBytes());
+		           ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to new KyoroFileForFiles(files) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ kff $$ net.hetimatan.io.file.KyoroFileForFiles $$ possible exceptional exit due to kff.read(buffer) with exception type java.io.IOException $$ ( 607, 660 ) $$ @MustCall method close may not have been invoked on kff or any of its aliases.
+		KyoroFileForFiles kff = new KyoroFileForFiles(files);
+		                  ^
+  The type of object is: net.hetimatan.io.file.KyoroFileForFiles.
+  Reason for going out of scope: possible exceptional exit due to kff.read(buffer) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:23: error: (argument) $$ 4 $$ files $$ KyoroFileForFiles constructor $$ @MustCall("close") CashKyoroFile @MustCall [] $$ @MustCall KyoroFile @MustCallUnknown [] $$ ( 653, 658 ) $$ incompatible argument for parameter files of KyoroFileForFiles constructor.
+		KyoroFileForFiles kff = new KyoroFileForFiles(files);
+		                                              ^
+  found   : @MustCall("close") CashKyoroFile @MustCall []
+  required: @MustCall KyoroFile @MustCallUnknown []
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:36: error: (required.method.not.called) $$ 4 $$ method close $$ new CashKyoroFile(testdata) $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to new KyoroFileForFiles(files) with exception type java.io.IOException $$ ( 1068, 1095 ) $$ @MustCall method close may not have been invoked on new CashKyoroFile(testdata) or any of its aliases.
+		files[0] = new CashKyoroFile(testdata);
+		           ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to new KyoroFileForFiles(files) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ kff $$ net.hetimatan.io.file.KyoroFileForFiles $$ possible exceptional exit due to kff.read(buffer) with exception type java.io.IOException $$ ( 1100, 1153 ) $$ @MustCall method close may not have been invoked on kff or any of its aliases.
+		KyoroFileForFiles kff = new KyoroFileForFiles(files);
+		                  ^
+  The type of object is: net.hetimatan.io.file.KyoroFileForFiles.
+  Reason for going out of scope: possible exceptional exit due to kff.read(buffer) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:37: error: (argument) $$ 4 $$ files $$ KyoroFileForFiles constructor $$ @MustCall("close") CashKyoroFile @MustCall [] $$ @MustCall KyoroFile @MustCallUnknown [] $$ ( 1146, 1151 ) $$ incompatible argument for parameter files of KyoroFileForFiles constructor.
+		KyoroFileForFiles kff = new KyoroFileForFiles(files);
+		                                              ^
+  found   : @MustCall("close") CashKyoroFile @MustCall []
+  required: @MustCall KyoroFile @MustCallUnknown []
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:57: error: (required.method.not.called) $$ 4 $$ method close $$ new CashKyoroFile("\u3042\u3044\u3046".getBytes()) $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to new CashKyoroFile("\u304b\u304d\u304f".getBytes()) with exception type java.io.IOException $$ ( 1648, 1683 ) $$ @MustCall method close may not have been invoked on new CashKyoroFile("\u3042\u3044\u3046".getBytes()) or any of its aliases.
+		files[0] = new CashKyoroFile("あいう".getBytes());
+		           ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to new CashKyoroFile("\u304b\u304d\u304f".getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:58: error: (required.method.not.called) $$ 4 $$ method close $$ new CashKyoroFile("\u304b\u304d\u304f".getBytes()) $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to new KyoroFileForFiles(files) with exception type java.io.IOException $$ ( 1699, 1734 ) $$ @MustCall method close may not have been invoked on new CashKyoroFile("\u304b\u304d\u304f".getBytes()) or any of its aliases.
+		files[1] = new CashKyoroFile("かきく".getBytes());
+		           ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to new KyoroFileForFiles(files) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ kff $$ net.hetimatan.io.file.KyoroFileForFiles $$ possible exceptional exit due to kff.read(buffer) with exception type java.io.IOException $$ ( 1739, 1792 ) $$ @MustCall method close may not have been invoked on kff or any of its aliases.
+		KyoroFileForFiles kff = new KyoroFileForFiles(files);
+		                  ^
+  The type of object is: net.hetimatan.io.file.KyoroFileForFiles.
+  Reason for going out of scope: possible exceptional exit due to kff.read(buffer) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:59: error: (argument) $$ 4 $$ files $$ KyoroFileForFiles constructor $$ @MustCall("close") CashKyoroFile @MustCall [] $$ @MustCall KyoroFile @MustCallUnknown [] $$ ( 1785, 1790 ) $$ incompatible argument for parameter files of KyoroFileForFiles constructor.
+		KyoroFileForFiles kff = new KyoroFileForFiles(files);
+		                                              ^
+  found   : @MustCall("close") CashKyoroFile @MustCall []
+  required: @MustCall KyoroFile @MustCallUnknown []
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:68: error: (required.method.not.called) $$ 4 $$ method close $$ new CashKyoroFile("\u3042\u3044\u3046".getBytes()) $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to new CashKyoroFile("\u304b\u304d\u304f".getBytes()) with exception type java.io.IOException $$ ( 2080, 2115 ) $$ @MustCall method close may not have been invoked on new CashKyoroFile("\u3042\u3044\u3046".getBytes()) or any of its aliases.
+		files[0] = new CashKyoroFile("あいう".getBytes());
+		           ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to new CashKyoroFile("\u304b\u304d\u304f".getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ new CashKyoroFile("\u304b\u304d\u304f".getBytes()) $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to new CashKyoroFile("\u3055".getBytes()) with exception type java.io.IOException $$ ( 2131, 2166 ) $$ @MustCall method close may not have been invoked on new CashKyoroFile("\u304b\u304d\u304f".getBytes()) or any of its aliases.
+		files[1] = new CashKyoroFile("かきく".getBytes());
+		           ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to new CashKyoroFile("\u3055".getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ new CashKyoroFile("\u3055".getBytes()) $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to new KyoroFileForFiles(files) with exception type java.io.IOException $$ ( 2182, 2215 ) $$ @MustCall method close may not have been invoked on new CashKyoroFile("\u3055".getBytes()) or any of its aliases.
+		files[2] = new CashKyoroFile("さ".getBytes());
+		           ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to new KyoroFileForFiles(files) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:71: error: (argument) $$ 4 $$ files $$ KyoroFileForFiles constructor $$ @MustCall("close") CashKyoroFile @MustCall [] $$ @MustCall KyoroFile @MustCallUnknown [] $$ ( 2266, 2271 ) $$ incompatible argument for parameter files of KyoroFileForFiles constructor.
+		KyoroFileForFiles kff = new KyoroFileForFiles(files);
+		                                              ^
+  found   : @MustCall("close") CashKyoroFile @MustCall []
+  required: @MustCall KyoroFile @MustCallUnknown []
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:87: error: (assignment) $$ 2 $$ @MustCall("close") CashKyoroFile $$ @MustCall KyoroFile $$ ( 2736, 2774 ) $$ incompatible types in assignment.
+		files[1] = new CashKyoroFile("cdefgh".getBytes());
+		           ^
+  found   : @MustCall("close") CashKyoroFile
+  required: @MustCall KyoroFile
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:87: error: (required.method.not.called) $$ 4 $$ method close $$ new CashKyoroFile("cdefgh".getBytes()) $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to new KyoroFileForFiles(files) with exception type java.io.IOException $$ ( 2736, 2774 ) $$ @MustCall method close may not have been invoked on new CashKyoroFile("cdefgh".getBytes()) or any of its aliases.
+		files[1] = new CashKyoroFile("cdefgh".getBytes());
+		           ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to new KyoroFileForFiles(files) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:88: error: (required.method.not.called) $$ 4 $$ method close $$ kff $$ net.hetimatan.io.file.KyoroFileForFiles $$ possible exceptional exit due to kff.read(buffer) with exception type java.io.IOException $$ ( 2779, 2832 ) $$ @MustCall method close may not have been invoked on kff or any of its aliases.
+		KyoroFileForFiles kff = new KyoroFileForFiles(files);
+		                  ^
+  The type of object is: net.hetimatan.io.file.KyoroFileForFiles.
+  Reason for going out of scope: possible exceptional exit due to kff.read(buffer) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:111: error: (required.method.not.called) $$ 4 $$ method close $$ new CashKyoroFile(testdata) $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to new KyoroFileForFiles(files) with exception type java.io.IOException $$ ( 3394, 3421 ) $$ @MustCall method close may not have been invoked on new CashKyoroFile(testdata) or any of its aliases.
+		files[0] = new CashKyoroFile(testdata);
+		           ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to new KyoroFileForFiles(files) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:112: error: (required.method.not.called) $$ 4 $$ method close $$ kff $$ net.hetimatan.io.file.KyoroFileForFiles $$ possible exceptional exit due to kff.read(buffer) with exception type java.io.IOException $$ ( 3426, 3479 ) $$ @MustCall method close may not have been invoked on kff or any of its aliases.
+		KyoroFileForFiles kff = new KyoroFileForFiles(files);
+		                  ^
+  The type of object is: net.hetimatan.io.file.KyoroFileForFiles.
+  Reason for going out of scope: possible exceptional exit due to kff.read(buffer) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForKyoroFileForFiles.java:112: error: (argument) $$ 4 $$ files $$ KyoroFileForFiles constructor $$ @MustCall("close") CashKyoroFile @MustCall [] $$ @MustCall KyoroFile @MustCallUnknown [] $$ ( 3472, 3477 ) $$ incompatible argument for parameter files of KyoroFileForFiles constructor.
+		KyoroFileForFiles kff = new KyoroFileForFiles(files);
+		                                              ^
+  found   : @MustCall("close") CashKyoroFile @MustCall []
+  required: @MustCall KyoroFile @MustCallUnknown []
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForVirtualFile.java:266: error: (required.method.not.called) $$ 4 $$ method close $$ vf $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to vf.read(buffer) with exception type java.io.IOException $$ ( 6652, 6708 ) $$ @MustCall method close may not have been invoked on vf or any of its aliases.
+			CashKyoroFile vf = new CashKyoroFile(testPath, 1024, 5);
+			              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to vf.read(buffer) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/MarkableFileReader.java:60: error: (assignment) $$ 2 $$ @MustCall("close") CashKyoroFile $$ @MustCall KyoroFile $$ ( 1274, 1299 ) $$ incompatible types in assignment.
+		mFile = new CashKyoroFile(buffer);
+		        ^
+  found   : @MustCall("close") CashKyoroFile
+  required: @MustCall KyoroFile
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/MarkableFileReader.java:60: error: (required.method.not.called) $$ 4 $$ method close $$ new CashKyoroFile(buffer) $$ net.hetimatan.io.filen.CashKyoroFile $$ regular method exit $$ ( 1274, 1299 ) $$ @MustCall method close may not have been invoked on new CashKyoroFile(buffer) or any of its aliases.
+		mFile = new CashKyoroFile(buffer);
+		        ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/MarkableFileReader.java:64: error: (assignment) $$ 2 $$ @MustCall("close") CashKyoroFile $$ @MustCall KyoroFile $$ ( 1392, 1428 ) $$ incompatible types in assignment.
+		mFile = new CashKyoroFile(path, cashSize, 2);
+		        ^
+  found   : @MustCall("close") CashKyoroFile
+  required: @MustCall KyoroFile
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/MarkableFileReader.java:64: error: (required.method.not.called) $$ 4 $$ method close $$ new CashKyoroFile(path, cashSize, 2) $$ net.hetimatan.io.filen.CashKyoroFile $$ regular method exit $$ ( 1392, 1428 ) $$ @MustCall method close may not have been invoked on new CashKyoroFile(path, cashSize, 2) or any of its aliases.
+		mFile = new CashKyoroFile(path, cashSize, 2);
+		        ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForMarkableFileReader.java:17: error: (required.method.not.called) $$ 4 $$ method close $$ base $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to new MarkableFileReader(base, 10) with exception type java.io.FileNotFoundException $$ ( 345, 392 ) $$ @MustCall method close may not have been invoked on base or any of its aliases.
+		CashKyoroFile base = new CashKyoroFile(512, 2);
+		              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to new MarkableFileReader(base, 10) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForMarkableFileReader.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ base $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to new MarkableFileReader(base, 10) with exception type java.io.FileNotFoundException $$ ( 740, 787 ) $$ @MustCall method close may not have been invoked on base or any of its aliases.
+		CashKyoroFile base = new CashKyoroFile(512, 2);
+		              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to new MarkableFileReader(base, 10) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForMarkableFileReader.java:49: error: (required.method.not.called) $$ 4 $$ method close $$ base $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to new MarkableFileReader(base, 10) with exception type java.io.FileNotFoundException $$ ( 1147, 1194 ) $$ @MustCall method close may not have been invoked on base or any of its aliases.
+		CashKyoroFile base = new CashKyoroFile(512, 2);
+		              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to new MarkableFileReader(base, 10) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForMarkableFileReader.java:65: error: (required.method.not.called) $$ 4 $$ method close $$ base $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to new MarkableFileReader(base, 10) with exception type java.io.FileNotFoundException $$ ( 1559, 1606 ) $$ @MustCall method close may not have been invoked on base or any of its aliases.
+		CashKyoroFile base = new CashKyoroFile(512, 2);
+		              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to new MarkableFileReader(base, 10) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/file/TestForMarkableFileReader.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ base $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to new MarkableFileReader(base, 10) with exception type java.io.FileNotFoundException $$ ( 2016, 2063 ) $$ @MustCall method close may not have been invoked on base or any of its aliases.
+		CashKyoroFile base = new CashKyoroFile(512, 2);
+		              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to new MarkableFileReader(base, 10) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/filen/CashKyoroFileHelper.java:56: error: (required.method.not.called) $$ 4 $$ method close $$ src $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to src.length() with exception type java.io.IOException $$ ( 1407, 1467 ) $$ @MustCall method close may not have been invoked on src or any of its aliases.
+			CashKyoroFile src = new CashKyoroFile(srcs[i], 16*1024, 10);
+			              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to src.length() with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/tool/WGet.java:20: error: (required.method.not.called) $$ 4 $$ method dispose $$ getter $$ net.hetimatan.net.http.HttpGet $$ regular method exit $$ ( 509, 1008 ) $$ @MustCall method dispose may not have been invoked on getter or any of its aliases.
+			HttpGet getter = new HttpGet( new HttpGetListener() {
+			        ^
+  The type of object is: net.hetimatan.net.http.HttpGet.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/tool/WGet.java:20: error: (required.method.not.called) $$ 4 $$ method dispose $$ new HttpGet(new HttpGetListener(){
+			HttpGet getter = new HttpGet( new HttpGetListener() {
+			                 ^
+      
+      () {
+          super();
+      }
+      
+      @Override()
+      public boolean onReceiveHeader(HttpGet httpGet) throws IOException {
+          return false;
+      }
+      
+      @Override()
+      public boolean onReceiveBody(HttpGet httpGet) throws IOException {
+          System.out.println("\n-------@1-------\n:" + new String(httpGet.getHeader()) + "\n-------@/1-------\n:");
+          System.out.println("\n-------@2-------\n:" + new String(httpGet.getBody()) + "\n-------@/1-------\n:");
+          return false;
+      }
+  }) $$ net.hetimatan.net.http.HttpGet $$ possible exceptional exit due to new HttpGet(new HttpGetListener(){
+      
+      () {
+          super();
+      }
+      
+      @Override()
+      public boolean onReceiveHeader(HttpGet httpGet) throws IOException {
+          return false;
+      }
+      
+      @Override()
+      public boolean onReceiveBody(HttpGet httpGet) throws IOException {
+          System.out.println("\n-------@1-------\n:" + new String(httpGet.getHeader()) + "\n-------@/1-------\n:");
+          System.out.println("\n-------@2-------\n:" + new String(httpGet.getBody()) + "\n-------@/1-------\n:");
+          return false;
+      }
+  }).update(args[0]) with exception type java.io.IOException $$ ( 526, 991 ) $$ @MustCall method dispose may not have been invoked on new HttpGet(new HttpGetListener(){
+      
+      () {
+          super();
+      }
+      
+      @Override()
+      public boolean onReceiveHeader(HttpGet httpGet) throws IOException {
+          return false;
+      }
+      
+      @Override()
+      public boolean onReceiveBody(HttpGet httpGet) throws IOException {
+          System.out.println("\n-------@1-------\n:" + new String(httpGet.getHeader()) + "\n-------@/1-------\n:");
+          System.out.println("\n-------@2-------\n:" + new String(httpGet.getBody()) + "\n-------@/1-------\n:");
+          return false;
+      }
+  }) or any of its aliases.
+  The type of object is: net.hetimatan.net.http.HttpGet.
+  Reason for going out of scope: possible exceptional exit due to new HttpGet(new HttpGetListener(){
+      
+      () {
+          super();
+      }
+      
+      @Override()
+      public boolean onReceiveHeader(HttpGet httpGet) throws IOException {
+          return false;
+      }
+      
+      @Override()
+      public boolean onReceiveBody(HttpGet httpGet) throws IOException {
+          System.out.println("\n-------@1-------\n:" + new String(httpGet.getHeader()) + "\n-------@/1-------\n:");
+          System.out.println("\n-------@2-------\n:" + new String(httpGet.getBody()) + "\n-------@/1-------\n:");
+          return false;
+      }
+  }).update(args[0]) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/tool/SimpleHttpServer.java:49: error: (required.method.not.called) $$ 4 $$ method close $$ header $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to header.addChunk(("HTTP/1.1 404 OK\r\n").getBytes()) with exception type java.io.IOException $$ ( 1622, 1669 ) $$ @MustCall method close may not have been invoked on header or any of its aliases.
+		CashKyoroFile header = new CashKyoroFile(1024);
+		              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to header.addChunk(("HTTP/1.1 404 OK\r\n").getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/tool/SimpleHttpServer.java:54: error: (return) $$ 2 $$ @MustCall("close") CashKyoroFile $$ @MustCall KyoroFile $$ ( 1894, 1900 ) $$ incompatible types in return.
+		return header;
+		       ^
+  type of expression: @MustCall("close") CashKyoroFile
+  method return type: @MustCall KyoroFile
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/tool/SimpleHttpServer.java:58: error: (required.method.not.called) $$ 4 $$ method close $$ header $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to header.addChunk(("HTTP/1.1 200 OK\r\n").getBytes()) with exception type java.io.IOException $$ ( 2004, 2051 ) $$ @MustCall method close may not have been invoked on header or any of its aliases.
+		CashKyoroFile header = new CashKyoroFile(1024);
+		              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to header.addChunk(("HTTP/1.1 200 OK\r\n").getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/tool/SimpleHttpServer.java:65: error: (required.method.not.called) $$ 4 $$ method close $$ file $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to new KyoroFileForFiles(files) with exception type java.io.IOException $$ ( 2376, 2430 ) $$ @MustCall method close may not have been invoked on file or any of its aliases.
+		CashKyoroFile file = new CashKyoroFile(path, 1024, 3);
+		              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to new KyoroFileForFiles(files) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/tool/SimpleHttpServer.java:66: error: (assignment) $$ 2 $$ @MustCall("close") KyoroFile @MustCall [] $$ @MustCall KyoroFile @MustCallUnknown [] $$ ( 2454, 2483 ) $$ incompatible types in assignment.
+		KyoroFile[] files = new KyoroFile[]{header, file};
+		                    ^
+  found   : @MustCall("close") KyoroFile @MustCall []
+  required: @MustCall KyoroFile @MustCallUnknown []
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/tool/SimpleHttpServer.java:67: error: (return) $$ 2 $$ @MustCall("close") KyoroFileForFiles $$ @MustCall KyoroFile $$ ( 2495, 2523 ) $$ incompatible types in return.
+		return new KyoroFileForFiles(files);
+		       ^
+  type of expression: @MustCall("close") KyoroFileForFiles
+  method return type: @MustCall KyoroFile
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/tool/SimpleHttpServer.java:71: error: (required.method.not.called) $$ 4 $$ method close $$ content $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to content.addChunk(("<html><head><title>" + uri.getLine().getMethod() + "</title></head><body>").getBytes()) with exception type java.io.IOException $$ ( 2620, 2668 ) $$ @MustCall method close may not have been invoked on content or any of its aliases.
+		CashKyoroFile content = new CashKyoroFile(1024);
+		              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to content.addChunk(("<html><head><title>" + uri.getLine().getMethod() + "</title></head><body>").getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/tool/SimpleHttpServer.java:79: error: (required.method.not.called) $$ 4 $$ method close $$ header $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to header.addChunk(("HTTP/1.1 200 OK\r\n").getBytes()) with exception type java.io.IOException $$ ( 3077, 3124 ) $$ @MustCall method close may not have been invoked on header or any of its aliases.
+		CashKyoroFile header = new CashKyoroFile(1024);
+		              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to header.addChunk(("HTTP/1.1 200 OK\r\n").getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/tool/SimpleHttpServer.java:86: error: (assignment) $$ 2 $$ @MustCall("close") KyoroFile @MustCall [] $$ @MustCall KyoroFile @MustCallUnknown [] $$ ( 3472, 3504 ) $$ incompatible types in assignment.
+		KyoroFile[] files = new KyoroFile[]{header, content};
+		                    ^
+  found   : @MustCall("close") KyoroFile @MustCall []
+  required: @MustCall KyoroFile @MustCallUnknown []
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/tool/SimpleHttpServer.java:87: error: (return) $$ 2 $$ @MustCall("close") KyoroFileForFiles $$ @MustCall KyoroFile $$ ( 3516, 3544 ) $$ incompatible types in return.
+		return new KyoroFileForFiles(files);
+		       ^
+  type of expression: @MustCall("close") KyoroFileForFiles
+  method return type: @MustCall KyoroFile
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/net/http/HttpServerTemplate.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ kfiles $$ net.hetimatan.io.file.KyoroFileForFiles $$ possible exceptional exit due to kfiles.seek(0) with exception type java.io.IOException $$ ( 1291, 1347 ) $$ @MustCall method close may not have been invoked on kfiles or any of its aliases.
+		KyoroFileForFiles kfiles = new KyoroFileForFiles(files);
+		                  ^
+  The type of object is: net.hetimatan.io.file.KyoroFileForFiles.
+  Reason for going out of scope: possible exceptional exit due to kfiles.seek(0) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/net/http/HttpServerTemplate.java:45: error: (return) $$ 2 $$ @MustCall("close") KyoroFileForFiles $$ @MustCall KyoroFile $$ ( 1377, 1383 ) $$ incompatible types in return.
+		return kfiles;
+		       ^
+  type of expression: @MustCall("close") KyoroFileForFiles
+  method return type: @MustCall KyoroFile
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/net/http/HttpServerTemplate.java:72: error: (return) $$ 2 $$ @MustCall("close") CashKyoroFile $$ @MustCall KyoroFile $$ ( 2277, 2320 ) $$ incompatible types in return.
+			return new CashKyoroFile("hello world".getBytes());
+			       ^
+  type of expression: @MustCall("close") CashKyoroFile
+  method return type: @MustCall KyoroFile
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/net/http/HttpServer.java:68: error: (assignment) $$ 2 $$ @MustCall("close") KyoroServerSocketImpl $$ @MustCall KyoroServerSocket $$ ( 1940, 1967 ) $$ incompatible types in assignment.
+		mServerSocket = new KyoroServerSocketImpl();
+		                ^
+  found   : @MustCall("close") KyoroServerSocketImpl
+  required: @MustCall KyoroServerSocket
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/net/http/HttpServer.java:68: error: (required.method.not.called) $$ 4 $$ method close $$ new KyoroServerSocketImpl() $$ net.hetimatan.util.event.net.io.KyoroServerSocketImpl $$ possible exceptional exit due to mServerSocket.bind(mPort) with exception type java.io.IOException $$ ( 1940, 1967 ) $$ @MustCall method close may not have been invoked on new KyoroServerSocketImpl() or any of its aliases.
+		mServerSocket = new KyoroServerSocketImpl();
+		                ^
+  The type of object is: net.hetimatan.util.event.net.io.KyoroServerSocketImpl.
+  Reason for going out of scope: possible exceptional exit due to mServerSocket.bind(mPort) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/net/http/HttpServerFront.java:44: error: (required.method.not.called) $$ 4 $$ method close $$ new KyoroFileForKyoroSocket(socket, 1024) $$ net.hetimatan.io.file.KyoroFileForKyoroSocket $$ possible exceptional exit due to new MarkableFileReader(mKFKSocket, 1024) with exception type java.io.FileNotFoundException $$ ( 1580, 1621 ) $$ @MustCall method close may not have been invoked on new KyoroFileForKyoroSocket(socket, 1024) or any of its aliases.
+		mKFKSocket = new KyoroFileForKyoroSocket(socket, 1024);
+		             ^
+  The type of object is: net.hetimatan.io.file.KyoroFileForKyoroSocket.
+  Reason for going out of scope: possible exceptional exit due to new MarkableFileReader(mKFKSocket, 1024) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/net/http/HttpServerFront.java:93: error: (required.method.not.called) $$ 4 $$ method createEncode $$ HttpRequest.decode(mCurrentReader) $$ net.hetimatan.util.http.HttpRequest $$ regular method exit $$ ( 3164, 3198 ) $$ @MustCall method createEncode may not have been invoked on HttpRequest.decode(mCurrentReader) or any of its aliases.
+		this.mUri = HttpRequest.decode(mCurrentReader);
+		                              ^
+  The type of object is: net.hetimatan.util.http.HttpRequest.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequest.java:17: error: (type.argument) $$ 4 $$ E $$ LinkedList $$ @MustCall("createEncode") HttpRequestHeader $$ @MustCall Object $$ ( 553, 570 ) $$ incompatible type argument for type parameter E of LinkedList.
+	private LinkedList<HttpRequestHeader> mHeaders = new LinkedList<HttpRequestHeader>();
+	                   ^
+  found   : @MustCall("createEncode") HttpRequestHeader
+  required: @MustCall Object
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequest.java:17: error: (type.argument) $$ 4 $$ E $$ LinkedList $$ @MustCall("createEncode") HttpRequestHeader $$ @MustCall Object $$ ( 598, 615 ) $$ incompatible type argument for type parameter E of LinkedList.
+	private LinkedList<HttpRequestHeader> mHeaders = new LinkedList<HttpRequestHeader>();
+	                                                                ^
+  found   : @MustCall("createEncode") HttpRequestHeader
+  required: @MustCall Object
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequest.java:21: error: (required.method.not.called) $$ 4 $$ method createEncode $$ line $$ net.hetimatan.util.http.HttpRequestLine $$ regular method exit $$ ( 755, 831 ) $$ @MustCall method createEncode may not have been invoked on line or any of its aliases.
+		HttpRequestLine line = new HttpRequestLine(method, requestUri, httpVersion);
+		                ^
+  The type of object is: net.hetimatan.util.http.HttpRequestLine.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequest.java:33: error: (type.argument) $$ 4 $$ E $$ LinkedList $$ @MustCall("createEncode") HttpRequestHeader $$ @MustCall Object $$ ( 1019, 1036 ) $$ incompatible type argument for type parameter E of LinkedList.
+	public LinkedList<HttpRequestHeader> getHeader() {
+	                  ^
+  found   : @MustCall("createEncode") HttpRequestHeader
+  required: @MustCall Object
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequest.java:38: error: (required.method.not.called) $$ 4 $$ method createEncode $$ mLine.putValue(key, value) $$ net.hetimatan.util.http.HttpRequestLine $$ regular method exit $$ ( 1139, 1165 ) $$ @MustCall method createEncode may not have been invoked on mLine.putValue(key, value) or any of its aliases.
+		mLine.putValue(key, value);
+		              ^
+  The type of object is: net.hetimatan.util.http.HttpRequestLine.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequest.java:47: error: (required.method.not.called) $$ 4 $$ method createEncode $$ h $$ net.hetimatan.util.http.HttpRequestHeader $$ regular method exit $$ ( 1333, 1352 ) $$ @MustCall method createEncode may not have been invoked on h or any of its aliases.
+		for(HttpRequestHeader h:mHeaders) {
+		                      ^
+  The type of object is: net.hetimatan.util.http.HttpRequestHeader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequest.java:56: error: (required.method.not.called) $$ 4 $$ method createEncode $$ new HttpRequestHeader(key, value) $$ net.hetimatan.util.http.HttpRequestHeader $$ regular method exit $$ ( 1535, 1568 ) $$ @MustCall method createEncode may not have been invoked on new HttpRequestHeader(key, value) or any of its aliases.
+		return addHeader(new HttpRequestHeader(key, value));
+		                 ^
+  The type of object is: net.hetimatan.util.http.HttpRequestHeader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequest.java:75: error: (required.method.not.called) $$ 4 $$ method createEncode $$ header $$ net.hetimatan.util.http.HttpRequestHeader $$ possible exceptional exit due to header.encode(output) with exception type java.io.IOException $$ ( 1908, 1932 ) $$ @MustCall method createEncode may not have been invoked on header or any of its aliases.
+		for (HttpRequestHeader header : mHeaders) {
+		                       ^
+  The type of object is: net.hetimatan.util.http.HttpRequestHeader.
+  Reason for going out of scope: possible exceptional exit due to header.encode(output) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequest.java:87: error: (flowexpr.parse.error.postcondition) $$ 2 $$ createEncode(HttpObject) $$ Invalid 'this' because "this" isn't allowed here $$ ( 2154, 2183 ) $$ error parsing the postcondition expression for createEncode(HttpObject)
+			return HttpObject.createEncode(this);
+			                              ^
+  cannot parse the expression Invalid 'this' because "this" isn't allowed here
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequest.java:94: error: (required.method.not.called) $$ 4 $$ method createEncode $$ line $$ net.hetimatan.util.http.HttpRequestLine $$ possible exceptional exit due to _crlf(reader) with exception type java.io.IOException $$ ( 2341, 2395 ) $$ @MustCall method createEncode may not have been invoked on line or any of its aliases.
+		HttpRequestLine line = HttpRequestLine.decode(reader);
+		                ^
+  The type of object is: net.hetimatan.util.http.HttpRequestLine.
+  Reason for going out of scope: possible exceptional exit due to _crlf(reader) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequest.java:95: error: (required.method.not.called) $$ 4 $$ method createEncode $$ ret $$ net.hetimatan.util.http.HttpRequest $$ possible exceptional exit due to _crlf(reader) with exception type java.io.IOException $$ ( 2399, 2439 ) $$ @MustCall method createEncode may not have been invoked on ret or any of its aliases.
+		HttpRequest ret = new HttpRequest(line);
+		            ^
+  The type of object is: net.hetimatan.util.http.HttpRequest.
+  Reason for going out of scope: possible exceptional exit due to _crlf(reader) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequest.java:101: error: (required.method.not.called) $$ 4 $$ method createEncode $$ ret.addHeader(HttpRequestHeader.decode(reader)) $$ net.hetimatan.util.http.HttpRequest $$ regular method exit $$ ( 2520, 2567 ) $$ @MustCall method createEncode may not have been invoked on ret.addHeader(HttpRequestHeader.decode(reader)) or any of its aliases.
+				ret.addHeader(HttpRequestHeader.decode(reader));
+				             ^
+  The type of object is: net.hetimatan.util.http.HttpRequest.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequest.java:101: error: (required.method.not.called) $$ 4 $$ method createEncode $$ HttpRequestHeader.decode(reader) $$ net.hetimatan.util.http.HttpRequestHeader $$ regular method exit $$ ( 2534, 2566 ) $$ @MustCall method createEncode may not have been invoked on HttpRequestHeader.decode(reader) or any of its aliases.
+				ret.addHeader(HttpRequestHeader.decode(reader));
+				                                      ^
+  The type of object is: net.hetimatan.util.http.HttpRequestHeader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpObject.java:25: error: (required.method.not.called) $$ 4 $$ method close $$ field vFile $$ net.hetimatan.io.filen.CashKyoroFile $$ Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "vFile", methods = "close"), @EnsuresCalledMethodsOnException(value = "vFile", methods = "close") $$ ( 681, 723 ) $$ @MustCall method close may not have been invoked on field vFile or any of its aliases.
+	private static CashKyoroFile vFile = null;
+	                             ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "vFile", methods = "close"), @EnsuresCalledMethodsOnException(value = "vFile", methods = "close")
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpObject.java:26: error: (flowexpr.parse.error) $$ 1 $$ 'this.vFile' in the postcondition EnsuresCalledMethods on the declaration of method 'createEncode': Invalid 'this' because "this" isn't allowed here $$ ( 726, 1096 ) $$ cannot parse the expression 'this.vFile' in the postcondition EnsuresCalledMethods on the declaration of method 'createEncode': Invalid 'this' because "this" isn't allowed here
+	public static synchronized String createEncode(HttpObject target) throws IOException {
+	                                  ^
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpObject.java:26: error: (flowexpr.parse.error) $$ 1 $$ Invalid 'this' because "this" isn't allowed here $$ ( 726, 1096 ) $$ cannot parse the expression Invalid 'this' because "this" isn't allowed here
+	public static synchronized String createEncode(HttpObject target) throws IOException {
+	                                  ^
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpObject.java:26: error: (missing.creates.mustcall.for) $$ 3 $$ createEncode $$ net.hetimatan.util.http.HttpObject $$ vFile $$ ( 726, 1096 ) $$ Method createEncode re-assigns the non-final, owning field net.hetimatan.util.http.HttpObject.vFile, but does not have a corresponding @CreatesMustCallFor annotation.
+	public static synchronized String createEncode(HttpObject target) throws IOException {
+	                                  ^
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpObject.java:28: error: (required.method.not.called) $$ 4 $$ method close $$ field vFile $$ net.hetimatan.io.filen.CashKyoroFile $$  Non-final owning field might be overwritten $$ ( 826, 859 ) $$ @MustCall method close may not have been invoked on field vFile or any of its aliases.
+			vFile = new CashKyoroFile(512, 2);
+			      ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequestLine.java:40: error: (required.method.not.called) $$ 4 $$ method createEncode $$ HttpGetRequestUri.crateHttpGetRequestUri(requestUri) $$ net.hetimatan.util.http.HttpGetRequestUri $$ regular method exit $$ ( 1418, 1470 ) $$ @MustCall method createEncode may not have been invoked on HttpGetRequestUri.crateHttpGetRequestUri(requestUri) or any of its aliases.
+		mRequestURI = HttpGetRequestUri.crateHttpGetRequestUri(requestUri);
+		                                                      ^
+  The type of object is: net.hetimatan.util.http.HttpGetRequestUri.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequestLine.java:98: error: (required.method.not.called) $$ 4 $$ method close $$ vFile $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to vFile.addChunk(path.getBytes()) with exception type java.io.IOException $$ ( 2663, 2711 ) $$ @MustCall method close may not have been invoked on vFile or any of its aliases.
+		CashKyoroFile vFile = new CashKyoroFile(512, 2);
+		              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to vFile.addChunk(path.getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequestLine.java:109: error: (required.method.not.called) $$ 4 $$ method createEncode $$ requestUri $$ net.hetimatan.util.http.HttpGetRequestUri $$ possible exceptional exit due to _sp(reader) with exception type java.io.IOException $$ ( 3031, 3095 ) $$ @MustCall method createEncode may not have been invoked on requestUri or any of its aliases.
+			HttpGetRequestUri requestUri = HttpGetRequestUri.decode(reader);
+			                  ^
+  The type of object is: net.hetimatan.util.http.HttpGetRequestUri.
+  Reason for going out of scope: possible exceptional exit due to _sp(reader) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpRequestHeader.java:46: error: (required.method.not.called) $$ 4 $$ method close $$ vFile $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to vFile.addChunk(path.getBytes()) with exception type java.io.IOException $$ ( 1258, 1306 ) $$ @MustCall method close may not have been invoked on vFile or any of its aliases.
+		CashKyoroFile vFile = new CashKyoroFile(512, 2);
+		              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to vFile.addChunk(path.getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpGetRequestUri.java:27: error: (required.method.not.called) $$ 4 $$ method close $$ base $$ net.hetimatan.io.filen.CashKyoroFile $$ possible exceptional exit due to new MarkableFileReader(base, 100) with exception type java.io.FileNotFoundException $$ ( 819, 882 ) $$ @MustCall method close may not have been invoked on base or any of its aliases.
+			CashKyoroFile base = new CashKyoroFile(requestPath.getBytes());
+			              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.
+  Reason for going out of scope: possible exceptional exit due to new MarkableFileReader(base, 100) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpGetRequestUri.java:42: error: (flowexpr.parse.error.postcondition) $$ 2 $$ createEncode(HttpObject) $$ Invalid 'this' because "this" isn't allowed here $$ ( 1208, 1237 ) $$ error parsing the postcondition expression for createEncode(HttpObject)
+			String ret = HttpObject.createEncode(this);
+			                                    ^
+  cannot parse the expression Invalid 'this' because "this" isn't allowed here
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroServerSocketImpl.java:17: error: (required.method.not.called) $$ 4 $$ method close $$ field mServerChannel $$ java.nio.channels.ServerSocketChannel $$  Non-final owning field might be overwritten $$ ( 510, 553 ) $$ @MustCall method close may not have been invoked on field mServerChannel or any of its aliases.
+		 mServerChannel = ServerSocketChannel.open();
+		                ^
+  The type of object is: java.nio.channels.ServerSocketChannel.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroServerSocketImpl.java:23: error: (reset.not.owning) $$ 2 $$ bind $$ this.mServerChannel.socket() $$ ( 671, 728 ) $$ Calling method bind resets the must-call obligations of the expression this.mServerChannel.socket(), which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+		mServerChannel.socket().bind(new InetSocketAddress(port));
+		                            ^
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroServerSocketImpl.java:44: error: (return) $$ 2 $$ @MustCall("close") KyoroSocketImpl $$ @MustCall KyoroSocket $$ ( 1112, 1140 ) $$ incompatible types in return.
+		return new KyoroSocketImpl(channel);
+		       ^
+  type of expression: @MustCall("close") KyoroSocketImpl
+  method return type: @MustCall KyoroSocket
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroServerSocketImpl.java:48: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.mServerChannel $$ this.mServerChannel is @CalledMethods("close") $$ ( 1150, 1289 ) $$ postcondition of close is not satisfied.
+	public void close() throws IOException {
+	            ^
+  found   : no information about this.mServerChannel
+  required: this.mServerChannel is @CalledMethods("close")
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/net/http/HttpGet.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ field mCurrentRequest $$ net.hetimatan.net.http.request.HttpGetRequester $$ Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "mCurrentRequest", methods = "close"), @EnsuresCalledMethodsOnException(value = "mCurrentRequest", methods = "close") $$ ( 1189, 1238 ) $$ @MustCall method close may not have been invoked on field mCurrentRequest or any of its aliases.
+	private HttpGetRequester mCurrentRequest  = null;
+	                         ^
+  The type of object is: net.hetimatan.net.http.request.HttpGetRequester.
+  Reason for going out of scope: Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "mCurrentRequest", methods = "close"), @EnsuresCalledMethodsOnException(value = "mCurrentRequest", methods = "close")
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/net/http/HttpGet.java:59: error: (missing.creates.mustcall.for) $$ 3 $$ createGetRequest $$ this $$ mCurrentRequest $$ ( 2048, 2211 ) $$ Method createGetRequest re-assigns the non-final, owning field this.mCurrentRequest, but does not have a corresponding @CreatesMustCallFor annotation.
+	protected HttpGetRequester createGetRequest() {
+	                           ^
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/net/http/HttpGet.java:80: error: (required.method.not.called) $$ 4 $$ method createEncode $$ geturi $$ net.hetimatan.util.http.HttpGetRequestUri $$ possible exceptional exit due to update(geturi.getHost(), geturi.getMethod(), geturi.getPort()) with exception type java.io.IOException $$ ( 2655, 2715 ) $$ @MustCall method createEncode may not have been invoked on geturi or any of its aliases.
+			HttpGetRequestUri geturi = HttpGetRequestUri.decode(reader);
+			                  ^
+  The type of object is: net.hetimatan.util.http.HttpGetRequestUri.
+  Reason for going out of scope: possible exceptional exit due to update(geturi.getHost(), geturi.getMethod(), geturi.getPort()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/net/http/HttpGet.java:81: error: (required.method.not.called) $$ 4 $$ method dispose $$ update(geturi.getHost(), geturi.getMethod(), geturi.getPort()) $$ net.hetimatan.net.http.HttpGet $$ possible exceptional exit due to reader.close() with exception type java.io.IOException $$ ( 2720, 2782 ) $$ @MustCall method dispose may not have been invoked on update(geturi.getHost(), geturi.getMethod(), geturi.getPort()) or any of its aliases.
+			update(geturi.getHost(), geturi.getMethod(), geturi.getPort());
+			      ^
+  The type of object is: net.hetimatan.net.http.HttpGet.
+  Reason for going out of scope: possible exceptional exit due to reader.close() with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/net/http/HttpGet.java:115: error: (missing.creates.mustcall.for) $$ 3 $$ connect $$ this $$ mCurrentRequest $$ ( 3699, 4281 ) $$ Method connect re-assigns the non-final, owning field this.mCurrentRequest, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void connect() throws IOException, InterruptedException {
+	            ^
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/net/http/HttpGet.java:117: error: (required.method.not.called) $$ 4 $$ method close $$ field mCurrentRequest $$ net.hetimatan.net.http.request.HttpGetRequester $$  Non-final owning field might be overwritten $$ ( 3818, 3854 ) $$ @MustCall method close may not have been invoked on field mCurrentRequest or any of its aliases.
+		mCurrentRequest = createGetRequest();
+		                ^
+  The type of object is: net.hetimatan.net.http.request.HttpGetRequester.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/net/http/HttpGet.java:118: error: (required.method.not.called) $$ 4 $$ method close $$ field mCurrentResponse $$ net.hetimatan.net.http.request.HttpGetResponse $$  Non-final owning field might be overwritten $$ ( 3859, 3882 ) $$ @MustCall method close may not have been invoked on field mCurrentResponse or any of its aliases.
+		mCurrentResponse = null;
+		                 ^
+  The type of object is: net.hetimatan.net.http.request.HttpGetResponse.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+Note: ../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/filen/CashKyoroFile.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: ../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/tool/SimpleHttpServer.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+100 errors

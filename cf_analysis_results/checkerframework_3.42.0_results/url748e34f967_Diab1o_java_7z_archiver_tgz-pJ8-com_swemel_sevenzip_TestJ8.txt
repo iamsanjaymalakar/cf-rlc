@@ -1,0 +1,26 @@
+../dataset/june2020_dataset/url748e34f967_Diab1o_java_7z_archiver_tgz-pJ8-com_swemel_sevenzip_TestJ8/src/com/swemel/sevenzip/archive/SevenZipFolderInStream.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ new InStreamWithCRC(updateItems.get(off + _fileIndex).getFullName()) $$ com.swemel.sevenzip.common.InStreamWithCRC $$ regular method exit $$ ( 1040, 1108 ) $$ @MustCall method close may not have been invoked on new InStreamWithCRC(updateItems.get(off + _fileIndex).getFullName()) or any of its aliases.
+            stream = new InStreamWithCRC(updateItems.get(off + _fileIndex).getFullName());
+                     ^
+  The type of object is: com.swemel.sevenzip.common.InStreamWithCRC.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url748e34f967_Diab1o_java_7z_archiver_tgz-pJ8-com_swemel_sevenzip_TestJ8/src/com/swemel/sevenzip/common/InStreamWithCRC.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(new File(fileName), "r") $$ java.io.RandomAccessFile $$ regular method exit $$ ( 433, 478 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(new File(fileName), "r") or any of its aliases.
+        stream = new RandomAccessFile(new File(fileName), "r");
+                 ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url748e34f967_Diab1o_java_7z_archiver_tgz-pJ8-com_swemel_sevenzip_TestJ8/src/com/swemel/common/RandomAccessOutputStream.java:20: error: (required.method.not.called) $$ 4 $$ method close $$ new java.io.RandomAccessFile(file, mode) $$ java.io.RandomAccessFile $$ regular method exit $$ ( 672, 712 ) $$ @MustCall method close may not have been invoked on new java.io.RandomAccessFile(file, mode) or any of its aliases.
+        stream = new java.io.RandomAccessFile(file, mode);
+                 ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url748e34f967_Diab1o_java_7z_archiver_tgz-pJ8-com_swemel_sevenzip_TestJ8/src/com/swemel/sevenzip/SevenZip.java:68: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessOutputStream(new File(archiveName), "rw") $$ com.swemel.common.RandomAccessOutputStream $$ regular method exit $$ ( 2420, 2477 ) $$ @MustCall method close may not have been invoked on new RandomAccessOutputStream(new File(archiveName), "rw") or any of its aliases.
+        outStream = new RandomAccessOutputStream(new File(archiveName), "rw");
+                    ^
+  The type of object is: com.swemel.common.RandomAccessOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url748e34f967_Diab1o_java_7z_archiver_tgz-pJ8-com_swemel_sevenzip_TestJ8/src/com/swemel/sevenzip/SevenZip.java:150: error: (required.method.not.called) $$ 4 $$ method close $$ inStream $$ com.swemel.sevenzip.archive.SevenZipFolderInStream $$ possible exceptional exit due to encoder.code(inStream, outStream) with exception type java.io.IOException $$ ( 5563, 5626 ) $$ @MustCall method close may not have been invoked on inStream or any of its aliases.
+            SevenZipFolderInStream inStream = new SevenZipFolderInStream();
+                                   ^
+  The type of object is: com.swemel.sevenzip.archive.SevenZipFolderInStream.
+  Reason for going out of scope: possible exceptional exit due to encoder.code(inStream, outStream) with exception type java.io.IOException
+5 errors

@@ -1,0 +1,78 @@
+../dataset/june2020_dataset/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/repl/REPLRunnable.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ outputFileName != null ? new FileOutputStream(outputFileName) : System.out $$ java.io.OutputStream $$ possible exceptional exit due to new FileOutputStream(errorsFileName) with exception type java.io.FileNotFoundException $$ ( 2695, 2769 ) $$ @MustCall method close may not have been invoked on outputFileName != null ? new FileOutputStream(outputFileName) : System.out or any of its aliases.
+                outputFileName != null ? new FileOutputStream(outputFileName) : System.out,
+                                       ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(errorsFileName) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/repl/REPLRunnable.java:68: error: (required.method.not.called) $$ 4 $$ method close $$ errorsFileName != null ? new FileOutputStream(errorsFileName) : System.err $$ java.io.OutputStream $$ regular method exit $$ ( 2787, 2861 ) $$ @MustCall method close may not have been invoked on errorsFileName != null ? new FileOutputStream(errorsFileName) : System.err or any of its aliases.
+                errorsFileName != null ? new FileOutputStream(errorsFileName) : System.err
+                                       ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/repl/ConsoleREPLRunnable.java:72: error: (required.method.not.called) $$ 4 $$ method close $$ getStdIn() $$ java.io.BufferedReader $$ regular method exit $$ ( 2236, 2246 ) $$ @MustCall method close may not have been invoked on getStdIn() or any of its aliases.
+            while (!(line = getStdIn().readLine()).equals("")) {
+                                    ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/repl/ConsoleREPLRunnable.java:100: error: (required.method.not.called) $$ 4 $$ method close $$ getStdOut() $$ java.io.PrintWriter $$ regular method exit $$ ( 2861, 2872 ) $$ @MustCall method close may not have been invoked on getStdOut() or any of its aliases.
+        getStdOut().print(SHELL_PREFIX);
+                 ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/repl/ConsoleREPLRunnable.java:101: error: (required.method.not.called) $$ 4 $$ method close $$ getStdOut() $$ java.io.PrintWriter $$ regular method exit $$ ( 2902, 2913 ) $$ @MustCall method close may not have been invoked on getStdOut() or any of its aliases.
+        getStdOut().flush();
+                 ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/repl/ScriptREPLRunnable.java:18: error: (type.argument) $$ 4 $$ Q $$ REPLRunnable $$ @MustCall("close") FileInputStream $$ @MustCall Object $$ ( 497, 512 ) $$ incompatible type argument for type parameter Q of REPLRunnable.
+public class ScriptREPLRunnable extends REPLRunnable<FileInputStream> {
+                                                     ^
+  found   : @MustCall("close") FileInputStream
+  required: @MustCall Object
+../dataset/june2020_dataset/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/repl/ScriptREPLRunnable.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(inputFileName) $$ java.io.FileInputStream $$ possible exceptional exit due to this(dbFileName, new FileInputStream(inputFileName), outputFileName, errorsFileName) with exception type java.io.FileNotFoundException $$ ( 1305, 1339 ) $$ @MustCall method close may not have been invoked on new FileInputStream(inputFileName) or any of its aliases.
+        this(dbFileName, new FileInputStream(inputFileName), outputFileName, errorsFileName);
+                         ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to this(dbFileName, new FileInputStream(inputFileName), outputFileName, errorsFileName) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/repl/ScriptREPLRunnable.java:46: error: (required.method.not.called) $$ 4 $$ method close $$ getStdOut() $$ java.io.PrintWriter $$ regular method exit $$ ( 1608, 1619 ) $$ @MustCall method close may not have been invoked on getStdOut() or any of its aliases.
+                getStdOut().println();
+                         ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/repl/ScriptREPLRunnable.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ getStdOut() $$ java.io.PrintWriter $$ regular method exit $$ ( 1647, 1658 ) $$ @MustCall method close may not have been invoked on getStdOut() or any of its aliases.
+                getStdOut().flush();
+                         ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/table/TableBase.java:202: error: (required.method.not.called) $$ 4 $$ method close $$ pageView $$ ru.spbau.tinydb.bufferManager.BufferView $$ regular method exit $$ ( 7414, 7462 ) $$ @MustCall method close may not have been invoked on pageView or any of its aliases.
+                        pageView = bufferManager.getPage(curPageNotFull);
+                                 ^
+  The type of object is: ru.spbau.tinydb.bufferManager.BufferView.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/table/TableBase.java:205: error: (required.method.not.called) $$ 4 $$ method close $$ pageView $$ ru.spbau.tinydb.bufferManager.BufferView $$ regular method exit $$ ( 7568, 7613 ) $$ @MustCall method close may not have been invoked on pageView or any of its aliases.
+                            pageView = bufferManager.getPage(curPageFull);
+                                     ^
+  The type of object is: ru.spbau.tinydb.bufferManager.BufferView.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/table/TableBase.java:241: error: (required.method.not.called) $$ 4 $$ method close $$ recordView $$ ru.spbau.tinydb.bufferManager.BufferView $$ regular method exit $$ ( 9183, 9292 ) $$ @MustCall method close may not have been invoked on recordView or any of its aliases.
+                BufferView recordView = pageView.getSubView(POINTERS_SIZE + bitSetSize + recordPos * recordSize, recordSize);
+                           ^
+  The type of object is: ru.spbau.tinydb.bufferManager.BufferView.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/bufferManager/BufferManager.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(dbFile, "rw") $$ java.io.RandomAccessFile $$ possible exceptional exit due to init() with exception type ru.spbau.tinydb.common.DBException $$ ( 1785, 1819 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(dbFile, "rw") or any of its aliases.
+            this.dbFile = new RandomAccessFile(dbFile, "rw");
+                          ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to init() with exception type ru.spbau.tinydb.common.DBException
+../dataset/june2020_dataset/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/bufferManager/TableTest.java:78: error: (required.method.not.called) $$ 4 $$ method close $$ recordView.getView() $$ ru.spbau.tinydb.bufferManager.BufferView $$ regular method exit $$ ( 2802, 2822 ) $$ @MustCall method close may not have been invoked on recordView.getView() or any of its aliases.
+            if(recordView.getView().getByte(0) != 7) {
+                                 ^
+  The type of object is: ru.spbau.tinydb.bufferManager.BufferView.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/grammar/GrammarTester.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(testName) $$ java.io.FileInputStream $$ possible exceptional exit due to new ANTLRInputStream(new FileInputStream(testName)) with exception type java.io.IOException $$ ( 1428, 1457 ) $$ @MustCall method close may not have been invoked on new FileInputStream(testName) or any of its aliases.
+                        new SQLGrammarLexer(new ANTLRInputStream(new FileInputStream(testName)))));
+                                                                 ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ANTLRInputStream(new FileInputStream(testName)) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+15 errors

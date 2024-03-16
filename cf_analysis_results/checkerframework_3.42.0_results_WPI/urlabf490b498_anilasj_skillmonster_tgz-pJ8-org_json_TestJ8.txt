@@ -1,0 +1,9 @@
+error: SourceChecker.typeProcess: unexpected Throwable (CompletionFailure) while processing ../dataset/june2020_dataset/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/com/skm/test/AngelListTest.java; message: class file for com.sun.jersey.core.util.FeaturesAndProperties not found
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/com/skm/test/AngelListTest.java
+  Last visited tree at line 25 column 1:
+  public class AngelListTest {
+  Exception: com.sun.tools.javac.code.Symbol$CompletionFailure: class file for com.sun.jersey.core.util.FeaturesAndProperties not found; com.sun.tools.javac.code.Symbol$CompletionFailure: class file for com.sun.jersey.core.util.FeaturesAndProperties not found
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error

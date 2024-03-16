@@ -1,0 +1,11 @@
+../../../../datasets/june2020_dataset/url97a7a8bbec_PPilger_OOP_2_tgz-pJ8-TestJ8/src/Programm.java:61: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-821 $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(file)) with exception type java.io.IOException $$ ( 1278, 1304 ) $$ @MustCall method close may not have been invoked on temp-var-821 or any of its aliases.
+			dos = new ObjectOutputStream(new FileOutputStream(file));
+			                             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(file)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url97a7a8bbec_PPilger_OOP_2_tgz-pJ8-TestJ8/src/Programm.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-827 $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(new FileInputStream(file)) with exception type java.io.IOException $$ ( 1672, 1697 ) $$ @MustCall method close may not have been invoked on temp-var-827 or any of its aliases.
+			ois = new ObjectInputStream(new FileInputStream(file));
+			                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(new FileInputStream(file)) with exception type java.io.IOException
+2 errors

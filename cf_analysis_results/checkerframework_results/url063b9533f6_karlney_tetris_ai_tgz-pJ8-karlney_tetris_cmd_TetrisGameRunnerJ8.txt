@@ -1,0 +1,21 @@
+../../../../datasets/june2020_dataset/url063b9533f6_karlney_tetris_ai_tgz-pJ8-karlney_tetris_cmd_TetrisGameRunnerJ8/src/karlney/tetris/swing/Highscore.java:38: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(reader) with exception type java.io.IOException $$ ( 619, 676 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+            FileInputStream reader = new FileInputStream(outputfile);
+                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(reader) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url063b9533f6_karlney_tetris_ai_tgz-pJ8-karlney_tetris_cmd_TetrisGameRunnerJ8/src/karlney/tetris/swing/Highscore.java:39: error: (required.method.not.called) $$ 4 $$ method close $$ r $$ java.io.ObjectInputStream $$ regular method exit $$ ( 690, 742 ) $$ @MustCall method close may not have been invoked on r or any of its aliases.
+            ObjectInputStream r = new ObjectInputStream(reader);
+                              ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url063b9533f6_karlney_tetris_ai_tgz-pJ8-karlney_tetris_cmd_TetrisGameRunnerJ8/src/karlney/tetris/swing/Highscore.java:84: error: (required.method.not.called) $$ 4 $$ method close $$ writer $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(writer) with exception type java.io.IOException $$ ( 1871, 1930 ) $$ @MustCall method close may not have been invoked on writer or any of its aliases.
+            FileOutputStream writer = new FileOutputStream(outputfile);
+                             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(writer) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url063b9533f6_karlney_tetris_ai_tgz-pJ8-karlney_tetris_cmd_TetrisGameRunnerJ8/src/karlney/tetris/swing/Highscore.java:85: error: (required.method.not.called) $$ 4 $$ method close $$ w $$ java.io.ObjectOutputStream $$ possible exceptional exit due to w.writeObject(scorename[i]) with exception type java.io.IOException $$ ( 1944, 1998 ) $$ @MustCall method close may not have been invoked on w or any of its aliases.
+            ObjectOutputStream w = new ObjectOutputStream(writer);
+                               ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to w.writeObject(scorename[i]) with exception type java.io.IOException
+4 errors

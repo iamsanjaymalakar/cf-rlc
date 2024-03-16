@@ -1,0 +1,16 @@
+../dataset/june2020_dataset/url9ef4af9ae5_stevenreyn_RegionViewer_tgz-pJ8-net_slreynolds_ds_SecondTestJ8/src/net/slreynolds/ds/export/SimpleGraphVizExporter.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ makePrintStream(opts) $$ java.io.PrintStream $$ regular method exit $$ ( 622, 643 ) $$ @MustCall method close may not have been invoked on makePrintStream(opts) or any of its aliases.
+    	ostream = makePrintStream(opts);
+    	                         ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url9ef4af9ae5_stevenreyn_RegionViewer_tgz-pJ8-net_slreynolds_ds_SecondTestJ8/src/net/slreynolds/ds/export/TulipExporter.java:29: error: (required.method.not.called) $$ 4 $$ method close $$ makePrintStream(opts) $$ java.io.PrintStream $$ regular method exit $$ ( 824, 845 ) $$ @MustCall method close may not have been invoked on makePrintStream(opts) or any of its aliases.
+    	ostream = makePrintStream(opts);
+    	                         ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url9ef4af9ae5_stevenreyn_RegionViewer_tgz-pJ8-net_slreynolds_ds_SecondTestJ8/src/net/slreynolds/ds/export/GraphMLExporter.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ makePrintStream(opts) $$ java.io.PrintStream $$ regular method exit $$ ( 546, 567 ) $$ @MustCall method close may not have been invoked on makePrintStream(opts) or any of its aliases.
+    	ostream = makePrintStream(opts);
+    	                         ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+3 errors

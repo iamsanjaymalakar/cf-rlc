@@ -1,0 +1,8 @@
+../../../../datasets/june2020_dataset/url3010dbde70_nbartlett_Sequence_Memoizer_tgz-pJ8-edu_columbia_stat_wood_pub_sequencememoizer_IntSequenceMemoizerJ8/src/edu/columbia/stat/wood/pub/sequencememoizer/util/IntMap.java:202: error: (return) $$ 2 $$ E extends @MustCallUnknown Object @MustCall [] $$ @MustCall Object @MustCall [] $$ ( 5242, 5248 ) $$ incompatible types in return.
+        return values;
+               ^
+  type of expression: E extends @MustCallUnknown Object @MustCall []
+  method return type: @MustCall Object @MustCall []
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error

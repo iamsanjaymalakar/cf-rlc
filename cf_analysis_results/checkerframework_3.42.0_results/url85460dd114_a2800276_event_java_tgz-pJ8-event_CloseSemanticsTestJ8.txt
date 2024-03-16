@@ -1,0 +1,19 @@
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/TCPServerLoop.java:22: error: (reset.not.owning) $$ 2 $$ bind $$ ssc.socket() $$ ( 571, 592 ) $$ Calling method bind resets the must-call obligations of the expression ssc.socket(), which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+      ssc.socket().bind(sa);
+                       ^
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/TCPClientLoop.java:79: error: (required.method.not.called) $$ 4 $$ method close $$ sc $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 2361, 2407 ) $$ @MustCall method close may not have been invoked on sc or any of its aliases.
+        final SocketChannel sc = SocketChannel.open();
+                            ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/Loop.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ SelectorProvider.provider().openSelector() $$ java.nio.channels.spi.AbstractSelector $$ regular method exit $$ ( 1078, 1120 ) $$ @MustCall method close may not have been invoked on SelectorProvider.provider().openSelector() or any of its aliases.
+      this.selector = SelectorProvider.provider().openSelector();
+                                                              ^
+  The type of object is: java.nio.channels.spi.AbstractSelector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/Speed.java:27: error: (required.method.not.called) $$ 4 $$ method close $$ s $$ java.net.Socket $$ possible exceptional exit due to s.getOutputStream() with exception type java.io.IOException $$ ( 516, 557 ) $$ @MustCall method close may not have been invoked on s or any of its aliases.
+      Socket s = new Socket("localhost", 4321);
+             ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to s.getOutputStream() with exception type java.io.IOException
+4 errors

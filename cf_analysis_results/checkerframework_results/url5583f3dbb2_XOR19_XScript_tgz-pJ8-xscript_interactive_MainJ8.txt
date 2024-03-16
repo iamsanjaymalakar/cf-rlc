@@ -1,0 +1,171 @@
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XNativeFunctions.java:130: error: (required.method.not.called) $$ 4 $$ method close $$ ps $$ java.io.PrintStream $$ regular method exit $$ ( 4889, 4910 ) $$ @MustCall method close may not have been invoked on ps or any of its aliases.
+					ps = runtime.getErr();
+					   ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XNativeFunctions.java:132: error: (required.method.not.called) $$ 4 $$ method close $$ ps $$ java.io.PrintStream $$ regular method exit $$ ( 4930, 4951 ) $$ @MustCall method close may not have been invoked on ps or any of its aliases.
+					ps = runtime.getOut();
+					   ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XNativeFunctions.java:149: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-73 $$ java.io.InputStream $$ possible exceptional exit due to runtime.getIn().read(buffer) with exception type java.io.IOException $$ ( 5356, 5371 ) $$ @MustCall method close may not have been invoked on temp-var-73 or any of its aliases.
+				int num = runtime.getIn().read(buffer);
+				                       ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to runtime.getIn().read(buffer) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XNativeFunctions.java:206: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ xscript.compiler.XFileReader $$ possible exceptional exit due to throw new XScriptException(thr); with exception type xscript.XScriptException $$ ( 7081, 7153 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+				XFileReader reader = new XFileReader(".exec", new StringReader(source));
+				            ^
+  The type of object is: xscript.compiler.XFileReader.
+  Reason for going out of scope: possible exceptional exit due to throw new XScriptException(thr); with exception type xscript.XScriptException
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XNativeFunctions.java:228: error: (required.method.not.called) $$ 4 $$ method close $$ ois $$ xscript.XFakeObjectInput $$ possible exceptional exit due to throw new AssertionError(e); with exception type java.lang.AssertionError $$ ( 8021, 8071 ) $$ @MustCall method close may not have been invoked on ois or any of its aliases.
+					XFakeObjectInput ois = new XFakeObjectInput(bais);
+					                 ^
+  The type of object is: xscript.XFakeObjectInput.
+  Reason for going out of scope: possible exceptional exit due to throw new AssertionError(e); with exception type java.lang.AssertionError
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/object/XObject.java:71: error: (assignment) $$ 2 $$ @MustCall Class<capture#260 extends @MustCallUnknown XTypeData> $$ @MustCallUnknown Class<? extends @MustCall XTypeData> $$ ( 2054, 2073 ) $$ incompatible types in assignment.
+		Class<? extends XTypeData> c = typeData.getClass();
+		                                                ^
+  found   : @MustCall Class<capture#260 extends @MustCallUnknown XTypeData>
+  required: @MustCallUnknown Class<? extends @MustCall XTypeData>
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Log.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1515 $$ java.io.PrintWriter $$ regular method exit $$ ( 1895, 1910 ) $$ @MustCall method close may not have been invoked on temp-var-1515 or any of its aliases.
+		rawprintln(getWriter(kind), message);
+		                    ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Log.java:96: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1518 $$ java.io.PrintWriter $$ regular method exit $$ ( 2008, 2023 ) $$ @MustCall method close may not have been invoked on temp-var-1518 or any of its aliases.
+		rawprint(getWriter(kind), message);
+		                  ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Log.java:102: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1520 $$ java.io.PrintWriter $$ regular method exit $$ ( 2117, 2132 ) $$ @MustCall method close may not have been invoked on temp-var-1520 or any of its aliases.
+				getWriter(last).flush();
+				         ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/ArgReader.java:112: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1581 $$ java.io.FileReader $$ regular method exit $$ ( 2413, 2433 ) $$ @MustCall method close may not have been invoked on temp-var-1581 or any of its aliases.
+			r = new BufferedReader(new FileReader(file));
+			                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/interactive/Exec.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1604 $$ java.io.PrintWriter $$ regular method exit $$ ( 2701, 2727 ) $$ @MustCall method close may not have been invoked on temp-var-1604 or any of its aliases.
+			e.printStackTrace(log.getWriter(Kind.NOTICE));
+			                               ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XScriptEngine.java:267: error: (required.method.not.called) $$ 4 $$ method close $$ ois $$ xscript.XFakeObjectInput $$ possible exceptional exit due to throw new AssertionError(e); with exception type java.lang.AssertionError $$ ( 9786, 9836 ) $$ @MustCall method close may not have been invoked on ois or any of its aliases.
+			XFakeObjectInput ois = new XFakeObjectInput(bais);
+			                 ^
+  The type of object is: xscript.XFakeObjectInput.
+  Reason for going out of scope: possible exceptional exit due to throw new AssertionError(e); with exception type java.lang.AssertionError
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XScriptEngine.java:727: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ xscript.XFakeObjectInput $$ regular method exit $$ ( 21682, 21729 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			XFakeObjectInput in = new XFakeObjectInput(is);
+			                 ^
+  The type of object is: xscript.XFakeObjectInput.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XScriptEngine.java:767: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ variable overwritten by assignment is = fileSystem.provider().newInputStream(p, StandardOpenOption.READ) $$ ( 22696, 22772 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+					is = fileSystem.provider().newInputStream(p,
+					   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: variable overwritten by assignment is = fileSystem.provider().newInputStream(p, StandardOpenOption.READ)
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XScriptEngine.java:782: error: (required.method.not.called) $$ 4 $$ method close $$ is2 $$ java.io.InputStream $$ variable overwritten by assignment is2 = fileSystem.provider().newInputStream(p, StandardOpenOption.READ) $$ ( 23388, 23425 ) $$ @MustCall method close may not have been invoked on is2 or any of its aliases.
+					is2 = new ByteArrayInputStream(bytes);
+					    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: variable overwritten by assignment is2 = fileSystem.provider().newInputStream(p, StandardOpenOption.READ)
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XScriptEngine.java:783: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ xscript.XFakeObjectInput $$ regular method exit $$ ( 23432, 23462 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+					in = new XFakeObjectInput(is2);
+					   ^
+  The type of object is: xscript.XFakeObjectInput.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XScriptEngine.java:790: error: (required.method.not.called) $$ 4 $$ method close $$ is2 $$ java.io.InputStream $$ regular method exit $$ ( 23632, 23710 ) $$ @MustCall method close may not have been invoked on is2 or any of its aliases.
+						is2 = fileSystem.provider().newInputStream(p,
+						    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XScriptEngine.java:792: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ xscript.XFakeObjectInput $$ regular method exit $$ ( 23718, 23748 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+						in = new XFakeObjectInput(is2);
+						   ^
+  The type of object is: xscript.XFakeObjectInput.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XScriptEngine.java:833: error: (required.method.not.called) $$ 4 $$ method close $$ fileReader $$ xscript.compiler.XFileReader $$ regular method exit $$ ( 24619, 24676 ) $$ @MustCall method close may not have been invoked on fileReader or any of its aliases.
+		XFileReader fileReader = new XFileReader(source, reader);
+		            ^
+  The type of object is: xscript.compiler.XFileReader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/compiler/main/Main.java:153: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-4818 $$ java.io.PrintWriter $$ regular method exit $$ ( 3303, 3329 ) $$ @MustCall method close may not have been invoked on temp-var-4818 or any of its aliases.
+			e.printStackTrace(log.getWriter(Kind.NOTICE));
+			                               ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/compiler/main/Main.java:253: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ xscript.compiler.XFileReader $$ possible exceptional exit due to new FileOutputStream(f) with exception type java.io.FileNotFoundException $$ ( 5769, 5821 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+			XFileReader reader = new XFileReader(sourceName, r);
+			            ^
+  The type of object is: xscript.compiler.XFileReader.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(f) with exception type java.io.FileNotFoundException
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java:39: error: (required.method.not.called) $$ 4 $$ method close $$ sysout $$ xscript.executils.MultiplexOutputStream $$ regular method exit $$ ( 946, 1005 ) $$ @MustCall method close may not have been invoked on sysout or any of its aliases.
+		MultiplexOutputStream sysout = new MultiplexOutputStream();
+		                      ^
+  The type of object is: xscript.executils.MultiplexOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-4993 $$ java.io.PrintStream $$ regular method exit $$ ( 1031, 1047 ) $$ @MustCall method close may not have been invoked on temp-var-4993 or any of its aliases.
+		sysout.addOutputStream(console.getOut());
+		                                     ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java:42: error: (required.method.not.called) $$ 4 $$ method close $$ syserr $$ xscript.executils.MultiplexOutputStream $$ regular method exit $$ ( 1090, 1149 ) $$ @MustCall method close may not have been invoked on syserr or any of its aliases.
+		MultiplexOutputStream syserr = new MultiplexOutputStream();
+		                      ^
+  The type of object is: xscript.executils.MultiplexOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-4997 $$ java.io.PrintStream $$ regular method exit $$ ( 1175, 1191 ) $$ @MustCall method close may not have been invoked on temp-var-4997 or any of its aliases.
+		syserr.addOutputStream(console.getErr());
+		                                     ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ sysin $$ java.io.InputStream $$ regular method exit $$ ( 1234, 1307 ) $$ @MustCall method close may not have been invoked on sysin or any of its aliases.
+		InputStream sysin = new InputToOutputStream(console.getIn(), System.out);
+		            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-5000 $$ java.io.InputStream $$ regular method exit $$ ( 1278, 1293 ) $$ @MustCall method close may not have been invoked on temp-var-5000 or any of its aliases.
+		InputStream sysin = new InputToOutputStream(console.getIn(), System.out);
+		                                                         ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/console/Console.java:61: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-5084 $$ java.io.PrintStream $$ regular method exit $$ ( 1877, 1906 ) $$ @MustCall method close may not have been invoked on temp-var-5084 or any of its aliases.
+		out = getOutWithAttrs(defaultAttrs);
+		                     ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/console/Console.java:62: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-5085 $$ java.io.PrintStream $$ regular method exit $$ ( 1916, 1943 ) $$ @MustCall method close may not have been invoked on temp-var-5085 or any of its aliases.
+		err = getOutWithAttrs(errorAttrs);
+		                     ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/console/Console.java:63: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-5086 $$ xscript.executils.console.ConsoleInputStream $$ regular method exit $$ ( 1952, 1978 ) $$ @MustCall method close may not have been invoked on temp-var-5086 or any of its aliases.
+		in = new ConsoleInputStream(io);
+		     ^
+  The type of object is: xscript.executils.console.ConsoleInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/MultiplexOutputStream.java:25: error: (required.method.not.called) $$ 4 $$ method close $$ ouputStream $$ java.io.OutputStream $$ regular method exit $$ ( 605, 629 ) $$ @MustCall method close may not have been invoked on ouputStream or any of its aliases.
+		for(OutputStream ouputStream:ouputStreams){
+		                 ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/MultiplexOutputStream.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ ouputStream $$ java.io.OutputStream $$ regular method exit $$ ( 873, 897 ) $$ @MustCall method close may not have been invoked on ouputStream or any of its aliases.
+		for(OutputStream ouputStream:ouputStreams){
+		                 ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/MultiplexOutputStream.java:55: error: (required.method.not.called) $$ 4 $$ method close $$ ouputStream $$ java.io.OutputStream $$ regular method exit $$ ( 1159, 1183 ) $$ @MustCall method close may not have been invoked on ouputStream or any of its aliases.
+		for(OutputStream ouputStream:ouputStreams){
+		                 ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/MultiplexOutputStream.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ ouputStream $$ java.io.OutputStream $$ regular method exit $$ ( 1429, 1453 ) $$ @MustCall method close may not have been invoked on ouputStream or any of its aliases.
+		for(OutputStream ouputStream:ouputStreams){
+		                 ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+34 errors

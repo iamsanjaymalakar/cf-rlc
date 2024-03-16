@@ -1,0 +1,4 @@
+warning: (annotation.not.completed) $$ 2 $$ org.joda.time.LocalDateTime.toString() $$ @ToString $$  $$ Element org.joda.time.LocalDateTime.toString() contains annotation @ToString which can't be found. Make sure your classpath is set correctly.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning

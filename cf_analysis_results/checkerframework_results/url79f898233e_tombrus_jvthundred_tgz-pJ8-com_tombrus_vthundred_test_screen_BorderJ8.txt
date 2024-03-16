@@ -1,0 +1,21 @@
+../../../../datasets/june2020_dataset/url79f898233e_tombrus_jvthundred_tgz-pJ8-com_tombrus_vthundred_test_screen_BorderJ8/src/com/tombrus/vthundred/util/Shell.java:9: error: (required.method.not.called) $$ 4 $$ method close $$ stdout $$ java.io.InputStream $$ possible exceptional exit due to stdout.read() with exception type java.io.IOException $$ ( 237, 290 ) $$ @MustCall method close may not have been invoked on stdout or any of its aliases.
+            final InputStream stdout  = process.getInputStream();
+                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to stdout.read() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url79f898233e_tombrus_jvthundred_tgz-pJ8-com_tombrus_vthundred_test_screen_BorderJ8/src/com/tombrus/vthundred/terminal/types/UnixTerminal.java:13: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-672 $$ java.io.Reader $$ regular method exit $$ ( 346, 357 ) $$ @MustCall method close may not have been invoked on temp-var-672 or any of its aliases.
+        super(new AnsiType(), getReader(), getWriter());
+                                       ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url79f898233e_tombrus_jvthundred_tgz-pJ8-com_tombrus_vthundred_test_screen_BorderJ8/src/com/tombrus/vthundred/terminal/types/UnixTerminal.java:13: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-673 $$ java.io.Writer $$ regular method exit $$ ( 359, 370 ) $$ @MustCall method close may not have been invoked on temp-var-673 or any of its aliases.
+        super(new AnsiType(), getReader(), getWriter());
+                                                    ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url79f898233e_tombrus_jvthundred_tgz-pJ8-com_tombrus_vthundred_test_screen_BorderJ8/src/com/tombrus/vthundred/terminal/TerminalImpl.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-699 $$ com.tombrus.vthundred.terminal.GraphWriter $$ regular method exit $$ ( 1721, 1780 ) $$ @MustCall method close may not have been invoked on temp-var-699 or any of its aliases.
+            this.graphWriter  = new GraphWriter(type, new BufferedWriter(out, BUFFER_SIZE));
+                                ^
+  The type of object is: com.tombrus.vthundred.terminal.GraphWriter.
+  Reason for going out of scope: regular method exit
+4 errors

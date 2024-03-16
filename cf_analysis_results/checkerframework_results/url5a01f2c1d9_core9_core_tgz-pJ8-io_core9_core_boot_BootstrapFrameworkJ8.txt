@@ -1,0 +1,120 @@
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/io/core9/core/proxy/InvocationHandlerStrategyImpl.java:33: error: (argument) $$ 4 $$ clazz $$ registerPlugin $$ @MustCall Class<capture#103 extends @MustCallUnknown Plugin> $$ @MustCallUnknown Class<? extends @MustCall Plugin> $$ ( 1365, 1382 ) $$ incompatible argument for parameter clazz of registerPlugin.
+			registry.registerPlugin(plugin.getClass(), wrapped);
+			                                       ^
+  found   : @MustCall Class<capture#103 extends @MustCallUnknown Plugin>
+  required: @MustCallUnknown Class<? extends @MustCall Plugin>
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/cache/JARCache.java:112: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(fis) with exception type java.io.IOException $$ ( 3618, 3677 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+			final FileInputStream fis = new FileInputStream(cacheFile);
+			                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(fis) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/cache/JARCache.java:113: error: (required.method.not.called) $$ 4 $$ method close $$ ois $$ java.io.ObjectInputStream $$ possible exceptional exit due to ois.readObject() with exception type java.io.IOException $$ ( 3681, 3738 ) $$ @MustCall method close may not have been invoked on ois or any of its aliases.
+			final ObjectInputStream ois = new ObjectInputStream(fis);
+			                        ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: possible exceptional exit due to ois.readObject() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/cache/JARCache.java:182: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException $$ ( 5581, 5642 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+			final FileOutputStream fos = new FileOutputStream(cacheFile);
+			                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/cache/JARCache.java:184: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(this.cacheMap) with exception type java.io.IOException $$ ( 5646, 5738 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+			final ObjectOutputStream oos = new ObjectOutputStream(fos);
+			                         ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(this.cacheMap) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/cache/JARCache.java:225: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to fis.available() with exception type java.io.IOException $$ ( 6545, 6602 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+			final FileInputStream fis = new FileInputStream(element);
+			                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to fis.available() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/spawning/Spawner.java:348: error: (assignment) $$ 2 $$ @MustCall Class<capture#274 extends @MustCallUnknown Plugin> $$ @MustCallUnknown Class<? extends @MustCall Plugin> $$ ( 11829, 11846 ) $$ incompatible types in assignment.
+		final Class<? extends Plugin> spawnClass = plugin.getClass();
+		                                                          ^
+  found   : @MustCall Class<capture#274 extends @MustCallUnknown Plugin>
+  required: @MustCallUnknown Class<? extends @MustCall Plugin>
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/loader/AbstractLoader.java:173: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-716 $$ java.io.InputStream $$ regular method exit $$ ( 6786, 6846 ) $$ @MustCall method close may not have been invoked on temp-var-716 or any of its aliases.
+					p.load(classPathManager.getResourceAsStream(location, resourcePath));
+					                                           ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/io/core9/core/boot/BootstrapPluginsImpl.java:48: error: (argument) $$ 4 $$ clazz $$ registerPlugin $$ @MustCall Class<capture#581 extends @MustCallUnknown Plugin> $$ @MustCallUnknown Class<? extends @MustCall Plugin> $$ ( 1270, 1287 ) $$ incompatible argument for parameter clazz of registerPlugin.
+			registry.registerPlugin(plugin.getClass(), plugin);
+			                                       ^
+  found   : @MustCall Class<capture#581 extends @MustCallUnknown Plugin>
+  required: @MustCallUnknown Class<? extends @MustCall Plugin>
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/locator/locations/JARClasspathLocation.java:98: error: (required.method.not.called) $$ 4 $$ method close $$ jarFile $$ java.util.jar.JarFile $$ regular method exit $$ ( 3351, 3399 ) $$ @MustCall method close may not have been invoked on jarFile or any of its aliases.
+			final JarFile jarFile = connection.getJarFile();
+			              ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/locator/locations/JARClasspathLocation.java:173: error: (required.method.not.called) $$ 4 $$ method close $$ jarFile $$ java.util.jar.JarFile $$ regular method exit $$ ( 5077, 5125 ) $$ @MustCall method close may not have been invoked on jarFile or any of its aliases.
+			final JarFile jarFile = connection.getJarFile();
+			              ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/locator/locations/JARClasspathLocation.java:219: error: (required.method.not.called) $$ 4 $$ method close $$ jarFile $$ java.util.jar.JarFile $$ regular method exit $$ ( 6318, 6366 ) $$ @MustCall method close may not have been invoked on jarFile or any of its aliases.
+			final JarFile jarFile = connection.getJarFile();
+			              ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/locator/locations/MultiPluginClasspathLocation.java:103: error: (required.method.not.called) $$ 4 $$ method close $$ jarFile $$ java.util.jar.JarFile $$ regular method exit $$ ( 4070, 4118 ) $$ @MustCall method close may not have been invoked on jarFile or any of its aliases.
+            final JarFile jarFile = connection.getJarFile();
+                          ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/loader/HTTPLoader.java:71: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to url.toURL() with exception type java.net.MalformedURLException $$ ( 2706, 2765 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+                final FileOutputStream fos = new FileOutputStream(tmpFile);
+                                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to url.toURL() with exception type java.net.MalformedURLException
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/loader/HTTPLoader.java:74: error: (required.method.not.called) $$ 4 $$ method close $$ openStream $$ java.io.InputStream $$ possible exceptional exit due to openStream.read(buf) with exception type java.io.IOException $$ ( 2829, 2878 ) $$ @MustCall method close may not have been invoked on openStream or any of its aliases.
+                final InputStream openStream = url2.openStream();
+                                  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to openStream.read(buf) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/PluginInformationImpl.java:122: error: (assignment) $$ 2 $$ @MustCall Class<capture#582 extends @MustCallUnknown Plugin> $$ @MustCallUnknown Class<? extends @MustCall Plugin> $$ ( 4754, 4771 ) $$ incompatible types in assignment.
+        final Class<? extends Plugin> spawnClass = plugin.getClass();
+                                                                  ^
+  found   : @MustCall Class<capture#582 extends @MustCallUnknown Plugin>
+  required: @MustCallUnknown Class<? extends @MustCall Plugin>
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/diagnosis/local/impl/serialization/java/LogFileWriter.java:61: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1410 $$ java.io.FileOutputStream $$ possible exceptional exit due to new GZIPOutputStream(this.fileOutputStream) with exception type java.io.IOException $$ ( 2609, 2635 ) $$ @MustCall method close may not have been invoked on temp-var-1410 or any of its aliases.
+        	this.fileOutputStream = new FileOutputStream(file);
+        	                        ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new GZIPOutputStream(this.fileOutputStream) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/diagnosis/local/impl/serialization/java/LogFileWriter.java:65: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1412 $$ java.io.ObjectOutputStream $$ regular method exit $$ ( 2804, 2842 ) $$ @MustCall method close may not have been invoked on temp-var-1412 or any of its aliases.
+                this.objectOutputStream = new ObjectOutputStream(this.zipStream);
+                                          ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/diagnosis/local/impl/serialization/java/LogFileWriter.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1413 $$ java.io.ObjectOutputStream $$ regular method exit $$ ( 2905, 2950 ) $$ @MustCall method close may not have been invoked on temp-var-1413 or any of its aliases.
+                this.objectOutputStream = new ObjectOutputStream(this.fileOutputStream);
+                                          ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/diagnosis/local/impl/serialization/java/LogFileReader.java:57: error: (required.method.not.called) $$ 4 $$ method close $$ stream $$ java.io.ObjectInputStream $$ regular method exit $$ ( 2202, 2322 ) $$ @MustCall method close may not have been invoked on stream or any of its aliases.
+			final ObjectInputStream stream = new ObjectInputStream(new FileInputStream(this.file));
+			                        ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/diagnosis/local/impl/serialization/java/LogFileReader.java:57: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1439 $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(new FileInputStream(this.file)) with exception type java.io.IOException $$ ( 2290, 2320 ) $$ @MustCall method close may not have been invoked on temp-var-1439 or any of its aliases.
+			final ObjectInputStream stream = new ObjectInputStream(new FileInputStream(this.file));
+			                                                       ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(new FileInputStream(this.file)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/nexus/JARLocator.java:117: error: (required.method.not.called) $$ 4 $$ method close $$ jarFile $$ java.util.jar.JarFile $$ regular method exit $$ ( 3873, 3921 ) $$ @MustCall method close may not have been invoked on jarFile or any of its aliases.
+            final JarFile jarFile = connection.getJarFile();
+                          ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/nexus/AbstractService.java:61: error: (override.return) $$ 6 $$ T extends @MustCallUnknown Object $$ @MustCall Object $$ @MustCall AbstractService<T extends @MustCallUnknown Object> $$ T extends @MustCallUnknown Object getService(@MustCall AbstractService<T extends @MustCallUnknown Object> this) $$ @MustCall Service $$ @MustCall Object getService(@MustCall Service this) $$ ( 2368, 2369 ) $$ Incompatible return type.
+    public T getService() {
+           ^
+  found   : T extends @MustCallUnknown Object
+  required: @MustCall Object
+  Consequence: method in @MustCall AbstractService<T extends @MustCallUnknown Object>
+    T extends @MustCallUnknown Object getService(@MustCall AbstractService<T extends @MustCallUnknown Object> this)
+  cannot override method in @MustCall Service
+    @MustCall Object getService(@MustCall Service this)
+23 errors

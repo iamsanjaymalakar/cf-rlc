@@ -1,0 +1,6 @@
+../../../../datasets/june2020_dataset/url7606378bcc_ljy2010a_protobuf2_tgz-pJ8-com_game_gameObj_bufBuilder_ReflectBuilderJ8/src/com/game/gameObj/bufBuilder/BufBuilderMake.java:28: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2132 $$ java.io.FileWriter $$ possible exceptional exit due to makeBuilder(typeNames[i]) with exception type java.lang.ClassNotFoundException $$ ( 719, 776 ) $$ @MustCall method close may not have been invoked on temp-var-2132 or any of its aliases.
+			PrintWriter pw = new PrintWriter( new FileWriter( FilePath+ typeNames[i] + "Builder.java" ) );
+			                                  ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to makeBuilder(typeNames[i]) with exception type java.lang.ClassNotFoundException
+1 error

@@ -1,0 +1,48 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^org/pcj/internal/network/CloneInputStream.java^40^org.pcj.internal.network.CloneInputStream.clone(Ljava/io/InputStream;)Lorg/pcj/internal/network/CloneInputStream;^3 = new <Application,Lorg/pcj/internal/network/CloneInputStream>@0^NULL^RETURN,INVOKE,FIELD,^false^true^Field escape;
+1^org/pcj/internal/network/CloneInputStream.java^94^org.pcj.internal.network.CloneInputStream.readFrom(Lorg/pcj/internal/network/MessageDataInputStream;)Lorg/pcj/internal/network/CloneInputStream;^3 = new <Application,Lorg/pcj/internal/network/CloneInputStream>@0^NULL^RETURN,INVOKE,FIELD,^false^true^Field escape;
+2^org/pcj/internal/network/MessageBytesInputStream.java^81^org.pcj.internal.network.MessageBytesInputStream.reset()V^4 = new <Application,Lorg/pcj/internal/network/MessageBytesInputStream$MessageInputStream>@6^NULL^FIELD,^false^true^Field escape;
+3^org/pcj/internal/network/SelectorProc.java^72^org.pcj.internal.network.SelectorProc.<init>()V^16 = invokestatic < Application, Ljava/nio/channels/Selector, open()Ljava/nio/channels/Selector; > @59 exception:15^NULL^FIELD,^false^true^Field escape;
+4^org/pcj/internal/network/SelectorProc.java^99^org.pcj.internal.network.SelectorProc.bind(Ljava/net/InetAddress;II)Ljava/nio/channels/ServerSocketChannel;^7 = invokestatic < Application, Ljava/nio/channels/ServerSocketChannel, open()Ljava/nio/channels/ServerSocketChannel; > @0 exception:6^NULL^RETURN,ARRAY,INVOKE,FIELD,^false^true^Field escape;
+5^org/pcj/internal/message/MessageValueBroadcastRequest.java^73^org.pcj.internal.message.MessageValueBroadcastRequest.execute(Ljava/nio/channels/SocketChannel;Lorg/pcj/internal/network/MessageDataInputStream;)V^16 = invokestatic < Application, Lorg/pcj/internal/network/CloneInputStream, clone(Ljava/io/InputStream;)Lorg/pcj/internal/network/CloneInputStream; > 3 @41 exception:15^org.pcj.internal.message.MessageValueBroadcastRequest.execute(Ljava/nio/channels/SocketChannel;Lorg/pcj/internal/network/MessageDataInputStream;)V#60,^INVOKE,FIELD,^false^true^Field escape;
+6^org/pcj/internal/message/MessageHelloBonjour.java^49^org.pcj.internal.message.MessageHelloBonjour.execute(Ljava/nio/channels/SocketChannel;Lorg/pcj/internal/network/MessageDataInputStream;)V^27 = invokevirtual < Application, Lorg/pcj/internal/NodeData, getNode0Socket()Ljava/nio/channels/SocketChannel; > 25 @52 exception:26^NULL^ARRAY,INVOKE,FIELD,^false^true^Field escape;
+7^org/pcj/internal/message/MessageHelloInform.java^92^org.pcj.internal.message.MessageHelloInform.execute(Ljava/nio/channels/SocketChannel;Lorg/pcj/internal/network/MessageDataInputStream;)V^65 = invokespecial < Application, Lorg/pcj/internal/message/MessageHelloInform, connectToNode(Ljava/lang/String;I)Ljava/nio/channels/SocketChannel; > 1,61,63 @219 exception:64^NULL^ARRAY,INVOKE,FIELD,^false^true^Field escape;
+8^org/pcj/internal/message/MessageHelloInform.java^93^org.pcj.internal.message.MessageHelloInform.execute(Ljava/nio/channels/SocketChannel;Lorg/pcj/internal/network/MessageDataInputStream;)V^65 = invokespecial < Application, Lorg/pcj/internal/message/MessageHelloInform, connectToNode(Ljava/lang/String;I)Ljava/nio/channels/SocketChannel; > 1,61,63 @219 exception:64^NULL^ARRAY,INVOKE,FIELD,^true^true^Field escape;
+9^org/pcj/internal/message/MessageHelloInform.java^99^org.pcj.internal.message.MessageHelloInform.execute(Ljava/nio/channels/SocketChannel;Lorg/pcj/internal/network/MessageDataInputStream;)V^82 = invokestatic < Application, Lorg/pcj/internal/InternalPCJ, getLoopbackSocketChannel()Ljava/nio/channels/SocketChannel; > @273 exception:81^NULL^ARRAY,INVOKE,FIELD,^false^true^Field escape;
+10^org/pcj/internal/message/MessageHelloInform.java^99^org.pcj.internal.message.MessageHelloInform.execute(Ljava/nio/channels/SocketChannel;Lorg/pcj/internal/network/MessageDataInputStream;)V^82 = invokestatic < Application, Lorg/pcj/internal/InternalPCJ, getLoopbackSocketChannel()Ljava/nio/channels/SocketChannel; > @273 exception:81^NULL^ARRAY,INVOKE,FIELD,^true^true^Field escape;
+11^org/pcj/internal/message/MessageValueBroadcastBytes.java^78^org.pcj.internal.message.MessageValueBroadcastBytes.execute(Ljava/nio/channels/SocketChannel;Lorg/pcj/internal/network/MessageDataInputStream;)V^16 = invokestatic < Application, Lorg/pcj/internal/network/CloneInputStream, readFrom(Lorg/pcj/internal/network/MessageDataInputStream;)Lorg/pcj/internal/network/CloneInputStream; > 3 @42 exception:15^NULL^INVOKE,FIELD,^false^true^Field escape;
+12^org/pcj/internal/InternalPCJ.java^97^org.pcj.internal.InternalPCJ.start(Ljava/lang/Class;Lorg/pcj/internal/NodeInfo;Lorg/pcj/internal/NodeInfo;I)V^42 = invokestatic < Application, Lorg/pcj/internal/InternalPCJ, connectToNode0(ZLorg/pcj/internal/NodeInfo;)Ljava/nio/channels/SocketChannel; > 15,2 @133 exception:41^NULL^ARRAY,INVOKE,FIELD,^false^true^Field escape;
+13^org/pcj/internal/Networker.java^72^org.pcj.internal.Networker.connectTo(Ljava/net/InetAddress;I)Ljava/nio/channels/SocketChannel;^7 = invokevirtual < Application, Lorg/pcj/internal/network/SelectorProc, connectTo(Ljava/net/InetAddress;I)Ljava/nio/channels/SocketChannel; > 5,2,3 @6 exception:6^NULL^RETURN,ARRAY,INVOKE,FIELD,^false^true^Field escape;
+14^org/pcj/internal/Networker.java^109^org.pcj.internal.Networker.send(Ljava/nio/channels/SocketChannel;Lorg/pcj/internal/message/Message;)V^22 = new <Application,Lorg/pcj/internal/network/LoopbackMessageBytesStream>@7^NULL^INVOKE,^false^false^Try-catch Fix;
+15^org/pcj/internal/Networker.java^131^org.pcj.internal.Networker.processMessageBytes(Ljava/nio/channels/SocketChannel;Lorg/pcj/internal/network/MessageBytesInputStream;)V^6 = invokevirtual < Application, Lorg/pcj/internal/network/MessageBytesInputStream, getMessageDataInputStream()Lorg/pcj/internal/network/MessageDataInputStream; > 3 @1 exception:5^NULL^INVOKE,FIELD,^false^true^Field escape;
+16^org/pcj/test/PcjMicroBenchmarkBroadcast.java^88^org.pcj.test.PcjMicroBenchmarkBroadcast.main([Ljava/lang/String;)V^9 = new <Application,Ljava/util/Scanner>@14^org.pcj.test.PcjMicroBenchmarkBroadcast.main([Ljava/lang/String;)V#26,^INVOKE,^false^false^Try-catch Fix;
+17^org/pcj/test/PcjMicroBenchmarkPingPong.java^172^org.pcj.test.PcjMicroBenchmarkPingPong.main([Ljava/lang/String;)V^6 = new <Application,Ljava/util/Scanner>@9^org.pcj.test.PcjMicroBenchmarkPingPong.main([Ljava/lang/String;)V#20,^INVOKE,^false^false^Try-catch Fix;
+18^org/pcj/internal/network/LoopbackSocketChannel.java^30^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+19^org/pcj/internal/network/MessageDataInputStream.java^28^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+20^org/pcj/internal/network/SelectorProc.java^89^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+21^org/pcj/internal/network/SelectorProc.java^90^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+22^org/pcj/internal/network/SelectorProc.java^91^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+23^org/pcj/internal/network/SelectorProc.java^158^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+24^org/pcj/internal/network/SelectorProc.java^313^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+25^org/pcj/internal/network/SelectorProc.java^326^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+26^org/pcj/internal/InternalGroup.java^83^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+27^org/pcj/internal/InternalGroup.java^103^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+28^org/pcj/internal/InternalGroup.java^127^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+29^org/pcj/internal/InternalGroup.java^149^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+30^org/pcj/internal/futures/GroupBarrierState.java^116^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+31^org/pcj/internal/futures/GroupBarrierState.java^119^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+32^org/pcj/internal/futures/GroupJoinState.java^59^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+33^org/pcj/internal/futures/GroupJoinState.java^66^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+34^org/pcj/internal/message/MessageValueBroadcastRequest.java^105^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+35^org/pcj/internal/message/MessageByeCompleted.java^38^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+36^org/pcj/internal/message/MessageByeCompleted.java^41^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+37^org/pcj/internal/message/MessageHelloGo.java^45^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+38^org/pcj/internal/message/MessageHelloGo.java^48^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+39^org/pcj/internal/message/MessageHello.java^73^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+40^org/pcj/internal/message/MessageHello.java^106^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+41^org/pcj/internal/message/MessageHello.java^111^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+42^org/pcj/internal/message/MessageHello.java^125^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+43^org/pcj/internal/message/MessageValueBroadcastBytes.java^112^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+44^org/pcj/internal/InternalPCJ.java^101^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+45^org/pcj/internal/InternalPCJ.java^225^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+46^org/pcj/internal/InternalPCJ.java^391^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

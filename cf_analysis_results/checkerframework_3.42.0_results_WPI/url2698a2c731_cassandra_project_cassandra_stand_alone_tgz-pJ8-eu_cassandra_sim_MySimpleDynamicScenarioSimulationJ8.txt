@@ -1,0 +1,82 @@
+warning: MustCallChecker did not find annotation file or directory ../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+warning: ResourceLeakChecker did not find annotation file or directory ../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8/src/SetupFileParser.java:114: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(filename) $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 4896, 4920 ) $$ @MustCall method close may not have been invoked on new FileReader(filename) or any of its aliases.
+			BufferedReader br = new BufferedReader(new FileReader(filename));
+			                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8/src/eu/cassandra/sim/Simulation.java:734: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileWriter $$ possible exceptional exit due to fw.write(row + "\n") with exception type java.io.IOException $$ ( 29416, 29456 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+			FileWriter fw = new FileWriter(csvFile);
+			           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to fw.write(row + "\n") with exception type java.io.IOException
+../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8/src/eu/cassandra/sim/Simulation.java:775: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to zos.putNextEntry(ze) with exception type java.io.IOException $$ ( 30662, 30725 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+			FileOutputStream fos = new FileOutputStream(filename + ".zip");
+			                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to zos.putNextEntry(ze) with exception type java.io.IOException
+../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8/src/eu/cassandra/sim/Simulation.java:779: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileInputStream $$ possible exceptional exit due to in.read(buffer) with exception type java.io.IOException $$ ( 30853, 30904 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			FileInputStream in = new FileInputStream(filename);
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to in.read(buffer) with exception type java.io.IOException
+../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8/src/eu/cassandra/sim/Simulation.java:791: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileInputStream $$ possible exceptional exit due to in.read(buffer) with exception type java.io.IOException $$ ( 31201, 31235 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			in = new FileInputStream(filename);
+			   ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to in.read(buffer) with exception type java.io.IOException
+../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8/src/eu/cassandra/sim/Simulation.java:941: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileWriter $$ possible exceptional exit due to fw.write(row + "\n") with exception type java.io.IOException $$ ( 35274, 35302 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+			fw = new FileWriter(csvFile);
+			   ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to fw.write(row + "\n") with exception type java.io.IOException
+../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8/src/eu/cassandra/sim/utilities/MongoResults.java:102: error: (required.method.not.called) $$ 4 $$ method close $$ DBConn.getConn(dbname).getCollection(tick_collection).find() $$ com.mongodb.DBCursor $$ regular method exit $$ ( 3349, 3409 ) $$ @MustCall method close may not have been invoked on DBConn.getConn(dbname).getCollection(tick_collection).find() or any of its aliases.
+			maxavg = DBConn.getConn(dbname).getCollection(tick_collection).find().sort(order).limit(1).next();
+			                                                                   ^
+  The type of object is: com.mongodb.DBCursor.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8/src/eu/cassandra/sim/utilities/MongoResults.java:102: error: (required.method.not.called) $$ 4 $$ method close $$ DBConn.getConn(dbname).getCollection(tick_collection).find().sort(order) $$ com.mongodb.DBCursor $$ regular method exit $$ ( 3349, 3421 ) $$ @MustCall method close may not have been invoked on DBConn.getConn(dbname).getCollection(tick_collection).find().sort(order) or any of its aliases.
+			maxavg = DBConn.getConn(dbname).getCollection(tick_collection).find().sort(order).limit(1).next();
+			                                                                          ^
+  The type of object is: com.mongodb.DBCursor.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8/src/eu/cassandra/sim/utilities/MongoResults.java:102: error: (required.method.not.called) $$ 4 $$ method close $$ DBConn.getConn(dbname).getCollection(tick_collection).find().sort(order).limit(1) $$ com.mongodb.DBCursor $$ regular method exit $$ ( 3349, 3430 ) $$ @MustCall method close may not have been invoked on DBConn.getConn(dbname).getCollection(tick_collection).find().sort(order).limit(1) or any of its aliases.
+			maxavg = DBConn.getConn(dbname).getCollection(tick_collection).find().sort(order).limit(1).next();
+			                                                                                       ^
+  The type of object is: com.mongodb.DBCursor.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8/src/eu/cassandra/sim/utilities/MongoResults.java:106: error: (required.method.not.called) $$ 4 $$ method close $$ DBConn.getConn(dbname).getCollection(tick_collection).find(query2) $$ com.mongodb.DBCursor $$ regular method exit $$ ( 3539, 3605 ) $$ @MustCall method close may not have been invoked on DBConn.getConn(dbname).getCollection(tick_collection).find(query2) or any of its aliases.
+			maxavg = DBConn.getConn(dbname).getCollection(tick_collection).find(query2).sort(order).limit(1).next();
+			                                                                   ^
+  The type of object is: com.mongodb.DBCursor.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8/src/eu/cassandra/sim/utilities/MongoResults.java:106: error: (required.method.not.called) $$ 4 $$ method close $$ DBConn.getConn(dbname).getCollection(tick_collection).find(query2).sort(order) $$ com.mongodb.DBCursor $$ regular method exit $$ ( 3539, 3617 ) $$ @MustCall method close may not have been invoked on DBConn.getConn(dbname).getCollection(tick_collection).find(query2).sort(order) or any of its aliases.
+			maxavg = DBConn.getConn(dbname).getCollection(tick_collection).find(query2).sort(order).limit(1).next();
+			                                                                                ^
+  The type of object is: com.mongodb.DBCursor.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8/src/eu/cassandra/sim/utilities/MongoResults.java:106: error: (required.method.not.called) $$ 4 $$ method close $$ DBConn.getConn(dbname).getCollection(tick_collection).find(query2).sort(order).limit(1) $$ com.mongodb.DBCursor $$ regular method exit $$ ( 3539, 3626 ) $$ @MustCall method close may not have been invoked on DBConn.getConn(dbname).getCollection(tick_collection).find(query2).sort(order).limit(1) or any of its aliases.
+			maxavg = DBConn.getConn(dbname).getCollection(tick_collection).find(query2).sort(order).limit(1).next();
+			                                                                                             ^
+  The type of object is: com.mongodb.DBCursor.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8/src/eu/cassandra/sim/utilities/Utils.java:58: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(file) $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 1729, 1749 ) $$ @MustCall method close may not have been invoked on new FileReader(file) or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8/src/eu/cassandra/sim/utilities/DerbyResults.java:55: error: (required.method.not.called) $$ 4 $$ method close $$ getConnection() $$ java.sql.Connection $$ regular method exit $$ ( 1557, 1572 ) $$ @MustCall method close may not have been invoked on getConnection() or any of its aliases.
+		conn = getConnection();
+		                    ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: regular method exit
+Note: ../dataset/june2020_dataset/url2698a2c731_cassandra_project_cassandra_stand_alone_tgz-pJ8-eu_cassandra_sim_MySimpleDynamicScenarioSimulationJ8/src/eu/cassandra/sim/utilities/DBConn.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+14 errors
+2 warnings

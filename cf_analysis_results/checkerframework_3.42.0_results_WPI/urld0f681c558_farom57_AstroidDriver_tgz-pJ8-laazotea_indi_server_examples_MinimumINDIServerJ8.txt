@@ -1,0 +1,211 @@
+warning: MustCallChecker did not find annotation file or directory ../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+warning: ResourceLeakChecker did not find annotation file or directory ../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/INDIProperty.java:522: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException $$ ( 14198, 14248 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+        FileOutputStream fos = new FileOutputStream(file);
+                         ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/INDIProperty.java:583: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(fis) with exception type java.io.IOException $$ ( 16131, 16179 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+      FileInputStream fis = new FileInputStream(file);
+                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(fis) with exception type java.io.IOException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/INDINumberElement.java:321: error: (required.method.not.called) $$ 4 $$ method close $$ formatter $$ java.util.Formatter $$ regular method exit $$ ( 9730, 9777 ) $$ @MustCall method close may not have been invoked on formatter or any of its aliases.
+      Formatter formatter = new Formatter(Locale.US);
+                ^
+  The type of object is: java.util.Formatter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDIBLOBValue.java:161: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to fos.write(BLOBData) with exception type java.io.IOException $$ ( 4072, 4122 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+    FileOutputStream fos = new FileOutputStream(file);
+                     ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to fos.write(BLOBData) with exception type java.io.IOException
+error: Invalid format string: "(required.method.not.called) $$ 4 $$ method close $$ formatter.format("%02.0f", minutes) $$ java.util.Formatter $$ regular method exit $$ ( 9057, 9092 ) $$ @MustCall %s may not have been invoked on %s or any of its aliases.
+  The type of object is: %s.
+  Reason for going out of scope: %s" args: [method close, formatter.format("%02.0f", minutes), java.util.Formatter, regular method exit]
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java
+  Last visited tree at line 31 column 1:
+  public class INDISexagesimalFormatter {
+  Exception: java.util.IllegalFormatConversionException: f != java.lang.String; java.util.IllegalFormatConversionException: f != java.lang.String
+  	at java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4302)
+  	at java.util.Formatter$FormatSpecifier.printFloat(Formatter.java:2806)
+  	at java.util.Formatter$FormatSpecifier.print(Formatter.java:2753)
+  	at java.util.Formatter.format(Formatter.java:2520)
+  	at java.util.Formatter.format(Formatter.java:2455)
+  	at java.lang.String.format(String.java:2940)
+  	at org.checkerframework.framework.source.SourceChecker.report(SourceChecker.java:1169)
+  	at org.checkerframework.framework.source.SourceChecker.reportError(SourceChecker.java:1087)
+  	at org.checkerframework.checker.resourceleak.ResourceLeakChecker.reportError(ResourceLeakChecker.java:167)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.checkMustCall(MustCallConsistencyAnalyzer.java:2410)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.propagateObligationsToSuccessorBlock(MustCallConsistencyAnalyzer.java:2175)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.propagateObligationsToSuccessorBlocks(MustCallConsistencyAnalyzer.java:1978)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.analyze(MustCallConsistencyAnalyzer.java:601)
+  	at org.checkerframework.checker.resourceleak.ResourceLeakAnnotatedTypeFactory.postAnalyze(ResourceLeakAnnotatedTypeFactory.java:152)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.analyze(GenericAnnotatedTypeFactory.java:1653)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1485)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1994)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:425)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:550)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:188)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:86)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:1057)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:559)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java:281: error: (required.method.not.called) $$ 4 $$ method close $$ formatter $$ java.util.Formatter $$ possible exceptional exit due to Double.parseDouble(newMinutes) with exception type java.lang.NumberFormatException $$ ( 8107, 8154 ) $$ @MustCall method close may not have been invoked on formatter or any of its aliases.
+      Formatter formatter = new Formatter(Locale.US);
+                ^
+  The type of object is: java.util.Formatter.
+  Reason for going out of scope: possible exceptional exit due to Double.parseDouble(newMinutes) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java:282: error: (required.method.not.called) $$ 4 $$ method close $$ formatter.format(form, minutes) $$ java.util.Formatter $$ regular method exit $$ ( 8181, 8212 ) $$ @MustCall method close may not have been invoked on formatter.format(form, minutes) or any of its aliases.
+      String newMinutes = formatter.format(form, minutes).toString();
+                                          ^
+  The type of object is: java.util.Formatter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java:305: error: (required.method.not.called) $$ 4 $$ method close $$ formatter $$ java.util.Formatter $$ possible exceptional exit due to Double.parseDouble(newSeconds) with exception type java.lang.NumberFormatException $$ ( 8765, 8812 ) $$ @MustCall method close may not have been invoked on formatter or any of its aliases.
+      Formatter formatter = new Formatter(Locale.US);
+                ^
+  The type of object is: java.util.Formatter.
+  Reason for going out of scope: possible exceptional exit due to Double.parseDouble(newSeconds) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java:306: error: (required.method.not.called) $$ 4 $$ method close $$ formatter.format(form, seconds) $$ java.util.Formatter $$ possible exceptional exit due to Double.parseDouble(newMinutes) with exception type java.lang.NumberFormatException $$ ( 8839, 8870 ) $$ @MustCall method close may not have been invoked on formatter.format(form, seconds) or any of its aliases.
+      String newSeconds = formatter.format(form, seconds).toString();
+                                          ^
+  The type of object is: java.util.Formatter.
+  Reason for going out of scope: possible exceptional exit due to Double.parseDouble(newMinutes) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java:313: error: (required.method.not.called) $$ 4 $$ method close $$ formatter $$ java.util.Formatter $$ possible exceptional exit due to Double.parseDouble(newMinutes) with exception type java.lang.NumberFormatException $$ ( 8993, 9029 ) $$ @MustCall method close may not have been invoked on formatter or any of its aliases.
+      formatter = new Formatter(Locale.US);
+                ^
+  The type of object is: java.util.Formatter.
+  Reason for going out of scope: possible exceptional exit due to Double.parseDouble(newMinutes) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDIProtocolReader.java:94: error: (required.method.not.called) $$ 4 $$ method close $$ parser.getInputStream() $$ java.io.InputStream $$ regular method exit $$ ( 2674, 2697 ) $$ @MustCall method close may not have been invoked on parser.getInputStream() or any of its aliases.
+    BufferedReader in = new BufferedReader(new InputStreamReader(parser.getInputStream()));
+                                                                                      ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/Base64.java:1358: error: (required.method.not.called) $$ 4 $$ method close $$ new java.io.FileOutputStream(filename) $$ java.io.FileOutputStream $$ possible exceptional exit due to bos.write(dataToEncode) with exception type java.io.IOException $$ ( 57054, 57092 ) $$ @MustCall method close may not have been invoked on new java.io.FileOutputStream(filename) or any of its aliases.
+              new java.io.FileOutputStream(filename), Base64.ENCODE);
+              ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to bos.write(dataToEncode) with exception type java.io.IOException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/Base64.java:1392: error: (required.method.not.called) $$ 4 $$ method close $$ new java.io.FileOutputStream(filename) $$ java.io.FileOutputStream $$ possible exceptional exit due to bos.write(dataToDecode.getBytes(PREFERRED_ENCODING)) with exception type java.io.IOException $$ ( 58133, 58171 ) $$ @MustCall method close may not have been invoked on new java.io.FileOutputStream(filename) or any of its aliases.
+              new java.io.FileOutputStream(filename), Base64.DECODE);
+              ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to bos.write(dataToDecode.getBytes(PREFERRED_ENCODING)) with exception type java.io.IOException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/Base64.java:1441: error: (required.method.not.called) $$ 4 $$ method close $$ new java.io.FileInputStream(file) $$ java.io.FileInputStream $$ possible exceptional exit due to bis.read(buffer, length, 4096) with exception type java.io.IOException $$ ( 59779, 59812 ) $$ @MustCall method close may not have been invoked on new java.io.FileInputStream(file) or any of its aliases.
+              new java.io.FileInputStream(file)), Base64.DECODE);
+              ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to bis.read(buffer, length, 4096) with exception type java.io.IOException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/Base64.java:1494: error: (required.method.not.called) $$ 4 $$ method close $$ new java.io.FileInputStream(file) $$ java.io.FileInputStream $$ possible exceptional exit due to bis.read(buffer, length, 4096) with exception type java.io.IOException $$ ( 61511, 61544 ) $$ @MustCall method close may not have been invoked on new java.io.FileInputStream(file) or any of its aliases.
+              new java.io.FileInputStream(file)), Base64.ENCODE);
+              ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to bis.read(buffer, length, 4096) with exception type java.io.IOException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/examples/INDIDriverExample.java:139: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileInputStream $$ possible exceptional exit due to in.read(fileContents) with exception type java.io.IOException $$ ( 5814, 5861 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+        FileInputStream in = new FileInputStream(file);
+                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to in.read(fileContents) with exception type java.io.IOException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/examples/INDIElTiempoDriver.java:331: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(file) $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 10674, 10694 ) $$ @MustCall method close may not have been invoked on new FileReader(file) or any of its aliases.
+    BufferedReader reader = new BufferedReader(new FileReader(file));
+                                               ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/examples/INDIElTiempoDriver.java:353: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.FileInputStream $$ regular method exit $$ ( 11275, 11326 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+    FileInputStream reader = new FileInputStream(file);
+                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/examples/INDIElTiempoDriver.java:387: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ possible exceptional exit due to new FileOutputStream(file) with exception type java.io.FileNotFoundException $$ ( 12035, 12067 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+    InputStream is = u.openStream();  // throws an IOException
+                ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(file) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/examples/INDIElTiempoDriver.java:389: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to bis.close() with exception type java.io.IOException $$ ( 12157, 12207 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+    FileOutputStream fos = new FileOutputStream(file);
+                     ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to bis.close() with exception type java.io.IOException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/AbstractINDIServer.java:131: error: (required.method.not.called) $$ 4 $$ method close $$ new ServerSocket(listeningPort) $$ java.net.ServerSocket $$ regular method exit $$ ( 3799, 3830 ) $$ @MustCall method close may not have been invoked on new ServerSocket(listeningPort) or any of its aliases.
+      socket = new ServerSocket(listeningPort);
+               ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/AbstractINDIServer.java:146: error: (required.method.not.called) $$ 4 $$ method close $$ clientSocket $$ java.net.Socket $$ regular method exit $$ ( 4195, 4225 ) $$ @MustCall method close may not have been invoked on clientSocket or any of its aliases.
+        clientSocket = socket.accept();
+                     ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/AbstractINDIServer.java:225: error: (required.method.not.called) $$ 4 $$ method close $$ cl $$ java.lang.ClassLoader $$ regular method exit $$ ( 6447, 6489 ) $$ @MustCall method close may not have been invoked on cl or any of its aliases.
+    ClassLoader cl = new URLClassLoader(urls);
+                ^
+  The type of object is: java.lang.ClassLoader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/AbstractINDIServer.java:545: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(file) $$ java.io.FileInputStream $$ possible exceptional exit due to new JarInputStream(new FileInputStream(file)) with exception type java.io.IOException $$ ( 15242, 15267 ) $$ @MustCall method close may not have been invoked on new FileInputStream(file) or any of its aliases.
+      JarInputStream jarFile = new JarInputStream(new FileInputStream(file));
+                                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new JarInputStream(new FileInputStream(file)) with exception type java.io.IOException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIDevice.java:287: error: (required.method.not.called) $$ 4 $$ method close $$ getOutputStream() $$ java.io.OutputStream $$ regular method exit $$ ( 8067, 8084 ) $$ @MustCall method close may not have been invoked on getOutputStream() or any of its aliases.
+      getOutputStream().write(xml.getBytes());
+                     ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIDevice.java:288: error: (required.method.not.called) $$ 4 $$ method close $$ getOutputStream() $$ java.io.OutputStream $$ possible exceptional exit due to getOutputStream().flush() with exception type java.io.IOException $$ ( 8114, 8131 ) $$ @MustCall method close may not have been invoked on getOutputStream() or any of its aliases.
+      getOutputStream().flush();
+                     ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to getOutputStream().flush() with exception type java.io.IOException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIJavaDevice.java:92: error: (required.method.not.called) $$ 4 $$ method close $$ toDriver.getInputStream() $$ java.io.InputStream $$ possible exceptional exit due to throw new INDIException("Problem instantiating driver (not an INDI for Java Driver?) - InstantiationException"); with exception type laazotea.indi.INDIException $$ ( 3019, 3044 ) $$ @MustCall method close may not have been invoked on toDriver.getInputStream() or any of its aliases.
+      this.driver = (INDIDriver) c.newInstance(toDriver.getInputStream(), fromDriver.getOutputStream());
+                                                                      ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to throw new INDIException("Problem instantiating driver (not an INDI for Java Driver?) - InstantiationException"); with exception type laazotea.indi.INDIException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIJavaDevice.java:92: error: (required.method.not.called) $$ 4 $$ method close $$ fromDriver.getOutputStream() $$ java.io.OutputStream $$ possible exceptional exit due to throw new INDIException("Problem instantiating driver (not an INDI for Java Driver?) - InstantiationException"); with exception type laazotea.indi.INDIException $$ ( 3046, 3074 ) $$ @MustCall method close may not have been invoked on fromDriver.getOutputStream() or any of its aliases.
+      this.driver = (INDIDriver) c.newInstance(toDriver.getInputStream(), fromDriver.getOutputStream());
+                                                                                                    ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to throw new INDIException("Problem instantiating driver (not an INDI for Java Driver?) - InstantiationException"); with exception type laazotea.indi.INDIException
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIJavaDevice.java:184: error: (required.method.not.called) $$ 4 $$ method close $$ toDriver.getInputStream() $$ java.io.InputStream $$ regular method exit $$ ( 5672, 5697 ) $$ @MustCall method close may not have been invoked on toDriver.getInputStream() or any of its aliases.
+      toDriver.getInputStream().close();
+                             ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIJavaDevice.java:188: error: (required.method.not.called) $$ 4 $$ method close $$ toDriver.getOutputStream() $$ java.io.OutputStream $$ regular method exit $$ ( 5759, 5785 ) $$ @MustCall method close may not have been invoked on toDriver.getOutputStream() or any of its aliases.
+      toDriver.getOutputStream().close();
+                              ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIJavaDevice.java:192: error: (required.method.not.called) $$ 4 $$ method close $$ fromDriver.getInputStream() $$ java.io.InputStream $$ regular method exit $$ ( 5847, 5874 ) $$ @MustCall method close may not have been invoked on fromDriver.getInputStream() or any of its aliases.
+      fromDriver.getInputStream().close();
+                               ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIJavaDevice.java:196: error: (required.method.not.called) $$ 4 $$ method close $$ fromDriver.getOutputStream() $$ java.io.OutputStream $$ regular method exit $$ ( 5936, 5964 ) $$ @MustCall method close may not have been invoked on fromDriver.getOutputStream() or any of its aliases.
+      fromDriver.getOutputStream().close();
+                                ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDINetworkDevice.java:71: error: (reset.not.owning) $$ 2 $$ connect $$ this.socket $$ ( 2113, 2169 ) $$ Calling method connect resets the must-call obligations of the expression this.socket, which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+      socket.connect(new InetSocketAddress(host, port), 20000);
+                    ^
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+33 errors
+2 warnings

@@ -1,0 +1,157 @@
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/remove_acceptor/Main.java:227: error: (type.argument) $$ 4 $$ E $$ List $$ @MustCall("close") SocketChannel $$ @MustCall Object $$ ( 7195, 7208 ) $$ incompatible type argument for type parameter E of List.
+            List<SocketChannel> sockets = new ArrayList<SocketChannel>();
+                 ^
+  found   : @MustCall("close") SocketChannel
+  required: @MustCall Object
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/remove_acceptor/Main.java:227: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("close") SocketChannel $$ @MustCall Object $$ ( 7234, 7247 ) $$ incompatible type argument for type parameter E of ArrayList.
+            List<SocketChannel> sockets = new ArrayList<SocketChannel>();
+                                                        ^
+  found   : @MustCall("close") SocketChannel
+  required: @MustCall Object
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/remove_acceptor/Main.java:232: error: (required.method.not.called) $$ 4 $$ method close $$ socketChannel $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 7345, 7410 ) $$ @MustCall method close may not have been invoked on socketChannel or any of its aliases.
+                    final SocketChannel socketChannel = SocketChannel.open( m_addr );
+                                        ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/collider/ShMem.java:49: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(file, "rw") $$ java.io.RandomAccessFile $$ regular method exit $$ ( 1672, 1704 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(file, "rw") or any of its aliases.
+            m_fileChannel = new RandomAccessFile(file, "rw").getChannel();
+                            ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/session_throughput/Client.java:99: error: (required.method.not.called) $$ 4 $$ method close $$ socketChannel $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to socket.setTcpNoDelay(true) with exception type java.net.SocketException $$ ( 3207, 3272 ) $$ @MustCall method close may not have been invoked on socketChannel or any of its aliases.
+                final SocketChannel socketChannel = SocketChannel.open( m_addr );
+                                    ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to socket.setTcpNoDelay(true) with exception type java.net.SocketException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/session_latency/Client.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ socketChannel $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to socket.setTcpNoDelay(true) with exception type java.net.SocketException $$ ( 1322, 1387 ) $$ @MustCall method close may not have been invoked on socketChannel or any of its aliases.
+                final SocketChannel socketChannel = SocketChannel.open( m_addr );
+                                    ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to socket.setTcpNoDelay(true) with exception type java.net.SocketException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java:162: error: (required.method.not.called) $$ 4 $$ method close $$ datagramChannel1 $$ java.nio.channels.DatagramChannel $$ possible exceptional exit due to datagramChannel1.socket().setReuseAddress(true) with exception type java.net.SocketException $$ ( 5443, 5536 ) $$ @MustCall method close may not have been invoked on datagramChannel1 or any of its aliases.
+            final DatagramChannel datagramChannel1 = DatagramChannel.open( StandardProtocolFamily.INET );
+                                  ^
+  The type of object is: java.nio.channels.DatagramChannel.
+  Reason for going out of scope: possible exceptional exit due to datagramChannel1.socket().setReuseAddress(true) with exception type java.net.SocketException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java:163: error: (required.method.not.called) $$ 4 $$ method close $$ datagramChannel1.socket() $$ java.net.DatagramSocket $$ possible exceptional exit due to datagramChannel1.socket().setReuseAddress(true) with exception type java.net.SocketException $$ ( 5549, 5574 ) $$ @MustCall method close may not have been invoked on datagramChannel1.socket() or any of its aliases.
+            datagramChannel1.socket().setReuseAddress( true );
+                                   ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to datagramChannel1.socket().setReuseAddress(true) with exception type java.net.SocketException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java:164: error: (required.method.not.called) $$ 4 $$ method close $$ datagramChannel1.bind(new InetSocketAddress(0)) $$ java.nio.channels.DatagramChannel $$ possible exceptional exit due to datagramChannel1.connect(listenAddr1) with exception type java.io.IOException $$ ( 5612, 5661 ) $$ @MustCall method close may not have been invoked on datagramChannel1.bind(new InetSocketAddress(0)) or any of its aliases.
+            datagramChannel1.bind( new InetSocketAddress(0) );
+                                 ^
+  The type of object is: java.nio.channels.DatagramChannel.
+  Reason for going out of scope: possible exceptional exit due to datagramChannel1.connect(listenAddr1) with exception type java.io.IOException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java:165: error: (required.method.not.called) $$ 4 $$ method close $$ datagramChannel1.socket() $$ java.net.DatagramSocket $$ possible exceptional exit due to datagramChannel1.connect(listenAddr1) with exception type java.io.IOException $$ ( 5749, 5774 ) $$ @MustCall method close may not have been invoked on datagramChannel1.socket() or any of its aliases.
+            final InetSocketAddress listenAddr1 = new InetSocketAddress( "localhost", datagramChannel1.socket().getLocalPort() );
+                                                                                                             ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to datagramChannel1.connect(listenAddr1) with exception type java.io.IOException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java:166: error: (required.method.not.called) $$ 4 $$ method close $$ datagramChannel1.connect(listenAddr1) $$ java.nio.channels.DatagramChannel $$ possible exceptional exit due to DatagramChannel.open(StandardProtocolFamily.INET) with exception type java.io.IOException $$ ( 5805, 5844 ) $$ @MustCall method close may not have been invoked on datagramChannel1.connect(listenAddr1) or any of its aliases.
+            datagramChannel1.connect( listenAddr1 );
+                                    ^
+  The type of object is: java.nio.channels.DatagramChannel.
+  Reason for going out of scope: possible exceptional exit due to DatagramChannel.open(StandardProtocolFamily.INET) with exception type java.io.IOException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java:169: error: (required.method.not.called) $$ 4 $$ method close $$ datagramChannel2 $$ java.nio.channels.DatagramChannel $$ possible exceptional exit due to datagramChannel2.socket().setReuseAddress(true) with exception type java.net.SocketException $$ ( 5925, 6018 ) $$ @MustCall method close may not have been invoked on datagramChannel2 or any of its aliases.
+            final DatagramChannel datagramChannel2 = DatagramChannel.open( StandardProtocolFamily.INET );
+                                  ^
+  The type of object is: java.nio.channels.DatagramChannel.
+  Reason for going out of scope: possible exceptional exit due to datagramChannel2.socket().setReuseAddress(true) with exception type java.net.SocketException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java:170: error: (required.method.not.called) $$ 4 $$ method close $$ datagramChannel2.socket() $$ java.net.DatagramSocket $$ possible exceptional exit due to datagramChannel2.socket().setReuseAddress(true) with exception type java.net.SocketException $$ ( 6031, 6056 ) $$ @MustCall method close may not have been invoked on datagramChannel2.socket() or any of its aliases.
+            datagramChannel2.socket().setReuseAddress( true );
+                                   ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to datagramChannel2.socket().setReuseAddress(true) with exception type java.net.SocketException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java:171: error: (required.method.not.called) $$ 4 $$ method close $$ datagramChannel2.bind(new InetSocketAddress(0)) $$ java.nio.channels.DatagramChannel $$ possible exceptional exit due to datagramChannel2.connect(listenAddr2) with exception type java.io.IOException $$ ( 6094, 6143 ) $$ @MustCall method close may not have been invoked on datagramChannel2.bind(new InetSocketAddress(0)) or any of its aliases.
+            datagramChannel2.bind( new InetSocketAddress(0) );
+                                 ^
+  The type of object is: java.nio.channels.DatagramChannel.
+  Reason for going out of scope: possible exceptional exit due to datagramChannel2.connect(listenAddr2) with exception type java.io.IOException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java:172: error: (required.method.not.called) $$ 4 $$ method close $$ datagramChannel2.socket() $$ java.net.DatagramSocket $$ possible exceptional exit due to datagramChannel2.connect(listenAddr2) with exception type java.io.IOException $$ ( 6231, 6256 ) $$ @MustCall method close may not have been invoked on datagramChannel2.socket() or any of its aliases.
+            final InetSocketAddress listenAddr2 = new InetSocketAddress( "localhost", datagramChannel2.socket().getLocalPort() );
+                                                                                                             ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to datagramChannel2.connect(listenAddr2) with exception type java.io.IOException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java:173: error: (required.method.not.called) $$ 4 $$ method close $$ datagramChannel2.connect(listenAddr2) $$ java.nio.channels.DatagramChannel $$ possible exceptional exit due to Collider.create() with exception type java.io.IOException $$ ( 6287, 6326 ) $$ @MustCall method close may not have been invoked on datagramChannel2.connect(listenAddr2) or any of its aliases.
+            datagramChannel2.connect( listenAddr2 );
+                                    ^
+  The type of object is: java.nio.channels.DatagramChannel.
+  Reason for going out of scope: possible exceptional exit due to Collider.create() with exception type java.io.IOException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/session_close/Client.java:68: error: (required.method.not.called) $$ 4 $$ method close $$ socketChannel $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to socket.setTcpNoDelay(true) with exception type java.net.SocketException $$ ( 2292, 2357 ) $$ @MustCall method close may not have been invoked on socketChannel or any of its aliases.
+                final SocketChannel socketChannel = SocketChannel.open( m_addr );
+                                    ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to socket.setTcpNoDelay(true) with exception type java.net.SocketException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/queue_socket_send/Receiver.java:27: error: (required.method.not.called) $$ 4 $$ method close $$ socketChannel $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to socketChannel.finishConnect() with exception type java.io.IOException $$ ( 568, 619 ) $$ @MustCall method close may not have been invoked on socketChannel or any of its aliases.
+            SocketChannel socketChannel = SocketChannel.open();
+                          ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to socketChannel.finishConnect() with exception type java.io.IOException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/queue_socket_send/Sender.java:58: error: (reset.not.owning) $$ 2 $$ bind $$ serverSocketChannel.socket() $$ ( 1931, 1972 ) $$ Calling method bind resets the must-call obligations of the expression serverSocketChannel.socket(), which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+            serverSocketChannel.socket().bind( addr );
+                                             ^
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/echo_throughput/Client.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ socketChannel $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to socket.setTcpNoDelay(true) with exception type java.net.SocketException $$ ( 1405, 1470 ) $$ @MustCall method close may not have been invoked on socketChannel or any of its aliases.
+                final SocketChannel socketChannel = SocketChannel.open( m_addr );
+                                    ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to socket.setTcpNoDelay(true) with exception type java.net.SocketException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/recv_throughput/Client.java:46: error: (required.method.not.called) $$ 4 $$ method close $$ socketChannel $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to socket.setTcpNoDelay(true) with exception type java.net.SocketException $$ ( 1443, 1508 ) $$ @MustCall method close may not have been invoked on socketChannel or any of its aliases.
+                final SocketChannel socketChannel = SocketChannel.open( m_addr );
+                                    ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to socket.setTcpNoDelay(true) with exception type java.net.SocketException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/send_throughput/Client.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ socketChannel $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to socketChannel.finishConnect() with exception type java.io.IOException $$ ( 1399, 1450 ) $$ @MustCall method close may not have been invoked on socketChannel or any of its aliases.
+                SocketChannel socketChannel = SocketChannel.open();
+                              ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to socketChannel.finishConnect() with exception type java.io.IOException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/echo_latency/Client.java:46: error: (required.method.not.called) $$ 4 $$ method close $$ socketChannel $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to socket.setTcpNoDelay(true) with exception type java.net.SocketException $$ ( 1503, 1568 ) $$ @MustCall method close may not have been invoked on socketChannel or any of its aliases.
+                final SocketChannel socketChannel = SocketChannel.open( m_addr );
+                                    ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to socket.setTcpNoDelay(true) with exception type java.net.SocketException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/collider/ColliderImpl.java:365: error: (required.method.not.called) $$ 4 $$ method close $$ Selector.open() $$ java.nio.channels.Selector $$ regular method exit $$ ( 12692, 12707 ) $$ @MustCall method close may not have been invoked on Selector.open() or any of its aliases.
+        m_selector = Selector.open();
+                                  ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/collider/ColliderImpl.java:576: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.ServerSocket $$ regular method exit $$ ( 19646, 19703 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+        final ServerSocket socket = serverSocketChannel.socket();
+                           ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/collider/ColliderImpl.java:675: error: (required.method.not.called) $$ 4 $$ method close $$ datagramChannel $$ java.nio.channels.DatagramChannel $$ possible exceptional exit due to datagramChannel.configureBlocking(false) with exception type java.io.IOException $$ ( 22654, 22746 ) $$ @MustCall method close may not have been invoked on datagramChannel or any of its aliases.
+        final DatagramChannel datagramChannel = DatagramChannel.open( StandardProtocolFamily.INET );
+                              ^
+  The type of object is: java.nio.channels.DatagramChannel.
+  Reason for going out of scope: possible exceptional exit due to datagramChannel.configureBlocking(false) with exception type java.io.IOException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/collider/ColliderImpl.java:676: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.DatagramSocket $$ possible exceptional exit due to datagramChannel.configureBlocking(false) with exception type java.io.IOException $$ ( 22755, 22810 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+        final DatagramSocket socket = datagramChannel.socket();
+                             ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to datagramChannel.configureBlocking(false) with exception type java.io.IOException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/collider/ColliderImpl.java:699: error: (required.method.not.called) $$ 4 $$ method close $$ datagramChannel.bind(addr) $$ java.nio.channels.DatagramChannel $$ possible exceptional exit due to datagramChannel.connect(addr) with exception type java.io.IOException $$ ( 23701, 23729 ) $$ @MustCall method close may not have been invoked on datagramChannel.bind(addr) or any of its aliases.
+            datagramChannel.bind( addr );
+                                ^
+  The type of object is: java.nio.channels.DatagramChannel.
+  Reason for going out of scope: possible exceptional exit due to datagramChannel.connect(addr) with exception type java.io.IOException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/collider/ColliderImpl.java:700: error: (required.method.not.called) $$ 4 $$ method close $$ datagramChannel.connect(addr) $$ java.nio.channels.DatagramChannel $$ regular method exit $$ ( 23743, 23774 ) $$ @MustCall method close may not have been invoked on datagramChannel.connect(addr) or any of its aliases.
+            datagramChannel.connect( addr );
+                                   ^
+  The type of object is: java.nio.channels.DatagramChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/collider/ColliderImpl.java:704: error: (required.method.not.called) $$ 4 $$ method close $$ datagramChannel.bind(new InetSocketAddress(addr.getPort())) $$ java.nio.channels.DatagramChannel $$ possible exceptional exit due to datagramChannel.setOption(StandardSocketOptions.IP_MULTICAST_IF, networkInterface) with exception type java.io.IOException $$ ( 23821, 23884 ) $$ @MustCall method close may not have been invoked on datagramChannel.bind(new InetSocketAddress(addr.getPort())) or any of its aliases.
+            datagramChannel.bind( new InetSocketAddress( addr.getPort() ) );
+                                ^
+  The type of object is: java.nio.channels.DatagramChannel.
+  Reason for going out of scope: possible exceptional exit due to datagramChannel.setOption(StandardSocketOptions.IP_MULTICAST_IF, networkInterface) with exception type java.io.IOException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/collider/ColliderImpl.java:705: error: (required.method.not.called) $$ 4 $$ method close $$ datagramChannel.setOption(StandardSocketOptions.IP_MULTICAST_IF, networkInterface) $$ java.nio.channels.DatagramChannel $$ possible exceptional exit due to datagramChannel.join(addr.getAddress(), networkInterface) with exception type java.io.IOException $$ ( 23898, 23982 ) $$ @MustCall method close may not have been invoked on datagramChannel.setOption(StandardSocketOptions.IP_MULTICAST_IF, networkInterface) or any of its aliases.
+            datagramChannel.setOption( StandardSocketOptions.IP_MULTICAST_IF, networkInterface );
+                                     ^
+  The type of object is: java.nio.channels.DatagramChannel.
+  Reason for going out of scope: possible exceptional exit due to datagramChannel.join(addr.getAddress(), networkInterface) with exception type java.io.IOException
+../dataset/june2020_dataset/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/collider/ConnectorImpl.java:89: error: (reset.not.owning) $$ 2 $$ connect $$ this.m_socketChannel $$ ( 2783, 2831 ) $$ Calling method connect resets the must-call obligations of the expression this.m_socketChannel, which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+                    final boolean connected = m_socketChannel.connect( m_connector.getAddr() );
+                                                                     ^
+32 errors

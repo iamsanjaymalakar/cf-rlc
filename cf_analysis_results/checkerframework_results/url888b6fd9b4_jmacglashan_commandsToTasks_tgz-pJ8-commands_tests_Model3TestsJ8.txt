@@ -1,0 +1,80 @@
+../../../../datasets/june2020_dataset/url888b6fd9b4_jmacglashan_commandsToTasks_tgz-pJ8-commands_tests_Model3TestsJ8/src/commands/data/TrainingElementParser.java:46: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-67 $$ java.util.Scanner $$ regular method exit $$ ( 1111, 1138 ) $$ @MustCall method close may not have been invoked on temp-var-67 or any of its aliases.
+			fcont = new Scanner(new File(path)).useDelimiter("\\Z").next();
+			        ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url888b6fd9b4_jmacglashan_commandsToTasks_tgz-pJ8-commands_tests_Model3TestsJ8/src/commands/data/TrainingElementParser.java:46: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-68 $$ java.util.Scanner $$ regular method exit $$ ( 1111, 1158 ) $$ @MustCall method close may not have been invoked on temp-var-68 or any of its aliases.
+			fcont = new Scanner(new File(path)).useDelimiter("\\Z").next();
+			                                                ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url888b6fd9b4_jmacglashan_commandsToTasks_tgz-pJ8-commands_tests_Model3TestsJ8/src/commands/data/TrainingElementParser.java:95: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-79 $$ java.io.FileWriter $$ possible exceptional exit due to out.write(this.getStringOfTrainingElement(te)) with exception type java.io.IOException $$ ( 2362, 2382 ) $$ @MustCall method close may not have been invoked on temp-var-79 or any of its aliases.
+			BufferedWriter out = new BufferedWriter(new FileWriter(path));
+			                                        ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(this.getStringOfTrainingElement(te)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url888b6fd9b4_jmacglashan_commandsToTasks_tgz-pJ8-commands_tests_Model3TestsJ8/src/commands/data/TestElementParser.java:49: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-94 $$ java.util.Scanner $$ regular method exit $$ ( 1225, 1252 ) $$ @MustCall method close may not have been invoked on temp-var-94 or any of its aliases.
+			fcont = new Scanner(new File(path)).useDelimiter("\\Z").next();
+			        ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url888b6fd9b4_jmacglashan_commandsToTasks_tgz-pJ8-commands_tests_Model3TestsJ8/src/commands/data/TestElementParser.java:49: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-95 $$ java.util.Scanner $$ regular method exit $$ ( 1225, 1272 ) $$ @MustCall method close may not have been invoked on temp-var-95 or any of its aliases.
+			fcont = new Scanner(new File(path)).useDelimiter("\\Z").next();
+			                                                ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url888b6fd9b4_jmacglashan_commandsToTasks_tgz-pJ8-commands_tests_Model3TestsJ8/src/commands/data/TestElementParser.java:95: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-106 $$ java.io.FileWriter $$ possible exceptional exit due to out.write(this.getStringFromTestElement(te)) with exception type java.io.IOException $$ ( 2376, 2396 ) $$ @MustCall method close may not have been invoked on temp-var-106 or any of its aliases.
+			BufferedWriter out = new BufferedWriter(new FileWriter(path));
+			                                        ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(this.getStringFromTestElement(te)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url888b6fd9b4_jmacglashan_commandsToTasks_tgz-pJ8-commands_tests_Model3TestsJ8/src/commands/tests/Model3LOOVerifier.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-139 $$ java.io.FileReader $$ possible exceptional exit due to in.readLine() with exception type java.io.IOException $$ ( 2158, 2178 ) $$ @MustCall method close may not have been invoked on temp-var-139 or any of its aliases.
+				BufferedReader in = new BufferedReader(new FileReader(path));
+				                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to in.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url888b6fd9b4_jmacglashan_commandsToTasks_tgz-pJ8-commands_tests_Model3TestsJ8/src/commands/model3/TrajectoryModule.java:187: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1229 $$ java.io.FileWriter $$ possible exceptional exit due to out.write(e.getValue() + "\n") with exception type java.io.IOException $$ ( 5066, 5112 ) $$ @MustCall method close may not have been invoked on temp-var-1229 or any of its aliases.
+				BufferedWriter out = new BufferedWriter(new FileWriter(pathToCacheDir+queryInd+".txt"));
+				                                        ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(e.getValue() + "\n") with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url888b6fd9b4_jmacglashan_commandsToTasks_tgz-pJ8-commands_tests_Model3TestsJ8/src/commands/model3/TrajectoryModule.java:235: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1246 $$ java.util.Scanner $$ possible exceptional exit due to Double.parseDouble(pString) with exception type java.lang.NumberFormatException $$ ( 6140, 6167 ) $$ @MustCall method close may not have been invoked on temp-var-1246 or any of its aliases.
+				content = new Scanner(new File(path)).useDelimiter("\\Z").next();
+				          ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: possible exceptional exit due to Double.parseDouble(pString) with exception type java.lang.NumberFormatException
+../../../../datasets/june2020_dataset/url888b6fd9b4_jmacglashan_commandsToTasks_tgz-pJ8-commands_tests_Model3TestsJ8/src/commands/model3/TrajectoryModule.java:235: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1247 $$ java.util.Scanner $$ possible exceptional exit due to Double.parseDouble(pString) with exception type java.lang.NumberFormatException $$ ( 6140, 6187 ) $$ @MustCall method close may not have been invoked on temp-var-1247 or any of its aliases.
+				content = new Scanner(new File(path)).useDelimiter("\\Z").next();
+				                                                  ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: possible exceptional exit due to Double.parseDouble(pString) with exception type java.lang.NumberFormatException
+../../../../datasets/june2020_dataset/url888b6fd9b4_jmacglashan_commandsToTasks_tgz-pJ8-commands_tests_Model3TestsJ8/src/commands/model3/Model3Controller.java:663: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1605 $$ java.io.FileReader $$ possible exceptional exit due to in.readLine() with exception type java.io.IOException $$ ( 23248, 23274 ) $$ @MustCall method close may not have been invoked on temp-var-1605 or any of its aliases.
+			BufferedReader in = new BufferedReader(new FileReader(pathToFile));
+			                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to in.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url888b6fd9b4_jmacglashan_commandsToTasks_tgz-pJ8-commands_tests_Model3TestsJ8/src/commands/model3/mt/em/MTEMModule.java:289: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2891 $$ java.io.FileReader $$ possible exceptional exit due to in.readLine() with exception type java.io.IOException $$ ( 7986, 8012 ) $$ @MustCall method close may not have been invoked on temp-var-2891 or any of its aliases.
+			BufferedReader in = new BufferedReader(new FileReader(pathToFile));
+			                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to in.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url888b6fd9b4_jmacglashan_commandsToTasks_tgz-pJ8-commands_tests_Model3TestsJ8/src/commands/auxiliarytools/TrajectoryRecorder.java:461: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-3402 $$ java.io.FileWriter $$ possible exceptional exit due to out.write(teSRep) with exception type java.io.IOException $$ ( 11522, 11542 ) $$ @MustCall method close may not have been invoked on temp-var-3402 or any of its aliases.
+			BufferedWriter out = new BufferedWriter(new FileWriter(path));
+			                                        ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(teSRep) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url888b6fd9b4_jmacglashan_commandsToTasks_tgz-pJ8-commands_tests_Model3TestsJ8/src/commands/auxiliarytools/TrajectoryRecorder.java:566: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-3431 $$ java.util.Scanner $$ regular method exit $$ ( 13970, 13998 ) $$ @MustCall method close may not have been invoked on temp-var-3431 or any of its aliases.
+       					fcont = new Scanner(new File(fpath)).useDelimiter("\\Z").next();
+       					        ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url888b6fd9b4_jmacglashan_commandsToTasks_tgz-pJ8-commands_tests_Model3TestsJ8/src/commands/auxiliarytools/TrajectoryRecorder.java:566: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-3432 $$ java.util.Scanner $$ regular method exit $$ ( 13970, 14018 ) $$ @MustCall method close may not have been invoked on temp-var-3432 or any of its aliases.
+       					fcont = new Scanner(new File(fpath)).useDelimiter("\\Z").next();
+       					                                                 ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: ../../../../datasets/june2020_dataset/url888b6fd9b4_jmacglashan_commandsToTasks_tgz-pJ8-commands_tests_Model3TestsJ8/src/commands/auxiliarytools/TrajectoryRecorder.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+15 errors

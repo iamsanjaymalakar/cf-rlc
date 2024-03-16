@@ -1,0 +1,89 @@
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/utils/IniFile.java:57: error: (required.method.not.called) $$ 4 $$ method close $$ url.openStream() $$ java.io.InputStream $$ regular method exit $$ ( 1215, 1231 ) $$ @MustCall method close may not have been invoked on url.openStream() or any of its aliases.
+		load(url.openStream());
+		                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/utils/IniFile.java:210: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(filename) $$ java.io.FileInputStream $$ regular method exit $$ ( 4957, 4986 ) $$ @MustCall method close may not have been invoked on new FileInputStream(filename) or any of its aliases.
+		load(new FileInputStream(filename));
+		     ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/utils/IniFile.java:222: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(filename) $$ java.io.FileOutputStream $$ regular method exit $$ ( 5231, 5261 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(filename) or any of its aliases.
+		save(new FileOutputStream(filename));
+		     ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/utils/IniFile.java:320: error: (required.method.not.called) $$ 4 $$ method close $$ Resources.getInputStream("client.ini") $$ java.io.InputStream $$ possible exceptional exit due to new IniFile(Resources.getInputStream("client.ini")) with exception type java.io.IOException $$ ( 7771, 7809 ) $$ @MustCall method close may not have been invoked on Resources.getInputStream("client.ini") or any of its aliases.
+		IniFile i = new IniFile(Resources.getInputStream("client.ini"));
+		                                                ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new IniFile(Resources.getInputStream("client.ini")) with exception type java.io.IOException
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:372: error: (required.method.not.called) $$ 4 $$ method close $$ sf.createSocket(host, port) $$ java.net.Socket $$ possible exceptional exit due to ((SSLSocket)socket).startHandshake() with exception type java.net.UnknownHostException $$ ( 10179, 10205 ) $$ @MustCall method close may not have been invoked on sf.createSocket(host, port) or any of its aliases.
+                socket =  sf.createSocket(host,port);
+                                         ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to ((SSLSocket)socket).startHandshake() with exception type java.net.UnknownHostException
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:375: error: (required.method.not.called) $$ 4 $$ method close $$ new Socket(host, port) $$ java.net.Socket $$ regular method exit $$ ( 10307, 10329 ) $$ @MustCall method close may not have been invoked on new Socket(host, port) or any of its aliases.
+                socket = new Socket(host, port);
+                         ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:377: error: (required.method.not.called) $$ 4 $$ method close $$ new NetPrintWriter(socket.getOutputStream()) $$ pl.cc.core.NetPrintWriter $$ possible exceptional exit due to socket.getInputStream() with exception type java.net.UnknownHostException $$ ( 10354, 10398 ) $$ @MustCall method close may not have been invoked on new NetPrintWriter(socket.getOutputStream()) or any of its aliases.
+			out = new NetPrintWriter(socket.getOutputStream());
+			      ^
+  The type of object is: pl.cc.core.NetPrintWriter.
+  Reason for going out of scope: possible exceptional exit due to socket.getInputStream() with exception type java.net.UnknownHostException
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/DBConnection.java:24: error: (required.method.not.called) $$ 4 $$ method close $$ DriverManager.getConnection(connString, dbUser, dbPass) $$ java.sql.Connection $$ regular method exit $$ ( 667, 722 ) $$ @MustCall method close may not have been invoked on DriverManager.getConnection(connString, dbUser, dbPass) or any of its aliases.
+            conn = DriverManager.getConnection(connString, dbUser, dbPass);
+                                              ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/GadajAsterisk.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ new Socket(asteriskIP, new Integer(asteriskPort).intValue()) $$ java.net.Socket $$ possible exceptional exit due to echoSocket.getOutputStream() with exception type java.net.UnknownHostException $$ ( 2043, 2110 ) $$ @MustCall method close may not have been invoked on new Socket(asteriskIP, new Integer(asteriskPort).intValue()) or any of its aliases.
+				echoSocket = new Socket(asteriskIP, new Integer(asteriskPort)
+				             ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to echoSocket.getOutputStream() with exception type java.net.UnknownHostException
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/ReadConfig.java:54: error: (required.method.not.called) $$ 4 $$ method close $$ Fr $$ java.io.FileReader $$ possible exceptional exit due to new BufferedReader(Fr) with exception type java.lang.NumberFormatException $$ ( 1337, 1366 ) $$ @MustCall method close may not have been invoked on Fr or any of its aliases.
+			Fr = new FileReader(filename);
+			   ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new BufferedReader(Fr) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java:210: error: (required.method.not.called) $$ 4 $$ method close $$ selector $$ java.nio.channels.Selector $$ possible exceptional exit due to sChannel.configureBlocking(true) with exception type java.io.IOException $$ ( 7541, 7577 ) $$ @MustCall method close may not have been invoked on selector or any of its aliases.
+			Selector selector = Selector.open();
+			         ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: possible exceptional exit due to sChannel.configureBlocking(true) with exception type java.io.IOException
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java:889: error: (required.method.not.called) $$ 4 $$ method close $$ con.getOutputStream() $$ java.io.OutputStream $$ possible exceptional exit due to con.getOutputStream().write(("user=" + agentName).getBytes("UTF-8")) with exception type java.net.MalformedURLException $$ ( 29985, 30006 ) $$ @MustCall method close may not have been invoked on con.getOutputStream() or any of its aliases.
+			con.getOutputStream().write(("user="+agentName).getBytes("UTF-8"));
+			                   ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to con.getOutputStream().write(("user=" + agentName).getBytes("UTF-8")) with exception type java.net.MalformedURLException
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java:890: error: (required.method.not.called) $$ 4 $$ method close $$ con.getOutputStream() $$ java.io.OutputStream $$ possible exceptional exit due to con.getOutputStream().write("&".getBytes("UTF-8")) with exception type java.net.MalformedURLException $$ ( 30056, 30077 ) $$ @MustCall method close may not have been invoked on con.getOutputStream() or any of its aliases.
+			con.getOutputStream().write("&".getBytes("UTF-8"));
+			                   ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to con.getOutputStream().write("&".getBytes("UTF-8")) with exception type java.net.MalformedURLException
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java:891: error: (required.method.not.called) $$ 4 $$ method close $$ con.getOutputStream() $$ java.io.OutputStream $$ possible exceptional exit due to con.getOutputStream().write(("pass=" + password).getBytes("UTF-8")) with exception type java.net.MalformedURLException $$ ( 30111, 30132 ) $$ @MustCall method close may not have been invoked on con.getOutputStream() or any of its aliases.
+			con.getOutputStream().write(("pass="+password).getBytes("UTF-8"));
+			                   ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to con.getOutputStream().write(("pass=" + password).getBytes("UTF-8")) with exception type java.net.MalformedURLException
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java:893: error: (required.method.not.called) $$ 4 $$ method close $$ con.getInputStream() $$ java.io.InputStream $$ possible exceptional exit due to br.readLine() with exception type java.net.MalformedURLException $$ ( 30276, 30296 ) $$ @MustCall method close may not have been invoked on con.getInputStream() or any of its aliases.
+			BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream()));
+			                                                                               ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.net.MalformedURLException
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/CCproxy.java:26: error: (required.method.not.called) $$ 4 $$ method close $$ vis $$ java.io.InputStream $$ possible exceptional exit due to new BufferedReader(new InputStreamReader((vis))).readLine() with exception type java.io.IOException $$ ( 650, 710 ) $$ @MustCall method close may not have been invoked on vis or any of its aliases.
+		InputStream vis=getClass().getResourceAsStream("/.version");
+		            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new BufferedReader(new InputStreamReader((vis))).readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/CCproxy.java:94: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to fis.read(bytes, offset, bytes.length - offset) with exception type java.io.IOException $$ ( 2784, 2832 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+			FileInputStream fis = new FileInputStream(file);
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to fis.read(bytes, offset, bytes.length - offset) with exception type java.io.IOException
+../dataset/june2020_dataset/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/Listener.java:29: error: (reset.not.owning) $$ 2 $$ bind $$ this.serverChan.socket() $$ ( 697, 774 ) $$ Calling method bind resets the must-call obligations of the expression this.serverChan.socket(), which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+			serverChan.socket().bind(new InetSocketAddress(new Integer(port).intValue()));
+			                        ^
+18 errors

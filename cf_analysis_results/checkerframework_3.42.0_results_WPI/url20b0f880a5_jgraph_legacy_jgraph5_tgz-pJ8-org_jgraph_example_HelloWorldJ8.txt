@@ -1,0 +1,167 @@
+warning: MustCallChecker did not find annotation file or directory ../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+warning: ResourceLeakChecker did not find annotation file or directory ../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/DefaultGraphModel.java:1913: error: (argument) $$ 4 $$ arg0 $$ Vector.add $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 53284, 53292 ) $$ incompatible argument for parameter arg0 of Vector.add.
+				stack.add(cells[i]);
+				               ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/DefaultGraphModel.java:1918: error: (argument) $$ 4 $$ arg0 $$ Vector.add $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 53471, 53493 ) $$ incompatible argument for parameter arg0 of Vector.add.
+					stack.add(model.getChild(tmp, i));
+					                        ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/DefaultGraphModel.java:1937: error: (argument) $$ 4 $$ arg0 $$ Vector.add $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 53939, 53957 ) $$ incompatible argument for parameter arg0 of Vector.add.
+				stack.add(model.getRootAt(i));
+				                         ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/DefaultGraphModel.java:1942: error: (argument) $$ 4 $$ arg0 $$ Vector.add $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 54136, 54158 ) $$ incompatible argument for parameter arg0 of Vector.add.
+					stack.add(model.getChild(tmp, i));
+					                        ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/AttributeMap.java:264: error: (argument) $$ 4 $$ arg0 $$ Hashtable.put $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 7455, 7464 ) $$ incompatible argument for parameter arg0 of Hashtable.put.
+						undo.put(remove[i], oldValue);
+						               ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/AttributeMap.java:264: error: (argument) $$ 4 $$ arg1 $$ Hashtable.put $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 7466, 7474 ) $$ incompatible argument for parameter arg1 of Hashtable.put.
+						undo.put(remove[i], oldValue);
+						                    ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/AttributeMap.java:286: error: (argument) $$ 4 $$ arg0 $$ Hashtable.put $$ @CalledMethods("equals") Object $$ ? extends @CalledMethods Object $$ ( 8216, 8219 ) $$ incompatible argument for parameter arg0 of Hashtable.put.
+						undo.put(key, oldValue);
+						         ^
+  found   : @CalledMethods("equals") Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/AttributeMap.java:286: error: (argument) $$ 4 $$ arg1 $$ Hashtable.put $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 8221, 8229 ) $$ incompatible argument for parameter arg1 of Hashtable.put.
+						undo.put(key, oldValue);
+						              ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/AttributeMap.java:320: error: (argument) $$ 4 $$ arg0 $$ Hashtable.put $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 9303, 9306 ) $$ incompatible argument for parameter arg0 of Hashtable.put.
+		return put(key, value);
+		           ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/AttributeMap.java:320: error: (argument) $$ 4 $$ arg1 $$ Hashtable.put $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 9308, 9313 ) $$ incompatible argument for parameter arg1 of Hashtable.put.
+		return put(key, value);
+		                ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/GraphLayoutCache.java:2596: error: (argument) $$ 4 $$ arg0 $$ Vector.add $$ @CalledMethods CellView $$ ? extends @CalledMethods Object $$ ( 81232, 81240 ) $$ incompatible argument for parameter arg0 of Vector.add.
+				stack.add(views[i]);
+				               ^
+  found   : @CalledMethods CellView
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/GraphLayoutCache.java:2602: error: (argument) $$ 4 $$ arg0 $$ Vector.add $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 81455, 81466 ) $$ incompatible argument for parameter arg0 of Vector.add.
+				stack.add(children[i]);
+				                  ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/GraphLayoutCache.java:2610: error: (argument) $$ 4 $$ arg0 $$ Vector.add $$ @CalledMethods CellView $$ ? extends @CalledMethods Object $$ ( 81761, 81765 ) $$ incompatible argument for parameter arg0 of Vector.add.
+						stack.add(view);
+						          ^
+  found   : @CalledMethods CellView
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/AbstractCellView.java:229: error: (argument) $$ 4 $$ arg0 $$ Vector.add $$ @CalledMethods CellView $$ ? extends @CalledMethods Object $$ ( 6220, 6228 ) $$ incompatible argument for parameter arg0 of Vector.add.
+			stack.add(views[i]);
+			               ^
+  found   : @CalledMethods CellView
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/AbstractCellView.java:235: error: (argument) $$ 4 $$ arg0 $$ Vector.add $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 6443, 6454 ) $$ incompatible argument for parameter arg0 of Vector.add.
+				stack.add(children[i]);
+				                  ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphFacade.java:2130: error: (argument) $$ 4 $$ arg0 $$ HashSet.add $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 70849, 70854 ) $$ incompatible argument for parameter arg0 of HashSet.add.
+		    result.add(child);
+		               ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/DefaultGraphSelectionModel.java:274: error: (argument) $$ 4 $$ arg0 $$ Vector.add $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 7780, 7798 ) $$ incompatible argument for parameter arg0 of Vector.add.
+				s.add(model.getRootAt(i));
+				                     ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/graph/DefaultGraphSelectionModel.java:283: error: (argument) $$ 4 $$ arg0 $$ Vector.add $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 8128, 8151 ) $$ incompatible argument for parameter arg0 of Vector.add.
+						s.add(model.getChild(cell, i));
+						                    ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java:316: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(fileChooser.getSelectedFile()) $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(fileChooser.getSelectedFile()))) with exception type java.io.IOException $$ ( 10098, 10158 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(fileChooser.getSelectedFile()) or any of its aliases.
+						new BufferedOutputStream(new FileOutputStream(
+						                         ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(fileChooser.getSelectedFile()))) with exception type java.io.IOException
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java:352: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(fileChooser.getSelectedFile()) $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(new BufferedInputStream(new FileInputStream(fileChooser.getSelectedFile()))) with exception type java.io.IOException $$ ( 11207, 11266 ) $$ @MustCall method close may not have been invoked on new FileInputStream(fileChooser.getSelectedFile()) or any of its aliases.
+						new BufferedInputStream(new FileInputStream(fileChooser
+						                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(new BufferedInputStream(new FileInputStream(fileChooser.getSelectedFile()))) with exception type java.io.IOException
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java:388: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(fileChooser.getSelectedFile()) $$ java.io.FileOutputStream $$ regular method exit $$ ( 12361, 12412 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(fileChooser.getSelectedFile()) or any of its aliases.
+						new FileOutputStream(fileChooser.getSelectedFile())));
+						^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java:421: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(fileChooser.getSelectedFile()) $$ java.io.FileInputStream $$ regular method exit $$ ( 13403, 13453 ) $$ @MustCall method close may not have been invoked on new FileInputStream(fileChooser.getSelectedFile()) or any of its aliases.
+						new FileInputStream(fileChooser.getSelectedFile())));
+						^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/SerialGraph.java:55: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(filename) $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(filename))) with exception type java.io.IOException $$ ( 1601, 1631 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(filename) or any of its aliases.
+					new BufferedOutputStream(new FileOutputStream(filename)));
+					                         ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(filename))) with exception type java.io.IOException
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/SerialGraph.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(filename) $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(new BufferedInputStream(new FileInputStream(filename))) with exception type java.io.IOException $$ ( 1995, 2024 ) $$ @MustCall method close may not have been invoked on new FileInputStream(filename) or any of its aliases.
+					new BufferedInputStream(new FileInputStream(filename)));
+					                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(new BufferedInputStream(new FileInputStream(filename))) with exception type java.io.IOException
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphLayoutExample.java:282: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(fileChooser.getSelectedFile()) $$ java.io.FileInputStream $$ regular method exit $$ ( 8913, 8963 ) $$ @MustCall method close may not have been invoked on new FileInputStream(fileChooser.getSelectedFile()) or any of its aliases.
+						new FileInputStream(fileChooser.getSelectedFile())));
+						^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphWordBrowser.java:320: error: (required.method.not.called) $$ 4 $$ method close $$ urlConn.getOutputStream() $$ java.io.OutputStream $$ possible exceptional exit due to printout.writeBytes(content) with exception type java.io.IOException $$ ( 8907, 8937 ) $$ @MustCall method close may not have been invoked on urlConn.getOutputStream() or any of its aliases.
+				.getOutputStream());
+				                ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to printout.writeBytes(content) with exception type java.io.IOException
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphWordBrowser.java:327: error: (required.method.not.called) $$ 4 $$ method close $$ urlConn.getInputStream() $$ java.io.InputStream $$ possible exceptional exit due to ireader.readLine() with exception type java.io.IOException $$ ( 9187, 9211 ) $$ @MustCall method close may not have been invoked on urlConn.getInputStream() or any of its aliases.
+				urlConn.getInputStream()));
+				                      ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to ireader.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/svg/SVGExample.java:104: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(SVGFileChooser.getSelectedFile()) $$ java.io.FileOutputStream $$ possible exceptional exit due to out.flush() with exception type java.io.IOException $$ ( 2757, 2818 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(SVGFileChooser.getSelectedFile()) or any of its aliases.
+				OutputStream out = new BufferedOutputStream(new FileOutputStream(
+				                                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.flush() with exception type java.io.IOException
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java:1708: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(filename) $$ java.io.FileInputStream $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 43282, 43311 ) $$ @MustCall method close may not have been invoked on new FileInputStream(filename) or any of its aliases.
+				new FileInputStream(filename)));
+				^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java:1735: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileWriter $$ possible exceptional exit due to fw.write(contents) with exception type java.io.IOException $$ ( 43854, 43895 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+		FileWriter fw = new FileWriter(filename);
+		           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to fw.write(contents) with exception type java.io.IOException
+../dataset/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java:2427: error: (required.method.not.called) $$ 4 $$ method close $$ dest.getWriter() $$ java.io.Writer $$ regular method exit $$ ( 60719, 60735 ) $$ @MustCall method close may not have been invoked on dest.getWriter() or any of its aliases.
+			return dest.getWriter().toString();
+			                     ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+31 errors
+2 warnings

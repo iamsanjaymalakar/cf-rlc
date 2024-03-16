@@ -1,0 +1,28 @@
+../../../../datasets/june2020_dataset/url647b55da7c_Nikhilkumar13_emuSr_tgz-pJ8-MainJ8/src/backend/ScanFile.java:101: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-66 $$ java.io.RandomAccessFile $$ possible exceptional exit due to backend.ScanFile.br.seek(mainPosition) with exception type java.io.IOException $$ ( 2743, 2771 ) $$ @MustCall method close may not have been invoked on temp-var-66 or any of its aliases.
+                br = new RandomAccessFile(f, "r");
+                     ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to backend.ScanFile.br.seek(mainPosition) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url647b55da7c_Nikhilkumar13_emuSr_tgz-pJ8-MainJ8/src/frontend/handlers.java:156: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-991 $$ java.io.FileWriter $$ possible exceptional exit due to out.write(FrontEnd.activepane.getText()) with exception type java.io.IOException $$ ( 6267, 6300 ) $$ @MustCall method close may not have been invoked on temp-var-991 or any of its aliases.
+                    BufferedWriter out = new BufferedWriter(new FileWriter(FrontEnd.filepath));
+                                                            ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(FrontEnd.activepane.getText()) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url647b55da7c_Nikhilkumar13_emuSr_tgz-pJ8-MainJ8/src/frontend/handlers.java:491: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1117 $$ java.io.RandomAccessFile $$ possible exceptional exit due to backend.ScanFile.br.seek(0) with exception type java.io.IOException $$ ( 21050, 21080 ) $$ @MustCall method close may not have been invoked on temp-var-1117 or any of its aliases.
+                    backend.ScanFile.br = new RandomAccessFile(fin, "r");
+                                          ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to backend.ScanFile.br.seek(0) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url647b55da7c_Nikhilkumar13_emuSr_tgz-pJ8-MainJ8/src/frontend/handlers.java:548: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1139 $$ java.io.RandomAccessFile $$ possible exceptional exit due to backend.ScanFile.br.getFilePointer() with exception type java.io.IOException $$ ( 23977, 24009 ) $$ @MustCall method close may not have been invoked on temp-var-1139 or any of its aliases.
+                        backend.ScanFile.br = new RandomAccessFile(temp, "rw");
+                                              ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to backend.ScanFile.br.getFilePointer() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url647b55da7c_Nikhilkumar13_emuSr_tgz-pJ8-MainJ8/src/frontend/handlers.java:659: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1180 $$ java.io.FileReader $$ possible exceptional exit due to FrontEnd.activepane.read(new FileReader(file.getAbsoluteFile()), null) with exception type java.io.IOException $$ ( 28465, 28503 ) $$ @MustCall method close may not have been invoked on temp-var-1180 or any of its aliases.
+                FrontEnd.activepane.read(new FileReader(file.getAbsoluteFile()), null);
+                                         ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to FrontEnd.activepane.read(new FileReader(file.getAbsoluteFile()), null) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors

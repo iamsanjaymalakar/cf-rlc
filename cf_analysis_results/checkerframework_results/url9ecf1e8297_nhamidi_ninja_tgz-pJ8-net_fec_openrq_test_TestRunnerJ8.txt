@@ -1,0 +1,133 @@
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Utils.java:41: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileWriter $$ possible exceptional exit due to bw.write(message + "\n") with exception type java.io.IOException $$ ( 1311, 1372 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+	    FileWriter fw = new FileWriter(file.getAbsoluteFile(), true);
+	               ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bw.write(message + "\n") with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Thread_traitement.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.ObjectInput $$ regular method exit $$ ( 1725, 1756 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			in = new ObjectInputStream(bis);
+			   ^
+  The type of object is: java.io.ObjectInput.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Emetteur_thread.java:17: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-338 $$ java.net.DatagramSocket $$ regular method exit $$ ( 402, 422 ) $$ @MustCall method close may not have been invoked on temp-var-338 or any of its aliases.
+			socketEmission = new DatagramSocket();
+			                 ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Receiver_2.java:63: error: (required.method.not.called) $$ 4 $$ method close $$ socketReception $$ java.net.MulticastSocket $$ possible exceptional exit due to socketReception.joinGroup(groupeIP) with exception type java.io.IOException $$ ( 1386, 1429 ) $$ @MustCall method close may not have been invoked on socketReception or any of its aliases.
+			socketReception = new MulticastSocket(port);
+			                ^
+  The type of object is: java.net.MulticastSocket.
+  Reason for going out of scope: possible exceptional exit due to socketReception.joinGroup(groupeIP) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Receiver_2.java:214: error: (required.method.not.called) $$ 4 $$ method close $$ serverSocket $$ java.net.MulticastSocket $$ possible exceptional exit due to serverSocket.joinGroup(sendIP) with exception type java.io.IOException $$ ( 5522, 5566 ) $$ @MustCall method close may not have been invoked on serverSocket or any of its aliases.
+					serverSocket = new MulticastSocket(src_port);
+					             ^
+  The type of object is: java.net.MulticastSocket.
+  Reason for going out of scope: possible exceptional exit due to serverSocket.joinGroup(sendIP) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Receiver_for_the_test.java:242: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.ObjectInput $$ regular method exit $$ ( 7246, 7277 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+						in = new ObjectInputStream(bis);
+						   ^
+  The type of object is: java.io.ObjectInput.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/EmetteurThreadMulti.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-577 $$ java.net.MulticastSocket $$ regular method exit $$ ( 453, 474 ) $$ @MustCall method close may not have been invoked on temp-var-577 or any of its aliases.
+	socketEmission = new MulticastSocket();
+	                 ^
+  The type of object is: java.net.MulticastSocket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/RecepteurThreadMulti.java:32: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-585 $$ java.net.MulticastSocket $$ possible exceptional exit due to this.socketReception.joinGroup(groupeIP) with exception type java.io.IOException $$ ( 943, 968 ) $$ @MustCall method close may not have been invoked on temp-var-585 or any of its aliases.
+	this.socketReception = new MulticastSocket(port);
+	                       ^
+  The type of object is: java.net.MulticastSocket.
+  Reason for going out of scope: possible exceptional exit due to this.socketReception.joinGroup(groupeIP) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/net/fec/openrq/test/TestRunner.java:243: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-889 $$ java.nio.channels.Pipe.SinkChannel $$ possible exceptional exit due to runTasks(encTask, decTask, executor, PRINT_WARMUP_STATS) with exception type java.lang.InterruptedException $$ ( 8686, 8697 ) $$ @MustCall method close may not have been invoked on temp-var-889 or any of its aliases.
+        final EncoderTask encTask = new EncoderTask.Builder(encProv, pipe.sink(), SOURCE_PLUS_REPAIR_SYMBOLS_RANDOM)
+                                                                              ^
+  The type of object is: java.nio.channels.Pipe.SinkChannel.
+  Reason for going out of scope: possible exceptional exit due to runTasks(encTask, decTask, executor, PRINT_WARMUP_STATS) with exception type java.lang.InterruptedException
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/net/fec/openrq/test/TestRunner.java:246: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-893 $$ java.nio.channels.Pipe.SourceChannel $$ possible exceptional exit due to runTasks(encTask, decTask, executor, PRINT_WARMUP_STATS) with exception type java.lang.InterruptedException $$ ( 8869, 8882 ) $$ @MustCall method close may not have been invoked on temp-var-893 or any of its aliases.
+        final DecoderTask decTask = new DecoderTask.Builder(checker, pipe.source())
+                                                                                ^
+  The type of object is: java.nio.channels.Pipe.SourceChannel.
+  Reason for going out of scope: possible exceptional exit due to runTasks(encTask, decTask, executor, PRINT_WARMUP_STATS) with exception type java.lang.InterruptedException
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/net/fec/openrq/test/TestRunner.java:274: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-909 $$ java.nio.channels.Pipe.SinkChannel $$ regular method exit $$ ( 10001, 10012 ) $$ @MustCall method close may not have been invoked on temp-var-909 or any of its aliases.
+        final EncoderTask encTask = new EncoderTask.Builder(encProv, pipe.sink(), SOURCE_SYMBOLS_ONLY_SEQUENTIAL)
+                                                                              ^
+  The type of object is: java.nio.channels.Pipe.SinkChannel.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/net/fec/openrq/test/TestRunner.java:277: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-913 $$ java.nio.channels.Pipe.SourceChannel $$ regular method exit $$ ( 10194, 10207 ) $$ @MustCall method close may not have been invoked on temp-var-913 or any of its aliases.
+        final DecoderTask decTask = new DecoderTask.Builder(checker, pipe.source())
+                                                                                ^
+  The type of object is: java.nio.channels.Pipe.SourceChannel.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/net/fec/openrq/test/TestRunner.java:296: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-925 $$ java.nio.channels.Pipe.SinkChannel $$ regular method exit $$ ( 10924, 10935 ) $$ @MustCall method close may not have been invoked on temp-var-925 or any of its aliases.
+        final EncoderTask encTask = new EncoderTask.Builder(encProv, pipe.sink(), SOURCE_SYMBOLS_ONLY_RANDOM)
+                                                                              ^
+  The type of object is: java.nio.channels.Pipe.SinkChannel.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/net/fec/openrq/test/TestRunner.java:299: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-929 $$ java.nio.channels.Pipe.SourceChannel $$ regular method exit $$ ( 11113, 11126 ) $$ @MustCall method close may not have been invoked on temp-var-929 or any of its aliases.
+        final DecoderTask decTask = new DecoderTask.Builder(checker, pipe.source())
+                                                                                ^
+  The type of object is: java.nio.channels.Pipe.SourceChannel.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/net/fec/openrq/test/TestRunner.java:318: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-941 $$ java.nio.channels.Pipe.SinkChannel $$ regular method exit $$ ( 11844, 11855 ) $$ @MustCall method close may not have been invoked on temp-var-941 or any of its aliases.
+        final EncoderTask encTask = new EncoderTask.Builder(encProv, pipe.sink(), SOURCE_PLUS_REPAIR_SYMBOLS_RANDOM)
+                                                                              ^
+  The type of object is: java.nio.channels.Pipe.SinkChannel.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/net/fec/openrq/test/TestRunner.java:321: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-945 $$ java.nio.channels.Pipe.SourceChannel $$ regular method exit $$ ( 12026, 12039 ) $$ @MustCall method close may not have been invoked on temp-var-945 or any of its aliases.
+        final DecoderTask decTask = new DecoderTask.Builder(checker, pipe.source())
+                                                                                ^
+  The type of object is: java.nio.channels.Pipe.SourceChannel.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/net/fec/openrq/test/TestRunner.java:340: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-957 $$ java.nio.channels.Pipe.SinkChannel $$ regular method exit $$ ( 12732, 12743 ) $$ @MustCall method close may not have been invoked on temp-var-957 or any of its aliases.
+        final EncoderTask encTask = new EncoderTask.Builder(encProv, pipe.sink(), ANY_SYMBOL_RANDOM)
+                                                                              ^
+  The type of object is: java.nio.channels.Pipe.SinkChannel.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/net/fec/openrq/test/TestRunner.java:343: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-961 $$ java.nio.channels.Pipe.SourceChannel $$ regular method exit $$ ( 12898, 12911 ) $$ @MustCall method close may not have been invoked on temp-var-961 or any of its aliases.
+        final DecoderTask decTask = new DecoderTask.Builder(checker, pipe.source())
+                                                                                ^
+  The type of object is: java.nio.channels.Pipe.SourceChannel.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/net/fec/openrq/core/util/collection/ImmutableList.java:38: error: (argument) $$ 4 $$ elements $$ ImmutableList $$ T extends @MustCallUnknown Object @MustCall [] $$ @MustCall Object @MustCallUnknown [] $$ ( 1245, 1285 ) $$ incompatible argument for parameter elements of ImmutableList.
+        return new ImmutableList<>(Arrays.copyOf(elements, elements.length));
+                                                ^
+  found   : T extends @MustCallUnknown Object @MustCall []
+  required: @MustCall Object @MustCallUnknown []
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/net/fec/openrq/core/util/collection/ImmutableList.java:59: error: (argument) $$ 4 $$ elements $$ ImmutableList $$ T extends @MustCallUnknown Object @MustCall [] $$ @MustCall Object @MustCallUnknown [] $$ ( 2196, 2200 ) $$ incompatible argument for parameter elements of ImmutableList.
+        return new ImmutableList<>(copy);
+                                   ^
+  found   : T extends @MustCallUnknown Object @MustCall []
+  required: @MustCall Object @MustCallUnknown []
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/net/fec/openrq/core/util/collection/ImmutableList.java:84: error: (assignment) $$ 2 $$ T extends @MustCallUnknown Object $$ @MustCall Object $$ ( 3191, 3193 ) $$ incompatible types in assignment.
+            elements[i] = el;
+                          ^
+  found   : T extends @MustCallUnknown Object
+  required: @MustCall Object
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/net/fec/openrq/core/util/collection/ImmutableList.java:121: error: (assignment) $$ 2 $$ T extends @MustCallUnknown Object $$ @MustCall Object $$ ( 4706, 4708 ) $$ incompatible types in assignment.
+            elements[i] = el;
+                          ^
+  found   : T extends @MustCallUnknown Object
+  required: @MustCall Object
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Recepteur_thread.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1577 $$ java.net.DatagramSocket $$ regular method exit $$ ( 415, 444 ) $$ @MustCall method close may not have been invoked on temp-var-1577 or any of its aliases.
+		this.socketReception = new DatagramSocket(this.port);
+		                       ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Receiver_multicast.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ socketReception $$ java.net.MulticastSocket $$ possible exceptional exit due to socketReception.joinGroup(groupeIP) with exception type java.io.IOException $$ ( 1204, 1247 ) $$ @MustCall method close may not have been invoked on socketReception or any of its aliases.
+	socketReception = new MulticastSocket(port);
+	                ^
+  The type of object is: java.net.MulticastSocket.
+  Reason for going out of scope: possible exceptional exit due to socketReception.joinGroup(groupeIP) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Receiver_multicast.java:162: error: (required.method.not.called) $$ 4 $$ method close $$ serverSocketForTheSize $$ java.net.MulticastSocket $$ possible exceptional exit due to serverSocketForTheSize.joinGroup(sendIP) with exception type java.io.IOException $$ ( 4694, 4747 ) $$ @MustCall method close may not have been invoked on serverSocketForTheSize or any of its aliases.
+	    serverSocketForTheSize = new MulticastSocket(srcPort);
+	                           ^
+  The type of object is: java.net.MulticastSocket.
+  Reason for going out of scope: possible exceptional exit due to serverSocketForTheSize.joinGroup(sendIP) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Receiver_multicast.java:238: error: (required.method.not.called) $$ 4 $$ method close $$ serverSocket $$ java.net.MulticastSocket $$ possible exceptional exit due to serverSocket.joinGroup(sendIP) with exception type java.io.IOException $$ ( 7087, 7130 ) $$ @MustCall method close may not have been invoked on serverSocket or any of its aliases.
+	    serverSocket = new MulticastSocket(srcPort);
+	                 ^
+  The type of object is: java.net.MulticastSocket.
+  Reason for going out of scope: possible exceptional exit due to serverSocket.joinGroup(sendIP) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+26 errors

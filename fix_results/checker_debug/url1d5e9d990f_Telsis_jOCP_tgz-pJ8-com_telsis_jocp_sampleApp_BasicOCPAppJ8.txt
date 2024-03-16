@@ -1,0 +1,4 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^com/telsis/jocp/OCPLinkManager.java^1420^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+1^com/telsis/jocp/OCPLinkManager.java^1488^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+2^com/telsis/jocp/OCPLinkManager.java^1867^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^util/FileUtils.java^9^util.FileUtils.readFile(Ljava/io/File;)[B^3 = new <Application,Ljava/io/FileInputStream>@0^NULL^INVOKE,^false^false^Normal Fix;

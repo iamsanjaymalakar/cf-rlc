@@ -1,0 +1,16 @@
+../dataset/june2020_dataset/urld44fdf4fee_nadilsons_reflection_dsl_tgz-pJ8-br_com_bit_ideias_reflection_SimplePerformanceTestJ8/src/br/com/bit/ideias/reflection/scanner/PackageScanner.java:396: error: (required.method.not.called) $$ 4 $$ method close $$ jarFile $$ java.util.jar.JarFile $$ possible exceptional exit due to jarCon.getJarEntry() with exception type java.io.IOException $$ ( 15818, 15847 ) $$ @MustCall method close may not have been invoked on jarFile or any of its aliases.
+            jarFile = jarCon.getJarFile();
+                    ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: possible exceptional exit due to jarCon.getJarEntry() with exception type java.io.IOException
+../dataset/june2020_dataset/urld44fdf4fee_nadilsons_reflection_dsl_tgz-pJ8-br_com_bit_ideias_reflection_SimplePerformanceTestJ8/src/br/com/bit/ideias/reflection/scanner/PackageScanner.java:411: error: (required.method.not.called) $$ 4 $$ method close $$ jarFile $$ java.util.jar.JarFile $$ regular method exit $$ ( 16750, 16782 ) $$ @MustCall method close may not have been invoked on jarFile or any of its aliases.
+                jarFile = getJarFile(jarFileUrl);
+                        ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld44fdf4fee_nadilsons_reflection_dsl_tgz-pJ8-br_com_bit_ideias_reflection_SimplePerformanceTestJ8/src/br/com/bit/ideias/reflection/scanner/PackageScanner.java:414: error: (required.method.not.called) $$ 4 $$ method close $$ jarFile $$ java.util.jar.JarFile $$ regular method exit $$ ( 16836, 16866 ) $$ @MustCall method close may not have been invoked on jarFile or any of its aliases.
+                jarFile = new JarFile(urlFile);
+                        ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: regular method exit
+3 errors

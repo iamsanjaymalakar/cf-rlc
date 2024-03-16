@@ -1,0 +1,2 @@
+Note: ../../../../datasets/june2020_dataset/urleb43757003_Origraena_mas_platform_tgz-pJ8-ori_MainJ8/src/ori/mas/core/DefaultHeart.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.

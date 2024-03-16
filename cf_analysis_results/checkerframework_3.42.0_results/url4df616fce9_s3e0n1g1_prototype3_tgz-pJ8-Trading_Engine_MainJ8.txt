@@ -1,0 +1,20 @@
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Trading_Engine/myDatabase.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ DriverManager.getConnection("jdbc:sqlite:test.db") $$ java.sql.Connection $$ regular method exit $$ ( 380, 430 ) $$ @MustCall method close may not have been invoked on DriverManager.getConnection("jdbc:sqlite:test.db") or any of its aliases.
+			connection = DriverManager.getConnection("jdbc:sqlite:test.db");
+			                                        ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Trading_Engine/myDatabase.java:114: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(f) $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 3905, 3922 ) $$ @MustCall method close may not have been invoked on new FileReader(f) or any of its aliases.
+			BufferedReader br = new BufferedReader(new FileReader(f));
+			                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Test/myDatabaseTest.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(file) $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 1217, 1237 ) $$ @MustCall method close may not have been invoked on new FileReader(file) or any of its aliases.
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: ../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/gui/ChooseStrategy.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 errors

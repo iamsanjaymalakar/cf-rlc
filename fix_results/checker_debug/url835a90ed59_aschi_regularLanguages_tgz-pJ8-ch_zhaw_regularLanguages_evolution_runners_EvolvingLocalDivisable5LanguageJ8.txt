@@ -1,0 +1,6 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^ch/zhaw/regularLanguages/helpers/Logger.java^22^ch.zhaw.regularLanguages.helpers.Logger.<init>(Ljava/lang/String;Z)V^9 = new <Application,Ljava/io/PrintWriter>@22^NULL^FIELD,^false^true^Field escape;
+1^fr/loria/graphViz/GraphViz.java^170^fr.loria.graphViz.GraphViz.writeGraphToFile([BLjava/io/File;)I^5 = new <Application,Ljava/io/FileOutputStream>@0^NULL^INVOKE,^false^false^Try-catch Fix;
+2^fr/loria/graphViz/GraphViz.java^199^fr.loria.graphViz.GraphViz.get_img_stream(Ljava/io/File;Ljava/lang/String;)[B^54 = new <Application,Ljava/io/FileInputStream>@111^NULL^INVOKE,^false^false^Try-catch Fix;
+3^fr/loria/graphViz/GraphViz.java^232^fr.loria.graphViz.GraphViz.writeDotSourceToFile(Ljava/lang/String;)Ljava/io/File;^11 = new <Application,Ljava/io/FileWriter>@18^NULL^INVOKE,^false^false^Try-catch Fix;
+4^fr/loria/graphViz/GraphViz.java^271^fr.loria.graphViz.GraphViz.readSource(Ljava/lang/String;)V^6 = new <Application,Ljava/io/FileInputStream>@8^fr.loria.graphViz.GraphViz.readSource(Ljava/lang/String;)V#8,fr.loria.graphViz.GraphViz.readSource(Ljava/lang/String;)V#11,fr.loria.graphViz.GraphViz.readSource(Ljava/lang/String;)V#10,^INVOKE,^false^false^Try-catch Fix;

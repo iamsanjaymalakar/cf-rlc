@@ -1,0 +1,395 @@
+error: SourceChecker.typeProcess: unexpected Throwable (BadClassFile) while processing ../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ec/util/MersenneTwisterFast.java; message: bad class file: ../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$ValueIterator.class
+    undeclared type variable: V
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  ; The Checker Framework crashed.  Please report the crash.
+  Compilation unit: ../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ec/util/MersenneTwisterFast.java
+  Last visited tree at line 178 column 1:
+  public strictfp class MersenneTwisterFast implements Serializable, Cloneable
+  Exception: com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$ValueIterator.class
+    undeclared type variable: V
+    Please remove or make sure it appears in the correct subdirectory of the classpath.; com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$ValueIterator.class
+    undeclared type variable: V
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  	at com.sun.tools.javac.jvm.ClassReader.badClassFile(ClassReader.java:298)
+  	at com.sun.tools.javac.jvm.ClassReader.findTypeVar(ClassReader.java:983)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:690)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:752)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:676)
+  	at com.sun.tools.javac.jvm.ClassReader.readType(ClassReader.java:519)
+  	at com.sun.tools.javac.jvm.ClassReader$11.read(ClassReader.java:1213)
+  	at com.sun.tools.javac.jvm.ClassReader.readAttrs(ClassReader.java:1561)
+  	at com.sun.tools.javac.jvm.ClassReader.readMemberAttrs(ClassReader.java:1551)
+  	at com.sun.tools.javac.jvm.ClassReader.readMethod(ClassReader.java:2432)
+  	at com.sun.tools.javac.jvm.ClassReader.readClass(ClassReader.java:2710)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassBuffer(ClassReader.java:2775)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassFile(ClassReader.java:2788)
+  	at com.sun.tools.javac.code.ClassFinder.fillIn(ClassFinder.java:348)
+  	at com.sun.tools.javac.code.ClassFinder.complete(ClassFinder.java:285)
+  	at com.sun.tools.javac.code.Symbol.complete(Symbol.java:633)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.complete(Symbol.java:1314)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.flags(Symbol.java:1248)
+  	at com.sun.tools.javac.code.Symbol$TypeSymbol.getEnclosedElements(Symbol.java:800)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.annosInPackage(AnnotationFileParser.java:452)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.getImportedAnnotations(AnnotationFileParser.java:553)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubUnit(AnnotationFileParser.java:725)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubFile(AnnotationFileParser.java:647)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseJdkFileAsStub(AnnotationFileParser.java:704)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.parseJdkJarEntry(AnnotationFileElementTypes.java:690)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.parseEnclosingClass(AnnotationFileElementTypes.java:618)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.getDeclAnnotations(AnnotationFileElementTypes.java:389)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3861)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3894)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3871)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3894)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3871)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3787)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3710)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.getDefaultQualifierForUses(DefaultQualifierForUseTypeAnnotator.java:118)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.getDefaultAnnosForUses(DefaultQualifierForUseTypeAnnotator.java:72)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:49)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:25)
+  	at org.checkerframework.framework.type.AnnotatedTypeMirror$AnnotatedDeclaredType.accept(AnnotatedTypeMirror.java:955)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:206)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:223)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scanAndReduce(AnnotatedTypeScanner.java:230)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visitExecutable(AnnotatedTypeScanner.java:318)
+  	at org.checkerframework.framework.type.typeannotator.TypeAnnotator.visitExecutable(TypeAnnotator.java:36)
+  	at org.checkerframework.framework.type.typeannotator.TypeAnnotator.visitExecutable(TypeAnnotator.java:17)
+  	at org.checkerframework.framework.type.AnnotatedTypeMirror$AnnotatedExecutableType.accept(AnnotatedTypeMirror.java:1149)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:206)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:194)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:181)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addAnnotationsFromDefaultForType(GenericAnnotatedTypeFactory.java:2229)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1786)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1742)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getAnnotatedType(AnnotatedTypeFactory.java:1252)
+  	at org.checkerframework.framework.flow.CFAbstractTransfer.getValueFromFactory(CFAbstractTransfer.java:203)
+  	at org.checkerframework.framework.flow.CFAbstractTransfer.visitNode(CFAbstractTransfer.java:523)
+  	at org.checkerframework.framework.flow.CFAbstractTransfer.visitNode(CFAbstractTransfer.java:93)
+  	at org.checkerframework.dataflow.cfg.node.AbstractNodeVisitor.visitMethodAccess(AbstractNodeVisitor.java:246)
+  	at org.checkerframework.dataflow.cfg.node.MethodAccessNode.accept(MethodAccessNode.java:51)
+  	at org.checkerframework.dataflow.analysis.AbstractAnalysis.callTransferFunction(AbstractAnalysis.java:334)
+  	at org.checkerframework.dataflow.analysis.ForwardAnalysisImpl.callTransferFunction(ForwardAnalysisImpl.java:372)
+  	at org.checkerframework.dataflow.analysis.ForwardAnalysisImpl.performAnalysisBlock(ForwardAnalysisImpl.java:151)
+  	at org.checkerframework.dataflow.analysis.ForwardAnalysisImpl.performAnalysis(ForwardAnalysisImpl.java:105)
+  	at org.checkerframework.framework.flow.CFAbstractAnalysis.performAnalysis(CFAbstractAnalysis.java:146)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.analyze(GenericAnnotatedTypeFactory.java:1497)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1394)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1828)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:414)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:475)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:180)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:82)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:987)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:542)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:535)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+error: SourceChecker.typeProcess: unexpected Throwable (BadClassFile) while processing ../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ec/util/MersenneTwisterFast.java; message: bad class file: ../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$KeyIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  ; The Checker Framework crashed.  Please report the crash.
+  Compilation unit: ../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ec/util/MersenneTwisterFast.java
+  Last visited tree at line 178 column 1:
+  public strictfp class MersenneTwisterFast implements Serializable, Cloneable
+  Exception: com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$KeyIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.; com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$KeyIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  	at com.sun.tools.javac.jvm.ClassReader.badClassFile(ClassReader.java:298)
+  	at com.sun.tools.javac.jvm.ClassReader.findTypeVar(ClassReader.java:983)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:690)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:752)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:676)
+  	at com.sun.tools.javac.jvm.ClassReader.readType(ClassReader.java:519)
+  	at com.sun.tools.javac.jvm.ClassReader$11.read(ClassReader.java:1213)
+  	at com.sun.tools.javac.jvm.ClassReader.readAttrs(ClassReader.java:1561)
+  	at com.sun.tools.javac.jvm.ClassReader.readMemberAttrs(ClassReader.java:1551)
+  	at com.sun.tools.javac.jvm.ClassReader.readMethod(ClassReader.java:2432)
+  	at com.sun.tools.javac.jvm.ClassReader.readClass(ClassReader.java:2710)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassBuffer(ClassReader.java:2775)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassFile(ClassReader.java:2788)
+  	at com.sun.tools.javac.code.ClassFinder.fillIn(ClassFinder.java:348)
+  	at com.sun.tools.javac.code.ClassFinder.complete(ClassFinder.java:285)
+  	at com.sun.tools.javac.code.Symbol.complete(Symbol.java:633)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.complete(Symbol.java:1314)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.flags(Symbol.java:1248)
+  	at com.sun.tools.javac.code.Symbol$TypeSymbol.getEnclosedElements(Symbol.java:800)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.annosInPackage(AnnotationFileParser.java:452)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.getImportedAnnotations(AnnotationFileParser.java:553)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubUnit(AnnotationFileParser.java:725)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubFile(AnnotationFileParser.java:647)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseJdkFileAsStub(AnnotationFileParser.java:704)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.parseJdkJarEntry(AnnotationFileElementTypes.java:690)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.parseEnclosingClass(AnnotationFileElementTypes.java:618)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.getDeclAnnotations(AnnotationFileElementTypes.java:389)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3861)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3894)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3871)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3894)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3871)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3787)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3710)
+  	at org.checkerframework.checker.mustcall.MustCallAnnotatedTypeFactory$MustCallDefaultQualifierForUseTypeAnnotator.getExplicitAnnos(MustCallAnnotatedTypeFactory.java:273)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.getDefaultAnnosForUses(DefaultQualifierForUseTypeAnnotator.java:71)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:49)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:25)
+  	at org.checkerframework.framework.type.AnnotatedTypeMirror$AnnotatedDeclaredType.accept(AnnotatedTypeMirror.java:955)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:206)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:223)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scanAndReduce(AnnotatedTypeScanner.java:230)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visitExecutable(AnnotatedTypeScanner.java:318)
+  	at org.checkerframework.framework.type.typeannotator.TypeAnnotator.visitExecutable(TypeAnnotator.java:36)
+  	at org.checkerframework.framework.type.typeannotator.TypeAnnotator.visitExecutable(TypeAnnotator.java:17)
+  	at org.checkerframework.framework.type.AnnotatedTypeMirror$AnnotatedExecutableType.accept(AnnotatedTypeMirror.java:1149)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:206)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:194)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:181)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addAnnotationsFromDefaultForType(GenericAnnotatedTypeFactory.java:2229)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1786)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1742)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getAnnotatedType(AnnotatedTypeFactory.java:1252)
+  	at org.checkerframework.framework.flow.CFAbstractTransfer.getValueFromFactory(CFAbstractTransfer.java:203)
+  	at org.checkerframework.framework.flow.CFAbstractTransfer.visitNode(CFAbstractTransfer.java:523)
+  	at org.checkerframework.framework.flow.CFAbstractTransfer.visitNode(CFAbstractTransfer.java:93)
+  	at org.checkerframework.dataflow.cfg.node.AbstractNodeVisitor.visitMethodAccess(AbstractNodeVisitor.java:246)
+  	at org.checkerframework.dataflow.cfg.node.MethodAccessNode.accept(MethodAccessNode.java:51)
+  	at org.checkerframework.dataflow.analysis.AbstractAnalysis.callTransferFunction(AbstractAnalysis.java:334)
+  	at org.checkerframework.dataflow.analysis.ForwardAnalysisImpl.callTransferFunction(ForwardAnalysisImpl.java:372)
+  	at org.checkerframework.dataflow.analysis.ForwardAnalysisImpl.performAnalysisBlock(ForwardAnalysisImpl.java:151)
+  	at org.checkerframework.dataflow.analysis.ForwardAnalysisImpl.performAnalysis(ForwardAnalysisImpl.java:105)
+  	at org.checkerframework.framework.flow.CFAbstractAnalysis.performAnalysis(CFAbstractAnalysis.java:146)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.analyze(GenericAnnotatedTypeFactory.java:1497)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1394)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1828)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:414)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:475)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:180)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:82)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:987)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:542)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:535)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+error: SourceChecker.typeProcess: unexpected Throwable (BadClassFile) while processing ../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ec/util/MersenneTwisterFast.java; message: bad class file: ../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$EntryIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  ; The Checker Framework crashed.  Please report the crash.
+  Compilation unit: ../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ec/util/MersenneTwisterFast.java
+  Last visited tree at line 178 column 1:
+  public strictfp class MersenneTwisterFast implements Serializable, Cloneable
+  Exception: com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$EntryIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.; com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$EntryIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  	at com.sun.tools.javac.jvm.ClassReader.badClassFile(ClassReader.java:298)
+  	at com.sun.tools.javac.jvm.ClassReader.findTypeVar(ClassReader.java:983)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:690)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToTypes(ClassReader.java:897)
+  	at com.sun.tools.javac.jvm.ClassReader.classSigToType(ClassReader.java:813)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:726)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:752)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:676)
+  	at com.sun.tools.javac.jvm.ClassReader.readType(ClassReader.java:519)
+  	at com.sun.tools.javac.jvm.ClassReader$11.read(ClassReader.java:1213)
+  	at com.sun.tools.javac.jvm.ClassReader.readAttrs(ClassReader.java:1561)
+  	at com.sun.tools.javac.jvm.ClassReader.readMemberAttrs(ClassReader.java:1551)
+  	at com.sun.tools.javac.jvm.ClassReader.readMethod(ClassReader.java:2432)
+  	at com.sun.tools.javac.jvm.ClassReader.readClass(ClassReader.java:2710)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassBuffer(ClassReader.java:2775)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassFile(ClassReader.java:2788)
+  	at com.sun.tools.javac.code.ClassFinder.fillIn(ClassFinder.java:348)
+  	at com.sun.tools.javac.code.ClassFinder.complete(ClassFinder.java:285)
+  	at com.sun.tools.javac.code.Symbol.complete(Symbol.java:633)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.complete(Symbol.java:1314)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.flags(Symbol.java:1248)
+  	at com.sun.tools.javac.code.Symbol$TypeSymbol.getEnclosedElements(Symbol.java:800)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.annosInPackage(AnnotationFileParser.java:452)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.getImportedAnnotations(AnnotationFileParser.java:553)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubUnit(AnnotationFileParser.java:725)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubFile(AnnotationFileParser.java:647)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseJdkFileAsStub(AnnotationFileParser.java:704)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.parseJdkJarEntry(AnnotationFileElementTypes.java:690)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.parseEnclosingClass(AnnotationFileElementTypes.java:618)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.getDeclAnnotations(AnnotationFileElementTypes.java:389)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3861)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3894)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3871)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3894)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3871)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3787)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3710)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.getDefaultQualifierForUses(DefaultQualifierForUseTypeAnnotator.java:118)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.getDefaultAnnosForUses(DefaultQualifierForUseTypeAnnotator.java:72)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:49)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:25)
+  	at org.checkerframework.framework.type.AnnotatedTypeMirror$AnnotatedDeclaredType.accept(AnnotatedTypeMirror.java:955)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:206)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:223)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scanAndReduce(AnnotatedTypeScanner.java:230)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visitExecutable(AnnotatedTypeScanner.java:318)
+  	at org.checkerframework.framework.type.typeannotator.TypeAnnotator.visitExecutable(TypeAnnotator.java:36)
+  	at org.checkerframework.framework.type.typeannotator.TypeAnnotator.visitExecutable(TypeAnnotator.java:17)
+  	at org.checkerframework.framework.type.AnnotatedTypeMirror$AnnotatedExecutableType.accept(AnnotatedTypeMirror.java:1149)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:206)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:194)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:181)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addAnnotationsFromDefaultForType(GenericAnnotatedTypeFactory.java:2229)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1786)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1742)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getAnnotatedType(AnnotatedTypeFactory.java:1252)
+  	at org.checkerframework.framework.flow.CFAbstractTransfer.getValueFromFactory(CFAbstractTransfer.java:203)
+  	at org.checkerframework.framework.flow.CFAbstractTransfer.visitNode(CFAbstractTransfer.java:523)
+  	at org.checkerframework.framework.flow.CFAbstractTransfer.visitNode(CFAbstractTransfer.java:93)
+  	at org.checkerframework.dataflow.cfg.node.AbstractNodeVisitor.visitMethodAccess(AbstractNodeVisitor.java:246)
+  	at org.checkerframework.dataflow.cfg.node.MethodAccessNode.accept(MethodAccessNode.java:51)
+  	at org.checkerframework.dataflow.analysis.AbstractAnalysis.callTransferFunction(AbstractAnalysis.java:334)
+  	at org.checkerframework.dataflow.analysis.ForwardAnalysisImpl.callTransferFunction(ForwardAnalysisImpl.java:372)
+  	at org.checkerframework.dataflow.analysis.ForwardAnalysisImpl.performAnalysisBlock(ForwardAnalysisImpl.java:151)
+  	at org.checkerframework.dataflow.analysis.ForwardAnalysisImpl.performAnalysis(ForwardAnalysisImpl.java:105)
+  	at org.checkerframework.framework.flow.CFAbstractAnalysis.performAnalysis(CFAbstractAnalysis.java:146)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.analyze(GenericAnnotatedTypeFactory.java:1497)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1394)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1828)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:414)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:475)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:180)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:82)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:987)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:542)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/common/utilities/Pair.java:41: error: (return) $$ 2 $$ @MustCallUnknown String $$ @MustCall String $$ ( 1336, 1369 ) $$ incompatible types in return.
+        return "(" + first + ", " + second + ")";
+                                           ^
+  type of expression: @MustCallUnknown String
+  method return type: @MustCall String
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/CMAEvolutionStrategy.java:808: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to properties.load(fis) with exception type java.io.IOException $$ ( 31820, 31888 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+            java.io.FileInputStream fis = new java.io.FileInputStream(fileName);
+                                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(fis) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java:52: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-864 $$ java.io.FileWriter $$ possible exceptional exit due to new FileWriter(directoryName + "/best-ship.txt", append) with exception type java.io.IOException $$ ( 1572, 1631 ) $$ @MustCall method close may not have been invoked on temp-var-864 or any of its aliases.
+        PrintWriter pw = new PrintWriter(new FileWriter(directoryName + "/gnuplot-best.txt", append));
+                                         ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(directoryName + "/best-ship.txt", append) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java:57: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-868 $$ java.io.FileWriter $$ regular method exit $$ ( 1774, 1833 ) $$ @MustCall method close may not have been invoked on temp-var-868 or any of its aliases.
+        pw = new PrintWriter(new FileWriter(directoryName + "/gnuplot-mean.txt", append));
+                             ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java:71: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-880 $$ java.io.FileReader $$ possible exceptional exit due to new FileWriter(directoryName + "/gnuplot-bestTEMP.txt", false) with exception type java.io.IOException $$ ( 2401, 2452 ) $$ @MustCall method close may not have been invoked on temp-var-880 or any of its aliases.
+        BufferedReader reader = new BufferedReader(new FileReader(directoryName + "/gnuplot-best.txt"));
+                                                   ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(directoryName + "/gnuplot-bestTEMP.txt", false) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java:72: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-882 $$ java.io.FileWriter $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 2496, 2558 ) $$ @MustCall method close may not have been invoked on temp-var-882 or any of its aliases.
+        PrintWriter pw = new PrintWriter(new FileWriter(directoryName + "/gnuplot-bestTEMP.txt", false));
+                                         ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java:90: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-891 $$ java.io.FileReader $$ possible exceptional exit due to new FileWriter(directoryName + "/gnuplot-meanTEMP.txt", false) with exception type java.io.IOException $$ ( 3214, 3265 ) $$ @MustCall method close may not have been invoked on temp-var-891 or any of its aliases.
+        reader = new BufferedReader(new FileReader(directoryName + "/gnuplot-mean.txt"));
+                                    ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(directoryName + "/gnuplot-meanTEMP.txt", false) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-893 $$ java.io.FileWriter $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 3297, 3359 ) $$ @MustCall method close may not have been invoked on temp-var-893 or any of its aliases.
+        pw = new PrintWriter(new FileWriter(directoryName + "/gnuplot-meanTEMP.txt", false));
+                             ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/GnuPlot.java:17: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-905 $$ java.io.OutputStream $$ regular method exit $$ ( 396, 415 ) $$ @MustCall method close may not have been invoked on temp-var-905 or any of its aliases.
+        ps = new PrintStream(p.getOutputStream());
+                                              ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/GnuPlot.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-907 $$ java.io.InputStream $$ regular method exit $$ ( 473, 491 ) $$ @MustCall method close may not have been invoked on temp-var-907 or any of its aliases.
+        dis = new BufferedReader(new InputStreamReader(p.getInputStream()));
+                                                                       ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/SerialClone.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ cout $$ ssamot.utilities.SerialClone.CloneOutput $$ possible exceptional exit due to cout.writeObject(x) with exception type java.io.IOException $$ ( 1526, 1567 ) $$ @MustCall method close may not have been invoked on cout or any of its aliases.
+	CloneOutput cout = new CloneOutput(bout);
+	            ^
+  The type of object is: ssamot.utilities.SerialClone.CloneOutput.
+  Reason for going out of scope: possible exceptional exit due to cout.writeObject(x) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/SerialClone.java:52: error: (required.method.not.called) $$ 4 $$ method close $$ cin $$ ssamot.utilities.SerialClone.CloneInput $$ regular method exit $$ ( 1690, 1733 ) $$ @MustCall method close may not have been invoked on cin or any of its aliases.
+	CloneInput cin = new CloneInput(bin, cout);
+	           ^
+  The type of object is: ssamot.utilities.SerialClone.CloneInput.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/StreamClonable.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(this) with exception type java.io.IOException $$ ( 1106, 1160 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+            ObjectOutputStream oos = new ObjectOutputStream(baos);
+                               ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(this) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/StreamClonable.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ ois $$ java.io.ObjectInputStream $$ possible exceptional exit due to ois.readObject() with exception type java.io.IOException $$ ( 1353, 1405 ) $$ @MustCall method close may not have been invoked on ois or any of its aliases.
+            ObjectInputStream ois = new ObjectInputStream(bais);
+                              ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: possible exceptional exit due to ois.readObject() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/Configuration.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ propFile $$ java.io.FileInputStream $$ regular method exit $$ ( 1481, 1560 ) $$ @MustCall method close may not have been invoked on propFile or any of its aliases.
+		FileInputStream propFile = new FileInputStream(PATH
+		                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/selectors/ucb/UCBActionSelector.java:32: error: (override.return) $$ 6 $$ @CalledMethods StatisticsNode $$ T extends @CalledMethods StatisticsNode $$ @CalledMethods UCBActionSelector<T extends @CalledMethods StatisticsNode> $$ @CalledMethods StatisticsNode selectChild(@CalledMethods UCBActionSelector<T extends @CalledMethods StatisticsNode> this, @CalledMethods StatisticsNode p0) $$ @CalledMethods Selector<T extends @CalledMethods StatisticsNode> $$ T extends @CalledMethods StatisticsNode selectChild(@CalledMethods Selector<T extends @CalledMethods StatisticsNode> this, T extends @CalledMethods StatisticsNode p0) $$ ( 1035, 1049 ) $$ Incompatible return type.
+	public StatisticsNode selectChild(StatisticsNode node) {
+	       ^
+  found   : @CalledMethods StatisticsNode
+  required: T extends @CalledMethods StatisticsNode
+  Consequence: method in @CalledMethods UCBActionSelector<T extends @CalledMethods StatisticsNode>
+    @CalledMethods StatisticsNode selectChild(@CalledMethods UCBActionSelector<T extends @CalledMethods StatisticsNode> this, @CalledMethods StatisticsNode p0)
+  cannot override method in @CalledMethods Selector<T extends @CalledMethods StatisticsNode>
+    T extends @CalledMethods StatisticsNode selectChild(@CalledMethods Selector<T extends @CalledMethods StatisticsNode> this, T extends @CalledMethods StatisticsNode p0)
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/config/GameConfig.java:57: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ regular method exit $$ ( 1624, 1658 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+					is = new FileInputStream(fileName);
+					   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/main/ConvertToReadable.java:25: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1434 $$ java.io.FileReader $$ possible exceptional exit due to new FileWriter(directoryName + "/readable-results.txt", false) with exception type java.io.IOException $$ ( 676, 724 ) $$ @MustCall method close may not have been invoked on temp-var-1434 or any of its aliases.
+            BufferedReader reader = new BufferedReader(new FileReader(directoryName + "/best-ship.txt"));
+                                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(directoryName + "/readable-results.txt", false) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/main/ConvertToReadable.java:26: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1436 $$ java.io.FileWriter $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 772, 834 ) $$ @MustCall method close may not have been invoked on temp-var-1436 or any of its aliases.
+            PrintWriter pw = new PrintWriter(new FileWriter(directoryName + "/readable-results.txt", false));
+                                             ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+22 errors

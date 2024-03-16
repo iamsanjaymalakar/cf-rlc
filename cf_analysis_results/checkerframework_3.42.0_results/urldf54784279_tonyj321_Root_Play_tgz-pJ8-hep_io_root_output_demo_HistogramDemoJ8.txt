@@ -1,0 +1,23 @@
+../dataset/june2020_dataset/urldf54784279_tonyj321_Root_Play_tgz-pJ8-hep_io_root_output_demo_HistogramDemoJ8/src/hep/io/root/output/TKey.java:71: error: (required.method.not.called) $$ 4 $$ method close $$ buffer $$ hep.io.root.output.RootBufferedOutputStream $$ possible exceptional exit due to buffer.writeObject(object) with exception type java.io.IOException $$ ( 2655, 2755 ) $$ @MustCall method close may not have been invoked on buffer or any of its aliases.
+        RootBufferedOutputStream buffer = new RootBufferedOutputStream(tFile, keyLen, suppressStreamerInfo);
+                                 ^
+  The type of object is: hep.io.root.output.RootBufferedOutputStream.
+  Reason for going out of scope: possible exceptional exit due to buffer.writeObject(object) with exception type java.io.IOException
+../dataset/june2020_dataset/urldf54784279_tonyj321_Root_Play_tgz-pJ8-hep_io_root_output_demo_HistogramDemoJ8/src/hep/io/root/output/TFile.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ new RootRandomAccessFile(file, this) $$ hep.io.root.output.RootRandomAccessFile $$ regular method exit $$ ( 2310, 2346 ) $$ @MustCall method close may not have been invoked on new RootRandomAccessFile(file, this) or any of its aliases.
+        out = new RootRandomAccessFile(file, this);
+              ^
+  The type of object is: hep.io.root.output.RootRandomAccessFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldf54784279_tonyj321_Root_Play_tgz-pJ8-hep_io_root_output_demo_HistogramDemoJ8/src/hep/io/root/output/TDirectory.java:54: error: (required.method.not.called) $$ 4 $$ method close $$ tFile $$ hep.io.root.output.TFile $$ regular method exit $$ ( 1897, 1922 ) $$ @MustCall method close may not have been invoked on tFile or any of its aliases.
+        TFile tFile = getTFile();
+              ^
+  The type of object is: hep.io.root.output.TFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldf54784279_tonyj321_Root_Play_tgz-pJ8-hep_io_root_output_demo_HistogramDemoJ8/src/hep/io/root/output/TDirectory.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ getTFile() $$ hep.io.root.output.TFile $$ regular method exit $$ ( 3012, 3022 ) $$ @MustCall method close may not have been invoked on getTFile() or any of its aliases.
+        TKey record = getTFile().addRecord(object.getClass(), fName, fTitle, fSeekDir, false);
+                              ^
+  The type of object is: hep.io.root.output.TFile.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 errors

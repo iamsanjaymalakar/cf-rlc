@@ -1,0 +1,28 @@
+../dataset/june2020_dataset/url7f729337e3_timmolter_Sundial_tgz-pJ8-org_knowm_sundial_SampleRunJ8/src/org/quartz/classloading/CascadingClassLoadHelper.java:180: error: (required.method.not.called) $$ 4 $$ method close $$ result $$ java.io.InputStream $$ variable overwritten by assignment result = loadHelper.getResourceAsStream(name) $$ ( 5628, 5676 ) $$ @MustCall method close may not have been invoked on result or any of its aliases.
+      result = bestCandidate.getResourceAsStream(name);
+             ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: variable overwritten by assignment result = loadHelper.getResourceAsStream(name)
+../dataset/june2020_dataset/url7f729337e3_timmolter_Sundial_tgz-pJ8-org_knowm_sundial_SampleRunJ8/src/org/quartz/classloading/CascadingClassLoadHelper.java:192: error: (required.method.not.called) $$ 4 $$ method close $$ result $$ java.io.InputStream $$ variable overwritten by assignment result = loadHelper.getResourceAsStream(name) $$ ( 5920, 5965 ) $$ @MustCall method close may not have been invoked on result or any of its aliases.
+      result = loadHelper.getResourceAsStream(name);
+             ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: variable overwritten by assignment result = loadHelper.getResourceAsStream(name)
+../dataset/june2020_dataset/url7f729337e3_timmolter_Sundial_tgz-pJ8-org_knowm_sundial_SampleRunJ8/src/org/quartz/classloading/CascadingClassLoadHelper.java:263: error: (required.method.not.called) $$ 4 $$ method close $$ jarFile $$ java.util.jar.JarFile $$ regular method exit $$ ( 8264, 8294 ) $$ @MustCall method close may not have been invoked on jarFile or any of its aliases.
+      jarFile = new JarFile(jarPath);
+              ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7f729337e3_timmolter_Sundial_tgz-pJ8-org_knowm_sundial_SampleRunJ8/src/org/quartz/plugins/xml/XMLSchedulingDataProcessor.java:167: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ regular method exit $$ ( 5840, 5904 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+    is = classLoadHelper.getResourceAsStream(QUARTZ_XSD_PATH_IN_JAR);
+       ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7f729337e3_timmolter_Sundial_tgz-pJ8-org_knowm_sundial_SampleRunJ8/src/org/quartz/plugins/xml/XMLSchedulingDataProcessor.java:252: error: (required.method.not.called) $$ 4 $$ method close $$ getInputStream(fileName) $$ java.io.InputStream $$ possible exceptional exit due to process(is) with exception type org.xml.sax.SAXException $$ ( 8258, 8282 ) $$ @MustCall method close may not have been invoked on getInputStream(fileName) or any of its aliases.
+    InputSource is = new InputSource(getInputStream(fileName));
+                                                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to process(is) with exception type org.xml.sax.SAXException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors

@@ -1,0 +1,11 @@
+../dataset/june2020_dataset/url4913e7683c_pusuo_patchca_tgz-pJ8-org_patchca_demo_PatchcaFilterDemoPNGJ8/src/org/patchca/demo/PatchcaFilterDemoPNG.java:38: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to EncoderHelper.getChallangeAndWriteImage(cs, "png", fos) with exception type java.io.IOException $$ ( 1295, 1373 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+			FileOutputStream fos = new FileOutputStream("patcha_demo" + counter + ".png");
+			                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to EncoderHelper.getChallangeAndWriteImage(cs, "png", fos) with exception type java.io.IOException
+../dataset/june2020_dataset/url4913e7683c_pusuo_patchca_tgz-pJ8-org_patchca_demo_PatchcaFilterDemoPNGJ8/src/org/patchca/demo/Sample.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to EncoderHelper.getChallangeAndWriteImage(cs, "png", fos) with exception type java.io.IOException $$ ( 688, 751 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+        FileOutputStream fos = new FileOutputStream("patcha_demo.png");
+                         ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to EncoderHelper.getChallangeAndWriteImage(cs, "png", fos) with exception type java.io.IOException
+2 errors

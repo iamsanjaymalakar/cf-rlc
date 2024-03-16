@@ -1,0 +1,20 @@
+../dataset/june2020_dataset/url4e79c36700_JacenLakiir_Tivoo_tgz-pJ8-MainJ8/src/tivoo/input/CalendarParser.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ inputStream $$ java.io.InputStream $$ regular method exit $$ ( 1538, 1596 ) $$ @MustCall method close may not have been invoked on inputStream or any of its aliases.
+        InputStream inputStream = new FileInputStream(fileHandle);
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4e79c36700_JacenLakiir_Tivoo_tgz-pJ8-MainJ8/src/tivoo/output/HTMLBuilder.java:233: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to out.write(doc.write()) with exception type java.io.IOException $$ ( 7645, 7702 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+        FileOutputStream fos = new FileOutputStream(summaryPage);
+                         ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.write(doc.write()) with exception type java.io.IOException
+../dataset/june2020_dataset/url4e79c36700_JacenLakiir_Tivoo_tgz-pJ8-MainJ8/src/tivoo/output/HTMLBuilder.java:273: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to out.write(doc.write()) with exception type java.io.IOException $$ ( 8897, 8953 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+        FileOutputStream fos = new FileOutputStream(detailPage);
+                         ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.write(doc.write()) with exception type java.io.IOException
+Note: ../dataset/june2020_dataset/url4e79c36700_JacenLakiir_Tivoo_tgz-pJ8-MainJ8/src/tivoo/input/parserHandler/GoogleCalParserHandler.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: ../dataset/june2020_dataset/url4e79c36700_JacenLakiir_Tivoo_tgz-pJ8-MainJ8/src/tivoo/input/CalendarParser.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 errors

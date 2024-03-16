@@ -1,0 +1,33 @@
+../../../../datasets/june2020_dataset/url2b521cbda7_eobermuhlner_jhuge_tgz-pJ8-ch_obermuhlner_jhuge_example_MeasureHeapJ8/src/ch/obermuhlner/jhuge/collection/AbstractHugeHashMap.java:393: error: (return) $$ 2 $$ @MustCallUnknown String $$ @MustCall String $$ ( 12137, 12154 ) $$ incompatible types in return.
+			return key + "=" + value;
+			                 ^
+  type of expression: @MustCallUnknown String
+  method return type: @MustCall String
+../../../../datasets/june2020_dataset/url2b521cbda7_eobermuhlner_jhuge_tgz-pJ8-ch_obermuhlner_jhuge_example_MeasureHeapJ8/src/ch/obermuhlner/jhuge/collection/AbstractMapTest.java:982: error: (return) $$ 2 $$ @MustCallUnknown String $$ @MustCall String $$ ( 29699, 29732 ) $$ incompatible types in return.
+			return "(" + value1 + "," + value2 + ")";
+			                                   ^
+  type of expression: @MustCallUnknown String
+  method return type: @MustCall String
+../../../../datasets/june2020_dataset/url2b521cbda7_eobermuhlner_jhuge_tgz-pJ8-ch_obermuhlner_jhuge_example_MeasureHeapJ8/src/ch/obermuhlner/jhuge/converter/ZipCompressionConverter.java:73: error: (required.method.not.called) $$ 4 $$ method close $$ zipOutputStream $$ java.util.zip.ZipOutputStream $$ possible exceptional exit due to throw new IllegalArgumentException(exception); with exception type java.lang.IllegalArgumentException $$ ( 2389, 2461 ) $$ @MustCall method close may not have been invoked on zipOutputStream or any of its aliases.
+			ZipOutputStream zipOutputStream = new ZipOutputStream(byteOutputStream);
+			                ^
+  The type of object is: java.util.zip.ZipOutputStream.
+  Reason for going out of scope: possible exceptional exit due to throw new IllegalArgumentException(exception); with exception type java.lang.IllegalArgumentException
+../../../../datasets/june2020_dataset/url2b521cbda7_eobermuhlner_jhuge_tgz-pJ8-ch_obermuhlner_jhuge_example_MeasureHeapJ8/src/ch/obermuhlner/jhuge/converter/ZipCompressionConverter.java:109: error: (required.method.not.called) $$ 4 $$ method close $$ zipInputStream $$ java.util.zip.ZipInputStream $$ possible exceptional exit due to throw new IllegalArgumentException(exception); with exception type java.lang.IllegalArgumentException $$ ( 3546, 3614 ) $$ @MustCall method close may not have been invoked on zipInputStream or any of its aliases.
+			ZipInputStream zipInputStream = new ZipInputStream(byteInputStream);
+			               ^
+  The type of object is: java.util.zip.ZipInputStream.
+  Reason for going out of scope: possible exceptional exit due to throw new IllegalArgumentException(exception); with exception type java.lang.IllegalArgumentException
+../../../../datasets/june2020_dataset/url2b521cbda7_eobermuhlner_jhuge_tgz-pJ8-ch_obermuhlner_jhuge_example_MeasureHeapJ8/src/ch/obermuhlner/jhuge/converter/SerializableConverter.java:99: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.ObjectOutputStream $$ regular method exit $$ ( 2966, 3008 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+			out = new ObjectOutputStream(outputStream);
+			    ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url2b521cbda7_eobermuhlner_jhuge_tgz-pJ8-ch_obermuhlner_jhuge_example_MeasureHeapJ8/src/ch/obermuhlner/jhuge/converter/CompactConverter.java:74: error: (assignment) $$ 2 $$ @MustCall Class<capture#237 extends @MustCallUnknown Serializable> $$ @MustCallUnknown Class<? extends @MustCall Serializable> $$ ( 2474, 2491 ) $$ incompatible types in assignment.
+		Class<? extends Serializable> clazz = source.getClass();
+		                                                     ^
+  found   : @MustCall Class<capture#237 extends @MustCallUnknown Serializable>
+  required: @MustCallUnknown Class<? extends @MustCall Serializable>
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+6 errors

@@ -1,0 +1,6 @@
+../dataset/june2020_dataset/url633772aa30_isma3l_Tp2_tgz-pJ8-ar_fiuba_tecnicas_framework_Pruebas_Casos1_MainJ8/src/ar/fiuba/tecnicas/framework/JTest/XmlPrinter.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter("ReporteXsd.xml") $$ java.io.FileWriter $$ regular method exit $$ ( 542, 574 ) $$ @MustCall method close may not have been invoked on new FileWriter("ReporteXsd.xml") or any of its aliases.
+            fileWriter = new FileWriter("ReporteXsd.xml");
+                         ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+1 error

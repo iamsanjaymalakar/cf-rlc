@@ -1,0 +1,24 @@
+../../../../datasets/june2020_dataset/url7d636e8121_laforge49_JActor2_tgz-pJ8-org_agilewiki_jactor2_core_revisited_EHJ8/src/org/agilewiki/jactor2/core/impl/mtMessages/RequestMtImpl.java:482: error: (override.param) $$ 7 $$ _response $$ @MustCall Object $$ RESPONSE_TYPE extends @MustCallUnknown Object $$ @MustCall RequestMtImpl<RESPONSE_TYPE extends @MustCallUnknown Object>.@MustCall <anonymous org.agilewiki.jactor2.core.impl.mtMessages.RequestMtImpl$1> $$ void processAsyncResponse(@MustCall RequestMtImpl<RESPONSE_TYPE extends @MustCallUnknown Object>.@MustCall <anonymous org.agilewiki.jactor2.core.impl.mtMessages.RequestMtImpl$1> this, @MustCall Object p0) $$ @MustCall AsyncResponseProcessor<RESPONSE_TYPE extends @MustCallUnknown Object> $$ void processAsyncResponse(@MustCall AsyncResponseProcessor<RESPONSE_TYPE extends @MustCallUnknown Object> this, RESPONSE_TYPE extends @MustCallUnknown Object p0) throws @MustCall Exception $$ ( 16763, 16785 ) $$ Incompatible parameter type for _response.
+                                    final Object _response) {
+                                                 ^
+  found   : @MustCall Object
+  required: RESPONSE_TYPE extends @MustCallUnknown Object
+  Consequence: method in @MustCall RequestMtImpl<RESPONSE_TYPE extends @MustCallUnknown Object>.@MustCall <anonymous org.agilewiki.jactor2.core.impl.mtMessages.RequestMtImpl$1>
+    void processAsyncResponse(@MustCall RequestMtImpl<RESPONSE_TYPE extends @MustCallUnknown Object>.@MustCall <anonymous org.agilewiki.jactor2.core.impl.mtMessages.RequestMtImpl$1> this, @MustCall Object p0)
+  cannot override method in @MustCall AsyncResponseProcessor<RESPONSE_TYPE extends @MustCallUnknown Object>
+    void processAsyncResponse(@MustCall AsyncResponseProcessor<RESPONSE_TYPE extends @MustCallUnknown Object> this, RESPONSE_TYPE extends @MustCallUnknown Object p0) throws @MustCall Exception
+../../../../datasets/june2020_dataset/url7d636e8121_laforge49_JActor2_tgz-pJ8-org_agilewiki_jactor2_core_revisited_EHJ8/src/org/agilewiki/jactor2/core/impl/mtPlant/PlantMtImpl.java:87: error: (assignment) $$ 2 $$ @MustCallUnknown PlantConfiguration $$ @MustCall PlantConfiguration $$ ( 3428, 3506 ) $$ incompatible types in assignment.
+                plantConfiguration = (PlantConfiguration) configurationClass
+                                     ^
+  found   : @MustCallUnknown PlantConfiguration
+  required: @MustCall PlantConfiguration
+../../../../datasets/june2020_dataset/url7d636e8121_laforge49_JActor2_tgz-pJ8-org_agilewiki_jactor2_core_revisited_EHJ8/src/org/agilewiki/jactor2/metrics/MetricsTimerImpl.java:58: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1942 $$ com.codahale.metrics.ConsoleReporter $$ regular method exit $$ ( 1711, 1873 ) $$ @MustCall method close may not have been invoked on temp-var-1942 or any of its aliases.
+                    .convertRatesTo(TimeUnit.SECONDS).build();
+                                                           ^
+  The type of object is: com.codahale.metrics.ConsoleReporter.
+  Reason for going out of scope: regular method exit
+Note: ../../../../datasets/june2020_dataset/url7d636e8121_laforge49_JActor2_tgz-pJ8-org_agilewiki_jactor2_core_revisited_EHJ8/src/org/agilewiki/jactor2/core/impl/messages/BoundResponseProcessorTest.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 errors

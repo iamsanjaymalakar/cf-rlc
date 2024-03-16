@@ -1,0 +1,16 @@
+../../../../datasets/june2020_dataset/url8417b1b213_Ratchette_Rummikub_tgz-pJ8-rummikub_RummikubJ8/src/rummikub/Server.java:208: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-360 $$ java.net.ServerSocket $$ regular method exit $$ ( 6363, 6389 ) $$ @MustCall method close may not have been invoked on temp-var-360 or any of its aliases.
+            serverSocket = new ServerSocket(PORT_NUM);	
+                           ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8417b1b213_Ratchette_Rummikub_tgz-pJ8-rummikub_RummikubJ8/src/rummikub/Server.java:217: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-363 $$ java.net.Socket $$ possible exceptional exit due to clientSocket[i].getInputStream() with exception type java.io.IOException $$ ( 6721, 6742 ) $$ @MustCall method close may not have been invoked on temp-var-363 or any of its aliases.
+            	clientSocket[i] = serverSocket.accept();
+            	                                     ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to clientSocket[i].getInputStream() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8417b1b213_Ratchette_Rummikub_tgz-pJ8-rummikub_RummikubJ8/src/rummikub/Client.java:62: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-551 $$ java.net.Socket $$ possible exceptional exit due to mySocket.getOutputStream() with exception type java.io.IOException $$ ( 1509, 1535 ) $$ @MustCall method close may not have been invoked on temp-var-551 or any of its aliases.
+		mySocket = new Socket(serverIP, port);
+		           ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to mySocket.getOutputStream() with exception type java.io.IOException
+3 errors

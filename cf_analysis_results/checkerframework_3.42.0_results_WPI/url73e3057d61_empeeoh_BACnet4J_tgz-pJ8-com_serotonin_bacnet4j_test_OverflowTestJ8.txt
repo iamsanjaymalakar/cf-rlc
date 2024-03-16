@@ -1,0 +1,158 @@
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/BacnetTest.java:27: error: (required.method.not.called) $$ 4 $$ method terminate $$ network $$ com.serotonin.bacnet4j.npdu.ip.IpNetwork $$ regular method exit $$ ( 1258, 1294 ) $$ @MustCall method terminate may not have been invoked on network or any of its aliases.
+        IpNetwork network = new IpNetwork();
+                  ^
+  The type of object is: com.serotonin.bacnet4j.npdu.ip.IpNetwork.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/type/constructed/PriorityArray.java:62: error: (owning.override.param) $$ 5 $$ value $$ set $$ com.serotonin.bacnet4j.type.constructed.PriorityArray $$ set $$ com.serotonin.bacnet4j.type.constructed.SequenceOf $$ ( 2331, 2638 ) $$ Incompatible ownership for parameter value.
+    public void set(int indexBase1, PriorityValue value) {
+                ^
+  found   : no ownership annotation or @NotOwning
+  required: @Owning
+  Consequence: method set in com.serotonin.bacnet4j.type.constructed.PriorityArray cannot override method set in com.serotonin.bacnet4j.type.constructed.SequenceOf
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/type/constructed/PriorityArray.java:71: error: (owning.override.param) $$ 5 $$ value $$ add $$ com.serotonin.bacnet4j.type.constructed.PriorityArray $$ add $$ com.serotonin.bacnet4j.type.constructed.SequenceOf $$ ( 2644, 2764 ) $$ Incompatible ownership for parameter value.
+    public void add(PriorityValue value) {
+                ^
+  found   : no ownership annotation or @NotOwning
+  required: @Owning
+  Consequence: method add in com.serotonin.bacnet4j.type.constructed.PriorityArray cannot override method add in com.serotonin.bacnet4j.type.constructed.SequenceOf
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/type/constructed/PriorityArray.java:81: error: (owning.override.param) $$ 5 $$ value $$ remove $$ com.serotonin.bacnet4j.type.constructed.PriorityArray $$ remove $$ com.serotonin.bacnet4j.type.constructed.SequenceOf $$ ( 2894, 3017 ) $$ Incompatible ownership for parameter value.
+    public void remove(PriorityValue value) {
+                ^
+  found   : no ownership annotation or @NotOwning
+  required: @Owning
+  Consequence: method remove in com.serotonin.bacnet4j.type.constructed.PriorityArray cannot override method remove in com.serotonin.bacnet4j.type.constructed.SequenceOf
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/type/constructed/PriorityArray.java:86: error: (owning.override.param) $$ 5 $$ value $$ removeAll $$ com.serotonin.bacnet4j.type.constructed.PriorityArray $$ removeAll $$ com.serotonin.bacnet4j.type.constructed.SequenceOf $$ ( 3023, 3149 ) $$ Incompatible ownership for parameter value.
+    public void removeAll(PriorityValue value) {
+                ^
+  found   : no ownership annotation or @NotOwning
+  required: @Owning
+  Consequence: method removeAll in com.serotonin.bacnet4j.type.constructed.PriorityArray cannot override method removeAll in com.serotonin.bacnet4j.type.constructed.SequenceOf
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/npdu/ip/IpNetwork.java:121: error: (missing.creates.mustcall.for) $$ 3 $$ initialize $$ this $$ socket $$ ( 4257, 4837 ) $$ Method initialize re-assigns the non-final, owning field this.socket, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void initialize(Transport transport) throws Exception {
+                ^
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/npdu/ip/IpNetwork.java:124: error: (required.method.not.called) $$ 4 $$ method close $$ field socket $$ java.net.DatagramSocket $$  Non-final owning field might be overwritten $$ ( 4431, 4464 ) $$ @MustCall method close may not have been invoked on field socket or any of its aliases.
+            socket = new DatagramSocket(port);
+                   ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/npdu/ip/IpNetwork.java:126: error: (required.method.not.called) $$ 4 $$ method close $$ field socket $$ java.net.DatagramSocket $$  Non-final owning field might be overwritten $$ ( 4491, 4565 ) $$ @MustCall method close may not have been invoked on field socket or any of its aliases.
+            socket = new DatagramSocket(port, InetAddress.getByName(localBindAddress));
+                   ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/npdu/mstp/MstpNode.java:94: error: (required.method.not.called) $$ 4 $$ method close $$ serialPort.getInputStream() $$ java.io.InputStream $$ possible exceptional exit due to serialPort.getOutputStream() with exception type java.io.IOException $$ ( 2800, 2827 ) $$ @MustCall method close may not have been invoked on serialPort.getInputStream() or any of its aliases.
+                in = serialPort.getInputStream();
+                                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to serialPort.getOutputStream() with exception type java.io.IOException
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/npdu/mstp/MstpNode.java:95: error: (required.method.not.called) $$ 4 $$ method close $$ serialPort.getOutputStream() $$ java.io.OutputStream $$ regular method exit $$ ( 2851, 2879 ) $$ @MustCall method close may not have been invoked on serialPort.getOutputStream() or any of its aliases.
+                out = serialPort.getOutputStream();
+                                                ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/SlaveDeviceTest.java:60: error: (required.method.not.called) $$ 4 $$ method terminate $$ new IpNetwork("192.168.0.255", 2068) $$ com.serotonin.bacnet4j.npdu.ip.IpNetwork $$ possible exceptional exit due to localDevice.getConfiguration().setProperty(PropertyIdentifier.objectName, new CharacterString("BACnet4J slave device test")) with exception type com.serotonin.bacnet4j.exception.BACnetServiceException $$ ( 3035, 3071 ) $$ @MustCall method terminate may not have been invoked on new IpNetwork("192.168.0.255", 2068) or any of its aliases.
+        LocalDevice localDevice = new LocalDevice(1969, new Transport(new IpNetwork("192.168.0.255", 2068)));
+                                                                      ^
+  The type of object is: com.serotonin.bacnet4j.npdu.ip.IpNetwork.
+  Reason for going out of scope: possible exceptional exit due to localDevice.getConfiguration().setProperty(PropertyIdentifier.objectName, new CharacterString("BACnet4J slave device test")) with exception type com.serotonin.bacnet4j.exception.BACnetServiceException
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/OverflowTest.java:29: error: (required.method.not.called) $$ 4 $$ method terminate $$ new IpNetwork() $$ com.serotonin.bacnet4j.npdu.ip.IpNetwork $$ possible exceptional exit due to localDevice.initialize() with exception type java.lang.Exception $$ ( 1082, 1097 ) $$ @MustCall method terminate may not have been invoked on new IpNetwork() or any of its aliases.
+        LocalDevice localDevice = new LocalDevice(1234, new Transport(new IpNetwork()));
+                                                                      ^
+  The type of object is: com.serotonin.bacnet4j.npdu.ip.IpNetwork.
+  Reason for going out of scope: possible exceptional exit due to localDevice.initialize() with exception type java.lang.Exception
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/CommandPriorityTest.java:35: error: (required.method.not.called) $$ 4 $$ method terminate $$ new IpNetwork() $$ com.serotonin.bacnet4j.npdu.ip.IpNetwork $$ possible exceptional exit due to localDevice.initialize() with exception type java.lang.Exception $$ ( 1427, 1442 ) $$ @MustCall method terminate may not have been invoked on new IpNetwork() or any of its aliases.
+        network = new IpNetwork();
+                  ^
+  The type of object is: com.serotonin.bacnet4j.npdu.ip.IpNetwork.
+  Reason for going out of scope: possible exceptional exit due to localDevice.initialize() with exception type java.lang.Exception
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/DiscoveryTest.java:47: error: (required.method.not.called) $$ 4 $$ method terminate $$ network $$ com.serotonin.bacnet4j.npdu.ip.IpNetwork $$ possible exceptional exit due to localDevice.initialize() with exception type java.lang.Exception $$ ( 2014, 2150 ) $$ @MustCall method terminate may not have been invoked on network or any of its aliases.
+        IpNetwork network = new IpNetwork(IpNetwork.DEFAULT_BROADCAST_IP, IpNetwork.DEFAULT_PORT,
+                  ^
+  The type of object is: com.serotonin.bacnet4j.npdu.ip.IpNetwork.
+  Reason for going out of scope: possible exceptional exit due to localDevice.initialize() with exception type java.lang.Exception
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/LargeSegmentTest.java:33: error: (required.method.not.called) $$ 4 $$ method terminate $$ new IpNetwork("127.0.0.255") $$ com.serotonin.bacnet4j.npdu.ip.IpNetwork $$ possible exceptional exit due to localDeviceWithLotsOfObjects.initialize() with exception type java.lang.Exception $$ ( 1331, 1376 ) $$ @MustCall method terminate may not have been invoked on new IpNetwork("127.0.0.255") or any of its aliases.
+        LocalDevice localDeviceWithLotsOfObjects = new LocalDevice(deviceWithObjectsId, new Transport(new IpNetwork(
+                                                                                                      ^
+  The type of object is: com.serotonin.bacnet4j.npdu.ip.IpNetwork.
+  Reason for going out of scope: possible exceptional exit due to localDeviceWithLotsOfObjects.initialize() with exception type java.lang.Exception
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/LargeSegmentTest.java:45: error: (required.method.not.called) $$ 4 $$ method terminate $$ new IpNetwork("127.0.0.255", IpNetwork.DEFAULT_PORT + 1) $$ com.serotonin.bacnet4j.npdu.ip.IpNetwork $$ possible exceptional exit due to localDevice.initialize() with exception type java.lang.Exception $$ ( 2001, 2073 ) $$ @MustCall method terminate may not have been invoked on new IpNetwork("127.0.0.255", IpNetwork.DEFAULT_PORT + 1) or any of its aliases.
+        LocalDevice localDevice = new LocalDevice(deviceReadId, new Transport(new IpNetwork("127.0.0.255",
+                                                                              ^
+  The type of object is: com.serotonin.bacnet4j.npdu.ip.IpNetwork.
+  Reason for going out of scope: possible exceptional exit due to localDevice.initialize() with exception type java.lang.Exception
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/Test3.java:16: error: (required.method.not.called) $$ 4 $$ method terminate $$ network $$ com.serotonin.bacnet4j.npdu.ip.IpNetwork $$ possible exceptional exit due to ld.initialize() with exception type java.lang.Exception $$ ( 557, 593 ) $$ @MustCall method terminate may not have been invoked on network or any of its aliases.
+        IpNetwork network = new IpNetwork();
+                  ^
+  The type of object is: com.serotonin.bacnet4j.npdu.ip.IpNetwork.
+  Reason for going out of scope: possible exceptional exit due to ld.initialize() with exception type java.lang.Exception
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/SimpleSubscriptionClient.java:20: error: (required.method.not.called) $$ 4 $$ method terminate $$ network $$ com.serotonin.bacnet4j.npdu.ip.IpNetwork $$ possible exceptional exit due to localDevice.send(d, new SubscribeCOVRequest(new UnsignedInteger(0), oid, null, null)) with exception type com.serotonin.bacnet4j.exception.BACnetException $$ ( 928, 964 ) $$ @MustCall method terminate may not have been invoked on network or any of its aliases.
+        IpNetwork network = new IpNetwork();
+                  ^
+  The type of object is: com.serotonin.bacnet4j.npdu.ip.IpNetwork.
+  Reason for going out of scope: possible exceptional exit due to localDevice.send(d, new SubscribeCOVRequest(new UnsignedInteger(0), oid, null, null)) with exception type com.serotonin.bacnet4j.exception.BACnetException
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/SegmentedDecodingTest.java:21: error: (required.method.not.called) $$ 4 $$ method terminate $$ network $$ com.serotonin.bacnet4j.npdu.ip.IpNetwork $$ possible exceptional exit due to apdu.parseServiceData() with exception type com.serotonin.bacnet4j.exception.BACnetException $$ ( 25032, 25068 ) $$ @MustCall method terminate may not have been invoked on network or any of its aliases.
+        IpNetwork network = new IpNetwork();
+                  ^
+  The type of object is: com.serotonin.bacnet4j.npdu.ip.IpNetwork.
+  Reason for going out of scope: possible exceptional exit due to apdu.parseServiceData() with exception type com.serotonin.bacnet4j.exception.BACnetException
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/ReadAllAvailableProperties.java:77: error: (required.method.not.called) $$ 4 $$ method terminate $$ new IpNetwork(broadcastAddress, port) $$ com.serotonin.bacnet4j.npdu.ip.IpNetwork $$ possible exceptional exit due to localDevice.initialize() with exception type java.lang.Exception $$ ( 3750, 3787 ) $$ @MustCall method terminate may not have been invoked on new IpNetwork(broadcastAddress, port) or any of its aliases.
+        network = new IpNetwork(broadcastAddress, port);
+                  ^
+  The type of object is: com.serotonin.bacnet4j.npdu.ip.IpNetwork.
+  Reason for going out of scope: possible exceptional exit due to localDevice.initialize() with exception type java.lang.Exception
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/LoopDevice.java:81: error: (required.method.not.called) $$ 4 $$ method terminate $$ new IpNetwork(broadcastAddress, port) $$ com.serotonin.bacnet4j.npdu.ip.IpNetwork $$ possible exceptional exit due to localDevice.getConfiguration().setProperty(PropertyIdentifier.modelName, new CharacterString("BACnet4J LoopDevice")) with exception type com.serotonin.bacnet4j.exception.BACnetServiceException $$ ( 3633, 3670 ) $$ @MustCall method terminate may not have been invoked on new IpNetwork(broadcastAddress, port) or any of its aliases.
+        network = new IpNetwork(broadcastAddress, port);
+                  ^
+  The type of object is: com.serotonin.bacnet4j.npdu.ip.IpNetwork.
+  Reason for going out of scope: possible exceptional exit due to localDevice.getConfiguration().setProperty(PropertyIdentifier.modelName, new CharacterString("BACnet4J LoopDevice")) with exception type com.serotonin.bacnet4j.exception.BACnetServiceException
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/FileAccessTest.java:30: error: (required.method.not.called) $$ 4 $$ method terminate $$ network $$ com.serotonin.bacnet4j.npdu.ip.IpNetwork $$ regular method exit $$ ( 1057, 1108 ) $$ @MustCall method terminate may not have been invoked on network or any of its aliases.
+        IpNetwork network = new IpNetwork("192.168.0.255");
+                  ^
+  The type of object is: com.serotonin.bacnet4j.npdu.ip.IpNetwork.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/MessageControl.java:47: error: (missing.creates.mustcall.for) $$ 3 $$ init $$ this $$ socket $$ ( 1731, 1834 ) $$ Method init re-assigns the non-final, owning field this.socket, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void init() throws Exception {
+                ^
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/MessageControl.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ field socket $$ java.net.DatagramSocket $$  Non-final owning field might be overwritten $$ ( 1777, 1810 ) $$ @MustCall method close may not have been invoked on field socket or any of its aliases.
+        socket = new DatagramSocket(port);
+               ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/Test2.java:22: error: (required.method.not.called) $$ 4 $$ method terminate $$ new IpNetwork() $$ com.serotonin.bacnet4j.npdu.ip.IpNetwork $$ possible exceptional exit due to localDevice.initialize() with exception type java.lang.Exception $$ ( 1110, 1125 ) $$ @MustCall method terminate may not have been invoked on new IpNetwork() or any of its aliases.
+        LocalDevice localDevice = new LocalDevice(1968, new Transport(new IpNetwork()));
+                                                                      ^
+  The type of object is: com.serotonin.bacnet4j.npdu.ip.IpNetwork.
+  Reason for going out of scope: possible exceptional exit due to localDevice.initialize() with exception type java.lang.Exception
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/HubServer.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.Socket $$ regular method exit $$ ( 970, 1004 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+                Socket socket = acceptor.accept();
+                       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/ScriptTest.java:20: error: (required.method.not.called) $$ 4 $$ method close $$ getInputStream() $$ java.io.InputStream $$ possible exceptional exit due to new MasterNode(getInputStream(), new DumpOut(), (byte)4, 2) with exception type java.lang.IllegalArgumentException $$ ( 608, 624 ) $$ @MustCall method close may not have been invoked on getInputStream() or any of its aliases.
+        MasterNode master = new MasterNode(getInputStream(), new DumpOut(), (byte) 4, 2);
+                                                         ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new MasterNode(getInputStream(), new DumpOut(), (byte)4, 2) with exception type java.lang.IllegalArgumentException
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/ScriptTest.java:20: error: (required.method.not.called) $$ 4 $$ method close $$ new DumpOut() $$ com.serotonin.bacnet4j.rs485.ScriptTest.DumpOut $$ possible exceptional exit due to new MasterNode(getInputStream(), new DumpOut(), (byte)4, 2) with exception type java.lang.IllegalArgumentException $$ ( 626, 639 ) $$ @MustCall method close may not have been invoked on new DumpOut() or any of its aliases.
+        MasterNode master = new MasterNode(getInputStream(), new DumpOut(), (byte) 4, 2);
+                                                             ^
+  The type of object is: com.serotonin.bacnet4j.rs485.ScriptTest.DumpOut.
+  Reason for going out of scope: possible exceptional exit due to new MasterNode(getInputStream(), new DumpOut(), (byte)4, 2) with exception type java.lang.IllegalArgumentException
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/PortTest.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to in.read() with exception type java.io.IOException $$ ( 522, 567 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+        InputStream in = serialPort.getInputStream();
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to in.read() with exception type java.io.IOException
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/HubClient.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ new Socket("localhost", 50505) $$ java.net.Socket $$ possible exceptional exit due to new MessageReader() with exception type java.lang.Exception $$ ( 394, 424 ) $$ @MustCall method close may not have been invoked on new Socket("localhost", 50505) or any of its aliases.
+        socket = new Socket("localhost", 50505);
+                 ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to new MessageReader() with exception type java.lang.Exception
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/discovery/WhoIs.java:12: error: (required.method.not.called) $$ 4 $$ method terminate $$ network $$ com.serotonin.bacnet4j.npdu.ip.IpNetwork $$ regular method exit $$ ( 436, 472 ) $$ @MustCall method terminate may not have been invoked on network or any of its aliases.
+        IpNetwork network = new IpNetwork();
+                  ^
+  The type of object is: com.serotonin.bacnet4j.npdu.ip.IpNetwork.
+  Reason for going out of scope: regular method exit
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+31 errors

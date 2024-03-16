@@ -1,0 +1,31 @@
+../dataset/june2020_dataset/url78d0cbe382_TeeAaTeeUu_SitsiPlaseeraus_tgz-pJ8-sitsiplaseeraus_MainJ8/src/Lataaja/AsetustenTulostaja.java:20: error: (required.method.not.called) $$ 4 $$ method close $$ field bw $$ java.io.BufferedWriter $$  The enclosing element Lataaja.AsetustenTulostaja has an empty @MustCall annotation $$ ( 459, 485 ) $$ @MustCall method close may not have been invoked on field bw or any of its aliases.
+    private BufferedWriter bw;
+                           ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope:  The enclosing element Lataaja.AsetustenTulostaja has an empty @MustCall annotation
+../dataset/june2020_dataset/url78d0cbe382_TeeAaTeeUu_SitsiPlaseeraus_tgz-pJ8-sitsiplaseeraus_MainJ8/src/Lataaja/AsetustenTulostaja.java:70: error: (contracts.postcondition) $$ 3 $$ laitaTiedostoon $$ no information about this.bw $$ this.bw is @CalledMethods("close") $$ ( 1769, 2338 ) $$ postcondition of laitaTiedostoon is not satisfied.
+    private void laitaTiedostoon() {
+                 ^
+  found   : no information about this.bw
+  required: this.bw is @CalledMethods("close")
+../dataset/june2020_dataset/url78d0cbe382_TeeAaTeeUu_SitsiPlaseeraus_tgz-pJ8-sitsiplaseeraus_MainJ8/src/Lataaja/AsetustenTulostaja.java:70: error: (missing.creates.mustcall.for) $$ 3 $$ laitaTiedostoon $$ this $$ bw $$ ( 1769, 2338 ) $$ Method laitaTiedostoon re-assigns the non-final, owning field this.bw, but does not have a corresponding @CreatesMustCallFor annotation.
+    private void laitaTiedostoon() {
+                 ^
+../dataset/june2020_dataset/url78d0cbe382_TeeAaTeeUu_SitsiPlaseeraus_tgz-pJ8-sitsiplaseeraus_MainJ8/src/Lataaja/AsetustenTulostaja.java:79: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(file.getAbsoluteFile()) $$ java.io.FileWriter $$ possible exceptional exit due to bw.write(sisalto) with exception type java.io.IOException $$ ( 2018, 2056 ) $$ @MustCall method close may not have been invoked on new FileWriter(file.getAbsoluteFile()) or any of its aliases.
+            fw = new FileWriter(file.getAbsoluteFile());
+                 ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bw.write(sisalto) with exception type java.io.IOException
+../dataset/june2020_dataset/url78d0cbe382_TeeAaTeeUu_SitsiPlaseeraus_tgz-pJ8-sitsiplaseeraus_MainJ8/src/Lataaja/AsetustenTulostaja.java:80: error: (required.method.not.called) $$ 4 $$ method close $$ field bw $$ java.io.BufferedWriter $$  Non-final owning field might be overwritten $$ ( 2070, 2097 ) $$ @MustCall method close may not have been invoked on field bw or any of its aliases.
+            bw = new BufferedWriter(fw);
+               ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url78d0cbe382_TeeAaTeeUu_SitsiPlaseeraus_tgz-pJ8-sitsiplaseeraus_MainJ8/src/Lataaja/TiedostonKasittelija.java:92: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(csvFile) $$ java.io.FileReader $$ possible exceptional exit due to poytienMaara(br, cvsSplitBy) with exception type java.lang.NumberFormatException $$ ( 2451, 2474 ) $$ @MustCall method close may not have been invoked on new FileReader(csvFile) or any of its aliases.
+            br = new BufferedReader(new FileReader(csvFile));
+                                    ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to poytienMaara(br, cvsSplitBy) with exception type java.lang.NumberFormatException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+6 errors

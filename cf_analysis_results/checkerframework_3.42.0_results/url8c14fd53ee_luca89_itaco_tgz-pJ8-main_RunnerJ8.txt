@@ -1,0 +1,61 @@
+../dataset/june2020_dataset/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/RubyTarget.java:398: error: (required.method.not.called) $$ 4 $$ method close $$ new AggiungiVirgola(psSaved) $$ compilatore.RubyTarget.AggiungiVirgola $$ possible exceptional exit due to parametri.scriviCodice(this) with exception type compilatore.EccezioneSemantica $$ ( 9655, 9683 ) $$ @MustCall method close may not have been invoked on new AggiungiVirgola(psSaved) or any of its aliases.
+		ps = new AggiungiVirgola(psSaved);
+		     ^
+  The type of object is: compilatore.RubyTarget.AggiungiVirgola.
+  Reason for going out of scope: possible exceptional exit due to parametri.scriviCodice(this) with exception type compilatore.EccezioneSemantica
+../dataset/june2020_dataset/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/RubyTarget.java:497: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(sorgenteFile) $$ java.io.FileReader $$ possible exceptional exit due to new FileOutputStream(sorgenteC) with exception type java.io.FileNotFoundException $$ ( 11939, 11967 ) $$ @MustCall method close may not have been invoked on new FileReader(sorgenteFile) or any of its aliases.
+		S result = (S) parser.parse(new Scanner(new FileReader(sorgenteFile)));
+		                                        ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(sorgenteC) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/RubyTarget.java:509: error: (required.method.not.called) $$ 4 $$ method close $$ sorgenteCStream $$ java.io.FileOutputStream $$ possible exceptional exit due to new RubyTarget(sorgenteCStream) with exception type compilatore.EccezioneSemantica $$ ( 12288, 12355 ) $$ @MustCall method close may not have been invoked on sorgenteCStream or any of its aliases.
+		FileOutputStream sorgenteCStream = new FileOutputStream(sorgenteC);
+		                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new RubyTarget(sorgenteCStream) with exception type compilatore.EccezioneSemantica
+../dataset/june2020_dataset/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/CTarget.java:424: error: (required.method.not.called) $$ 4 $$ method close $$ new AggiungiVirgola(psSaved) $$ compilatore.CTarget.AggiungiVirgola $$ possible exceptional exit due to parametri.scriviCodice(this) with exception type compilatore.EccezioneSemantica $$ ( 10655, 10683 ) $$ @MustCall method close may not have been invoked on new AggiungiVirgola(psSaved) or any of its aliases.
+		ps = new AggiungiVirgola(psSaved);
+		     ^
+  The type of object is: compilatore.CTarget.AggiungiVirgola.
+  Reason for going out of scope: possible exceptional exit due to parametri.scriviCodice(this) with exception type compilatore.EccezioneSemantica
+../dataset/june2020_dataset/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/CTarget.java:527: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(sorgenteFile) $$ java.io.FileReader $$ possible exceptional exit due to new FileOutputStream(sorgenteC) with exception type java.io.FileNotFoundException $$ ( 13095, 13123 ) $$ @MustCall method close may not have been invoked on new FileReader(sorgenteFile) or any of its aliases.
+		S result = (S) parser.parse(new Scanner(new FileReader(sorgenteFile)));
+		                                        ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(sorgenteC) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/CTarget.java:539: error: (required.method.not.called) $$ 4 $$ method close $$ sorgenteCStream $$ java.io.FileOutputStream $$ possible exceptional exit due to new CTarget(sorgenteCStream) with exception type compilatore.EccezioneSemantica $$ ( 13439, 13506 ) $$ @MustCall method close may not have been invoked on sorgenteCStream or any of its aliases.
+		FileOutputStream sorgenteCStream = new FileOutputStream(sorgenteC);
+		                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new CTarget(sorgenteCStream) with exception type compilatore.EccezioneSemantica
+../dataset/june2020_dataset/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java:139: error: (required.method.not.called) $$ 4 $$ method close $$ JasminTarget.class.getResourceAsStream("/compilatore/stub/" + stubFileName) $$ java.io.InputStream $$ possible exceptional exit due to stub.ready() with exception type java.io.IOException $$ ( 4254, 4327 ) $$ @MustCall method close may not have been invoked on JasminTarget.class.getResourceAsStream("/compilatore/stub/" + stubFileName) or any of its aliases.
+		InputStreamReader stub = new InputStreamReader(JasminTarget.class.getResourceAsStream("/compilatore/stub/"+stubFileName));
+		                                                                                     ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to stub.ready() with exception type java.io.IOException
+../dataset/june2020_dataset/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java:162: error: (required.method.not.called) $$ 4 $$ method close $$ stub $$ java.io.InputStream $$ possible exceptional exit due to stub.available() with exception type java.io.IOException $$ ( 4935, 5028 ) $$ @MustCall method close may not have been invoked on stub or any of its aliases.
+		InputStream stub = JasminTarget.class.getResourceAsStream("/compilatore/stub/"+stubFileName);
+		            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to stub.available() with exception type java.io.IOException
+../dataset/june2020_dataset/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java:374: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(sorgenteFile) $$ java.io.FileReader $$ possible exceptional exit due to new JasminTarget(nomeClasse, jasminAssemblyBytes) with exception type java.io.IOException $$ ( 11160, 11188 ) $$ @MustCall method close may not have been invoked on new FileReader(sorgenteFile) or any of its aliases.
+		S result = (S) parser.parse(new Scanner(new FileReader(sorgenteFile)));
+		                                        ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new JasminTarget(nomeClasse, jasminAssemblyBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java:391: error: (required.method.not.called) $$ 4 $$ method close $$ fileOut $$ java.io.FileOutputStream $$ possible exceptional exit due to fileOut.write(jasminAssemblyBytes.toByteArray()) with exception type java.io.IOException $$ ( 11708, 11771 ) $$ @MustCall method close may not have been invoked on fileOut or any of its aliases.
+			FileOutputStream fileOut = new FileOutputStream(percorsoFileJ);
+			                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to fileOut.write(jasminAssemblyBytes.toByteArray()) with exception type java.io.IOException
+../dataset/june2020_dataset/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java:421: error: (required.method.not.called) $$ 4 $$ method close $$ classFOut $$ java.io.FileOutputStream $$ possible exceptional exit due to classFile.write(classFOut) with exception type java.io.IOException $$ ( 12686, 12755 ) $$ @MustCall method close may not have been invoked on classFOut or any of its aliases.
+		FileOutputStream classFOut = new FileOutputStream(percorsoFileClass);
+		                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to classFile.write(classFOut) with exception type java.io.IOException
+../dataset/june2020_dataset/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/main/FileItaco.java:221: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(getPercorsoFile()) $$ java.io.FileInputStream $$ regular method exit $$ ( 5892, 5930 ) $$ @MustCall method close may not have been invoked on new FileInputStream(getPercorsoFile()) or any of its aliases.
+					new FileInputStream(getPercorsoFile()));
+					^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+12 errors

@@ -1,0 +1,28 @@
+../../../../datasets/june2020_dataset/url47e6aca666_pocorall_automaton_tgz-pJ8-net_pocorall_automaton_DatatypesJ8/src/net/pocorall/automaton/Datatypes.java:477: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1460 $$ java.io.ObjectInputStream $$ regular method exit $$ ( 34914, 34953 ) $$ @MustCall method close may not have been invoked on temp-var-1460 or any of its aliases.
+			return (DefaultAutomaton) new ObjectInputStream(url.openStream()).readObject();
+			                          ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url47e6aca666_pocorall_automaton_tgz-pJ8-net_pocorall_automaton_DatatypesJ8/src/net/pocorall/automaton/Datatypes.java:477: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1459 $$ java.io.InputStream $$ possible exceptional exit due to new ObjectInputStream(url.openStream()) with exception type java.io.IOException $$ ( 34936, 34952 ) $$ @MustCall method close may not have been invoked on temp-var-1459 or any of its aliases.
+			return (DefaultAutomaton) new ObjectInputStream(url.openStream()).readObject();
+			                                                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(url.openStream()) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47e6aca666_pocorall_automaton_tgz-pJ8-net_pocorall_automaton_DatatypesJ8/src/net/pocorall/automaton/Datatypes.java:492: error: (required.method.not.called) $$ 4 $$ method close $$ o $$ java.io.ObjectOutputStream $$ possible exceptional exit due to o.writeObject(a) with exception type java.io.IOException $$ ( 35300, 35397 ) $$ @MustCall method close may not have been invoked on o or any of its aliases.
+			ObjectOutputStream o = new ObjectOutputStream((new FileOutputStream(dir + "/" + name + ".aut")));
+			                   ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to o.writeObject(a) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47e6aca666_pocorall_automaton_tgz-pJ8-net_pocorall_automaton_DatatypesJ8/src/net/pocorall/automaton/Datatypes.java:492: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1465 $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream((new FileOutputStream(dir + "/" + name + ".aut"))) with exception type java.io.IOException $$ ( 35347, 35394 ) $$ @MustCall method close may not have been invoked on temp-var-1465 or any of its aliases.
+			ObjectOutputStream o = new ObjectOutputStream((new FileOutputStream(dir + "/" + name + ".aut")));
+			                                               ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream((new FileOutputStream(dir + "/" + name + ".aut"))) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47e6aca666_pocorall_automaton_tgz-pJ8-net_pocorall_automaton_DatatypesJ8/src/net/pocorall/automaton/Datatypes.java:805: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1758 $$ java.io.FileReader $$ possible exceptional exit due to st.nextToken() with exception type java.io.IOException $$ ( 53246, 53289 ) $$ @MustCall method close may not have been invoked on temp-var-1758 or any of its aliases.
+			StreamTokenizer st = new StreamTokenizer(new BufferedReader(new FileReader("src/main/java/Unicode.txt")));
+			                                                            ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to st.nextToken() with exception type java.io.IOException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+5 errors

@@ -1,0 +1,17 @@
+12548
+115
+
+SOURCE LEVEL FIXES
+
+2] ../../../dataset/june2020_dataset/url542ae48576_tonyheadford_m68k_tgz-pJ8-m68k_MonitorJ8/src/m68k/Monitor.java; Line number 919
+vim +919 ../../../dataset/june2020_dataset/url542ae48576_tonyheadford_m68k_tgz-pJ8-m68k_MonitorJ8/src/m68k/Monitor.java
+
++++ Add following code below line: 933 (m68k/Monitor.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 919
+
++++ Delete Line number 922 (m68k/Monitor.java)
+
+--------------------------------------------

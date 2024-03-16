@@ -1,0 +1,3 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^coursescheduleapp/view/ResultsController.java^345^coursescheduleapp.view.ResultsController.save(Ljava/io/File;Ljava/lang/String;)V^5 = new <Application,Ljava/io/FileWriter>@0^NULL^INVOKE,^false^false^Try-catch Fix;
+1^coursescheduleapp/model/CourseDatabase.java^27^coursescheduleapp.model.CourseDatabase.<init>()V^11 = invokestatic < Application, Ljava/sql/DriverManager, getConnection(Ljava/lang/String;)Ljava/sql/Connection; > 9 @24 exception:10^NULL^FIELD,^false^true^Field escape;

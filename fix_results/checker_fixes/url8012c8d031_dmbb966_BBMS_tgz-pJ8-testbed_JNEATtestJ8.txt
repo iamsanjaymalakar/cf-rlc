@@ -1,0 +1,45 @@
+23163
+302
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/utilities/FIO.java; Line number 185
+vim +185 ../../../dataset/june2020_dataset/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/utilities/FIO.java
+
++++ Add following code below line: 218 (utilities/FIO.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 185
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/utilities/FIO.java; Line number 225
+vim +225 ../../../dataset/june2020_dataset/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/utilities/FIO.java
+
++++ Add following code below line: 266 (utilities/FIO.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 225
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/utilities/FIO.java; Line number 284
+vim +284 ../../../dataset/june2020_dataset/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/utilities/FIO.java
+
++++ Add following code below line: 492 (utilities/FIO.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 284
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/jneat/Population.java; Line number 595
+vim +595 ../../../dataset/june2020_dataset/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/jneat/Population.java
+
++++ Add following code below line: 630 (jneat/Population.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 595
+
+--------------------------------------------

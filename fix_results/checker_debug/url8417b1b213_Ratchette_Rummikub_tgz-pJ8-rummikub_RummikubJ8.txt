@@ -1,0 +1,11 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^rummikub/Client.java^62^rummikub.Client.connect(Ljava/lang/String;I)I^5 = new <Application,Ljava/net/Socket>@1^NULL^FIELD,^false^true^Field escape;
+1^rummikub/Client.java^64^rummikub.Client.connect(Ljava/lang/String;I)I^7 = new <Application,Ljava/io/PrintWriter>@14^rummikub.Client.connect(Ljava/lang/String;I)I#10,^FIELD,^false^true^Field escape;
+2^rummikub/Client.java^65^rummikub.Client.connect(Ljava/lang/String;I)I^13 = new <Application,Ljava/io/BufferedReader>@33^rummikub.Client.connect(Ljava/lang/String;I)I#14,rummikub.Client.connect(Ljava/lang/String;I)I#17,^FIELD,^false^true^Field escape;
+3^rummikub/Server.java^208^rummikub.Server.acceptClients()V^23 = new <Application,Ljava/net/ServerSocket>@42^NULL^FIELD,^false^true^Field escape;
+4^rummikub/Server.java^217^rummikub.Server.acceptClients()V^55 = invokevirtual < Application, Ljava/net/ServerSocket, accept()Ljava/net/Socket; > 53 @123 exception:54^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+5^rummikub/Client.java^42^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+6^rummikub/Client.java^43^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+7^rummikub/Client.java^44^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+8^rummikub/Server.java^41^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+9^rummikub/Server.java^106^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

@@ -1,0 +1,7 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^com/swemel/sevenzip/archive/SevenZipFolderInStream.java^37^com.swemel.sevenzip.archive.SevenZipFolderInStream.openStream()V^6 = new <Application,Lcom/swemel/sevenzip/common/InStreamWithCRC>@17^NULL^FIELD,^false^true^Field escape;
+1^com/swemel/sevenzip/common/InStreamWithCRC.java^16^com.swemel.sevenzip.common.InStreamWithCRC.<init>(Ljava/lang/String;)V^7 = new <Application,Ljava/io/RandomAccessFile>@16^NULL^FIELD,^false^true^Field escape;
+2^com/swemel/common/RandomAccessOutputStream.java^20^com.swemel.common.RandomAccessOutputStream.<init>(Ljava/io/File;Ljava/lang/String;)V^11 = new <Application,Ljava/io/RandomAccessFile>@30^NULL^FIELD,^false^true^Field escape;
+3^com/swemel/sevenzip/SevenZip.java^68^com.swemel.sevenzip.SevenZip.<init>(Ljava/lang/String;[Ljava/io/File;)V^18 = new <Application,Lcom/swemel/common/RandomAccessOutputStream>@54^NULL^FIELD,^false^true^Field escape;
+4^com/swemel/sevenzip/SevenZip.java^150^com.swemel.sevenzip.SevenZip.createArchive()V^93 = new <Application,Lcom/swemel/sevenzip/archive/SevenZipFolderInStream>@342^NULL^FIELD,INVOKE,^false^true^Field escape;
+5^com/swemel/sevenzip/common/InStreamWithCRC.java^9^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

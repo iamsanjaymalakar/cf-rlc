@@ -1,0 +1,58 @@
+../../../../datasets/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/hw4/CircuitProblem.java:64: error: (required.method.not.called) $$ 4 $$ method close $$ sc $$ java.util.Scanner $$ possible exceptional exit due to null with exception type java.lang.AssertionError $$ ( 1178, 1214 ) $$ @MustCall method close may not have been invoked on sc or any of its aliases.
+			sc = new Scanner(new File(filename));
+			   ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: possible exceptional exit due to null with exception type java.lang.AssertionError
+../../../../datasets/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/org/json/JSONObject.java:1555: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-717 $$ java.io.Writer $$ regular method exit $$ ( 52755, 52784 ) $$ @MustCall method close may not have been invoked on temp-var-717 or any of its aliases.
+                    ((JSONObject)v).write(writer);
+                                         ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/org/json/JSONObject.java:1557: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-718 $$ java.io.Writer $$ regular method exit $$ ( 52859, 52887 ) $$ @MustCall method close may not have been invoked on temp-var-718 or any of its aliases.
+                    ((JSONArray)v).write(writer);
+                                        ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/org/json/JSONArray.java:946: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-899 $$ java.io.Writer $$ regular method exit $$ ( 30564, 30593 ) $$ @MustCall method close may not have been invoked on temp-var-899 or any of its aliases.
+                    ((JSONObject)v).write(writer);
+                                         ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/org/json/JSONArray.java:948: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-900 $$ java.io.Writer $$ regular method exit $$ ( 30668, 30696 ) $$ @MustCall method close may not have been invoked on temp-var-900 or any of its aliases.
+                    ((JSONArray)v).write(writer);
+                                        ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java:447: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1459 $$ java.io.Writer $$ possible exceptional exit due to XML.toJSONObject(s) with exception type org.json.JSONException $$ ( 22624, 22651 ) $$ @MustCall method close may not have been invoked on temp-var-1459 or any of its aliases.
+            System.out.println(j.write(new StringWriter()));
+                                      ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: possible exceptional exit due to XML.toJSONObject(s) with exception type org.json.JSONException
+../../../../datasets/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/hw2_P1/Parser.java:71: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.BufferedReader $$ regular method exit $$ ( 1471, 1539 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+				reader = new BufferedReader(new InputStreamReader(url.openStream()));
+				       ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/hw5/P3bMain.java:76: error: (required.method.not.called) $$ 4 $$ method close $$ sc $$ java.util.Scanner $$ regular method exit $$ ( 1515, 1547 ) $$ @MustCall method close may not have been invoked on sc or any of its aliases.
+			sc = new Scanner(new File(file));
+			   ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/hw5/P3bMain.java:126: error: (required.method.not.called) $$ 4 $$ method close $$ sc $$ java.util.Scanner $$ variable overwritten by assignment sc = new Scanner(new File(efile)) $$ ( 2531, 2564 ) $$ @MustCall method close may not have been invoked on sc or any of its aliases.
+			sc = new Scanner(new File(tfile));
+			   ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: variable overwritten by assignment sc = new Scanner(new File(efile))
+../../../../datasets/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/hw5/P3bMain.java:141: error: (required.method.not.called) $$ 4 $$ method close $$ sc $$ java.util.Scanner $$ regular method exit $$ ( 2823, 2856 ) $$ @MustCall method close may not have been invoked on sc or any of its aliases.
+			sc = new Scanner(new File(efile));
+			   ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/hw5/P3bMain.java:198: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2428 $$ java.io.FileWriter $$ possible exceptional exit due to out.write(forfile) with exception type java.io.IOException $$ ( 4102, 4126 ) $$ @MustCall method close may not have been invoked on temp-var-2428 or any of its aliases.
+			BufferedWriter out = new BufferedWriter(new FileWriter(filename));
+			                                        ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(forfile) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+11 errors

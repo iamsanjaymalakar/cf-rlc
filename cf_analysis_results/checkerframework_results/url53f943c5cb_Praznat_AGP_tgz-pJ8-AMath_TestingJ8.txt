@@ -1,0 +1,23 @@
+../../../../datasets/june2020_dataset/url53f943c5cb_Praznat_AGP_tgz-pJ8-AMath_TestingJ8/src/Questing/QStack.java:50: error: (assignment) $$ 2 $$ @MustCall Class<capture#34 extends @MustCallUnknown Quest> $$ @MustCall Class<? extends @MustCall Quest> $$ ( 1290, 1302 ) $$ incompatible types in assignment.
+			oldQuests[i++] = q.getClass();
+			                           ^
+  found   : @MustCall Class<capture#34 extends @MustCallUnknown Quest>
+  required: @MustCall Class<? extends @MustCall Quest>
+../../../../datasets/june2020_dataset/url53f943c5cb_Praznat_AGP_tgz-pJ8-AMath_TestingJ8/src/Game/DefFile.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-4239 $$ java.io.FileReader $$ possible exceptional exit due to inFile.readLine() with exception type java.io.IOException $$ ( 449, 471 ) $$ @MustCall method close may not have been invoked on temp-var-4239 or any of its aliases.
+		            new FileReader( file ) );	
+		            ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to inFile.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url53f943c5cb_Praznat_AGP_tgz-pJ8-AMath_TestingJ8/src/Questing/Knowledge/KnowledgeBlock.java:63: error: (assignment) $$ 2 $$ @MustCallUnknown Object @MustCall [] $$ @MustCall Object @MustCall [] $$ ( 2207, 2245 ) $$ incompatible types in assignment.
+		x = new Object[] {goldO, silverO, bronzeV};
+		    ^
+  found   : @MustCallUnknown Object @MustCall []
+  required: @MustCall Object @MustCall []
+../../../../datasets/june2020_dataset/url53f943c5cb_Praznat_AGP_tgz-pJ8-AMath_TestingJ8/src/Questing/Knowledge/KnowledgeObserver.java:33: error: (return) $$ 2 $$ @MustCallUnknown String $$ @MustCall String $$ ( 829, 842 ) $$ incompatible types in return.
+		return x + " : " + y;
+		                 ^
+  type of expression: @MustCallUnknown String
+  method return type: @MustCall String
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 errors

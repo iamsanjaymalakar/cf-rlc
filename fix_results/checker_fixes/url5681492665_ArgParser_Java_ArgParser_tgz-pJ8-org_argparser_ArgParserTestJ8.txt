@@ -1,0 +1,15 @@
+9600
+240
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url5681492665_ArgParser_Java_ArgParser_tgz-pJ8-org_argparser_ArgParserTestJ8/src/org/argparser/ArgParser.java; Line number 2206
+vim +2206 ../../../dataset/june2020_dataset/url5681492665_ArgParser_Java_ArgParser_tgz-pJ8-org_argparser_ArgParserTestJ8/src/org/argparser/ArgParser.java
+
++++ Add following code below line: 2209 (org/argparser/ArgParser.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 2206
+
+--------------------------------------------

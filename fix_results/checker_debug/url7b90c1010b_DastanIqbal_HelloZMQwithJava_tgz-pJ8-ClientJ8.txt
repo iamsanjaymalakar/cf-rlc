@@ -1,0 +1,39 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^zmq/IOThread.java^46^zmq.IOThread.<init>(Lzmq/Ctx;I)V^23 = invokevirtual < Application, Lzmq/Mailbox, get_fd()Ljava/nio/channels/SelectableChannel; > 21 @64 exception:22^NULL^INVOKE,ARRAY,FIELD,^false^true^Field escape;
+1^zmq/Mailbox.java^55^zmq.Mailbox.<init>(Ljava/lang/String;)V^13 = new <Application,Lzmq/Signaler>@35^NULL^FIELD,^false^true^Field escape;
+2^zmq/Poller.java^75^zmq.Poller.<init>(Ljava/lang/String;)V^9 = invokestatic < Application, Ljava/nio/channels/Selector, open()Ljava/nio/channels/Selector; > @36 exception:8^NULL^FIELD,^false^true^Field escape;
+3^zmq/Signaler.java^59^zmq.Signaler.<init>()V^16 = invokestatic < Application, Ljava/nio/channels/Selector, open()Ljava/nio/channels/Selector; > @53 exception:15^NULL^FIELD,^false^true^Field escape;
+4^zmq/Signaler.java^59^zmq.Signaler.<init>()V^16 = invokestatic < Application, Ljava/nio/channels/Selector, open()Ljava/nio/channels/Selector; > @53 exception:15^NULL^FIELD,^true^true^Field escape;
+5^zmq/Signaler.java^89^zmq.Signaler.make_fdpair()V^9 = invokevirtual < Application, Ljava/nio/channels/Pipe, source()Ljava/nio/channels/Pipe$SourceChannel; > 4 @19 exception:8^NULL^FIELD,^false^true^Field escape;
+6^zmq/Signaler.java^90^zmq.Signaler.make_fdpair()V^11 = invokevirtual < Application, Ljava/nio/channels/Pipe, sink()Ljava/nio/channels/Pipe$SinkChannel; > 4 @27 exception:10^NULL^FIELD,^false^true^Field escape;
+7^zmq/SocketBase.java^91^zmq.SocketBase.<init>(Lzmq/Ctx;II)V^16 = new <Application,Lzmq/Mailbox>@78^NULL^FIELD,^false^true^Field escape;
+8^zmq/Reaper.java^53^zmq.Reaper.<init>(Lzmq/Ctx;I)V^24 = invokevirtual < Application, Lzmq/Mailbox, get_fd()Ljava/nio/channels/SelectableChannel; > 22 @74 exception:23^NULL^INVOKE,ARRAY,FIELD,^false^true^Field escape;
+9^zmq/ZMQ.java^583^zmq.ZMQ.zmq_poll([Lzmq/PollItem;IJ)I^7 = invokestatic < Application, Lzmq/ZMQ$PollSelector, open()Ljava/nio/channels/Selector; > @3 exception:6^NULL^INVOKE,FIELD,^false^true^Field escape;
+10^zmq/PollItem.java^90^zmq.PollItem.getChannel()Ljava/nio/channels/SelectableChannel;^8 = invokevirtual < Application, Lzmq/SocketBase, get_fd()Ljava/nio/channels/SelectableChannel; > 6 @11 exception:7^NULL^RETURN,INVOKE,ARRAY,FIELD,^false^true^Field escape;
+11^zmq/TcpConnecter.java^145^zmq.TcpConnecter.connect_event()V^6 = invokespecial < Application, Lzmq/TcpConnecter, connect()Ljava/nio/channels/SocketChannel; > 1 @5 exception:5^zmq.TcpConnecter.connect_event()V#16,^INVOKE,FIELD,^false^true^Field escape;
+12^zmq/TcpConnecter.java^270^zmq.TcpConnecter.open()Z^8 = invokestatic < Application, Ljava/nio/channels/SocketChannel, open()Ljava/nio/channels/SocketChannel; > @22 exception:7^NULL^FIELD,^false^true^Field escape;
+13^zmq/TcpListener.java^83^zmq.TcpListener.accept_event()V^5 = invokespecial < Application, Lzmq/TcpListener, accept()Ljava/nio/channels/SocketChannel; > 1 @3 exception:4^NULL^INVOKE,FIELD,^false^true^Field escape;
+14^zmq/TcpListener.java^143^zmq.TcpListener.set_address(Ljava/lang/String;)Z^15 = invokestatic < Application, Ljava/nio/channels/ServerSocketChannel, open()Ljava/nio/channels/ServerSocketChannel; > @35 exception:14^NULL^FIELD,^false^true^Field escape;
+15^org/zeromq/ZThread.java^83^org.zeromq.ZThread.fork(Lorg/zeromq/ZContext;Lorg/zeromq/ZThread$IAttachedRunnable;[Ljava/lang/Object;)Lorg/zeromq/ZMQ$Socket;^21 = invokestatic < Application, Lorg/zeromq/ZContext, shadow(Lorg/zeromq/ZContext;)Lorg/zeromq/ZContext; > 1 @40 exception:20^NULL^INVOKE,FIELD,^false^true^Field escape;
+16^org/zeromq/ZLoop.java^155^org.zeromq.ZLoop.addPoller(Lorg/zeromq/ZMQ$PollItem;Lorg/zeromq/ZLoop$IZLoopHandler;Ljava/lang/Object;)I^7 = invokevirtual < Application, Lorg/zeromq/ZMQ$PollItem, getRawSocket()Ljava/nio/channels/SelectableChannel; > 2 @5 exception:6^NULL^ARRAY,FIELD,^false^true^Field escape;
+17^org/zeromq/ZLoop.java^165^org.zeromq.ZLoop.addPoller(Lorg/zeromq/ZMQ$PollItem;Lorg/zeromq/ZLoop$IZLoopHandler;Ljava/lang/Object;)I^34 = invokevirtual < Application, Lorg/zeromq/ZMQ$PollItem, getSocket()Lorg/zeromq/ZMQ$Socket; > 2 @98 exception:33^NULL^INVOKE,ARRAY,FIELD,^false^true^Field escape;
+18^org/zeromq/ZLoop.java^189^org.zeromq.ZLoop.removePoller(Lorg/zeromq/ZMQ$PollItem;)V^35 = invokevirtual < Application, Lorg/zeromq/ZMQ$PollItem, getSocket()Lorg/zeromq/ZMQ$Socket; > 2 @102 exception:34^NULL^INVOKE,ARRAY,FIELD,^false^true^Field escape;
+19^org/zeromq/ZLoop.java^300^org.zeromq.ZLoop.start()I^99 = invokevirtual < Application, Lorg/zeromq/ZMQ$PollItem, getSocket()Lorg/zeromq/ZMQ$Socket; > 97 @390 exception:98^NULL^INVOKE,ARRAY,FIELD,^false^true^Field escape;
+20^org/zeromq/ZLoop.java^313^org.zeromq.ZLoop.start()I^132 = invokevirtual < Application, Lorg/zeromq/ZMQ$PollItem, getSocket()Lorg/zeromq/ZMQ$Socket; > 130 @513 exception:131^NULL^INVOKE,ARRAY,FIELD,^false^true^Field escape;
+21^zmq/Poller.java^180^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+22^zmq/SocketBase.java^751^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+23^zmq/ZMQ.java^772^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+24^zmq/Transfer.java^60^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+25^zmq/TcpConnecter.java^42^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+26^zmq/TcpConnecter.java^73^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+27^zmq/TcpConnecter.java^166^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+28^zmq/TcpConnecter.java^303^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+29^zmq/TcpListener.java^34^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+30^zmq/TcpListener.java^49^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+31^zmq/TcpListener.java^130^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+32^zmq/Utils.java^74^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+33^zmq/StreamEngine.java^84^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+34^org/zeromq/ZMQ.java^1215^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+35^org/zeromq/ZMQ.java^1438^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+36^org/zeromq/ZMQ.java^1438^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+37^org/zeromq/ZMQ.java^1438^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

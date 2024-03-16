@@ -1,0 +1,53 @@
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Connection.java:100: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.Socket $$ regular method exit $$ ( 3248, 3283 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+                final Socket socket = new Socket();
+                             ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:466: error: (required.method.not.called) $$ 4 $$ method close $$ new ServerSocket(m_Port) $$ java.net.ServerSocket $$ regular method exit $$ ( 17256, 17280 ) $$ @MustCall method close may not have been invoked on new ServerSocket(m_Port) or any of its aliases.
+            m_ServerSocket = new ServerSocket(m_Port);
+                             ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:535: error: (required.method.not.called) $$ 4 $$ method close $$ clientSocket $$ java.net.Socket $$ regular method exit $$ ( 19567, 19614 ) $$ @MustCall method close may not have been invoked on clientSocket or any of its aliases.
+            final Socket clientSocket = acceptConnection();
+                         ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:333: error: (required.method.not.called) $$ 4 $$ method close $$ connection $$ java.sql.Connection $$ possible exceptional exit due to connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS) with exception type java.sql.SQLException $$ ( 13011, 13064 ) $$ @MustCall method close may not have been invoked on connection or any of its aliases.
+            final Connection connection = m_Pool.getConnection();
+                             ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: possible exceptional exit due to connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS) with exception type java.sql.SQLException
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/db/DBConnection.java:355: error: (required.method.not.called) $$ 4 $$ method close $$ connection $$ java.sql.Connection $$ possible exceptional exit due to connection.setAutoCommit(false) with exception type java.sql.SQLException $$ ( 13916, 13969 ) $$ @MustCall method close may not have been invoked on connection or any of its aliases.
+            final Connection connection = m_Pool.getConnection();
+                             ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: possible exceptional exit due to connection.setAutoCommit(false) with exception type java.sql.SQLException
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileLoader.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(fileName) $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(m_FileInputStream) with exception type java.io.IOException $$ ( 430, 459 ) $$ @MustCall method close may not have been invoked on new FileInputStream(fileName) or any of its aliases.
+            m_FileInputStream = new FileInputStream(fileName);
+                                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(m_FileInputStream) with exception type java.io.IOException
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileSaver.java:19: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(fileName) $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(m_FileOutputStream) with exception type java.io.IOException $$ ( 456, 486 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(fileName) or any of its aliases.
+            m_FileOutputStream = new FileOutputStream(fileName);
+                                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(m_FileOutputStream) with exception type java.io.IOException
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/logging/LoggingUtility.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ fileWriter $$ java.io.FileWriter $$ possible exceptional exit due to bufferedWriter.write(outputString + "\r\n") with exception type java.io.IOException $$ ( 3977, 4042 ) $$ @MustCall method close may not have been invoked on fileWriter or any of its aliases.
+            final FileWriter fileWriter = new FileWriter(m_OutputFile, true);
+                             ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bufferedWriter.write(outputString + "\r\n") with exception type java.io.IOException
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/utility/ApplicationUtility.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(m_LockFile) $$ java.io.FileOutputStream $$ possible exceptional exit due to m_LockStream.write(f_content.getBytes()) with exception type java.io.IOException $$ ( 1406, 1438 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(m_LockFile) or any of its aliases.
+        m_LockStream = new FileOutputStream(m_LockFile);
+                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to m_LockStream.write(f_content.getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/utility/PropertiesUtility.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(configurationFile) $$ java.io.FileInputStream $$ possible exceptional exit due to properties.load(new FileInputStream(configurationFile)) with exception type java.io.IOException $$ ( 631, 669 ) $$ @MustCall method close may not have been invoked on new FileInputStream(configurationFile) or any of its aliases.
+            properties.load(new FileInputStream(configurationFile));
+                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(new FileInputStream(configurationFile)) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+10 errors

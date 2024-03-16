@@ -1,0 +1,65 @@
+../dataset/june2020_dataset/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/http/Response.java:87: error: (required.method.not.called) $$ 4 $$ method close $$ con.getErrorStream() $$ java.io.InputStream $$ possible exceptional exit due to con.getInputStream() with exception type java.io.IOException $$ ( 3380, 3400 ) $$ @MustCall method close may not have been invoked on con.getErrorStream() or any of its aliases.
+        if(null == (is = con.getErrorStream())){
+                                           ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to con.getInputStream() with exception type java.io.IOException
+../dataset/june2020_dataset/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/http/Response.java:88: error: (required.method.not.called) $$ 4 $$ method close $$ con.getInputStream() $$ java.io.InputStream $$ regular method exit $$ ( 3421, 3441 ) $$ @MustCall method close may not have been invoked on con.getInputStream() or any of its aliases.
+            is = con.getInputStream();
+                                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Configuration.java:80: error: (required.method.not.called) $$ 4 $$ method close $$ Configuration.class.getResourceAsStream("/WEB-INF/" + t4jProps) $$ java.io.InputStream $$ regular method exit $$ ( 4279, 4342 ) $$ @MustCall method close may not have been invoked on Configuration.class.getResourceAsStream("/WEB-INF/" + t4jProps) or any of its aliases.
+                loadProperties(defaultProperty, Configuration.class.getResourceAsStream("/WEB-INF/" + t4jProps)) ||
+                                                                                       ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Configuration.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ Configuration.class.getResourceAsStream("/" + t4jProps) $$ java.io.InputStream $$ regular method exit $$ ( 4395, 4450 ) $$ @MustCall method close may not have been invoked on Configuration.class.getResourceAsStream("/" + t4jProps) or any of its aliases.
+                loadProperties(defaultProperty, Configuration.class.getResourceAsStream("/" + t4jProps));
+                                                                                       ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Configuration.java:88: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(file) $$ java.io.FileInputStream $$ possible exceptional exit due to props.load(new FileInputStream(file)) with exception type java.io.IOException $$ ( 4664, 4689 ) $$ @MustCall method close may not have been invoked on new FileInputStream(file) or any of its aliases.
+                props.load(new FileInputStream(file));
+                           ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to props.load(new FileInputStream(file)) with exception type java.io.IOException
+../dataset/june2020_dataset/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/com/ufgov/longrm/RobotFrame.java:208: error: (required.method.not.called) $$ 4 $$ method close $$ inStream $$ java.io.FileInputStream $$ possible exceptional exit due to properties.load(inStream) with exception type java.io.IOException $$ ( 6042, 6102 ) $$ @MustCall method close may not have been invoked on inStream or any of its aliases.
+      FileInputStream inStream = new FileInputStream(settingFile);
+                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(inStream) with exception type java.io.IOException
+../dataset/june2020_dataset/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/com/ufgov/longrm/RobotFrame.java:246: error: (required.method.not.called) $$ 4 $$ method close $$ inStream $$ java.io.FileInputStream $$ possible exceptional exit due to properties.load(inStream) with exception type java.io.IOException $$ ( 7415, 7475 ) $$ @MustCall method close may not have been invoked on inStream or any of its aliases.
+      FileInputStream inStream = new FileInputStream(settingFile);
+                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(inStream) with exception type java.io.IOException
+../dataset/june2020_dataset/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/com/ufgov/longrm/RobotFrame.java:256: error: (required.method.not.called) $$ 4 $$ method close $$ outStream $$ java.io.OutputStream $$ possible exceptional exit due to properties.store(outStream, "Update setting!") with exception type java.io.IOException $$ ( 7956, 8015 ) $$ @MustCall method close may not have been invoked on outStream or any of its aliases.
+      OutputStream outStream = new FileOutputStream(settingFile);
+                   ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.store(outStream, "Update setting!") with exception type java.io.IOException
+../dataset/june2020_dataset/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/com/ufgov/longrm/AccessTokenUtil.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ inStream $$ java.io.FileInputStream $$ possible exceptional exit due to properties.load(inStream) with exception type java.io.IOException $$ ( 594, 647 ) $$ @MustCall method close may not have been invoked on inStream or any of its aliases.
+    FileInputStream inStream = new FileInputStream(file);
+                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(inStream) with exception type java.io.IOException
+../dataset/june2020_dataset/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/com/ufgov/longrm/AccessTokenUtil.java:36: error: (required.method.not.called) $$ 4 $$ method close $$ inStream $$ java.io.FileInputStream $$ possible exceptional exit due to properties.load(inStream) with exception type java.io.IOException $$ ( 1169, 1222 ) $$ @MustCall method close may not have been invoked on inStream or any of its aliases.
+    FileInputStream inStream = new FileInputStream(file);
+                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(inStream) with exception type java.io.IOException
+../dataset/june2020_dataset/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/com/ufgov/longrm/AccessTokenUtil.java:53: error: (required.method.not.called) $$ 4 $$ method close $$ inStream $$ java.io.FileInputStream $$ possible exceptional exit due to properties.load(inStream) with exception type java.io.IOException $$ ( 1871, 1924 ) $$ @MustCall method close may not have been invoked on inStream or any of its aliases.
+    FileInputStream inStream = new FileInputStream(file);
+                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(inStream) with exception type java.io.IOException
+../dataset/june2020_dataset/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/com/ufgov/longrm/AccessTokenUtil.java:60: error: (required.method.not.called) $$ 4 $$ method close $$ outStream $$ java.io.OutputStream $$ possible exceptional exit due to properties.store(outStream, "Update " + screenName + "\'s access token!") with exception type java.io.IOException $$ ( 2215, 2267 ) $$ @MustCall method close may not have been invoked on outStream or any of its aliases.
+    OutputStream outStream = new FileOutputStream(file);
+                 ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.store(outStream, "Update " + screenName + "\'s access token!") with exception type java.io.IOException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+12 errors

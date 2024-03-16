@@ -1,0 +1,13 @@
+../dataset/june2020_dataset/url8551e9ebc1_mishika05_Salesforce_DataGen_tgz-pJ8-org_json_TestJ8/src/MyProperties.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(propFile) $$ java.io.FileInputStream $$ possible exceptional exit due to prop.load(new FileInputStream(propFile)) with exception type java.io.IOException $$ ( 887, 916 ) $$ @MustCall method close may not have been invoked on new FileInputStream(propFile) or any of its aliases.
+    		prop.load(new FileInputStream(propFile));
+    		          ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to prop.load(new FileInputStream(propFile)) with exception type java.io.IOException
+../dataset/june2020_dataset/url8551e9ebc1_mishika05_Salesforce_DataGen_tgz-pJ8-org_json_TestJ8/src/RecordGen.java:44: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(new File("bugIds.log")) $$ java.io.FileReader $$ possible exceptional exit due to lnr.skip(Long.MAX_VALUE) with exception type java.io.IOException $$ ( 1482, 1520 ) $$ @MustCall method close may not have been invoked on new FileReader(new File("bugIds.log")) or any of its aliases.
+    	 LineNumberReader  lnr = new LineNumberReader(new FileReader(new File("bugIds.log")));
+    	                                              ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to lnr.skip(Long.MAX_VALUE) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors

@@ -1,0 +1,22 @@
+../dataset/june2020_dataset/url1d5e9d990f_Telsis_jOCP_tgz-pJ8-com_telsis_jocp_sampleApp_BasicOCPAppJ8/src/com/telsis/jocp/OCPLinkManager.java:1411: error: (reset.not.owning) $$ 2 $$ bind $$ this.socket $$ ( 51552, 51611 ) $$ Calling method bind resets the must-call obligations of the expression this.socket, which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+                socket.bind(new InetSocketAddress(localAddress, localPort));
+                           ^
+../dataset/june2020_dataset/url1d5e9d990f_Telsis_jOCP_tgz-pJ8-com_telsis_jocp_sampleApp_BasicOCPAppJ8/src/com/telsis/jocp/OCPLinkManager.java:1420: error: (required.method.not.called) $$ 4 $$ method close $$ Selector.open() $$ java.nio.channels.Selector $$ regular method exit $$ ( 52071, 52086 ) $$ @MustCall method close may not have been invoked on Selector.open() or any of its aliases.
+                        socketSelector = Selector.open();
+                                                      ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url1d5e9d990f_Telsis_jOCP_tgz-pJ8-com_telsis_jocp_sampleApp_BasicOCPAppJ8/src/com/telsis/jocp/OCPLinkManager.java:1427: error: (reset.not.owning) $$ 2 $$ connect $$ this.channel $$ ( 52356, 52446 ) $$ Calling method connect resets the must-call obligations of the expression this.channel, which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+                if (channel.connect(new InetSocketAddress(remoteAddress,
+                                   ^
+../dataset/june2020_dataset/url1d5e9d990f_Telsis_jOCP_tgz-pJ8-com_telsis_jocp_sampleApp_BasicOCPAppJ8/src/com/telsis/jocp/OCPLinkManager.java:1488: error: (required.method.not.called) $$ 4 $$ method close $$ Selector.open() $$ java.nio.channels.Selector $$ possible exceptional exit due to channel.register(socketSelector, SelectionKey.OP_READ) with exception type java.nio.channels.ClosedChannelException $$ ( 54886, 54901 ) $$ @MustCall method close may not have been invoked on Selector.open() or any of its aliases.
+                socketSelector = Selector.open();
+                                              ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: possible exceptional exit due to channel.register(socketSelector, SelectionKey.OP_READ) with exception type java.nio.channels.ClosedChannelException
+../dataset/june2020_dataset/url1d5e9d990f_Telsis_jOCP_tgz-pJ8-com_telsis_jocp_sampleApp_BasicOCPAppJ8/src/com/telsis/jocp/OCPLinkManager.java:1867: error: (required.method.not.called) $$ 4 $$ method close $$ Selector.open() $$ java.nio.channels.Selector $$ possible exceptional exit due to channel.register(socketSelector, SelectionKey.OP_WRITE) with exception type java.nio.channels.ClosedChannelException $$ ( 69786, 69801 ) $$ @MustCall method close may not have been invoked on Selector.open() or any of its aliases.
+                socketSelector = Selector.open();
+                                              ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: possible exceptional exit due to channel.register(socketSelector, SelectionKey.OP_WRITE) with exception type java.nio.channels.ClosedChannelException
+5 errors

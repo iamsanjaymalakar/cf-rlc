@@ -1,0 +1,1866 @@
+An exception has occurred in the compiler ((version info not available)). Please file a bug against the Java compiler via the Java bug reporting page (http://bugreport.java.com) after checking the Bug Database (http://bugs.java.com) for duplicates. Include your program and the following diagnostic in your report. Thank you.
+com.sun.tools.javac.util.ClientCodeException: java.lang.Error: Problem while parsing ../dataset/june2020_dataset/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8//wpi-out/org/jbox2d/dynamics/World-org.checkerframework.checker.mustcall.MustCallChecker.ajava that corresponds to ../dataset/june2020_dataset/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/org/jbox2d/dynamics/World.java
+	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:832)
+	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+	at com.sun.tools.javac.Main.compile(Main.java:57)
+	at com.sun.tools.javac.Main.main(Main.java:43)
+Caused by: java.lang.Error: Problem while parsing ../dataset/june2020_dataset/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8//wpi-out/org/jbox2d/dynamics/World-org.checkerframework.checker.mustcall.MustCallChecker.ajava that corresponds to ../dataset/june2020_dataset/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/org/jbox2d/dynamics/World.java
+	at org.checkerframework.framework.type.AnnotatedTypeFactory.setRoot(AnnotatedTypeFactory.java:1013)
+	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.setRoot(GenericAnnotatedTypeFactory.java:445)
+	at org.checkerframework.checker.mustcall.MustCallAnnotatedTypeFactory.setRoot(MustCallAnnotatedTypeFactory.java:153)
+	at org.checkerframework.common.basetype.BaseTypeVisitor.setRoot(BaseTypeVisitor.java:386)
+	at org.checkerframework.framework.source.SourceChecker.setRoot(SourceChecker.java:669)
+	at org.checkerframework.common.basetype.BaseTypeChecker.setRoot(BaseTypeChecker.java:167)
+	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:1037)
+	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:559)
+	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:552)
+	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+	... 8 more
+Caused by: org.checkerframework.javacutil.BugInCF: org.checkerframework.framework.stub.AnnotationFileParser.AjavaAnnotationCollectorVisitor.visitLists(
+public class World {
+    public static final int WORLD_POOL_SIZE = 100;
+    public static final int WORLD_POOL_CONTAINER_SIZE = 10;
+    public static final int NEW_FIXTURE = 1;
+    public static final int LOCKED = 2;
+    public static final int CLEAR_FORCES = 4;
+    public int activeContacts = 0;
+    public int contactPoolCount = 0;
+    protected int m_flags;
+    protected ContactManager m_contactManager;
+    private Body m_bodyList;
+    private Joint m_jointList;
+    private int m_bodyCount;
+    private int m_jointCount;
+    private final Vec2 m_gravity = new Vec2();
+    private boolean m_allowSleep;
+    private DestructionListener m_destructionListener;
+    private DebugDraw m_debugDraw;
+    private final IWorldPool pool;
+    private float m_inv_dt0;
+    private boolean m_warmStarting;
+    private boolean m_continuousPhysics;
+    private ContactRegister[][] contactStacks = new ContactRegister[ShapeType.TYPE_COUNT][ShapeType.TYPE_COUNT];
+    
+    public World(Vec2 gravity, boolean doSleep) {
+        this(gravity, doSleep, new DefaultWorldPool(WORLD_POOL_SIZE, WORLD_POOL_CONTAINER_SIZE));
+    }
+    
+    public World(Vec2 gravity, boolean doSleep, IWorldPool argPool) {
+        super();
+        pool = argPool;
+        m_destructionListener = null;
+        m_debugDraw = null;
+        m_bodyList = null;
+        m_jointList = null;
+        m_bodyCount = 0;
+        m_jointCount = 0;
+        m_warmStarting = true;
+        m_continuousPhysics = true;
+        m_allowSleep = doSleep;
+        m_gravity.set(gravity);
+        m_flags = CLEAR_FORCES;
+        m_inv_dt0 = 0.0F;
+        m_contactManager = new ContactManager(this);
+        initializeRegisters();
+    }
+    
+    public void setAllowSleep(boolean argAllowSleep) {
+        m_allowSleep = argAllowSleep;
+    }
+    
+    public boolean isAllowSleep() {
+        return m_allowSleep;
+    }
+    
+    private void addType(IDynamicStack<Contact> creator, ShapeType type1, ShapeType type2) {
+        ContactRegister register = new ContactRegister();
+        register.creator = creator;
+        register.primary = true;
+        contactStacks[type1.intValue][type2.intValue] = register;
+        if (type1 != type2) {
+            ContactRegister register2 = new ContactRegister();
+            register2.creator = creator;
+            register2.primary = false;
+            contactStacks[type2.intValue][type1.intValue] = register2;
+        }
+    }
+    
+    private void initializeRegisters() {
+        addType(pool.getCircleContactStack(), ShapeType.CIRCLE, ShapeType.CIRCLE);
+        addType(pool.getPolyCircleContactStack(), ShapeType.POLYGON, ShapeType.CIRCLE);
+        addType(pool.getPolyContactStack(), ShapeType.POLYGON, ShapeType.POLYGON);
+    }
+    
+    public Contact popContact(Fixture fixtureA, Fixture fixtureB) {
+        final ShapeType type1 = fixtureA.getType();
+        final ShapeType type2 = fixtureB.getType();
+        final ContactRegister reg = contactStacks[type1.intValue][type2.intValue];
+        final IDynamicStack<Contact> creator = reg.creator;
+        if (creator != null) {
+            if (reg.primary) {
+                Contact c = creator.pop();
+                c.init(fixtureA, fixtureB);
+                return c;
+            } else {
+                Contact c = creator.pop();
+                c.init(fixtureB, fixtureA);
+                return c;
+            }
+        } else {
+            return null;
+        }
+    }
+    
+    public void pushContact(Contact contact) {
+        if (contact.m_manifold.pointCount > 0) {
+            contact.getFixtureA().getBody().setAwake(true);
+            contact.getFixtureB().getBody().setAwake(true);
+        }
+        ShapeType type1 = contact.getFixtureA().getType();
+        ShapeType type2 = contact.getFixtureB().getType();
+        IDynamicStack<Contact> creator = contactStacks[type1.intValue][type2.intValue].creator;
+        creator.push(contact);
+    }
+    
+    public IWorldPool getPool() {
+        return pool;
+    }
+    
+    public void setDestructionListener(DestructionListener listener) {
+        m_destructionListener = listener;
+    }
+    
+    public void setContactFilter(ContactFilter filter) {
+        m_contactManager.m_contactFilter = filter;
+    }
+    
+    public void setContactListener(ContactListener listener) {
+        m_contactManager.m_contactListener = listener;
+    }
+    
+    public void setDebugDraw(DebugDraw debugDraw) {
+        m_debugDraw = debugDraw;
+    }
+    
+    public Body createBody(BodyDef def) {
+        assert (isLocked() == false);
+        if (isLocked()) {
+            return null;
+        }
+        Body b = new Body(def, this);
+        b.m_prev = null;
+        b.m_next = m_bodyList;
+        if (m_bodyList != null) {
+            m_bodyList.m_prev = b;
+        }
+        m_bodyList = b;
+        ++m_bodyCount;
+        return b;
+    }
+    
+    public void destroyBody(Body body) {
+        assert (m_bodyCount > 0);
+        assert (isLocked() == false);
+        if (isLocked()) {
+            return;
+        }
+        JointEdge je = body.m_jointList;
+        while (je != null) {
+            JointEdge je0 = je;
+            je = je.next;
+            if (m_destructionListener != null) {
+                m_destructionListener.sayGoodbye(je0.joint);
+            }
+            destroyJoint(je0.joint);
+        }
+        body.m_jointList = null;
+        ContactEdge ce = body.m_contactList;
+        while (ce != null) {
+            ContactEdge ce0 = ce;
+            ce = ce.next;
+            m_contactManager.destroy(ce0.contact);
+        }
+        body.m_contactList = null;
+        Fixture f = body.m_fixtureList;
+        while (f != null) {
+            Fixture f0 = f;
+            f = f.m_next;
+            if (m_destructionListener != null) {
+                m_destructionListener.sayGoodbye(f0);
+            }
+            f0.destroyProxy(m_contactManager.m_broadPhase);
+            f0.destroy();
+        }
+        body.m_fixtureList = null;
+        body.m_fixtureCount = 0;
+        if (body.m_prev != null) {
+            body.m_prev.m_next = body.m_next;
+        }
+        if (body.m_next != null) {
+            body.m_next.m_prev = body.m_prev;
+        }
+        if (body == m_bodyList) {
+            m_bodyList = body.m_next;
+        }
+        --m_bodyCount;
+    }
+    
+    public Joint createJoint(JointDef def) {
+        assert (isLocked() == false);
+        if (isLocked()) {
+            return null;
+        }
+        Joint j = Joint.create(this, def);
+        j.m_prev = null;
+        j.m_next = m_jointList;
+        if (m_jointList != null) {
+            m_jointList.m_prev = j;
+        }
+        m_jointList = j;
+        ++m_jointCount;
+        j.m_edgeA.joint = j;
+        j.m_edgeA.other = j.m_bodyB;
+        j.m_edgeA.prev = null;
+        j.m_edgeA.next = j.m_bodyA.m_jointList;
+        if (j.m_bodyA.m_jointList != null) {
+            j.m_bodyA.m_jointList.prev = j.m_edgeA;
+        }
+        j.m_bodyA.m_jointList = j.m_edgeA;
+        j.m_edgeB.joint = j;
+        j.m_edgeB.other = j.m_bodyA;
+        j.m_edgeB.prev = null;
+        j.m_edgeB.next = j.m_bodyB.m_jointList;
+        if (j.m_bodyB.m_jointList != null) {
+            j.m_bodyB.m_jointList.prev = j.m_edgeB;
+        }
+        j.m_bodyB.m_jointList = j.m_edgeB;
+        Body bodyA = def.bodyA;
+        Body bodyB = def.bodyB;
+        if (def.collideConnected == false) {
+            ContactEdge edge = bodyB.getContactList();
+            while (edge != null) {
+                if (edge.other == bodyA) {
+                    edge.contact.flagForFiltering();
+                }
+                edge = edge.next;
+            }
+        }
+        return j;
+    }
+    
+    public void destroyJoint(Joint j) {
+        assert (isLocked() == false);
+        if (isLocked()) {
+            return;
+        }
+        boolean collideConnected = j.m_collideConnected;
+        if (j.m_prev != null) {
+            j.m_prev.m_next = j.m_next;
+        }
+        if (j.m_next != null) {
+            j.m_next.m_prev = j.m_prev;
+        }
+        if (j == m_jointList) {
+            m_jointList = j.m_next;
+        }
+        Body bodyA = j.m_bodyA;
+        Body bodyB = j.m_bodyB;
+        bodyA.setAwake(true);
+        bodyB.setAwake(true);
+        if (j.m_edgeA.prev != null) {
+            j.m_edgeA.prev.next = j.m_edgeA.next;
+        }
+        if (j.m_edgeA.next != null) {
+            j.m_edgeA.next.prev = j.m_edgeA.prev;
+        }
+        if (j.m_edgeA == bodyA.m_jointList) {
+            bodyA.m_jointList = j.m_edgeA.next;
+        }
+        j.m_edgeA.prev = null;
+        j.m_edgeA.next = null;
+        if (j.m_edgeB.prev != null) {
+            j.m_edgeB.prev.next = j.m_edgeB.next;
+        }
+        if (j.m_edgeB.next != null) {
+            j.m_edgeB.next.prev = j.m_edgeB.prev;
+        }
+        if (j.m_edgeB == bodyB.m_jointList) {
+            bodyB.m_jointList = j.m_edgeB.next;
+        }
+        j.m_edgeB.prev = null;
+        j.m_edgeB.next = null;
+        Joint.destroy(j);
+        assert (m_jointCount > 0);
+        --m_jointCount;
+        if (collideConnected == false) {
+            ContactEdge edge = bodyB.getContactList();
+            while (edge != null) {
+                if (edge.other == bodyA) {
+                    edge.contact.flagForFiltering();
+                }
+                edge = edge.next;
+            }
+        }
+    }
+    private final TimeStep step = new TimeStep();
+    
+    public void step(float dt, int velocityIterations, int positionIterations) {
+        if ((m_flags & NEW_FIXTURE) == NEW_FIXTURE) {
+            m_contactManager.findNewContacts();
+            m_flags &= ~NEW_FIXTURE;
+        }
+        m_flags |= LOCKED;
+        step.dt = dt;
+        step.velocityIterations = velocityIterations;
+        step.positionIterations = positionIterations;
+        if (dt > 0.0F) {
+            step.inv_dt = 1.0F / dt;
+        } else {
+            step.inv_dt = 0.0F;
+        }
+        step.dtRatio = m_inv_dt0 * dt;
+        step.warmStarting = m_warmStarting;
+        m_contactManager.collide();
+        if (step.dt > 0.0F) {
+            solve(step);
+        }
+        if (m_continuousPhysics && step.dt > 0.0F) {
+            solveTOI();
+        }
+        if (step.dt > 0.0F) {
+            m_inv_dt0 = step.inv_dt;
+        }
+        if ((m_flags & CLEAR_FORCES) == CLEAR_FORCES) {
+            clearForces();
+        }
+        m_flags &= ~LOCKED;
+    }
+    
+    public void clearForces() {
+        for (Body body = m_bodyList; body != null; body = body.getNext()) {
+            body.m_force.setZero();
+            body.m_torque = 0.0F;
+        }
+    }
+    private final Color3f color = new Color3f();
+    private final Transform xf = new Transform();
+    private final Vec2 cA = new Vec2();
+    private final Vec2 cB = new Vec2();
+    private final Vec2Array avs = new Vec2Array();
+    
+    public void drawDebugData() {
+        if (m_debugDraw == null) {
+            return;
+        }
+        int flags = m_debugDraw.getFlags();
+        if ((flags & DebugDraw.e_shapeBit) == DebugDraw.e_shapeBit) {
+            for (Body b = m_bodyList; b != null; b = b.getNext()) {
+                xf.set(b.getTransform());
+                for (Fixture f = b.getFixtureList(); f != null; f = f.getNext()) {
+                    if (b.isActive() == false) {
+                        color.set(0.5F, 0.5F, 0.3F);
+                        drawShape(f, xf, color);
+                    } else if (b.getType() == BodyType.STATIC) {
+                        color.set(0.5F, 0.9F, 0.3F);
+                        drawShape(f, xf, color);
+                    } else if (b.getType() == BodyType.KINEMATIC) {
+                        color.set(0.5F, 0.5F, 0.9F);
+                        drawShape(f, xf, color);
+                    } else if (b.isAwake() == false) {
+                        color.set(0.5F, 0.5F, 0.5F);
+                        drawShape(f, xf, color);
+                    } else {
+                        color.set(0.9F, 0.7F, 0.7F);
+                        drawShape(f, xf, color);
+                    }
+                }
+            }
+        }
+        if ((flags & DebugDraw.e_jointBit) == DebugDraw.e_jointBit) {
+            for (Joint j = m_jointList; j != null; j = j.getNext()) {
+                drawJoint(j);
+            }
+        }
+        if ((flags & DebugDraw.e_pairBit) == DebugDraw.e_pairBit) {
+            color.set(0.3F, 0.9F, 0.9F);
+            for (Contact c = m_contactManager.m_contactList; c != null; c = c.getNext()) {
+                Fixture fixtureA = c.getFixtureA();
+                Fixture fixtureB = c.getFixtureB();
+                fixtureA.getAABB().getCenterToOut(cA);
+                fixtureB.getAABB().getCenterToOut(cB);
+                m_debugDraw.drawSegment(cA, cB, color);
+            }
+        }
+        if ((flags & DebugDraw.e_aabbBit) == DebugDraw.e_aabbBit) {
+            color.set(0.9F, 0.3F, 0.9F);
+            for (Body b = m_bodyList; b != null; b = b.getNext()) {
+                if (b.isActive() == false) {
+                    continue;
+                }
+                for (Fixture f = b.getFixtureList(); f != null; f = f.getNext()) {
+                    AABB aabb = f.m_proxy.aabb;
+                    Vec2[] vs = avs.get(4);
+                    vs[0].set(aabb.lowerBound.x, aabb.lowerBound.y);
+                    vs[1].set(aabb.upperBound.x, aabb.lowerBound.y);
+                    vs[2].set(aabb.upperBound.x, aabb.upperBound.y);
+                    vs[3].set(aabb.lowerBound.x, aabb.upperBound.y);
+                    m_debugDraw.drawPolygon(vs, 4, color);
+                }
+            }
+        }
+        if ((flags & DebugDraw.e_centerOfMassBit) == DebugDraw.e_centerOfMassBit) {
+            for (Body b = m_bodyList; b != null; b = b.getNext()) {
+                xf.set(b.getTransform());
+                xf.position.set(b.getWorldCenter());
+                m_debugDraw.drawTransform(xf);
+            }
+        }
+        if ((flags & DebugDraw.e_dynamicTreeBit) == DebugDraw.e_dynamicTreeBit) {
+            m_contactManager.m_broadPhase.drawTree(m_debugDraw);
+        }
+    }
+    private final WorldQueryWrapper wqwrapper = new WorldQueryWrapper();
+    
+    public void queryAABB(QueryCallback callback, AABB aabb) {
+        wqwrapper.broadPhase = m_contactManager.m_broadPhase;
+        wqwrapper.callback = callback;
+        m_contactManager.m_broadPhase.query(wqwrapper, aabb);
+    }
+    private final WorldRayCastWrapper wrcwrapper = new WorldRayCastWrapper();
+    private final RayCastInput input = new RayCastInput();
+    
+    public void raycast(RayCastCallback callback, Vec2 point1, Vec2 point2) {
+        wrcwrapper.broadPhase = m_contactManager.m_broadPhase;
+        wrcwrapper.callback = callback;
+        input.maxFraction = 1.0F;
+        input.p1.set(point1);
+        input.p2.set(point2);
+        m_contactManager.m_broadPhase.raycast(wrcwrapper, input);
+    }
+    
+    public Body getBodyList() {
+        return m_bodyList;
+    }
+    
+    public Joint getJointList() {
+        return m_jointList;
+    }
+    
+    public Contact getContactList() {
+        return m_contactManager.m_contactList;
+    }
+    
+    public void setWarmStarting(boolean flag) {
+        m_warmStarting = flag;
+    }
+    
+    public boolean isWarmStarting() {
+        return m_warmStarting;
+    }
+    
+    public void setContinuousPhysics(boolean flag) {
+        m_continuousPhysics = flag;
+    }
+    
+    public boolean isContinuousPhysics() {
+        return m_continuousPhysics;
+    }
+    
+    public int getProxyCount() {
+        return m_contactManager.m_broadPhase.getProxyCount();
+    }
+    
+    public int getBodyCount() {
+        return m_bodyCount;
+    }
+    
+    public int getJointCount() {
+        return m_jointCount;
+    }
+    
+    public int getContactCount() {
+        return m_contactManager.m_contactCount;
+    }
+    
+    public void setGravity(Vec2 gravity) {
+        m_gravity.set(gravity);
+    }
+    
+    public Vec2 getGravity() {
+        return m_gravity;
+    }
+    
+    public boolean isLocked() {
+        return (m_flags & LOCKED) == LOCKED;
+    }
+    
+    public void setAutoClearForces(boolean flag) {
+        if (flag) {
+            m_flags |= CLEAR_FORCES;
+        } else {
+            m_flags &= ~CLEAR_FORCES;
+        }
+    }
+    
+    public boolean getAutoClearForces() {
+        return (m_flags & CLEAR_FORCES) == CLEAR_FORCES;
+    }
+    private final Island island = new Island();
+    private Body[] stack = new Body[10];
+    
+    private void solve(TimeStep step) {
+        island.init(m_bodyCount, m_contactManager.m_contactCount, m_jointCount, m_contactManager.m_contactListener);
+        for (Body b = m_bodyList; b != null; b = b.m_next) {
+            b.m_flags &= ~Body.e_islandFlag;
+        }
+        for (Contact c = m_contactManager.m_contactList; c != null; c = c.m_next) {
+            c.m_flags &= ~Contact.ISLAND_FLAG;
+        }
+        for (Joint j = m_jointList; j != null; j = j.m_next) {
+            j.m_islandFlag = false;
+        }
+        int stackSize = m_bodyCount;
+        if (stack.length < stackSize) {
+            stack = new Body[stackSize];
+        }
+        for (Body seed = m_bodyList; seed != null; seed = seed.m_next) {
+            if ((seed.m_flags & Body.e_islandFlag) == Body.e_islandFlag) {
+                continue;
+            }
+            if (seed.isAwake() == false || seed.isActive() == false) {
+                continue;
+            }
+            if (seed.getType() == BodyType.STATIC) {
+                continue;
+            }
+            island.clear();
+            int stackCount = 0;
+            stack[stackCount++] = seed;
+            seed.m_flags |= Body.e_islandFlag;
+            while (stackCount > 0) {
+                Body b = stack[--stackCount];
+                assert (b.isActive() == true);
+                island.add(b);
+                b.setAwake(true);
+                if (b.getType() == BodyType.STATIC) {
+                    continue;
+                }
+                for (ContactEdge ce = b.m_contactList; ce != null; ce = ce.next) {
+                    Contact contact = ce.contact;
+                    if ((contact.m_flags & Contact.ISLAND_FLAG) == Contact.ISLAND_FLAG) {
+                        continue;
+                    }
+                    if (contact.isEnabled() == false || contact.isTouching() == false) {
+                        continue;
+                    }
+                    boolean sensorA = contact.m_fixtureA.m_isSensor;
+                    boolean sensorB = contact.m_fixtureB.m_isSensor;
+                    if (sensorA || sensorB) {
+                        continue;
+                    }
+                    island.add(contact);
+                    contact.m_flags |= Contact.ISLAND_FLAG;
+                    Body other = ce.other;
+                    if ((other.m_flags & Body.e_islandFlag) == Body.e_islandFlag) {
+                        continue;
+                    }
+                    assert (stackCount < stackSize);
+                    stack[stackCount++] = other;
+                    other.m_flags |= Body.e_islandFlag;
+                }
+                for (JointEdge je = b.m_jointList; je != null; je = je.next) {
+                    if (je.joint.m_islandFlag == true) {
+                        continue;
+                    }
+                    Body other = je.other;
+                    if (other.isActive() == false) {
+                        continue;
+                    }
+                    island.add(je.joint);
+                    je.joint.m_islandFlag = true;
+                    if ((other.m_flags & Body.e_islandFlag) == Body.e_islandFlag) {
+                        continue;
+                    }
+                    assert (stackCount < stackSize);
+                    stack[stackCount++] = other;
+                    other.m_flags |= Body.e_islandFlag;
+                }
+            }
+            island.solve(step, m_gravity, m_allowSleep);
+            for (int i = 0; i < island.m_bodyCount; ++i) {
+                Body b = island.m_bodies[i];
+                if (b.getType() == BodyType.STATIC) {
+                    b.m_flags &= ~Body.e_islandFlag;
+                }
+            }
+        }
+        for (Body b = m_bodyList; b != null; b = b.getNext()) {
+            if ((b.m_flags & Body.e_islandFlag) == 0) {
+                continue;
+            }
+            if (b.getType() == BodyType.STATIC) {
+                continue;
+            }
+            b.synchronizeFixtures();
+        }
+        m_contactManager.findNewContacts();
+    }
+    
+    private void solveTOI() {
+        for (Contact c = m_contactManager.m_contactList; c != null; c = c.m_next) {
+            c.m_flags |= Contact.ENABLED_FLAG;
+            c.m_toiCount = 0;
+        }
+        for (Body body = m_bodyList; body != null; body = body.m_next) {
+            if ((body.m_flags & Body.e_islandFlag) == 0 || body.getType() == BodyType.KINEMATIC || body.getType() == BodyType.STATIC) {
+                body.m_flags |= Body.e_toiFlag;
+            } else {
+                body.m_flags &= ~Body.e_toiFlag;
+            }
+        }
+        for (Body body = m_bodyList; body != null; body = body.m_next) {
+            if ((body.m_flags & Body.e_toiFlag) == Body.e_toiFlag) {
+                continue;
+            }
+            if (body.isBullet() == true) {
+                continue;
+            }
+            solveTOI(body);
+            body.m_flags |= Body.e_toiFlag;
+        }
+        for (Body body = m_bodyList; body != null; body = body.m_next) {
+            if ((body.m_flags & Body.e_toiFlag) == Body.e_toiFlag) {
+                continue;
+            }
+            if (body.isBullet() == false) {
+                continue;
+            }
+            solveTOI(body);
+            body.m_flags |= Body.e_toiFlag;
+        }
+    }
+    private final TOIInput toiInput = new TOIInput();
+    private final TOIOutput toiOutput = new TOIOutput();
+    private final Sweep backup = new Sweep();
+    private final TOISolver toiSolver = new TOISolver();
+    private Contact[] m_contacts = new Contact[Settings.maxTOIContacts];
+    
+    private void solveTOI(Body body) {
+        Contact toiContact = null;
+        float toi = 1.0F;
+        Body toiOther = null;
+        boolean found;
+        int count;
+        int iter = 0;
+        boolean bullet = body.isBullet();
+        do {
+            count = 0;
+            found = false;
+            for (ContactEdge ce = body.m_contactList; ce != null; ce = ce.next) {
+                if (ce.contact == toiContact) {
+                    continue;
+                }
+                Body other = ce.other;
+                BodyType type = other.getType();
+                if (bullet == true) {
+                    if ((other.m_flags & Body.e_toiFlag) == 0) {
+                        continue;
+                    }
+                    if (type != BodyType.STATIC && (ce.contact.m_flags & Contact.BULLET_HIT_FLAG) != 0) {
+                        continue;
+                    }
+                } else if (type == BodyType.DYNAMIC) {
+                    continue;
+                }
+                Contact contact = ce.contact;
+                if (contact.isEnabled() == false) {
+                    continue;
+                }
+                if (contact.m_toiCount > 10) {
+                    continue;
+                }
+                Fixture fixtureA = contact.m_fixtureA;
+                Fixture fixtureB = contact.m_fixtureB;
+                if (fixtureA.isSensor() || fixtureB.isSensor()) {
+                    continue;
+                }
+                Body bodyA = fixtureA.m_body;
+                Body bodyB = fixtureB.m_body;
+                toiInput.proxyA.set(fixtureA.getShape());
+                toiInput.proxyB.set(fixtureB.getShape());
+                toiInput.sweepA.set(bodyA.m_sweep);
+                toiInput.sweepB.set(bodyB.m_sweep);
+                toiInput.tMax = toi;
+                pool.getTimeOfImpact().timeOfImpact(toiOutput, toiInput);
+                if (toiOutput.state == TOIOutputState.TOUCHING && toiOutput.t < toi) {
+                    toiContact = contact;
+                    toi = toiOutput.t;
+                    toiOther = other;
+                    found = true;
+                }
+                ++count;
+            }
+            ++iter;
+        }         while (found && count > 1 && iter < 50);
+        if (toiContact == null) {
+            body.advance(1.0F);
+            return;
+        }
+        backup.set(body.m_sweep);
+        body.advance(toi);
+        toiContact.update(m_contactManager.m_contactListener);
+        if (toiContact.isEnabled() == false) {
+            body.m_sweep.set(backup);
+            solveTOI(body);
+        }
+        ++toiContact.m_toiCount;
+        if (m_contacts == null || m_contacts.length < Settings.maxTOIContacts) {
+            m_contacts = new Contact[Settings.maxTOIContacts];
+        }
+        count = 0;
+        for (ContactEdge ce = body.m_contactList; ce != null && count < Settings.maxTOIContacts; ce = ce.next) {
+            Body other = ce.other;
+            BodyType type = other.getType();
+            if (type == BodyType.DYNAMIC) {
+                continue;
+            }
+            Contact contact = ce.contact;
+            if (contact.isEnabled() == false) {
+                continue;
+            }
+            Fixture fixtureA = contact.m_fixtureA;
+            Fixture fixtureB = contact.m_fixtureB;
+            if (fixtureA.isSensor() || fixtureB.isSensor()) {
+                continue;
+            }
+            if (contact != toiContact) {
+                contact.update(m_contactManager.m_contactListener);
+            }
+            if (contact.isEnabled() == false) {
+                continue;
+            }
+            if (contact.isTouching() == false) {
+                continue;
+            }
+            m_contacts[count] = contact;
+            ++count;
+        }
+        toiSolver.initialize(m_contacts, count, body);
+        float k_toiBaumgarte = 0.75F;
+        for (int i = 0; i < 20; ++i) {
+            boolean contactsOkay = toiSolver.solve(k_toiBaumgarte);
+            if (contactsOkay) {
+                break;
+            }
+        }
+        if (toiOther.getType() != BodyType.STATIC) {
+            toiContact.m_flags |= Contact.BULLET_HIT_FLAG;
+        }
+    }
+    
+    private void drawJoint(Joint joint) {
+        Body bodyA = joint.getBodyA();
+        Body bodyB = joint.getBodyB();
+        Transform xf1 = bodyA.getTransform();
+        Transform xf2 = bodyB.getTransform();
+        Vec2 x1 = xf1.position;
+        Vec2 x2 = xf2.position;
+        Vec2 p1 = pool.popVec2();
+        Vec2 p2 = pool.popVec2();
+        joint.getAnchorA(p1);
+        joint.getAnchorB(p2);
+        color.set(0.5F, 0.8F, 0.8F);
+        switch (joint.getType()) {
+        case DISTANCE: 
+            m_debugDraw.drawSegment(p1, p2, color);
+            break;
+        
+        case PULLEY: 
+            {
+                PulleyJoint pulley = (PulleyJoint)joint;
+                Vec2 s1 = pulley.getGroundAnchorA();
+                Vec2 s2 = pulley.getGroundAnchorB();
+                m_debugDraw.drawSegment(s1, p1, color);
+                m_debugDraw.drawSegment(s2, p2, color);
+                m_debugDraw.drawSegment(s1, s2, color);
+            }
+            break;
+        
+        case CONSTANT_VOLUME: 
+        
+        case MOUSE: 
+            break;
+        
+        default: 
+            m_debugDraw.drawSegment(x1, p1, color);
+            m_debugDraw.drawSegment(p1, p2, color);
+            m_debugDraw.drawSegment(x2, p2, color);
+        
+        }
+        pool.pushVec2(2);
+    }
+    private static Integer LIQUID_INT = new Integer(1234598372);
+    private float liquidLength = 0.12F;
+    private float averageLinearVel = -1;
+    private final Vec2 liquidOffset = new Vec2();
+    private final Vec2 circCenterMoved = new Vec2();
+    private final Color3f liquidColor = new Color3f(0.4F, 0.4F, 1.0F);
+    private final Vec2 center = new Vec2();
+    private final Vec2 axis = new Vec2();
+    private final Vec2Array tlvertices = new Vec2Array();
+    
+    private void drawShape(Fixture fixture, Transform xf, Color3f color) {
+        switch (fixture.getType()) {
+        case CIRCLE: 
+            {
+                CircleShape circle = (CircleShape)fixture.getShape();
+                Transform.mulToOut(xf, circle.m_p, center);
+                float radius = circle.m_radius;
+                axis.set(xf.R.col1);
+                if (fixture.getUserData() != null && fixture.getUserData().equals(LIQUID_INT)) {
+                    Body b = fixture.getBody();
+                    liquidOffset.set(b.m_linearVelocity);
+                    float linVelLength = b.m_linearVelocity.length();
+                    if (averageLinearVel == -1) {
+                        averageLinearVel = linVelLength;
+                    } else {
+                        averageLinearVel = 0.98F * averageLinearVel + 0.02F * linVelLength;
+                    }
+                    liquidOffset.mulLocal(liquidLength / averageLinearVel / 2);
+                    circCenterMoved.set(center).addLocal(liquidOffset);
+                    center.subLocal(liquidOffset);
+                    m_debugDraw.drawSegment(center, circCenterMoved, liquidColor);
+                    return;
+                }
+                m_debugDraw.drawSolidCircle(center, radius, axis, color);
+            }
+            break;
+        
+        case POLYGON: 
+            {
+                PolygonShape poly = (PolygonShape)fixture.getShape();
+                int vertexCount = poly.m_vertexCount;
+                assert (vertexCount <= Settings.maxPolygonVertices);
+                Vec2[] vertices = tlvertices.get(Settings.maxPolygonVertices);
+                for (int i = 0; i < vertexCount; ++i) {
+                    Transform.mulToOut(xf, poly.m_vertices[i], vertices[i]);
+                }
+                m_debugDraw.drawSolidPolygon(vertices, vertexCount, color);
+            }
+            break;
+        
+        }
+    }
+},
+class WorldQueryWrapper implements TreeCallback {
+    
+    WorldQueryWrapper() {
+        super();
+    }
+    
+    public boolean treeCallback(DynamicTreeNode node) {
+        Fixture fixture = (Fixture)node.userData;
+        return callback.reportFixture(fixture);
+    }
+    BroadPhase broadPhase;
+    QueryCallback callback;
+},;,
+class WorldRayCastWrapper implements TreeRayCastCallback {
+    
+    WorldRayCastWrapper() {
+        super();
+    }
+    private final RayCastOutput output = new RayCastOutput();
+    private final Vec2 temp = new Vec2();
+    private final Vec2 point = new Vec2();
+    
+    public float raycastCallback(RayCastInput input, DynamicTreeNode node) {
+        Object userData = node.userData;
+        Fixture fixture = (Fixture)userData;
+        boolean hit = fixture.raycast(output, input);
+        if (hit) {
+            float fraction = output.fraction;
+            temp.set(input.p2).mulLocal(fraction);
+            point.set(input.p1).mulLocal(1 - fraction).addLocal(temp);
+            return callback.reportFixture(fixture, point, output.normal, fraction);
+        }
+        return input.maxFraction;
+    }
+    BroadPhase broadPhase;
+    RayCastCallback callback;
+},; [size 5], [@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.mustcall.MustCallChecker")
+public class World {
+
+    public static final int WORLD_POOL_SIZE = 100;
+
+    public static final int WORLD_POOL_CONTAINER_SIZE = 10;
+
+    public static final int NEW_FIXTURE = 0x0001;
+
+    public static final int LOCKED = 0x0002;
+
+    public static final int CLEAR_FORCES = 0x0004;
+
+    public int activeContacts = 0;
+
+    public int contactPoolCount = 0;
+
+    protected int m_flags;
+
+    protected ContactManager m_contactManager;
+
+    private Body m_bodyList;
+
+    private Joint m_jointList;
+
+    private int m_bodyCount;
+
+    private int m_jointCount;
+
+    private final Vec2 m_gravity = new Vec2();
+
+    private boolean m_allowSleep;
+
+    private DestructionListener m_destructionListener;
+
+    private DebugDraw m_debugDraw;
+
+    private final IWorldPool pool;
+
+    private float m_inv_dt0;
+
+    private boolean m_warmStarting;
+
+    private boolean m_continuousPhysics;
+
+    private ContactRegister[][] contactStacks = new ContactRegister[ShapeType.TYPE_COUNT][ShapeType.TYPE_COUNT];
+
+    @org.checkerframework.dataflow.qual.Impure
+    public World(Vec2 gravity, boolean doSleep) {
+        this(gravity, doSleep, new DefaultWorldPool(WORLD_POOL_SIZE, WORLD_POOL_CONTAINER_SIZE));
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public World(Vec2 gravity, boolean doSleep, IWorldPool argPool) {
+        pool = argPool;
+        m_destructionListener = null;
+        m_debugDraw = null;
+        m_bodyList = null;
+        m_jointList = null;
+        m_bodyCount = 0;
+        m_jointCount = 0;
+        m_warmStarting = true;
+        m_continuousPhysics = true;
+        m_allowSleep = doSleep;
+        m_gravity.set(gravity);
+        m_flags = CLEAR_FORCES;
+        m_inv_dt0 = 0f;
+        m_contactManager = new ContactManager(this);
+        initializeRegisters();
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void setAllowSleep(boolean argAllowSleep) {
+        m_allowSleep = argAllowSleep;
+    }
+
+    @org.checkerframework.dataflow.qual.Pure
+    public boolean isAllowSleep() {
+        return m_allowSleep;
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    private void addType(IDynamicStack<Contact> creator, ShapeType type1, ShapeType type2) {
+        ContactRegister register = new ContactRegister();
+        register.creator = creator;
+        register.primary = true;
+        contactStacks[type1.intValue][type2.intValue] = register;
+        if (type1 != type2) {
+            ContactRegister register2 = new ContactRegister();
+            register2.creator = creator;
+            register2.primary = false;
+            contactStacks[type2.intValue][type1.intValue] = register2;
+        }
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    private void initializeRegisters() {
+        addType(pool.getCircleContactStack(), ShapeType.CIRCLE, ShapeType.CIRCLE);
+        addType(pool.getPolyCircleContactStack(), ShapeType.POLYGON, ShapeType.CIRCLE);
+        addType(pool.getPolyContactStack(), ShapeType.POLYGON, ShapeType.POLYGON);
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public Contact popContact(Fixture fixtureA, Fixture fixtureB) {
+        final ShapeType type1 = fixtureA.getType();
+        final ShapeType type2 = fixtureB.getType();
+        final ContactRegister reg = contactStacks[type1.intValue][type2.intValue];
+        final IDynamicStack<Contact> creator = reg.creator;
+        if (creator != null) {
+            if (reg.primary) {
+                Contact c = creator.pop();
+                c.init(fixtureA, fixtureB);
+                return c;
+            } else {
+                Contact c = creator.pop();
+                c.init(fixtureB, fixtureA);
+                return c;
+            }
+        } else {
+            return null;
+        }
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void pushContact(Contact contact) {
+        if (contact.m_manifold.pointCount > 0) {
+            contact.getFixtureA().getBody().setAwake(true);
+            contact.getFixtureB().getBody().setAwake(true);
+        }
+        ShapeType type1 = contact.getFixtureA().getType();
+        ShapeType type2 = contact.getFixtureB().getType();
+        IDynamicStack<Contact> creator = contactStacks[type1.intValue][type2.intValue].creator;
+        creator.push(contact);
+    }
+
+    @org.checkerframework.dataflow.qual.Pure
+    public IWorldPool getPool() {
+        return pool;
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void setDestructionListener(DestructionListener listener) {
+        m_destructionListener = listener;
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void setContactFilter(ContactFilter filter) {
+        m_contactManager.m_contactFilter = filter;
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void setContactListener(ContactListener listener) {
+        m_contactManager.m_contactListener = listener;
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void setDebugDraw(DebugDraw debugDraw) {
+        m_debugDraw = debugDraw;
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public Body createBody(BodyDef def) {
+        assert (isLocked() == false);
+        if (isLocked()) {
+            return null;
+        }
+        Body b = new Body(def, this);
+        b.m_prev = null;
+        b.m_next = m_bodyList;
+        if (m_bodyList != null) {
+            m_bodyList.m_prev = b;
+        }
+        m_bodyList = b;
+        ++m_bodyCount;
+        return b;
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void destroyBody(Body body) {
+        assert (m_bodyCount > 0);
+        assert (isLocked() == false);
+        if (isLocked()) {
+            return;
+        }
+        JointEdge je = body.m_jointList;
+        while (je != null) {
+            JointEdge je0 = je;
+            je = je.next;
+            if (m_destructionListener != null) {
+                m_destructionListener.sayGoodbye(je0.joint);
+            }
+            destroyJoint(je0.joint);
+        }
+        body.m_jointList = null;
+        ContactEdge ce = body.m_contactList;
+        while (ce != null) {
+            ContactEdge ce0 = ce;
+            ce = ce.next;
+            m_contactManager.destroy(ce0.contact);
+        }
+        body.m_contactList = null;
+        Fixture f = body.m_fixtureList;
+        while (f != null) {
+            Fixture f0 = f;
+            f = f.m_next;
+            if (m_destructionListener != null) {
+                m_destructionListener.sayGoodbye(f0);
+            }
+            f0.destroyProxy(m_contactManager.m_broadPhase);
+            f0.destroy();
+        }
+        body.m_fixtureList = null;
+        body.m_fixtureCount = 0;
+        if (body.m_prev != null) {
+            body.m_prev.m_next = body.m_next;
+        }
+        if (body.m_next != null) {
+            body.m_next.m_prev = body.m_prev;
+        }
+        if (body == m_bodyList) {
+            m_bodyList = body.m_next;
+        }
+        --m_bodyCount;
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public Joint createJoint(JointDef def) {
+        assert (isLocked() == false);
+        if (isLocked()) {
+            return null;
+        }
+        Joint j = Joint.create(this, def);
+        j.m_prev = null;
+        j.m_next = m_jointList;
+        if (m_jointList != null) {
+            m_jointList.m_prev = j;
+        }
+        m_jointList = j;
+        ++m_jointCount;
+        j.m_edgeA.joint = j;
+        j.m_edgeA.other = j.m_bodyB;
+        j.m_edgeA.prev = null;
+        j.m_edgeA.next = j.m_bodyA.m_jointList;
+        if (j.m_bodyA.m_jointList != null) {
+            j.m_bodyA.m_jointList.prev = j.m_edgeA;
+        }
+        j.m_bodyA.m_jointList = j.m_edgeA;
+        j.m_edgeB.joint = j;
+        j.m_edgeB.other = j.m_bodyA;
+        j.m_edgeB.prev = null;
+        j.m_edgeB.next = j.m_bodyB.m_jointList;
+        if (j.m_bodyB.m_jointList != null) {
+            j.m_bodyB.m_jointList.prev = j.m_edgeB;
+        }
+        j.m_bodyB.m_jointList = j.m_edgeB;
+        Body bodyA = def.bodyA;
+        Body bodyB = def.bodyB;
+        if (def.collideConnected == false) {
+            ContactEdge edge = bodyB.getContactList();
+            while (edge != null) {
+                if (edge.other == bodyA) {
+                    edge.contact.flagForFiltering();
+                }
+                edge = edge.next;
+            }
+        }
+        return j;
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void destroyJoint(Joint j) {
+        assert (isLocked() == false);
+        if (isLocked()) {
+            return;
+        }
+        boolean collideConnected = j.m_collideConnected;
+        if (j.m_prev != null) {
+            j.m_prev.m_next = j.m_next;
+        }
+        if (j.m_next != null) {
+            j.m_next.m_prev = j.m_prev;
+        }
+        if (j == m_jointList) {
+            m_jointList = j.m_next;
+        }
+        Body bodyA = j.m_bodyA;
+        Body bodyB = j.m_bodyB;
+        bodyA.setAwake(true);
+        bodyB.setAwake(true);
+        if (j.m_edgeA.prev != null) {
+            j.m_edgeA.prev.next = j.m_edgeA.next;
+        }
+        if (j.m_edgeA.next != null) {
+            j.m_edgeA.next.prev = j.m_edgeA.prev;
+        }
+        if (j.m_edgeA == bodyA.m_jointList) {
+            bodyA.m_jointList = j.m_edgeA.next;
+        }
+        j.m_edgeA.prev = null;
+        j.m_edgeA.next = null;
+        if (j.m_edgeB.prev != null) {
+            j.m_edgeB.prev.next = j.m_edgeB.next;
+        }
+        if (j.m_edgeB.next != null) {
+            j.m_edgeB.next.prev = j.m_edgeB.prev;
+        }
+        if (j.m_edgeB == bodyB.m_jointList) {
+            bodyB.m_jointList = j.m_edgeB.next;
+        }
+        j.m_edgeB.prev = null;
+        j.m_edgeB.next = null;
+        Joint.destroy(j);
+        assert (m_jointCount > 0);
+        --m_jointCount;
+        if (collideConnected == false) {
+            ContactEdge edge = bodyB.getContactList();
+            while (edge != null) {
+                if (edge.other == bodyA) {
+                    edge.contact.flagForFiltering();
+                }
+                edge = edge.next;
+            }
+        }
+    }
+
+    private final TimeStep step = new TimeStep();
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void step(float dt, int velocityIterations, int positionIterations) {
+        if ((m_flags & NEW_FIXTURE) == NEW_FIXTURE) {
+            m_contactManager.findNewContacts();
+            m_flags &= ~NEW_FIXTURE;
+        }
+        m_flags |= LOCKED;
+        step.dt = dt;
+        step.velocityIterations = velocityIterations;
+        step.positionIterations = positionIterations;
+        if (dt > 0.0f) {
+            step.inv_dt = 1.0f / dt;
+        } else {
+            step.inv_dt = 0.0f;
+        }
+        step.dtRatio = m_inv_dt0 * dt;
+        step.warmStarting = m_warmStarting;
+        m_contactManager.collide();
+        if (step.dt > 0.0f) {
+            solve(step);
+        }
+        if (m_continuousPhysics && step.dt > 0.0f) {
+            solveTOI();
+        }
+        if (step.dt > 0.0f) {
+            m_inv_dt0 = step.inv_dt;
+        }
+        if ((m_flags & CLEAR_FORCES) == CLEAR_FORCES) {
+            clearForces();
+        }
+        m_flags &= ~LOCKED;
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void clearForces() {
+        for (Body body = m_bodyList; body != null; body = body.getNext()) {
+            body.m_force.setZero();
+            body.m_torque = 0.0f;
+        }
+    }
+
+    private final Color3f color = new Color3f();
+
+    private final Transform xf = new Transform();
+
+    private final Vec2 cA = new Vec2();
+
+    private final Vec2 cB = new Vec2();
+
+    private final Vec2Array avs = new Vec2Array();
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void drawDebugData() {
+        if (m_debugDraw == null) {
+            return;
+        }
+        int flags = m_debugDraw.getFlags();
+        if ((flags & DebugDraw.e_shapeBit) == DebugDraw.e_shapeBit) {
+            for (Body b = m_bodyList; b != null; b = b.getNext()) {
+                xf.set(b.getTransform());
+                for (Fixture f = b.getFixtureList(); f != null; f = f.getNext()) {
+                    if (b.isActive() == false) {
+                        color.set(0.5f, 0.5f, 0.3f);
+                        drawShape(f, xf, color);
+                    } else if (b.getType() == BodyType.STATIC) {
+                        color.set(0.5f, 0.9f, 0.3f);
+                        drawShape(f, xf, color);
+                    } else if (b.getType() == BodyType.KINEMATIC) {
+                        color.set(0.5f, 0.5f, 0.9f);
+                        drawShape(f, xf, color);
+                    } else if (b.isAwake() == false) {
+                        color.set(0.5f, 0.5f, 0.5f);
+                        drawShape(f, xf, color);
+                    } else {
+                        color.set(0.9f, 0.7f, 0.7f);
+                        drawShape(f, xf, color);
+                    }
+                }
+            }
+        }
+        if ((flags & DebugDraw.e_jointBit) == DebugDraw.e_jointBit) {
+            for (Joint j = m_jointList; j != null; j = j.getNext()) {
+                drawJoint(j);
+            }
+        }
+        if ((flags & DebugDraw.e_pairBit) == DebugDraw.e_pairBit) {
+            color.set(0.3f, 0.9f, 0.9f);
+            for (Contact c = m_contactManager.m_contactList; c != null; c = c.getNext()) {
+                Fixture fixtureA = c.getFixtureA();
+                Fixture fixtureB = c.getFixtureB();
+                fixtureA.getAABB().getCenterToOut(cA);
+                fixtureB.getAABB().getCenterToOut(cB);
+                m_debugDraw.drawSegment(cA, cB, color);
+            }
+        }
+        if ((flags & DebugDraw.e_aabbBit) == DebugDraw.e_aabbBit) {
+            color.set(0.9f, 0.3f, 0.9f);
+            for (Body b = m_bodyList; b != null; b = b.getNext()) {
+                if (b.isActive() == false) {
+                    continue;
+                }
+                for (Fixture f = b.getFixtureList(); f != null; f = f.getNext()) {
+                    AABB aabb = f.m_proxy.aabb;
+                    Vec2[] vs = avs.get(4);
+                    vs[0].set(aabb.lowerBound.x, aabb.lowerBound.y);
+                    vs[1].set(aabb.upperBound.x, aabb.lowerBound.y);
+                    vs[2].set(aabb.upperBound.x, aabb.upperBound.y);
+                    vs[3].set(aabb.lowerBound.x, aabb.upperBound.y);
+                    m_debugDraw.drawPolygon(vs, 4, color);
+                }
+            }
+        }
+        if ((flags & DebugDraw.e_centerOfMassBit) == DebugDraw.e_centerOfMassBit) {
+            for (Body b = m_bodyList; b != null; b = b.getNext()) {
+                xf.set(b.getTransform());
+                xf.position.set(b.getWorldCenter());
+                m_debugDraw.drawTransform(xf);
+            }
+        }
+        if ((flags & DebugDraw.e_dynamicTreeBit) == DebugDraw.e_dynamicTreeBit) {
+            m_contactManager.m_broadPhase.drawTree(m_debugDraw);
+        }
+    }
+
+    private final WorldQueryWrapper wqwrapper = new WorldQueryWrapper();
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void queryAABB(QueryCallback callback, AABB aabb) {
+        wqwrapper.broadPhase = m_contactManager.m_broadPhase;
+        wqwrapper.callback = callback;
+        m_contactManager.m_broadPhase.query(wqwrapper, aabb);
+    }
+
+    private final WorldRayCastWrapper wrcwrapper = new WorldRayCastWrapper();
+
+    private final RayCastInput input = new RayCastInput();
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void raycast(RayCastCallback callback, Vec2 point1, Vec2 point2) {
+        wrcwrapper.broadPhase = m_contactManager.m_broadPhase;
+        wrcwrapper.callback = callback;
+        input.maxFraction = 1.0f;
+        input.p1.set(point1);
+        input.p2.set(point2);
+        m_contactManager.m_broadPhase.raycast(wrcwrapper, input);
+    }
+
+    @org.checkerframework.dataflow.qual.Pure
+    public Body getBodyList() {
+        return m_bodyList;
+    }
+
+    @org.checkerframework.dataflow.qual.Pure
+    public Joint getJointList() {
+        return m_jointList;
+    }
+
+    @org.checkerframework.dataflow.qual.Pure
+    public Contact getContactList() {
+        return m_contactManager.m_contactList;
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void setWarmStarting(boolean flag) {
+        m_warmStarting = flag;
+    }
+
+    @org.checkerframework.dataflow.qual.Pure
+    public boolean isWarmStarting() {
+        return m_warmStarting;
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void setContinuousPhysics(boolean flag) {
+        m_continuousPhysics = flag;
+    }
+
+    @org.checkerframework.dataflow.qual.Pure
+    public boolean isContinuousPhysics() {
+        return m_continuousPhysics;
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public int getProxyCount() {
+        return m_contactManager.m_broadPhase.getProxyCount();
+    }
+
+    @org.checkerframework.dataflow.qual.Pure
+    public int getBodyCount() {
+        return m_bodyCount;
+    }
+
+    @org.checkerframework.dataflow.qual.Pure
+    public int getJointCount() {
+        return m_jointCount;
+    }
+
+    @org.checkerframework.dataflow.qual.Pure
+    public int getContactCount() {
+        return m_contactManager.m_contactCount;
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void setGravity(Vec2 gravity) {
+        m_gravity.set(gravity);
+    }
+
+    @org.checkerframework.dataflow.qual.Pure
+    public Vec2 getGravity() {
+        return m_gravity;
+    }
+
+    @org.checkerframework.dataflow.qual.Pure
+    public boolean isLocked() {
+        return (m_flags & LOCKED) == LOCKED;
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    public void setAutoClearForces(boolean flag) {
+        if (flag) {
+            m_flags |= CLEAR_FORCES;
+        } else {
+            m_flags &= ~CLEAR_FORCES;
+        }
+    }
+
+    @org.checkerframework.dataflow.qual.Pure
+    public boolean getAutoClearForces() {
+        return (m_flags & CLEAR_FORCES) == CLEAR_FORCES;
+    }
+
+    private final Island island = new Island();
+
+    private Body[] stack = new Body[10];
+
+    @org.checkerframework.dataflow.qual.Impure
+    private void solve(TimeStep step) {
+        island.init(m_bodyCount, m_contactManager.m_contactCount, m_jointCount, m_contactManager.m_contactListener);
+        for (Body b = m_bodyList; b != null; b = b.m_next) {
+            b.m_flags &= ~Body.e_islandFlag;
+        }
+        for (Contact c = m_contactManager.m_contactList; c != null; c = c.m_next) {
+            c.m_flags &= ~Contact.ISLAND_FLAG;
+        }
+        for (Joint j = m_jointList; j != null; j = j.m_next) {
+            j.m_islandFlag = false;
+        }
+        int stackSize = m_bodyCount;
+        if (stack.length < stackSize) {
+            stack = new Body[stackSize];
+        }
+        for (Body seed = m_bodyList; seed != null; seed = seed.m_next) {
+            if ((seed.m_flags & Body.e_islandFlag) == Body.e_islandFlag) {
+                continue;
+            }
+            if (seed.isAwake() == false || seed.isActive() == false) {
+                continue;
+            }
+            if (seed.getType() == BodyType.STATIC) {
+                continue;
+            }
+            island.clear();
+            int stackCount = 0;
+            stack[stackCount++] = seed;
+            seed.m_flags |= Body.e_islandFlag;
+            while (stackCount > 0) {
+                Body b = stack[--stackCount];
+                assert (b.isActive() == true);
+                island.add(b);
+                b.setAwake(true);
+                if (b.getType() == BodyType.STATIC) {
+                    continue;
+                }
+                for (ContactEdge ce = b.m_contactList; ce != null; ce = ce.next) {
+                    Contact contact = ce.contact;
+                    if ((contact.m_flags & Contact.ISLAND_FLAG) == Contact.ISLAND_FLAG) {
+                        continue;
+                    }
+                    if (contact.isEnabled() == false || contact.isTouching() == false) {
+                        continue;
+                    }
+                    boolean sensorA = contact.m_fixtureA.m_isSensor;
+                    boolean sensorB = contact.m_fixtureB.m_isSensor;
+                    if (sensorA || sensorB) {
+                        continue;
+                    }
+                    island.add(contact);
+                    contact.m_flags |= Contact.ISLAND_FLAG;
+                    Body other = ce.other;
+                    if ((other.m_flags & Body.e_islandFlag) == Body.e_islandFlag) {
+                        continue;
+                    }
+                    assert (stackCount < stackSize);
+                    stack[stackCount++] = other;
+                    other.m_flags |= Body.e_islandFlag;
+                }
+                for (JointEdge je = b.m_jointList; je != null; je = je.next) {
+                    if (je.joint.m_islandFlag == true) {
+                        continue;
+                    }
+                    Body other = je.other;
+                    if (other.isActive() == false) {
+                        continue;
+                    }
+                    island.add(je.joint);
+                    je.joint.m_islandFlag = true;
+                    if ((other.m_flags & Body.e_islandFlag) == Body.e_islandFlag) {
+                        continue;
+                    }
+                    assert (stackCount < stackSize);
+                    stack[stackCount++] = other;
+                    other.m_flags |= Body.e_islandFlag;
+                }
+            }
+            island.solve(step, m_gravity, m_allowSleep);
+            for (int i = 0; i < island.m_bodyCount; ++i) {
+                Body b = island.m_bodies[i];
+                if (b.getType() == BodyType.STATIC) {
+                    b.m_flags &= ~Body.e_islandFlag;
+                }
+            }
+        }
+        for (Body b = m_bodyList; b != null; b = b.getNext()) {
+            if ((b.m_flags & Body.e_islandFlag) == 0) {
+                continue;
+            }
+            if (b.getType() == BodyType.STATIC) {
+                continue;
+            }
+            b.synchronizeFixtures();
+        }
+        m_contactManager.findNewContacts();
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    private void solveTOI() {
+        for (Contact c = m_contactManager.m_contactList; c != null; c = c.m_next) {
+            c.m_flags |= Contact.ENABLED_FLAG;
+            c.m_toiCount = 0;
+        }
+        for (Body body = m_bodyList; body != null; body = body.m_next) {
+            if ((body.m_flags & Body.e_islandFlag) == 0 || body.getType() == BodyType.KINEMATIC || body.getType() == BodyType.STATIC) {
+                body.m_flags |= Body.e_toiFlag;
+            } else {
+                body.m_flags &= ~Body.e_toiFlag;
+            }
+        }
+        for (Body body = m_bodyList; body != null; body = body.m_next) {
+            if ((body.m_flags & Body.e_toiFlag) == Body.e_toiFlag) {
+                continue;
+            }
+            if (body.isBullet() == true) {
+                continue;
+            }
+            solveTOI(body);
+            body.m_flags |= Body.e_toiFlag;
+        }
+        for (Body body = m_bodyList; body != null; body = body.m_next) {
+            if ((body.m_flags & Body.e_toiFlag) == Body.e_toiFlag) {
+                continue;
+            }
+            if (body.isBullet() == false) {
+                continue;
+            }
+            solveTOI(body);
+            body.m_flags |= Body.e_toiFlag;
+        }
+    }
+
+    private final TOIInput toiInput = new TOIInput();
+
+    private final TOIOutput toiOutput = new TOIOutput();
+
+    private final Sweep backup = new Sweep();
+
+    private final TOISolver toiSolver = new TOISolver();
+
+    private Contact[] m_contacts = new Contact[Settings.maxTOIContacts];
+
+    @org.checkerframework.dataflow.qual.Impure
+    private void solveTOI(Body body) {
+        Contact toiContact = null;
+        float toi = 1.0f;
+        Body toiOther = null;
+        boolean found;
+        int count;
+        int iter = 0;
+        boolean bullet = body.isBullet();
+        do {
+            count = 0;
+            found = false;
+            for (ContactEdge ce = body.m_contactList; ce != null; ce = ce.next) {
+                if (ce.contact == toiContact) {
+                    continue;
+                }
+                Body other = ce.other;
+                BodyType type = other.getType();
+                if (bullet == true) {
+                    if ((other.m_flags & Body.e_toiFlag) == 0) {
+                        continue;
+                    }
+                    if (type != BodyType.STATIC && (ce.contact.m_flags & Contact.BULLET_HIT_FLAG) != 0) {
+                        continue;
+                    }
+                } else if (type == BodyType.DYNAMIC) {
+                    continue;
+                }
+                Contact contact = ce.contact;
+                if (contact.isEnabled() == false) {
+                    continue;
+                }
+                if (contact.m_toiCount > 10) {
+                    continue;
+                }
+                Fixture fixtureA = contact.m_fixtureA;
+                Fixture fixtureB = contact.m_fixtureB;
+                if (fixtureA.isSensor() || fixtureB.isSensor()) {
+                    continue;
+                }
+                Body bodyA = fixtureA.m_body;
+                Body bodyB = fixtureB.m_body;
+                toiInput.proxyA.set(fixtureA.getShape());
+                toiInput.proxyB.set(fixtureB.getShape());
+                toiInput.sweepA.set(bodyA.m_sweep);
+                toiInput.sweepB.set(bodyB.m_sweep);
+                toiInput.tMax = toi;
+                pool.getTimeOfImpact().timeOfImpact(toiOutput, toiInput);
+                if (toiOutput.state == TOIOutputState.TOUCHING && toiOutput.t < toi) {
+                    toiContact = contact;
+                    toi = toiOutput.t;
+                    toiOther = other;
+                    found = true;
+                }
+                ++count;
+            }
+            ++iter;
+        } while (found && count > 1 && iter < 50);
+        if (toiContact == null) {
+            body.advance(1.0f);
+            return;
+        }
+        backup.set(body.m_sweep);
+        body.advance(toi);
+        toiContact.update(m_contactManager.m_contactListener);
+        if (toiContact.isEnabled() == false) {
+            body.m_sweep.set(backup);
+            solveTOI(body);
+        }
+        ++toiContact.m_toiCount;
+        if (m_contacts == null || m_contacts.length < Settings.maxTOIContacts) {
+            m_contacts = new Contact[Settings.maxTOIContacts];
+        }
+        count = 0;
+        for (ContactEdge ce = body.m_contactList; ce != null && count < Settings.maxTOIContacts; ce = ce.next) {
+            Body other = ce.other;
+            BodyType type = other.getType();
+            if (type == BodyType.DYNAMIC) {
+                continue;
+            }
+            Contact contact = ce.contact;
+            if (contact.isEnabled() == false) {
+                continue;
+            }
+            Fixture fixtureA = contact.m_fixtureA;
+            Fixture fixtureB = contact.m_fixtureB;
+            if (fixtureA.isSensor() || fixtureB.isSensor()) {
+                continue;
+            }
+            if (contact != toiContact) {
+                contact.update(m_contactManager.m_contactListener);
+            }
+            if (contact.isEnabled() == false) {
+                continue;
+            }
+            if (contact.isTouching() == false) {
+                continue;
+            }
+            m_contacts[count] = contact;
+            ++count;
+        }
+        toiSolver.initialize(m_contacts, count, body);
+        float k_toiBaumgarte = 0.75f;
+        for (int i = 0; i < 20; ++i) {
+            boolean contactsOkay = toiSolver.solve(k_toiBaumgarte);
+            if (contactsOkay) {
+                break;
+            }
+        }
+        if (toiOther.getType() != BodyType.STATIC) {
+            toiContact.m_flags |= Contact.BULLET_HIT_FLAG;
+        }
+    }
+
+    @org.checkerframework.dataflow.qual.Impure
+    private void drawJoint(Joint joint) {
+        Body bodyA = joint.getBodyA();
+        Body bodyB = joint.getBodyB();
+        Transform xf1 = bodyA.getTransform();
+        Transform xf2 = bodyB.getTransform();
+        Vec2 x1 = xf1.position;
+        Vec2 x2 = xf2.position;
+        Vec2 p1 = pool.popVec2();
+        Vec2 p2 = pool.popVec2();
+        joint.getAnchorA(p1);
+        joint.getAnchorB(p2);
+        color.set(0.5f, 0.8f, 0.8f);
+        switch(joint.getType()) {
+            case DISTANCE:
+                m_debugDraw.drawSegment(p1, p2, color);
+                break;
+            case PULLEY:
+                {
+                    PulleyJoint pulley = (PulleyJoint) joint;
+                    Vec2 s1 = pulley.getGroundAnchorA();
+                    Vec2 s2 = pulley.getGroundAnchorB();
+                    m_debugDraw.drawSegment(s1, p1, color);
+                    m_debugDraw.drawSegment(s2, p2, color);
+                    m_debugDraw.drawSegment(s1, s2, color);
+                }
+                break;
+            case CONSTANT_VOLUME:
+            case MOUSE:
+                break;
+            default:
+                m_debugDraw.drawSegment(x1, p1, color);
+                m_debugDraw.drawSegment(p1, p2, color);
+                m_debugDraw.drawSegment(x2, p2, color);
+        }
+        pool.pushVec2(2);
+    }
+
+    private static Integer LIQUID_INT = new Integer(1234598372);
+
+    private float liquidLength = .12f;
+
+    private float averageLinearVel = -1;
+
+    private final Vec2 liquidOffset = new Vec2();
+
+    private final Vec2 circCenterMoved = new Vec2();
+
+    private final Color3f liquidColor = new Color3f(.4f, .4f, 1f);
+
+    private final Vec2 center = new Vec2();
+
+    private final Vec2 axis = new Vec2();
+
+    private final Vec2Array tlvertices = new Vec2Array();
+
+    @org.checkerframework.dataflow.qual.Impure
+    private void drawShape(Fixture fixture, Transform xf, Color3f color) {
+        switch(fixture.getType()) {
+            case CIRCLE:
+                {
+                    CircleShape circle = (CircleShape) fixture.getShape();
+                    Transform.mulToOut(xf, circle.m_p, center);
+                    float radius = circle.m_radius;
+                    axis.set(xf.R.col1);
+                    if (fixture.getUserData() != null && fixture.getUserData().equals(LIQUID_INT)) {
+                        Body b = fixture.getBody();
+                        liquidOffset.set(b.m_linearVelocity);
+                        float linVelLength = b.m_linearVelocity.length();
+                        if (averageLinearVel == -1) {
+                            averageLinearVel = linVelLength;
+                        } else {
+                            averageLinearVel = .98f * averageLinearVel + .02f * linVelLength;
+                        }
+                        liquidOffset.mulLocal(liquidLength / averageLinearVel / 2);
+                        circCenterMoved.set(center).addLocal(liquidOffset);
+                        center.subLocal(liquidOffset);
+                        m_debugDraw.drawSegment(center, circCenterMoved, liquidColor);
+                        return;
+                    }
+                    m_debugDraw.drawSolidCircle(center, radius, axis, color);
+                }
+                break;
+            case POLYGON:
+                {
+                    PolygonShape poly = (PolygonShape) fixture.getShape();
+                    int vertexCount = poly.m_vertexCount;
+                    assert (vertexCount <= Settings.maxPolygonVertices);
+                    Vec2[] vertices = tlvertices.get(Settings.maxPolygonVertices);
+                    for (int i = 0; i < vertexCount; ++i) {
+                        Transform.mulToOut(xf, poly.m_vertices[i], vertices[i]);
+                    }
+                    m_debugDraw.drawSolidPolygon(vertices, vertexCount, color);
+                }
+                break;
+        }
+    }
+}, @org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.mustcall.MustCallChecker")
+class WorldQueryWrapper implements TreeCallback {
+
+    @org.checkerframework.dataflow.qual.Impure
+    public boolean treeCallback(DynamicTreeNode node) {
+        Fixture fixture = (Fixture) node.userData;
+        return callback.reportFixture(fixture);
+    }
+
+    BroadPhase broadPhase;
+
+    QueryCallback callback;
+}, @org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.mustcall.MustCallChecker")
+class WorldRayCastWrapper implements TreeRayCastCallback {
+
+    private final RayCastOutput output = new RayCastOutput();
+
+    private final Vec2 temp = new Vec2();
+
+    private final Vec2 point = new Vec2();
+
+    @org.checkerframework.dataflow.qual.Impure
+    public float raycastCallback(RayCastInput input, DynamicTreeNode node) {
+        Object userData = node.userData;
+        Fixture fixture = (Fixture) userData;
+        boolean hit = fixture.raycast(output, input);
+        if (hit) {
+            float fraction = output.fraction;
+            temp.set(input.p2).mulLocal(fraction);
+            point.set(input.p1).mulLocal(1 - fraction).addLocal(temp);
+            return callback.reportFixture(fixture, point, output.normal, fraction);
+        }
+        return input.maxFraction;
+    }
+
+    BroadPhase broadPhase;
+
+    RayCastCallback callback;
+}] [size 3])
+	at org.checkerframework.framework.ajava.JointJavacJavaParserVisitor.visitLists(JointJavacJavaParserVisitor.java:2279)
+	at org.checkerframework.framework.ajava.JointJavacJavaParserVisitor.visitCompilationUnit(JointJavacJavaParserVisitor.java:651)
+	at org.checkerframework.framework.ajava.JointJavacJavaParserVisitor.visitCompilationUnit(JointJavacJavaParserVisitor.java:188)
+	at com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:591)
+	at org.checkerframework.framework.stub.AnnotationFileParser.processCompilationUnit(AnnotationFileParser.java:821)
+	at org.checkerframework.framework.stub.AnnotationFileParser.processStubUnit(AnnotationFileParser.java:786)
+	at org.checkerframework.framework.stub.AnnotationFileParser.process(AnnotationFileParser.java:775)
+	at org.checkerframework.framework.stub.AnnotationFileParser.parseAjavaFile(AnnotationFileParser.java:692)
+	at org.checkerframework.framework.stub.AnnotationFileElementTypes.parseAjavaFileWithTree(AnnotationFileElementTypes.java:286)
+	at org.checkerframework.framework.type.AnnotatedTypeFactory.setRoot(AnnotatedTypeFactory.java:1011)
+	... 18 more
+Caused by: java.lang.Throwable
+	at org.checkerframework.javacutil.BugInCF.<init>(BugInCF.java:34)
+	... 28 more

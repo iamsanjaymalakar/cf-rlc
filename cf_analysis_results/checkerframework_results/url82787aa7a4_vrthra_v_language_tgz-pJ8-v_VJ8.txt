@@ -1,0 +1,33 @@
+../../../../datasets/june2020_dataset/url82787aa7a4_vrthra_v_language_tgz-pJ8-v_VJ8/src/v/Util.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-29 $$ java.io.InputStream $$ regular method exit $$ ( 852, 889 ) $$ @MustCall method close may not have been invoked on temp-var-29 or any of its aliases.
+            BufferedReader br = new BufferedReader(new InputStreamReader(Prologue.class.getResourceAsStream(s)));
+                                                                                                           ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url82787aa7a4_vrthra_v_language_tgz-pJ8-v_VJ8/src/v/BuffCharStream.java:8: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-243 $$ java.io.CharArrayReader $$ regular method exit $$ ( 195, 233 ) $$ @MustCall method close may not have been invoked on temp-var-243 or any of its aliases.
+        _reader = new BufferedReader(new CharArrayReader(buf.toCharArray()));
+                                     ^
+  The type of object is: java.io.CharArrayReader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url82787aa7a4_vrthra_v_language_tgz-pJ8-v_VJ8/src/v/BuffCharStream.java:42: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-245 $$ java.io.BufferedReader $$ regular method exit $$ ( 847, 855 ) $$ @MustCall method close may not have been invoked on temp-var-245 or any of its aliases.
+            i = reader().read();
+                      ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url82787aa7a4_vrthra_v_language_tgz-pJ8-v_VJ8/src/v/FileCharStream.java:7: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1254 $$ java.io.FileReader $$ regular method exit $$ ( 213, 237 ) $$ @MustCall method close may not have been invoked on temp-var-1254 or any of its aliases.
+        _reader = new BufferedReader(new FileReader(filename));
+                                     ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url82787aa7a4_vrthra_v_language_tgz-pJ8-v_VJ8/src/v/ConsoleCharStream.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1261 $$ java.io.BufferedReader $$ regular method exit $$ ( 511, 519 ) $$ @MustCall method close may not have been invoked on temp-var-1261 or any of its aliases.
+            return reader().readLine();
+                         ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url82787aa7a4_vrthra_v_language_tgz-pJ8-v_VJ8/src/v/ConsoleCharStream.java:42: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1266 $$ java.io.BufferedReader $$ regular method exit $$ ( 969, 977 ) $$ @MustCall method close may not have been invoked on temp-var-1266 or any of its aliases.
+            String out = reader().readLine();
+                               ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+6 errors

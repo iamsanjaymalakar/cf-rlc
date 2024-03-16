@@ -1,0 +1,253 @@
+warning: (annotation.not.completed) $$ 2 $$ org.joda.time.DateTimeZone.forID(java.lang.String) $$ @FromString $$  $$ Element org.joda.time.DateTimeZone.forID(java.lang.String) contains annotation @FromString which can't be found. Make sure your classpath is set correctly.
+warning: (annotation.not.completed) $$ 2 $$ org.joda.time.base.AbstractInstant.toString() $$ @ToString $$  $$ Element org.joda.time.base.AbstractInstant.toString() contains annotation @ToString which can't be found. Make sure your classpath is set correctly.
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeZone.java:465: error: (required.method.not.called) $$ 4 $$ method close $$ baos $$ java.io.ByteArrayOutputStream $$ possible exceptional exit due to DateTimeZone.setProvider(null) with exception type java.lang.SecurityException $$ ( 18909, 18966 ) $$ @MustCall method close may not have been invoked on baos or any of its aliases.
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                                  ^
+  The type of object is: java.io.ByteArrayOutputStream.
+  Reason for going out of scope: possible exceptional exit due to DateTimeZone.setProvider(null) with exception type java.lang.SecurityException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeZone.java:579: error: (required.method.not.called) $$ 4 $$ method close $$ baos $$ java.io.ByteArrayOutputStream $$ possible exceptional exit due to DateTimeZone.setNameProvider(null) with exception type java.lang.SecurityException $$ ( 23020, 23077 ) $$ @MustCall method close may not have been invoked on baos or any of its aliases.
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                                  ^
+  The type of object is: java.io.ByteArrayOutputStream.
+  Reason for going out of scope: possible exceptional exit due to DateTimeZone.setNameProvider(null) with exception type java.lang.SecurityException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeZone.java:982: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(zone) with exception type java.io.IOException $$ ( 43463, 43517 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(zone) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeZone.java:1000: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(zone) with exception type java.io.IOException $$ ( 44161, 44215 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(zone) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestYearMonth_Basics.java:604: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 23474, 23528 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMutablePeriod_Basics.java:164: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 6493, 6547 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDurationFieldType.java:177: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(type) with exception type java.io.IOException $$ ( 9472, 9526 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(type) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/tz/TestCachedDateTimeZone.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 2238, 2292 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/tz/TestCompiler.java:145: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.FileOutputStream $$ possible exceptional exit due to in.read(buf) with exception type java.io.IOException $$ ( 5579, 5633 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+        FileOutputStream out = new FileOutputStream(tempFile);
+                         ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to in.read(buf) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestLocalDate_Basics.java:1080: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 44909, 44963 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMutableInterval_Basics.java:453: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 21395, 21449 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMutableDateTime_Basics.java:392: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 17965, 18019 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestHours.java:210: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 8574, 8628 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestWeeks.java:199: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 8021, 8075 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestInterval_Basics.java:1028: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 52108, 52162 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestTimeOfDay_Basics.java:854: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 36166, 36220 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/field/TestScaledDurationField.java:279: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 10910, 10964 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/field/TestPreciseDurationField.java:262: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 9980, 10034 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/field/TestMillisDurationField.java:203: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 8401, 8455 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestPeriod_Basics.java:230: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 9884, 9938 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMinutes.java:200: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 8456, 8510 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestYearMonthDay_Basics.java:780: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 31722, 31776 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateMidnight_Basics.java:423: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 20271, 20325 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestPeriodType.java:111: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(type) with exception type java.io.IOException $$ ( 4348, 4402 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(type) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestPeriodType.java:126: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(type) with exception type java.io.IOException $$ ( 4925, 4979 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(type) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMonths.java:227: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 9536, 9590 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTime_Basics.java:488: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 22730, 22784 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMonthDay_Basics.java:693: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 26763, 26817 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeFieldType.java:315: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(type) with exception type java.io.IOException $$ ( 21704, 21758 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(type) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestLocalTime_Basics.java:767: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 32545, 32599 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestPartial_Basics.java:749: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 28944, 28998 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDays.java:241: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 9903, 9957 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestInstant_Basics.java:368: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 16515, 16569 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestLocalDateTime_Basics.java:1028: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 45862, 45916 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestYears.java:182: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 7141, 7195 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeComparator.java:272: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(c) with exception type java.io.IOException $$ ( 10681, 10735 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(c) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeComparator.java:290: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(c) with exception type java.io.IOException $$ ( 11394, 11448 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(c) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDuration_Basics.java:238: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 9301, 9355 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestSerialization.java:293: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(fis) with exception type java.io.IOException $$ ( 11339, 11419 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+        FileInputStream fis = new FileInputStream("src/resources/" + filename + ".dat");
+                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(fis) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestSerialization.java:294: error: (required.method.not.called) $$ 4 $$ method close $$ ois $$ java.io.ObjectInputStream $$ possible exceptional exit due to ois.readObject() with exception type java.io.IOException $$ ( 11428, 11479 ) $$ @MustCall method close may not have been invoked on ois or any of its aliases.
+        ObjectInputStream ois = new ObjectInputStream(fis);
+                          ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: possible exceptional exit due to ois.readObject() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestSerialization.java:319: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 12261, 12315 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestSerialization.java:324: error: (required.method.not.called) $$ 4 $$ method close $$ ois $$ java.io.ObjectInputStream $$ possible exceptional exit due to ois.readObject() with exception type java.io.IOException $$ ( 12467, 12519 ) $$ @MustCall method close may not have been invoked on ois or any of its aliases.
+        ObjectInputStream ois = new ObjectInputStream(bais);
+                          ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: possible exceptional exit due to ois.readObject() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestSeconds.java:197: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException $$ ( 8219, 8273 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+        ObjectOutputStream oos = new ObjectOutputStream(baos);
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(test) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestPeriodFormatter.java:121: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.CharArrayWriter $$ possible exceptional exit due to f.printTo(out, p) with exception type java.io.IOException $$ ( 4574, 4618 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+        CharArrayWriter out = new CharArrayWriter();
+                        ^
+  The type of object is: java.io.CharArrayWriter.
+  Reason for going out of scope: possible exceptional exit due to f.printTo(out, p) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestPeriodFormatter.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.CharArrayWriter $$ possible exceptional exit due to f.printTo(out, null) with exception type java.io.IOException $$ ( 4725, 4752 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+        out = new CharArrayWriter();
+            ^
+  The type of object is: java.io.CharArrayWriter.
+  Reason for going out of scope: possible exceptional exit due to f.printTo(out, null) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestDateTimeFormatter.java:184: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.CharArrayWriter $$ possible exceptional exit due to f.printTo(out, dt) with exception type java.io.IOException $$ ( 7859, 7903 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+        CharArrayWriter out = new CharArrayWriter();
+                        ^
+  The type of object is: java.io.CharArrayWriter.
+  Reason for going out of scope: possible exceptional exit due to f.printTo(out, dt) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestDateTimeFormatter.java:188: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.CharArrayWriter $$ possible exceptional exit due to f.printTo(out, dt.getMillis()) with exception type java.io.IOException $$ ( 8015, 8042 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+        out = new CharArrayWriter();
+            ^
+  The type of object is: java.io.CharArrayWriter.
+  Reason for going out of scope: possible exceptional exit due to f.printTo(out, dt.getMillis()) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestDateTimeFormatter.java:192: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.CharArrayWriter $$ possible exceptional exit due to ISODateTimeFormat.yearMonthDay().printTo(out, dt.toYearMonthDay()) with exception type java.io.IOException $$ ( 8172, 8199 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+        out = new CharArrayWriter();
+            ^
+  The type of object is: java.io.CharArrayWriter.
+  Reason for going out of scope: possible exceptional exit due to ISODateTimeFormat.yearMonthDay().printTo(out, dt.toYearMonthDay()) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestDateTimeFormatter.java:196: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.CharArrayWriter $$ possible exceptional exit due to ISODateTimeFormat.yearMonthDay().printTo(out, (ReadablePartial)null) with exception type java.io.IOException $$ ( 8346, 8373 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+        out = new CharArrayWriter();
+            ^
+  The type of object is: java.io.CharArrayWriter.
+  Reason for going out of scope: possible exceptional exit due to ISODateTimeFormat.yearMonthDay().printTo(out, (ReadablePartial)null) with exception type java.io.IOException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+49 errors
+2 warnings

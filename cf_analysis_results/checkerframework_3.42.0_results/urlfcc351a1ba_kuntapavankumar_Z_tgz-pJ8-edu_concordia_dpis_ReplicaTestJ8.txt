@@ -1,0 +1,116 @@
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/MulticastReceiver.java:27: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.MulticastSocket $$ regular method exit $$ ( 550, 584 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+			socket = new MulticastSocket(port);
+			       ^
+  The type of object is: java.net.MulticastSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/MulticastReceiver.java:39: error: (required.method.not.called) $$ 4 $$ method close $$ socket2 $$ java.net.DatagramSocket $$ regular method exit $$ ( 971, 1001 ) $$ @MustCall method close may not have been invoked on socket2 or any of its aliases.
+				socket2 = new DatagramSocket();
+				        ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/MulticastListener.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ new MulticastSocket(port) $$ java.net.MulticastSocket $$ possible exceptional exit due to InetAddress.getByName(this.group) with exception type java.net.UnknownHostException $$ ( 866, 891 ) $$ @MustCall method close may not have been invoked on new MulticastSocket(port) or any of its aliases.
+			this.multicastSocket = new MulticastSocket(port);
+			                       ^
+  The type of object is: java.net.MulticastSocket.
+  Reason for going out of scope: possible exceptional exit due to InetAddress.getByName(this.group) with exception type java.net.UnknownHostException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream("./udp.properties") $$ java.io.FileInputStream $$ possible exceptional exit due to udpProperties.load(new FileInputStream("./udp.properties")) with exception type java.io.FileNotFoundException $$ ( 4393, 4432 ) $$ @MustCall method close may not have been invoked on new FileInputStream("./udp.properties") or any of its aliases.
+			udpProperties.load(new FileInputStream("./udp.properties"));
+			                   ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to udpProperties.load(new FileInputStream("./udp.properties")) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:136: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream("tcp.properties") $$ java.io.FileInputStream $$ possible exceptional exit due to tcpProperties.load(new FileInputStream("tcp.properties")) with exception type java.io.IOException $$ ( 4666, 4703 ) $$ @MustCall method close may not have been invoked on new FileInputStream("tcp.properties") or any of its aliases.
+			tcpProperties.load(new FileInputStream("tcp.properties"));
+			                   ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to tcpProperties.load(new FileInputStream("tcp.properties")) with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:153: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream("./udp.properties") $$ java.io.FileOutputStream $$ possible exceptional exit due to udpProperties.store(new FileOutputStream("./udp.properties"), null) with exception type java.io.IOException $$ ( 5126, 5166 ) $$ @MustCall method close may not have been invoked on new FileOutputStream("./udp.properties") or any of its aliases.
+			udpProperties.store(new FileOutputStream("./udp.properties"), null);
+			                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to udpProperties.store(new FileOutputStream("./udp.properties"), null) with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:170: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream("./tcp.properties") $$ java.io.FileOutputStream $$ possible exceptional exit due to tcpProperties.store(new FileOutputStream("./tcp.properties"), null) with exception type java.io.IOException $$ ( 5632, 5672 ) $$ @MustCall method close may not have been invoked on new FileOutputStream("./tcp.properties") or any of its aliases.
+			tcpProperties.store(new FileOutputStream("./tcp.properties"), null);
+			                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to tcpProperties.store(new FileOutputStream("./tcp.properties"), null) with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:548: error: (required.method.not.called) $$ 4 $$ method close $$ s $$ java.net.Socket $$ regular method exit $$ ( 17537, 17579 ) $$ @MustCall method close may not have been invoked on s or any of its aliases.
+				s = new Socket(hostAndPort[0], serverPort);
+				  ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:572: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream("udp.properties") $$ java.io.FileInputStream $$ possible exceptional exit due to properties.load(new FileInputStream("udp.properties")) with exception type java.io.IOException $$ ( 18230, 18267 ) $$ @MustCall method close may not have been invoked on new FileInputStream("udp.properties") or any of its aliases.
+			properties.load(new FileInputStream("udp.properties"));
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(new FileInputStream("udp.properties")) with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:618: error: (required.method.not.called) $$ 4 $$ method close $$ new DatagramSocket(port) $$ java.net.DatagramSocket $$ possible exceptional exit due to aSocket.receive(request) with exception type java.net.SocketException $$ ( 19488, 19512 ) $$ @MustCall method close may not have been invoked on new DatagramSocket(port) or any of its aliases.
+						aSocket = new DatagramSocket(port);
+						          ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to aSocket.receive(request) with exception type java.net.SocketException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:672: error: (required.method.not.called) $$ 4 $$ method close $$ listenSocket $$ java.net.ServerSocket $$ possible exceptional exit due to listenSocket.accept() with exception type java.io.IOException $$ ( 20679, 20730 ) $$ @MustCall method close may not have been invoked on listenSocket or any of its aliases.
+						ServerSocket listenSocket = new ServerSocket(port);
+						             ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: possible exceptional exit due to listenSocket.accept() with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:674: error: (required.method.not.called) $$ 4 $$ method close $$ clientSocket $$ java.net.Socket $$ regular method exit $$ ( 20759, 20803 ) $$ @MustCall method close may not have been invoked on clientSocket or any of its aliases.
+							Socket clientSocket = listenSocket.accept();
+							       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream("./udp.properties") $$ java.io.FileInputStream $$ possible exceptional exit due to udpProperties.load(new FileInputStream("./udp.properties")) with exception type java.io.FileNotFoundException $$ ( 4429, 4468 ) $$ @MustCall method close may not have been invoked on new FileInputStream("./udp.properties") or any of its aliases.
+			udpProperties.load(new FileInputStream("./udp.properties"));
+			                   ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to udpProperties.load(new FileInputStream("./udp.properties")) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:136: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream("tcp.properties") $$ java.io.FileInputStream $$ possible exceptional exit due to tcpProperties.load(new FileInputStream("tcp.properties")) with exception type java.io.IOException $$ ( 4702, 4739 ) $$ @MustCall method close may not have been invoked on new FileInputStream("tcp.properties") or any of its aliases.
+			tcpProperties.load(new FileInputStream("tcp.properties"));
+			                   ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to tcpProperties.load(new FileInputStream("tcp.properties")) with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:153: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream("./udp.properties") $$ java.io.FileOutputStream $$ possible exceptional exit due to udpProperties.store(new FileOutputStream("./udp.properties"), null) with exception type java.io.IOException $$ ( 5162, 5202 ) $$ @MustCall method close may not have been invoked on new FileOutputStream("./udp.properties") or any of its aliases.
+			udpProperties.store(new FileOutputStream("./udp.properties"), null);
+			                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to udpProperties.store(new FileOutputStream("./udp.properties"), null) with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:170: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream("./tcp.properties") $$ java.io.FileOutputStream $$ possible exceptional exit due to tcpProperties.store(new FileOutputStream("./tcp.properties"), null) with exception type java.io.IOException $$ ( 5668, 5708 ) $$ @MustCall method close may not have been invoked on new FileOutputStream("./tcp.properties") or any of its aliases.
+			tcpProperties.store(new FileOutputStream("./tcp.properties"), null);
+			                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to tcpProperties.store(new FileOutputStream("./tcp.properties"), null) with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:304: error: (required.method.not.called) $$ 4 $$ method close $$ s $$ java.net.Socket $$ regular method exit $$ ( 9582, 9624 ) $$ @MustCall method close may not have been invoked on s or any of its aliases.
+				s = new Socket(hostAndPort[0], serverPort);
+				  ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:328: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream("udp.properties") $$ java.io.FileInputStream $$ possible exceptional exit due to properties.load(new FileInputStream("udp.properties")) with exception type java.io.IOException $$ ( 10275, 10312 ) $$ @MustCall method close may not have been invoked on new FileInputStream("udp.properties") or any of its aliases.
+			properties.load(new FileInputStream("udp.properties"));
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(new FileInputStream("udp.properties")) with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:374: error: (required.method.not.called) $$ 4 $$ method close $$ new DatagramSocket(port) $$ java.net.DatagramSocket $$ possible exceptional exit due to aSocket.receive(request) with exception type java.net.SocketException $$ ( 11533, 11557 ) $$ @MustCall method close may not have been invoked on new DatagramSocket(port) or any of its aliases.
+						aSocket = new DatagramSocket(port);
+						          ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to aSocket.receive(request) with exception type java.net.SocketException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:428: error: (required.method.not.called) $$ 4 $$ method close $$ listenSocket $$ java.net.ServerSocket $$ possible exceptional exit due to listenSocket.accept() with exception type java.io.IOException $$ ( 12724, 12775 ) $$ @MustCall method close may not have been invoked on listenSocket or any of its aliases.
+						ServerSocket listenSocket = new ServerSocket(port);
+						             ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: possible exceptional exit due to listenSocket.accept() with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:430: error: (required.method.not.called) $$ 4 $$ method close $$ clientSocket $$ java.net.Socket $$ regular method exit $$ ( 12804, 12848 ) $$ @MustCall method close may not have been invoked on clientSocket or any of its aliases.
+							Socket clientSocket = listenSocket.accept();
+							       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/fifo/MulticastSender.java:19: error: (required.method.not.called) $$ 4 $$ method close $$ new MulticastSocket() $$ java.net.MulticastSocket $$ regular method exit $$ ( 401, 422 ) $$ @MustCall method close may not have been invoked on new MulticastSocket() or any of its aliases.
+			this.multicastSocket = new MulticastSocket();
+			                       ^
+  The type of object is: java.net.MulticastSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/MulticastServer.java:29: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.DatagramSocket $$ regular method exit $$ ( 515, 544 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+				socket = new DatagramSocket();
+				       ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+23 errors

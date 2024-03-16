@@ -1,0 +1,12 @@
+../../../../datasets/june2020_dataset/urla05239b71c_viniciusinnovatium_mumps2java_api_tgz-pJ8-com_disclinc_netmanager_script_test_ExecTesteNewJ8/src/mLibrary/mCmd.java:189: error: (required.method.not.called) $$ 4 $$ method close $$ writer $$ java.io.Writer $$ regular method exit $$ ( 4592, 4623 ) $$ @MustCall method close may not have been invoked on writer or any of its aliases.
+			Writer writer = m$.getWriter();
+			       ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urla05239b71c_viniciusinnovatium_mumps2java_api_tgz-pJ8-com_disclinc_netmanager_script_test_ExecTesteNewJ8/src/com/disclinc/netmanager/function/test/SelectFunctionTest.java:33: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+		assertEquals("Fail on select a valid condition", null, $select(null));
+		                                                               ^
+  cast to BooleanObject for a varargs call
+  cast to BooleanObject[] for a non-varargs call and to suppress this warning
+1 error
+1 warning

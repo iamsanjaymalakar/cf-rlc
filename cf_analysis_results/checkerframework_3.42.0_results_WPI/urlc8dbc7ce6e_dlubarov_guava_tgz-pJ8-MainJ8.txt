@@ -1,0 +1,13 @@
+warning: MustCallChecker did not find annotation file or directory ../dataset/june2020_dataset/urlc8dbc7ce6e_dlubarov_guava_tgz-pJ8-MainJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/urlc8dbc7ce6e_dlubarov_guava_tgz-pJ8-MainJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+warning: ResourceLeakChecker did not find annotation file or directory ../dataset/june2020_dataset/urlc8dbc7ce6e_dlubarov_guava_tgz-pJ8-MainJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/urlc8dbc7ce6e_dlubarov_guava_tgz-pJ8-MainJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+../dataset/june2020_dataset/urlc8dbc7ce6e_dlubarov_guava_tgz-pJ8-MainJ8/src/util/FileUtils.java:9: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ regular method exit $$ ( 164, 204 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+        InputStream in = new FileInputStream(f);
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+1 error
+2 warnings

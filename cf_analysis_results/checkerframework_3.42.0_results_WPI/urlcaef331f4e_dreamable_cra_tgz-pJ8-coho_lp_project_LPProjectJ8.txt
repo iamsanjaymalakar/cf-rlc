@@ -1,0 +1,120 @@
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/PromptingReader.java:17: error: (required.method.not.called) $$ 4 $$ method close $$ field in $$ java.io.LineNumberReader $$  Non-final owning field might be overwritten $$ ( 391, 399 ) $$ @MustCall method close may not have been invoked on field in or any of its aliases.
+	public PromptingReader(LineNumberReader _in) { in = _in; }
+	                                                  ^
+  The type of object is: java.io.LineNumberReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/PromptingReader.java:17: error: (assignment) $$ 2 $$ @PolyMustCall LineNumberReader $$ @MustCall("close") LineNumberReader $$ ( 396, 399 ) $$ incompatible types in assignment.
+	public PromptingReader(LineNumberReader _in) { in = _in; }
+	                                                    ^
+  found   : @PolyMustCall LineNumberReader
+  required: @MustCall("close") LineNumberReader
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/PromptingReader.java:19: error: (required.method.not.called) $$ 4 $$ method close $$ field in $$ java.io.LineNumberReader $$  Non-final owning field might be overwritten $$ ( 453, 489 ) $$ @MustCall method close may not have been invoked on field in or any of its aliases.
+		in = new LineNumberReader(_in, size);
+		   ^
+  The type of object is: java.io.LineNumberReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/PromptingReader.java:19: error: (assignment) $$ 2 $$ @PolyMustCall LineNumberReader $$ @MustCall("close") LineNumberReader $$ ( 458, 489 ) $$ incompatible types in assignment.
+		in = new LineNumberReader(_in, size);
+		     ^
+  found   : @PolyMustCall LineNumberReader
+  required: @MustCall("close") LineNumberReader
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/PromptingReader.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ field in $$ java.io.LineNumberReader $$  Non-final owning field might be overwritten $$ ( 534, 564 ) $$ @MustCall method close may not have been invoked on field in or any of its aliases.
+		in = new LineNumberReader(_in);
+		   ^
+  The type of object is: java.io.LineNumberReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/PromptingReader.java:22: error: (assignment) $$ 2 $$ @PolyMustCall LineNumberReader $$ @MustCall("close") LineNumberReader $$ ( 539, 564 ) $$ incompatible types in assignment.
+		in = new LineNumberReader(_in);
+		     ^
+  found   : @PolyMustCall LineNumberReader
+  required: @MustCall("close") LineNumberReader
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/CopyingReader.java:19: error: (required.method.not.called) $$ 4 $$ method close $$ field in $$ java.io.LineNumberReader $$  Non-final owning field might be overwritten $$ ( 432, 440 ) $$ @MustCall method close may not have been invoked on field in or any of its aliases.
+	{ in = _in; log = _log; }
+	     ^
+  The type of object is: java.io.LineNumberReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/CopyingReader.java:19: error: (assignment) $$ 2 $$ @PolyMustCall LineNumberReader $$ @MustCall("close") LineNumberReader $$ ( 437, 440 ) $$ incompatible types in assignment.
+	{ in = _in; log = _log; }
+	       ^
+  found   : @PolyMustCall LineNumberReader
+  required: @MustCall("close") LineNumberReader
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/CopyingReader.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ field in $$ java.io.LineNumberReader $$  Non-final owning field might be overwritten $$ ( 517, 553 ) $$ @MustCall method close may not have been invoked on field in or any of its aliases.
+		in = new LineNumberReader(_in, size);
+		   ^
+  The type of object is: java.io.LineNumberReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/CopyingReader.java:21: error: (assignment) $$ 2 $$ @PolyMustCall LineNumberReader $$ @MustCall("close") LineNumberReader $$ ( 522, 553 ) $$ incompatible types in assignment.
+		in = new LineNumberReader(_in, size);
+		     ^
+  found   : @PolyMustCall LineNumberReader
+  required: @MustCall("close") LineNumberReader
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/CopyingReader.java:25: error: (required.method.not.called) $$ 4 $$ method close $$ field in $$ java.io.LineNumberReader $$  Non-final owning field might be overwritten $$ ( 623, 653 ) $$ @MustCall method close may not have been invoked on field in or any of its aliases.
+		in = new LineNumberReader(_in);
+		   ^
+  The type of object is: java.io.LineNumberReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/CopyingReader.java:25: error: (assignment) $$ 2 $$ @PolyMustCall LineNumberReader $$ @MustCall("close") LineNumberReader $$ ( 628, 653 ) $$ incompatible types in assignment.
+		in = new LineNumberReader(_in);
+		     ^
+  found   : @PolyMustCall LineNumberReader
+  required: @MustCall("close") LineNumberReader
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/MyParser.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ logfile $$ java.io.FileWriter $$ variable overwritten by assignment logfile = new FileWriter(args[i]) $$ ( 748, 781 ) $$ @MustCall method close may not have been invoked on logfile or any of its aliases.
+						logfile = new FileWriter(args[i]);         
+						        ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: variable overwritten by assignment logfile = new FileWriter(args[i])
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/MyParser.java:42: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(args[i]) $$ java.io.FileOutputStream $$ regular method exit $$ ( 1069, 1098 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(args[i]) or any of its aliases.
+						BasicFunctions.setLogWriter(new FileOutputStream(args[i]));
+						                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/MyParser.java:51: error: (required.method.not.called) $$ 4 $$ method close $$ infile $$ java.io.FileInputStream $$ variable overwritten by assignment infile = new FileInputStream(args[i]) $$ ( 1298, 1335 ) $$ @MustCall method close may not have been invoked on infile or any of its aliases.
+					infile = new FileInputStream(args[i]); 
+					       ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: variable overwritten by assignment infile = new FileInputStream(args[i])
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/LineReader.java:13: error: (required.method.not.called) $$ 4 $$ method close $$ field in $$ java.io.LineNumberReader $$  Non-final owning field might be overwritten $$ ( 331, 367 ) $$ @MustCall method close may not have been invoked on field in or any of its aliases.
+		in = new LineNumberReader(_in, size);
+		   ^
+  The type of object is: java.io.LineNumberReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/LineReader.java:13: error: (assignment) $$ 2 $$ @PolyMustCall LineNumberReader $$ @MustCall("close") LineNumberReader $$ ( 336, 367 ) $$ incompatible types in assignment.
+		in = new LineNumberReader(_in, size);
+		     ^
+  found   : @PolyMustCall LineNumberReader
+  required: @MustCall("close") LineNumberReader
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/LineReader.java:15: error: (required.method.not.called) $$ 4 $$ method close $$ field in $$ java.io.LineNumberReader $$  Non-final owning field might be overwritten $$ ( 405, 435 ) $$ @MustCall method close may not have been invoked on field in or any of its aliases.
+	public LineReader(Reader _in) { in = new LineNumberReader(_in); }
+	                                   ^
+  The type of object is: java.io.LineNumberReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/LineReader.java:15: error: (assignment) $$ 2 $$ @PolyMustCall LineNumberReader $$ @MustCall("close") LineNumberReader $$ ( 410, 435 ) $$ incompatible types in assignment.
+	public LineReader(Reader _in) { in = new LineNumberReader(_in); }
+	                                     ^
+  found   : @PolyMustCall LineNumberReader
+  required: @MustCall("close") LineNumberReader
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/BasicFunctions.java:116: error: (required.method.not.called) $$ 4 $$ method close $$ rd $$ java.io.FileReader $$ possible exceptional exit due to throw new EvalException("INTERNAL ERROR: BasicFunctions.load -- can\'t find the parser."); with exception type coho.interp.EvalException $$ ( 3904, 3930 ) $$ @MustCall method close may not have been invoked on rd or any of its aliases.
+				try { rd = new FileReader(fname); }
+				         ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to throw new EvalException("INTERNAL ERROR: BasicFunctions.load -- can\'t find the parser."); with exception type coho.interp.EvalException
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/BasicFunctions.java:201: error: (required.method.not.called) $$ 4 $$ method close $$ ww $$ java.io.Writer $$ possible exceptional exit due to args.value(0).print(ww, opt) with exception type coho.interp.EvalException $$ ( 6455, 6496 ) $$ @MustCall method close may not have been invoked on ww or any of its aliases.
+					ww = new LineBreakingWriter(w, lineLimit);
+					   ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: possible exceptional exit due to args.value(0).print(ww, opt) with exception type coho.interp.EvalException
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/BasicFunctions.java:203: error: (required.method.not.called) $$ 4 $$ method close $$ logWW $$ java.io.Writer $$ possible exceptional exit due to args.value(0).print(ww, opt) with exception type coho.interp.EvalException $$ ( 6524, 6571 ) $$ @MustCall method close may not have been invoked on logWW or any of its aliases.
+						logWW = new LineBreakingWriter(logW, lineLimit);
+						      ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: possible exceptional exit due to args.value(0).print(ww, opt) with exception type coho.interp.EvalException
+../dataset/june2020_dataset/urlcaef331f4e_dreamable_cra_tgz-pJ8-coho_lp_project_LPProjectJ8/src/coho/interp/ParserThread.java:52: error: (required.method.not.called) $$ 4 $$ method close $$ ((PromptingReader)(in)).setPrompt(null) $$ coho.interp.PromptingReader $$ regular method exit $$ ( 1606, 1645 ) $$ @MustCall method close may not have been invoked on ((PromptingReader)(in)).setPrompt(null) or any of its aliases.
+			((PromptingReader)(in)).setPrompt(null);
+			                                 ^
+  The type of object is: coho.interp.PromptingReader.
+  Reason for going out of scope: regular method exit
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+23 errors

@@ -1,0 +1,6 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^backend/ScanFile.java^101^backend.ScanFile.scanStart()V^14 = new <Application,Ljava/io/RandomAccessFile>@36^NULL^FIELD,^false^true^Field escape;
+1^frontend/handlers.java^156^frontend.handlers.savefile()V^102 = new <Application,Ljava/io/BufferedWriter>@104^frontend.handlers.savefile()V#103,^INVOKE,^false^false^Try-catch Fix;
+2^frontend/handlers.java^491^frontend.handlers.stepinto()V^165 = new <Application,Ljava/io/RandomAccessFile>@263^NULL^FIELD,^false^true^Field escape;
+3^frontend/handlers.java^548^frontend.handlers.stepinto()V^51 = new <Application,Ljava/io/RandomAccessFile>@584^NULL^FIELD,^false^true^Field escape;
+4^frontend/handlers.java^659^frontend.handlers.open(Ljava/io/File;)V^32 = new <Application,Ljava/io/FileReader>@99^NULL^INVOKE,^false^false^Try-catch Fix;

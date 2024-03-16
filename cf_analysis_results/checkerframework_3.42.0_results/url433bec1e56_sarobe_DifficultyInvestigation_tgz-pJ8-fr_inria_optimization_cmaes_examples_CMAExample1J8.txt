@@ -1,0 +1,708 @@
+error: SourceChecker.typeProcess: unexpected Throwable (BadClassFile) while processing ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/entity/spaceship/Spaceship.java; message: bad class file: ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$KeyIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/entity/spaceship/Spaceship.java
+  Last visited tree at line 14 column 1:
+  public class Spaceship extends Entity {
+  Exception: com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$KeyIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.; com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$KeyIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  	at com.sun.tools.javac.jvm.ClassReader.badClassFile(ClassReader.java:298)
+  	at com.sun.tools.javac.jvm.ClassReader.findTypeVar(ClassReader.java:983)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:690)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:752)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:676)
+  	at com.sun.tools.javac.jvm.ClassReader.readType(ClassReader.java:519)
+  	at com.sun.tools.javac.jvm.ClassReader$11.read(ClassReader.java:1213)
+  	at com.sun.tools.javac.jvm.ClassReader.readAttrs(ClassReader.java:1561)
+  	at com.sun.tools.javac.jvm.ClassReader.readMemberAttrs(ClassReader.java:1551)
+  	at com.sun.tools.javac.jvm.ClassReader.readMethod(ClassReader.java:2432)
+  	at com.sun.tools.javac.jvm.ClassReader.readClass(ClassReader.java:2710)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassBuffer(ClassReader.java:2775)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassFile(ClassReader.java:2788)
+  	at com.sun.tools.javac.code.ClassFinder.fillIn(ClassFinder.java:348)
+  	at com.sun.tools.javac.code.ClassFinder.complete(ClassFinder.java:285)
+  	at com.sun.tools.javac.code.Symbol.complete(Symbol.java:633)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.complete(Symbol.java:1314)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.flags(Symbol.java:1248)
+  	at com.sun.tools.javac.code.Symbol$TypeSymbol.getEnclosedElements(Symbol.java:800)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.annosInPackage(AnnotationFileParser.java:464)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.getImportedAnnotations(AnnotationFileParser.java:565)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubUnit(AnnotationFileParser.java:746)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubFile(AnnotationFileParser.java:659)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseJdkFileAsStub(AnnotationFileParser.java:725)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.parseJdkJarEntry(AnnotationFileElementTypes.java:765)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.maybeParseEnclosingJdkClass(AnnotationFileElementTypes.java:691)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.getDeclAnnotations(AnnotationFileElementTypes.java:465)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3964)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3997)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3974)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3887)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3807)
+  	at org.checkerframework.checker.mustcall.MustCallAnnotatedTypeFactory$MustCallDefaultQualifierForUseTypeAnnotator.getExplicitAnnos(MustCallAnnotatedTypeFactory.java:363)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.getDefaultAnnosForUses(DefaultQualifierForUseTypeAnnotator.java:82)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:55)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:26)
+  	at org.checkerframework.framework.type.AnnotatedTypeMirror$AnnotatedDeclaredType.accept(AnnotatedTypeMirror.java:1051)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:206)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:194)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:181)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addAnnotationsFromDefaultForType(GenericAnnotatedTypeFactory.java:2432)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:2181)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getAnnotatedType(AnnotatedTypeFactory.java:1330)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getAnnotatedType(AnnotatedTypeFactory.java:3227)
+  	at org.checkerframework.framework.util.AnnotatedTypes.overriddenMethods(AnnotatedTypes.java:670)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnos(AnnotatedTypeFactory.java:4030)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3972)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3887)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3807)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.getAssertMethodTuple(CFGTranslationPhaseOne.java:1389)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.convertCallArguments(CFGTranslationPhaseOne.java:1308)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.visitMethodInvocation(CFGTranslationPhaseOne.java:1580)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.visitMethodInvocation(CFGTranslationPhaseOne.java:212)
+  	at com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1644)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.scan(CFGTranslationPhaseOne.java:571)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.translateAssignment(CFGTranslationPhaseOne.java:1792)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.visitVariable(CFGTranslationPhaseOne.java:4311)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.visitVariable(CFGTranslationPhaseOne.java:212)
+  	at com.sun.tools.javac.tree.JCTree$JCVariableDecl.accept(JCTree.java:968)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.scan(CFGTranslationPhaseOne.java:571)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.visitBlock(CFGTranslationPhaseOne.java:2349)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.visitBlock(CFGTranslationPhaseOne.java:212)
+  	at com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:1026)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.scan(CFGTranslationPhaseOne.java:571)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.process(CFGTranslationPhaseOne.java:468)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.process(CFGTranslationPhaseOne.java:520)
+  	at org.checkerframework.framework.flow.CFCFGBuilder.build(CFCFGBuilder.java:73)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.analyze(GenericAnnotatedTypeFactory.java:1570)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1485)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1994)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:425)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:550)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:188)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:86)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:1057)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:559)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:552)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+error: SourceChecker.typeProcess: unexpected Throwable (BadClassFile) while processing ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/entity/spaceship/Spaceship.java; message: bad class file: ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$EntryIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/entity/spaceship/Spaceship.java
+  Last visited tree at line 14 column 1:
+  public class Spaceship extends Entity {
+  Exception: com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$EntryIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.; com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$EntryIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  	at com.sun.tools.javac.jvm.ClassReader.badClassFile(ClassReader.java:298)
+  	at com.sun.tools.javac.jvm.ClassReader.findTypeVar(ClassReader.java:983)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:690)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToTypes(ClassReader.java:897)
+  	at com.sun.tools.javac.jvm.ClassReader.classSigToType(ClassReader.java:813)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:726)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:752)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:676)
+  	at com.sun.tools.javac.jvm.ClassReader.readType(ClassReader.java:519)
+  	at com.sun.tools.javac.jvm.ClassReader$11.read(ClassReader.java:1213)
+  	at com.sun.tools.javac.jvm.ClassReader.readAttrs(ClassReader.java:1561)
+  	at com.sun.tools.javac.jvm.ClassReader.readMemberAttrs(ClassReader.java:1551)
+  	at com.sun.tools.javac.jvm.ClassReader.readMethod(ClassReader.java:2432)
+  	at com.sun.tools.javac.jvm.ClassReader.readClass(ClassReader.java:2710)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassBuffer(ClassReader.java:2775)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassFile(ClassReader.java:2788)
+  	at com.sun.tools.javac.code.ClassFinder.fillIn(ClassFinder.java:348)
+  	at com.sun.tools.javac.code.ClassFinder.complete(ClassFinder.java:285)
+  	at com.sun.tools.javac.code.Symbol.complete(Symbol.java:633)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.complete(Symbol.java:1314)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.flags(Symbol.java:1248)
+  	at com.sun.tools.javac.code.Symbol$TypeSymbol.getEnclosedElements(Symbol.java:800)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.annosInPackage(AnnotationFileParser.java:464)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.getImportedAnnotations(AnnotationFileParser.java:565)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubUnit(AnnotationFileParser.java:746)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubFile(AnnotationFileParser.java:659)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseJdkFileAsStub(AnnotationFileParser.java:725)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.parseJdkJarEntry(AnnotationFileElementTypes.java:765)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.maybeParseEnclosingJdkClass(AnnotationFileElementTypes.java:691)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.getDeclAnnotations(AnnotationFileElementTypes.java:465)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3964)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3997)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3974)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3887)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3807)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.getDefaultQualifierForUses(DefaultQualifierForUseTypeAnnotator.java:134)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.getDefaultAnnosForUses(DefaultQualifierForUseTypeAnnotator.java:83)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:55)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:26)
+  	at org.checkerframework.framework.type.AnnotatedTypeMirror$AnnotatedDeclaredType.accept(AnnotatedTypeMirror.java:1051)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:206)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:194)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:181)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addAnnotationsFromDefaultForType(GenericAnnotatedTypeFactory.java:2432)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:2181)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getAnnotatedType(AnnotatedTypeFactory.java:1330)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getAnnotatedType(AnnotatedTypeFactory.java:3227)
+  	at org.checkerframework.framework.util.AnnotatedTypes.overriddenMethods(AnnotatedTypes.java:670)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnos(AnnotatedTypeFactory.java:4030)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3972)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3887)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3807)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.getAssertMethodTuple(CFGTranslationPhaseOne.java:1389)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.convertCallArguments(CFGTranslationPhaseOne.java:1308)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.visitMethodInvocation(CFGTranslationPhaseOne.java:1580)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.visitMethodInvocation(CFGTranslationPhaseOne.java:212)
+  	at com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1644)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.scan(CFGTranslationPhaseOne.java:571)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.translateAssignment(CFGTranslationPhaseOne.java:1792)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.visitVariable(CFGTranslationPhaseOne.java:4311)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.visitVariable(CFGTranslationPhaseOne.java:212)
+  	at com.sun.tools.javac.tree.JCTree$JCVariableDecl.accept(JCTree.java:968)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.scan(CFGTranslationPhaseOne.java:571)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.visitBlock(CFGTranslationPhaseOne.java:2349)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.visitBlock(CFGTranslationPhaseOne.java:212)
+  	at com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:1026)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.scan(CFGTranslationPhaseOne.java:571)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.process(CFGTranslationPhaseOne.java:468)
+  	at org.checkerframework.dataflow.cfg.builder.CFGTranslationPhaseOne.process(CFGTranslationPhaseOne.java:520)
+  	at org.checkerframework.framework.flow.CFCFGBuilder.build(CFCFGBuilder.java:73)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.analyze(GenericAnnotatedTypeFactory.java:1570)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1485)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1994)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:425)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:550)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:188)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:86)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:1057)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:559)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+error: SourceChecker.typeProcess: unexpected Throwable (BadClassFile) while processing ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/entity/Entity.java; message: bad class file: ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$ValueIterator.class
+    undeclared type variable: V
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/entity/Entity.java
+  Last visited tree at line 12 column 1:
+  public abstract class Entity {
+  Exception: com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$ValueIterator.class
+    undeclared type variable: V
+    Please remove or make sure it appears in the correct subdirectory of the classpath.; com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/lib/java/util/LinkedHashMap$ValueIterator.class
+    undeclared type variable: V
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  	at com.sun.tools.javac.jvm.ClassReader.badClassFile(ClassReader.java:298)
+  	at com.sun.tools.javac.jvm.ClassReader.findTypeVar(ClassReader.java:983)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:690)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:752)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:676)
+  	at com.sun.tools.javac.jvm.ClassReader.readType(ClassReader.java:519)
+  	at com.sun.tools.javac.jvm.ClassReader$11.read(ClassReader.java:1213)
+  	at com.sun.tools.javac.jvm.ClassReader.readAttrs(ClassReader.java:1561)
+  	at com.sun.tools.javac.jvm.ClassReader.readMemberAttrs(ClassReader.java:1551)
+  	at com.sun.tools.javac.jvm.ClassReader.readMethod(ClassReader.java:2432)
+  	at com.sun.tools.javac.jvm.ClassReader.readClass(ClassReader.java:2710)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassBuffer(ClassReader.java:2775)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassFile(ClassReader.java:2788)
+  	at com.sun.tools.javac.code.ClassFinder.fillIn(ClassFinder.java:348)
+  	at com.sun.tools.javac.code.ClassFinder.complete(ClassFinder.java:285)
+  	at com.sun.tools.javac.code.Symbol.complete(Symbol.java:633)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.complete(Symbol.java:1314)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.flags(Symbol.java:1248)
+  	at com.sun.tools.javac.code.Symbol$TypeSymbol.getEnclosedElements(Symbol.java:800)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.annosInPackage(AnnotationFileParser.java:464)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.getImportedAnnotations(AnnotationFileParser.java:565)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubUnit(AnnotationFileParser.java:746)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubFile(AnnotationFileParser.java:659)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseJdkFileAsStub(AnnotationFileParser.java:725)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.parseJdkJarEntry(AnnotationFileElementTypes.java:765)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.maybeParseEnclosingJdkClass(AnnotationFileElementTypes.java:691)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.getDeclAnnotations(AnnotationFileElementTypes.java:465)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3964)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3997)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3974)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3887)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3807)
+  	at org.checkerframework.checker.mustcall.MustCallAnnotatedTypeFactory$MustCallDefaultQualifierForUseTypeAnnotator.getExplicitAnnos(MustCallAnnotatedTypeFactory.java:363)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.getDefaultAnnosForUses(DefaultQualifierForUseTypeAnnotator.java:82)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:55)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:26)
+  	at org.checkerframework.framework.type.AnnotatedTypeMirror$AnnotatedDeclaredType.accept(AnnotatedTypeMirror.java:1051)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:206)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:194)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:181)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addAnnotationsFromDefaultForType(GenericAnnotatedTypeFactory.java:2432)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1922)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1854)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getAnnotatedType(AnnotatedTypeFactory.java:1390)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.getAnnotatedTypeLhs(GenericAnnotatedTypeFactory.java:1742)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1437)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1994)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:425)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:550)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:188)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:86)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:1057)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:559)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:552)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ec/util/MersenneTwister.java:209: error: (return) $$ 2 $$ @MustCallUnknown MersenneTwister $$ @MustCall Object $$ ( 10009, 10010 ) $$ incompatible types in return.
+            return f;
+                   ^
+  type of expression: @MustCallUnknown MersenneTwister
+  method return type: @MustCall Object
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ec/util/MersenneTwisterFast.java:213: error: (return) $$ 2 $$ @MustCallUnknown MersenneTwisterFast $$ @MustCall Object $$ ( 10127, 10128 ) $$ incompatible types in return.
+            return f;
+                   ^
+  type of expression: @MustCallUnknown MersenneTwisterFast
+  method return type: @MustCall Object
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java:52: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(directoryName + "/gnuplot-best.txt", append) $$ java.io.FileWriter $$ possible exceptional exit due to new FileWriter(directoryName + "/best-ship.txt", append) with exception type java.io.IOException $$ ( 1572, 1631 ) $$ @MustCall method close may not have been invoked on new FileWriter(directoryName + "/gnuplot-best.txt", append) or any of its aliases.
+        PrintWriter pw = new PrintWriter(new FileWriter(directoryName + "/gnuplot-best.txt", append));
+                                         ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(directoryName + "/best-ship.txt", append) with exception type java.io.IOException
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java:57: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(directoryName + "/gnuplot-mean.txt", append) $$ java.io.FileWriter $$ regular method exit $$ ( 1774, 1833 ) $$ @MustCall method close may not have been invoked on new FileWriter(directoryName + "/gnuplot-mean.txt", append) or any of its aliases.
+        pw = new PrintWriter(new FileWriter(directoryName + "/gnuplot-mean.txt", append));
+                             ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java:71: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(directoryName + "/gnuplot-best.txt") $$ java.io.FileReader $$ possible exceptional exit due to new FileWriter(directoryName + "/gnuplot-bestTEMP.txt", false) with exception type java.io.IOException $$ ( 2401, 2452 ) $$ @MustCall method close may not have been invoked on new FileReader(directoryName + "/gnuplot-best.txt") or any of its aliases.
+        BufferedReader reader = new BufferedReader(new FileReader(directoryName + "/gnuplot-best.txt"));
+                                                   ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(directoryName + "/gnuplot-bestTEMP.txt", false) with exception type java.io.IOException
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java:72: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(directoryName + "/gnuplot-bestTEMP.txt", false) $$ java.io.FileWriter $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 2496, 2558 ) $$ @MustCall method close may not have been invoked on new FileWriter(directoryName + "/gnuplot-bestTEMP.txt", false) or any of its aliases.
+        PrintWriter pw = new PrintWriter(new FileWriter(directoryName + "/gnuplot-bestTEMP.txt", false));
+                                         ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java:90: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(directoryName + "/gnuplot-mean.txt") $$ java.io.FileReader $$ possible exceptional exit due to new FileWriter(directoryName + "/gnuplot-meanTEMP.txt", false) with exception type java.io.IOException $$ ( 3214, 3265 ) $$ @MustCall method close may not have been invoked on new FileReader(directoryName + "/gnuplot-mean.txt") or any of its aliases.
+        reader = new BufferedReader(new FileReader(directoryName + "/gnuplot-mean.txt"));
+                                    ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(directoryName + "/gnuplot-meanTEMP.txt", false) with exception type java.io.IOException
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(directoryName + "/gnuplot-meanTEMP.txt", false) $$ java.io.FileWriter $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 3297, 3359 ) $$ @MustCall method close may not have been invoked on new FileWriter(directoryName + "/gnuplot-meanTEMP.txt", false) or any of its aliases.
+        pw = new PrintWriter(new FileWriter(directoryName + "/gnuplot-meanTEMP.txt", false));
+                             ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/strategy/TruncatedHOOHandler.java:86: error: (return) $$ 2 $$ @MustCall double @MustCallUnknown [] @MustCall [] $$ @MustCall double @MustCall [] @MustCall [] $$ ( 2783, 2793 ) $$ incompatible types in return.
+        return population;
+               ^
+  type of expression: @MustCall double @MustCallUnknown [] @MustCall []
+  method return type: @MustCall double @MustCall [] @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/ucb/optimisation/HOOOptimiser.java:122: error: (return) $$ 2 $$ @MustCallUnknown MCTSContinuousNode $$ @MustCall MCTSContinuousNode $$ ( 3843, 3847 ) $$ incompatible types in return.
+					return node;
+					       ^
+  type of expression: @MustCallUnknown MCTSContinuousNode
+  method return type: @MustCall MCTSContinuousNode
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/ucb/optimisation/HOOOptimiser.java:137: error: (return) $$ 2 $$ @MustCallUnknown MCTSContinuousNode $$ @MustCall MCTSContinuousNode $$ ( 4165, 4169 ) $$ incompatible types in return.
+				return node;
+				       ^
+  type of expression: @MustCallUnknown MCTSContinuousNode
+  method return type: @MustCall MCTSContinuousNode
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/ucb/optimisation/HOOOptimiser.java:144: error: (return) $$ 2 $$ @MustCallUnknown MCTSContinuousNode $$ @MustCall MCTSContinuousNode $$ ( 4332, 4336 ) $$ incompatible types in return.
+				return node;
+				       ^
+  type of expression: @MustCallUnknown MCTSContinuousNode
+  method return type: @MustCall MCTSContinuousNode
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/MCTSNode.java:98: error: (return) $$ 2 $$ @MustCallUnknown List<@MustCall Double> $$ @MustCall List<@MustCall Double> $$ ( 2389, 2396 ) $$ incompatible types in return.
+		return dScores;
+		       ^
+  type of expression: @MustCallUnknown List<@MustCall Double>
+  method return type: @MustCall List<@MustCall Double>
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/MCTS.java:249: error: (return) $$ 2 $$ N extends @MustCallUnknown MCTSNode</*RAW*/> $$ N extends @MustCall MCTSNode</*RAW*/> $$ ( 6139, 6152 ) $$ incompatible types in return.
+		return preferedChild;
+		       ^
+  type of expression: N extends @MustCallUnknown MCTSNode</*RAW*/>
+  method return type: N extends @MustCall MCTSNode</*RAW*/>
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/ucb/optimisation/MCTSContinuousNode.java:128: error: (return) $$ 2 $$ @MustCall double @MustCallUnknown [] $$ @MustCall double @MustCall [] $$ ( 2947, 2953 ) $$ incompatible types in return.
+		return sample;
+		       ^
+  type of expression: @MustCall double @MustCallUnknown []
+  method return type: @MustCall double @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/ucb/optimisation/HOOTruncatedBackpropagator.java:73: error: (assignment) $$ 2 $$ @MustCall double @MustCallUnknown [] $$ @MustCall double @MustCall [] $$ ( 2028, 2035 ) $$ incompatible types in assignment.
+			bestSample = funcVal;
+			             ^
+  found   : @MustCall double @MustCallUnknown []
+  required: @MustCall double @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/ucb/optimisation/HOOTruncatedBackpropagator.java:78: error: (assignment) $$ 2 $$ @MustCall double @MustCallUnknown [] $$ @MustCall double @MustCall [] $$ ( 2103, 2118 ) $$ incompatible types in assignment.
+		samples[iteration] = funcVal.clone();
+		                                  ^
+  found   : @MustCall double @MustCallUnknown []
+  required: @MustCall double @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/selectors/ucb/UCB.java:37: warning: (cast.unsafe) $$ 2 $$ @MustCallUnknown StatisticsNode $$ T[ extends @MustCall StatisticsNode super @MustCall Void] $$ ( 1246, 1259 ) $$ cast from "@MustCallUnknown StatisticsNode" to "T[ extends @MustCall StatisticsNode super @MustCall Void]" cannot be statically verified
+			double childScore = getNodeScore(node, (T) childNode);
+			                                       ^
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/selectors/ucb/UCB.java:49: warning: (cast.unsafe) $$ 2 $$ @MustCallUnknown StatisticsNode $$ T[ extends @MustCall StatisticsNode super @MustCall Void] $$ ( 1506, 1519 ) $$ cast from "@MustCallUnknown StatisticsNode" to "T[ extends @MustCall StatisticsNode super @MustCall Void]" cannot be statically verified
+				double childScore = getNodeScore(node, (T) childNode);
+				                                       ^
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/selectors/ucb/UCB.java:57: warning: (cast.unsafe) $$ 2 $$ @MustCallUnknown StatisticsNode $$ T[ extends @MustCall StatisticsNode super @MustCall Void] $$ ( 1624, 1636 ) $$ cast from "@MustCallUnknown StatisticsNode" to "T[ extends @MustCall StatisticsNode super @MustCall Void]" cannot be statically verified
+		return (T) maxChild;
+		       ^
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/SummaryStatistics.java:201: error: (return) $$ 2 $$ @MustCallUnknown SummaryStatistics $$ @MustCall SummaryStatistics $$ ( 4636, 4640 ) $$ incompatible types in return.
+		return copy;
+		       ^
+  type of expression: @MustCallUnknown SummaryStatistics
+  method return type: @MustCall SummaryStatistics
+error: SourceChecker.typeProcess: unexpected Throwable (AssertionError) while processing ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/CMAEvolutionStrategy.java; message: @AssumeAssertion(nullness): transferInput should be non-null
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/CMAEvolutionStrategy.java
+  Last visited tree at line 200 column 1:
+  public class CMAEvolutionStrategy implements java.io.Serializable {
+  Exception: java.lang.AssertionError: @AssumeAssertion(nullness): transferInput should be non-null; java.lang.AssertionError: @AssumeAssertion(nullness): transferInput should be non-null
+  	at org.checkerframework.dataflow.analysis.AnalysisResult.getStoreBefore(AnalysisResult.java:313)
+  	at org.checkerframework.checker.mustcall.MustCallAnnotatedTypeFactory.getStoreForBlock(MustCallAnnotatedTypeFactory.java:459)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.propagateObligationsToSuccessorBlock(MustCallConsistencyAnalyzer.java:2141)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.propagateObligationsToSuccessorBlocks(MustCallConsistencyAnalyzer.java:1978)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.analyze(MustCallConsistencyAnalyzer.java:601)
+  	at org.checkerframework.checker.resourceleak.ResourceLeakAnnotatedTypeFactory.postAnalyze(ResourceLeakAnnotatedTypeFactory.java:152)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.analyze(GenericAnnotatedTypeFactory.java:1653)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1485)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1994)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:425)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:550)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:188)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:86)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:1057)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:559)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/CMAEvolutionStrategy.java:556: error: (return) $$ 2 $$ @MustCall double @MustCallUnknown [] $$ @MustCall double @MustCall [] $$ ( 23590, 23593 ) $$ incompatible types in return.
+    	return res;
+    	       ^
+  type of expression: @MustCall double @MustCallUnknown []
+  method return type: @MustCall double @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/CMAEvolutionStrategy.java:808: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to properties.load(fis) with exception type java.io.IOException $$ ( 31820, 31888 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+            java.io.FileInputStream fis = new java.io.FileInputStream(fileName);
+                                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(fis) with exception type java.io.IOException
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/CMAEvolutionStrategy.java:992: error: (return) $$ 2 $$ @MustCallUnknown Double $$ @MustCall Double $$ ( 38296, 38297 ) $$ incompatible types in return.
+            return m;
+                   ^
+  type of expression: @MustCallUnknown Double
+  method return type: @MustCall Double
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/CMAEvolutionStrategy.java:1004: error: (return) $$ 2 $$ @MustCallUnknown IntDouble $$ @MustCall IntDouble $$ ( 38647, 38648 ) $$ incompatible types in return.
+            return m;
+                   ^
+  type of expression: @MustCallUnknown IntDouble
+  method return type: @MustCall IntDouble
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/CMAEvolutionStrategy.java:1016: error: (return) $$ 2 $$ @MustCallUnknown IntDouble $$ @MustCall IntDouble $$ ( 38998, 38999 ) $$ incompatible types in return.
+            return m;
+                   ^
+  type of expression: @MustCallUnknown IntDouble
+  method return type: @MustCall IntDouble
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/CMAEvolutionStrategy.java:1028: error: (return) $$ 2 $$ @MustCallUnknown Double $$ @MustCall Double $$ ( 39381, 39382 ) $$ incompatible types in return.
+            return m;
+                   ^
+  type of expression: @MustCallUnknown Double
+  method return type: @MustCall Double
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/CMAEvolutionStrategy.java:1039: error: (return) $$ 2 $$ @MustCall double @MustCallUnknown [] $$ @MustCall double @MustCall [] $$ ( 39713, 39717 ) $$ incompatible types in return.
+            return diag;
+                   ^
+  type of expression: @MustCall double @MustCallUnknown []
+  method return type: @MustCall double @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/CMAEvolutionStrategy.java:1049: error: (return) $$ 2 $$ @MustCall double @MustCallUnknown [] $$ @MustCall double @MustCall [] $$ ( 40037, 40040 ) $$ incompatible types in return.
+            return res;
+                   ^
+  type of expression: @MustCall double @MustCallUnknown []
+  method return type: @MustCall double @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/CMAOptions.java:254: error: (return) $$ 2 $$ @MustCall double @MustCallUnknown [] $$ @MustCall double @MustCall [] $$ ( 11935, 11938 ) $$ incompatible types in return.
+		    return ard;
+		           ^
+  type of expression: @MustCall double @MustCallUnknown []
+  method return type: @MustCall double @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/CMAParameters.java:124: error: (return) $$ 2 $$ @MustCallUnknown CMAParameters $$ @MustCall CMAParameters $$ ( 5222, 5223 ) $$ incompatible types in return.
+		return p; 
+		       ^
+  type of expression: @MustCallUnknown CMAParameters
+  method return type: @MustCall CMAParameters
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/CMAParameters.java:148: error: (return) $$ 2 $$ @MustCallUnknown CMAParameters $$ @MustCall CMAParameters $$ ( 6060, 6061 ) $$ incompatible types in return.
+        return p;
+               ^
+  type of expression: @MustCallUnknown CMAParameters
+  method return type: @MustCall CMAParameters
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/StreamClonable.java:46: error: (return) $$ 2 $$ @MustCallUnknown Object $$ @MustCall Object $$ ( 1592, 1601 ) $$ incompatible types in return.
+        return clonedObj;
+               ^
+  type of expression: @MustCallUnknown Object
+  method return type: @MustCall Object
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/Configuration.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ propFile $$ java.io.FileInputStream $$ possible exceptional exit due to props.load(propFile) with exception type java.io.IOException $$ ( 1481, 1560 ) $$ @MustCall method close may not have been invoked on propFile or any of its aliases.
+		FileInputStream propFile = new FileInputStream(PATH
+		                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to props.load(propFile) with exception type java.io.IOException
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/SerialClone.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ cout $$ ssamot.utilities.SerialClone.CloneOutput $$ possible exceptional exit due to cout.writeObject(x) with exception type java.io.IOException $$ ( 1526, 1567 ) $$ @MustCall method close may not have been invoked on cout or any of its aliases.
+	CloneOutput cout = new CloneOutput(bout);
+	            ^
+  The type of object is: ssamot.utilities.SerialClone.CloneOutput.
+  Reason for going out of scope: possible exceptional exit due to cout.writeObject(x) with exception type java.io.IOException
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/SerialClone.java:52: error: (required.method.not.called) $$ 4 $$ method close $$ cin $$ ssamot.utilities.SerialClone.CloneInput $$ regular method exit $$ ( 1690, 1733 ) $$ @MustCall method close may not have been invoked on cin or any of its aliases.
+	CloneInput cin = new CloneInput(bin, cout);
+	           ^
+  The type of object is: ssamot.utilities.SerialClone.CloneInput.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/SerialClone.java:56: error: (return) $$ 2 $$ T extends @MustCallUnknown Object $$ T extends @MustCall Object $$ ( 1849, 1854 ) $$ incompatible types in return.
+	return clone;
+	       ^
+  type of expression: T extends @MustCallUnknown Object
+  method return type: T extends @MustCall Object
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/ArraysCopy.java:61: error: (return) $$ 2 $$ @MustCall int @MustCallUnknown [] $$ @MustCall int @MustCall [] $$ ( 2044, 2046 ) $$ incompatible types in return.
+        return rt;
+               ^
+  type of expression: @MustCall int @MustCallUnknown []
+  method return type: @MustCall int @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/ArraysCopy.java:70: error: (return) $$ 2 $$ @MustCall Card @MustCallUnknown [] $$ @MustCall Card @MustCall [] $$ ( 2290, 2292 ) $$ incompatible types in return.
+        return rt;
+               ^
+  type of expression: @MustCall Card @MustCallUnknown []
+  method return type: @MustCall Card @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/ArraysCopy.java:79: error: (return) $$ 2 $$ @MustCall double @MustCallUnknown [] $$ @MustCall double @MustCall [] $$ ( 2544, 2546 ) $$ incompatible types in return.
+        return rt;
+               ^
+  type of expression: @MustCall double @MustCallUnknown []
+  method return type: @MustCall double @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/ArraysCopy.java:97: error: (return) $$ 2 $$ @MustCall boolean @MustCallUnknown [] $$ @MustCall boolean @MustCall [] $$ ( 3037, 3039 ) $$ incompatible types in return.
+        return rt;
+               ^
+  type of expression: @MustCall boolean @MustCallUnknown []
+  method return type: @MustCall boolean @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/ArraysCopy.java:106: error: (return) $$ 2 $$ @MustCall short @MustCallUnknown [] $$ @MustCall short @MustCall [] $$ ( 3287, 3289 ) $$ incompatible types in return.
+        return rt;
+               ^
+  type of expression: @MustCall short @MustCallUnknown []
+  method return type: @MustCall short @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/ArraysCopy.java:147: error: (return) $$ 2 $$ @MustCall double @MustCallUnknown [] $$ @MustCall double @MustCall [] $$ ( 4897, 4910 ) $$ incompatible types in return.
+        return flattendArray;
+               ^
+  type of expression: @MustCall double @MustCallUnknown []
+  method return type: @MustCall double @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/ArraysCopy.java:153: error: (return) $$ 2 $$ T extends @MustCall Object @MustCallUnknown [] $$ T extends @MustCall Object @MustCall [] $$ ( 5140, 5146 ) $$ incompatible types in return.
+    	  return result;
+    	         ^
+  type of expression: T extends @MustCall Object @MustCallUnknown []
+  method return type: T extends @MustCall Object @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/ArraysCopy.java:159: error: (return) $$ 2 $$ @MustCall double @MustCallUnknown [] $$ @MustCall double @MustCall [] $$ ( 5386, 5392 ) $$ incompatible types in return.
+  	  return result;
+  	         ^
+  type of expression: @MustCall double @MustCallUnknown []
+  method return type: @MustCall double @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/config/GameConfig.java:57: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ regular method exit $$ ( 1624, 1658 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+					is = new FileInputStream(fileName);
+					   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/selectors/ucb/UCBActionSelector.java:32: error: (override.return) $$ 6 $$ @CalledMethods StatisticsNode $$ T extends @CalledMethods StatisticsNode $$ @CalledMethods UCBActionSelector<T extends @CalledMethods StatisticsNode> $$ @CalledMethods StatisticsNode selectChild(@CalledMethods UCBActionSelector<T extends @CalledMethods StatisticsNode> this, @CalledMethods StatisticsNode p0) $$ @CalledMethods Selector<T extends @CalledMethods StatisticsNode> $$ T extends @CalledMethods StatisticsNode selectChild(@CalledMethods Selector<T extends @CalledMethods StatisticsNode> this, T extends @CalledMethods StatisticsNode p0) $$ ( 1035, 1049 ) $$ Incompatible return type.
+	public StatisticsNode selectChild(StatisticsNode node) {
+	       ^
+  found   : @CalledMethods StatisticsNode
+  required: T extends @CalledMethods StatisticsNode
+  Consequence: method in @CalledMethods UCBActionSelector<T extends @CalledMethods StatisticsNode>
+    @CalledMethods StatisticsNode selectChild(@CalledMethods UCBActionSelector<T extends @CalledMethods StatisticsNode> this, @CalledMethods StatisticsNode p0)
+  cannot override method in @CalledMethods Selector<T extends @CalledMethods StatisticsNode>
+    T extends @CalledMethods StatisticsNode selectChild(@CalledMethods Selector<T extends @CalledMethods StatisticsNode> this, T extends @CalledMethods StatisticsNode p0)
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/selectors/exp3/EXP3.java:69: error: (return) $$ 2 $$ @MustCallUnknown EXP3Node $$ @MustCall EXP3Node $$ ( 1765, 1778 ) $$ incompatible types in return.
+		return selectedChild;
+		       ^
+  type of expression: @MustCallUnknown EXP3Node
+  method return type: @MustCall EXP3Node
+error: SourceChecker.typeProcess: unexpected Throwable (AssertionError) while processing ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/ucb/optimisation/MDPRootActionReplayer.java; message: @AssumeAssertion(nullness): transferInput should be non-null
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/ucb/optimisation/MDPRootActionReplayer.java
+  Last visited tree at line 26 column 1:
+  public class MDPRootActionReplayer {
+  Exception: java.lang.AssertionError: @AssumeAssertion(nullness): transferInput should be non-null; java.lang.AssertionError: @AssumeAssertion(nullness): transferInput should be non-null
+  	at org.checkerframework.dataflow.analysis.AnalysisResult.getStoreAfter(AnalysisResult.java:341)
+  	at org.checkerframework.checker.mustcall.MustCallAnnotatedTypeFactory.getStoreForBlock(MustCallAnnotatedTypeFactory.java:459)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.propagateObligationsToSuccessorBlock(MustCallConsistencyAnalyzer.java:2141)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.propagateObligationsToSuccessorBlocks(MustCallConsistencyAnalyzer.java:1978)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.analyze(MustCallConsistencyAnalyzer.java:601)
+  	at org.checkerframework.checker.resourceleak.ResourceLeakAnnotatedTypeFactory.postAnalyze(ResourceLeakAnnotatedTypeFactory.java:152)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.analyze(GenericAnnotatedTypeFactory.java:1653)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1485)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1994)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:425)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:550)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:188)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:86)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:1057)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:559)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/ucb/optimisation/MDPRootActionReplayer.java:117: error: (assignment) $$ 2 $$ @MustCallUnknown MCTSContinuousNode $$ @MustCall MCTSContinuousNode $$ ( 3493, 3502 ) $$ incompatible types in assignment.
+				rootNode = leftChild;
+				           ^
+  found   : @MustCallUnknown MCTSContinuousNode
+  required: @MustCall MCTSContinuousNode
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/ucb/optimisation/MDPRootActionReplayer.java:120: error: (assignment) $$ 2 $$ @MustCallUnknown MCTSContinuousNode $$ @MustCall MCTSContinuousNode $$ ( 3576, 3586 ) $$ incompatible types in assignment.
+				rootNode = rightChild;
+				           ^
+  found   : @MustCallUnknown MCTSContinuousNode
+  required: @MustCall MCTSContinuousNode
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/ucb/optimisation/MDPRootActionReplayer.java:123: error: (assignment) $$ 2 $$ @MustCallUnknown MCTSContinuousNode $$ @MustCall MCTSContinuousNode $$ ( 3697, 3706 ) $$ incompatible types in assignment.
+				rootNode = leftChild;
+				           ^
+  found   : @MustCallUnknown MCTSContinuousNode
+  required: @MustCall MCTSContinuousNode
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/ucb/optimisation/MDPRootActionReplayer.java:126: error: (assignment) $$ 2 $$ @MustCallUnknown MCTSContinuousNode $$ @MustCall MCTSContinuousNode $$ ( 3738, 3748 ) $$ incompatible types in assignment.
+				rootNode = rightChild;
+				           ^
+  found   : @MustCallUnknown MCTSContinuousNode
+  required: @MustCall MCTSContinuousNode
+error: SourceChecker.typeProcess: unexpected Throwable (AssertionError) while processing ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/ucb/optimisation/HOONodeExplorer.java; message: @AssumeAssertion(nullness): transferInput should be non-null
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/ucb/optimisation/HOONodeExplorer.java
+  Last visited tree at line 26 column 1:
+  public class HOONodeExplorer {
+  Exception: java.lang.AssertionError: @AssumeAssertion(nullness): transferInput should be non-null; java.lang.AssertionError: @AssumeAssertion(nullness): transferInput should be non-null
+  	at org.checkerframework.dataflow.analysis.AnalysisResult.getStoreAfter(AnalysisResult.java:341)
+  	at org.checkerframework.checker.mustcall.MustCallAnnotatedTypeFactory.getStoreForBlock(MustCallAnnotatedTypeFactory.java:459)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.propagateObligationsToSuccessorBlock(MustCallConsistencyAnalyzer.java:2141)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.propagateObligationsToSuccessorBlocks(MustCallConsistencyAnalyzer.java:1978)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.analyze(MustCallConsistencyAnalyzer.java:601)
+  	at org.checkerframework.checker.resourceleak.ResourceLeakAnnotatedTypeFactory.postAnalyze(ResourceLeakAnnotatedTypeFactory.java:152)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.analyze(GenericAnnotatedTypeFactory.java:1653)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1485)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1994)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:425)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:550)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:188)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:86)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:1057)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:559)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/mcts/ucb/optimisation/HOONodeExplorer.java:106: error: (return) $$ 2 $$ @MustCall double @MustCallUnknown [] $$ @MustCall double @MustCall [] $$ ( 2573, 2579 ) $$ incompatible types in return.
+		return result;
+		       ^
+  type of expression: @MustCall double @MustCallUnknown []
+  method return type: @MustCall double @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/main/AutoRunner.java:68: error: (return) $$ 2 $$ @MustCallUnknown Runner $$ @MustCall Runner $$ ( 2194, 2195 ) $$ incompatible types in return.
+        return r;
+               ^
+  type of expression: @MustCallUnknown Runner
+  method return type: @MustCall Runner
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/main/ConvertToReadable.java:25: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(directoryName + "/best-ship.txt") $$ java.io.FileReader $$ possible exceptional exit due to new FileWriter(directoryName + "/readable-results.txt", false) with exception type java.io.IOException $$ ( 676, 724 ) $$ @MustCall method close may not have been invoked on new FileReader(directoryName + "/best-ship.txt") or any of its aliases.
+            BufferedReader reader = new BufferedReader(new FileReader(directoryName + "/best-ship.txt"));
+                                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(directoryName + "/readable-results.txt", false) with exception type java.io.IOException
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/main/ConvertToReadable.java:26: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(directoryName + "/readable-results.txt", false) $$ java.io.FileWriter $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 772, 834 ) $$ @MustCall method close may not have been invoked on new FileWriter(directoryName + "/readable-results.txt", false) or any of its aliases.
+            PrintWriter pw = new PrintWriter(new FileWriter(directoryName + "/readable-results.txt", false));
+                                             ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/main/ConvertToReadable.java:32: error: (required.method.not.called) $$ 4 $$ method close $$ readLine $$ java.util.Scanner $$ regular method exit $$ ( 1117, 1154 ) $$ @MustCall method close may not have been invoked on readLine or any of its aliases.
+                Scanner readLine = new Scanner(line);
+                        ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/PrintfFormat.java:1351: error: (return) $$ 2 $$ @MustCall char @MustCallUnknown [] $$ @MustCall char @MustCall [] $$ ( 45811, 45814 ) $$ incompatible types in return.
+      return ca6;
+             ^
+  type of expression: @MustCall char @MustCallUnknown []
+  method return type: @MustCall char @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/PrintfFormat.java:1645: error: (return) $$ 2 $$ @MustCall char @MustCallUnknown [] $$ @MustCall char @MustCall [] $$ ( 54598, 54601 ) $$ incompatible types in return.
+      return ca4;
+             ^
+  type of expression: @MustCall char @MustCallUnknown []
+  method return type: @MustCall char @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/PrintfFormat.java:1791: error: (return) $$ 2 $$ @MustCall char @MustCallUnknown [] $$ @MustCall char @MustCall [] $$ ( 59450, 59453 ) $$ incompatible types in return.
+      return ca5;
+             ^
+  type of expression: @MustCall char @MustCallUnknown []
+  method return type: @MustCall char @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/fitness/AbstractObjectiveFunction.java:15: error: (return) $$ 2 $$ @MustCall double @MustCallUnknown [] $$ @MustCall double @MustCall [] $$ ( 600, 603 ) $$ incompatible types in return.
+        return res;
+               ^
+  type of expression: @MustCall double @MustCallUnknown []
+  method return type: @MustCall double @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/fitness/FunctionCollector.java:310: error: (return) $$ 2 $$ @MustCall double @MustCallUnknown [] $$ @MustCall double @MustCall [] $$ ( 8564, 8565 ) $$ incompatible types in return.
+    	return y;
+    	       ^
+  type of expression: @MustCall double @MustCallUnknown []
+  method return type: @MustCall double @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/fitness/FunctionCollector.java:317: error: (return) $$ 2 $$ @MustCall double @MustCallUnknown [] @MustCall [] $$ @MustCall double @MustCall [] @MustCall [] $$ ( 8751, 8752 ) $$ incompatible types in return.
+    	return y;
+    	       ^
+  type of expression: @MustCall double @MustCallUnknown [] @MustCall []
+  method return type: @MustCall double @MustCall [] @MustCall []
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/lunar/LunarTerrain.java:102: error: (return) $$ 2 $$ @MustCallUnknown Vector2d $$ @MustCall Vector2d $$ ( 3679, 3688 ) $$ incompatible types in return.
+        return bestPoint;
+               ^
+  type of expression: @MustCallUnknown Vector2d
+  method return type: @MustCall Vector2d
+../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/lunar/ProblemProblem.java:183: error: (return) $$ 2 $$ @MustCall double @MustCallUnknown [] $$ @MustCall double @MustCall [] $$ ( 6930, 6940 ) $$ incompatible types in return.
+        return individual;
+               ^
+  type of expression: @MustCall double @MustCallUnknown []
+  method return type: @MustCall double @MustCall []
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+68 errors
+3 warnings

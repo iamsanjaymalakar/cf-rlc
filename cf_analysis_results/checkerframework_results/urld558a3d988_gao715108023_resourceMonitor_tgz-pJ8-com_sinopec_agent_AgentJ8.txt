@@ -1,0 +1,28 @@
+../../../../datasets/june2020_dataset/urld558a3d988_gao715108023_resourceMonitor_tgz-pJ8-com_sinopec_agent_AgentJ8/src/com/sinopec/utils/ConfigUtils.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-501 $$ java.io.FileInputStream $$ possible exceptional exit due to propertie.load(inputFile) with exception type java.io.IOException $$ ( 525, 554 ) $$ @MustCall method close may not have been invoked on temp-var-501 or any of its aliases.
+			inputFile = new FileInputStream(filePath);
+			            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to propertie.load(inputFile) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urld558a3d988_gao715108023_resourceMonitor_tgz-pJ8-com_sinopec_agent_AgentJ8/src/com/sinopec/utils/ConfigUtils.java:75: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-514 $$ java.io.FileInputStream $$ possible exceptional exit due to propertie.load(inputFile) with exception type java.io.IOException $$ ( 1748, 1777 ) $$ @MustCall method close may not have been invoked on temp-var-514 or any of its aliases.
+			inputFile = new FileInputStream(fileName);
+			            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to propertie.load(inputFile) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urld558a3d988_gao715108023_resourceMonitor_tgz-pJ8-com_sinopec_agent_AgentJ8/src/com/sinopec/mybatis/MybatisCommon.java:32: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-946 $$ java.io.Reader $$ regular method exit $$ ( 816, 855 ) $$ @MustCall method close may not have been invoked on temp-var-946 or any of its aliases.
+			reader = Resources.getResourceAsReader(resource);
+			                                      ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urld558a3d988_gao715108023_resourceMonitor_tgz-pJ8-com_sinopec_agent_AgentJ8/src/com/sinopec/mybatis/MybatisCommon.java:39: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-950 $$ org.apache.ibatis.session.SqlSession $$ regular method exit $$ ( 1134, 1155 ) $$ @MustCall method close may not have been invoked on temp-var-950 or any of its aliases.
+		session = factory.openSession();
+		                             ^
+  The type of object is: org.apache.ibatis.session.SqlSession.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urld558a3d988_gao715108023_resourceMonitor_tgz-pJ8-com_sinopec_agent_AgentJ8/src/com/sinopec/mybatis/MybatisCommon.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-956 $$ org.apache.ibatis.session.SqlSession $$ regular method exit $$ ( 2053, 2074 ) $$ @MustCall method close may not have been invoked on temp-var-956 or any of its aliases.
+		session = factory.openSession();
+		                             ^
+  The type of object is: org.apache.ibatis.session.SqlSession.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors

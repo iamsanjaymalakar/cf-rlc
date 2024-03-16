@@ -1,0 +1,13 @@
+../../../../datasets/june2020_dataset/url0067cdd33d_goldolphin_Mi_tgz-pJ8-mi_regex_CommonJ8/src/mi/stream/BufferedStream.java:46: error: (assignment) $$ 2 $$ T extends @MustCallUnknown Object $$ @MustCall Object $$ ( 1087, 1100 ) $$ incompatible types in assignment.
+            buffer[end] = source.poll();
+                                     ^
+  found   : T extends @MustCallUnknown Object
+  required: @MustCall Object
+../../../../datasets/june2020_dataset/url0067cdd33d_goldolphin_Mi_tgz-pJ8-mi_regex_CommonJ8/src/mi/stream/BufferedStream.java:55: error: (assignment) $$ 2 $$ T extends @MustCallUnknown Object $$ @MustCall Object $$ ( 1374, 1387 ) $$ incompatible types in assignment.
+            buffer[end] = source.poll();
+                                     ^
+  found   : T extends @MustCallUnknown Object
+  required: @MustCall Object
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors

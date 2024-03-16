@@ -1,0 +1,87 @@
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/gui/Mainmenu.java:35: error: (required.method.not.called) $$ 4 $$ method closeDatabase $$ field myDB $$ Trading_Engine.myDatabase $$  The enclosing element gui.Mainmenu has an empty @MustCall annotation $$ ( 891, 921 ) $$ @MustCall method closeDatabase may not have been invoked on field myDB or any of its aliases.
+	public static myDatabase myDB;
+	                         ^
+  The type of object is: Trading_Engine.myDatabase.
+  Reason for going out of scope:  The enclosing element gui.Mainmenu has an empty @MustCall annotation
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/gui/Mainmenu.java:37: error: (missing.creates.mustcall.for) $$ 3 $$ <init> $$ gui.Mainmenu $$ myDB $$ ( 958, 2996 ) $$ Method <init> re-assigns the non-final, owning field gui.Mainmenu.myDB, but does not have a corresponding @CreatesMustCallFor annotation.
+	public Mainmenu(myDatabase db, Result result) { 
+	       ^
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/gui/Mainmenu.java:45: error: (required.method.not.called) $$ 4 $$ method closeDatabase $$ field myDB $$ Trading_Engine.myDatabase $$  Non-final owning field might be overwritten $$ ( 1216, 1225 ) $$ @MustCall method closeDatabase may not have been invoked on field myDB or any of its aliases.
+		myDB = db;
+		     ^
+  The type of object is: Trading_Engine.myDatabase.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/gui/Mainmenu.java:45: error: (assignment) $$ 2 $$ @PolyMustCall myDatabase $$ @MustCall("closeDatabase") myDatabase $$ ( 1223, 1225 ) $$ incompatible types in assignment.
+		myDB = db;
+		       ^
+  found   : @PolyMustCall myDatabase
+  required: @MustCall("closeDatabase") myDatabase
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/gui/Mainmenu.java:66: error: (contracts.postcondition) $$ 3 $$ actionPerformed $$ no information about gui.Mainmenu.myDB $$ gui.Mainmenu.myDB is @CalledMethods("closeDatabase") $$ ( 1816, 1916 ) $$ postcondition of actionPerformed is not satisfied.
+					public void actionPerformed(ActionEvent event){
+					            ^
+  found   : no information about gui.Mainmenu.myDB
+  required: gui.Mainmenu.myDB is @CalledMethods("closeDatabase")
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/gui/Mainmenu.java:74: error: (contracts.postcondition) $$ 3 $$ actionPerformed $$ no information about gui.Mainmenu.myDB $$ gui.Mainmenu.myDB is @CalledMethods("closeDatabase") $$ ( 1994, 2631 ) $$ postcondition of actionPerformed is not satisfied.
+					public void actionPerformed(ActionEvent event) {
+					            ^
+  found   : no information about gui.Mainmenu.myDB
+  required: gui.Mainmenu.myDB is @CalledMethods("closeDatabase")
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/gui/Mainmenu.java:130: error: (contracts.postcondition) $$ 3 $$ actionPerformed $$ no information about gui.Mainmenu.myDB $$ gui.Mainmenu.myDB is @CalledMethods("closeDatabase") $$ ( 4015, 4093 ) $$ postcondition of actionPerformed is not satisfied.
+				public void actionPerformed(ActionEvent evt) {
+				            ^
+  found   : no information about gui.Mainmenu.myDB
+  required: gui.Mainmenu.myDB is @CalledMethods("closeDatabase")
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Trading_Engine/myDatabase.java:8: error: (required.method.not.called) $$ 4 $$ method close $$ field connection $$ java.sql.Connection $$ Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "connection", methods = "close"), @EnsuresCalledMethodsOnException(value = "connection", methods = "close") $$ ( 126, 163 ) $$ @MustCall method close may not have been invoked on field connection or any of its aliases.
+	private static Connection connection;
+	                          ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "connection", methods = "close"), @EnsuresCalledMethodsOnException(value = "connection", methods = "close")
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Trading_Engine/myDatabase.java:11: error: (missing.creates.mustcall.for) $$ 3 $$ <init> $$ Trading_Engine.myDatabase $$ connection $$ ( 194, 554 ) $$ Method <init> re-assigns the non-final, owning field Trading_Engine.myDatabase.connection, but does not have a corresponding @CreatesMustCallFor annotation.
+	public myDatabase(){
+	       ^
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Trading_Engine/myDatabase.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ field connection $$ java.sql.Connection $$  Non-final owning field might be overwritten $$ ( 367, 430 ) $$ @MustCall method close may not have been invoked on field connection or any of its aliases.
+			connection = DriverManager.getConnection("jdbc:sqlite:test.db");
+			           ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Trading_Engine/myDatabase.java:114: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(f) $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 3905, 3922 ) $$ @MustCall method close may not have been invoked on new FileReader(f) or any of its aliases.
+			BufferedReader br = new BufferedReader(new FileReader(f));
+			                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Trading_Engine/myDatabase.java:379: error: (contracts.postcondition) $$ 3 $$ closeDatabase $$ no information about Trading_Engine.myDatabase.connection $$ Trading_Engine.myDatabase.connection is @CalledMethods("close") $$ ( 12247, 12424 ) $$ postcondition of closeDatabase is not satisfied.
+	public void closeDatabase(){
+	            ^
+  found   : no information about Trading_Engine.myDatabase.connection
+  required: Trading_Engine.myDatabase.connection is @CalledMethods("close")
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Trading_Engine/Main.java:26: error: (required.method.not.called) $$ 4 $$ method closeDatabase $$ db $$ Trading_Engine.myDatabase $$ regular method exit $$ ( 773, 806 ) $$ @MustCall method closeDatabase may not have been invoked on db or any of its aliases.
+		myDatabase db = new myDatabase();
+		           ^
+  The type of object is: Trading_Engine.myDatabase.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Test/myDatabaseTest.java:25: error: (required.method.not.called) $$ 4 $$ method closeDatabase $$ field myTestDB $$ Trading_Engine.myDatabase $$ Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "myTestDB", methods = "closeDatabase"), @EnsuresCalledMethodsOnException(value = "myTestDB", methods = "closeDatabase") $$ ( 550, 585 ) $$ @MustCall method closeDatabase may not have been invoked on field myTestDB or any of its aliases.
+	private static myDatabase myTestDB;
+	                          ^
+  The type of object is: Trading_Engine.myDatabase.
+  Reason for going out of scope: Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "myTestDB", methods = "closeDatabase"), @EnsuresCalledMethodsOnException(value = "myTestDB", methods = "closeDatabase")
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Test/myDatabaseTest.java:28: error: (missing.creates.mustcall.for) $$ 3 $$ setup $$ Test.myDatabaseTest $$ myTestDB $$ ( 590, 699 ) $$ Method setup re-assigns the non-final, owning field Test.myDatabaseTest.myTestDB, but does not have a corresponding @CreatesMustCallFor annotation.
+	public static void setup(){
+	                   ^
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Test/myDatabaseTest.java:29: error: (required.method.not.called) $$ 4 $$ method closeDatabase $$ field myTestDB $$ Trading_Engine.myDatabase $$  Non-final owning field might be overwritten $$ ( 636, 663 ) $$ @MustCall method closeDatabase may not have been invoked on field myTestDB or any of its aliases.
+		myTestDB = new myDatabase();
+		         ^
+  The type of object is: Trading_Engine.myDatabase.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Test/myDatabaseTest.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(file) $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 1217, 1237 ) $$ @MustCall method close may not have been invoked on new FileReader(file) or any of its aliases.
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Test/myDatabaseTest.java:79: error: (flowexpr.parse.error) $$ 1 $$ 'this.myTestDB' in the postcondition EnsuresCalledMethods on the declaration of method 'close': Invalid 'this' because "this" isn't allowed here $$ ( 2258, 2332 ) $$ cannot parse the expression 'this.myTestDB' in the postcondition EnsuresCalledMethods on the declaration of method 'close': Invalid 'this' because "this" isn't allowed here
+	public static void close(){
+	                   ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: ../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/gui/ChooseStrategy.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+18 errors

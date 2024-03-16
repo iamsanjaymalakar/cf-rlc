@@ -1,0 +1,46 @@
+29755
+6996
+
+SOURCE LEVEL FIXES
+
+1] ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java; Line number 162
+vim +162 ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java
+
++++ Add following code above line:162 (grinder/controller/Controller.java)
+try{ 
++++ Add following code below line:164 (grinder/controller/Controller.java)
+} catch(Exception e){ 
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+    throw e; 
+}
++++ Add following code below line: 196 (grinder/controller/Controller.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 162
+
+--------------------------------------------
+11] ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/LogFiler.java; Line number 117
+vim +117 ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/LogFiler.java
+
++++ Add following code above line:117 (grinder/client/LogFiler.java)
+try{
++++ Add following code after line:132 (grinder/client/LogFiler.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 117
+
++++ Delete Line number 139 (grinder/client/LogFiler.java)
+
+--------------------------------------------
+15] ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/user/Browser.java; Line number 201
+vim +201 ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/user/Browser.java
+
++++ Add following code below line: 213 (grinder/client/user/Browser.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 201
+
+--------------------------------------------

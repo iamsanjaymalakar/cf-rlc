@@ -1,0 +1,19 @@
+9956
+675
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/urld3c7d5e997_dku_rajkumar_java_api_for_amon_tgz-pJ8-org_json_TestJ8/src/org/amon/AmonLogger.java; Line number 59
+vim +59 ../../../dataset/june2020_dataset/urld3c7d5e997_dku_rajkumar_java_api_for_amon_tgz-pJ8-org_json_TestJ8/src/org/amon/AmonLogger.java
+
++++ Add following code above line:59 (org/amon/AmonLogger.java)
+try{
++++ Add following code after line:60 (org/amon/AmonLogger.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 59
+
++++ Delete Line number 61 (org/amon/AmonLogger.java)
+
+--------------------------------------------

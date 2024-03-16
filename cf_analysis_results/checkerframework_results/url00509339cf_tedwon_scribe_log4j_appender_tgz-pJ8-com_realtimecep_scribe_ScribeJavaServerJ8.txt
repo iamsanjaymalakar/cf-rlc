@@ -1,0 +1,65 @@
+../../../../datasets/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:179: error: (reset.not.owning) $$ 2 $$ connect $$ this.socket_ $$ ( 4944, 5006 ) $$ Calling method connect resets the must-call obligations of the expression this.socket_, which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+            socket_.connect(new InetSocketAddress(host_, port_), timeout_);
+                           ^
+../../../../datasets/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/THttpClient.java:142: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-832 $$ java.io.OutputStream $$ possible exceptional exit due to connection.getOutputStream().write(data) with exception type java.io.IOException $$ ( 4428, 4456 ) $$ @MustCall method close may not have been invoked on temp-var-832 or any of its aliases.
+            connection.getOutputStream().write(data);
+                                      ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to connection.getOutputStream().write(data) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/THttpClient.java:150: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-836 $$ java.io.InputStream $$ regular method exit $$ ( 4755, 4782 ) $$ @MustCall method close may not have been invoked on temp-var-836 or any of its aliases.
+            inputStream_ = connection.getInputStream();
+                                                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TNonblockingSocket.java:205: error: (reset.not.owning) $$ 2 $$ connect $$ this.socketChannel_ $$ ( 6514, 6552 ) $$ Calling method connect resets the must-call obligations of the expression this.socketChannel_, which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+        return socketChannel_.connect(socketAddress_);
+                                     ^
+../../../../datasets/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TNonblockingServerSocket.java:103: error: (reset.not.owning) $$ 2 $$ bind $$ this.serverSocket_ $$ ( 3241, 3269 ) $$ Calling method bind resets the must-call obligations of the expression this.serverSocket_, which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+            serverSocket_.bind(bindAddr);
+                              ^
+../../../../datasets/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TServerSocket.java:95: error: (reset.not.owning) $$ 2 $$ bind $$ this.serverSocket_ $$ ( 2841, 2869 ) $$ Calling method bind resets the must-call obligations of the expression this.serverSocket_, which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+            serverSocket_.bind(bindAddr);
+                              ^
+../../../../datasets/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TServerSocket.java:118: error: (required.method.not.called) $$ 4 $$ method close $$ result $$ java.net.Socket $$ possible exceptional exit due to new TSocket(result) with exception type org.apache.thrift.transport.TTransportException $$ ( 3657, 3696 ) $$ @MustCall method close may not have been invoked on result or any of its aliases.
+            Socket result = serverSocket_.accept();
+                   ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to new TSocket(result) with exception type org.apache.thrift.transport.TTransportException
+../../../../datasets/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/server/TNonblockingServer.java:293: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1170 $$ java.nio.channels.spi.AbstractSelector $$ regular method exit $$ ( 10678, 10720 ) $$ @MustCall method close may not have been invoked on temp-var-1170 or any of its aliases.
+            this.selector = SelectorProvider.provider().openSelector();
+                                                                    ^
+  The type of object is: java.nio.channels.spi.AbstractSelector.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/server/TServlet.java:72: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to response.getOutputStream() with exception type java.io.IOException $$ ( 2262, 2304 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+            InputStream in = request.getInputStream();
+                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to response.getOutputStream() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/server/TServlet.java:73: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.OutputStream $$ possible exceptional exit due to out.flush() with exception type java.io.IOException $$ ( 2317, 2363 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+            OutputStream out = response.getOutputStream();
+                         ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.flush() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/async/TAsyncClientManager.java:53: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1404 $$ java.nio.channels.Selector $$ regular method exit $$ ( 1967, 1993 ) $$ @MustCall method close may not have been invoked on temp-var-1404 or any of its aliases.
+        selectThread.getSelector().wakeup();
+                                ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/async/TAsyncClientManager.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1410 $$ java.nio.channels.spi.AbstractSelector $$ regular method exit $$ ( 2505, 2547 ) $$ @MustCall method close may not have been invoked on temp-var-1410 or any of its aliases.
+            this.selector = SelectorProvider.provider().openSelector();
+                                                                    ^
+  The type of object is: java.nio.channels.spi.AbstractSelector.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/com/realtimecep/scribe/ScribeJavaClient.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-3850 $$ java.net.Socket $$ possible exceptional exit due to new TSocket(new Socket("localhost", ScribeJavaServer.PORT)) with exception type org.apache.thrift.transport.TTransportException $$ ( 861, 907 ) $$ @MustCall method close may not have been invoked on temp-var-3850 or any of its aliases.
+            TSocket sock = new TSocket(new Socket("localhost", ScribeJavaServer.PORT));
+                                       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to new TSocket(new Socket("localhost", ScribeJavaServer.PORT)) with exception type org.apache.thrift.transport.TTransportException
+../../../../datasets/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/com/realtimecep/scribe/ScribeClientQuickStartMainClass.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-3897 $$ java.net.Socket $$ possible exceptional exit due to new TSocket(new Socket(scribeHost, scribePort)) with exception type org.apache.thrift.transport.TTransportException $$ ( 922, 956 ) $$ @MustCall method close may not have been invoked on temp-var-3897 or any of its aliases.
+        TSocket sock = new TSocket(new Socket(scribeHost, scribePort));
+                                   ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to new TSocket(new Socket(scribeHost, scribePort)) with exception type org.apache.thrift.transport.TTransportException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+14 errors

@@ -1,0 +1,115 @@
+WARNING: No callers found for method with parameter return:org.msgpack.MessagePack.unpack(Ljava/io/InputStream;Lorg/msgpack/template/Template;)Ljava/lang/Object;
+WARNING: No callers found for method with parameter return:org.msgpack.MessagePack.unpack(Ljava/io/InputStream;Lorg/msgpack/template/Template;Ljava/lang/Object;)Ljava/lang/Object;
+15085
+1697
+
+SOURCE LEVEL FIXES
+
+6] ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 190
+vim +190 ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ Add following code above line:190 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:198 (org/msgpack/MessagePack.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 190
+
+--------------------------------------------
+8] ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 212
+vim +212 ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ Add following code above line:212 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:214 (org/msgpack/MessagePack.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 212
+
+--------------------------------------------
+9] ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 228
+vim +228 ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ Add following code above line:228 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:235 (org/msgpack/MessagePack.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 228
+
+--------------------------------------------
+11] ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 252
+vim +252 ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ Add following code above line:252 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:253 (org/msgpack/MessagePack.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 252
+
+--------------------------------------------
+12] ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 267
+vim +267 ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ Add following code above line:267 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:269 (org/msgpack/MessagePack.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 267
+
+--------------------------------------------
+21] ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 542
+vim +542 ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ Add following code above line:542 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:542 (org/msgpack/MessagePack.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 542
+
+--------------------------------------------
+22] ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 557
+vim +557 ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ Add following code above line:557 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:557 (org/msgpack/MessagePack.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 557
+
+--------------------------------------------
+23] ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 570
+vim +570 ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ Add following code above line:570 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:570 (org/msgpack/MessagePack.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 570
+
+--------------------------------------------
+30] ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 791
+vim +791 ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ NOTE: Resource escapes via a parameter and needs to be closed in the callers of this function.unpack
++++ Nothing to be done. No callers found for method with resource return
+--------------------------------------------
+31] ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 806
+vim +806 ../../../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ NOTE: Resource escapes via a parameter and needs to be closed in the callers of this function.unpack
++++ Nothing to be done. No callers found for method with resource return
+--------------------------------------------

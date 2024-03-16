@@ -1,0 +1,33 @@
+../../../../datasets/june2020_dataset/urlfeea716362_ymnk_jzlib_tgz-pJ8-test_large_deflate_inflateJ8/src/test_stream_deflate_inflate.java:11: error: (required.method.not.called) $$ 4 $$ method close $$ zOut $$ com.jcraft.jzlib.ZOutputStream $$ possible exceptional exit due to new ObjectOutputStream(zOut) with exception type java.io.IOException $$ ( 288, 358 ) $$ @MustCall method close may not have been invoked on zOut or any of its aliases.
+      ZOutputStream zOut = new ZOutputStream(out, JZlib.Z_BEST_COMPRESSION);
+                    ^
+  The type of object is: com.jcraft.jzlib.ZOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(zOut) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfeea716362_ymnk_jzlib_tgz-pJ8-test_large_deflate_inflateJ8/src/test_stream_deflate_inflate.java:12: error: (required.method.not.called) $$ 4 $$ method close $$ objOut $$ java.io.ObjectOutputStream $$ possible exceptional exit due to objOut.writeObject(hello) with exception type java.io.IOException $$ ( 365, 422 ) $$ @MustCall method close may not have been invoked on objOut or any of its aliases.
+      ObjectOutputStream objOut = new ObjectOutputStream(zOut);
+                         ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to objOut.writeObject(hello) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfeea716362_ymnk_jzlib_tgz-pJ8-test_large_deflate_inflateJ8/src/test_stream_deflate_inflate.java:17: error: (required.method.not.called) $$ 4 $$ method close $$ zIn $$ com.jcraft.jzlib.ZInputStream $$ possible exceptional exit due to new ObjectInputStream(zIn) with exception type java.io.IOException $$ ( 560, 600 ) $$ @MustCall method close may not have been invoked on zIn or any of its aliases.
+      ZInputStream zIn = new ZInputStream(in);
+                   ^
+  The type of object is: com.jcraft.jzlib.ZInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(zIn) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfeea716362_ymnk_jzlib_tgz-pJ8-test_large_deflate_inflateJ8/src/test_stream_deflate_inflate.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ objIn $$ java.io.ObjectInputStream $$ possible exceptional exit due to objIn.readObject() with exception type java.io.IOException $$ ( 607, 660 ) $$ @MustCall method close may not have been invoked on objIn or any of its aliases.
+      ObjectInputStream objIn = new ObjectInputStream(zIn);
+                        ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: possible exceptional exit due to objIn.readObject() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfeea716362_ymnk_jzlib_tgz-pJ8-test_large_deflate_inflateJ8/src/com/jcraft/jzlib/ZInputStream.java:53: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-395 $$ com.jcraft.jzlib.InflaterInputStream $$ regular method exit $$ ( 2075, 2110 ) $$ @MustCall method close may not have been invoked on temp-var-395 or any of its aliases.
+    iis = new InflaterInputStream(in, nowrap);
+          ^
+  The type of object is: com.jcraft.jzlib.InflaterInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlfeea716362_ymnk_jzlib_tgz-pJ8-test_large_deflate_inflateJ8/src/com/jcraft/jzlib/ZOutputStream.java:68: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-501 $$ com.jcraft.jzlib.DeflaterOutputStream $$ regular method exit $$ ( 2455, 2494 ) $$ @MustCall method close may not have been invoked on temp-var-501 or any of its aliases.
+    dos = new DeflaterOutputStream(out, deflater);
+          ^
+  The type of object is: com.jcraft.jzlib.DeflaterOutputStream.
+  Reason for going out of scope: regular method exit
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+6 errors

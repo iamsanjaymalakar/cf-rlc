@@ -1,0 +1,53 @@
+../dataset/june2020_dataset/urld558a3d988_gao715108023_resourceMonitor_tgz-pJ8-com_sinopec_agent_AgentJ8/src/com/sinopec/cache/InstantMsgCache.java:281: error: (required.method.not.called) $$ 4 $$ method close $$ jdbcCommon.getOrclConn() $$ java.sql.Connection $$ regular method exit $$ ( 9804, 9828 ) $$ @MustCall method close may not have been invoked on jdbcCommon.getOrclConn() or any of its aliases.
+			conn = jdbcCommon.getOrclConn();
+			                             ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld558a3d988_gao715108023_resourceMonitor_tgz-pJ8-com_sinopec_agent_AgentJ8/src/com/sinopec/cache/InstantMsgCache.java:293: error: (required.method.not.called) $$ 4 $$ method close $$ jdbcCommon.getMySQLConn() $$ java.sql.Connection $$ regular method exit $$ ( 10180, 10205 ) $$ @MustCall method close may not have been invoked on jdbcCommon.getMySQLConn() or any of its aliases.
+			conn = jdbcCommon.getMySQLConn();
+			                              ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld558a3d988_gao715108023_resourceMonitor_tgz-pJ8-com_sinopec_agent_AgentJ8/src/com/sinopec/cache/HistroyMsgCache.java:98: error: (required.method.not.called) $$ 4 $$ method close $$ jdbcCommon.getOrclConn() $$ java.sql.Connection $$ possible exceptional exit due to conn.setAutoCommit(false) with exception type java.sql.SQLException $$ ( 2751, 2775 ) $$ @MustCall method close may not have been invoked on jdbcCommon.getOrclConn() or any of its aliases.
+			conn = jdbcCommon.getOrclConn();// 与Oracle数据库创建连接
+			                             ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: possible exceptional exit due to conn.setAutoCommit(false) with exception type java.sql.SQLException
+../dataset/june2020_dataset/urld558a3d988_gao715108023_resourceMonitor_tgz-pJ8-com_sinopec_agent_AgentJ8/src/com/sinopec/cache/HistroyMsgCache.java:110: error: (required.method.not.called) $$ 4 $$ method close $$ jdbcCommon.getMySQLConn(dataBaseServerIP) $$ java.sql.Connection $$ possible exceptional exit due to conn.setAutoCommit(false) with exception type java.sql.SQLException $$ ( 3182, 3223 ) $$ @MustCall method close may not have been invoked on jdbcCommon.getMySQLConn(dataBaseServerIP) or any of its aliases.
+			conn = jdbcCommon.getMySQLConn(dataBaseServerIP);// 与MySQL数据库创建连接
+			                              ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: possible exceptional exit due to conn.setAutoCommit(false) with exception type java.sql.SQLException
+../dataset/june2020_dataset/urld558a3d988_gao715108023_resourceMonitor_tgz-pJ8-com_sinopec_agent_AgentJ8/src/com/sinopec/utils/ConfigUtils.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(filePath) $$ java.io.FileInputStream $$ possible exceptional exit due to propertie.load(inputFile) with exception type java.io.FileNotFoundException $$ ( 525, 554 ) $$ @MustCall method close may not have been invoked on new FileInputStream(filePath) or any of its aliases.
+			inputFile = new FileInputStream(filePath);
+			            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to propertie.load(inputFile) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/urld558a3d988_gao715108023_resourceMonitor_tgz-pJ8-com_sinopec_agent_AgentJ8/src/com/sinopec/utils/ConfigUtils.java:75: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(fileName) $$ java.io.FileInputStream $$ possible exceptional exit due to propertie.load(inputFile) with exception type java.io.FileNotFoundException $$ ( 1748, 1777 ) $$ @MustCall method close may not have been invoked on new FileInputStream(fileName) or any of its aliases.
+			inputFile = new FileInputStream(fileName);
+			            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to propertie.load(inputFile) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/urld558a3d988_gao715108023_resourceMonitor_tgz-pJ8-com_sinopec_agent_AgentJ8/src/com/sinopec/mybatis/MybatisCommon.java:32: error: (required.method.not.called) $$ 4 $$ method close $$ Resources.getResourceAsReader(resource) $$ java.io.Reader $$ regular method exit $$ ( 816, 855 ) $$ @MustCall method close may not have been invoked on Resources.getResourceAsReader(resource) or any of its aliases.
+			reader = Resources.getResourceAsReader(resource);
+			                                      ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld558a3d988_gao715108023_resourceMonitor_tgz-pJ8-com_sinopec_agent_AgentJ8/src/com/sinopec/mybatis/MybatisCommon.java:39: error: (required.method.not.called) $$ 4 $$ method close $$ factory.openSession() $$ org.apache.ibatis.session.SqlSession $$ regular method exit $$ ( 1134, 1155 ) $$ @MustCall method close may not have been invoked on factory.openSession() or any of its aliases.
+		session = factory.openSession();
+		                             ^
+  The type of object is: org.apache.ibatis.session.SqlSession.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld558a3d988_gao715108023_resourceMonitor_tgz-pJ8-com_sinopec_agent_AgentJ8/src/com/sinopec/mybatis/MybatisCommon.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ factory.openSession() $$ org.apache.ibatis.session.SqlSession $$ regular method exit $$ ( 2053, 2074 ) $$ @MustCall method close may not have been invoked on factory.openSession() or any of its aliases.
+		session = factory.openSession();
+		                             ^
+  The type of object is: org.apache.ibatis.session.SqlSession.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld558a3d988_gao715108023_resourceMonitor_tgz-pJ8-com_sinopec_agent_AgentJ8/src/com/sinopec/jdbc/DBOpt.java:36: error: (required.method.not.called) $$ 4 $$ method close $$ conn $$ java.sql.Connection $$ regular method exit $$ ( 1028, 1060 ) $$ @MustCall method close may not have been invoked on conn or any of its aliases.
+		conn = jdbcCommon.getMySQLConn();
+		     ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+10 errors

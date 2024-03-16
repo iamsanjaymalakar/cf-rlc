@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^org/amon/AmonLogger.java^59^org.amon.AmonLogger.send(Ljava/lang/String;Ljava/net/HttpURLConnection;)V^5 = new <Application,Ljava/io/OutputStreamWriter>@0^org.amon.AmonLogger.send(Ljava/lang/String;Ljava/net/HttpURLConnection;)V#7,^INVOKE,^false^false^Normal Fix;

@@ -1,0 +1,508 @@
+warning: MustCallChecker did not find annotation file or directory ../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+warning: ResourceLeakChecker did not find annotation file or directory ../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/MessagePackBufferUnpacker.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ new LinkedBufferInput(bufferSize) $$ org.msgpack.io.LinkedBufferInput $$ regular method exit $$ ( 1249, 1282 ) $$ @MustCall method close may not have been invoked on new LinkedBufferInput(bufferSize) or any of its aliases.
+        super(msgpack, new LinkedBufferInput(bufferSize));
+                       ^
+  The type of object is: org.msgpack.io.LinkedBufferInput.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/MessagePackUnpacker.java:55: error: (required.method.not.called) $$ 4 $$ method close $$ new StreamInput(stream) $$ org.msgpack.io.StreamInput $$ regular method exit $$ ( 2124, 2147 ) $$ @MustCall method close may not have been invoked on new StreamInput(stream) or any of its aliases.
+        this(msgpack, new StreamInput(stream));
+                      ^
+  The type of object is: org.msgpack.io.StreamInput.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/MessagePackUnpacker.java:575: error: (required.method.not.called) $$ 4 $$ method close $$ uc.writeArrayEnd(true) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 18095, 18117 ) $$ @MustCall method close may not have been invoked on uc.writeArrayEnd(true) or any of its aliases.
+                    uc.writeArrayEnd(true);
+                                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/MessagePackUnpacker.java:579: error: (required.method.not.called) $$ 4 $$ method close $$ uc.writeMapEnd(true) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 18263, 18283 ) $$ @MustCall method close may not have been invoked on uc.writeMapEnd(true) or any of its aliases.
+                    uc.writeMapEnd(true);
+                                  ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/AbstractUnpacker.java:64: error: (required.method.not.called) $$ 4 $$ method close $$ uc $$ org.msgpack.packer.Unconverter $$ possible exceptional exit due to readValue(uc) with exception type java.io.IOException $$ ( 1754, 1796 ) $$ @MustCall method close may not have been invoked on uc or any of its aliases.
+        Unconverter uc = new Unconverter(msgpack);
+                    ^
+  The type of object is: org.msgpack.packer.Unconverter.
+  Reason for going out of scope: possible exceptional exit due to readValue(uc) with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:152: error: (required.method.not.called) $$ 4 $$ method close $$ createBufferUnpacker() $$ org.msgpack.unpacker.BufferUnpacker $$ regular method exit $$ ( 4147, 4169 ) $$ @MustCall method close may not have been invoked on createBufferUnpacker() or any of its aliases.
+        return createBufferUnpacker().wrap(bytes);
+                                   ^
+  The type of object is: org.msgpack.unpacker.BufferUnpacker.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:165: error: (required.method.not.called) $$ 4 $$ method close $$ createBufferUnpacker() $$ org.msgpack.unpacker.BufferUnpacker $$ regular method exit $$ ( 4490, 4512 ) $$ @MustCall method close may not have been invoked on createBufferUnpacker() or any of its aliases.
+        return createBufferUnpacker().wrap(bytes, off, len);
+                                   ^
+  The type of object is: org.msgpack.unpacker.BufferUnpacker.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:177: error: (required.method.not.called) $$ 4 $$ method close $$ createBufferUnpacker() $$ org.msgpack.unpacker.BufferUnpacker $$ regular method exit $$ ( 4854, 4876 ) $$ @MustCall method close may not have been invoked on createBufferUnpacker() or any of its aliases.
+        return createBufferUnpacker().wrap(buffer);
+                                   ^
+  The type of object is: org.msgpack.unpacker.BufferUnpacker.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:190: error: (required.method.not.called) $$ 4 $$ method close $$ pk $$ org.msgpack.packer.BufferPacker $$ possible exceptional exit due to pk.writeNil() with exception type java.io.IOException $$ ( 5152, 5191 ) $$ @MustCall method close may not have been invoked on pk or any of its aliases.
+        BufferPacker pk = createBufferPacker();
+                     ^
+  The type of object is: org.msgpack.packer.BufferPacker.
+  Reason for going out of scope: possible exceptional exit due to pk.writeNil() with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:192: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 5229, 5242 ) $$ @MustCall method close may not have been invoked on pk.writeNil() or any of its aliases.
+            pk.writeNil();
+                       ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:212: error: (required.method.not.called) $$ 4 $$ method close $$ pk $$ org.msgpack.packer.BufferPacker $$ possible exceptional exit due to template.write(pk, v) with exception type java.io.IOException $$ ( 5751, 5790 ) $$ @MustCall method close may not have been invoked on pk or any of its aliases.
+        BufferPacker pk = createBufferPacker();
+                     ^
+  The type of object is: org.msgpack.packer.BufferPacker.
+  Reason for going out of scope: possible exceptional exit due to template.write(pk, v) with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:228: error: (required.method.not.called) $$ 4 $$ method close $$ pk $$ org.msgpack.packer.Packer $$ possible exceptional exit due to pk.writeNil() with exception type java.io.IOException $$ ( 6166, 6196 ) $$ @MustCall method close may not have been invoked on pk or any of its aliases.
+        Packer pk = createPacker(out);
+               ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: possible exceptional exit due to pk.writeNil() with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:230: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 6234, 6247 ) $$ @MustCall method close may not have been invoked on pk.writeNil() or any of its aliases.
+            pk.writeNil();
+                       ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:252: error: (required.method.not.called) $$ 4 $$ method close $$ pk $$ org.msgpack.packer.Packer $$ possible exceptional exit due to template.write(pk, v) with exception type java.io.IOException $$ ( 6849, 6879 ) $$ @MustCall method close may not have been invoked on pk or any of its aliases.
+        Packer pk = createPacker(out);
+               ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: possible exceptional exit due to template.write(pk, v) with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:267: error: (required.method.not.called) $$ 4 $$ method close $$ pk $$ org.msgpack.packer.BufferPacker $$ possible exceptional exit due to pk.write(v) with exception type java.io.IOException $$ ( 7284, 7323 ) $$ @MustCall method close may not have been invoked on pk or any of its aliases.
+        BufferPacker pk = createBufferPacker();
+                     ^
+  The type of object is: org.msgpack.packer.BufferPacker.
+  Reason for going out of scope: possible exceptional exit due to pk.write(v) with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:268: error: (required.method.not.called) $$ 4 $$ method close $$ pk.write(v) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 7332, 7343 ) $$ @MustCall method close may not have been invoked on pk.write(v) or any of its aliases.
+        pk.write(v);
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:297: error: (required.method.not.called) $$ 4 $$ method close $$ createBufferUnpacker(bytes, off, len) $$ org.msgpack.unpacker.BufferUnpacker $$ possible exceptional exit due to createBufferUnpacker(bytes, off, len).readValue() with exception type java.io.IOException $$ ( 8030, 8067 ) $$ @MustCall method close may not have been invoked on createBufferUnpacker(bytes, off, len) or any of its aliases.
+        return createBufferUnpacker(bytes, off, len).readValue();
+                                   ^
+  The type of object is: org.msgpack.unpacker.BufferUnpacker.
+  Reason for going out of scope: possible exceptional exit due to createBufferUnpacker(bytes, off, len).readValue() with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:311: error: (required.method.not.called) $$ 4 $$ method close $$ createBufferUnpacker(buffer) $$ org.msgpack.unpacker.BufferUnpacker $$ possible exceptional exit due to createBufferUnpacker(buffer).readValue() with exception type java.io.IOException $$ ( 8407, 8435 ) $$ @MustCall method close may not have been invoked on createBufferUnpacker(buffer) or any of its aliases.
+        return createBufferUnpacker(buffer).readValue();
+                                   ^
+  The type of object is: org.msgpack.unpacker.BufferUnpacker.
+  Reason for going out of scope: possible exceptional exit due to createBufferUnpacker(buffer).readValue() with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:324: error: (required.method.not.called) $$ 4 $$ method close $$ createUnpacker(in) $$ org.msgpack.unpacker.Unpacker $$ possible exceptional exit due to createUnpacker(in).readValue() with exception type java.io.IOException $$ ( 8790, 8808 ) $$ @MustCall method close may not have been invoked on createUnpacker(in) or any of its aliases.
+        return createUnpacker(in).readValue();
+                             ^
+  The type of object is: org.msgpack.unpacker.Unpacker.
+  Reason for going out of scope: possible exceptional exit due to createUnpacker(in).readValue() with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:387: error: (required.method.not.called) $$ 4 $$ method close $$ u $$ org.msgpack.unpacker.BufferUnpacker $$ regular method exit $$ ( 10389, 10436 ) $$ @MustCall method close may not have been invoked on u or any of its aliases.
+        BufferUnpacker u = createBufferUnpacker(bytes);
+                       ^
+  The type of object is: org.msgpack.unpacker.BufferUnpacker.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:404: error: (required.method.not.called) $$ 4 $$ method close $$ u $$ org.msgpack.unpacker.BufferUnpacker $$ regular method exit $$ ( 10859, 10916 ) $$ @MustCall method close may not have been invoked on u or any of its aliases.
+        BufferUnpacker u = createBufferUnpacker(bytes, off, len);
+                       ^
+  The type of object is: org.msgpack.unpacker.BufferUnpacker.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:465: error: (required.method.not.called) $$ 4 $$ method close $$ u $$ org.msgpack.unpacker.BufferUnpacker $$ possible exceptional exit due to tmpl.read(u, v) with exception type java.io.IOException $$ ( 12410, 12453 ) $$ @MustCall method close may not have been invoked on u or any of its aliases.
+        BufferUnpacker u = createBufferUnpacker(b);
+                       ^
+  The type of object is: org.msgpack.unpacker.BufferUnpacker.
+  Reason for going out of scope: possible exceptional exit due to tmpl.read(u, v) with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:526: error: (required.method.not.called) $$ 4 $$ method close $$ u $$ org.msgpack.unpacker.Unpacker $$ possible exceptional exit due to tmpl.read(u, v) with exception type java.io.IOException $$ ( 13936, 13968 ) $$ @MustCall method close may not have been invoked on u or any of its aliases.
+        Unpacker u = createUnpacker(in);
+                 ^
+  The type of object is: org.msgpack.unpacker.Unpacker.
+  Reason for going out of scope: possible exceptional exit due to tmpl.read(u, v) with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:542: error: (required.method.not.called) $$ 4 $$ method close $$ new Converter(this, v) $$ org.msgpack.unpacker.Converter $$ possible exceptional exit due to tmpl.read(new Converter(this, v), to) with exception type java.io.IOException $$ ( 14386, 14408 ) $$ @MustCall method close may not have been invoked on new Converter(this, v) or any of its aliases.
+        return tmpl.read(new Converter(this, v), to);
+                         ^
+  The type of object is: org.msgpack.unpacker.Converter.
+  Reason for going out of scope: possible exceptional exit due to tmpl.read(new Converter(this, v), to) with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:557: error: (required.method.not.called) $$ 4 $$ method close $$ new Converter(this, v) $$ org.msgpack.unpacker.Converter $$ possible exceptional exit due to tmpl.read(new Converter(this, v), null) with exception type java.io.IOException $$ ( 14799, 14821 ) $$ @MustCall method close may not have been invoked on new Converter(this, v) or any of its aliases.
+        return tmpl.read(new Converter(this, v), null);
+                         ^
+  The type of object is: org.msgpack.unpacker.Converter.
+  Reason for going out of scope: possible exceptional exit due to tmpl.read(new Converter(this, v), null) with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:570: error: (required.method.not.called) $$ 4 $$ method close $$ new Converter(this, v) $$ org.msgpack.unpacker.Converter $$ possible exceptional exit due to tmpl.read(new Converter(this, v), null) with exception type java.io.IOException $$ ( 15150, 15172 ) $$ @MustCall method close may not have been invoked on new Converter(this, v) or any of its aliases.
+        return tmpl.read(new Converter(this, v), null);
+                         ^
+  The type of object is: org.msgpack.unpacker.Converter.
+  Reason for going out of scope: possible exceptional exit due to tmpl.read(new Converter(this, v), null) with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:582: error: (required.method.not.called) $$ 4 $$ method close $$ pk $$ org.msgpack.packer.Unconverter $$ possible exceptional exit due to pk.writeNil() with exception type java.io.IOException $$ ( 15432, 15471 ) $$ @MustCall method close may not have been invoked on pk or any of its aliases.
+        Unconverter pk = new Unconverter(this);
+                    ^
+  The type of object is: org.msgpack.packer.Unconverter.
+  Reason for going out of scope: possible exceptional exit due to pk.writeNil() with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:584: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 15509, 15522 ) $$ @MustCall method close may not have been invoked on pk.writeNil() or any of its aliases.
+            pk.writeNil();
+                       ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:730: error: (required.method.not.called) $$ 4 $$ method close $$ u $$ org.msgpack.unpacker.BufferUnpacker $$ possible exceptional exit due to template.read(u, null) with exception type java.io.IOException $$ ( 19439, 19519 ) $$ @MustCall method close may not have been invoked on u or any of its aliases.
+        BufferUnpacker u = new MessagePackBufferUnpacker(globalMessagePack).wrap(bytes);
+                       ^
+  The type of object is: org.msgpack.unpacker.BufferUnpacker.
+  Reason for going out of scope: possible exceptional exit due to template.read(u, null) with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:730: error: (required.method.not.called) $$ 4 $$ method close $$ new MessagePackBufferUnpacker(globalMessagePack) $$ org.msgpack.unpacker.MessagePackBufferUnpacker $$ possible exceptional exit due to template.read(u, null) with exception type java.io.IOException $$ ( 19458, 19506 ) $$ @MustCall method close may not have been invoked on new MessagePackBufferUnpacker(globalMessagePack) or any of its aliases.
+        BufferUnpacker u = new MessagePackBufferUnpacker(globalMessagePack).wrap(bytes);
+                           ^
+  The type of object is: org.msgpack.unpacker.MessagePackBufferUnpacker.
+  Reason for going out of scope: possible exceptional exit due to template.read(u, null) with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:736: error: (required.method.not.called) $$ 4 $$ method close $$ u $$ org.msgpack.unpacker.BufferUnpacker $$ possible exceptional exit due to template.read(u, to) with exception type java.io.IOException $$ ( 19684, 19764 ) $$ @MustCall method close may not have been invoked on u or any of its aliases.
+        BufferUnpacker u = new MessagePackBufferUnpacker(globalMessagePack).wrap(bytes);
+                       ^
+  The type of object is: org.msgpack.unpacker.BufferUnpacker.
+  Reason for going out of scope: possible exceptional exit due to template.read(u, to) with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:736: error: (required.method.not.called) $$ 4 $$ method close $$ new MessagePackBufferUnpacker(globalMessagePack) $$ org.msgpack.unpacker.MessagePackBufferUnpacker $$ possible exceptional exit due to template.read(u, to) with exception type java.io.IOException $$ ( 19703, 19751 ) $$ @MustCall method close may not have been invoked on new MessagePackBufferUnpacker(globalMessagePack) or any of its aliases.
+        BufferUnpacker u = new MessagePackBufferUnpacker(globalMessagePack).wrap(bytes);
+                           ^
+  The type of object is: org.msgpack.unpacker.MessagePackBufferUnpacker.
+  Reason for going out of scope: possible exceptional exit due to template.read(u, to) with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:791: error: (required.method.not.called) $$ 4 $$ method close $$ new MessagePackUnpacker(globalMessagePack, in) $$ org.msgpack.unpacker.MessagePackUnpacker $$ possible exceptional exit due to tmpl.read(new MessagePackUnpacker(globalMessagePack, in), null) with exception type java.io.IOException $$ ( 21138, 21184 ) $$ @MustCall method close may not have been invoked on new MessagePackUnpacker(globalMessagePack, in) or any of its aliases.
+        return tmpl.read(new MessagePackUnpacker(globalMessagePack, in), null);
+                         ^
+  The type of object is: org.msgpack.unpacker.MessagePackUnpacker.
+  Reason for going out of scope: possible exceptional exit due to tmpl.read(new MessagePackUnpacker(globalMessagePack, in), null) with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java:806: error: (required.method.not.called) $$ 4 $$ method close $$ new MessagePackUnpacker(globalMessagePack, in) $$ org.msgpack.unpacker.MessagePackUnpacker $$ regular method exit $$ ( 21537, 21583 ) $$ @MustCall method close may not have been invoked on new MessagePackUnpacker(globalMessagePack, in) or any of its aliases.
+        return (T) tmpl.read(new MessagePackUnpacker(globalMessagePack, in), to);
+                             ^
+  The type of object is: org.msgpack.unpacker.MessagePackUnpacker.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:39: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createBooleanValue(v)) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1152, 1196 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createBooleanValue(v)) or any of its aliases.
+        uc.write(ValueFactory.createBooleanValue(v));
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:44: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createIntegerValue(v)) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1279, 1323 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createIntegerValue(v)) or any of its aliases.
+        uc.write(ValueFactory.createIntegerValue(v));
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:49: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createIntegerValue(v)) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1407, 1451 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createIntegerValue(v)) or any of its aliases.
+        uc.write(ValueFactory.createIntegerValue(v));
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:54: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createIntegerValue(v)) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1533, 1577 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createIntegerValue(v)) or any of its aliases.
+        uc.write(ValueFactory.createIntegerValue(v));
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createIntegerValue(v)) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1660, 1704 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createIntegerValue(v)) or any of its aliases.
+        uc.write(ValueFactory.createIntegerValue(v));
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:64: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createIntegerValue(v & 255)) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1795, 1846 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createIntegerValue(v & 255)) or any of its aliases.
+        uc.write(ValueFactory.createIntegerValue(v & 0xff));
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createIntegerValue(v & 65535)) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1938, 1991 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createIntegerValue(v & 65535)) or any of its aliases.
+        uc.write(ValueFactory.createIntegerValue(v & 0xffff));
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:76: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createIntegerValue(value)) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 2170, 2218 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createIntegerValue(value)) or any of its aliases.
+            uc.write(ValueFactory.createIntegerValue(value));
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:78: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createIntegerValue(v)) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 2249, 2293 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createIntegerValue(v)) or any of its aliases.
+            uc.write(ValueFactory.createIntegerValue(v));
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:87: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createIntegerValue(value)) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 2528, 2576 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createIntegerValue(value)) or any of its aliases.
+            uc.write(ValueFactory.createIntegerValue(value));
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:89: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createIntegerValue(v)) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 2607, 2651 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createIntegerValue(v)) or any of its aliases.
+            uc.write(ValueFactory.createIntegerValue(v));
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:95: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createRawValue(raw)) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 2744, 2786 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createRawValue(raw)) or any of its aliases.
+        uc.write(ValueFactory.createRawValue(raw));
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:100: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createRawValue()) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 2864, 2903 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createRawValue()) or any of its aliases.
+        uc.write(ValueFactory.createRawValue());
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:108: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createRawValue(raw, true)) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 3095, 3143 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createRawValue(raw, true)) or any of its aliases.
+        uc.write(ValueFactory.createRawValue(raw, true));
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:113: error: (required.method.not.called) $$ 4 $$ method close $$ uc.writeArrayBegin(size) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 3226, 3250 ) $$ @MustCall method close may not have been invoked on uc.writeArrayBegin(size) or any of its aliases.
+        uc.writeArrayBegin(size);
+                          ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:118: error: (required.method.not.called) $$ 4 $$ method close $$ uc.writeMapBegin(size) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 3331, 3353 ) $$ @MustCall method close may not have been invoked on uc.writeMapBegin(size) or any of its aliases.
+        uc.writeMapBegin(size);
+                        ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:123: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createNilValue()) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 3426, 3465 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createNilValue()) or any of its aliases.
+        uc.write(ValueFactory.createNilValue());
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:128: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createFloatValue(v)) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 3547, 3589 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createFloatValue(v)) or any of its aliases.
+        uc.write(ValueFactory.createFloatValue(v));
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/ValueAccept.java:133: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(ValueFactory.createFloatValue(v)) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 3673, 3715 ) $$ @MustCall method close may not have been invoked on uc.write(ValueFactory.createFloatValue(v)) or any of its aliases.
+        uc.write(ValueFactory.createFloatValue(v));
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/Unconverter.java:145: error: (required.method.not.called) $$ 4 $$ method close $$ writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 4021, 4031 ) $$ @MustCall method close may not have been invoked on writeNil() or any of its aliases.
+                writeNil();
+                        ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/Unconverter.java:185: error: (required.method.not.called) $$ 4 $$ method close $$ writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 5246, 5256 ) $$ @MustCall method close may not have been invoked on writeNil() or any of its aliases.
+                writeNil();
+                        ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/AbstractPacker.java:79: error: (required.method.not.called) $$ 4 $$ method close $$ writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1932, 1942 ) $$ @MustCall method close may not have been invoked on writeNil() or any of its aliases.
+            writeNil();
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/AbstractPacker.java:89: error: (required.method.not.called) $$ 4 $$ method close $$ writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 2123, 2133 ) $$ @MustCall method close may not have been invoked on writeNil() or any of its aliases.
+            writeNil();
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/AbstractPacker.java:99: error: (required.method.not.called) $$ 4 $$ method close $$ writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 2312, 2322 ) $$ @MustCall method close may not have been invoked on writeNil() or any of its aliases.
+            writeNil();
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/AbstractPacker.java:109: error: (required.method.not.called) $$ 4 $$ method close $$ writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 2504, 2514 ) $$ @MustCall method close may not have been invoked on writeNil() or any of its aliases.
+            writeNil();
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/AbstractPacker.java:119: error: (required.method.not.called) $$ 4 $$ method close $$ writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 2691, 2701 ) $$ @MustCall method close may not have been invoked on writeNil() or any of its aliases.
+            writeNil();
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/AbstractPacker.java:129: error: (required.method.not.called) $$ 4 $$ method close $$ writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 2885, 2895 ) $$ @MustCall method close may not have been invoked on writeNil() or any of its aliases.
+            writeNil();
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/AbstractPacker.java:139: error: (required.method.not.called) $$ 4 $$ method close $$ writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 3080, 3090 ) $$ @MustCall method close may not have been invoked on writeNil() or any of its aliases.
+            writeNil();
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/AbstractPacker.java:149: error: (required.method.not.called) $$ 4 $$ method close $$ writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 3271, 3281 ) $$ @MustCall method close may not have been invoked on writeNil() or any of its aliases.
+            writeNil();
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/AbstractPacker.java:159: error: (required.method.not.called) $$ 4 $$ method close $$ writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 3463, 3473 ) $$ @MustCall method close may not have been invoked on writeNil() or any of its aliases.
+            writeNil();
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/AbstractPacker.java:169: error: (required.method.not.called) $$ 4 $$ method close $$ writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 3676, 3686 ) $$ @MustCall method close may not have been invoked on writeNil() or any of its aliases.
+            writeNil();
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/AbstractPacker.java:179: error: (required.method.not.called) $$ 4 $$ method close $$ writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 3885, 3895 ) $$ @MustCall method close may not have been invoked on writeNil() or any of its aliases.
+            writeNil();
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/AbstractPacker.java:189: error: (required.method.not.called) $$ 4 $$ method close $$ writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 4081, 4091 ) $$ @MustCall method close may not have been invoked on writeNil() or any of its aliases.
+            writeNil();
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/AbstractPacker.java:200: error: (required.method.not.called) $$ 4 $$ method close $$ writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 4324, 4334 ) $$ @MustCall method close may not have been invoked on writeNil() or any of its aliases.
+            writeNil();
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/AbstractPacker.java:211: error: (required.method.not.called) $$ 4 $$ method close $$ writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 4578, 4588 ) $$ @MustCall method close may not have been invoked on writeNil() or any of its aliases.
+            writeNil();
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/AbstractPacker.java:220: error: (required.method.not.called) $$ 4 $$ method close $$ writeArrayEnd(true) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 4742, 4761 ) $$ @MustCall method close may not have been invoked on writeArrayEnd(true) or any of its aliases.
+        writeArrayEnd(true);
+                     ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/AbstractPacker.java:226: error: (required.method.not.called) $$ 4 $$ method close $$ writeMapEnd(true) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 4857, 4874 ) $$ @MustCall method close may not have been invoked on writeMapEnd(true) or any of its aliases.
+        writeMapEnd(true);
+                   ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/UnpackerIterator.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ new Unconverter(u.msgpack) $$ org.msgpack.packer.Unconverter $$ regular method exit $$ ( 1169, 1195 ) $$ @MustCall method close may not have been invoked on new Unconverter(u.msgpack) or any of its aliases.
+        this.uc = new Unconverter(u.msgpack);
+                  ^
+  The type of object is: org.msgpack.packer.Unconverter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/type/NilValue.java:60: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1403, 1416 ) $$ @MustCall method close may not have been invoked on pk.writeNil() or any of its aliases.
+        pk.writeNil();
+                   ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/Converter.java:311: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(v) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 8334, 8345 ) $$ @MustCall method close may not have been invoked on uc.write(v) or any of its aliases.
+            uc.write(v);
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/Converter.java:324: error: (required.method.not.called) $$ 4 $$ method close $$ uc.writeArrayEnd(true) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 8713, 8735 ) $$ @MustCall method close may not have been invoked on uc.writeArrayEnd(true) or any of its aliases.
+                    uc.writeArrayEnd(true);
+                                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/Converter.java:327: error: (required.method.not.called) $$ 4 $$ method close $$ uc.writeMapEnd(true) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 8837, 8857 ) $$ @MustCall method close may not have been invoked on uc.writeMapEnd(true) or any of its aliases.
+                    uc.writeMapEnd(true);
+                                  ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/Converter.java:344: error: (required.method.not.called) $$ 4 $$ method close $$ uc.writeArrayBegin(a.size()) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 9379, 9407 ) $$ @MustCall method close may not have been invoked on uc.writeArrayBegin(a.size()) or any of its aliases.
+                uc.writeArrayBegin(a.size());
+                                  ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/Converter.java:351: error: (required.method.not.called) $$ 4 $$ method close $$ uc.writeMapBegin(m.size()) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 9656, 9682 ) $$ @MustCall method close may not have been invoked on uc.writeMapBegin(m.size()) or any of its aliases.
+                uc.writeMapBegin(m.size());
+                                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/unpacker/Converter.java:357: error: (required.method.not.called) $$ 4 $$ method close $$ uc.write(v) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 9865, 9876 ) $$ @MustCall method close may not have been invoked on uc.write(v) or any of its aliases.
+                uc.write(v);
+                        ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/IntegerTemplate.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1202, 1215 ) $$ @MustCall method close may not have been invoked on pk.writeNil() or any of its aliases.
+            pk.writeNil();
+                       ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/IntegerTemplate.java:38: error: (required.method.not.called) $$ 4 $$ method close $$ pk.write((int)target) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1255, 1277 ) $$ @MustCall method close may not have been invoked on pk.write((int)target) or any of its aliases.
+        pk.write((int) target);
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/LongTemplate.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1190, 1203 ) $$ @MustCall method close may not have been invoked on pk.writeNil() or any of its aliases.
+            pk.writeNil();
+                       ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/LongTemplate.java:38: error: (required.method.not.called) $$ 4 $$ method close $$ pk.write((long)target) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1243, 1266 ) $$ @MustCall method close may not have been invoked on pk.write((long)target) or any of its aliases.
+        pk.write((long) target);
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/ShortTemplate.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1194, 1207 ) $$ @MustCall method close may not have been invoked on pk.writeNil() or any of its aliases.
+            pk.writeNil();
+                       ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/ShortTemplate.java:38: error: (required.method.not.called) $$ 4 $$ method close $$ pk.write(target) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1247, 1263 ) $$ @MustCall method close may not have been invoked on pk.write(target) or any of its aliases.
+        pk.write(target);
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/MessagePackableTemplate.java:39: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1357, 1370 ) $$ @MustCall method close may not have been invoked on pk.writeNil() or any of its aliases.
+            pk.writeNil();
+                       ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/ByteBufferTemplate.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1243, 1256 ) $$ @MustCall method close may not have been invoked on pk.writeNil() or any of its aliases.
+            pk.writeNil();
+                       ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/ByteBufferTemplate.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ pk.write(target) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1296, 1312 ) $$ @MustCall method close may not have been invoked on pk.write(target) or any of its aliases.
+        pk.write(target);
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/MapTemplate.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1522, 1535 ) $$ @MustCall method close may not have been invoked on pk.writeNil() or any of its aliases.
+                pk.writeNil();
+                           ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/MapTemplate.java:49: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeMapBegin(map.size()) $$ org.msgpack.packer.Packer $$ possible exceptional exit due to pk.writeMapEnd() with exception type java.io.IOException $$ ( 1729, 1757 ) $$ @MustCall method close may not have been invoked on pk.writeMapBegin(map.size()) or any of its aliases.
+        pk.writeMapBegin(map.size());
+                        ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: possible exceptional exit due to pk.writeMapEnd() with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/MapTemplate.java:54: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeMapEnd() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1935, 1951 ) $$ @MustCall method close may not have been invoked on pk.writeMapEnd() or any of its aliases.
+        pk.writeMapEnd();
+                      ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/ShortArrayTemplate.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1208, 1221 ) $$ @MustCall method close may not have been invoked on pk.writeNil() or any of its aliases.
+            pk.writeNil();
+                       ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/ShortArrayTemplate.java:38: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeArrayBegin(target.length) $$ org.msgpack.packer.Packer $$ possible exceptional exit due to pk.writeArrayEnd() with exception type java.io.IOException $$ ( 1261, 1294 ) $$ @MustCall method close may not have been invoked on pk.writeArrayBegin(target.length) or any of its aliases.
+        pk.writeArrayBegin(target.length);
+                          ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: possible exceptional exit due to pk.writeArrayEnd() with exception type java.io.IOException
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/ShortArrayTemplate.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ pk.write(a) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1341, 1352 ) $$ @MustCall method close may not have been invoked on pk.write(a) or any of its aliases.
+            pk.write(a);
+                    ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/ShortArrayTemplate.java:42: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeArrayEnd() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1372, 1390 ) $$ @MustCall method close may not have been invoked on pk.writeArrayEnd() or any of its aliases.
+        pk.writeArrayEnd();
+                        ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/BigIntegerTemplate.java:36: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1243, 1256 ) $$ @MustCall method close may not have been invoked on pk.writeNil() or any of its aliases.
+            pk.writeNil();
+                       ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/BigIntegerTemplate.java:39: error: (required.method.not.called) $$ 4 $$ method close $$ pk.write((BigInteger)target) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1296, 1325 ) $$ @MustCall method close may not have been invoked on pk.write((BigInteger)target) or any of its aliases.
+        pk.write((BigInteger) target);
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/ByteArrayTemplate.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1204, 1217 ) $$ @MustCall method close may not have been invoked on pk.writeNil() or any of its aliases.
+            pk.writeNil();
+                       ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/ByteArrayTemplate.java:38: error: (required.method.not.called) $$ 4 $$ method close $$ pk.write(target) $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1257, 1273 ) $$ @MustCall method close may not have been invoked on pk.write(target) or any of its aliases.
+        pk.write(target);
+                ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/template/CharacterTemplate.java:42: error: (required.method.not.called) $$ 4 $$ method close $$ pk.writeNil() $$ org.msgpack.packer.Packer $$ regular method exit $$ ( 1274, 1287 ) $$ @MustCall method close may not have been invoked on pk.writeNil() or any of its aliases.
+            pk.writeNil();
+                       ^
+  The type of object is: org.msgpack.packer.Packer.
+  Reason for going out of scope: regular method exit
+100 errors
+2 warnings

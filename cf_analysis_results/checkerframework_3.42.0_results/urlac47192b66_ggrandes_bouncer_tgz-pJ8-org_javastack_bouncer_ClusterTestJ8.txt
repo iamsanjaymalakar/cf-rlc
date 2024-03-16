@@ -1,0 +1,197 @@
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/InboundAddress.java:66: error: (required.method.not.called) $$ 4 $$ method close $$ listen $$ java.net.ServerSocket $$ possible exceptional exit due to context.registerSocket(listen) with exception type java.net.SocketException $$ ( 1639, 1682 ) $$ @MustCall method close may not have been invoked on listen or any of its aliases.
+			listen = sslFactory.createSSLServerSocket();
+			       ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: possible exceptional exit due to context.registerSocket(listen) with exception type java.net.SocketException
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/InboundAddress.java:68: error: (required.method.not.called) $$ 4 $$ method close $$ listen $$ java.net.ServerSocket $$ possible exceptional exit due to context.registerSocket(listen) with exception type java.net.SocketException $$ ( 1698, 1725 ) $$ @MustCall method close may not have been invoked on listen or any of its aliases.
+			listen = new ServerSocket();
+			       ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: possible exceptional exit due to context.registerSocket(listen) with exception type java.net.SocketException
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/SSLFactory.java:72: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ regular method exit $$ ( 2648, 2708 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+			is = fileName.getClass().getResourceAsStream("/" + fileName);
+			   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/SSLFactory.java:108: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ regular method exit $$ ( 3851, 3911 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+			is = fileName.getClass().getResourceAsStream("/" + fileName);
+			   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/ClusterServer.java:56: error: (required.method.not.called) $$ 4 $$ method close $$ inboundAddress.listen() $$ java.net.ServerSocket $$ regular method exit $$ ( 1570, 1593 ) $$ @MustCall method close may not have been invoked on inboundAddress.listen() or any of its aliases.
+			listen = inboundAddress.listen();
+			                              ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/ClusterServer.java:74: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.Socket $$ regular method exit $$ ( 1879, 1917 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+					final Socket socket = listen.accept();
+					             ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/PlainServer.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ inboundAddress.listen() $$ java.net.ServerSocket $$ regular method exit $$ ( 1205, 1228 ) $$ @MustCall method close may not have been invoked on inboundAddress.listen() or any of its aliases.
+				listen = inboundAddress.listen();
+				                              ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/PlainServer.java:52: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ java.net.Socket $$ regular method exit $$ ( 1350, 1388 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+						final Socket client = listen.accept();
+						             ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/PlainServer.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ outboundAddress.connectFrom(client.getInetAddress()) $$ java.net.Socket $$ possible exceptional exit due to throw new ConnectException("Unable to connect to " + outboundAddress); with exception type java.net.ConnectException $$ ( 3676, 3728 ) $$ @MustCall method close may not have been invoked on outboundAddress.connectFrom(client.getInetAddress()) or any of its aliases.
+					remote = outboundAddress.connectFrom(client.getInetAddress());
+					                                    ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to throw new ConnectException("Unable to connect to " + outboundAddress); with exception type java.net.ConnectException
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/OutboundAddress.java:172: error: (required.method.not.called) $$ 4 $$ method close $$ sock $$ java.net.Socket $$ regular method exit $$ ( 5085, 5120 ) $$ @MustCall method close may not have been invoked on sock or any of its aliases.
+				sock = sslFactory.createSSLSocket();
+				     ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/OutboundAddress.java:174: error: (required.method.not.called) $$ 4 $$ method close $$ sock $$ java.net.Socket $$ regular method exit $$ ( 5198, 5233 ) $$ @MustCall method close may not have been invoked on sock or any of its aliases.
+				sock = sslFactory.createSSLSocket();
+				     ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/OutboundAddress.java:177: error: (required.method.not.called) $$ 4 $$ method close $$ sock $$ java.net.Socket $$ regular method exit $$ ( 5352, 5381 ) $$ @MustCall method close may not have been invoked on sock or any of its aliases.
+				sock = factory.createSocket();
+				     ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/OutboundAddress.java:185: error: (required.method.not.called) $$ 4 $$ method close $$ sock $$ java.net.Socket $$ regular method exit $$ ( 5683, 5702 ) $$ @MustCall method close may not have been invoked on sock or any of its aliases.
+				sock = new Socket();
+				     ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/MuxClient.java:259: error: (required.method.not.called) $$ 4 $$ method close $$ outboundAddress.connect() $$ java.net.Socket $$ possible exceptional exit due to throw new ConnectException("Unable to connect to " + outboundAddress); with exception type java.net.ConnectException $$ ( 8015, 8040 ) $$ @MustCall method close may not have been invoked on outboundAddress.connect() or any of its aliases.
+						sock = outboundAddress.connect();
+						                              ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to throw new ConnectException("Unable to connect to " + outboundAddress); with exception type java.net.ConnectException
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/MuxClient.java:391: error: (required.method.not.called) $$ 4 $$ method close $$ outboundAddress.connectFrom(stickyAddress) $$ java.net.Socket $$ possible exceptional exit due to sock.getInputStream() with exception type java.io.IOException $$ ( 12226, 12268 ) $$ @MustCall method close may not have been invoked on outboundAddress.connectFrom(stickyAddress) or any of its aliases.
+					sock = outboundAddress.connectFrom(stickyAddress);
+					                                  ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to sock.getInputStream() with exception type java.io.IOException
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:82: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(keyFile) $$ java.io.FileOutputStream $$ possible exceptional exit due to writeKey(new FileOutputStream(keyFile), kp.getPrivate()) with exception type java.lang.Exception $$ ( 3030, 3059 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(keyFile) or any of its aliases.
+		writeKey(new FileOutputStream(keyFile), kp.getPrivate());
+		         ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to writeKey(new FileOutputStream(keyFile), kp.getPrivate()) with exception type java.lang.Exception
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:93: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(crtFile) $$ java.io.FileOutputStream $$ possible exceptional exit due to writeCertificate(new FileOutputStream(crtFile), crt) with exception type java.lang.Exception $$ ( 3464, 3493 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(crtFile) or any of its aliases.
+		writeCertificate(new FileOutputStream(crtFile), crt);
+		                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to writeCertificate(new FileOutputStream(crtFile), crt) with exception type java.lang.Exception
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/AutoRotateFileOutputStream.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(out, true) $$ java.io.FileOutputStream $$ regular method exit $$ ( 1861, 1892 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(out, true) or any of its aliases.
+			os = new FileOutputStream(out, true);
+			     ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/SocketRegistrator.java:13: error: (type.argument) $$ 4 $$ E $$ Set $$ @MustCall("close") Socket $$ @MustCall Object $$ ( 237, 243 ) $$ incompatible type argument for type parameter E of Set.
+	private final Set<Socket> cliSockets = Collections.synchronizedSet(new HashSet<Socket>());
+	                  ^
+  found   : @MustCall("close") Socket
+  required: @MustCall Object
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/SocketRegistrator.java:13: error: (type.arguments.not.inferred) $$ 2 $$ Collections.synchronizedSet $$ @MustCall("close") Socket <: @MustCall Object $$ ( 258, 308 ) $$ Could not infer type arguments for Collections.synchronizedSet
+	private final Set<Socket> cliSockets = Collections.synchronizedSet(new HashSet<Socket>());
+	                                                                  ^
+  unsatisfiable constraint: @MustCall("close") Socket <: @MustCall Object
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/SocketRegistrator.java:14: error: (type.argument) $$ 4 $$ E $$ Set $$ @MustCall("close") ServerSocket $$ @MustCall Object $$ ( 329, 341 ) $$ incompatible type argument for type parameter E of Set.
+	private final Set<ServerSocket> srvSockets = Collections.synchronizedSet(new HashSet<ServerSocket>());
+	                  ^
+  found   : @MustCall("close") ServerSocket
+  required: @MustCall Object
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/SocketRegistrator.java:14: error: (type.arguments.not.inferred) $$ 2 $$ Collections.synchronizedSet $$ @MustCall("close") ServerSocket <: @MustCall Object $$ ( 356, 412 ) $$ Could not infer type arguments for Collections.synchronizedSet
+	private final Set<ServerSocket> srvSockets = Collections.synchronizedSet(new HashSet<ServerSocket>());
+	                                                                        ^
+  unsatisfiable constraint: @MustCall("close") ServerSocket <: @MustCall Object
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/SocketRegistrator.java:44: error: (type.argument) $$ 4 $$ E $$ Set $$ @MustCall("close") Socket $$ @MustCall Object $$ ( 1310, 1316 ) $$ incompatible type argument for type parameter E of Set.
+	Set<Socket> getClientSockets() {
+	    ^
+  found   : @MustCall("close") Socket
+  required: @MustCall Object
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/SocketRegistrator.java:45: error: (type.arguments.not.inferred) $$ 2 $$ Collections.unmodifiableSet $$ @MustCall("close") Socket <: @MustCall Object $$ ( 1348, 1387 ) $$ Could not infer type arguments for Collections.unmodifiableSet
+		return Collections.unmodifiableSet(cliSockets);
+		                                  ^
+  unsatisfiable constraint: @MustCall("close") Socket <: @MustCall Object
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/SocketRegistrator.java:48: error: (type.argument) $$ 4 $$ E $$ Set $$ @MustCall("close") ServerSocket $$ @MustCall Object $$ ( 1398, 1410 ) $$ incompatible type argument for type parameter E of Set.
+	Set<ServerSocket> getServerSockets() {
+	    ^
+  found   : @MustCall("close") ServerSocket
+  required: @MustCall Object
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/SocketRegistrator.java:49: error: (type.arguments.not.inferred) $$ 2 $$ Collections.unmodifiableSet $$ @MustCall("close") ServerSocket <: @MustCall Object $$ ( 1442, 1481 ) $$ Could not infer type arguments for Collections.unmodifiableSet
+		return Collections.unmodifiableSet(srvSockets);
+		                                  ^
+  unsatisfiable constraint: @MustCall("close") ServerSocket <: @MustCall Object
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/ProxyProtocol.java:79: error: (required.method.not.called) $$ 4 $$ method close $$ listen $$ java.net.ServerSocket $$ possible exceptional exit due to listen.accept() with exception type java.io.IOException $$ ( 2079, 2130 ) $$ @MustCall method close may not have been invoked on listen or any of its aliases.
+		final ServerSocket listen = new ServerSocket(9876);
+		                   ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: possible exceptional exit due to listen.accept() with exception type java.io.IOException
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/ClusterClient.java:130: error: (required.method.not.called) $$ 4 $$ method close $$ outboundAddress.connect() $$ java.net.Socket $$ possible exceptional exit due to throw new ConnectException("Unable to connect to " + outboundAddress); with exception type java.net.ConnectException $$ ( 3493, 3518 ) $$ @MustCall method close may not have been invoked on outboundAddress.connect() or any of its aliases.
+						sock = outboundAddress.connect();
+						                              ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to throw new ConnectException("Unable to connect to " + outboundAddress); with exception type java.net.ConnectException
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/benchmark/BenchmarkLatency.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ sock $$ java.net.Socket $$ possible exceptional exit due to sock.setSendBufferSize(65535) with exception type java.net.SocketException $$ ( 724, 791 ) $$ @MustCall method close may not have been invoked on sock or any of its aliases.
+		final Socket sock = new Socket(args[0], Integer.parseInt(args[1]));
+		             ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to sock.setSendBufferSize(65535) with exception type java.net.SocketException
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/benchmark/BenchmarkThroughput.java:25: error: (required.method.not.called) $$ 4 $$ method close $$ sock $$ java.net.Socket $$ regular method exit $$ ( 880, 1006 ) $$ @MustCall method close may not have been invoked on sock or any of its aliases.
+			Socket sock = args.length < 2 ? new Socket("127.0.0.1", CHARGEN_TCP) : //
+			       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/benchmark/BenchmarkThroughput.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ listen $$ java.net.ServerSocket $$ possible exceptional exit due to listen.accept() with exception type java.io.IOException $$ ( 1126, 1224 ) $$ @MustCall method close may not have been invoked on listen or any of its aliases.
+			ServerSocket listen = new ServerSocket(args.length < 1 ? CHARGEN_TCP : Integer.parseInt(args[0]));
+			             ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: possible exceptional exit due to listen.accept() with exception type java.io.IOException
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/benchmark/BenchmarkThroughput.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ sock $$ java.net.Socket $$ regular method exit $$ ( 1294, 1330 ) $$ @MustCall method close may not have been invoked on sock or any of its aliases.
+				final Socket sock = listen.accept();
+				             ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/MuxServer.java:185: error: (required.method.not.called) $$ 4 $$ method close $$ inboundAddress.listen() $$ java.net.ServerSocket $$ regular method exit $$ ( 5971, 5994 ) $$ @MustCall method close may not have been invoked on inboundAddress.listen() or any of its aliases.
+			listen = inboundAddress.listen();
+			                              ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/MuxServer.java:203: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.Socket $$ regular method exit $$ ( 6280, 6318 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+					final Socket socket = listen.accept();
+					             ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/Bouncer.java:155: error: (required.method.not.called) $$ 4 $$ method close $$ isConfig $$ java.io.InputStream $$ regular method exit $$ ( 6153, 6191 ) $$ @MustCall method close may not have been invoked on isConfig or any of its aliases.
+				isConfig = connConfig.getInputStream();
+				         ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/Bouncer.java:177: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ regular method exit $$ ( 6684, 6746 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+			is = Bouncer.class.getResourceAsStream(Constants.VERSION_FILE);
+			   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/Bouncer.java:302: error: (required.method.not.called) $$ 4 $$ method close $$ s $$ java.net.Socket $$ regular method exit $$ ( 10647, 10655 ) $$ @MustCall method close may not have been invoked on s or any of its aliases.
+				for (Socket s : socketRegistry.getClientSockets()) {
+				            ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/Bouncer.java:305: error: (required.method.not.called) $$ 4 $$ method close $$ s $$ java.net.ServerSocket $$ regular method exit $$ ( 10769, 10783 ) $$ @MustCall method close may not have been invoked on s or any of its aliases.
+				for (ServerSocket s : socketRegistry.getServerSockets()) {
+				                  ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/Log.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ new AutoRotateFileOutputStream(stdFile) $$ org.javastack.bouncer.AutoRotateFileOutputStream $$ regular method exit $$ ( 981, 1020 ) $$ @MustCall method close may not have been invoked on new AutoRotateFileOutputStream(stdFile) or any of its aliases.
+		System.setOut(new PrintStream(new AutoRotateFileOutputStream(stdFile)));
+		                              ^
+  The type of object is: org.javastack.bouncer.AutoRotateFileOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/Log.java:42: error: (required.method.not.called) $$ 4 $$ method close $$ new AutoRotateFileOutputStream(errFile) $$ org.javastack.bouncer.AutoRotateFileOutputStream $$ regular method exit $$ ( 1175, 1214 ) $$ @MustCall method close may not have been invoked on new AutoRotateFileOutputStream(errFile) or any of its aliases.
+		System.setErr(new PrintStream(new AutoRotateFileOutputStream(errFile)));
+		                              ^
+  The type of object is: org.javastack.bouncer.AutoRotateFileOutputStream.
+  Reason for going out of scope: regular method exit
+40 errors

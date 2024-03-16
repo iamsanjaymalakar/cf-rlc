@@ -1,0 +1,11 @@
+../dataset/june2020_dataset/urlc5fdb179cc_lagodiuk_evo_neural_network_agents_tgz-pJ8-com_lagodiuk_agent_evolution_MainJ8/src/com/lagodiuk/agent/evolution/Main.java:339: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileInputStream $$ possible exceptional exit due to NeuralNetwork.unmarsall(in) with exception type java.lang.Exception $$ ( 10252, 10304 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+						FileInputStream in = new FileInputStream(brainFile);
+						                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to NeuralNetwork.unmarsall(in) with exception type java.lang.Exception
+../dataset/june2020_dataset/urlc5fdb179cc_lagodiuk_evo_neural_network_agents_tgz-pJ8-com_lagodiuk_agent_evolution_MainJ8/src/com/lagodiuk/agent/evolution/Main.java:376: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.FileOutputStream $$ possible exceptional exit due to NeuralNetwork.marsall(brain, out) with exception type java.lang.Exception $$ ( 11463, 11518 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+						FileOutputStream out = new FileOutputStream(brainFile);
+						                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to NeuralNetwork.marsall(brain, out) with exception type java.lang.Exception
+2 errors

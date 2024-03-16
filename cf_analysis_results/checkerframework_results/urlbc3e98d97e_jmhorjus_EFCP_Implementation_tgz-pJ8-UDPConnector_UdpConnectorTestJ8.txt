@@ -1,0 +1,11 @@
+../../../../datasets/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnector.java:97: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-210 $$ java.net.DatagramSocket $$ regular method exit $$ ( 3510, 3546 ) $$ @MustCall method close may not have been invoked on temp-var-210 or any of its aliases.
+                m_recvSocket = new DatagramSocket(m_portToListenOn);
+                               ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnector.java:266: error: (required.method.not.called) $$ 4 $$ method close $$ sendSocket $$ java.net.DatagramSocket $$ possible exceptional exit due to sendSocket.send(sendPacket) with exception type java.io.IOException $$ ( 10664, 10713 ) $$ @MustCall method close may not have been invoked on sendSocket or any of its aliases.
+        DatagramSocket sendSocket = new DatagramSocket();
+                       ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to sendSocket.send(sendPacket) with exception type java.io.IOException
+2 errors

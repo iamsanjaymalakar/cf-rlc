@@ -1,0 +1,53 @@
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/npdu/ip/IpNetwork.java:124: error: (required.method.not.called) $$ 4 $$ method close $$ new DatagramSocket(port) $$ java.net.DatagramSocket $$ regular method exit $$ ( 4440, 4464 ) $$ @MustCall method close may not have been invoked on new DatagramSocket(port) or any of its aliases.
+            socket = new DatagramSocket(port);
+                     ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/npdu/ip/IpNetwork.java:126: error: (required.method.not.called) $$ 4 $$ method close $$ new DatagramSocket(port, InetAddress.getByName(localBindAddress)) $$ java.net.DatagramSocket $$ regular method exit $$ ( 4500, 4565 ) $$ @MustCall method close may not have been invoked on new DatagramSocket(port, InetAddress.getByName(localBindAddress)) or any of its aliases.
+            socket = new DatagramSocket(port, InetAddress.getByName(localBindAddress));
+                     ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/npdu/mstp/MstpNode.java:94: error: (required.method.not.called) $$ 4 $$ method close $$ serialPort.getInputStream() $$ java.io.InputStream $$ possible exceptional exit due to serialPort.getOutputStream() with exception type java.io.IOException $$ ( 2800, 2827 ) $$ @MustCall method close may not have been invoked on serialPort.getInputStream() or any of its aliases.
+                in = serialPort.getInputStream();
+                                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to serialPort.getOutputStream() with exception type java.io.IOException
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/npdu/mstp/MstpNode.java:95: error: (required.method.not.called) $$ 4 $$ method close $$ serialPort.getOutputStream() $$ java.io.OutputStream $$ regular method exit $$ ( 2851, 2879 ) $$ @MustCall method close may not have been invoked on serialPort.getOutputStream() or any of its aliases.
+                out = serialPort.getOutputStream();
+                                                ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/MessageControl.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ new DatagramSocket(port) $$ java.net.DatagramSocket $$ regular method exit $$ ( 1786, 1810 ) $$ @MustCall method close may not have been invoked on new DatagramSocket(port) or any of its aliases.
+        socket = new DatagramSocket(port);
+                 ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/HubServer.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.Socket $$ regular method exit $$ ( 970, 1004 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+                Socket socket = acceptor.accept();
+                       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/ScriptTest.java:20: error: (required.method.not.called) $$ 4 $$ method close $$ getInputStream() $$ java.io.InputStream $$ possible exceptional exit due to new MasterNode(getInputStream(), new DumpOut(), (byte)4, 2) with exception type java.lang.IllegalArgumentException $$ ( 608, 624 ) $$ @MustCall method close may not have been invoked on getInputStream() or any of its aliases.
+        MasterNode master = new MasterNode(getInputStream(), new DumpOut(), (byte) 4, 2);
+                                                         ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new MasterNode(getInputStream(), new DumpOut(), (byte)4, 2) with exception type java.lang.IllegalArgumentException
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/ScriptTest.java:20: error: (required.method.not.called) $$ 4 $$ method close $$ new DumpOut() $$ com.serotonin.bacnet4j.rs485.ScriptTest.DumpOut $$ possible exceptional exit due to new MasterNode(getInputStream(), new DumpOut(), (byte)4, 2) with exception type java.lang.IllegalArgumentException $$ ( 626, 639 ) $$ @MustCall method close may not have been invoked on new DumpOut() or any of its aliases.
+        MasterNode master = new MasterNode(getInputStream(), new DumpOut(), (byte) 4, 2);
+                                                             ^
+  The type of object is: com.serotonin.bacnet4j.rs485.ScriptTest.DumpOut.
+  Reason for going out of scope: possible exceptional exit due to new MasterNode(getInputStream(), new DumpOut(), (byte)4, 2) with exception type java.lang.IllegalArgumentException
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/PortTest.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to in.read() with exception type java.io.IOException $$ ( 522, 567 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+        InputStream in = serialPort.getInputStream();
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to in.read() with exception type java.io.IOException
+../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/HubClient.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ new Socket("localhost", 50505) $$ java.net.Socket $$ possible exceptional exit due to new MessageReader() with exception type java.lang.Exception $$ ( 394, 424 ) $$ @MustCall method close may not have been invoked on new Socket("localhost", 50505) or any of its aliases.
+        socket = new Socket("localhost", 50505);
+                 ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to new MessageReader() with exception type java.lang.Exception
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+10 errors

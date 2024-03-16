@@ -1,0 +1,156 @@
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/filen/CashKyoroFile.java:46: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(mFile = f, "rw") $$ java.io.RandomAccessFile $$ regular method exit $$ ( 1331, 1368 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(mFile = f, "rw") or any of its aliases.
+			mRAFile = new RandomAccessFile(mFile = f, "rw");
+			          ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/filen/CashKyoroFile.java:240: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(mFile, "rw") $$ java.io.RandomAccessFile $$ regular method exit $$ ( 5651, 5684 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(mFile, "rw") or any of its aliases.
+				mRAFile = new RandomAccessFile(mFile, "rw");
+				          ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/filen/CashKyoroFile.java:251: error: (required.method.not.called) $$ 4 $$ method close $$ new MyOutputStream() $$ net.hetimatan.io.filen.CashKyoroFile.MyOutputStream $$ regular method exit $$ ( 5878, 5898 ) $$ @MustCall method close may not have been invoked on new MyOutputStream() or any of its aliases.
+			mLastOutput = new MyOutputStream();
+			              ^
+  The type of object is: net.hetimatan.io.filen.CashKyoroFile.MyOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroSelector.java:27: error: (type.argument) $$ 4 $$ K $$ WeakHashMap $$ @MustCall("close") SelectableChannel $$ @MustCall Object $$ ( 875, 892 ) $$ incompatible type argument for type parameter K of WeakHashMap.
+	private WeakHashMap<SelectableChannel, KyoroSelectable> mClientList 
+	                    ^
+  found   : @MustCall("close") SelectableChannel
+  required: @MustCall Object
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroSelector.java:28: error: (type.argument) $$ 4 $$ K $$ WeakHashMap $$ @MustCall("close") SelectableChannel $$ @MustCall Object $$ ( 944, 961 ) $$ incompatible type argument for type parameter K of WeakHashMap.
+	= new WeakHashMap<SelectableChannel, KyoroSelectable>();
+	                  ^
+  found   : @MustCall("close") SelectableChannel
+  required: @MustCall Object
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroSelector.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ channel $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 1225, 1271 ) $$ @MustCall method close may not have been invoked on channel or any of its aliases.
+		SelectableChannel channel = s.getRawChannel();
+		                  ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroSelector.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ Selector.open() $$ java.nio.channels.Selector $$ regular method exit $$ ( 1480, 1495 ) $$ @MustCall method close may not have been invoked on Selector.open() or any of its aliases.
+			mRawSelector = Selector.open();
+			                            ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroSelector.java:58: error: (required.method.not.called) $$ 4 $$ method close $$ selector $$ java.nio.channels.Selector $$ possible exceptional exit due to selector.selectNow() with exception type java.io.IOException $$ ( 1666, 1700 ) $$ @MustCall method close may not have been invoked on selector or any of its aliases.
+		Selector selector = getSelector();
+		         ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: possible exceptional exit due to selector.selectNow() with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/filen/ByteKyoroFile.java:238: error: (required.method.not.called) $$ 4 $$ method close $$ new MyOutputStream() $$ net.hetimatan.io.filen.ByteKyoroFile.MyOutputStream $$ regular method exit $$ ( 5429, 5449 ) $$ @MustCall method close may not have been invoked on new MyOutputStream() or any of its aliases.
+			mLastOutput = new MyOutputStream();
+			              ^
+  The type of object is: net.hetimatan.io.filen.ByteKyoroFile.MyOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/net/http/HttpServerFront.java:44: error: (required.method.not.called) $$ 4 $$ method close $$ new KyoroFileForKyoroSocket(socket, 1024) $$ net.hetimatan.io.file.KyoroFileForKyoroSocket $$ possible exceptional exit due to new MarkableFileReader(mKFKSocket, 1024) with exception type java.io.FileNotFoundException $$ ( 1580, 1621 ) $$ @MustCall method close may not have been invoked on new KyoroFileForKyoroSocket(socket, 1024) or any of its aliases.
+		mKFKSocket = new KyoroFileForKyoroSocket(socket, 1024);
+		             ^
+  The type of object is: net.hetimatan.io.file.KyoroFileForKyoroSocket.
+  Reason for going out of scope: possible exceptional exit due to new MarkableFileReader(mKFKSocket, 1024) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpObject.java:29: error: (required.method.not.called) $$ 4 $$ method close $$ vFile.getLastOutput() $$ java.io.OutputStream $$ possible exceptional exit due to target.encode(vFile.getLastOutput()) with exception type java.io.IOException $$ ( 879, 900 ) $$ @MustCall method close may not have been invoked on vFile.getLastOutput() or any of its aliases.
+			target.encode(vFile.getLastOutput());
+			                                 ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to target.encode(vFile.getLastOutput()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/HttpGetRequestUri.java:159: error: (required.method.not.called) $$ 4 $$ method close $$ vFile.getLastOutput() $$ java.io.OutputStream $$ possible exceptional exit due to encodeAbsPath(vFile.getLastOutput()) with exception type java.io.IOException $$ ( 3686, 3707 ) $$ @MustCall method close may not have been invoked on vFile.getLastOutput() or any of its aliases.
+			encodeAbsPath(vFile.getLastOutput());
+			                                 ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to encodeAbsPath(vFile.getLastOutput()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroServerSocketImpl.java:23: error: (reset.not.owning) $$ 2 $$ bind $$ this.mServerChannel.socket() $$ ( 671, 728 ) $$ Calling method bind resets the must-call obligations of the expression this.mServerChannel.socket(), which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+		mServerChannel.socket().bind(new InetSocketAddress(port));
+		                            ^
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroServerSocketImpl.java:57: error: (required.method.not.called) $$ 4 $$ method close $$ selector.getSelector() $$ java.nio.channels.Selector $$ possible exceptional exit due to mServerChannel.register(selector.getSelector(), key) with exception type java.nio.channels.ClosedChannelException $$ ( 1430, 1452 ) $$ @MustCall method close may not have been invoked on selector.getSelector() or any of its aliases.
+		mServerChannel.register(selector.getSelector(), key);
+		                                            ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: possible exceptional exit due to mServerChannel.register(selector.getSelector(), key) with exception type java.nio.channels.ClosedChannelException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/net/http/request/HttpGetResponse.java:28: error: (required.method.not.called) $$ 4 $$ method close $$ new KyoroFileForKyoroSocket(mSocket, 512 * 30) $$ net.hetimatan.io.file.KyoroFileForKyoroSocket $$ possible exceptional exit due to new MarkableFileReader(mBase, 512 * 30) with exception type java.io.FileNotFoundException $$ ( 1059, 1103 ) $$ @MustCall method close may not have been invoked on new KyoroFileForKyoroSocket(mSocket, 512 * 30) or any of its aliases.
+		mBase = new KyoroFileForKyoroSocket(mSocket, 512*30);
+		        ^
+  The type of object is: net.hetimatan.io.file.KyoroFileForKyoroSocket.
+  Reason for going out of scope: possible exceptional exit due to new MarkableFileReader(mBase, 512 * 30) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/TestForHttpResponse.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ output.getLastOutput() $$ java.io.OutputStream $$ possible exceptional exit due to response.encode(output.getLastOutput()) with exception type java.io.IOException $$ ( 678, 700 ) $$ @MustCall method close may not have been invoked on output.getLastOutput() or any of its aliases.
+		response.encode(output.getLastOutput());
+		                                    ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to response.encode(output.getLastOutput()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/TestForHttpResponse.java:38: error: (required.method.not.called) $$ 4 $$ method close $$ output.getLastOutput() $$ java.io.OutputStream $$ possible exceptional exit due to response.encode(output.getLastOutput()) with exception type java.io.IOException $$ ( 1334, 1356 ) $$ @MustCall method close may not have been invoked on output.getLastOutput() or any of its aliases.
+		response.encode(output.getLastOutput());
+		                                    ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to response.encode(output.getLastOutput()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/TestForHttpRequestUri.java:104: error: (required.method.not.called) $$ 4 $$ method close $$ output.getLastOutput() $$ java.io.OutputStream $$ possible exceptional exit due to uri.encode(output.getLastOutput()) with exception type java.io.IOException $$ ( 2797, 2819 ) $$ @MustCall method close may not have been invoked on output.getLastOutput() or any of its aliases.
+		uri.encode(output.getLastOutput());
+		                               ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to uri.encode(output.getLastOutput()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/TestForHttpRequestUri.java:117: error: (required.method.not.called) $$ 4 $$ method close $$ output.getLastOutput() $$ java.io.OutputStream $$ possible exceptional exit due to uri.encode(output.getLastOutput()) with exception type java.io.IOException $$ ( 3216, 3238 ) $$ @MustCall method close may not have been invoked on output.getLastOutput() or any of its aliases.
+		uri.encode(output.getLastOutput());
+		                               ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to uri.encode(output.getLastOutput()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/TestForHttpRequestUri.java:131: error: (required.method.not.called) $$ 4 $$ method close $$ output.getLastOutput() $$ java.io.OutputStream $$ possible exceptional exit due to uri.encode(output.getLastOutput()) with exception type java.io.IOException $$ ( 3718, 3740 ) $$ @MustCall method close may not have been invoked on output.getLastOutput() or any of its aliases.
+		uri.encode(output.getLastOutput());
+		                               ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to uri.encode(output.getLastOutput()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/TestForHttpRequestLine.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ output.getLastOutput() $$ java.io.OutputStream $$ possible exceptional exit due to line.encode(output.getLastOutput()) with exception type java.io.IOException $$ ( 616, 638 ) $$ @MustCall method close may not have been invoked on output.getLastOutput() or any of its aliases.
+		line.encode(output.getLastOutput());
+		                                ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to line.encode(output.getLastOutput()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/TestForHttpRequest.java:19: error: (required.method.not.called) $$ 4 $$ method close $$ output.getLastOutput() $$ java.io.OutputStream $$ possible exceptional exit due to uri.encode(output.getLastOutput()) with exception type java.io.IOException $$ ( 654, 676 ) $$ @MustCall method close may not have been invoked on output.getLastOutput() or any of its aliases.
+		uri.encode(output.getLastOutput());
+		                               ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to uri.encode(output.getLastOutput()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/TestForHttpRequest.java:32: error: (required.method.not.called) $$ 4 $$ method close $$ output.getLastOutput() $$ java.io.OutputStream $$ possible exceptional exit due to uri.encode(output.getLastOutput()) with exception type java.io.IOException $$ ( 1303, 1325 ) $$ @MustCall method close may not have been invoked on output.getLastOutput() or any of its aliases.
+		uri.encode(output.getLastOutput());
+		                               ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to uri.encode(output.getLastOutput()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/TestForHttpRequest.java:49: error: (required.method.not.called) $$ 4 $$ method close $$ output.getLastOutput() $$ java.io.OutputStream $$ possible exceptional exit due to uri.encode(output.getLastOutput()) with exception type java.io.IOException $$ ( 2143, 2165 ) $$ @MustCall method close may not have been invoked on output.getLastOutput() or any of its aliases.
+		uri.encode(output.getLastOutput());
+		                               ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to uri.encode(output.getLastOutput()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/http/TestForHttpHeader.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ output.getLastOutput() $$ java.io.OutputStream $$ possible exceptional exit due to header.encode(output.getLastOutput()) with exception type java.io.IOException $$ ( 522, 544 ) $$ @MustCall method close may not have been invoked on output.getLastOutput() or any of its aliases.
+		header.encode(output.getLastOutput());
+		                                  ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to header.encode(output.getLastOutput()) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroDatagramImpl.java:19: error: (required.method.not.called) $$ 4 $$ method close $$ DatagramChannel.open() $$ java.nio.channels.DatagramChannel $$ possible exceptional exit due to mChannel.configureBlocking(false) with exception type java.io.IOException $$ ( 562, 584 ) $$ @MustCall method close may not have been invoked on DatagramChannel.open() or any of its aliases.
+		mChannel = DatagramChannel.open();
+		                               ^
+  The type of object is: java.nio.channels.DatagramChannel.
+  Reason for going out of scope: possible exceptional exit due to mChannel.configureBlocking(false) with exception type java.io.IOException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroDatagramImpl.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ mChannel.socket() $$ java.net.DatagramSocket $$ possible exceptional exit due to mChannel.socket().bind(addrO) with exception type java.net.SocketException $$ ( 979, 996 ) $$ @MustCall method close may not have been invoked on mChannel.socket() or any of its aliases.
+		mChannel.socket().bind(addrO);
+		               ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to mChannel.socket().bind(addrO) with exception type java.net.SocketException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroDatagramImpl.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ mChannel.socket() $$ java.net.DatagramSocket $$ possible exceptional exit due to mChannel.socket().bind(new InetSocketAddress(port)) with exception type java.net.SocketException $$ ( 1081, 1098 ) $$ @MustCall method close may not have been invoked on mChannel.socket() or any of its aliases.
+		mChannel.socket().bind(new InetSocketAddress(port));
+		               ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to mChannel.socket().bind(new InetSocketAddress(port)) with exception type java.net.SocketException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroDatagramImpl.java:82: error: (required.method.not.called) $$ 4 $$ method close $$ selector.getSelector() $$ java.nio.channels.Selector $$ possible exceptional exit due to mChannel.register(selector.getSelector(), key) with exception type java.nio.channels.ClosedChannelException $$ ( 2352, 2374 ) $$ @MustCall method close may not have been invoked on selector.getSelector() or any of its aliases.
+		mChannel.register(selector.getSelector(), key);
+		                                      ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: possible exceptional exit due to mChannel.register(selector.getSelector(), key) with exception type java.nio.channels.ClosedChannelException
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroSocketImpl.java:36: error: (reset.not.owning) $$ 2 $$ connect $$ this.mSocketChannel $$ ( 922, 983 ) $$ Calling method connect resets the must-call obligations of the expression this.mSocketChannel, which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+		mSocketChannel.connect(new InetSocketAddress(hostname, port));
+		                      ^
+../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroSocketImpl.java:158: error: (required.method.not.called) $$ 4 $$ method close $$ selector.getSelector() $$ java.nio.channels.Selector $$ possible exceptional exit due to mSocketChannel.register(selector.getSelector(), key) with exception type java.nio.channels.ClosedChannelException $$ ( 3586, 3608 ) $$ @MustCall method close may not have been invoked on selector.getSelector() or any of its aliases.
+		mKey = mSocketChannel.register(selector.getSelector(), key);
+		                                                   ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: possible exceptional exit due to mSocketChannel.register(selector.getSelector(), key) with exception type java.nio.channels.ClosedChannelException
+Note: ../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/io/filen/CashKyoroFile.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: ../dataset/june2020_dataset/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/tool/SimpleHttpServer.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+31 errors

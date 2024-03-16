@@ -1,0 +1,98 @@
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/LevelScene.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-288 $$ java.io.InputStream $$ regular method exit $$ ( 3449, 3508 ) $$ @MustCall method close may not have been invoked on temp-var-288 or any of its aliases.
+            Level.loadBehaviors(new DataInputStream(LevelScene.class.getResourceAsStream("resources/tiles.dat")));
+                                                                                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/Art.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1033 $$ java.io.InputStream $$ possible exceptional exit due to null with exception type java.lang.AssertionError $$ ( 2270, 2310 ) $$ @MustCall method close may not have been invoked on temp-var-1033 or any of its aliases.
+        { source = ImageIO.read(Art.class.getResourceAsStream(imageName));        }
+                                                             ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to null with exception type java.lang.AssertionError
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/mapedit/LevelEditor.java:36: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1093 $$ java.io.InputStream $$ possible exceptional exit due to Toolkit.getDefaultToolkit().getScreenSize() with exception type java.awt.HeadlessException $$ ( 1081, 1140 ) $$ @MustCall method close may not have been invoked on temp-var-1093 or any of its aliases.
+            Level.loadBehaviors(new DataInputStream(LevelScene.class.getResourceAsStream("resources/tiles.dat")));
+                                                                                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to Toolkit.getDefaultToolkit().getScreenSize() with exception type java.awt.HeadlessException
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/mapedit/LevelEditor.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1164 $$ java.io.FileOutputStream $$ possible exceptional exit due to Level.saveBehaviors(new DataOutputStream(new FileOutputStream("SAVEDtiles.dat"))) with exception type java.io.IOException $$ ( 3710, 3748 ) $$ @MustCall method close may not have been invoked on temp-var-1164 or any of its aliases.
+                        Level.saveBehaviors(new DataOutputStream(new FileOutputStream("SAVEDtiles.dat")));
+                                                                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to Level.saveBehaviors(new DataOutputStream(new FileOutputStream("SAVEDtiles.dat"))) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/mapedit/LevelEditor.java:124: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1145 $$ java.io.InputStream $$ possible exceptional exit due to Level.load(new DataInputStream(LevelScene.class.getResourceAsStream(nameField.getText().trim()))) with exception type java.io.IOException $$ ( 4795, 4859 ) $$ @MustCall method close may not have been invoked on temp-var-1145 or any of its aliases.
+                levelEditView.setLevel(Level.load(new DataInputStream(LevelScene.class.getResourceAsStream(nameField.getText().trim()))));
+                                                                                                          ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to Level.load(new DataInputStream(LevelScene.class.getResourceAsStream(nameField.getText().trim()))) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/mapedit/LevelEditor.java:128: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1153 $$ java.io.FileOutputStream $$ regular method exit $$ ( 5008, 5056 ) $$ @MustCall method close may not have been invoked on temp-var-1153 or any of its aliases.
+                levelEditView.getLevel().save(new DataOutputStream(new FileOutputStream(nameField.getText().trim())));
+                                                                   ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/ai/agents/AgentsPool.java:59: error: (return) $$ 2 $$ @MustCallUnknown Agent $$ @MustCall Agent $$ ( 1765, 1770 ) $$ incompatible types in return.
+        return agent;
+               ^
+  type of expression: @MustCallUnknown Agent
+  method return type: @MustCall Agent
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/utils/StatisticalSummary.java:243: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(this) with exception type java.io.IOException $$ ( 6281, 6406 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+            ObjectOutputStream oos =
+                               ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(this) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/utils/StatisticalSummary.java:245: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1751 $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(path)) with exception type java.io.IOException $$ ( 6378, 6404 ) $$ @MustCall method close may not have been invoked on temp-var-1751 or any of its aliases.
+                            new FileOutputStream(path));
+                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(path)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/utils/StatisticalSummary.java:255: error: (required.method.not.called) $$ 4 $$ method close $$ ois $$ java.io.ObjectInputStream $$ regular method exit $$ ( 6634, 6756 ) $$ @MustCall method close may not have been invoked on ois or any of its aliases.
+            ObjectInputStream ois =
+                              ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/utils/StatisticalSummary.java:257: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1756 $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(new FileInputStream(path)) with exception type java.io.IOException $$ ( 6729, 6754 ) $$ @MustCall method close may not have been invoked on temp-var-1756 or any of its aliases.
+                            new FileInputStream(path));
+                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(new FileInputStream(path)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/maibe/tasks/ProgressTask.java:88: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2283 $$ java.io.FileWriter $$ possible exceptional exit due to out.write(this.fitnessEvaluations + " " + fitness + "\n") with exception type java.io.IOException $$ ( 3079, 3134 ) $$ @MustCall method close may not have been invoked on temp-var-2283 or any of its aliases.
+            BufferedWriter out = new BufferedWriter(new FileWriter(fileName + fileTimeStamp + ".txt", true));
+                                                    ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(this.fitnessEvaluations + " " + fitness + "\n") with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/bt/behaviortree/XML_BTReader.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2364 $$ java.io.FileReader $$ possible exceptional exit due to readXMLRecur(bt_temp, btRoot) with exception type java.io.IOException $$ ( 752, 778 ) $$ @MustCall method close may not have been invoked on temp-var-2364 or any of its aliases.
+            m_reader = new BufferedReader(new FileReader(a_filename));
+                                          ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to readXMLRecur(bt_temp, btRoot) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/bt/behaviortree/XML_BTReader.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2375 $$ java.io.FileReader $$ possible exceptional exit due to readXMLRecur((BehaviorTree)a_bt, btRoot) with exception type java.io.IOException $$ ( 1647, 1673 ) $$ @MustCall method close may not have been invoked on temp-var-2375 or any of its aliases.
+            m_reader = new BufferedReader(new FileReader(a_filename));
+                                          ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to readXMLRecur((BehaviorTree)a_bt, btRoot) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/GEBT_Mario/Map.java:283: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileWriter $$ possible exceptional exit due to bw.newLine() with exception type java.io.IOException $$ ( 8962, 9003 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+            FileWriter fw = new FileWriter(filename);
+                       ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bw.newLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/GEBT_Mario/Map.java:313: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileWriter $$ possible exceptional exit due to bw.write("void setup() { size(" + m_lastCell * 10 + ", 240); background(134,183,183); }") with exception type java.io.IOException $$ ( 9774, 9815 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+            FileWriter fw = new FileWriter(filename);
+                       ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bw.write("void setup() { size(" + m_lastCell * 10 + ", 240); background(134,183,183); }") with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviorsNoAstar/bt/behaviortree/XML_BTReader.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-3766 $$ java.io.FileReader $$ possible exceptional exit due to readXMLRecur(a_bt, btRoot) with exception type java.io.IOException $$ ( 654, 680 ) $$ @MustCall method close may not have been invoked on temp-var-3766 or any of its aliases.
+            m_reader = new BufferedReader(new FileReader(a_filename));
+                                          ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to readXMLRecur(a_bt, btRoot) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/Easy.java:25: error: (required.method.not.called) $$ 4 $$ method close $$ file $$ java.io.FileWriter $$ possible exceptional exit due to out.output(el, file) with exception type java.io.IOException $$ ( 671, 714 ) $$ @MustCall method close may not have been invoked on file or any of its aliases.
+            FileWriter file = new FileWriter(filename);
+                       ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.output(el, file) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/Easy.java:38: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ possible exceptional exit due to builder.build(is) with exception type org.jdom.JDOMException $$ ( 1063, 1110 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+            InputStream is = new FileInputStream(filename);
+                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to builder.build(is) with exception type org.jdom.JDOMException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+19 errors

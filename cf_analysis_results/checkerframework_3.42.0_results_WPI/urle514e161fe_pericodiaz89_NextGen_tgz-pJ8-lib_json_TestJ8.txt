@@ -1,0 +1,28 @@
+../dataset/june2020_dataset/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/lib/GUIHelper.java:26: error: (required.method.not.called) $$ 4 $$ method close $$ imgStream $$ java.io.InputStream $$ regular method exit $$ ( 631, 697 ) $$ @MustCall method close may not have been invoked on imgStream or any of its aliases.
+            InputStream imgStream = frame.getClass().getResourceAsStream(dir);
+                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/nextgen/dao/FileManager.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(fileName) $$ java.io.FileInputStream $$ possible exceptional exit due to buffer.readLine() with exception type java.io.IOException $$ ( 803, 832 ) $$ @MustCall method close may not have been invoked on new FileInputStream(fileName) or any of its aliases.
+        DataInputStream in = new DataInputStream(new FileInputStream(fileName));
+                                                 ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to buffer.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/nextgen/dao/FileManager.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileWriter $$ possible exceptional exit due to bw.write(content) with exception type java.io.IOException $$ ( 1914, 1969 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+			FileWriter fw = new FileWriter(file.getAbsoluteFile());
+			           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bw.write(content) with exception type java.io.IOException
+../dataset/june2020_dataset/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/nextgen/dao/FileManager.java:123: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to new FileOutputStream(dest) with exception type java.io.FileNotFoundException $$ ( 3324, 3366 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+    		InputStream in = new FileInputStream(src);
+    		            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(dest) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/nextgen/dao/FileManager.java:124: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.OutputStream $$ possible exceptional exit due to in.read(buffer) with exception type java.io.IOException $$ ( 3380, 3426 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+    	        OutputStream out = new FileOutputStream(dest); 
+    	                     ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to in.read(buffer) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors

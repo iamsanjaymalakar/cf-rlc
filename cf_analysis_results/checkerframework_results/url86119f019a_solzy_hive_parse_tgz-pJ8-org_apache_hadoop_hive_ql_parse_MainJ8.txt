@@ -1,0 +1,42 @@
+error: OutOfMemoryError (max memory = 32011976704, total memory = 32011976704, free memory = 388993816)
+  Exception: java.lang.OutOfMemoryError: GC overhead limit exceeded; java.lang.OutOfMemoryError: GC overhead limit exceeded
+  	at java.util.TreeMap.keyIterator(TreeMap.java:1110)
+  	at java.util.TreeMap$KeySet.iterator(TreeMap.java:1123)
+  	at java.util.TreeSet.iterator(TreeSet.java:181)
+  	at java.util.Collections$UnmodifiableCollection$1.<init>(Collections.java:1041)
+  	at java.util.Collections$UnmodifiableCollection.iterator(Collections.java:1040)
+  	at org.checkerframework.framework.flow.CFAbstractValue.validateSet(CFAbstractValue.java:102)
+  	at org.checkerframework.framework.flow.CFAbstractValue.<init>(CFAbstractValue.java:75)
+  	at org.checkerframework.framework.flow.CFValue.<init>(CFValue.java:16)
+  	at org.checkerframework.framework.flow.CFAbstractAnalysis.defaultCreateAbstractValue(CFAbstractAnalysis.java:219)
+  	at org.checkerframework.framework.flow.CFAnalysis.createAbstractValue(CFAnalysis.java:36)
+  	at org.checkerframework.framework.flow.CFAnalysis.createAbstractValue(CFAnalysis.java:10)
+  	at org.checkerframework.framework.flow.CFAbstractValue.upperBound(CFAbstractValue.java:428)
+  	at org.checkerframework.framework.flow.CFAbstractValue.leastUpperBound(CFAbstractValue.java:380)
+  	at org.checkerframework.framework.flow.CFAbstractStore.upperBoundOfValues(CFAbstractStore.java:1168)
+  	at org.checkerframework.framework.flow.CFAbstractStore.upperBound(CFAbstractStore.java:1121)
+  	at org.checkerframework.framework.flow.CFAbstractStore.leastUpperBound(CFAbstractStore.java:1078)
+  	at org.checkerframework.framework.flow.CFAbstractStore.leastUpperBound(CFAbstractStore.java:63)
+  	at org.checkerframework.dataflow.analysis.TransferInput.getRegularStore(TransferInput.java:189)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.propagateObligationsToSuccessorBlocks(MustCallConsistencyAnalyzer.java:1603)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.analyze(MustCallConsistencyAnalyzer.java:503)
+  	at org.checkerframework.checker.resourceleak.ResourceLeakAnnotatedTypeFactory.postAnalyze(ResourceLeakAnnotatedTypeFactory.java:119)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.analyze(GenericAnnotatedTypeFactory.java:1559)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1394)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1828)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:414)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:475)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:180)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:82)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:987)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:542)
+warning: Garbage collection consumed 80% of CPU during the past 60 seconds.
+    max memory = 32011976704
+  total memory = 32011976704
+   free memory = 369033112
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+1 warning

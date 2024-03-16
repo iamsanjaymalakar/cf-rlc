@@ -1,0 +1,38 @@
+../../../../datasets/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java:286: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-430 $$ java.io.FileOutputStream $$ possible exceptional exit due to bw.write(Combo.OUTPUT_HEAD) with exception type java.io.IOException $$ ( 8781, 8850 ) $$ @MustCall method close may not have been invoked on temp-var-430 or any of its aliases.
+					new FileOutputStream("_out" + File.separator + time
+					^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to bw.write(Combo.OUTPUT_HEAD) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java:299: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-441 $$ java.io.FileOutputStream $$ possible exceptional exit due to bufferedWriter.write(infos) with exception type java.io.IOException $$ ( 9149, 9219 ) $$ @MustCall method close may not have been invoked on temp-var-441 or any of its aliases.
+						new OutputStreamWriter(new FileOutputStream("_out"
+						                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to bufferedWriter.write(infos) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/ScrollProperty.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1214 $$ java.io.FileInputStream $$ possible exceptional exit due to props.load(stream) with exception type java.io.IOException $$ ( 587, 662 ) $$ @MustCall method close may not have been invoked on temp-var-1214 or any of its aliases.
+					new FileInputStream("data" + File.separator
+					^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to props.load(stream) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java:1956: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2097 $$ java.io.FileOutputStream $$ possible exceptional exit due to JAXBContext.newInstance(ItemSets.class) with exception type javax.xml.bind.JAXBException $$ ( 59718, 59785 ) $$ @MustCall method close may not have been invoked on temp-var-2097 or any of its aliases.
+					new OutputStreamWriter(new FileOutputStream("data"
+					                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to JAXBContext.newInstance(ItemSets.class) with exception type javax.xml.bind.JAXBException
+../../../../datasets/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java:2026: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2186 $$ java.io.FileOutputStream $$ possible exceptional exit due to out.write(sb.toString()) with exception type java.io.IOException $$ ( 62096, 62164 ) $$ @MustCall method close may not have been invoked on temp-var-2186 or any of its aliases.
+					new OutputStreamWriter(new FileOutputStream("data"
+					                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.write(sb.toString()) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java:2041: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2194 $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 62454, 62521 ) $$ @MustCall method close may not have been invoked on temp-var-2194 or any of its aliases.
+					new InputStreamReader(new FileInputStream("data"
+					                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java:2091: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2221 $$ java.io.FileOutputStream $$ possible exceptional exit due to JAXBContext.newInstance(Items.class) with exception type javax.xml.bind.JAXBException $$ ( 63554, 63622 ) $$ @MustCall method close may not have been invoked on temp-var-2221 or any of its aliases.
+					new OutputStreamWriter(new FileOutputStream("data"
+					                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to JAXBContext.newInstance(Items.class) with exception type javax.xml.bind.JAXBException
+Note: ../../../../datasets/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/GUI.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+7 errors

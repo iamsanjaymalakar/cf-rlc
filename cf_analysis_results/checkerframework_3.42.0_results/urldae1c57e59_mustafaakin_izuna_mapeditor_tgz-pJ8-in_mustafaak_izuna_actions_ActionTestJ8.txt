@@ -1,0 +1,11 @@
+../dataset/june2020_dataset/urldae1c57e59_mustafaakin_izuna_mapeditor_tgz-pJ8-in_mustafaak_izuna_actions_ActionTestJ8/src/in/mustafaak/izuna/Shell.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.Socket $$ regular method exit $$ ( 781, 810 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+	    	Socket socket = new Socket();
+	    	       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldae1c57e59_mustafaakin_izuna_mapeditor_tgz-pJ8-in_mustafaak_izuna_actions_ActionTestJ8/src/in/mustafaak/izuna/actions/ActionTest.java:66: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.Socket $$ regular method exit $$ ( 2451, 2480 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+			Socket socket = new Socket();
+			       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+2 errors

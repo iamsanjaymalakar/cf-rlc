@@ -1,0 +1,53 @@
+../../../../datasets/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/network/GraphReaderBrite.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ fr $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 1458, 1499 ) $$ @MustCall method close may not have been invoked on fr or any of its aliases.
+		FileReader fr = new FileReader(filename);
+		           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/util/WorkloadFileReader.java:435: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2061 $$ java.io.FileInputStream $$ possible exceptional exit due to new GZIPInputStream(new FileInputStream(fl)) with exception type java.io.IOException $$ ( 12877, 12900 ) $$ @MustCall method close may not have been invoked on temp-var-2061 or any of its aliases.
+			reader = new BufferedReader(new InputStreamReader(new GZIPInputStream(new FileInputStream(fl))));
+			                                                                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new GZIPInputStream(new FileInputStream(fl)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/util/WorkloadFileReader.java:475: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.BufferedReader $$ possible exceptional exit due to zipFile.close() with exception type java.io.IOException $$ ( 13849, 13933 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+				reader = new BufferedReader(new InputStreamReader(zipFile.getInputStream(zipEntry)));
+				       ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope: possible exceptional exit due to zipFile.close() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/UtilizationModelStochastic.java:92: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException $$ ( 2220, 2274 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+		FileOutputStream fos = new FileOutputStream(filename);
+		                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/UtilizationModelStochastic.java:93: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(getHistory()) with exception type java.io.IOException $$ ( 2278, 2331 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		                   ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(getHistory()) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/UtilizationModelStochastic.java:106: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(fis) with exception type java.io.IOException $$ ( 2594, 2646 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+		FileInputStream fis = new FileInputStream(filename);
+		                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(fis) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/UtilizationModelPlanetLabInMemory.java:29: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2403 $$ java.io.FileReader $$ possible exceptional exit due to input.readLine() with exception type java.io.IOException $$ ( 894, 919 ) $$ @MustCall method close may not have been invoked on temp-var-2403 or any of its aliases.
+		BufferedReader input = new BufferedReader(new FileReader(inputPath));
+		                                          ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to input.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/workflow/WorkflowEngine.java:419: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileWriter $$ regular method exit $$ ( 14284, 14326 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+            fw = new FileWriter("energy_" + name_xml );
+               ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/workflow/Configuration.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-3595 $$ java.io.FileInputStream $$ possible exceptional exit due to properties.load(new FileInputStream(propertiesFile)) with exception type java.io.IOException $$ ( 879, 914 ) $$ @MustCall method close may not have been invoked on temp-var-3595 or any of its aliases.
+            properties.load(new FileInputStream(propertiesFile));
+                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(new FileInputStream(propertiesFile)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/Log.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-3763 $$ java.io.OutputStream $$ regular method exit $$ ( 1041, 1052 ) $$ @MustCall method close may not have been invoked on temp-var-3763 or any of its aliases.
+				getOutput().write(message.getBytes());
+				         ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+Note: ../../../../datasets/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/xml/SimulationXMLParse.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+10 errors

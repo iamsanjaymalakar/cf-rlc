@@ -1,0 +1,17 @@
+../dataset/june2020_dataset/urla39b63eb76_tef_pipeline_tgz-pJ8-org_twentygototen_pipeline_ExampleJ8/src/org/twentygototen/pipeline/pipes/FileReaderPipe.java:19: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(input) $$ java.io.FileReader $$ possible exceptional exit due to bufferedReader.readLine() with exception type java.io.IOException $$ ( 497, 518 ) $$ @MustCall method close may not have been invoked on new FileReader(input) or any of its aliases.
+			BufferedReader bufferedReader = new BufferedReader(new FileReader(input));
+			                                                   ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to bufferedReader.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/urla39b63eb76_tef_pipeline_tgz-pJ8-org_twentygototen_pipeline_ExampleJ8/src/org/twentygototen/pipeline/pipes/IdentityPipe.java:14: error: (override.return) $$ 6 $$ I extends @PolyMustCall Object $$ I extends @MustCall Object $$ @MustCall IdentityPipe<I extends @MustCall Object> $$ I extends @PolyMustCall Object process(@MustCall IdentityPipe<I extends @MustCall Object> this, I extends @PolyMustCall Object p0) $$ @MustCall Pipe<I extends @MustCall Object, I extends @MustCall Object> $$ I extends @MustCall Object process(@MustCall Pipe<I extends @MustCall Object, I extends @MustCall Object> this, I extends @MustCall Object p0) $$ ( 365, 366 ) $$ Incompatible return type.
+	public I process(I input) {
+	       ^
+  found   : I extends @PolyMustCall Object
+  required: I extends @MustCall Object
+  Consequence: method in @MustCall IdentityPipe<I extends @MustCall Object>
+    I extends @PolyMustCall Object process(@MustCall IdentityPipe<I extends @MustCall Object> this, I extends @PolyMustCall Object p0)
+  cannot override method in @MustCall Pipe<I extends @MustCall Object, I extends @MustCall Object>
+    I extends @MustCall Object process(@MustCall Pipe<I extends @MustCall Object, I extends @MustCall Object> this, I extends @MustCall Object p0)
+Note: ../dataset/june2020_dataset/urla39b63eb76_tef_pipeline_tgz-pJ8-org_twentygototen_pipeline_ExampleJ8/src/org/twentygototen/pipeline/Pipeline.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors

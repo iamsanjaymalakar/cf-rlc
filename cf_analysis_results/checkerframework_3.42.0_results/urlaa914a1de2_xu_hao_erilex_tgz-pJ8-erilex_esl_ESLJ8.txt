@@ -1,0 +1,13 @@
+../dataset/june2020_dataset/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/data/FileStream.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(file, "r") $$ java.io.RandomAccessFile $$ regular method exit $$ ( 1287, 1318 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(file, "r") or any of its aliases.
+        this.reader = new RandomAccessFile(file, "r");
+                      ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/codegen/Class.java:109: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(file) $$ java.io.FileWriter $$ possible exceptional exit due to codeGen(w) with exception type java.io.IOException $$ ( 3205, 3225 ) $$ @MustCall method close may not have been invoked on new FileWriter(file) or any of its aliases.
+        Writer w = new BufferedWriter(new FileWriter(file));
+                                      ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to codeGen(w) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors

@@ -1,0 +1,78 @@
+../../../../datasets/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:85: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-253 $$ java.io.ObjectInputStream $$ regular method exit $$ ( 3144, 3192 ) $$ @MustCall method close may not have been invoked on temp-var-253 or any of its aliases.
+                    m_Reader = new ObjectInputStream(m_Socket.getInputStream());
+                               ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:184: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-280 $$ java.io.ObjectOutputStream $$ regular method exit $$ ( 7085, 7135 ) $$ @MustCall method close may not have been invoked on temp-var-280 or any of its aliases.
+                    m_Writer = new ObjectOutputStream(m_Socket.getOutputStream());
+                               ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:466: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-183 $$ java.net.ServerSocket $$ regular method exit $$ ( 17256, 17280 ) $$ @MustCall method close may not have been invoked on temp-var-183 or any of its aliases.
+            m_ServerSocket = new ServerSocket(m_Port);
+                             ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Server.java:535: error: (required.method.not.called) $$ 4 $$ method close $$ clientSocket $$ java.net.Socket $$ regular method exit $$ ( 19567, 19614 ) $$ @MustCall method close may not have been invoked on clientSocket or any of its aliases.
+            final Socket clientSocket = acceptConnection();
+                         ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Connection.java:100: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.Socket $$ regular method exit $$ ( 3248, 3283 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+                final Socket socket = new Socket();
+                             ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Connection.java:103: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-346 $$ java.io.ObjectInputStream $$ possible exceptional exit due to socket.getOutputStream() with exception type java.io.IOException $$ ( 3401, 3447 ) $$ @MustCall method close may not have been invoked on temp-var-346 or any of its aliases.
+                m_Reader = new ObjectInputStream(socket.getInputStream());
+                           ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: possible exceptional exit due to socket.getOutputStream() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Connection.java:104: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-348 $$ java.io.ObjectOutputStream $$ regular method exit $$ ( 3476, 3524 ) $$ @MustCall method close may not have been invoked on temp-var-348 or any of its aliases.
+                m_Writer = new ObjectOutputStream(socket.getOutputStream());
+                           ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileSaver.java:19: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-452 $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(m_FileOutputStream) with exception type java.io.IOException $$ ( 456, 486 ) $$ @MustCall method close may not have been invoked on temp-var-452 or any of its aliases.
+            m_FileOutputStream = new FileOutputStream(fileName);
+                                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(m_FileOutputStream) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileSaver.java:20: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-453 $$ java.io.ObjectOutputStream $$ regular method exit $$ ( 523, 565 ) $$ @MustCall method close may not have been invoked on temp-var-453 or any of its aliases.
+            m_ObjectOutputStream = new ObjectOutputStream(m_FileOutputStream);
+                                   ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileLoader.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-461 $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(m_FileInputStream) with exception type java.io.IOException $$ ( 430, 459 ) $$ @MustCall method close may not have been invoked on temp-var-461 or any of its aliases.
+            m_FileInputStream = new FileInputStream(fileName);
+                                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(m_FileInputStream) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/io/FileLoader.java:17: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-462 $$ java.io.ObjectInputStream $$ regular method exit $$ ( 495, 535 ) $$ @MustCall method close may not have been invoked on temp-var-462 or any of its aliases.
+            m_ObjectInputStream = new ObjectInputStream(m_FileInputStream);
+                                  ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/utility/PropertiesUtility.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-498 $$ java.io.FileInputStream $$ possible exceptional exit due to properties.load(new FileInputStream(configurationFile)) with exception type java.io.IOException $$ ( 631, 669 ) $$ @MustCall method close may not have been invoked on temp-var-498 or any of its aliases.
+            properties.load(new FileInputStream(configurationFile));
+                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(new FileInputStream(configurationFile)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/utility/ApplicationUtility.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-575 $$ java.io.FileOutputStream $$ possible exceptional exit due to m_LockStream.write(f_content.getBytes()) with exception type java.io.IOException $$ ( 1406, 1438 ) $$ @MustCall method close may not have been invoked on temp-var-575 or any of its aliases.
+        m_LockStream = new FileOutputStream(m_LockFile);
+                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to m_LockStream.write(f_content.getBytes()) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/logging/LoggingUtility.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ fileWriter $$ java.io.FileWriter $$ possible exceptional exit due to bufferedWriter.write(outputString + "\r\n") with exception type java.io.IOException $$ ( 3977, 4042 ) $$ @MustCall method close may not have been invoked on fileWriter or any of its aliases.
+            final FileWriter fileWriter = new FileWriter(m_OutputFile, true);
+                             ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bufferedWriter.write(outputString + "\r\n") with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/structures/pair/Pair.java:49: error: (return) $$ 2 $$ @MustCallUnknown String $$ @MustCall String $$ ( 1642, 1679 ) $$ incompatible types in return.
+        return "(" + m_First + ", " + m_Second + ")";
+                                               ^
+  type of expression: @MustCallUnknown String
+  method return type: @MustCall String
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+15 errors

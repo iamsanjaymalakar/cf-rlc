@@ -1,0 +1,26 @@
+../../../../datasets/june2020_dataset/url633772aa30_isma3l_Tp2_tgz-pJ8-ar_fiuba_tecnicas_framework_Pruebas_Casos1_MainJ8/src/ar/fiuba/tecnicas/framework/JTest/Assert.java:9: error: (argument) $$ 4 $$ arg0 $$ equals $$ T extends @MustCallUnknown Object @MustCall [] $$ @MustCall Object @MustCallUnknown [] $$ ( 308, 317 ) $$ incompatible argument for parameter arg0 of equals.
+        if (!Arrays.equals(expecteds, actuals)) throw new AssertionError();
+                           ^
+  found   : T extends @MustCallUnknown Object @MustCall []
+  required: @MustCall Object @MustCallUnknown []
+../../../../datasets/june2020_dataset/url633772aa30_isma3l_Tp2_tgz-pJ8-ar_fiuba_tecnicas_framework_Pruebas_Casos1_MainJ8/src/ar/fiuba/tecnicas/framework/JTest/Assert.java:9: error: (argument) $$ 4 $$ arg1 $$ equals $$ T extends @MustCallUnknown Object @MustCall [] $$ @MustCall Object @MustCallUnknown [] $$ ( 319, 326 ) $$ incompatible argument for parameter arg1 of equals.
+        if (!Arrays.equals(expecteds, actuals)) throw new AssertionError();
+                                      ^
+  found   : T extends @MustCallUnknown Object @MustCall []
+  required: @MustCall Object @MustCallUnknown []
+../../../../datasets/june2020_dataset/url633772aa30_isma3l_Tp2_tgz-pJ8-ar_fiuba_tecnicas_framework_Pruebas_Casos1_MainJ8/src/ar/fiuba/tecnicas/framework/JTest/Assert.java:12: error: (argument) $$ 4 $$ arg0 $$ equals $$ T extends @MustCallUnknown Object @MustCall [] $$ @MustCall Object @MustCallUnknown [] $$ ( 500, 509 ) $$ incompatible argument for parameter arg0 of equals.
+        if (!Arrays.equals(expecteds,actuals)) throw new AssertionError(message);
+                           ^
+  found   : T extends @MustCallUnknown Object @MustCall []
+  required: @MustCall Object @MustCallUnknown []
+../../../../datasets/june2020_dataset/url633772aa30_isma3l_Tp2_tgz-pJ8-ar_fiuba_tecnicas_framework_Pruebas_Casos1_MainJ8/src/ar/fiuba/tecnicas/framework/JTest/Assert.java:12: error: (argument) $$ 4 $$ arg1 $$ equals $$ T extends @MustCallUnknown Object @MustCall [] $$ @MustCall Object @MustCallUnknown [] $$ ( 510, 517 ) $$ incompatible argument for parameter arg1 of equals.
+        if (!Arrays.equals(expecteds,actuals)) throw new AssertionError(message);
+                                     ^
+  found   : T extends @MustCallUnknown Object @MustCall []
+  required: @MustCall Object @MustCallUnknown []
+../../../../datasets/june2020_dataset/url633772aa30_isma3l_Tp2_tgz-pJ8-ar_fiuba_tecnicas_framework_Pruebas_Casos1_MainJ8/src/ar/fiuba/tecnicas/framework/JTest/XmlPrinter.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-373 $$ java.io.FileWriter $$ regular method exit $$ ( 542, 574 ) $$ @MustCall method close may not have been invoked on temp-var-373 or any of its aliases.
+            fileWriter = new FileWriter("ReporteXsd.xml");
+                         ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+5 errors

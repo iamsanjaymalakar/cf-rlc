@@ -1,0 +1,112 @@
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/XMI2XMLtransformer.java:26: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream("examples/default.board") $$ java.io.FileInputStream $$ possible exceptional exit due to boardIn.load(new FileInputStream("examples/default.board"), null) with exception type java.io.IOException $$ ( 1071, 1116 ) $$ @MustCall method close may not have been invoked on new FileInputStream("examples/default.board") or any of its aliases.
+		boardIn.load(new FileInputStream("examples/default.board"),null);
+		             ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to boardIn.load(new FileInputStream("examples/default.board"), null) with exception type java.io.IOException
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/ExecutorTest.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(boardFile) $$ java.io.FileInputStream $$ possible exceptional exit due to boardRes.load(new FileInputStream(boardFile), null) with exception type java.io.IOException $$ ( 1559, 1589 ) $$ @MustCall method close may not have been invoked on new FileInputStream(boardFile) or any of its aliases.
+		boardRes.load(new FileInputStream(boardFile), null);
+		              ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to boardRes.load(new FileInputStream(boardFile), null) with exception type java.io.IOException
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Client.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ SocketChannel.open(new InetSocketAddress("localhost", 10523)) $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to read() with exception type java.net.UnknownHostException $$ ( 785, 846 ) $$ @MustCall method close may not have been invoked on SocketChannel.open(new InetSocketAddress("localhost", 10523)) or any of its aliases.
+			s = SocketChannel.open(new InetSocketAddress("localhost", 10523));
+			                      ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to read() with exception type java.net.UnknownHostException
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/MainNio.java:26: error: (reset.not.owning) $$ 2 $$ bind $$ this.ssc.socket() $$ ( 734, 785 ) $$ Calling method bind resets the must-call obligations of the expression this.ssc.socket(), which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+		this.ssc.socket().bind(new InetSocketAddress(port));
+		                      ^
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/MainNio.java:28: error: (required.method.not.called) $$ 4 $$ method close $$ Selector.open() $$ java.nio.channels.Selector $$ possible exceptional exit due to engine.setBoard(MainNio.class.getResourceAsStream("default.board")) with exception type java.io.IOException $$ ( 844, 859 ) $$ @MustCall method close may not have been invoked on Selector.open() or any of its aliases.
+		this.selector = Selector.open();
+		                             ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: possible exceptional exit due to engine.setBoard(MainNio.class.getResourceAsStream("default.board")) with exception type java.io.IOException
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/MainNio.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ MainNio.class.getResourceAsStream("default.board") $$ java.io.InputStream $$ possible exceptional exit due to engine.setBoard(MainNio.class.getResourceAsStream("default.board")) with exception type java.io.IOException $$ ( 906, 956 ) $$ @MustCall method close may not have been invoked on MainNio.class.getResourceAsStream("default.board") or any of its aliases.
+		engine.setBoard(MainNio.class.getResourceAsStream("default.board"));
+		                                                 ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to engine.setBoard(MainNio.class.getResourceAsStream("default.board")) with exception type java.io.IOException
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/MainThreadNio.java:15: error: (required.method.not.called) $$ 4 $$ method close $$ Selector.open() $$ java.nio.channels.Selector $$ regular method exit $$ ( 258, 273 ) $$ @MustCall method close may not have been invoked on Selector.open() or any of its aliases.
+			sel = Selector.open();
+			                   ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/NioChatServer.java:18: error: (reset.not.owning) $$ 2 $$ bind $$ this.ssc.socket() $$ ( 452, 503 ) $$ Calling method bind resets the must-call obligations of the expression this.ssc.socket(), which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+		this.ssc.socket().bind(new InetSocketAddress(port));
+		                      ^
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/NioChatServer.java:20: error: (required.method.not.called) $$ 4 $$ method close $$ Selector.open() $$ java.nio.channels.Selector $$ possible exceptional exit due to this.ssc.register(selector, SelectionKey.OP_ACCEPT) with exception type java.nio.channels.ClosedChannelException $$ ( 562, 577 ) $$ @MustCall method close may not have been invoked on Selector.open() or any of its aliases.
+		this.selector = Selector.open();
+		                             ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: possible exceptional exit due to this.ssc.register(selector, SelectionKey.OP_ACCEPT) with exception type java.nio.channels.ClosedChannelException
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ getClass().getResourceAsStream("default.board") $$ java.io.InputStream $$ regular method exit $$ ( 324, 371 ) $$ @MustCall method close may not have been invoked on getClass().getResourceAsStream("default.board") or any of its aliases.
+			System.out.println(getClass().getResourceAsStream("default.board"));
+			                                                 ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ getClass().getResourceAsStream("main.risiko.default.board") $$ java.io.InputStream $$ regular method exit $$ ( 450, 509 ) $$ @MustCall method close may not have been invoked on getClass().getResourceAsStream("main.risiko.default.board") or any of its aliases.
+			System.out.println(getClass().getResourceAsStream("main.risiko.default.board"));
+			                                                 ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java:20: error: (required.method.not.called) $$ 4 $$ method close $$ getClass().getResourceAsStream("default.board") $$ java.io.InputStream $$ regular method exit $$ ( 576, 623 ) $$ @MustCall method close may not have been invoked on getClass().getResourceAsStream("default.board") or any of its aliases.
+			System.out.println(getClass().getResourceAsStream("default.board"));
+			                                                 ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ getClass().getResourceAsStream("default.board") $$ java.io.InputStream $$ regular method exit $$ ( 690, 737 ) $$ @MustCall method close may not have been invoked on getClass().getResourceAsStream("default.board") or any of its aliases.
+			System.out.println(getClass().getResourceAsStream("default.board"));
+			                                                 ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java:24: error: (required.method.not.called) $$ 4 $$ method close $$ getClass().getResourceAsStream("default.board") $$ java.io.InputStream $$ regular method exit $$ ( 804, 851 ) $$ @MustCall method close may not have been invoked on getClass().getResourceAsStream("default.board") or any of its aliases.
+			System.out.println(getClass().getResourceAsStream("default.board"));
+			                                                 ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java:25: error: (required.method.not.called) $$ 4 $$ method close $$ getClass().getResourceAsStream("default.board") $$ java.io.InputStream $$ regular method exit $$ ( 874, 921 ) $$ @MustCall method close may not have been invoked on getClass().getResourceAsStream("default.board") or any of its aliases.
+			engine.setBoard(getClass().getResourceAsStream("default.board"));
+			                                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java:32: error: (required.method.not.called) $$ 4 $$ method close $$ ss $$ java.net.ServerSocket $$ possible exceptional exit due to new Main() with exception type java.io.IOException $$ ( 1052, 1093 ) $$ @MustCall method close may not have been invoked on ss or any of its aliases.
+		ServerSocket ss = new ServerSocket(8021);
+		             ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: possible exceptional exit due to new Main() with exception type java.io.IOException
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ cs $$ java.net.Socket $$ regular method exit $$ ( 1134, 1148 ) $$ @MustCall method close may not have been invoked on cs or any of its aliases.
+		while ((cs=ss.accept()) != null ){
+		          ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Client2.java:44: error: (required.method.not.called) $$ 4 $$ method close $$ Selector.open() $$ java.nio.channels.Selector $$ possible exceptional exit due to SocketChannel.open(address) with exception type java.io.IOException $$ ( 1292, 1307 ) $$ @MustCall method close may not have been invoked on Selector.open() or any of its aliases.
+		this.selector = Selector.open();
+		                             ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: possible exceptional exit due to SocketChannel.open(address) with exception type java.io.IOException
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Client2.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ SocketChannel.open(address) $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to s.configureBlocking(false) with exception type java.io.IOException $$ ( 1321, 1348 ) $$ @MustCall method close may not have been invoked on SocketChannel.open(address) or any of its aliases.
+		this.s = SocketChannel.open(address);
+		                           ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to s.configureBlocking(false) with exception type java.io.IOException
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/tcp/ClientTcp.java:92: error: (required.method.not.called) $$ 4 $$ method close $$ selector $$ java.nio.channels.Selector $$ possible exceptional exit due to SocketChannel.open(serverAdress) with exception type java.io.IOException $$ ( 2408, 2444 ) $$ @MustCall method close may not have been invoked on selector or any of its aliases.
+			Selector selector = Selector.open();
+			         ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: possible exceptional exit due to SocketChannel.open(serverAdress) with exception type java.io.IOException
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/tcp/ClientTcp.java:93: error: (required.method.not.called) $$ 4 $$ method close $$ s $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to s.configureBlocking(false) with exception type java.io.IOException $$ ( 2449, 2500 ) $$ @MustCall method close may not have been invoked on s or any of its aliases.
+			SocketChannel s = SocketChannel.open(serverAdress);
+			              ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to s.configureBlocking(false) with exception type java.io.IOException
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/EngineTest.java:15: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(boardFile) $$ java.io.FileInputStream $$ possible exceptional exit due to engine.setBoard(new FileInputStream(boardFile)) with exception type java.io.IOException $$ ( 443, 473 ) $$ @MustCall method close may not have been invoked on new FileInputStream(boardFile) or any of its aliases.
+		engine.setBoard(new FileInputStream(boardFile));
+		                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to engine.setBoard(new FileInputStream(boardFile)) with exception type java.io.IOException
+../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/EngineTest.java:17: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(stateFile) $$ java.io.FileInputStream $$ possible exceptional exit due to engine.setState(new FileInputStream(stateFile)) with exception type java.io.IOException $$ ( 527, 557 ) $$ @MustCall method close may not have been invoked on new FileInputStream(stateFile) or any of its aliases.
+		engine.setState(new FileInputStream(stateFile));
+		                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to engine.setState(new FileInputStream(stateFile)) with exception type java.io.IOException
+23 errors

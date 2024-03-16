@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^br/com/innovatium/mumps2java/dataaccess/DAO.java^22^br.com.innovatium.mumps2java.dataaccess.DAO.<init>(Lbr/com/innovatium/mumps2java/dataaccess/ConnectionType;)V^6 = invokestatic < Application, Lbr/com/innovatium/mumps2java/dataaccess/ConnectionFactory, getConnection(Lbr/com/innovatium/mumps2java/dataaccess/ConnectionType;)Ljava/sql/Connection; > 2 @6 exception:5^NULL^FIELD,^false^true^Field escape;

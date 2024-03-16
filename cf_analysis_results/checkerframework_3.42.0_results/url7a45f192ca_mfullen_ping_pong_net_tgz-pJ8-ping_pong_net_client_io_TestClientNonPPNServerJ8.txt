@@ -1,0 +1,263 @@
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/TestClientNonPPNServer.java:92: error: (required.method.not.called) $$ 4 $$ method close $$ tcpServerSocket $$ java.net.ServerSocket $$ regular method exit $$ ( 3082, 3138 ) $$ @MustCall method close may not have been invoked on tcpServerSocket or any of its aliases.
+            tcpServerSocket = socketFactory.createServerSocket(5111);
+                            ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/TestClientNonPPNServer.java:104: error: (required.method.not.called) $$ 4 $$ method close $$ acceptingSocket $$ java.net.Socket $$ regular method exit $$ ( 3361, 3403 ) $$ @MustCall method close may not have been invoked on acceptingSocket or any of its aliases.
+            acceptingSocket = tcpServerSocket.accept();
+                            ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/TestClientNonPPNServer.java:155: error: (argument) $$ 4 $$ message $$ MessageSender.sendMessage $$ @CalledMethods Envelope</*RAW*/> $$ ? extends @CalledMethods Object $$ ( 5501, 5560 ) $$ incompatible argument for parameter message of MessageSender.sendMessage.
+                client.sendMessage(EnvelopeFactory.createTcpEnvelope("hello world".getBytes()));
+                                                                    ^
+  found   : @CalledMethods Envelope</*RAW*/>
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/IoClient.java:108: error: (required.method.not.called) $$ 4 $$ method close $$ tcpSocket $$ java.net.Socket $$ possible exceptional exit due to sslSocket.startHandshake() with exception type java.io.IOException $$ ( 3470, 3551 ) $$ @MustCall method close may not have been invoked on tcpSocket or any of its aliases.
+                Socket tcpSocket = factory.createSocket(config.getIpAddress(), config.getPort());
+                       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to sslSocket.startHandshake() with exception type java.io.IOException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/IoClient.java:126: error: (required.method.not.called) $$ 4 $$ method close $$ udpSocket $$ java.net.DatagramSocket $$ regular method exit $$ ( 4259, 4378 ) $$ @MustCall method close may not have been invoked on udpSocket or any of its aliases.
+                udpSocket = config.getUdpPort() == ConnectionConfiguration.UDP_DISABLED ? null : new DatagramSocket(localSocketAddress);
+                          ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoTcpReadRunnable.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ dataReader.init(this.tcpSocket) $$ java.io.InputStream $$ regular method exit $$ ( 2280, 2311 ) $$ @MustCall method close may not have been invoked on dataReader.init(this.tcpSocket) or any of its aliases.
+        this.inputStream = dataReader.init(this.tcpSocket);
+                                          ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoTcpWriteRunnable.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ dataWriter.init(this.tcpSocket) $$ java.io.OutputStream $$ regular method exit $$ ( 1862, 1893 ) $$ @MustCall method close may not have been invoked on dataWriter.init(this.tcpSocket) or any of its aliases.
+        this.outputStream = dataWriter.init(this.tcpSocket);
+                                           ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/ClientIoConnectionTest.java:120: error: (required.method.not.called) $$ 4 $$ method close $$ updSocket $$ java.net.DatagramSocket $$ regular method exit $$ ( 3229, 3261 ) $$ @MustCall method close may not have been invoked on updSocket or any of its aliases.
+            updSocket = new DatagramSocket();
+                      ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ new DatagramSocket(instance.configuration.getUdpPort()) $$ java.net.DatagramSocket $$ regular method exit $$ ( 2193, 2248 ) $$ @MustCall method close may not have been invoked on new DatagramSocket(instance.configuration.getUdpPort()) or any of its aliases.
+        instance.udpServerSocket = new DatagramSocket(instance.configuration.getUdpPort());
+                                   ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:105: error: (required.method.not.called) $$ 4 $$ method close $$ ServerSocketFactory.getDefault().createServerSocket(7011) $$ java.net.ServerSocket $$ possible exceptional exit due to new DatagramSocket(instance.configuration.getUdpPort()) with exception type java.net.SocketException $$ ( 3706, 3763 ) $$ @MustCall method close may not have been invoked on ServerSocketFactory.getDefault().createServerSocket(7011) or any of its aliases.
+        instance.tcpServerSocket = ServerSocketFactory.getDefault().createServerSocket(7011);
+                                                                                      ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: possible exceptional exit due to new DatagramSocket(instance.configuration.getUdpPort()) with exception type java.net.SocketException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:106: error: (required.method.not.called) $$ 4 $$ method close $$ new DatagramSocket(instance.configuration.getUdpPort()) $$ java.net.DatagramSocket $$ regular method exit $$ ( 3800, 3855 ) $$ @MustCall method close may not have been invoked on new DatagramSocket(instance.configuration.getUdpPort()) or any of its aliases.
+        instance.udpServerSocket = new DatagramSocket(instance.configuration.getUdpPort());
+                                   ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ java.net.Socket $$ possible exceptional exit due to th.join(1500) with exception type java.lang.InterruptedException $$ ( 4530, 4605 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+        Socket client = SocketFactory.getDefault().createSocket("localhost", 6011);
+               ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to th.join(1500) with exception type java.lang.InterruptedException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:154: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(absolutePath) $$ java.io.FileInputStream $$ possible exceptional exit due to ks.load(new FileInputStream(absolutePath), (ConnectionConfiguration.DEFAULT_KEY_STORE_PASSWORD).toCharArray()) with exception type java.io.IOException $$ ( 5921, 5954 ) $$ @MustCall method close may not have been invoked on new FileInputStream(absolutePath) or any of its aliases.
+        ks.load(new FileInputStream(absolutePath), (ConnectionConfiguration.DEFAULT_KEY_STORE_PASSWORD).toCharArray());
+                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to ks.load(new FileInputStream(absolutePath), (ConnectionConfiguration.DEFAULT_KEY_STORE_PASSWORD).toCharArray()) with exception type java.io.IOException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:161: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ javax.net.ssl.SSLSocket $$ possible exceptional exit due to client.startHandshake() with exception type java.io.IOException $$ ( 6345, 6416 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+        SSLSocket client = (SSLSocket) factory.createSocket("localhost", 8011);
+                  ^
+  The type of object is: javax.net.ssl.SSLSocket.
+  Reason for going out of scope: possible exceptional exit due to client.startHandshake() with exception type java.io.IOException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManager.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ socketFactory.createServerSocket(configuration.getPort()) $$ java.net.ServerSocket $$ possible exceptional exit due to tcpServerSocket.setReuseAddress(true) with exception type java.net.SocketException $$ ( 3593, 3650 ) $$ @MustCall method close may not have been invoked on socketFactory.createServerSocket(configuration.getPort()) or any of its aliases.
+                tcpServerSocket = socketFactory.createServerSocket(configuration.getPort());
+                                                                  ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: possible exceptional exit due to tcpServerSocket.setReuseAddress(true) with exception type java.net.SocketException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManager.java:136: error: (required.method.not.called) $$ 4 $$ method close $$ this.configuration.getUdpPort() == ConnectionConfiguration.UDP_DISABLED ? null : new DatagramSocket(new InetSocketAddress(configuration.getUdpPort())) $$ java.net.DatagramSocket $$ regular method exit $$ ( 3957, 4107 ) $$ @MustCall method close may not have been invoked on this.configuration.getUdpPort() == ConnectionConfiguration.UDP_DISABLED ? null : new DatagramSocket(new InetSocketAddress(configuration.getUdpPort())) or any of its aliases.
+                udpServerSocket = this.configuration.getUdpPort() == ConnectionConfiguration.UDP_DISABLED ? null : new DatagramSocket(new InetSocketAddress(configuration.getUdpPort()));
+                                                                                                          ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManager.java:173: error: (required.method.not.called) $$ 4 $$ method close $$ acceptingSocket $$ java.net.Socket $$ regular method exit $$ ( 5842, 5884 ) $$ @MustCall method close may not have been invoked on acceptingSocket or any of its aliases.
+                    acceptingSocket = tcpServerSocket.accept();
+                                    ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ java.net.Socket $$ possible exceptional exit due to client.getInputStream() with exception type java.io.IOException $$ ( 3822, 3890 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+            Socket client = (SSLSocket) factory.createSocket("localhost", 5011);
+                   ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to client.getInputStream() with exception type java.io.IOException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(absolutePath) $$ java.io.FileInputStream $$ possible exceptional exit due to ks.load(new FileInputStream(absolutePath), (ConnectionConfiguration.DEFAULT_KEY_STORE_PASSWORD).toCharArray()) with exception type java.io.IOException $$ ( 5393, 5426 ) $$ @MustCall method close may not have been invoked on new FileInputStream(absolutePath) or any of its aliases.
+            ks.load(new FileInputStream(absolutePath), (ConnectionConfiguration.DEFAULT_KEY_STORE_PASSWORD).toCharArray());
+                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to ks.load(new FileInputStream(absolutePath), (ConnectionConfiguration.DEFAULT_KEY_STORE_PASSWORD).toCharArray()) with exception type java.io.IOException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java:132: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ javax.net.ssl.SSLSocket $$ possible exceptional exit due to client.startHandshake() with exception type java.io.IOException $$ ( 5841, 5912 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+            SSLSocket client = (SSLSocket) factory.createSocket("localhost", 5011);
+                      ^
+  The type of object is: javax.net.ssl.SSLSocket.
+  Reason for going out of scope: possible exceptional exit due to client.startHandshake() with exception type java.io.IOException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java:199: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ java.net.Socket $$ possible exceptional exit due to client.getInputStream() with exception type java.io.IOException $$ ( 9131, 9177 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+        Socket client = new Socket("localhost", 5011);
+               ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to client.getInputStream() with exception type java.io.IOException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java:221: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ java.net.Socket $$ possible exceptional exit due to client.getInputStream() with exception type java.io.IOException $$ ( 10381, 10427 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+        Socket client = new Socket("localhost", 5011);
+               ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to client.getInputStream() with exception type java.io.IOException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java:243: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ java.net.Socket $$ possible exceptional exit due to client.getInputStream() with exception type java.io.IOException $$ ( 11546, 11592 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+        Socket client = new Socket("localhost", 5011);
+               ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to client.getInputStream() with exception type java.io.IOException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/MyClient.java:43: error: (argument) $$ 4 $$ message $$ MessageSender.sendMessage $$ @CalledMethods Envelope</*RAW*/> $$ ? extends @CalledMethods Object $$ ( 1744, 1821 ) $$ incompatible argument for parameter message of MessageSender.sendMessage.
+                    client.sendMessage(EnvelopeFactory.createTcpEnvelope("Hello I am Connection: " + client.getId()));
+                                                                        ^
+  found   : @CalledMethods Envelope</*RAW*/>
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/MyClient.java:44: error: (argument) $$ 4 $$ message $$ MessageSender.sendMessage $$ @CalledMethods Envelope</*RAW*/> $$ ? extends @CalledMethods Object $$ ( 1863, 1945 ) $$ incompatible argument for parameter message of MessageSender.sendMessage.
+                    client.sendMessage(EnvelopeFactory.createUdpEnvelope("Hello I am Connection(UDP): " + client.getId()));
+                                                                        ^
+  found   : @CalledMethods Envelope</*RAW*/>
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/MyClient.java:77: error: (argument) $$ 4 $$ message $$ MessageSender.sendMessage $$ @CalledMethods Envelope</*RAW*/> $$ ? extends @CalledMethods Object $$ ( 3032, 3109 ) $$ incompatible argument for parameter message of MessageSender.sendMessage.
+                client.sendMessage(EnvelopeFactory.createTcpEnvelope("Hello I am Connection: " + client.getId()));
+                                                                    ^
+  found   : @CalledMethods Envelope</*RAW*/>
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/MyClient.java:78: error: (argument) $$ 4 $$ message $$ MessageSender.sendMessage $$ @CalledMethods Envelope</*RAW*/> $$ ? extends @CalledMethods Object $$ ( 3147, 3229 ) $$ incompatible argument for parameter message of MessageSender.sendMessage.
+                client.sendMessage(EnvelopeFactory.createUdpEnvelope("Hello I am Connection(UDP): " + client.getId()));
+                                                                    ^
+  found   : @CalledMethods Envelope</*RAW*/>
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/AbstractIoConnectionTest.java:194: error: (required.method.not.called) $$ 4 $$ method close $$ serverSocket $$ java.net.ServerSocket $$ possible exceptional exit due to serverSocket.accept() with exception type java.io.IOException $$ ( 5861, 5947 ) $$ @MustCall method close may not have been invoked on serverSocket or any of its aliases.
+                    ServerSocket serverSocket = ServerSocketFactory.getDefault().createServerSocket(8077);
+                                 ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: possible exceptional exit due to serverSocket.accept() with exception type java.io.IOException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/AbstractIoConnectionTest.java:195: error: (required.method.not.called) $$ 4 $$ method close $$ serverSocket.accept() $$ java.net.Socket $$ regular method exit $$ ( 5968, 5989 ) $$ @MustCall method close may not have been invoked on serverSocket.accept() or any of its aliases.
+                    serverSocket.accept();
+                                       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/AbstractIoConnectionTest.java:205: error: (required.method.not.called) $$ 4 $$ method close $$ tcpSocket $$ java.net.Socket $$ possible exceptional exit due to connectionThread.join(20) with exception type java.lang.InterruptedException $$ ( 6198, 6276 ) $$ @MustCall method close may not have been invoked on tcpSocket or any of its aliases.
+        Socket tcpSocket = SocketFactory.getDefault().createSocket("localhost", 8077);
+               ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to connectionThread.join(20) with exception type java.lang.InterruptedException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/ReadFullyDataReaderTest.java:54: error: (required.method.not.called) $$ 4 $$ method close $$ serverSocket $$ java.net.ServerSocket $$ possible exceptional exit due to serverSocket.accept() with exception type java.io.IOException $$ ( 1266, 1353 ) $$ @MustCall method close may not have been invoked on serverSocket or any of its aliases.
+                    ServerSocket serverSocket = ServerSocketFactory.getDefault().createServerSocket(10121);
+                                 ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: possible exceptional exit due to serverSocket.accept() with exception type java.io.IOException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/ReadFullyDataReaderTest.java:55: error: (required.method.not.called) $$ 4 $$ method close $$ acceptingSocket $$ java.net.Socket $$ possible exceptional exit due to acceptingSocket.getOutputStream() with exception type java.io.IOException $$ ( 1374, 1421 ) $$ @MustCall method close may not have been invoked on acceptingSocket or any of its aliases.
+                    Socket acceptingSocket = serverSocket.accept();
+                           ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to acceptingSocket.getOutputStream() with exception type java.io.IOException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/ReadFullyDataReaderTest.java:88: error: (required.method.not.called) $$ 4 $$ method close $$ readFullyDataReader.init(SocketFactory.getDefault().createSocket("localhost", 10121)) $$ java.io.InputStream $$ regular method exit $$ ( 2748, 2833 ) $$ @MustCall method close may not have been invoked on readFullyDataReader.init(SocketFactory.getDefault().createSocket("localhost", 10121)) or any of its aliases.
+                    readFullyDataReader.init(SocketFactory.getDefault().createSocket("localhost", 10121));
+                                            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/ReadFullyDataReaderTest.java:88: error: (required.method.not.called) $$ 4 $$ method close $$ SocketFactory.getDefault().createSocket("localhost", 10121) $$ java.net.Socket $$ regular method exit $$ ( 2773, 2832 ) $$ @MustCall method close may not have been invoked on SocketFactory.getDefault().createSocket("localhost", 10121) or any of its aliases.
+                    readFullyDataReader.init(SocketFactory.getDefault().createSocket("localhost", 10121));
+                                                                                    ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoUdpWriteRunnableTest.java:46: error: (required.method.not.called) $$ 4 $$ method close $$ udpSocket $$ java.net.DatagramSocket $$ possible exceptional exit due to new DatagramSocket() with exception type java.net.SocketException $$ ( 1309, 1376 ) $$ @MustCall method close may not have been invoked on udpSocket or any of its aliases.
+        DatagramSocket udpSocket = new DatagramSocket(config.getUdpPort());
+                       ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to new DatagramSocket() with exception type java.net.SocketException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoUdpWriteRunnableTest.java:60: error: (required.method.not.called) $$ 4 $$ method close $$ clientUdpSocket $$ java.net.DatagramSocket $$ possible exceptional exit due to writethread.join(20) with exception type java.lang.InterruptedException $$ ( 1911, 1965 ) $$ @MustCall method close may not have been invoked on clientUdpSocket or any of its aliases.
+        DatagramSocket clientUdpSocket = new DatagramSocket();
+                       ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to writethread.join(20) with exception type java.lang.InterruptedException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoUdpWriteRunnableTest.java:88: error: (required.method.not.called) $$ 4 $$ method close $$ udpSocket $$ java.net.DatagramSocket $$ possible exceptional exit due to new DatagramSocket() with exception type java.net.SocketException $$ ( 2993, 3060 ) $$ @MustCall method close may not have been invoked on udpSocket or any of its aliases.
+        DatagramSocket udpSocket = new DatagramSocket(config.getUdpPort());
+                       ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to new DatagramSocket() with exception type java.net.SocketException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoUdpWriteRunnableTest.java:102: error: (required.method.not.called) $$ 4 $$ method close $$ clientUdpSocket $$ java.net.DatagramSocket $$ possible exceptional exit due to writethread.join(50) with exception type java.lang.InterruptedException $$ ( 3591, 3645 ) $$ @MustCall method close may not have been invoked on clientUdpSocket or any of its aliases.
+        DatagramSocket clientUdpSocket = new DatagramSocket();
+                       ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to writethread.join(50) with exception type java.lang.InterruptedException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/WriteByteArrayDataWriterTest.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ serverSocket $$ java.net.ServerSocket $$ possible exceptional exit due to serverSocket.accept() with exception type java.io.IOException $$ ( 1085, 1172 ) $$ @MustCall method close may not have been invoked on serverSocket or any of its aliases.
+                    ServerSocket serverSocket = ServerSocketFactory.getDefault().createServerSocket(10122);
+                                 ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: possible exceptional exit due to serverSocket.accept() with exception type java.io.IOException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/WriteByteArrayDataWriterTest.java:49: error: (required.method.not.called) $$ 4 $$ method close $$ acceptingSocket $$ java.net.Socket $$ regular method exit $$ ( 1193, 1240 ) $$ @MustCall method close may not have been invoked on acceptingSocket or any of its aliases.
+                    Socket acceptingSocket = serverSocket.accept();
+                           ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/WriteByteArrayDataWriterTest.java:51: error: (required.method.not.called) $$ 4 $$ method close $$ writeByteArrayDataWriter.init(acceptingSocket) $$ java.io.OutputStream $$ regular method exit $$ ( 1365, 1411 ) $$ @MustCall method close may not have been invoked on writeByteArrayDataWriter.init(acceptingSocket) or any of its aliases.
+                    writeByteArrayDataWriter.init(acceptingSocket);
+                                                 ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/WriteByteArrayDataWriterTest.java:79: error: (required.method.not.called) $$ 4 $$ method close $$ readFullyDataReader.init(SocketFactory.getDefault().createSocket("localhost", 10122)) $$ java.io.InputStream $$ regular method exit $$ ( 2254, 2339 ) $$ @MustCall method close may not have been invoked on readFullyDataReader.init(SocketFactory.getDefault().createSocket("localhost", 10122)) or any of its aliases.
+                    readFullyDataReader.init(SocketFactory.getDefault().createSocket("localhost", 10122));
+                                            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/WriteByteArrayDataWriterTest.java:79: error: (required.method.not.called) $$ 4 $$ method close $$ SocketFactory.getDefault().createSocket("localhost", 10122) $$ java.net.Socket $$ regular method exit $$ ( 2279, 2338 ) $$ @MustCall method close may not have been invoked on SocketFactory.getDefault().createSocket("localhost", 10122) or any of its aliases.
+                    readFullyDataReader.init(SocketFactory.getDefault().createSocket("localhost", 10122));
+                                                                                    ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoUdpReadRunnableTest.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ udpSocket $$ java.net.DatagramSocket $$ possible exceptional exit due to new DatagramSocket() with exception type java.net.SocketException $$ ( 1071, 1123 ) $$ @MustCall method close may not have been invoked on udpSocket or any of its aliases.
+        DatagramSocket udpSocket = new DatagramSocket(7001);
+                       ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to new DatagramSocket() with exception type java.net.SocketException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoUdpReadRunnableTest.java:56: error: (required.method.not.called) $$ 4 $$ method close $$ clientUdpSocket $$ java.net.DatagramSocket $$ possible exceptional exit due to InetAddress.getLocalHost() with exception type java.net.UnknownHostException $$ ( 1649, 1703 ) $$ @MustCall method close may not have been invoked on clientUdpSocket or any of its aliases.
+        DatagramSocket clientUdpSocket = new DatagramSocket();
+                       ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to InetAddress.getLocalHost() with exception type java.net.UnknownHostException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoUdpReadRunnableTest.java:72: error: (required.method.not.called) $$ 4 $$ method close $$ udpSocket $$ java.net.DatagramSocket $$ regular method exit $$ ( 2265, 2317 ) $$ @MustCall method close may not have been invoked on udpSocket or any of its aliases.
+        DatagramSocket udpSocket = new DatagramSocket(7002);
+                       ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoUdpReadRunnableTest.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ udpSocket $$ java.net.DatagramSocket $$ possible exceptional exit due to thread.join(100) with exception type java.lang.InterruptedException $$ ( 3057, 3109 ) $$ @MustCall method close may not have been invoked on udpSocket or any of its aliases.
+        DatagramSocket udpSocket = new DatagramSocket(7003);
+                       ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to thread.join(100) with exception type java.lang.InterruptedException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ssl/SSLTestServer.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ accept $$ javax.net.ssl.SSLSocket $$ possible exceptional exit due to accept.startHandshake() with exception type java.io.IOException $$ ( 1712, 1765 ) $$ @MustCall method close may not have been invoked on accept or any of its aliases.
+                SSLSocket accept = (SSLSocket) serverSocket.accept();
+                          ^
+  The type of object is: javax.net.ssl.SSLSocket.
+  Reason for going out of scope: possible exceptional exit due to accept.startHandshake() with exception type java.io.IOException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ssl/SSLUtils.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ PPNUtils.getInputStreamFromPath(keyStoreFilePath) $$ java.io.InputStream $$ possible exceptional exit due to getKeyManagers(keyStoreType, PPNUtils.getInputStreamFromPath(keyStoreFilePath), keyStorePassword) with exception type java.security.KeyStoreException $$ ( 4240, 4289 ) $$ @MustCall method close may not have been invoked on PPNUtils.getInputStreamFromPath(keyStoreFilePath) or any of its aliases.
+        return getKeyManagers(keyStoreType, PPNUtils.getInputStreamFromPath(keyStoreFilePath), keyStorePassword);
+                                                                           ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to getKeyManagers(keyStoreType, PPNUtils.getInputStreamFromPath(keyStoreFilePath), keyStorePassword) with exception type java.security.KeyStoreException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ssl/SSLUtils.java:167: error: (required.method.not.called) $$ 4 $$ method close $$ PPNUtils.getInputStreamFromPath(trustStoreFilePath) $$ java.io.InputStream $$ possible exceptional exit due to getTrustManagers(trustStoreType, PPNUtils.getInputStreamFromPath(trustStoreFilePath), trustStorePassword) with exception type java.security.KeyStoreException $$ ( 5865, 5916 ) $$ @MustCall method close may not have been invoked on PPNUtils.getInputStreamFromPath(trustStoreFilePath) or any of its aliases.
+        return getTrustManagers(trustStoreType, PPNUtils.getInputStreamFromPath(trustStoreFilePath), trustStorePassword);
+                                                                               ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to getTrustManagers(trustStoreType, PPNUtils.getInputStreamFromPath(trustStoreFilePath), trustStorePassword) with exception type java.security.KeyStoreException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ssl/SSLTestClient.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ clientSocket $$ javax.net.ssl.SSLSocket $$ possible exceptional exit due to clientSocket.setSoTimeout(5000) with exception type java.net.SocketException $$ ( 854, 931 ) $$ @MustCall method close may not have been invoked on clientSocket or any of its aliases.
+            SSLSocket clientSocket = (SSLSocket) factory.createSocket("localhost", 5011);
+                      ^
+  The type of object is: javax.net.ssl.SSLSocket.
+  Reason for going out of scope: possible exceptional exit due to clientSocket.setSoTimeout(5000) with exception type java.net.SocketException
+../dataset/june2020_dataset/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ssl/SSLTestClient.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ clientSocket $$ javax.net.ssl.SSLSocket $$ possible exceptional exit due to clientSocket.setSoTimeout(5000) with exception type java.net.SocketException $$ ( 1860, 1937 ) $$ @MustCall method close may not have been invoked on clientSocket or any of its aliases.
+            SSLSocket clientSocket = (SSLSocket) factory.createSocket("localhost", 2011);
+                      ^
+  The type of object is: javax.net.ssl.SSLSocket.
+  Reason for going out of scope: possible exceptional exit due to clientSocket.setSoTimeout(5000) with exception type java.net.SocketException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+52 errors

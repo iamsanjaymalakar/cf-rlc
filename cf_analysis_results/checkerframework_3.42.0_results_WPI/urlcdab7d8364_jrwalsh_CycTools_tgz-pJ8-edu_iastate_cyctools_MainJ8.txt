@@ -1,0 +1,2 @@
+Note: ../dataset/june2020_dataset/urlcdab7d8364_jrwalsh_CycTools_tgz-pJ8-edu_iastate_cyctools_MainJ8/src/edu/iastate/cyctools/tools/load/model/AuthorCreditUpdate.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.

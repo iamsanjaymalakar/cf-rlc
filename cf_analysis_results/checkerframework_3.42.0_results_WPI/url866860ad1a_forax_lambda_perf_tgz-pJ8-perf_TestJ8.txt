@@ -1,0 +1,7 @@
+warning: MustCallChecker did not find annotation file or directory ../dataset/june2020_dataset/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+warning: ResourceLeakChecker did not find annotation file or directory ../dataset/june2020_dataset/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+2 warnings

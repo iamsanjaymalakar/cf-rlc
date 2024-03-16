@@ -10,7 +10,7 @@ import subprocess
 import shlex
 
 BENCHMARKS_FOLDER = "../dataset/june2020_dataset"
-RESULTS_FOLDER = "checkerframework_3.42.0_results_WPI"
+RESULTS_FOLDER = "cf_analysis_results/checkerframework_3.42.0_results"
 COMPILED_CLASSES_FOLDER = "cf_classes"
 SRC_FILES = "cf_srcs.txt"
 CF_ROOT= "/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0"
@@ -20,6 +20,7 @@ CF_DIST_JAR_ARG=f"-processorpath {CF_ROOT}/checker/dist/checker.jar"
 CHECKER_QUAL_JAR=f"{CF_ROOT}/checker/dist/checker-qual.jar"
 CF_COMMAND = "-processor org.checkerframework.checker.resourceleak.ResourceLeakChecker -Adetailedmsgtext"
 SKIP_COMPLETED = True #skips if the output file is already there.
+RUN_WPI = False
 WPI_TIMEOUT = 60 * 60 #60 minutes
 
 #create the output folder if it doesn't exist
@@ -41,16 +42,17 @@ for benchmark in os.listdir(BENCHMARKS_FOLDER):
         continue
 
     # Run WPI.
-    print(f"Running WPI on {benchmark}")
-    with open(f'{BENCHMARKS_FOLDER}/{benchmark}/wpi-log.txt', 'w') as file:
-        process = subprocess.Popen(shlex.split(f'./wpi/wpi.sh {BENCHMARKS_FOLDER}/{benchmark}'), stdout=file, stderr=subprocess.STDOUT)
-        try:
-            process.communicate(timeout=WPI_TIMEOUT)
-        except subprocess.TimeoutExpired:
-            print(f"Command timed out after {WPI_TIMEOUT} seconds")
-            process.kill()
-            process.wait()
-            os.system("killall -9 javac")
+    if RUN_WPI:
+        print(f"Running WPI on {benchmark}")
+        with open(f'{BENCHMARKS_FOLDER}/{benchmark}/wpi-log.txt', 'w') as file:
+            process = subprocess.Popen(shlex.split(f'./wpi/wpi.sh {BENCHMARKS_FOLDER}/{benchmark}'), stdout=file, stderr=subprocess.STDOUT)
+            try:
+                process.communicate(timeout=WPI_TIMEOUT)
+            except subprocess.TimeoutExpired:
+                print(f"Command timed out after {WPI_TIMEOUT} seconds")
+                process.kill()
+                process.wait()
+                os.system("killall -9 javac")
     
     #create a folder for the compiled classes if it doesn't exist
     if not os.path.exists(COMPILED_CLASSES_FOLDER):
@@ -68,7 +70,7 @@ for benchmark in os.listdir(BENCHMARKS_FOLDER):
     command = (JAVAC_WITH_FLAGS
         + " " + CF_DIST_JAR_ARG
         + " " + CF_COMMAND
-        + " " + "-Aajava=" + BENCHMARKS_FOLDER + "/" + benchmark + "/" + "/wpi-out"
+        + (" " + "-Aajava=" + BENCHMARKS_FOLDER + "/" + benchmark + "/" + "wpi-out" if RUN_WPI else "")
         + " " + "-AdisableReturnsReceiver"
         + " " + "-J-Xmx32G"
         + " " + "-J-ea"

@@ -1,0 +1,8 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^ru/spbau/tinydb/repl/REPLRunnable.java^67^ru.spbau.tinydb.repl.REPLRunnable.<init>(Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)V^9 = new <Application,Ljava/io/FileOutputStream>@7^ru.spbau.tinydb.repl.REPLRunnable.<init>(Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)V#11,^FIELD,INVOKE,^false^true^Field escape;
+1^ru/spbau/tinydb/bufferManager/BufferManager.java^47^ru.spbau.tinydb.bufferManager.BufferManager.<init>(Ljava/io/File;)V^20 = new <Application,Ljava/io/RandomAccessFile>@90^NULL^FIELD,^false^true^Field escape;
+2^ru/spbau/tinydb/grammar/GrammarTester.java^48^ru.spbau.tinydb.grammar.GrammarTester.main([Ljava/lang/String;)V^20 = new <Application,Ljava/io/FileInputStream>@53^NULL^INVOKE,^false^false^Loop Fix;Normal Fix;
+3^ru/spbau/tinydb/repl/REPLRunnable.java^68^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+4^ru/spbau/tinydb/table/TableBase.java^202^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+5^ru/spbau/tinydb/table/TableBase.java^205^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+6^ru/spbau/tinydb/table/TableBase.java^241^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

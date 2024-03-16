@@ -1,0 +1,379 @@
+warning: MustCallChecker did not find annotation file or directory ../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+warning: ResourceLeakChecker did not find annotation file or directory ../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/security/RSA.java:72: error: (required.method.not.called) $$ 4 $$ method close $$ dis $$ java.io.DataInputStream $$ regular method exit $$ ( 3985, 4044 ) $$ @MustCall method close may not have been invoked on dis or any of its aliases.
+					dis = new DataInputStream(new FileInputStream("RSA.seeds"));
+					    ^
+  The type of object is: java.io.DataInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/security/RSA.java:112: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream("RSA.seeds") $$ java.io.FileOutputStream $$ regular method exit $$ ( 5393, 5426 ) $$ @MustCall method close may not have been invoked on new FileOutputStream("RSA.seeds") or any of its aliases.
+			DataOutputStream dos = new DataOutputStream(new FileOutputStream("RSA.seeds"));
+			                                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/DataFormater.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(input_file_name) $$ java.io.FileReader $$ possible exceptional exit due to new FileWriter(output_file_name) with exception type java.io.FileNotFoundException $$ ( 615, 646 ) $$ @MustCall method close may not have been invoked on new FileReader(input_file_name) or any of its aliases.
+			LineNumberReader lr = new LineNumberReader(new FileReader(input_file_name));
+			                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(output_file_name) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/DataFormater.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(output_file_name) $$ java.io.FileWriter $$ regular method exit $$ ( 686, 718 ) $$ @MustCall method close may not have been invoked on new FileWriter(output_file_name) or any of its aliases.
+			PrintWriter pw = new PrintWriter(new FileWriter(output_file_name));
+			                                 ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/DataFormater.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(input_file_name) $$ java.io.FileReader $$ possible exceptional exit due to new FileWriter(output_file_name) with exception type java.io.FileNotFoundException $$ ( 2129, 2160 ) $$ @MustCall method close may not have been invoked on new FileReader(input_file_name) or any of its aliases.
+			LineNumberReader lr = new LineNumberReader(new FileReader(input_file_name));
+			                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(output_file_name) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/DataFormater.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(output_file_name) $$ java.io.FileWriter $$ regular method exit $$ ( 2200, 2232 ) $$ @MustCall method close may not have been invoked on new FileWriter(output_file_name) or any of its aliases.
+			PrintWriter pw = new PrintWriter(new FileWriter(output_file_name));
+			                                 ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/Compare/mergeIndexDP.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(new File(filePath + "/" + type + ".idx")) $$ java.io.FileOutputStream $$ possible exceptional exit due to dos.flush() with exception type java.io.IOException $$ ( 1316, 1378 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(new File(filePath + "/" + type + ".idx")) or any of its aliases.
+		DataOutputStream dos = new DataOutputStream(new FileOutputStream(new File(filePath + "/" + type + ".idx")));
+		                                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to dos.flush() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/Compare/mergeIndexDP.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File(fileName)) $$ java.io.FileInputStream $$ possible exceptional exit due to dis.available() with exception type java.io.IOException $$ ( 1603, 1642 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File(fileName)) or any of its aliases.
+			DataInputStream dis = new DataInputStream(new FileInputStream(new File(fileName)));
+			                                          ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to dis.available() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/Compare/mergeIndexDP.java:76: error: (required.method.not.called) $$ 4 $$ method close $$ raf $$ java.io.RandomAccessFile $$ possible exceptional exit due to raf.seek(idx[1]) with exception type java.io.IOException $$ ( 2301, 2400 ) $$ @MustCall method close may not have been invoked on raf or any of its aliases.
+		RandomAccessFile raf = new RandomAccessFile(filePath + "/" + type + "." + machineId + ".dat", "r");
+		                 ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to raf.seek(idx[1]) with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/Compare/mergeIndexDP.java:90: error: (required.method.not.called) $$ 4 $$ method close $$ raf $$ java.io.RandomAccessFile $$ possible exceptional exit due to raf.seek(idx[1]) with exception type java.io.IOException $$ ( 2729, 2810 ) $$ @MustCall method close may not have been invoked on raf or any of its aliases.
+		RandomAccessFile raf = new RandomAccessFile(filePath + "/" + type + ".dat", "r");
+		                 ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to raf.seek(idx[1]) with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/Compare/buildBtreeOfPoints.java:42: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(sourceFileName) $$ java.io.FileReader $$ regular method exit $$ ( 1317, 1347 ) $$ @MustCall method close may not have been invoked on new FileReader(sourceFileName) or any of its aliases.
+			LineNumberReader lr = new LineNumberReader(new FileReader(sourceFileName));
+			                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/Compare/buildIndexDP.java:51: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(sourceFileName) $$ java.io.FileReader $$ regular method exit $$ ( 1319, 1349 ) $$ @MustCall method close may not have been invoked on new FileReader(sourceFileName) or any of its aliases.
+			LineNumberReader lr = new LineNumberReader(new FileReader(sourceFileName));
+			                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/Compare/buildIndexDP.java:78: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(new File(destFileName + ".idx")) $$ java.io.FileOutputStream $$ possible exceptional exit due to new FileOutputStream(new File(destFileName + ".dat")) with exception type java.io.FileNotFoundException $$ ( 2168, 2221 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(new File(destFileName + ".idx")) or any of its aliases.
+		final DataOutputStream dos_idx =  new DataOutputStream(new BufferedOutputStream(new FileOutputStream(new File(destFileName + ".idx"))));
+		                                                                                ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(new File(destFileName + ".dat")) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/Compare/buildIndexDP.java:79: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(new File(destFileName + ".dat")) $$ java.io.FileOutputStream $$ possible exceptional exit due to dos_dat.flush() with exception type java.io.IOException $$ ( 2306, 2359 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(new File(destFileName + ".dat")) or any of its aliases.
+		final DataOutputStream dos_dat = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(new File(destFileName + ".dat"))));
+		                                                                               ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to dos_dat.flush() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/Compare/DataOfPoint.java:141: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(file) $$ java.io.FileOutputStream $$ possible exceptional exit due to dp.writeToBytes() with exception type java.io.IOException $$ ( 3487, 3513 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(file) or any of its aliases.
+		DataOutputStream dos = new DataOutputStream(new FileOutputStream(file));
+		                                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to dp.writeToBytes() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/Compare/DataOfPoint.java:155: error: (required.method.not.called) $$ 4 $$ method close $$ raf $$ java.io.RandomAccessFile $$ possible exceptional exit due to raf.seek(len) with exception type java.io.IOException $$ ( 3954, 4009 ) $$ @MustCall method close may not have been invoked on raf or any of its aliases.
+		RandomAccessFile raf = new RandomAccessFile(file, "r");
+		                 ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to raf.seek(len) with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/Compare/DataOfPoint.java:170: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File("input/NE.dp.idx")) $$ java.io.FileInputStream $$ possible exceptional exit due to dis.available() with exception type java.io.IOException $$ ( 4389, 4437 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File("input/NE.dp.idx")) or any of its aliases.
+		DataInputStream dis = new DataInputStream(new FileInputStream(new File("input/NE.dp.idx")));
+		                                          ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to dis.available() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/Compare/DataOfPoint.java:182: error: (required.method.not.called) $$ 4 $$ method close $$ raf $$ java.io.RandomAccessFile $$ possible exceptional exit due to raf.seek(idx[1]) with exception type java.io.IOException $$ ( 4736, 4804 ) $$ @MustCall method close may not have been invoked on raf or any of its aliases.
+		RandomAccessFile raf = new RandomAccessFile("input/NE.dp.dat", "r");
+		                 ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to raf.seek(idx[1]) with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/security/Gfunction.java:626: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(new File("./tmp/gf")) $$ java.io.FileOutputStream $$ possible exceptional exit due to gf.writeToFile(dos) with exception type java.io.IOException $$ ( 17297, 17339 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(new File("./tmp/gf")) or any of its aliases.
+		DataOutputStream dos = new DataOutputStream(new FileOutputStream(new File("./tmp/gf")));
+		                                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to gf.writeToFile(dos) with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/security/Gfunction.java:629: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File("./tmp/gf")) $$ java.io.FileInputStream $$ possible exceptional exit due to gf.readFromFile(dis) with exception type java.io.IOException $$ ( 17427, 17468 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File("./tmp/gf")) or any of its aliases.
+		DataInputStream dis = new DataInputStream(new FileInputStream(new File("./tmp/gf")));
+		                                          ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to gf.readFromFile(dis) with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/security/SeedsGenerater.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(filename + ".dat") $$ java.io.FileOutputStream $$ possible exceptional exit due to new FileOutputStream(filename + ".gdat") with exception type java.io.FileNotFoundException $$ ( 1575, 1614 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(filename + ".dat") or any of its aliases.
+			DataOutputStream seedsdos = new DataOutputStream(new FileOutputStream(filename + ".dat"));
+			                                                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(filename + ".gdat") with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/security/SeedsGenerater.java:41: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(filename + ".gdat") $$ java.io.FileOutputStream $$ regular method exit $$ ( 1671, 1711 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(filename + ".gdat") or any of its aliases.
+			DataOutputStream gseedsdos = new DataOutputStream(new FileOutputStream(filename + ".gdat"));
+			                                                  ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/security/SeedsGenerater.java:75: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(filename + ".dat") $$ java.io.FileInputStream $$ possible exceptional exit due to new FileInputStream(filename + ".gdat") with exception type java.io.FileNotFoundException $$ ( 2522, 2560 ) $$ @MustCall method close may not have been invoked on new FileInputStream(filename + ".dat") or any of its aliases.
+			DataInputStream seedsdis = new DataInputStream(new FileInputStream(filename + ".dat"));
+			                                               ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileInputStream(filename + ".gdat") with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/security/SeedsGenerater.java:76: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(filename + ".gdat") $$ java.io.FileInputStream $$ regular method exit $$ ( 2615, 2654 ) $$ @MustCall method close may not have been invoked on new FileInputStream(filename + ".gdat") or any of its aliases.
+			DataInputStream gseedsdis = new DataInputStream(new FileInputStream(filename + ".gdat"));
+			                                                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/Compare/DataOfPointParser.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(file[i]) $$ java.io.FileInputStream $$ regular method exit $$ ( 974, 1002 ) $$ @MustCall method close may not have been invoked on new FileInputStream(file[i]) or any of its aliases.
+					DataInputStream dis = new DataInputStream(new FileInputStream(file[i]));
+					                                          ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/Compare/genDataOfPointForHadoop.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(new File(filename)) $$ java.io.FileOutputStream $$ possible exceptional exit due to Integer.parseInt(num[1]) with exception type java.lang.NumberFormatException $$ ( 981, 1021 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(new File(filename)) or any of its aliases.
+		PrintWriter pw = new PrintWriter(new BufferedOutputStream(new FileOutputStream(new File(filename))));
+		                                                          ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to Integer.parseInt(num[1]) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/Compare/genDataOfPointForHadoop.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader("source/NE.dat") $$ java.io.FileReader $$ regular method exit $$ ( 1105, 1136 ) $$ @MustCall method close may not have been invoked on new FileReader("source/NE.dat") or any of its aliases.
+			LineNumberReader lr = new LineNumberReader(new FileReader("source/NE.dat"));
+			                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/generator.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(filepath) $$ java.io.FileOutputStream $$ regular method exit $$ ( 457, 487 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(filepath) or any of its aliases.
+			PrintStream out = new PrintStream(new FileOutputStream(filepath));
+			                                  ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/generator.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(filepath) $$ java.io.FileOutputStream $$ regular method exit $$ ( 978, 1008 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(filepath) or any of its aliases.
+			PrintStream out = new PrintStream(new FileOutputStream(filepath));
+			                                  ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/generator.java:65: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File("source/ca.1000.dat")) $$ java.io.FileInputStream $$ possible exceptional exit due to new FileOutputStream(filepath) with exception type java.io.FileNotFoundException $$ ( 2078, 2129 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File("source/ca.1000.dat")) or any of its aliases.
+			in = new Scanner(new FileInputStream(new File("source/ca.1000.dat")));
+			                 ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(filepath) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/generator.java:66: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(filepath) $$ java.io.FileOutputStream $$ regular method exit $$ ( 2170, 2200 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(filepath) or any of its aliases.
+			PrintStream out = new PrintStream(new FileOutputStream(filepath));
+			                                  ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/CompareFunction.java:99: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(file) $$ java.io.FileReader $$ possible exceptional exit due to lr.readLine() with exception type java.io.IOException $$ ( 3046, 3066 ) $$ @MustCall method close may not have been invoked on new FileReader(file) or any of its aliases.
+		LineNumberReader lr = new LineNumberReader(new FileReader(file));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to lr.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/CompareFunction.java:115: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(file) $$ java.io.FileReader $$ possible exceptional exit due to lr.readLine() with exception type java.io.IOException $$ ( 3693, 3713 ) $$ @MustCall method close may not have been invoked on new FileReader(file) or any of its aliases.
+		lr = new LineNumberReader(new FileReader(file));
+		                          ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to lr.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/delaynayGenerator.java:42: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(sourceFileName) $$ java.io.FileReader $$ possible exceptional exit due to Integer.parseInt(tks[0]) with exception type java.lang.NumberFormatException $$ ( 950, 980 ) $$ @MustCall method close may not have been invoked on new FileReader(sourceFileName) or any of its aliases.
+			LineNumberReader lr = new LineNumberReader(new FileReader(sourceFileName));
+			                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to Integer.parseInt(tks[0]) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/FormatData2Norm.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ filein $$ java.util.Scanner $$ possible exceptional exit due to new PrintWriter(new File(destFileName)) with exception type java.io.FileNotFoundException $$ ( 629, 684 ) $$ @MustCall method close may not have been invoked on filein or any of its aliases.
+		Scanner filein = new Scanner(new File(sourceFileName));
+		        ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: possible exceptional exit due to new PrintWriter(new File(destFileName)) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/FormatData2Norm.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ pw $$ java.io.PrintWriter $$ possible exceptional exit due to Double.parseDouble(tks[2]) with exception type java.lang.NumberFormatException $$ ( 687, 744 ) $$ @MustCall method close may not have been invoked on pw or any of its aliases.
+		PrintWriter pw = new PrintWriter(new File(destFileName));
+		            ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: possible exceptional exit due to Double.parseDouble(tks[2]) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/geo/buildBtreeOfLines.java:46: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(sourceFileName) $$ java.io.FileReader $$ regular method exit $$ ( 1383, 1413 ) $$ @MustCall method close may not have been invoked on new FileReader(sourceFileName) or any of its aliases.
+			LineNumberReader lr = new LineNumberReader(new FileReader(sourceFileName));
+			                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/geo/mergeIndexDL.java:38: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(new File(filePath + "/" + type + ".idx")) $$ java.io.FileOutputStream $$ possible exceptional exit due to dos.flush() with exception type java.io.IOException $$ ( 1167, 1229 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(new File(filePath + "/" + type + ".idx")) or any of its aliases.
+		DataOutputStream dos = new DataOutputStream(new FileOutputStream(new File(filePath + "/" + type + ".idx")));
+		                                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to dos.flush() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/geo/mergeIndexDL.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File(fileName)) $$ java.io.FileInputStream $$ possible exceptional exit due to dis.available() with exception type java.io.IOException $$ ( 1463, 1502 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File(fileName)) or any of its aliases.
+			DataInputStream dis = new DataInputStream(new FileInputStream(new File(fileName)));
+			                                          ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to dis.available() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/geo/mergeIndexDL.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ raf $$ java.io.RandomAccessFile $$ possible exceptional exit due to raf.seek(idx[1]) with exception type java.io.IOException $$ ( 2040, 2121 ) $$ @MustCall method close may not have been invoked on raf or any of its aliases.
+		RandomAccessFile raf = new RandomAccessFile(filePath + "/" + type + ".dat", "r");
+		                 ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to raf.seek(idx[1]) with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/geo/DataOfLine.java:134: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(new File("./tmp/dataofline")) $$ java.io.FileOutputStream $$ possible exceptional exit due to dos.writeInt(data.length) with exception type java.io.FileNotFoundException $$ ( 3036, 3086 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(new File("./tmp/dataofline")) or any of its aliases.
+			dos = new DataOutputStream(new FileOutputStream(new File("./tmp/dataofline")));
+			                           ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to dos.writeInt(data.length) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/geo/DataOfLine.java:139: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File("./tmp/dataofline")) $$ java.io.FileInputStream $$ possible exceptional exit due to dis.readInt() with exception type java.io.FileNotFoundException $$ ( 3244, 3293 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File("./tmp/dataofline")) or any of its aliases.
+			DataInputStream dis = new DataInputStream(new FileInputStream(new File("./tmp/dataofline")));
+			                                          ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to dis.readInt() with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/geo/genDataOfLineForHadoop.java:42: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(new File(filename)) $$ java.io.FileOutputStream $$ possible exceptional exit due to recmanOfPoints.close() with exception type java.io.IOException $$ ( 1177, 1217 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(new File(filename)) or any of its aliases.
+		PrintWriter pw = new PrintWriter(new BufferedOutputStream(new FileOutputStream(new File(filename))));
+		                                                          ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to recmanOfPoints.close() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/geo/genDataOfLineForHadoop.java:88: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(new File(filename)) $$ java.io.FileOutputStream $$ possible exceptional exit due to recmanOfPoints.close() with exception type java.io.IOException $$ ( 2940, 2980 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(new File(filename)) or any of its aliases.
+		PrintWriter pw = new PrintWriter(new BufferedOutputStream(new FileOutputStream(new File(filename))));
+		                                                          ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to recmanOfPoints.close() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/geo/VoronoiNeighbors.java:132: warning: unreachable catch clause
+		} catch (IOException e) {
+		  ^
+  thrown type FileNotFoundException has already been caught
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/geo/VoronoiNeighbors.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ lr $$ java.io.LineNumberReader $$ possible exceptional exit due to Integer.parseInt(num[1]) with exception type java.lang.NumberFormatException $$ ( 1003, 1060 ) $$ @MustCall method close may not have been invoked on lr or any of its aliases.
+			lr = new LineNumberReader(new FileReader(sourceFileName));
+			   ^
+  The type of object is: java.io.LineNumberReader.
+  Reason for going out of scope: possible exceptional exit due to Integer.parseInt(num[1]) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/geo/VoronoiNeighbors.java:74: error: (required.method.not.called) $$ 4 $$ method close $$ dos $$ java.io.DataOutputStream $$ regular method exit $$ ( 1973, 2071 ) $$ @MustCall method close may not have been invoked on dos or any of its aliases.
+			dos = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(new File(destFileName))));
+			    ^
+  The type of object is: java.io.DataOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/geo/VoronoiNeighbors.java:117: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.util.Scanner $$ possible exceptional exit due to Integer.parseInt(tks[0]) with exception type java.lang.NumberFormatException $$ ( 3181, 3221 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			in = new Scanner(new File(destFileName));
+			   ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: possible exceptional exit due to Integer.parseInt(tks[0]) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/geo/buildIndexDL.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(sourceFileName) $$ java.io.FileReader $$ regular method exit $$ ( 1235, 1265 ) $$ @MustCall method close may not have been invoked on new FileReader(sourceFileName) or any of its aliases.
+			LineNumberReader lr = new LineNumberReader(new FileReader(sourceFileName));
+			                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/geo/buildIndexDL.java:73: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(new File(destFileName + ".idx")) $$ java.io.FileOutputStream $$ possible exceptional exit due to new FileOutputStream(new File(destFileName + ".dat")) with exception type java.io.FileNotFoundException $$ ( 2081, 2134 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(new File(destFileName + ".idx")) or any of its aliases.
+		final DataOutputStream dos_idx =  new DataOutputStream(new BufferedOutputStream(new FileOutputStream(new File(destFileName + ".idx"))));
+		                                                                                ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(new File(destFileName + ".dat")) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/geo/buildIndexDL.java:74: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(new File(destFileName + ".dat")) $$ java.io.FileOutputStream $$ possible exceptional exit due to dos_dat.flush() with exception type java.io.IOException $$ ( 2219, 2272 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(new File(destFileName + ".dat")) or any of its aliases.
+		final DataOutputStream dos_dat = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(new File(destFileName + ".dat"))));
+		                                                                               ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to dos_dat.flush() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/newDelaunayParser.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File(fileInputPath + ".tmp")) $$ java.io.FileInputStream $$ possible exceptional exit due to Integer.parseInt(in.nextLine()) with exception type java.lang.NumberFormatException $$ ( 847, 900 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File(fileInputPath + ".tmp")) or any of its aliases.
+		Scanner in = new Scanner(new BufferedInputStream(new FileInputStream(new File(fileInputPath + ".tmp"))));
+		                                                 ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to Integer.parseInt(in.nextLine()) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/newDelaunayParser.java:53: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File(fileInputPath + ".nm")) $$ java.io.FileInputStream $$ possible exceptional exit due to Integer.parseInt(in.nextLine()) with exception type java.lang.NumberFormatException $$ ( 1647, 1699 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File(fileInputPath + ".nm")) or any of its aliases.
+		in = new Scanner(new BufferedInputStream(new FileInputStream(new File(fileInputPath + ".nm"))));
+		                                         ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to Integer.parseInt(in.nextLine()) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/knnwithcryop.java:220: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(new File(ans_file_name + "_" + new Integer(k_of_knn[i]).toString() + ".data")) $$ java.io.FileOutputStream $$ possible exceptional exit due to new FileInputStream(new File(filename)) with exception type java.io.FileNotFoundException $$ ( 9246, 9345 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(new File(ans_file_name + "_" + new Integer(k_of_knn[i]).toString() + ".data")) or any of its aliases.
+					final PrintWriter datapw = new PrintWriter(new FileOutputStream(new File(ans_file_name + "_" + new Integer(k_of_knn[i]).toString() + ".data")));
+					                                           ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileInputStream(new File(filename)) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/knnwithcryop.java:222: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File(filename)) $$ java.io.FileInputStream $$ possible exceptional exit due to new FileOutputStream(new File(ans_file_name + "_" + new Integer(k_of_knn[i]).toString())) with exception type java.io.FileNotFoundException $$ ( 9401, 9440 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File(filename)) or any of its aliases.
+					Scanner in1 = new Scanner(new FileInputStream(new File(filename)));
+					                          ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(new File(ans_file_name + "_" + new Integer(k_of_knn[i]).toString())) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/spatialindex/rtree/RTree.java:166: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(args[0]) $$ java.io.FileReader $$ regular method exit $$ ( 5124, 5147 ) $$ @MustCall method close may not have been invoked on new FileReader(args[0]) or any of its aliases.
+				lr = new LineNumberReader(new FileReader(args[0]));
+				                          ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/spatialindex/rtree/RTree.java:357: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File(destFileNamePoint + ".idx")) $$ java.io.FileInputStream $$ possible exceptional exit due to new RandomAccessFile(destFileNamePoint + ".dat", "r") with exception type java.io.FileNotFoundException $$ ( 11570, 11627 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File(destFileNamePoint + ".idx")) or any of its aliases.
+			DataInputStream dis = new DataInputStream(new BufferedInputStream(new FileInputStream(new File(destFileNamePoint + ".idx"))));
+			                                                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new RandomAccessFile(destFileNamePoint + ".dat", "r") with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/spatialindex/rtree/RTree.java:358: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(destFileNamePoint + ".dat", "r") $$ java.io.RandomAccessFile $$ possible exceptional exit due to dis.available() with exception type java.io.IOException $$ ( 11645, 11698 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(destFileNamePoint + ".dat", "r") or any of its aliases.
+			rafPoint = new RandomAccessFile(destFileNamePoint + ".dat", "r");
+			           ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to dis.available() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/spatialindex/rtree/RTree.java:386: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File(destFileNameLine + ".idx")) $$ java.io.FileInputStream $$ possible exceptional exit due to new RandomAccessFile(destFileNameLine + ".dat", "r") with exception type java.io.FileNotFoundException $$ ( 12318, 12374 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File(destFileNameLine + ".idx")) or any of its aliases.
+			DataInputStream dis = new DataInputStream(new BufferedInputStream(new FileInputStream(new File(destFileNameLine + ".idx"))));
+			                                                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new RandomAccessFile(destFileNameLine + ".dat", "r") with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/spatialindex/rtree/RTree.java:387: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(destFileNameLine + ".dat", "r") $$ java.io.RandomAccessFile $$ possible exceptional exit due to dis.available() with exception type java.io.IOException $$ ( 12391, 12443 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(destFileNameLine + ".dat", "r") or any of its aliases.
+			rafLine = new RandomAccessFile(destFileNameLine + ".dat", "r");
+			          ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to dis.available() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/spatialindex/rtree/SecurityTree.java:72: error: (required.method.not.called) $$ 4 $$ method close $$ rfile $$ java.io.RandomAccessFile $$ possible exceptional exit due to rfile.seek(pos.longValue()) with exception type java.io.FileNotFoundException $$ ( 2337, 2418 ) $$ @MustCall method close may not have been invoked on rfile or any of its aliases.
+					RandomAccessFile rfile = new RandomAccessFile(new File(filePath + ".sdat"), "r");
+					                 ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to rfile.seek(pos.longValue()) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/spatialindex/rtree/SecurityTree.java:146: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(filePath + ".sidx") $$ java.io.FileInputStream $$ possible exceptional exit due to indexDis.available() with exception type java.io.IOException $$ ( 4297, 4336 ) $$ @MustCall method close may not have been invoked on new FileInputStream(filePath + ".sidx") or any of its aliases.
+		DataInputStream indexDis = new DataInputStream(new FileInputStream(filePath + ".sidx"));
+		                                               ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to indexDis.available() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/spatialindex/rtree/SecurityNode.java:213: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(srtree.filePath + ".sidx") $$ java.io.FileOutputStream $$ possible exceptional exit due to new FileOutputStream(srtree.filePath + ".sdat") with exception type java.io.FileNotFoundException $$ ( 5788, 5835 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(srtree.filePath + ".sidx") or any of its aliases.
+		DataOutputStream indexDos = new DataOutputStream(new FileOutputStream(srtree.filePath + ".sidx"));
+		                                                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(srtree.filePath + ".sdat") with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/spatialindex/rtree/SecurityNode.java:214: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(srtree.filePath + ".sdat") $$ java.io.FileOutputStream $$ possible exceptional exit due to node.buildSecurityInfo(rTree, currentNode, indexDos, dataDos, 0) with exception type java.lang.IndexOutOfBoundsException $$ ( 5888, 5935 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(srtree.filePath + ".sdat") or any of its aliases.
+		DataOutputStream dataDos = new DataOutputStream(new FileOutputStream(srtree.filePath + ".sdat"));
+		                                                ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to node.buildSecurityInfo(rTree, currentNode, indexDos, dataDos, 0) with exception type java.lang.IndexOutOfBoundsException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/testData.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File(filename)) $$ java.io.FileInputStream $$ possible exceptional exit due to new FileInputStream(new File(fileofquery)) with exception type java.io.FileNotFoundException $$ ( 2122, 2161 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File(filename)) or any of its aliases.
+				Scanner in = new Scanner(new FileInputStream(new File(filename)));
+				                         ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileInputStream(new File(fileofquery)) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/testData.java:98: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File(filename)) $$ java.io.FileInputStream $$ regular method exit $$ ( 2572, 2611 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File(filename)) or any of its aliases.
+				in = new Scanner(new FileInputStream(new File(filename)));
+				                 ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/VerifyIndex.java:32: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File(idx + ".dp.idx")) $$ java.io.FileInputStream $$ possible exceptional exit due to new RandomAccessFile(idx + ".dp.dat", "r") with exception type java.io.FileNotFoundException $$ ( 814, 860 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File(idx + ".dp.idx")) or any of its aliases.
+		DataInputStream dis = new DataInputStream(new BufferedInputStream(new FileInputStream(new File(idx + ".dp.idx"))));
+		                                                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new RandomAccessFile(idx + ".dp.dat", "r") with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/VerifyIndex.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(idx + ".dp.dat", "r") $$ java.io.RandomAccessFile $$ possible exceptional exit due to dis.available() with exception type java.io.IOException $$ ( 877, 919 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(idx + ".dp.dat", "r") or any of its aliases.
+		rafPoint = new RandomAccessFile(idx + ".dp.dat", "r");
+		           ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to dis.available() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/VerifyIndex.java:39: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File(idx + ".dl.idx")) $$ java.io.FileInputStream $$ possible exceptional exit due to new RandomAccessFile(idx + ".dl.dat", "r") with exception type java.io.FileNotFoundException $$ ( 1141, 1187 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File(idx + ".dl.idx")) or any of its aliases.
+		dis = new DataInputStream(new BufferedInputStream(new FileInputStream(new File(idx + ".dl.idx"))));
+		                                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new RandomAccessFile(idx + ".dl.dat", "r") with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/VerifyIndex.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(idx + ".dl.dat", "r") $$ java.io.RandomAccessFile $$ possible exceptional exit due to dis.available() with exception type java.io.IOException $$ ( 1203, 1245 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(idx + ".dl.dat", "r") or any of its aliases.
+		rafLine = new RandomAccessFile(idx + ".dl.dat", "r");
+		          ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to dis.available() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/gowallaParser.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File(fileInputPath)) $$ java.io.FileInputStream $$ possible exceptional exit due to Long.parseLong(tks[4]) with exception type java.lang.NumberFormatException $$ ( 1438, 1482 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File(fileInputPath)) or any of its aliases.
+		Scanner in = new Scanner(new BufferedInputStream(new FileInputStream(new File(fileInputPath))));
+		                                                 ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to Long.parseLong(tks[4]) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/spatialindex/io/DiskStorageManager.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(indexFile, "rw") $$ java.io.RandomAccessFile $$ possible exceptional exit due to new RandomAccessFile(dataFile, "rw") with exception type java.io.FileNotFoundException $$ ( 3517, 3554 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(indexFile, "rw") or any of its aliases.
+			m_indexFile = new RandomAccessFile(indexFile, "rw");
+			              ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to new RandomAccessFile(dataFile, "rw") with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/spatialindex/io/DiskStorageManager.java:126: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(dataFile, "rw") $$ java.io.RandomAccessFile $$ possible exceptional exit due to m_indexFile.readInt() with exception type java.io.IOException $$ ( 3572, 3608 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(dataFile, "rw") or any of its aliases.
+			m_dataFile = new RandomAccessFile(dataFile, "rw");
+			             ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to m_indexFile.readInt() with exception type java.io.IOException
+../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/quickhull3d/QhullTestCA.java:26: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File("source/CA.in")) $$ java.io.FileInputStream $$ possible exceptional exit due to hull.build(points) with exception type java.lang.IllegalArgumentException $$ ( 517, 562 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File("source/CA.in")) or any of its aliases.
+		Scanner in = new Scanner(new FileInputStream(new File("source/CA.in")));
+		                         ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to hull.build(points) with exception type java.lang.IllegalArgumentException
+Note: ../dataset/june2020_dataset/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/quickhull3d/QuickHull3D.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+73 errors
+3 warnings

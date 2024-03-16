@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^ImagePack/RGBEFormat.java^28^ImagePack.RGBEFormat.write(LImagePack/Image;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;)V^7 = new <Application,Ljava/io/BufferedOutputStream>@6^ImagePack.RGBEFormat.write(LImagePack/Image;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;)V#8,^INVOKE,^false^false^Normal Fix;

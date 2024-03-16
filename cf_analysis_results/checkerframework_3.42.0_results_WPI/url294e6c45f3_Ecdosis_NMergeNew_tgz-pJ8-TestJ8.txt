@@ -1,0 +1,134 @@
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ new EmptyOutputStream() $$ EmptyOutputStream $$ regular method exit $$ ( 2772, 2795 ) $$ @MustCall method close may not have been invoked on new EmptyOutputStream() or any of its aliases.
+			emptyStream = new EmptyOutputStream();
+			              ^
+  The type of object is: EmptyOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java:320: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to fis.read(data) with exception type java.io.IOException $$ ( 9994, 10043 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+			FileInputStream fis = new FileInputStream( src );
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to fis.read(data) with exception type java.io.IOException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java:359: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to fis.read(data) with exception type java.io.IOException $$ ( 11107, 11156 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+			FileInputStream fis = new FileInputStream( src );
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to fis.read(data) with exception type java.io.IOException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java:549: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to fis.read(bytes) with exception type java.io.IOException $$ ( 17462, 17523 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+				FileInputStream fis = new FileInputStream( versions[vId-1] );
+				                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to fis.read(bytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java:622: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to osw.write(data1) with exception type java.io.IOException $$ ( 19677, 19733 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+			FileOutputStream fos = new FileOutputStream( tempFile );
+			                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to osw.write(data1) with exception type java.io.IOException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java:1041: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to MvdTool.run(args2, tempOut) with exception type edu.luc.nmerge.exception.MVDException $$ ( 33506, 33563 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+            FileOutputStream fos = new FileOutputStream(tempOutFile);
+                             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to MvdTool.run(args2, tempOut) with exception type edu.luc.nmerge.exception.MVDException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java:1047: error: (required.method.not.called) $$ 4 $$ method close $$ fis1 $$ java.io.FileInputStream $$ possible exceptional exit due to new FileInputStream(tempOutFile) with exception type java.io.FileNotFoundException $$ ( 33781, 33839 ) $$ @MustCall method close may not have been invoked on fis1 or any of its aliases.
+			FileInputStream fis1 = new FileInputStream( versions[i] );
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileInputStream(tempOutFile) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java:1048: error: (required.method.not.called) $$ 4 $$ method close $$ fis2 $$ java.io.FileInputStream $$ possible exceptional exit due to fis1.read(data1) with exception type java.io.IOException $$ ( 33843, 33901 ) $$ @MustCall method close may not have been invoked on fis2 or any of its aliases.
+			FileInputStream fis2 = new FileInputStream( tempOutFile );
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to fis1.read(data1) with exception type java.io.IOException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/graph/suffixtree/SuffixTree.java:951: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to fis.read(data) with exception type java.io.IOException $$ ( 31992, 32044 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+                    FileInputStream fis = new FileInputStream(files[i]);
+                                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to fis.read(data) with exception type java.io.IOException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java:427: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to fis.read(data) with exception type java.io.IOException $$ ( 11228, 11275 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+				FileInputStream fis = new FileInputStream( t );
+				                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to fis.read(data) with exception type java.io.IOException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java:567: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to fis.read(data) with exception type java.io.IOException $$ ( 14730, 14777 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+				FileInputStream fis = new FileInputStream( t );
+				                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to fis.read(data) with exception type java.io.IOException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java:621: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to osw.write(data) with exception type java.io.IOException $$ ( 16400, 16459 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+                FileOutputStream fos = new FileOutputStream( versionFile );
+                                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to osw.write(data) with exception type java.io.IOException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java:664: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to fis.read(data) with exception type java.io.IOException $$ ( 17898, 17955 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+				FileInputStream fis = new FileInputStream( versionFile );
+				                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to fis.read(data) with exception type java.io.IOException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDXMLFile.java:84: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(src) $$ java.io.FileInputStream $$ possible exceptional exit due to parser.parse(input) with exception type org.w3c.dom.DOMException $$ ( 3153, 3177 ) $$ @MustCall method close may not have been invoked on new FileInputStream(src) or any of its aliases.
+		input.setByteStream( new FileInputStream(src) );
+		                     ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to parser.parse(input) with exception type org.w3c.dom.DOMException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDXMLFile.java:374: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to XMLPretty.writeXMLDeclaration(fos, XMLEncoding) with exception type java.io.IOException $$ ( 12687, 12738 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+			FileOutputStream fos = new FileOutputStream( dst );
+			                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to XMLPretty.writeXMLDeclaration(fos, XMLEncoding) with exception type java.io.IOException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/Base64.java:710: error: (flowexpr.parse.error.postcondition) $$ 2 $$ close() $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 31119, 31132 ) $$ error parsing the postcondition expression for close()
+                try{ b64os.close(); } catch( Exception e ){}
+                                ^
+  cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/Base64.java:1092: error: (flowexpr.parse.error.postcondition) $$ 2 $$ close() $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 45201, 45212 ) $$ error parsing the postcondition expression for close()
+            try{ bos.close(); } catch( Exception e ){}
+                          ^
+  cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/Base64.java:1125: error: (flowexpr.parse.error.postcondition) $$ 2 $$ close() $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 46229, 46240 ) $$ error parsing the postcondition expression for close()
+                try{ bos.close(); } catch( Exception e ){}
+                              ^
+  cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/Base64.java:1718: error: (flowexpr.parse.error) $$ 1 $$ 'this.super' in the postcondition EnsuresCalledMethods on the declaration of method 'close': Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 67159, 67503 ) $$ cannot parse the expression 'this.super' in the postcondition EnsuresCalledMethods on the declaration of method 'close': Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+        public void close() throws java.io.IOException
+                    ^
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/Base64.java:1718: error: (flowexpr.parse.error) $$ 1 $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 67159, 67503 ) $$ cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+        public void close() throws java.io.IOException
+                    ^
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDFile.java:142: error: (required.method.not.called) $$ 4 $$ method close $$ conn $$ java.sql.Connection $$ regular method exit $$ ( 5493, 5559 ) $$ @MustCall method close may not have been invoked on conn or any of its aliases.
+            conn = DriverManager.getConnection(url+dbName, username, password);
+                 ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDFile.java:212: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileWriter $$ possible exceptional exit due to fw.write(str) with exception type java.io.IOException $$ ( 7662, 7700 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+		FileWriter fw = new FileWriter( dst );
+		           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to fw.write(str) with exception type java.io.IOException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDFile.java:269: error: (required.method.not.called) $$ 4 $$ method close $$ fr $$ java.io.FileReader $$ possible exceptional exit due to throw new MVDException("file " + src.toString() + " too big"); with exception type edu.luc.nmerge.exception.MVDException $$ ( 9542, 9580 ) $$ @MustCall method close may not have been invoked on fr or any of its aliases.
+		FileReader fr = new FileReader( src );
+		           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to throw new MVDException("file " + src.toString() + " too big"); with exception type edu.luc.nmerge.exception.MVDException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDFile.java:330: error: (required.method.not.called) $$ 4 $$ method close $$ conn $$ java.sql.Connection $$ regular method exit $$ ( 11550, 11609 ) $$ @MustCall method close may not have been invoked on conn or any of its aliases.
+            conn = DriverManager.getConnection(url, username, password);
+                 ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/XMLGuideFile.java:238: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to XMLPretty.writeXMLDeclaration(fos, "UTF-8") with exception type java.io.IOException $$ ( 7364, 7415 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+			FileOutputStream fos = new FileOutputStream( dst );
+			                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to XMLPretty.writeXMLDeclaration(fos, "UTF-8") with exception type java.io.IOException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/XMLGuideFile.java:307: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(src) $$ java.io.FileInputStream $$ possible exceptional exit due to parser.parse(input) with exception type org.w3c.dom.DOMException $$ ( 9646, 9670 ) $$ @MustCall method close may not have been invoked on new FileInputStream(src) or any of its aliases.
+			input.setByteStream( new FileInputStream(src) );
+			                     ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to parser.parse(input) with exception type org.w3c.dom.DOMException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDError.java:17: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileWriter $$ possible exceptional exit due to fw.write(message + "\n") with exception type java.io.IOException $$ ( 347, 392 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+			FileWriter fw = new FileWriter(tmpFile,true);
+			           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to fw.write(message + "\n") with exception type java.io.IOException
+../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/Utilities.java:24: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to props.load(fis) with exception type java.io.IOException $$ ( 597, 694 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+	        	FileInputStream fis = new FileInputStream(wdDir
+	        	                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to props.load(fis) with exception type java.io.IOException
+28 errors

@@ -1,0 +1,216 @@
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:42: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-22 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 1288, 1294 ) $$ @MustCall method close may not have been invoked on temp-var-22 or any of its aliases.
+		map = map5();
+		          ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:53: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-25 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 1527, 1533 ) $$ @MustCall method close may not have been invoked on temp-var-25 or any of its aliases.
+    	map = map5();
+    	          ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:65: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-30 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 1851, 1857 ) $$ @MustCall method close may not have been invoked on temp-var-30 or any of its aliases.
+        map = map5();
+                  ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:77: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-38 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 2176, 2228 ) $$ @MustCall method close may not have been invoked on temp-var-38 or any of its aliases.
+        map = new BigConcurrentHashMapImpl(testDir, "testIsEmpty");
+              ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:87: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-40 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 2448, 2454 ) $$ @MustCall method close may not have been invoked on temp-var-40 or any of its aliases.
+		map = map5();
+		          ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:97: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-46 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 2740, 2746 ) $$ @MustCall method close may not have been invoked on temp-var-46 or any of its aliases.
+        map = map5();
+                  ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:107: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-52 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 3017, 3023 ) $$ @MustCall method close may not have been invoked on temp-var-52 or any of its aliases.
+        map = map5();
+                  ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:118: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-59 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 3331, 3337 ) $$ @MustCall method close may not have been invoked on temp-var-59 or any of its aliases.
+        map = map5();
+                  ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:129: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-68 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 3681, 3687 ) $$ @MustCall method close may not have been invoked on temp-var-68 or any of its aliases.
+        map = map5();
+                  ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:141: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-81 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 4109, 4115 ) $$ @MustCall method close may not have been invoked on temp-var-81 or any of its aliases.
+        map = map5();
+                  ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:153: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-94 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 4519, 4525 ) $$ @MustCall method close may not have been invoked on temp-var-94 or any of its aliases.
+        map = map5();
+                  ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:165: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-100 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 4835, 4841 ) $$ @MustCall method close may not have been invoked on temp-var-100 or any of its aliases.
+        map = map5();
+                  ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:180: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-111 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ possible exceptional exit due to map.close() with exception type java.io.IOException $$ ( 5296, 5302 ) $$ @MustCall method close may not have been invoked on temp-var-111 or any of its aliases.
+        map = map5();
+                  ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: possible exceptional exit due to map.close() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:185: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-115 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 5406, 5455 ) $$ @MustCall method close may not have been invoked on temp-var-115 or any of its aliases.
+        map = new BigConcurrentHashMapImpl(testDir, "testSize");
+              ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:206: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-125 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 5970, 6035 ) $$ @MustCall method close may not have been invoked on temp-var-125 or any of its aliases.
+            map = new BigConcurrentHashMapImpl(testDir, "testConstructor1", config);
+                  ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:218: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-132 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 6422, 6487 ) $$ @MustCall method close may not have been invoked on temp-var-132 or any of its aliases.
+            map = new BigConcurrentHashMapImpl(testDir, "testConstructor2", config);
+                  ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:231: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-136 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 6820, 6885 ) $$ @MustCall method close may not have been invoked on temp-var-136 or any of its aliases.
+            map = new BigConcurrentHashMapImpl(testDir, "testConstructor3", config);
+                  ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:244: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-140 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 7234, 7321 ) $$ @MustCall method close may not have been invoked on temp-var-140 or any of its aliases.
+        	map = new BigConcurrentHashMapImpl(testDir, "testContainsValue_NullPointerException", config);;
+        	      ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:252: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-142 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ regular method exit $$ ( 7511, 7560 ) $$ @MustCall method close may not have been invoked on temp-var-142 or any of its aliases.
+        map = new BigConcurrentHashMapImpl(testDir, "testLoop");
+              ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:293: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-155 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ possible exceptional exit due to insert(map, queue) with exception type java.lang.InterruptedException $$ ( 8702, 8758 ) $$ @MustCall method close may not have been invoked on temp-var-155 or any of its aliases.
+    	map = new BigConcurrentHashMapImpl(testDir, "testConcurrency");
+    	      ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: possible exceptional exit due to insert(map, queue) with exception type java.lang.InterruptedException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapImpl.java:596: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-190 $$ com.ctriposs.bigmap.MapEntryFactoryImpl $$ regular method exit $$ ( 19598, 19638 ) $$ @MustCall method close may not have been invoked on temp-var-190 or any of its aliases.
+        this.mapEntryFactory = new MapEntryFactoryImpl(mapDir, mapName);
+                               ^
+  The type of object is: com.ctriposs.bigmap.MapEntryFactoryImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapImpl.java:1010: error: (return) $$ 2 $$ @MustCall("close") IMapEntryFactory $$ @MustCall IMMFStats $$ ( 34798, 34818 ) $$ incompatible types in return.
+		return this.mapEntryFactory;
+		           ^
+  type of expression: @MustCall("close") IMapEntryFactory
+  method return type: @MustCall IMMFStats
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/utils/FileUtil.java:120: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-464 $$ java.io.FileDescriptor $$ regular method exit $$ ( 3434, 3446 ) $$ @MustCall method close may not have been invoked on temp-var-464 or any of its aliases.
+    		to_s.getFD().sync();
+    		          ^
+  The type of object is: java.io.FileDescriptor.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:24: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-493 $$ com.ctriposs.bigmap.MapEntryFactoryImpl $$ possible exceptional exit due to mapEntryPool.acquire(1024) with exception type java.io.IOException $$ ( 570, 627 ) $$ @MustCall method close may not have been invoked on temp-var-493 or any of its aliases.
+		mapEntryPool = new MapEntryFactoryImpl(testDir, "acquireAndReleaseTest");
+		               ^
+  The type of object is: com.ctriposs.bigmap.MapEntryFactoryImpl.
+  Reason for going out of scope: possible exceptional exit due to mapEntryPool.acquire(1024) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:248: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-707 $$ com.ctriposs.bigmap.MapEntryFactoryImpl $$ possible exceptional exit due to mapEntryPool.acquire(MapEntryFactoryImpl.MAX_DATA_SLOT_LENGTH) with exception type java.io.IOException $$ ( 11767, 11825 ) $$ @MustCall method close may not have been invoked on temp-var-707 or any of its aliases.
+		mapEntryPool = new MapEntryFactoryImpl(testDir, "TestAcquireInvalidSize");
+		               ^
+  The type of object is: com.ctriposs.bigmap.MapEntryFactoryImpl.
+  Reason for going out of scope: possible exceptional exit due to mapEntryPool.acquire(MapEntryFactoryImpl.MAX_DATA_SLOT_LENGTH) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:271: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-714 $$ com.ctriposs.bigmap.MapEntryFactoryImpl $$ possible exceptional exit due to mapEntryPool.acquire(size) with exception type java.io.IOException $$ ( 12259, 12326 ) $$ @MustCall method close may not have been invoked on temp-var-714 or any of its aliases.
+		mapEntryPool = new MapEntryFactoryImpl(testDir, "TestAcquireAndReleaseRandomSize");
+		               ^
+  The type of object is: com.ctriposs.bigmap.MapEntryFactoryImpl.
+  Reason for going out of scope: possible exceptional exit due to mapEntryPool.acquire(size) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:313: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-739 $$ com.ctriposs.bigmap.MapEntryFactoryImpl $$ possible exceptional exit due to mapEntryPool.acquire(MapEntryFactoryImpl.MAX_DATA_SLOT_LENGTH) with exception type java.io.IOException $$ ( 13889, 13953 ) $$ @MustCall method close may not have been invoked on temp-var-739 or any of its aliases.
+		mapEntryPool = new MapEntryFactoryImpl(testDir, "TestAcquireAndReleaseBigSize");
+		               ^
+  The type of object is: com.ctriposs.bigmap.MapEntryFactoryImpl.
+  Reason for going out of scope: possible exceptional exit due to mapEntryPool.acquire(MapEntryFactoryImpl.MAX_DATA_SLOT_LENGTH) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:345: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-758 $$ com.ctriposs.bigmap.MapEntryFactoryImpl $$ possible exceptional exit due to mapEntryPool.acquire(1024 * (i + 1)) with exception type java.io.IOException $$ ( 15308, 15379 ) $$ @MustCall method close may not have been invoked on temp-var-758 or any of its aliases.
+		mapEntryPool = new MapEntryFactoryImpl(testDir, "TestAcquiredAndReleaseDifferentSize");
+		               ^
+  The type of object is: com.ctriposs.bigmap.MapEntryFactoryImpl.
+  Reason for going out of scope: possible exceptional exit due to mapEntryPool.acquire(1024 * (i + 1)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:379: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-779 $$ com.ctriposs.bigmap.MapEntryFactoryImpl $$ possible exceptional exit due to mapEntryPool.acquire(1024) with exception type java.io.IOException $$ ( 16667, 16732 ) $$ @MustCall method close may not have been invoked on temp-var-779 or any of its aliases.
+		mapEntryPool = new MapEntryFactoryImpl(testDir, "TestAcquireAndReleaseSameSize");
+		               ^
+  The type of object is: com.ctriposs.bigmap.MapEntryFactoryImpl.
+  Reason for going out of scope: possible exceptional exit due to mapEntryPool.acquire(1024) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:479: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-855 $$ com.ctriposs.bigmap.MapEntryFactoryImpl $$ regular method exit $$ ( 21012, 21066 ) $$ @MustCall method close may not have been invoked on temp-var-855 or any of its aliases.
+		mapEntryPool = new MapEntryFactoryImpl(testDir, "TestMultiThreading");
+		               ^
+  The type of object is: com.ctriposs.bigmap.MapEntryFactoryImpl.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PerfTest.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-903 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ possible exceptional exit due to value.toBytes() with exception type java.io.IOException $$ ( 1225, 1281 ) $$ @MustCall method close may not have been invoked on temp-var-903 or any of its aliases.
+		map = new BigConcurrentHashMapImpl(testDir, "testPut", config);
+		      ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: possible exceptional exit due to value.toBytes() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PerfTest.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-935 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ possible exceptional exit due to future.get() with exception type java.lang.InterruptedException $$ ( 2702, 2762 ) $$ @MustCall method close may not have been invoked on temp-var-935 or any of its aliases.
+		map = new BigConcurrentHashMapImpl(testDir, "testPutPerf", config);
+		      ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: possible exceptional exit due to future.get() with exception type java.lang.InterruptedException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PurgeTest.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-994 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ possible exceptional exit due to Thread.sleep(2200) with exception type java.lang.InterruptedException $$ ( 519, 586 ) $$ @MustCall method close may not have been invoked on temp-var-994 or any of its aliases.
+		map = new BigConcurrentHashMapImpl(testDir, "scheduledPurgeTest", config); // 1 second expiration
+		      ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: possible exceptional exit due to Thread.sleep(2200) with exception type java.lang.InterruptedException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PurgeTest.java:71: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1050 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ possible exceptional exit due to Thread.sleep(1000) with exception type java.lang.InterruptedException $$ ( 2352, 2422 ) $$ @MustCall method close may not have been invoked on temp-var-1050 or any of its aliases.
+		map = new BigConcurrentHashMapImpl(testDir, "purgeTriggerByGetTest", config); // 3 second expiration
+		      ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: possible exceptional exit due to Thread.sleep(1000) with exception type java.lang.InterruptedException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PurgeTest.java:101: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1088 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ possible exceptional exit due to Thread.sleep(1000) with exception type java.lang.InterruptedException $$ ( 3570, 3643 ) $$ @MustCall method close may not have been invoked on temp-var-1088 or any of its aliases.
+		map = new BigConcurrentHashMapImpl(testDir, "purgeTriggerByRemoveTest", config); // 3 second expiration
+		      ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: possible exceptional exit due to Thread.sleep(1000) with exception type java.lang.InterruptedException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/page/MappedPageFactoryImpl.java:61: error: (required.method.not.called) $$ 4 $$ method close $$ mpi $$ com.ctriposs.bigmap.page.MappedPageImpl $$ possible exceptional exit due to channel.close() with exception type java.io.IOException $$ ( 1690, 1712 ) $$ @MustCall method close may not have been invoked on mpi or any of its aliases.
+					mpi = cache.get(index); // double check
+					    ^
+  The type of object is: com.ctriposs.bigmap.page.MappedPageImpl.
+  Reason for going out of scope: possible exceptional exit due to channel.close() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/page/MappedPageFactoryImpl.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ mpi $$ com.ctriposs.bigmap.page.MappedPageImpl $$ possible exceptional exit due to channel.close() with exception type java.io.IOException $$ ( 2058, 2104 ) $$ @MustCall method close may not have been invoked on mpi or any of its aliases.
+							mpi = new MappedPageImpl(mbb, fileName, index);
+							    ^
+  The type of object is: com.ctriposs.bigmap.page.MappedPageImpl.
+  Reason for going out of scope: possible exceptional exit due to channel.close() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/page/MappedPageFactoryImpl.java:71: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1169 $$ com.ctriposs.bigmap.page.MappedPageImpl $$ possible exceptional exit due to channel.close() with exception type java.io.IOException $$ ( 2113, 2134 ) $$ @MustCall method close may not have been invoked on temp-var-1169 or any of its aliases.
+							cache.put(index, mpi);
+							         ^
+  The type of object is: com.ctriposs.bigmap.page.MappedPageImpl.
+  Reason for going out of scope: possible exceptional exit due to channel.close() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/page/MappedPageFactoryImpl.java:87: error: (return) $$ 2 $$ @MustCall("close") MappedPageImpl $$ @MustCall IMappedPage $$ ( 2544, 2547 ) $$ incompatible types in return.
+		return mpi;
+		       ^
+  type of expression: @MustCall("close") MappedPageImpl
+  method return type: @MustCall IMappedPage
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/page/MappedPageFactoryImpl.java:281: error: (required.method.not.called) $$ 4 $$ method close $$ mappedPage $$ com.ctriposs.bigmap.page.IMappedPage $$ regular method exit $$ ( 7438, 7460 ) $$ @MustCall method close may not have been invoked on mappedPage or any of its aliases.
+		for(IMappedPage mappedPage : cachedPages) {
+		                ^
+  The type of object is: com.ctriposs.bigmap.page.IMappedPage.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/ReloadTest.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1518 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ possible exceptional exit due to map.getMemoryMappedFileStats().getBackFileUsed() with exception type java.io.IOException $$ ( 424, 475 ) $$ @MustCall method close may not have been invoked on temp-var-1518 or any of its aliases.
+		map = new BigConcurrentHashMapImpl(testDir, "TestReload");
+		      ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: possible exceptional exit due to map.getMemoryMappedFileStats().getBackFileUsed() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/ReloadTest.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1542 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ possible exceptional exit due to map.getMemoryMappedFileStats().getBackFileUsed() with exception type java.io.IOException $$ ( 1242, 1335 ) $$ @MustCall method close may not have been invoked on temp-var-1542 or any of its aliases.
+		map = new BigConcurrentHashMapImpl(testDir, "TestReload", new BigConfig().setReloadOnStartup(true));
+		      ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: possible exceptional exit due to map.getMemoryMappedFileStats().getBackFileUsed() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/ReloadTest.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1554 $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ possible exceptional exit due to map.getMemoryMappedFileStats().getBackFileUsed() with exception type java.io.IOException $$ ( 1826, 1877 ) $$ @MustCall method close may not have been invoked on temp-var-1554 or any of its aliases.
+		map = new BigConcurrentHashMapImpl(testDir, "TestReload");
+		      ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: possible exceptional exit due to map.getMemoryMappedFileStats().getBackFileUsed() with exception type java.io.IOException
+43 errors

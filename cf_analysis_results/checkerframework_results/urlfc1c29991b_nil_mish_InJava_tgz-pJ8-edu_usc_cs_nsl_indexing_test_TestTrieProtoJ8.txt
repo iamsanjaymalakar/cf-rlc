@@ -1,0 +1,91 @@
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/indexing/TrieGenerator.java:51: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-436 $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 1463, 1486 ) $$ @MustCall method close may not have been invoked on temp-var-436 or any of its aliases.
+		BufferedReader br = new BufferedReader(new FileReader(args[0]));
+		                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/indexing/TrieGenerator.java:61: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.FileOutputStream $$ regular method exit $$ ( 1794, 1847 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+		FileOutputStream out = new FileOutputStream(args[1]);
+		                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/indexing/QueryServer.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-516 $$ java.io.FileInputStream $$ possible exceptional exit due to TriePB.parseFrom(new FileInputStream(inputFile)) with exception type java.io.IOException $$ ( 711, 741 ) $$ @MustCall method close may not have been invoked on temp-var-516 or any of its aliases.
+		TriePB tp = TriePB.parseFrom(new FileInputStream(inputFile));
+		                             ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to TriePB.parseFrom(new FileInputStream(inputFile)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java:101: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-566 $$ java.io.FileWriter $$ regular method exit $$ ( 2909, 2954 ) $$ @MustCall method close may not have been invoked on temp-var-566 or any of its aliases.
+				bw[i] = new BufferedWriter(new FileWriter(getTmpFileName(size_range[i])));
+				                           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java:108: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-569 $$ java.io.FileReader $$ possible exceptional exit due to bw[i].write(each_token + "\n") with exception type java.io.IOException $$ ( 3083, 3108 ) $$ @MustCall method close may not have been invoked on temp-var-569 or any of its aliases.
+			br = new BufferedReader(new FileReader(inputFile));
+			                        ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to bw[i].write(each_token + "\n") with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java:192: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-588 $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 5648, 5695 ) $$ @MustCall method close may not have been invoked on temp-var-588 or any of its aliases.
+		br = new BufferedReader(new FileReader(getTmpFileName(max_string_size)));
+		                        ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java:206: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-596 $$ java.io.FileWriter $$ possible exceptional exit due to bw.write('0') with exception type java.io.IOException $$ ( 6095, 6155 ) $$ @MustCall method close may not have been invoked on temp-var-596 or any of its aliases.
+		BufferedWriter bw = new BufferedWriter(new FileWriter(tmpDir+"/chunk_list_"+max_string_size+".txt"));
+		                                       ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bw.write('0') with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java:249: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-615 $$ java.io.FileReader $$ possible exceptional exit due to chunk_list_file.readLine() with exception type java.io.IOException $$ ( 7770, 7826 ) $$ @MustCall method close may not have been invoked on temp-var-615 or any of its aliases.
+		chunk_list_file = new BufferedReader(new FileReader(getTmpChunkListFileName(max_string_size)));
+		                                     ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to chunk_list_file.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java:270: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-625 $$ java.io.FileWriter $$ possible exceptional exit due to new FileReader(getTmpFileName(max_string_size)) with exception type java.io.FileNotFoundException $$ ( 8482, 8543 ) $$ @MustCall method close may not have been invoked on temp-var-625 or any of its aliases.
+		BufferedWriter bw_collision = new BufferedWriter(new FileWriter(getCollisionTmpFileName(max_string_size),true));
+		                                                 ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to new FileReader(getTmpFileName(max_string_size)) with exception type java.io.FileNotFoundException
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java:278: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-628 $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 8903, 8950 ) $$ @MustCall method close may not have been invoked on temp-var-628 or any of its aliases.
+			br = new BufferedReader(new FileReader(getTmpFileName(max_string_size)));
+			                        ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java:343: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-655 $$ java.io.FileWriter $$ possible exceptional exit due to bw_output.write(word_array[i] + "\t" + count_array[i] + "\n") with exception type java.io.IOException $$ ( 11333, 11365 ) $$ @MustCall method close may not have been invoked on temp-var-655 or any of its aliases.
+			BufferedWriter bw_output = new BufferedWriter(new FileWriter(output_file,true));
+			                                              ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bw_output.write(word_array[i] + "\t" + count_array[i] + "\n") with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java:371: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-668 $$ java.io.FileWriter $$ possible exceptional exit due to new FileReader(getCollisionTmpFileName(max_string_size)) with exception type java.io.FileNotFoundException $$ ( 12379, 12411 ) $$ @MustCall method close may not have been invoked on temp-var-668 or any of its aliases.
+		BufferedWriter bw_output = new BufferedWriter(new FileWriter(output_file,true));
+		                                              ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to new FileReader(getCollisionTmpFileName(max_string_size)) with exception type java.io.FileNotFoundException
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java:373: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-672 $$ java.io.FileReader $$ possible exceptional exit due to br_collision.readLine() with exception type java.io.IOException $$ ( 12539, 12595 ) $$ @MustCall method close may not have been invoked on temp-var-672 or any of its aliases.
+		BufferedReader br_collision = new BufferedReader(new FileReader(getCollisionTmpFileName(max_string_size)));
+		                                                 ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br_collision.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java:382: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-681 $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 12952, 12999 ) $$ @MustCall method close may not have been invoked on temp-var-681 or any of its aliases.
+		br = new BufferedReader(new FileReader(getTmpFileName(max_string_size)));
+		                        ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java:433: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-700 $$ java.io.FileReader $$ possible exceptional exit due to br_collision.readLine() with exception type java.io.IOException $$ ( 14647, 14703 ) $$ @MustCall method close may not have been invoked on temp-var-700 or any of its aliases.
+			BufferedReader br_collision = new BufferedReader(new FileReader(getCollisionTmpFileName(max_string_size)));
+			                                                 ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br_collision.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java:452: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-709 $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 15183, 15230 ) $$ @MustCall method close may not have been invoked on temp-var-709 or any of its aliases.
+			br = new BufferedReader(new FileReader(getTmpFileName(max_string_size)));
+			                        ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java:470: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-716 $$ java.io.FileWriter $$ possible exceptional exit due to bw_output.write("" + the_string + "\t" + string_map.get(the_string) + "\n") with exception type java.io.IOException $$ ( 15818, 15850 ) $$ @MustCall method close may not have been invoked on temp-var-716 or any of its aliases.
+			BufferedWriter bw_output = new BufferedWriter(new FileWriter(output_file,true));
+			                                              ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bw_output.write("" + the_string + "\t" + string_map.get(the_string) + "\n") with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/InputGenerator.java:29: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-729 $$ java.io.FileWriter $$ possible exceptional exit due to bw.write(str + "\n") with exception type java.io.IOException $$ ( 874, 897 ) $$ @MustCall method close may not have been invoked on temp-var-729 or any of its aliases.
+		BufferedWriter bw = new BufferedWriter(new FileWriter(args[1]));
+		                                       ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bw.write(str + "\n") with exception type java.io.IOException
+18 errors

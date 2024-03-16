@@ -1,0 +1,3 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^DataOutput.java^68^DataOutput.writeToFile(Ljava/lang/Object;)V^4 = new <Application,Ljava/io/FileOutputStream>@0^DataOutput.writeToFile(Ljava/lang/Object;)V#8,^INVOKE,^false^false^Normal Fix;
+1^DataOutput.java^80^DataOutput.readFile()LNetwork;^3 = new <Application,Ljava/io/FileInputStream>@0^DataOutput.readFile()LNetwork;#6,^INVOKE,^false^false^Normal Fix;

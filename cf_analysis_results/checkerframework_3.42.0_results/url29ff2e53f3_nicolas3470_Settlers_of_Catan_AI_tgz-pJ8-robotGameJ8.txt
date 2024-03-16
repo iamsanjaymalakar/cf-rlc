@@ -1,0 +1,70 @@
+../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/client/SOCPlayerClient.java:846: error: (required.method.not.called) $$ 4 $$ method close $$ new Socket(host, port) $$ java.net.Socket $$ possible exceptional exit due to s.getInputStream() with exception type java.io.IOException $$ ( 28091, 28113 ) $$ @MustCall method close may not have been invoked on new Socket(host, port) or any of its aliases.
+            s = new Socket(host, port);
+                ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to s.getInputStream() with exception type java.io.IOException
+../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/client/SOCConnectOrPracticePanel.java:133: error: (required.method.not.called) $$ 4 $$ method close $$ ss $$ java.net.ServerSocket $$ regular method exit $$ ( 4590, 4621 ) $$ @MustCall method close may not have been invoked on ss or any of its aliases.
+                    ss = new ServerSocket(i + port);
+                       ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/client/SOCConnectOrPracticePanel.java:136: error: (required.method.not.called) $$ 4 $$ method close $$ ss.accept() $$ java.net.Socket $$ possible exceptional exit due to ss.close() with exception type java.net.SocketTimeoutException $$ ( 4756, 4767 ) $$ @MustCall method close may not have been invoked on ss.accept() or any of its aliases.
+                    ss.accept();  // will time out soon
+                             ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to ss.close() with exception type java.net.SocketTimeoutException
+../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/server/SOCServer.java:5471: error: (required.method.not.called) $$ 4 $$ method close $$ out_stream $$ java.io.FileWriter $$ possible exceptional exit due to bw.write(stats) with exception type java.io.FileNotFoundException $$ ( 215542, 215600 ) $$ @MustCall method close may not have been invoked on out_stream or any of its aliases.
+				FileWriter out_stream = new FileWriter("output.txt",true);
+				           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bw.write(stats) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/server/SOCServer.java:7716: error: (required.method.not.called) $$ 4 $$ method close $$ out_stream $$ java.io.FileWriter $$ possible exceptional exit due to bw.write("Player " + i + " was null!") with exception type java.io.IOException $$ ( 303292, 303350 ) $$ @MustCall method close may not have been invoked on out_stream or any of its aliases.
+			FileWriter out_stream = new FileWriter("output.txt",true);
+			           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bw.write("Player " + i + " was null!") with exception type java.io.IOException
+../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/server/genericServer/Server.java:1063: error: (required.method.not.called) $$ 4 $$ method close $$ new ServerSocket(port) $$ java.net.ServerSocket $$ regular method exit $$ ( 38164, 38186 ) $$ @MustCall method close may not have been invoked on new ServerSocket(port) or any of its aliases.
+            implServSocket = new ServerSocket(port);
+                             ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/server/genericServer/Server.java:1069: error: (required.method.not.called) $$ 4 $$ method close $$ s $$ java.net.Socket $$ regular method exit $$ ( 38331, 38366 ) $$ @MustCall method close may not have been invoked on s or any of its aliases.
+            Socket s = implServSocket.accept();
+                   ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/client/SOCAccountClient.java:351: error: (required.method.not.called) $$ 4 $$ method close $$ new Socket(host, port) $$ java.net.Socket $$ possible exceptional exit due to s.getInputStream() with exception type java.io.IOException $$ ( 10251, 10273 ) $$ @MustCall method close may not have been invoked on new Socket(host, port) or any of its aliases.
+            s = new Socket(host, port);
+                ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to s.getInputStream() with exception type java.io.IOException
+../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/robot/SOCRobotClient.java:233: error: (required.method.not.called) $$ 4 $$ method close $$ new Socket(host, port) $$ java.net.Socket $$ possible exceptional exit due to s.setSoTimeout(300000) with exception type java.net.SocketException $$ ( 6895, 6917 ) $$ @MustCall method close may not have been invoked on new Socket(host, port) or any of its aliases.
+                s = new Socket(host, port);
+                    ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to s.setSoTimeout(300000) with exception type java.net.SocketException
+../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/robot/SOCRobotClient.java:273: error: (required.method.not.called) $$ 4 $$ method close $$ new Socket(host, port) $$ java.net.Socket $$ possible exceptional exit due to s.getInputStream() with exception type java.io.IOException $$ ( 8222, 8244 ) $$ @MustCall method close may not have been invoked on new Socket(host, port) or any of its aliases.
+                s = new Socket(host, port);
+                    ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to s.getInputStream() with exception type java.io.IOException
+../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/ourRobot/SOCGameStarterRobot.java:86: error: (required.method.not.called) $$ 4 $$ method close $$ new Socket(host, port) $$ java.net.Socket $$ possible exceptional exit due to s.setSoTimeout(300000) with exception type java.net.SocketException $$ ( 2724, 2746 ) $$ @MustCall method close may not have been invoked on new Socket(host, port) or any of its aliases.
+                s = new Socket(host, port);
+                    ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to s.setSoTimeout(300000) with exception type java.net.SocketException
+../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/util/Version.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ regular method exit $$ ( 1795, 1857 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+      InputStream in = Version.class.getResourceAsStream (resource);
+                  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/server/database/SOCDBHelper.java:242: error: (required.method.not.called) $$ 4 $$ method close $$ DriverManager.getConnection(dbURL, user, pswd) $$ java.sql.Connection $$ possible exceptional exit due to connection.prepareStatement(CREATE_ACCOUNT_COMMAND) with exception type java.sql.SQLException $$ ( 10450, 10496 ) $$ @MustCall method close may not have been invoked on DriverManager.getConnection(dbURL, user, pswd) or any of its aliases.
+        connection = DriverManager.getConnection(dbURL, user, pswd);
+                                                ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: possible exceptional exit due to connection.prepareStatement(CREATE_ACCOUNT_COMMAND) with exception type java.sql.SQLException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+13 errors

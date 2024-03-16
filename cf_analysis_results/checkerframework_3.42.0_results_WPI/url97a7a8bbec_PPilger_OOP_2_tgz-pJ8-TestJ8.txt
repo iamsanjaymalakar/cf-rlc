@@ -1,0 +1,17 @@
+../dataset/june2020_dataset/url97a7a8bbec_PPilger_OOP_2_tgz-pJ8-TestJ8/src/Termine.java:50: error: (owning.override.param) $$ 5 $$ termin $$ add $$ Termine $$ add $$ Selection $$ ( 1346, 1494 ) $$ Incompatible ownership for parameter termin.
+	public boolean add(Termin termin) {
+	               ^
+  found   : no ownership annotation or @NotOwning
+  required: @Owning
+  Consequence: method add in Termine cannot override method add in Selection
+../dataset/june2020_dataset/url97a7a8bbec_PPilger_OOP_2_tgz-pJ8-TestJ8/src/Programm.java:61: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(file) $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(file)) with exception type java.io.IOException $$ ( 1278, 1304 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(file) or any of its aliases.
+			dos = new ObjectOutputStream(new FileOutputStream(file));
+			                             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(file)) with exception type java.io.IOException
+../dataset/june2020_dataset/url97a7a8bbec_PPilger_OOP_2_tgz-pJ8-TestJ8/src/Programm.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(file) $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(new FileInputStream(file)) with exception type java.io.IOException $$ ( 1672, 1697 ) $$ @MustCall method close may not have been invoked on new FileInputStream(file) or any of its aliases.
+			ois = new ObjectInputStream(new FileInputStream(file));
+			                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(new FileInputStream(file)) with exception type java.io.IOException
+3 errors

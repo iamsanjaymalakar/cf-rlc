@@ -1,0 +1,56 @@
+../dataset/june2020_dataset/url29ae058134_yuriy_chumak_jatha_tgz-pJ8-org_jatha_LispJ8/src/org/jatha/compile/LispCompiler.java:269: error: (required.method.not.called) $$ 4 $$ method close $$ classLoader.getResourceAsStream(pkg.replace('.', '/') + module) $$ java.io.InputStream $$ possible exceptional exit due to new InputStreamReader(classLoader.getResourceAsStream(pkg.replace('.', '/') + module)) with exception type org.jatha.exception.LispUndefinedFunctionException $$ ( 9201, 9264 ) $$ @MustCall method close may not have been invoked on classLoader.getResourceAsStream(pkg.replace('.', '/') + module) or any of its aliases.
+						classLoader.getResourceAsStream(pkg.replace('.', '/') + module)
+						                               ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new InputStreamReader(classLoader.getResourceAsStream(pkg.replace('.', '/') + module)) with exception type org.jatha.exception.LispUndefinedFunctionException
+../dataset/june2020_dataset/url29ae058134_yuriy_chumak_jatha_tgz-pJ8-org_jatha_LispJ8/src/org/jatha/read/LispParser.java:148: error: (required.method.not.called) $$ 4 $$ method close $$ new PushbackReader(inStream) $$ java.io.PushbackReader $$ regular method exit $$ ( 5034, 5062 ) $$ @MustCall method close may not have been invoked on new PushbackReader(inStream) or any of its aliases.
+			inputReader   = new PushbackReader(inStream);
+			                ^
+  The type of object is: java.io.PushbackReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url29ae058134_yuriy_chumak_jatha_tgz-pJ8-org_jatha_LispJ8/src/org/jatha/read/LispParser.java:209: error: (required.method.not.called) $$ 4 $$ method close $$ new PushbackReader(new StringReader(s)) $$ java.io.PushbackReader $$ regular method exit $$ ( 6400, 6439 ) $$ @MustCall method close may not have been invoked on new PushbackReader(new StringReader(s)) or any of its aliases.
+    this.inputReader = new PushbackReader(new StringReader(s));
+                       ^
+  The type of object is: java.io.PushbackReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url29ae058134_yuriy_chumak_jatha_tgz-pJ8-org_jatha_LispJ8/src/org/jatha/Lisp.java:384: error: (required.method.not.called) $$ 4 $$ method close $$ jarFile $$ java.util.jar.JarFile $$ possible exceptional exit due to jarFile.getJarEntry(filename) with exception type java.lang.SecurityException $$ ( 11179, 11224 ) $$ @MustCall method close may not have been invoked on jarFile or any of its aliases.
+      JarFile jarFile = new JarFile(jarFileString);
+              ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: possible exceptional exit due to jarFile.getJarEntry(filename) with exception type java.lang.SecurityException
+../dataset/june2020_dataset/url29ae058134_yuriy_chumak_jatha_tgz-pJ8-org_jatha_LispJ8/src/org/jatha/Lisp.java:389: error: (required.method.not.called) $$ 4 $$ method close $$ jarFile.getInputStream(je) $$ java.io.InputStream $$ possible exceptional exit due to new InputStreamReader(jarFile.getInputStream(je)) with exception type java.lang.SecurityException $$ ( 11371, 11397 ) $$ @MustCall method close may not have been invoked on jarFile.getInputStream(je) or any of its aliases.
+      LispValue result = load(new InputStreamReader(jarFile.getInputStream(je)));
+                                                                          ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new InputStreamReader(jarFile.getInputStream(je)) with exception type java.lang.SecurityException
+../dataset/june2020_dataset/url29ae058134_yuriy_chumak_jatha_tgz-pJ8-org_jatha_LispJ8/src/org/jatha/Lisp.java:429: error: (required.method.not.called) $$ 4 $$ method close $$ resourceStream $$ java.io.InputStream $$ regular method exit $$ ( 12859, 12954 ) $$ @MustCall method close may not have been invoked on resourceStream or any of its aliases.
+    InputStream resourceStream =
+                ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url29ae058134_yuriy_chumak_jatha_tgz-pJ8-org_jatha_LispJ8/src/org/jatha/Lisp.java:777: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(filename) $$ java.io.FileReader $$ regular method exit $$ ( 21538, 21562 ) $$ @MustCall method close may not have been invoked on new FileReader(filename) or any of its aliases.
+      return load(new FileReader(filename));
+                  ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url29ae058134_yuriy_chumak_jatha_tgz-pJ8-org_jatha_LispJ8/src/org/jatha/Tests.java:49: error: (required.method.not.called) $$ 4 $$ method close $$ Tests.class.getClassLoader().getResourceAsStream(TESTS + "/NIL") $$ java.io.InputStream $$ regular method exit $$ ( 1570, 1634 ) $$ @MustCall method close may not have been invoked on Tests.class.getClassLoader().getResourceAsStream(TESTS + "/NIL") or any of its aliases.
+					Tests.class.getClassLoader().getResourceAsStream(TESTS + "/NIL")
+					                                                ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url29ae058134_yuriy_chumak_jatha_tgz-pJ8-org_jatha_LispJ8/src/org/jatha/Tests.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ Tests.class.getClassLoader().getResourceAsStream(TESTS + "/" + filename.getName()) $$ java.io.InputStream $$ regular method exit $$ ( 2420, 2502 ) $$ @MustCall method close may not have been invoked on Tests.class.getClassLoader().getResourceAsStream(TESTS + "/" + filename.getName()) or any of its aliases.
+						Tests.class.getClassLoader().getResourceAsStream(TESTS + "/" + filename.getName())
+						                                                ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url29ae058134_yuriy_chumak_jatha_tgz-pJ8-org_jatha_LispJ8/src/org/jatha/extras/SETF.java:54: error: (required.method.not.called) $$ 4 $$ method close $$ SETF.class.getClassLoader().getResourceAsStream(SETF.class.getPackage().getName().replace(".", "/") + "/SETF") $$ java.io.InputStream $$ regular method exit $$ ( 1614, 1745 ) $$ @MustCall method close may not have been invoked on SETF.class.getClassLoader().getResourceAsStream(SETF.class.getPackage().getName().replace(".", "/") + "/SETF") or any of its aliases.
+					SETF.class.getClassLoader().getResourceAsStream(
+					                                               ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url29ae058134_yuriy_chumak_jatha_tgz-pJ8-org_jatha_LispJ8/src/org/jatha/extras/FUNCTION.java:205: error: (required.method.not.called) $$ 4 $$ method close $$ FUNCTION.class.getClassLoader().getResourceAsStream(FUNCTION.class.getPackage().getName().replace(".", "/") + "/FUNCTION") $$ java.io.InputStream $$ regular method exit $$ ( 6147, 6290 ) $$ @MustCall method close may not have been invoked on FUNCTION.class.getClassLoader().getResourceAsStream(FUNCTION.class.getPackage().getName().replace(".", "/") + "/FUNCTION") or any of its aliases.
+					FUNCTION.class.getClassLoader().getResourceAsStream(
+					                                                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+11 errors

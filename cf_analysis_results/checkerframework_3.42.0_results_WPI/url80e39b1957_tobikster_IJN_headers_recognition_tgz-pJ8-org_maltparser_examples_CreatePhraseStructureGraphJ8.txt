@@ -1,0 +1,526 @@
+warning: MustCallChecker did not find annotation file or directory ../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+warning: ResourceLeakChecker did not find annotation file or directory ../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/SingleMalt.java:291: error: (required.method.not.called) $$ 4 $$ method close $$ configDir.getInfoFileWriter() $$ java.io.BufferedWriter $$ possible exceptional exit due to getOptionValue("guide", "features") with exception type org.maltparser.core.exception.MaltChainedException $$ ( 10595, 10624 ) $$ @MustCall method close may not have been invoked on configDir.getInfoFileWriter() or any of its aliases.
+			if (configDir.getInfoFileWriter() != null) {
+			                               ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope: possible exceptional exit due to getOptionValue("guide", "features") with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/SingleMalt.java:292: error: (required.method.not.called) $$ 4 $$ method close $$ configDir.getInfoFileWriter() $$ java.io.BufferedWriter $$ possible exceptional exit due to configDir.getInfoFileWriter().write("\nDEPENDENCIES\n") with exception type java.io.IOException $$ ( 10641, 10670 ) $$ @MustCall method close may not have been invoked on configDir.getInfoFileWriter() or any of its aliases.
+				configDir.getInfoFileWriter().write("\nDEPENDENCIES\n");
+				                           ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope: possible exceptional exit due to configDir.getInfoFileWriter().write("\nDEPENDENCIES\n") with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/SingleMalt.java:314: error: (required.method.not.called) $$ 4 $$ method close $$ configDir.getInfoFileWriter() $$ java.io.BufferedWriter $$ possible exceptional exit due to getOptionValue("guide", "data_split_column") with exception type org.maltparser.core.exception.MaltChainedException $$ ( 11956, 11985 ) $$ @MustCall method close may not have been invoked on configDir.getInfoFileWriter() or any of its aliases.
+			if (configDir.getInfoFileWriter() != null) {
+			                               ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope: possible exceptional exit due to getOptionValue("guide", "data_split_column") with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/SingleMalt.java:315: error: (required.method.not.called) $$ 4 $$ method close $$ configDir.getInfoFileWriter() $$ java.io.BufferedWriter $$ possible exceptional exit due to getOptionValue("guide", "features") with exception type org.maltparser.core.exception.MaltChainedException $$ ( 12002, 12031 ) $$ @MustCall method close may not have been invoked on configDir.getInfoFileWriter() or any of its aliases.
+				configDir.getInfoFileWriter().write("--guide-features (  -F)                 "+getOptionValue("guide", "features").toString()+"\n");
+				                           ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope: possible exceptional exit due to getOptionValue("guide", "features") with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/SingleMalt.java:321: error: (required.method.not.called) $$ 4 $$ method close $$ configDir.getInfoFileWriter() $$ java.io.BufferedWriter $$ regular method exit $$ ( 12634, 12663 ) $$ @MustCall method close may not have been invoked on configDir.getInfoFileWriter() or any of its aliases.
+				if (configDir.getInfoFileWriter() != null) {
+				                               ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/SingleMalt.java:322: error: (required.method.not.called) $$ 4 $$ method close $$ configDir.getInfoFileWriter() $$ java.io.BufferedWriter $$ possible exceptional exit due to configDir.getInfoFileWriter().write("--guide-data_split_structure (  -s)\n") with exception type java.io.IOException $$ ( 12681, 12710 ) $$ @MustCall method close may not have been invoked on configDir.getInfoFileWriter() or any of its aliases.
+					configDir.getInfoFileWriter().write("--guide-data_split_structure (  -s)\n");
+					                           ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope: possible exceptional exit due to configDir.getInfoFileWriter().write("--guide-data_split_structure (  -s)\n") with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/SingleMalt.java:328: error: (required.method.not.called) $$ 4 $$ method close $$ configDir.getInfoFileWriter() $$ java.io.BufferedWriter $$ regular method exit $$ ( 13256, 13285 ) $$ @MustCall method close may not have been invoked on configDir.getInfoFileWriter() or any of its aliases.
+				if (configDir.getInfoFileWriter() != null) {
+				                               ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/SingleMalt.java:329: error: (required.method.not.called) $$ 4 $$ method close $$ configDir.getInfoFileWriter() $$ java.io.BufferedWriter $$ possible exceptional exit due to configDir.getInfoFileWriter().write("--guide-data_split_column (  -d)\n") with exception type java.io.IOException $$ ( 13303, 13332 ) $$ @MustCall method close may not have been invoked on configDir.getInfoFileWriter() or any of its aliases.
+					configDir.getInfoFileWriter().write("--guide-data_split_column (  -d)\n");
+					                           ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope: possible exceptional exit due to configDir.getInfoFileWriter().write("--guide-data_split_column (  -d)\n") with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/SingleMalt.java:359: error: (required.method.not.called) $$ 4 $$ method close $$ configDir.getInfoFileWriter() $$ java.io.BufferedWriter $$ regular method exit $$ ( 14913, 14942 ) $$ @MustCall method close may not have been invoked on configDir.getInfoFileWriter() or any of its aliases.
+				if (configDir.getInfoFileWriter() != null) {
+				                               ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/SingleMalt.java:360: error: (required.method.not.called) $$ 4 $$ method close $$ configDir.getInfoFileWriter() $$ java.io.BufferedWriter $$ possible exceptional exit due to getOptionValue("guide", "decision_settings") with exception type org.maltparser.core.exception.MaltChainedException $$ ( 14960, 14989 ) $$ @MustCall method close may not have been invoked on configDir.getInfoFileWriter() or any of its aliases.
+					configDir.getInfoFileWriter().write("--guide-decision_settings (  -gds)                 "+getOptionValue("guide", "decision_settings").toString()+"\n");
+					                           ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope: possible exceptional exit due to getOptionValue("guide", "decision_settings") with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/SingleMalt.java:363: error: (required.method.not.called) $$ 4 $$ method close $$ configDir.getInfoFileWriter() $$ java.io.BufferedWriter $$ regular method exit $$ ( 15134, 15163 ) $$ @MustCall method close may not have been invoked on configDir.getInfoFileWriter() or any of its aliases.
+			if (configDir.getInfoFileWriter() != null) {
+			                               ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/SingleMalt.java:364: error: (required.method.not.called) $$ 4 $$ method close $$ configDir.getInfoFileWriter() $$ java.io.BufferedWriter $$ possible exceptional exit due to configDir.getInfoFileWriter().flush() with exception type java.io.IOException $$ ( 15180, 15209 ) $$ @MustCall method close may not have been invoked on configDir.getInfoFileWriter() or any of its aliases.
+				configDir.getInfoFileWriter().flush();
+				                           ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope: possible exceptional exit due to configDir.getInfoFileWriter().flush() with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/io/dataformat/DataFormatSpecification.java:73: error: (required.method.not.called) $$ 4 $$ method close $$ url.openStream() $$ java.io.InputStream $$ possible exceptional exit due to db.parse(url.openStream()) with exception type java.io.IOException $$ ( 2463, 2479 ) $$ @MustCall method close may not have been invoked on url.openStream() or any of its aliases.
+    		Element root = db.parse(url.openStream()).getDocumentElement();
+    		                                      ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to db.parse(url.openStream()) with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:174: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ regular method exit $$ ( 6555, 6601 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+				InputStream is = outputFormatURL.openStream();
+				            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:319: error: (required.method.not.called) $$ 4 $$ method close $$ mcoFile $$ java.util.jar.JarFile $$ regular method exit $$ ( 13184, 13241 ) $$ @MustCall method close may not have been invoked on mcoFile or any of its aliases.
+			JarFile mcoFile = new JarFile(mcoPath.getAbsolutePath());
+			        ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:337: error: (required.method.not.called) $$ 4 $$ method close $$ mcoFile $$ java.util.jar.JarFile $$ possible exceptional exit due to throw new FileNotFoundException(); with exception type java.io.FileNotFoundException $$ ( 14020, 14056 ) $$ @MustCall method close may not have been invoked on mcoFile or any of its aliases.
+				JarFile mcoFile = conn.getJarFile();
+				        ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: possible exceptional exit due to throw new FileNotFoundException(); with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:354: error: (required.method.not.called) $$ 4 $$ method close $$ mcoFile $$ java.util.jar.JarFile $$ possible exceptional exit due to throw new FileNotFoundException(); with exception type java.io.FileNotFoundException $$ ( 14714, 14771 ) $$ @MustCall method close may not have been invoked on mcoFile or any of its aliases.
+                    JarFile mcoFile = new JarFile(mcoPath.getAbsolutePath());
+                            ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: possible exceptional exit due to throw new FileNotFoundException(); with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:378: error: (required.method.not.called) $$ 4 $$ method close $$ mcoFile $$ java.util.jar.JarFile $$ possible exceptional exit due to throw new FileNotFoundException(); with exception type java.io.FileNotFoundException $$ ( 15932, 15959 ) $$ @MustCall method close may not have been invoked on mcoFile or any of its aliases.
+				mcoFile = conn.getJarFile();
+				        ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: possible exceptional exit due to throw new FileNotFoundException(); with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:397: error: (required.method.not.called) $$ 4 $$ method close $$ mcoFile $$ java.util.jar.JarFile $$ possible exceptional exit due to throw new FileNotFoundException(); with exception type java.io.FileNotFoundException $$ ( 16768, 16825 ) $$ @MustCall method close may not have been invoked on mcoFile or any of its aliases.
+		        JarFile mcoFile = new JarFile(mcoPath.getAbsolutePath());
+		                ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: possible exceptional exit due to throw new FileNotFoundException(); with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:477: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(source) $$ java.io.FileInputStream $$ possible exceptional exit due to new FileOutputStream(destination) with exception type java.io.FileNotFoundException $$ ( 20589, 20616 ) $$ @MustCall method close may not have been invoked on new FileInputStream(source) or any of its aliases.
+	    	BufferedInputStream bis = new BufferedInputStream(new FileInputStream(source));
+	    	                                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(destination) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:478: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(destination) $$ java.io.FileOutputStream $$ possible exceptional exit due to bis.read(readBuffer, 0, BUFFER) with exception type java.io.FileNotFoundException $$ ( 20681, 20714 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(destination) or any of its aliases.
+	        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(destination), BUFFER);
+	                                                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to bis.read(readBuffer, 0, BUFFER) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:522: error: (required.method.not.called) $$ 4 $$ method close $$ url.openStream() $$ java.io.InputStream $$ possible exceptional exit due to new FileOutputStream(destination) with exception type java.io.FileNotFoundException $$ ( 22318, 22334 ) $$ @MustCall method close may not have been invoked on url.openStream() or any of its aliases.
+	    	BufferedInputStream bis = new BufferedInputStream(url.openStream());
+	    	                                                                ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(destination) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:523: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(destination) $$ java.io.FileOutputStream $$ possible exceptional exit due to bis.read(readBuffer, 0, BUFFER) with exception type java.io.FileNotFoundException $$ ( 22399, 22432 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(destination) or any of its aliases.
+	        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(destination), BUFFER);
+	                                                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to bis.read(readBuffer, 0, BUFFER) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:609: error: (required.method.not.called) $$ 4 $$ method close $$ getOutputStreamWriter(getName() + "_" + getType() + ".info") $$ java.io.OutputStreamWriter $$ possible exceptional exit due to throw new ConfigurationException("Could not create the maltparser info file. "); with exception type org.maltparser.core.config.ConfigurationException $$ ( 25033, 25087 ) $$ @MustCall method close may not have been invoked on getOutputStreamWriter(getName() + "_" + getType() + ".info") or any of its aliases.
+		infoFile = new BufferedWriter(getOutputStreamWriter(getName()+"_"+getType()+".info"));
+		                                                   ^
+  The type of object is: java.io.OutputStreamWriter.
+  Reason for going out of scope: possible exceptional exit due to throw new ConfigurationException("Could not create the maltparser info file. "); with exception type org.maltparser.core.config.ConfigurationException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:652: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(workingDirectory.getPath() + File.separator + getName() + ".mco") $$ java.io.FileOutputStream $$ possible exceptional exit due to new JarOutputStream(new FileOutputStream(workingDirectory.getPath() + File.separator + getName() + ".mco")) with exception type java.io.FileNotFoundException $$ ( 26859, 26939 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(workingDirectory.getPath() + File.separator + getName() + ".mco") or any of its aliases.
+			JarOutputStream jos = new JarOutputStream(new FileOutputStream(workingDirectory.getPath()+File.separator+getName()+".mco"));
+			                                          ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new JarOutputStream(new FileOutputStream(workingDirectory.getPath() + File.separator + getName() + ".mco")) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:679: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to jos.putNextEntry(entry) with exception type java.io.FileNotFoundException $$ ( 28028, 28073 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+				FileInputStream fis = new FileInputStream(f);
+				                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to jos.putNextEntry(entry) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:702: error: (required.method.not.called) $$ 4 $$ method close $$ jar $$ java.util.jar.JarFile $$ possible exceptional exit due to new FileOutputStream(out) with exception type java.io.FileNotFoundException $$ ( 28824, 28854 ) $$ @MustCall method close may not have been invoked on jar or any of its aliases.
+			JarFile jar = new JarFile(in);
+			        ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(out) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:703: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(out) $$ java.io.FileOutputStream $$ possible exceptional exit due to new JarOutputStream(new FileOutputStream(out)) with exception type java.io.IOException $$ ( 28905, 28930 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(out) or any of its aliases.
+			JarOutputStream tempJar = new JarOutputStream(new FileOutputStream(out));
+			                                              ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new JarOutputStream(new FileOutputStream(out)) with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:711: error: (required.method.not.called) $$ 4 $$ method close $$ entryStream $$ java.io.InputStream $$ possible exceptional exit due to tempJar.putNextEntry(outEntry) with exception type java.io.IOException $$ ( 29281, 29335 ) $$ @MustCall method close may not have been invoked on entryStream or any of its aliases.
+	            InputStream entryStream = jar.getInputStream(inEntry);
+	                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to tempJar.putNextEntry(outEntry) with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:734: error: (required.method.not.called) $$ 4 $$ method close $$ f.findURLinJars(versioning.getFeatureModelXML()).openStream() $$ java.io.InputStream $$ possible exceptional exit due to tempJar.putNextEntry(new JarEntry(versioning.getNewConfigName() + "/" + versioning.getFeatureModelXML().substring(index + 1))) with exception type java.io.IOException $$ ( 30448, 30509 ) $$ @MustCall method close may not have been invoked on f.findURLinJars(versioning.getFeatureModelXML()).openStream() or any of its aliases.
+    	    	BufferedInputStream bis = new BufferedInputStream(f.findURLinJars(versioning.getFeatureModelXML()).openStream());
+    	    	                                                                                                             ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to tempJar.putNextEntry(new JarEntry(versioning.getNewConfigName() + "/" + versioning.getFeatureModelXML().substring(index + 1))) with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:744: error: (required.method.not.called) $$ 4 $$ method close $$ f.findURLinJars(versioning.getInputFormatXML()).openStream() $$ java.io.InputStream $$ possible exceptional exit due to tempJar.putNextEntry(new JarEntry(versioning.getNewConfigName() + "/" + versioning.getInputFormatXML().substring(index + 1))) with exception type java.io.IOException $$ ( 31071, 31131 ) $$ @MustCall method close may not have been invoked on f.findURLinJars(versioning.getInputFormatXML()).openStream() or any of its aliases.
+    	    	BufferedInputStream bis = new BufferedInputStream(f.findURLinJars(versioning.getInputFormatXML()).openStream());
+    	    	                                                                                                            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to tempJar.putNextEntry(new JarEntry(versioning.getNewConfigName() + "/" + versioning.getInputFormatXML().substring(index + 1))) with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:766: error: (required.method.not.called) $$ 4 $$ method close $$ url.openConnection().getInputStream() $$ java.io.InputStream $$ possible exceptional exit due to new JarInputStream(url.openConnection().getInputStream()) with exception type java.io.IOException $$ ( 31861, 31898 ) $$ @MustCall method close may not have been invoked on url.openConnection().getInputStream() or any of its aliases.
+			JarInputStream jis = new JarInputStream(url.openConnection().getInputStream());
+			                                                                           ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new JarInputStream(url.openConnection().getInputStream()) with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:805: error: (required.method.not.called) $$ 4 $$ method close $$ jis $$ java.util.jar.JarInputStream $$ possible exceptional exit due to jis.getNextJarEntry() with exception type java.io.FileNotFoundException $$ ( 33342, 33447 ) $$ @MustCall method close may not have been invoked on jis or any of its aliases.
+	    		jis = new JarInputStream(new FileInputStream(workingDirectory.getPath()+File.separator+getName()+".mco"));
+	    		    ^
+  The type of object is: java.util.jar.JarInputStream.
+  Reason for going out of scope: possible exceptional exit due to jis.getNextJarEntry() with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:805: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(workingDirectory.getPath() + File.separator + getName() + ".mco") $$ java.io.FileInputStream $$ possible exceptional exit due to new JarInputStream(new FileInputStream(workingDirectory.getPath() + File.separator + getName() + ".mco")) with exception type java.io.FileNotFoundException $$ ( 33367, 33446 ) $$ @MustCall method close may not have been invoked on new FileInputStream(workingDirectory.getPath() + File.separator + getName() + ".mco") or any of its aliases.
+	    		jis = new JarInputStream(new FileInputStream(workingDirectory.getPath()+File.separator+getName()+".mco"));
+	    		                         ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new JarInputStream(new FileInputStream(workingDirectory.getPath() + File.separator + getName() + ".mco")) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:807: error: (required.method.not.called) $$ 4 $$ method close $$ jis $$ java.util.jar.JarInputStream $$ possible exceptional exit due to jis.getNextJarEntry() with exception type java.io.FileNotFoundException $$ ( 33473, 33536 ) $$ @MustCall method close may not have been invoked on jis or any of its aliases.
+	    		jis = new JarInputStream(url.openConnection().getInputStream());
+	    		    ^
+  The type of object is: java.util.jar.JarInputStream.
+  Reason for going out of scope: possible exceptional exit due to jis.getNextJarEntry() with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:807: error: (required.method.not.called) $$ 4 $$ method close $$ url.openConnection().getInputStream() $$ java.io.InputStream $$ possible exceptional exit due to new JarInputStream(url.openConnection().getInputStream()) with exception type java.io.FileNotFoundException $$ ( 33498, 33535 ) $$ @MustCall method close may not have been invoked on url.openConnection().getInputStream() or any of its aliases.
+	    		jis = new JarInputStream(url.openConnection().getInputStream());
+	    		                                                            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new JarInputStream(url.openConnection().getInputStream()) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:840: error: (required.method.not.called) $$ 4 $$ method close $$ jis $$ java.util.jar.JarInputStream $$ possible exceptional exit due to unpackConfigFile(jis) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 34564, 34669 ) $$ @MustCall method close may not have been invoked on jis or any of its aliases.
+	    		jis = new JarInputStream(new FileInputStream(workingDirectory.getPath()+File.separator+getName()+".mco"));
+	    		    ^
+  The type of object is: java.util.jar.JarInputStream.
+  Reason for going out of scope: possible exceptional exit due to unpackConfigFile(jis) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:840: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(workingDirectory.getPath() + File.separator + getName() + ".mco") $$ java.io.FileInputStream $$ possible exceptional exit due to new JarInputStream(new FileInputStream(workingDirectory.getPath() + File.separator + getName() + ".mco")) with exception type java.io.FileNotFoundException $$ ( 34589, 34668 ) $$ @MustCall method close may not have been invoked on new FileInputStream(workingDirectory.getPath() + File.separator + getName() + ".mco") or any of its aliases.
+	    		jis = new JarInputStream(new FileInputStream(workingDirectory.getPath()+File.separator+getName()+".mco"));
+	    		                         ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new JarInputStream(new FileInputStream(workingDirectory.getPath() + File.separator + getName() + ".mco")) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:842: error: (required.method.not.called) $$ 4 $$ method close $$ jis $$ java.util.jar.JarInputStream $$ possible exceptional exit due to unpackConfigFile(jis) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 34695, 34758 ) $$ @MustCall method close may not have been invoked on jis or any of its aliases.
+	    		jis = new JarInputStream(url.openConnection().getInputStream());
+	    		    ^
+  The type of object is: java.util.jar.JarInputStream.
+  Reason for going out of scope: possible exceptional exit due to unpackConfigFile(jis) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:842: error: (required.method.not.called) $$ 4 $$ method close $$ url.openConnection().getInputStream() $$ java.io.InputStream $$ possible exceptional exit due to new JarInputStream(url.openConnection().getInputStream()) with exception type java.io.FileNotFoundException $$ ( 34720, 34757 ) $$ @MustCall method close may not have been invoked on url.openConnection().getInputStream() or any of its aliases.
+	    		jis = new JarInputStream(url.openConnection().getInputStream());
+	    		                                                            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new JarInputStream(url.openConnection().getInputStream()) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:897: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(workingDirectory.getPath() + File.separator + entryName) $$ java.io.FileOutputStream $$ possible exceptional exit due to jis.read(readBuffer, 0, BUFFER) with exception type java.io.IOException $$ ( 37097, 37170 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(workingDirectory.getPath() + File.separator + entryName) or any of its aliases.
+		        	bos = new BufferedOutputStream(new FileOutputStream(workingDirectory.getPath()+File.separator+entryName), BUFFER);
+		        	                               ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to jis.read(readBuffer, 0, BUFFER) with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:1031: error: (required.method.not.called) $$ 4 $$ method close $$ getInputStreamReaderFromConfigFileEntry(getName() + "_" + getType() + ".info", "UTF-8") $$ java.io.InputStreamReader $$ possible exceptional exit due to throw new ConfigurationException("Could not retrieve the version number of the MaltParser configuration.", e); with exception type org.maltparser.core.config.ConfigurationException $$ ( 41041, 41122 ) $$ @MustCall method close may not have been invoked on getInputStreamReaderFromConfigFileEntry(getName() + "_" + getType() + ".info", "UTF-8") or any of its aliases.
+			BufferedReader br = new BufferedReader(getInputStreamReaderFromConfigFileEntry(getName()+"_"+getType()+".info", "UTF-8"));
+			                                                                              ^
+  The type of object is: java.io.InputStreamReader.
+  Reason for going out of scope: possible exceptional exit due to throw new ConfigurationException("Could not retrieve the version number of the MaltParser configuration.", e); with exception type org.maltparser.core.config.ConfigurationException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:1095: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(configDirectory.getPath() + File.separator + "savedoptions.sop.old") $$ java.io.FileReader $$ possible exceptional exit due to new FileWriter(configDirectory.getPath() + File.separator + "savedoptions.sop") with exception type java.io.FileNotFoundException $$ ( 44710, 44789 ) $$ @MustCall method close may not have been invoked on new FileReader(configDirectory.getPath() + File.separator + "savedoptions.sop.old") or any of its aliases.
+				BufferedReader br = new BufferedReader(new FileReader(configDirectory.getPath()+File.separator+"savedoptions.sop.old"));
+				                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(configDirectory.getPath() + File.separator + "savedoptions.sop") with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:1096: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(configDirectory.getPath() + File.separator + "savedoptions.sop") $$ java.io.FileWriter $$ possible exceptional exit due to br.readLine() with exception type java.io.FileNotFoundException $$ ( 44836, 44911 ) $$ @MustCall method close may not have been invoked on new FileWriter(configDirectory.getPath() + File.separator + "savedoptions.sop") or any of its aliases.
+				BufferedWriter bw = new BufferedWriter(new FileWriter(configDirectory.getPath()+File.separator+"savedoptions.sop"));
+				                                       ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:1116: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(configDirectory.getPath() + File.separator + "symboltables.sym.old") $$ java.io.FileReader $$ possible exceptional exit due to new FileWriter(configDirectory.getPath() + File.separator + "symboltables.sym") with exception type java.io.FileNotFoundException $$ ( 45671, 45750 ) $$ @MustCall method close may not have been invoked on new FileReader(configDirectory.getPath() + File.separator + "symboltables.sym.old") or any of its aliases.
+				BufferedReader br = new BufferedReader(new FileReader(configDirectory.getPath()+File.separator+"symboltables.sym.old"));
+				                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(configDirectory.getPath() + File.separator + "symboltables.sym") with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:1117: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(configDirectory.getPath() + File.separator + "symboltables.sym") $$ java.io.FileWriter $$ possible exceptional exit due to br.readLine() with exception type java.io.FileNotFoundException $$ ( 45797, 45872 ) $$ @MustCall method close may not have been invoked on new FileWriter(configDirectory.getPath() + File.separator + "symboltables.sym") or any of its aliases.
+				BufferedWriter bw = new BufferedWriter(new FileWriter(configDirectory.getPath()+File.separator+"symboltables.sym"));
+				                                       ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:1147: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(configDirectory.getPath() + File.separator + "savedoptions.sop.old") $$ java.io.FileReader $$ possible exceptional exit due to new FileWriter(configDirectory.getPath() + File.separator + "savedoptions.sop") with exception type java.io.FileNotFoundException $$ ( 47091, 47170 ) $$ @MustCall method close may not have been invoked on new FileReader(configDirectory.getPath() + File.separator + "savedoptions.sop.old") or any of its aliases.
+				BufferedReader br = new BufferedReader(new FileReader(configDirectory.getPath()+File.separator+"savedoptions.sop.old"));
+				                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(configDirectory.getPath() + File.separator + "savedoptions.sop") with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java:1148: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(configDirectory.getPath() + File.separator + "savedoptions.sop") $$ java.io.FileWriter $$ possible exceptional exit due to br.readLine() with exception type java.io.FileNotFoundException $$ ( 47217, 47292 ) $$ @MustCall method close may not have been invoked on new FileWriter(configDirectory.getPath() + File.separator + "savedoptions.sop") or any of its aliases.
+				BufferedWriter bw = new BufferedWriter(new FileWriter(configDirectory.getPath()+File.separator+"savedoptions.sop"));
+				                                       ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/Algorithm.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ getDiaWriter() $$ java.io.BufferedWriter $$ regular method exit $$ ( 1814, 1828 ) $$ @MustCall method close may not have been invoked on getDiaWriter() or any of its aliases.
+			getDiaWriter().write(message);
+			            ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/Algorithm.java:84: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(fileName) $$ java.io.FileWriter $$ regular method exit $$ ( 2634, 2658 ) $$ @MustCall method close may not have been invoked on new FileWriter(fileName) or any of its aliases.
+					diaWriter = new BufferedWriter(new FileWriter(fileName));
+					                               ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/Algorithm.java:156: error: (assignment) $$ 2 $$ @CalledMethods Class<@CalledMethods Algorithm> $$ @CalledMethods Class<capture#01 extends @CalledMethods Object> $$ ( 4390, 4427 ) $$ incompatible types in assignment.
+			params[0] = org.maltparser.parser.Algorithm.class;
+			                                           ^
+  found   : @CalledMethods Class<@CalledMethods Algorithm>
+  required: @CalledMethods Class<capture#01 extends @CalledMethods Object>
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java:197: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(fileName) $$ java.io.FileInputStream $$ possible exceptional exit due to loadOptions(containerIndex, new InputStreamReader(new FileInputStream(fileName), "UTF-8")) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 7264, 7293 ) $$ @MustCall method close may not have been invoked on new FileInputStream(fileName) or any of its aliases.
+			loadOptions(containerIndex, new InputStreamReader(new FileInputStream(fileName), "UTF-8"));
+			                                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to loadOptions(containerIndex, new InputStreamReader(new FileInputStream(fileName), "UTF-8")) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java:265: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(fileName) $$ java.io.FileOutputStream $$ possible exceptional exit due to saveOptions(new OutputStreamWriter(new FileOutputStream(fileName), "UTF-8")) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 9752, 9782 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(fileName) or any of its aliases.
+			saveOptions(new OutputStreamWriter(new FileOutputStream(fileName), "UTF-8"));
+			                                   ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to saveOptions(new OutputStreamWriter(new FileOutputStream(fileName), "UTF-8")) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java:310: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(fileName) $$ java.io.FileOutputStream $$ possible exceptional exit due to saveOptions(containerIndex, new OutputStreamWriter(new FileOutputStream(fileName), "UTF-8")) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 11410, 11440 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(fileName) or any of its aliases.
+			saveOptions(containerIndex, new OutputStreamWriter(new FileOutputStream(fileName), "UTF-8"));
+			                                                   ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to saveOptions(containerIndex, new OutputStreamWriter(new FileOutputStream(fileName), "UTF-8")) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java:552: error: (required.method.not.called) $$ 4 $$ method close $$ new Formatter() $$ java.util.Formatter $$ regular method exit $$ ( 20727, 20742 ) $$ @MustCall method close may not have been invoked on new Formatter() or any of its aliases.
+					sb.append(new Formatter().format("  %s (%4s)%"+nSpaces+"s %s\n", option.getName(), "-"+option.getFlag()," ", option.getDefaultValueString()));
+					          ^
+  The type of object is: java.util.Formatter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java:567: error: (required.method.not.called) $$ 4 $$ method close $$ new Formatter() $$ java.util.Formatter $$ regular method exit $$ ( 21384, 21399 ) $$ @MustCall method close may not have been invoked on new Formatter() or any of its aliases.
+						sb.append(new Formatter().format("  %s (%4s)%"+nSpaces+"s %s\n", option.getName(), "-"+option.getFlag(), " ", option.getDefaultValueString()));
+						          ^
+  The type of object is: java.util.Formatter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java:569: error: (required.method.not.called) $$ 4 $$ method close $$ new Formatter() $$ java.util.Formatter $$ regular method exit $$ ( 21550, 21565 ) $$ @MustCall method close may not have been invoked on new Formatter() or any of its aliases.
+						sb.append(new Formatter().format("  %s (%4s)%"+nSpaces+"s %s\n", option.getName(), "-"+option.getFlag(), " ", value));
+						          ^
+  The type of object is: java.util.Formatter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/feature/system/FeatureEngine.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ specModelURL.openStream() $$ java.io.InputStream $$ possible exceptional exit due to db.parse(specModelURL.openStream()) with exception type java.io.IOException $$ ( 2398, 2423 ) $$ @MustCall method close may not have been invoked on specModelURL.openStream() or any of its aliases.
+            root = db.parse(specModelURL.openStream()).getDocumentElement();
+                                                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to db.parse(specModelURL.openStream()) with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/plugin/Plugin.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ new JarFile(file) $$ java.util.jar.JarFile $$ possible exceptional exit due to new URL("file", null, file.getAbsolutePath()) with exception type java.net.MalformedURLException $$ ( 1041, 1058 ) $$ @MustCall method close may not have been invoked on new JarFile(file) or any of its aliases.
+			setArchive(new JarFile(file));
+			           ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: possible exceptional exit due to new URL("file", null, file.getAbsolutePath()) with exception type java.net.MalformedURLException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/plugin/JarLoader.java:86: error: (required.method.not.called) $$ 4 $$ method close $$ jarFile $$ java.util.jar.JarFile $$ possible exceptional exit due to throw new PluginException("Could not read the manifest file in the jar-file \'" + jarFile.getName() + "\'. ", e); with exception type org.maltparser.core.plugin.PluginException $$ ( 2401, 2440 ) $$ @MustCall method close may not have been invoked on jarFile or any of its aliases.
+			jarFile = new JarFile(jarUrl.getFile());
+			        ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: possible exceptional exit due to throw new PluginException("Could not read the manifest file in the jar-file \'" + jarFile.getName() + "\'. ", e); with exception type org.maltparser.core.plugin.PluginException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/plugin/JarLoader.java:107: error: (assignment) $$ 2 $$ @MustCall Class<@MustCall("close") URLClassLoader> $$ @MustCallUnknown Class<? extends @MustCall Object> $$ ( 3678, 3698 ) $$ incompatible types in assignment.
+			    		Class<?> sysclass = URLClassLoader.class;
+			    		                                  ^
+  found   : @MustCall Class<@MustCall("close") URLClassLoader>
+  required: @MustCallUnknown Class<? extends @MustCall Object>
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/plugin/JarLoader.java:127: error: (required.method.not.called) $$ 4 $$ method close $$ jarUrl.openConnection().getInputStream() $$ java.io.InputStream $$ possible exceptional exit due to new JarInputStream(jarUrl.openConnection().getInputStream()) with exception type java.net.MalformedURLException $$ ( 4505, 4545 ) $$ @MustCall method close may not have been invoked on jarUrl.openConnection().getInputStream() or any of its aliases.
+			jis = new JarInputStream(jarUrl.openConnection().getInputStream());
+			                                                               ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new JarInputStream(jarUrl.openConnection().getInputStream()) with exception type java.net.MalformedURLException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionDescriptions.java:158: error: (required.method.not.called) $$ 4 $$ method close $$ url.openStream() $$ java.io.InputStream $$ possible exceptional exit due to db.parse(url.openStream()) with exception type java.io.IOException $$ ( 5709, 5725 ) $$ @MustCall method close may not have been invoked on url.openStream() or any of its aliases.
+    		Element root = db.parse(url.openStream()).getDocumentElement();
+    		                                      ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to db.parse(url.openStream()) with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/flow/FlowChartManager.java:75: error: (required.method.not.called) $$ 4 $$ method close $$ url.openStream() $$ java.io.InputStream $$ possible exceptional exit due to db.parse(url.openStream()) with exception type java.io.IOException $$ ( 2268, 2284 ) $$ @MustCall method close may not have been invoked on url.openStream() or any of its aliases.
+            root = db.parse(url.openStream()).getDocumentElement();
+                                          ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to db.parse(url.openStream()) with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/flow/system/FlowChartSystem.java:65: error: (required.method.not.called) $$ 4 $$ method close $$ specModelURL.openStream() $$ java.io.InputStream $$ possible exceptional exit due to db.parse(specModelURL.openStream()) with exception type java.io.IOException $$ ( 1937, 1962 ) $$ @MustCall method close may not have been invoked on specModelURL.openStream() or any of its aliases.
+            root = db.parse(specModelURL.openStream()).getDocumentElement();
+                                                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to db.parse(specModelURL.openStream()) with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/headrules/HeadRules.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ url.openStream() $$ java.io.InputStream $$ regular method exit $$ ( 1675, 1691 ) $$ @MustCall method close may not have been invoked on url.openStream() or any of its aliases.
+			br = new BufferedReader(new InputStreamReader(url.openStream()));
+			                                                            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/examples/ParseSentence2.java:41: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(testDataFile) $$ java.io.FileInputStream $$ possible exceptional exit due to new FileOutputStream("out.conll") with exception type java.io.FileNotFoundException $$ ( 1481, 1514 ) $$ @MustCall method close may not have been invoked on new FileInputStream(testDataFile) or any of its aliases.
+			BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(testDataFile), "UTF-8"));
+			                                                                 ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream("out.conll") with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/examples/ParseSentence2.java:42: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream("out.conll") $$ java.io.FileOutputStream $$ possible exceptional exit due to reader.readLine() with exception type java.io.FileNotFoundException $$ ( 1596, 1629 ) $$ @MustCall method close may not have been invoked on new FileOutputStream("out.conll") or any of its aliases.
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("out.conll"), "UTF-8"));
+			                                                                  ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/propagation/spec/PropagationSpecsReader.java:29: error: (required.method.not.called) $$ 4 $$ method close $$ url.openStream() $$ java.io.InputStream $$ possible exceptional exit due to db.parse(url.openStream()) with exception type java.io.IOException $$ ( 899, 915 ) $$ @MustCall method close may not have been invoked on url.openStream() or any of its aliases.
+            root = db.parse(url.openStream()).getDocumentElement();
+                                          ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to db.parse(url.openStream()) with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/helper/Util.java:129: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(source) $$ java.io.FileInputStream $$ possible exceptional exit due to new FileOutputStream(destination) with exception type java.io.FileNotFoundException $$ ( 3454, 3481 ) $$ @MustCall method close may not have been invoked on new FileInputStream(source) or any of its aliases.
+	    	BufferedInputStream bis = new BufferedInputStream(new FileInputStream(source));
+	    	                                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(destination) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/helper/Util.java:130: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(destination) $$ java.io.FileOutputStream $$ possible exceptional exit due to bis.read(readBuffer, 0, BUFFER) with exception type java.io.FileNotFoundException $$ ( 3546, 3579 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(destination) or any of its aliases.
+	        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(destination), BUFFER);
+	                                                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to bis.read(readBuffer, 0, BUFFER) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/helper/SystemInfo.java:24: error: (required.method.not.called) $$ 4 $$ method close $$ url.openStream() $$ java.io.InputStream $$ possible exceptional exit due to properties.load(url.openStream()) with exception type java.io.IOException $$ ( 571, 587 ) $$ @MustCall method close may not have been invoked on url.openStream() or any of its aliases.
+			   properties.load(url.openStream());
+			                                 ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(url.openStream()) with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/helper/NoOutputStream.java:10: error: (required.method.not.called) $$ 4 $$ method close $$ new NoOutputStream() $$ org.maltparser.core.helper.NoOutputStream $$ regular method exit $$ ( 208, 228 ) $$ @MustCall method close may not have been invoked on new NoOutputStream() or any of its aliases.
+	public static final OutputStream DEVNULL = new NoOutputStream();
+	                                           ^
+  The type of object is: org.maltparser.core.helper.NoOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/helper/NoPrintStream.java:13: error: (required.method.not.called) $$ 4 $$ method close $$ new NoPrintStream() $$ org.maltparser.core.helper.NoPrintStream $$ regular method exit $$ ( 347, 366 ) $$ @MustCall method close may not have been invoked on new NoPrintStream() or any of its aliases.
+    public static final PrintStream NO_PRINTSTREAM = new NoPrintStream();
+                                                     ^
+  The type of object is: org.maltparser.core.helper.NoPrintStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/helper/NoPrintStream.java:18: error: (override.return) $$ 6 $$ @MustCall("close") PrintStream $$ @MustCall Appendable $$ @MustCall("close") NoPrintStream $$ @MustCall("close") PrintStream append(@MustCall("close") NoPrintStream this, @MustCall char p0) $$ @MustCall("close") Appendable $$ @MustCall Appendable append(@MustCall Appendable this, @MustCall char p0) throws @MustCall IOException $$ ( 454, 465 ) $$ Incompatible return type.
+	public PrintStream append(char c) {
+	       ^
+  found   : @MustCall("close") PrintStream
+  required: @MustCall Appendable
+  Consequence: method in @MustCall("close") NoPrintStream
+    @MustCall("close") PrintStream append(@MustCall("close") NoPrintStream this, @MustCall char p0)
+  cannot override method in @MustCall("close") Appendable
+    @MustCall Appendable append(@MustCall Appendable this, @MustCall char p0) throws @MustCall IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/helper/NoPrintStream.java:23: error: (override.return) $$ 6 $$ @MustCall("close") PrintStream $$ @MustCall Appendable $$ @MustCall("close") NoPrintStream $$ @MustCall("close") PrintStream append(@MustCall("close") NoPrintStream this, @MustCall CharSequence p0, @MustCall int p1, @MustCall int p2) $$ @MustCall("close") Appendable $$ @MustCall Appendable append(@MustCall Appendable this, @MustCall CharSequence p0, @MustCall int p1, @MustCall int p2) throws @MustCall IOException $$ ( 537, 548 ) $$ Incompatible return type.
+	public PrintStream append(CharSequence csq, int start, int end) {
+	       ^
+  found   : @MustCall("close") PrintStream
+  required: @MustCall Appendable
+  Consequence: method in @MustCall("close") NoPrintStream
+    @MustCall("close") PrintStream append(@MustCall("close") NoPrintStream this, @MustCall CharSequence p0, @MustCall int p1, @MustCall int p2)
+  cannot override method in @MustCall("close") Appendable
+    @MustCall Appendable append(@MustCall Appendable this, @MustCall CharSequence p0, @MustCall int p1, @MustCall int p2) throws @MustCall IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/helper/NoPrintStream.java:28: error: (override.return) $$ 6 $$ @MustCall("close") PrintStream $$ @MustCall Appendable $$ @MustCall("close") NoPrintStream $$ @MustCall("close") PrintStream append(@MustCall("close") NoPrintStream this, @MustCall CharSequence p0) $$ @MustCall("close") Appendable $$ @MustCall Appendable append(@MustCall Appendable this, @MustCall CharSequence p0) throws @MustCall IOException $$ ( 664, 675 ) $$ Incompatible return type.
+	public PrintStream append(CharSequence csq) {
+	       ^
+  found   : @MustCall("close") PrintStream
+  required: @MustCall Appendable
+  Consequence: method in @MustCall("close") NoPrintStream
+    @MustCall("close") PrintStream append(@MustCall("close") NoPrintStream this, @MustCall CharSequence p0)
+  cannot override method in @MustCall("close") Appendable
+    @MustCall Appendable append(@MustCall Appendable this, @MustCall CharSequence p0) throws @MustCall IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/helper/NoPrintStream.java:48: error: (owning.override.return) $$ 4 $$ format $$ org.maltparser.core.helper.NoPrintStream $$ format $$ java.io.PrintStream $$ ( 940, 1065 ) $$ Incompatible ownership for return.
+	public PrintStream format(Locale l, String format, Object... args) {
+	                   ^
+  found   : no ownership annotation or @Owning
+  required: @NotOwning
+  Consequence: method format in org.maltparser.core.helper.NoPrintStream cannot override method format in java.io.PrintStream
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/helper/NoPrintStream.java:53: error: (owning.override.return) $$ 4 $$ format $$ org.maltparser.core.helper.NoPrintStream $$ format $$ java.io.PrintStream $$ ( 1070, 1182 ) $$ Incompatible ownership for return.
+	public PrintStream format(String format, Object... args) {
+	                   ^
+  found   : no ownership annotation or @Owning
+  required: @NotOwning
+  Consequence: method format in org.maltparser.core.helper.NoPrintStream cannot override method format in java.io.PrintStream
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/helper/NoPrintStream.java:85: error: (owning.override.return) $$ 4 $$ printf $$ org.maltparser.core.helper.NoPrintStream $$ printf $$ java.io.PrintStream $$ ( 1605, 1730 ) $$ Incompatible ownership for return.
+	public PrintStream printf(Locale l, String format, Object... args) {
+	                   ^
+  found   : no ownership annotation or @Owning
+  required: @NotOwning
+  Consequence: method printf in org.maltparser.core.helper.NoPrintStream cannot override method printf in java.io.PrintStream
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/helper/NoPrintStream.java:90: error: (owning.override.return) $$ 4 $$ printf $$ org.maltparser.core.helper.NoPrintStream $$ printf $$ java.io.PrintStream $$ ( 1735, 1847 ) $$ Incompatible ownership for return.
+	public PrintStream printf(String format, Object... args) {
+	                   ^
+  found   : no ownership annotation or @Owning
+  required: @NotOwning
+  Consequence: method printf in org.maltparser.core.helper.NoPrintStream cannot override method printf in java.io.PrintStream
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/feature/spec/reader/XmlReader.java:32: error: (required.method.not.called) $$ 4 $$ method close $$ specModelURL.openStream() $$ java.io.InputStream $$ possible exceptional exit due to db.parse(specModelURL.openStream()) with exception type java.io.IOException $$ ( 1011, 1036 ) $$ @MustCall method close may not have been invoked on specModelURL.openStream() or any of its aliases.
+            root = db.parse(specModelURL.openStream()).getDocumentElement();
+                                                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to db.parse(specModelURL.openStream()) with exception type java.io.IOException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/feature/spec/reader/ParReader.java:49: error: (required.method.not.called) $$ 4 $$ method close $$ specModelURL.openStream() $$ java.io.InputStream $$ possible exceptional exit due to throw new FeatureException("Could not read the feature specification file \'" + specModelURL.toString() + "\'. ", e); with exception type org.maltparser.core.feature.FeatureException $$ ( 1514, 1539 ) $$ @MustCall method close may not have been invoked on specModelURL.openStream() or any of its aliases.
+			br = new BufferedReader(new InputStreamReader(specModelURL.openStream()));
+			                                                                     ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to throw new FeatureException("Could not read the feature specification file \'" + specModelURL.toString() + "\'. ", e); with exception type org.maltparser.core.feature.FeatureException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigDirChartItem.java:102: error: (required.method.not.called) $$ 4 $$ method close $$ configDir.getInputStreamReaderFromConfigFile("savedoptions.sop") $$ java.io.InputStreamReader $$ possible exceptional exit due to OptionManager.instance().loadOptions(getOptionContainerIndex(), configDir.getInputStreamReaderFromConfigFile("savedoptions.sop")) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 5065, 5129 ) $$ @MustCall method close may not have been invoked on configDir.getInputStreamReaderFromConfigFile("savedoptions.sop") or any of its aliases.
+			OptionManager.instance().loadOptions(getOptionContainerIndex(), configDir.getInputStreamReaderFromConfigFile("savedoptions.sop"));
+			                                                                                                            ^
+  The type of object is: java.io.InputStreamReader.
+  Reason for going out of scope: possible exceptional exit due to OptionManager.instance().loadOptions(getOptionContainerIndex(), configDir.getInputStreamReaderFromConfigFile("savedoptions.sop")) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigDirChartItem.java:121: error: (required.method.not.called) $$ 4 $$ method close $$ configDir.getInputStreamReaderFromConfigFileEntry("symboltables.sym", inCharSet) $$ java.io.InputStreamReader $$ possible exceptional exit due to configDir.getSymbolTables().load(configDir.getInputStreamReaderFromConfigFileEntry("symboltables.sym", inCharSet)) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 5880, 5959 ) $$ @MustCall method close may not have been invoked on configDir.getInputStreamReaderFromConfigFileEntry("symboltables.sym", inCharSet) or any of its aliases.
+			configDir.getSymbolTables().load(configDir.getInputStreamReaderFromConfigFileEntry("symboltables.sym",inCharSet));
+			                                                                                  ^
+  The type of object is: java.io.InputStreamReader.
+  Reason for going out of scope: possible exceptional exit due to configDir.getSymbolTables().load(configDir.getInputStreamReaderFromConfigFileEntry("symboltables.sym", inCharSet)) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigDirChartItem.java:133: error: (required.method.not.called) $$ 4 $$ method close $$ configDir.getOutputStreamWriter("savedoptions.sop") $$ java.io.OutputStreamWriter $$ possible exceptional exit due to OptionManager.instance().saveOptions(getOptionContainerIndex(), configDir.getOutputStreamWriter("savedoptions.sop")) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 6258, 6309 ) $$ @MustCall method close may not have been invoked on configDir.getOutputStreamWriter("savedoptions.sop") or any of its aliases.
+			OptionManager.instance().saveOptions(getOptionContainerIndex(), configDir.getOutputStreamWriter("savedoptions.sop"));
+			                                                                                               ^
+  The type of object is: java.io.OutputStreamWriter.
+  Reason for going out of scope: possible exceptional exit due to OptionManager.instance().saveOptions(getOptionContainerIndex(), configDir.getOutputStreamWriter("savedoptions.sop")) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigDirChartItem.java:139: error: (required.method.not.called) $$ 4 $$ method close $$ configDir.getOutputStreamWriter("symboltables.sym", outCharSet) $$ java.io.OutputStreamWriter $$ possible exceptional exit due to configDir.getSymbolTables().save(configDir.getOutputStreamWriter("symboltables.sym", outCharSet)) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 6548, 6611 ) $$ @MustCall method close may not have been invoked on configDir.getOutputStreamWriter("symboltables.sym", outCharSet) or any of its aliases.
+			configDir.getSymbolTables().save(configDir.getOutputStreamWriter("symboltables.sym", outCharSet));
+			                                                                ^
+  The type of object is: java.io.OutputStreamWriter.
+  Reason for going out of scope: possible exceptional exit due to configDir.getSymbolTables().save(configDir.getOutputStreamWriter("symboltables.sym", outCharSet)) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/writer/TigerXMLWriter.java:66: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(fileName) $$ java.io.FileOutputStream $$ possible exceptional exit due to open(new OutputStreamWriter(new FileOutputStream(fileName), charsetName)) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 2251, 2281 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(fileName) or any of its aliases.
+			open(new OutputStreamWriter(new FileOutputStream(fileName),charsetName));
+			                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to open(new OutputStreamWriter(new FileOutputStream(fileName), charsetName)) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/writer/BracketWriter.java:52: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(fileName) $$ java.io.FileOutputStream $$ possible exceptional exit due to open(new OutputStreamWriter(new FileOutputStream(fileName), charsetName)) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 1900, 1930 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(fileName) or any of its aliases.
+			open(new OutputStreamWriter(new FileOutputStream(fileName),charsetName));
+			                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to open(new OutputStreamWriter(new FileOutputStream(fileName), charsetName)) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/writer/NegraWriter.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(fileName) $$ java.io.FileOutputStream $$ possible exceptional exit due to open(new OutputStreamWriter(new FileOutputStream(fileName), charsetName)) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 1612, 1642 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(fileName) or any of its aliases.
+			open(new OutputStreamWriter(new FileOutputStream(fileName),charsetName));
+			                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to open(new OutputStreamWriter(new FileOutputStream(fileName), charsetName)) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/writer/TabWriter.java:41: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(fileName) $$ java.io.FileOutputStream $$ possible exceptional exit due to open(new OutputStreamWriter(new FileOutputStream(fileName), charsetName)) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 1336, 1366 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(fileName) or any of its aliases.
+			open(new OutputStreamWriter(new FileOutputStream(fileName),charsetName));
+			                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to open(new OutputStreamWriter(new FileOutputStream(fileName), charsetName)) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/GraphAnalyzerChartItem.java:98: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(fileName) $$ java.io.FileOutputStream $$ possible exceptional exit due to open(new OutputStreamWriter(new FileOutputStream(fileName), charsetName)) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 3554, 3584 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(fileName) or any of its aliases.
+			open(new OutputStreamWriter(new FileOutputStream(fileName),charsetName));
+			                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to open(new OutputStreamWriter(new FileOutputStream(fileName), charsetName)) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/reader/BracketReader.java:78: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(fileName) $$ java.io.FileInputStream $$ possible exceptional exit due to open(new FileInputStream(fileName), charsetName) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 2535, 2564 ) $$ @MustCall method close may not have been invoked on new FileInputStream(fileName) or any of its aliases.
+			open(new FileInputStream(fileName), charsetName);
+			     ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to open(new FileInputStream(fileName), charsetName) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/reader/BracketReader.java:87: error: (required.method.not.called) $$ 4 $$ method close $$ url.openStream() $$ java.io.InputStream $$ possible exceptional exit due to open(url.openStream(), charsetName) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 2860, 2876 ) $$ @MustCall method close may not have been invoked on url.openStream() or any of its aliases.
+			open(url.openStream(), charsetName);
+			                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to open(url.openStream(), charsetName) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/reader/TigerXMLReader.java:82: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(fileName) $$ java.io.FileInputStream $$ possible exceptional exit due to open(new FileInputStream(fileName), charsetName) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 2722, 2751 ) $$ @MustCall method close may not have been invoked on new FileInputStream(fileName) or any of its aliases.
+			open(new FileInputStream(fileName), charsetName);
+			     ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to open(new FileInputStream(fileName), charsetName) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/reader/TigerXMLReader.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ url.openStream() $$ java.io.InputStream $$ possible exceptional exit due to open(url.openStream(), charsetName) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 3047, 3063 ) $$ @MustCall method close may not have been invoked on url.openStream() or any of its aliases.
+			open(url.openStream(), charsetName);
+			                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to open(url.openStream(), charsetName) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/reader/NegraReader.java:78: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(fileName) $$ java.io.FileInputStream $$ possible exceptional exit due to open(new FileInputStream(fileName), charsetName) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 2582, 2611 ) $$ @MustCall method close may not have been invoked on new FileInputStream(fileName) or any of its aliases.
+			open(new FileInputStream(fileName), charsetName);
+			     ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to open(new FileInputStream(fileName), charsetName) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/reader/NegraReader.java:87: error: (required.method.not.called) $$ 4 $$ method close $$ url.openStream() $$ java.io.InputStream $$ possible exceptional exit due to open(url.openStream(), charsetName) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 2908, 2924 ) $$ @MustCall method close may not have been invoked on url.openStream() or any of its aliases.
+			open(url.openStream(), charsetName);
+			                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to open(url.openStream(), charsetName) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/reader/TabReader.java:63: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(fileName) $$ java.io.FileInputStream $$ possible exceptional exit due to open(new FileInputStream(fileName), charsetName) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 1971, 2000 ) $$ @MustCall method close may not have been invoked on new FileInputStream(fileName) or any of its aliases.
+			open(new FileInputStream(fileName), charsetName);
+			     ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to open(new FileInputStream(fileName), charsetName) with exception type org.maltparser.core.exception.MaltChainedException
+../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/reader/TabReader.java:76: error: (required.method.not.called) $$ 4 $$ method close $$ url.openStream() $$ java.io.InputStream $$ possible exceptional exit due to open(url.openStream(), charsetName) with exception type org.maltparser.core.exception.MaltChainedException $$ ( 2398, 2414 ) $$ @MustCall method close may not have been invoked on url.openStream() or any of its aliases.
+			open(url.openStream(), charsetName);
+			                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to open(url.openStream(), charsetName) with exception type org.maltparser.core.exception.MaltChainedException
+Note: ../dataset/june2020_dataset/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/ml/liblinear/Liblinear.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+100 errors
+2 warnings

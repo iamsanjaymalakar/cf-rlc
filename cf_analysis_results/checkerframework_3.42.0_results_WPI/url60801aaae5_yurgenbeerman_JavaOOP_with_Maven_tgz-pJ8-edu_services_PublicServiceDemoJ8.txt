@@ -1,0 +1,41 @@
+warning: /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url60801aaae5_yurgenbeerman_JavaOOP_with_Maven_tgz-pJ8-edu_services_PublicServiceDemoJ8/wpi-out/edu/clients/FullNameTest-org.checkerframework.checker.mustcall.MustCallChecker.ajava:(line 5,col 1): Imported package not found: org.junit.Assert
+../dataset/june2020_dataset/url60801aaae5_yurgenbeerman_JavaOOP_with_Maven_tgz-pJ8-edu_services_PublicServiceDemoJ8/src/edu/sandbox/collectionsandthreads/CollectionsTests.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ field synchroHTMLFile $$ edu.sandbox.collectionsandthreads.SynchroHTML $$ Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "synchroHTMLFile", methods = "close"), @EnsuresCalledMethodsOnException(value = "synchroHTMLFile", methods = "close") $$ ( 321, 356 ) $$ @MustCall method close may not have been invoked on field synchroHTMLFile or any of its aliases.
+    static SynchroHTML synchroHTMLFile;
+                       ^
+  The type of object is: edu.sandbox.collectionsandthreads.SynchroHTML.
+  Reason for going out of scope: Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "synchroHTMLFile", methods = "close"), @EnsuresCalledMethodsOnException(value = "synchroHTMLFile", methods = "close")
+../dataset/june2020_dataset/url60801aaae5_yurgenbeerman_JavaOOP_with_Maven_tgz-pJ8-edu_services_PublicServiceDemoJ8/src/edu/sandbox/collectionsandthreads/CollectionsTests.java:62: error: (flowexpr.parse.error) $$ 1 $$ 'this.synchroHTMLFile' in the postcondition EnsuresCalledMethods on the declaration of method 'treeTreadsToStackHTMLDemo': Invalid 'this' because "this" isn't allowed here $$ ( 1777, 4865 ) $$ cannot parse the expression 'this.synchroHTMLFile' in the postcondition EnsuresCalledMethods on the declaration of method 'treeTreadsToStackHTMLDemo': Invalid 'this' because "this" isn't allowed here
+    static void treeTreadsToStackHTMLDemo() {
+                ^
+../dataset/june2020_dataset/url60801aaae5_yurgenbeerman_JavaOOP_with_Maven_tgz-pJ8-edu_services_PublicServiceDemoJ8/src/edu/sandbox/collectionsandthreads/CollectionsTests.java:62: error: (missing.creates.mustcall.for) $$ 3 $$ treeTreadsToStackHTMLDemo $$ edu.sandbox.collectionsandthreads.CollectionsTests $$ synchroHTMLFile $$ ( 1777, 4865 ) $$ Method treeTreadsToStackHTMLDemo re-assigns the non-final, owning field edu.sandbox.collectionsandthreads.CollectionsTests.synchroHTMLFile, but does not have a corresponding @CreatesMustCallFor annotation.
+    static void treeTreadsToStackHTMLDemo() {
+                ^
+../dataset/june2020_dataset/url60801aaae5_yurgenbeerman_JavaOOP_with_Maven_tgz-pJ8-edu_services_PublicServiceDemoJ8/src/edu/sandbox/collectionsandthreads/CollectionsTests.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ field synchroHTMLFile $$ edu.sandbox.collectionsandthreads.SynchroHTML $$  Non-final owning field might be overwritten $$ ( 1932, 1982 ) $$ @MustCall method close may not have been invoked on field synchroHTMLFile or any of its aliases.
+            synchroHTMLFile = new SynchroHTML(outHTMLFilePath);
+                            ^
+  The type of object is: edu.sandbox.collectionsandthreads.SynchroHTML.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url60801aaae5_yurgenbeerman_JavaOOP_with_Maven_tgz-pJ8-edu_services_PublicServiceDemoJ8/src/edu/sandbox/collectionsandthreads/CollectionsTests.java:524: error: (required.method.not.called) $$ 4 $$ method close $$ field fileWriter $$ java.io.FileWriter $$  Non-final owning field might be overwritten $$ ( 19781, 19821 ) $$ @MustCall method close may not have been invoked on field fileWriter or any of its aliases.
+            fileWriter = new FileWriter(file, false);
+                       ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url60801aaae5_yurgenbeerman_JavaOOP_with_Maven_tgz-pJ8-edu_services_PublicServiceDemoJ8/src/edu/sandbox/collectionsandthreads/CollectionsTests.java:526: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.fileWriter $$ this.fileWriter is @CalledMethods("close") $$ ( 19841, 20015 ) $$ postcondition of close is not satisfied.
+        public void close() {
+                    ^
+  found   : no information about this.fileWriter
+  required: this.fileWriter is @CalledMethods("close")
+../dataset/june2020_dataset/url60801aaae5_yurgenbeerman_JavaOOP_with_Maven_tgz-pJ8-edu_services_PublicServiceDemoJ8/src/edu/sandbox/collectionsandthreads/SynchroHTML.java:14: error: (required.method.not.called) $$ 4 $$ method close $$ field fileWriter $$ java.io.FileWriter $$  Non-final owning field might be overwritten $$ ( 378, 426 ) $$ @MustCall method close may not have been invoked on field fileWriter or any of its aliases.
+        fileWriter = new FileWriter(HTMLFilePath, false);
+                   ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url60801aaae5_yurgenbeerman_JavaOOP_with_Maven_tgz-pJ8-edu_services_PublicServiceDemoJ8/src/edu/sandbox/collectionsandthreads/SynchroHTML.java:16: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.fileWriter $$ this.fileWriter is @CalledMethods("close") $$ ( 438, 588 ) $$ postcondition of close is not satisfied.
+    public void close() {
+                ^
+  found   : no information about this.fileWriter
+  required: this.fileWriter is @CalledMethods("close")
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+8 errors
+1 warning

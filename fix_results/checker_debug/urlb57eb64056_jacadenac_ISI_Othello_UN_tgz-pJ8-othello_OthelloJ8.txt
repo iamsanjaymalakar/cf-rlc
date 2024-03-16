@@ -1,0 +1,8 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^othello/UIJuego.java^392^othello.UIJuego.leerArchivo(Ljava/io/File;Lcore/Tablero$TipoTablero;)V^11 = new <Application,Ljava/io/BufferedReader>@28^othello.UIJuego.leerArchivo(Ljava/io/File;Lcore/Tablero$TipoTablero;)V#12,^INVOKE,^false^false^Try-catch Fix;
+1^logica/Controlador.java^238^logica.Controlador.leerEstrategias()[[I^14 = new <Application,Ljava/io/BufferedReader>@38^logica.Controlador.leerEstrategias()[[I#15,^INVOKE,^false^false^Try-catch Fix;
+2^logica/Controlador.java^239^logica.Controlador.leerEstrategias()[[I^18 = new <Application,Ljava/io/BufferedReader>@55^logica.Controlador.leerEstrategias()[[I#19,^INVOKE,^false^false^Try-catch Fix;
+3^logica/JuegoTorneo.java^158^logica.JuegoTorneo.leerArchivo(Ljava/io/File;Lcore/Tablero$TipoTablero;)V^11 = new <Application,Ljava/io/BufferedReader>@28^logica.JuegoTorneo.leerArchivo(Ljava/io/File;Lcore/Tablero$TipoTablero;)V#12,^INVOKE,^false^false^Try-catch Fix;
+4^logica/Torneo.java^118^logica.Torneo.leerParametros()V^11 = new <Application,Ljava/io/BufferedReader>@31^logica.Torneo.leerParametros()V#12,^INVOKE,^false^false^Try-catch Fix;
+5^logica/ia/algoritmosGeneticos/Estrategia.java^232^logica.ia.algoritmosGeneticos.Estrategia.leerPoblacion()[[I^14 = new <Application,Ljava/io/BufferedReader>@39^logica.ia.algoritmosGeneticos.Estrategia.leerPoblacion()[[I#15,^INVOKE,^false^false^Try-catch Fix;
+6^logica/ia/algoritmosGeneticos/Estrategia.java^422^logica.ia.algoritmosGeneticos.Estrategia.leerParametros()V^11 = new <Application,Ljava/io/BufferedReader>@31^logica.ia.algoritmosGeneticos.Estrategia.leerParametros()V#12,^INVOKE,^false^false^Try-catch Fix;

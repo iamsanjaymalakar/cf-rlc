@@ -1,0 +1,29 @@
+21461
+241
+
+SOURCE LEVEL FIXES
+
+1] ../../../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Trading_Engine/myDatabase.java; Line number 114
+vim +114 ../../../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Trading_Engine/myDatabase.java
+
++++ Add following code below line: 171 (Trading_Engine/myDatabase.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 114
+
++++ Delete Line number 167 (Trading_Engine/myDatabase.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Test/myDatabaseTest.java; Line number 47
+vim +47 ../../../dataset/june2020_dataset/url4df616fce9_s3e0n1g1_prototype3_tgz-pJ8-Trading_Engine_MainJ8/src/Test/myDatabaseTest.java
+
++++ Add following code below line: 67 (Test/myDatabaseTest.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 47
+
++++ Delete Line number 64 (Test/myDatabaseTest.java)
+
+--------------------------------------------

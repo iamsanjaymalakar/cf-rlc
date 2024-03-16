@@ -1,0 +1,696 @@
+error: SourceChecker.typeProcess: unexpected Throwable (BadClassFile) while processing ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/gui/HomePanel.java; message: bad class file: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/lib/java/util/concurrent/ConcurrentHashMap$HashIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/gui/HomePanel.java
+  Last visited tree at line 4 column 1:
+  public class HomePanel extends javax.swing.JPanel {
+  Exception: com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/lib/java/util/concurrent/ConcurrentHashMap$HashIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.; com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/lib/java/util/concurrent/ConcurrentHashMap$HashIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  	at com.sun.tools.javac.jvm.ClassReader.badClassFile(ClassReader.java:298)
+  	at com.sun.tools.javac.jvm.ClassReader.findTypeVar(ClassReader.java:983)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:690)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToTypes(ClassReader.java:897)
+  	at com.sun.tools.javac.jvm.ClassReader.classSigToType(ClassReader.java:813)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:726)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:748)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:676)
+  	at com.sun.tools.javac.jvm.ClassReader.readType(ClassReader.java:519)
+  	at com.sun.tools.javac.jvm.ClassReader$11.read(ClassReader.java:1213)
+  	at com.sun.tools.javac.jvm.ClassReader.readAttrs(ClassReader.java:1561)
+  	at com.sun.tools.javac.jvm.ClassReader.readMemberAttrs(ClassReader.java:1551)
+  	at com.sun.tools.javac.jvm.ClassReader.readField(ClassReader.java:2384)
+  	at com.sun.tools.javac.jvm.ClassReader.readClass(ClassReader.java:2708)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassBuffer(ClassReader.java:2775)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassFile(ClassReader.java:2788)
+  	at com.sun.tools.javac.code.ClassFinder.fillIn(ClassFinder.java:348)
+  	at com.sun.tools.javac.code.ClassFinder.complete(ClassFinder.java:285)
+  	at com.sun.tools.javac.code.Symbol.complete(Symbol.java:633)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.complete(Symbol.java:1314)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.flags(Symbol.java:1248)
+  	at com.sun.tools.javac.code.Symbol$TypeSymbol.getEnclosedElements(Symbol.java:800)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.annosInPackage(AnnotationFileParser.java:464)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.getImportedAnnotations(AnnotationFileParser.java:565)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubUnit(AnnotationFileParser.java:746)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubFile(AnnotationFileParser.java:659)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseJdkFileAsStub(AnnotationFileParser.java:725)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.parseJdkJarEntry(AnnotationFileElementTypes.java:765)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.maybeParseEnclosingJdkClass(AnnotationFileElementTypes.java:691)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.getDeclAnnotations(AnnotationFileElementTypes.java:465)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3964)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3997)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3974)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3997)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3974)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3887)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3807)
+  	at org.checkerframework.checker.mustcall.MustCallAnnotatedTypeFactory$MustCallDefaultQualifierForUseTypeAnnotator.getExplicitAnnos(MustCallAnnotatedTypeFactory.java:363)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.getDefaultAnnosForUses(DefaultQualifierForUseTypeAnnotator.java:82)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:55)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:26)
+  	at org.checkerframework.framework.type.AnnotatedTypeMirror$AnnotatedDeclaredType.accept(AnnotatedTypeMirror.java:1051)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:206)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:194)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:181)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addAnnotationsFromDefaultForType(GenericAnnotatedTypeFactory.java:2432)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1922)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1854)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getAnnotatedType(AnnotatedTypeFactory.java:1390)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.getAnnotatedTypeLhs(GenericAnnotatedTypeFactory.java:1742)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1437)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1994)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:425)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:550)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:188)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:86)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:1057)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:559)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:552)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+error: SourceChecker.typeProcess: unexpected Throwable (BadClassFile) while processing ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/gui/HomePanel.java; message: bad class file: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/lib/java/util/concurrent/FutureTask$Sync.class
+    undeclared type variable: V
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/gui/HomePanel.java
+  Last visited tree at line 4 column 1:
+  public class HomePanel extends javax.swing.JPanel {
+  Exception: com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/lib/java/util/concurrent/FutureTask$Sync.class
+    undeclared type variable: V
+    Please remove or make sure it appears in the correct subdirectory of the classpath.; com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/lib/java/util/concurrent/FutureTask$Sync.class
+    undeclared type variable: V
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  	at com.sun.tools.javac.jvm.ClassReader.badClassFile(ClassReader.java:298)
+  	at com.sun.tools.javac.jvm.ClassReader.findTypeVar(ClassReader.java:983)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:690)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToTypes(ClassReader.java:897)
+  	at com.sun.tools.javac.jvm.ClassReader.classSigToType(ClassReader.java:813)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:726)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:676)
+  	at com.sun.tools.javac.jvm.ClassReader.readType(ClassReader.java:519)
+  	at com.sun.tools.javac.jvm.ClassReader$11.read(ClassReader.java:1213)
+  	at com.sun.tools.javac.jvm.ClassReader.readAttrs(ClassReader.java:1561)
+  	at com.sun.tools.javac.jvm.ClassReader.readMemberAttrs(ClassReader.java:1551)
+  	at com.sun.tools.javac.jvm.ClassReader.readField(ClassReader.java:2384)
+  	at com.sun.tools.javac.jvm.ClassReader.readClass(ClassReader.java:2708)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassBuffer(ClassReader.java:2775)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassFile(ClassReader.java:2788)
+  	at com.sun.tools.javac.code.ClassFinder.fillIn(ClassFinder.java:348)
+  	at com.sun.tools.javac.code.ClassFinder.complete(ClassFinder.java:285)
+  	at com.sun.tools.javac.code.Symbol.complete(Symbol.java:633)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.complete(Symbol.java:1314)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.flags(Symbol.java:1248)
+  	at com.sun.tools.javac.code.Symbol$TypeSymbol.getEnclosedElements(Symbol.java:800)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.annosInPackage(AnnotationFileParser.java:464)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.getImportedAnnotations(AnnotationFileParser.java:565)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubUnit(AnnotationFileParser.java:746)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubFile(AnnotationFileParser.java:659)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseJdkFileAsStub(AnnotationFileParser.java:725)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.parseJdkJarEntry(AnnotationFileElementTypes.java:765)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.maybeParseEnclosingJdkClass(AnnotationFileElementTypes.java:691)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.getDeclAnnotations(AnnotationFileElementTypes.java:465)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3964)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3997)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3974)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3997)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3974)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3887)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3807)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.getDefaultQualifierForUses(DefaultQualifierForUseTypeAnnotator.java:134)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.getDefaultAnnosForUses(DefaultQualifierForUseTypeAnnotator.java:83)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:55)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:26)
+  	at org.checkerframework.framework.type.AnnotatedTypeMirror$AnnotatedDeclaredType.accept(AnnotatedTypeMirror.java:1051)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:206)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:194)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:181)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addAnnotationsFromDefaultForType(GenericAnnotatedTypeFactory.java:2432)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1922)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1854)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getAnnotatedType(AnnotatedTypeFactory.java:1390)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.getAnnotatedTypeLhs(GenericAnnotatedTypeFactory.java:1742)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1437)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1994)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:425)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:550)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:188)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:86)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:1057)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:559)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+error: SourceChecker.typeProcess: unexpected Throwable (BadClassFile) while processing ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/gui/Main.java; message: bad class file: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/lib/java/util/LinkedHashMap$KeyIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/gui/Main.java
+  Last visited tree at line 6 column 1:
+  public class Main extends JFrame {
+  Exception: com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/lib/java/util/LinkedHashMap$KeyIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.; com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/lib/java/util/LinkedHashMap$KeyIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  	at com.sun.tools.javac.jvm.ClassReader.badClassFile(ClassReader.java:298)
+  	at com.sun.tools.javac.jvm.ClassReader.findTypeVar(ClassReader.java:983)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:690)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:752)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:676)
+  	at com.sun.tools.javac.jvm.ClassReader.readType(ClassReader.java:519)
+  	at com.sun.tools.javac.jvm.ClassReader$11.read(ClassReader.java:1213)
+  	at com.sun.tools.javac.jvm.ClassReader.readAttrs(ClassReader.java:1561)
+  	at com.sun.tools.javac.jvm.ClassReader.readMemberAttrs(ClassReader.java:1551)
+  	at com.sun.tools.javac.jvm.ClassReader.readMethod(ClassReader.java:2432)
+  	at com.sun.tools.javac.jvm.ClassReader.readClass(ClassReader.java:2710)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassBuffer(ClassReader.java:2775)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassFile(ClassReader.java:2788)
+  	at com.sun.tools.javac.code.ClassFinder.fillIn(ClassFinder.java:348)
+  	at com.sun.tools.javac.code.ClassFinder.complete(ClassFinder.java:285)
+  	at com.sun.tools.javac.code.Symbol.complete(Symbol.java:633)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.complete(Symbol.java:1314)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.flags(Symbol.java:1248)
+  	at com.sun.tools.javac.code.Symbol$TypeSymbol.getEnclosedElements(Symbol.java:800)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.annosInPackage(AnnotationFileParser.java:464)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.getImportedAnnotations(AnnotationFileParser.java:565)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubUnit(AnnotationFileParser.java:746)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubFile(AnnotationFileParser.java:659)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseJdkFileAsStub(AnnotationFileParser.java:725)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.parseJdkJarEntry(AnnotationFileElementTypes.java:765)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.maybeParseEnclosingJdkClass(AnnotationFileElementTypes.java:691)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.getDeclAnnotations(AnnotationFileElementTypes.java:465)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3964)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3997)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3974)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3887)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3807)
+  	at org.checkerframework.checker.mustcall.MustCallAnnotatedTypeFactory$MustCallDefaultQualifierForUseTypeAnnotator.getExplicitAnnos(MustCallAnnotatedTypeFactory.java:363)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.getDefaultAnnosForUses(DefaultQualifierForUseTypeAnnotator.java:82)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:55)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:26)
+  	at org.checkerframework.framework.type.AnnotatedTypeMirror$AnnotatedDeclaredType.accept(AnnotatedTypeMirror.java:1051)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:206)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:194)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:181)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addAnnotationsFromDefaultForType(GenericAnnotatedTypeFactory.java:2432)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1922)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1854)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getAnnotatedType(AnnotatedTypeFactory.java:1390)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.getAnnotatedTypeLhs(GenericAnnotatedTypeFactory.java:1742)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1437)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1994)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:425)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:550)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:188)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:86)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:1057)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:559)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:552)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+error: SourceChecker.typeProcess: unexpected Throwable (BadClassFile) while processing ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/gui/Main.java; message: bad class file: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/lib/java/util/LinkedHashMap$EntryIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/gui/Main.java
+  Last visited tree at line 6 column 1:
+  public class Main extends JFrame {
+  Exception: com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/lib/java/util/LinkedHashMap$EntryIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.; com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/lib/java/util/LinkedHashMap$EntryIterator.class
+    undeclared type variable: K
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  	at com.sun.tools.javac.jvm.ClassReader.badClassFile(ClassReader.java:298)
+  	at com.sun.tools.javac.jvm.ClassReader.findTypeVar(ClassReader.java:983)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:690)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToTypes(ClassReader.java:897)
+  	at com.sun.tools.javac.jvm.ClassReader.classSigToType(ClassReader.java:813)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:726)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:752)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:676)
+  	at com.sun.tools.javac.jvm.ClassReader.readType(ClassReader.java:519)
+  	at com.sun.tools.javac.jvm.ClassReader$11.read(ClassReader.java:1213)
+  	at com.sun.tools.javac.jvm.ClassReader.readAttrs(ClassReader.java:1561)
+  	at com.sun.tools.javac.jvm.ClassReader.readMemberAttrs(ClassReader.java:1551)
+  	at com.sun.tools.javac.jvm.ClassReader.readMethod(ClassReader.java:2432)
+  	at com.sun.tools.javac.jvm.ClassReader.readClass(ClassReader.java:2710)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassBuffer(ClassReader.java:2775)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassFile(ClassReader.java:2788)
+  	at com.sun.tools.javac.code.ClassFinder.fillIn(ClassFinder.java:348)
+  	at com.sun.tools.javac.code.ClassFinder.complete(ClassFinder.java:285)
+  	at com.sun.tools.javac.code.Symbol.complete(Symbol.java:633)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.complete(Symbol.java:1314)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.flags(Symbol.java:1248)
+  	at com.sun.tools.javac.code.Symbol$TypeSymbol.getEnclosedElements(Symbol.java:800)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.annosInPackage(AnnotationFileParser.java:464)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.getImportedAnnotations(AnnotationFileParser.java:565)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubUnit(AnnotationFileParser.java:746)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubFile(AnnotationFileParser.java:659)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseJdkFileAsStub(AnnotationFileParser.java:725)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.parseJdkJarEntry(AnnotationFileElementTypes.java:765)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.maybeParseEnclosingJdkClass(AnnotationFileElementTypes.java:691)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.getDeclAnnotations(AnnotationFileElementTypes.java:465)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3964)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3997)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3974)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3887)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3807)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.getDefaultQualifierForUses(DefaultQualifierForUseTypeAnnotator.java:134)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.getDefaultAnnosForUses(DefaultQualifierForUseTypeAnnotator.java:83)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:55)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:26)
+  	at org.checkerframework.framework.type.AnnotatedTypeMirror$AnnotatedDeclaredType.accept(AnnotatedTypeMirror.java:1051)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:206)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:194)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:181)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addAnnotationsFromDefaultForType(GenericAnnotatedTypeFactory.java:2432)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1922)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1854)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getAnnotatedType(AnnotatedTypeFactory.java:1390)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.getAnnotatedTypeLhs(GenericAnnotatedTypeFactory.java:1742)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1437)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1994)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:425)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:550)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:188)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:86)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:1057)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:559)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+error: SourceChecker.typeProcess: unexpected Throwable (BadClassFile) while processing ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/gui/PatientRegister.java; message: bad class file: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/lib/java/util/LinkedHashMap$ValueIterator.class
+    undeclared type variable: V
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/gui/PatientRegister.java
+  Last visited tree at line 13 column 1:
+  public class PatientRegister extends javax.swing.JPanel {
+  Exception: com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/lib/java/util/LinkedHashMap$ValueIterator.class
+    undeclared type variable: V
+    Please remove or make sure it appears in the correct subdirectory of the classpath.; com.sun.tools.javac.code.ClassFinder$BadClassFile: bad class file: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/lib/java/util/LinkedHashMap$ValueIterator.class
+    undeclared type variable: V
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+  	at com.sun.tools.javac.jvm.ClassReader.badClassFile(ClassReader.java:298)
+  	at com.sun.tools.javac.jvm.ClassReader.findTypeVar(ClassReader.java:983)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:690)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:752)
+  	at com.sun.tools.javac.jvm.ClassReader.sigToType(ClassReader.java:676)
+  	at com.sun.tools.javac.jvm.ClassReader.readType(ClassReader.java:519)
+  	at com.sun.tools.javac.jvm.ClassReader$11.read(ClassReader.java:1213)
+  	at com.sun.tools.javac.jvm.ClassReader.readAttrs(ClassReader.java:1561)
+  	at com.sun.tools.javac.jvm.ClassReader.readMemberAttrs(ClassReader.java:1551)
+  	at com.sun.tools.javac.jvm.ClassReader.readMethod(ClassReader.java:2432)
+  	at com.sun.tools.javac.jvm.ClassReader.readClass(ClassReader.java:2710)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassBuffer(ClassReader.java:2775)
+  	at com.sun.tools.javac.jvm.ClassReader.readClassFile(ClassReader.java:2788)
+  	at com.sun.tools.javac.code.ClassFinder.fillIn(ClassFinder.java:348)
+  	at com.sun.tools.javac.code.ClassFinder.complete(ClassFinder.java:285)
+  	at com.sun.tools.javac.code.Symbol.complete(Symbol.java:633)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.complete(Symbol.java:1314)
+  	at com.sun.tools.javac.code.Symbol$ClassSymbol.flags(Symbol.java:1248)
+  	at com.sun.tools.javac.code.Symbol$TypeSymbol.getEnclosedElements(Symbol.java:800)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.annosInPackage(AnnotationFileParser.java:464)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.getImportedAnnotations(AnnotationFileParser.java:565)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubUnit(AnnotationFileParser.java:746)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseStubFile(AnnotationFileParser.java:659)
+  	at org.checkerframework.framework.stub.AnnotationFileParser.parseJdkFileAsStub(AnnotationFileParser.java:725)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.parseJdkJarEntry(AnnotationFileElementTypes.java:765)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.maybeParseEnclosingJdkClass(AnnotationFileElementTypes.java:691)
+  	at org.checkerframework.framework.stub.AnnotationFileElementTypes.getDeclAnnotations(AnnotationFileElementTypes.java:465)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3964)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3997)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3974)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3997)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3974)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3997)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3974)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.inheritOverriddenDeclAnnosFromTypeDecl(AnnotatedTypeFactory.java:3997)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotations(AnnotatedTypeFactory.java:3974)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3887)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getDeclAnnotation(AnnotatedTypeFactory.java:3807)
+  	at org.checkerframework.checker.mustcall.MustCallAnnotatedTypeFactory$MustCallDefaultQualifierForUseTypeAnnotator.getExplicitAnnos(MustCallAnnotatedTypeFactory.java:363)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.getDefaultAnnosForUses(DefaultQualifierForUseTypeAnnotator.java:82)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:55)
+  	at org.checkerframework.framework.type.typeannotator.DefaultQualifierForUseTypeAnnotator.visitDeclared(DefaultQualifierForUseTypeAnnotator.java:26)
+  	at org.checkerframework.framework.type.AnnotatedTypeMirror$AnnotatedDeclaredType.accept(AnnotatedTypeMirror.java:1051)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:206)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:223)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scanAndReduce(AnnotatedTypeScanner.java:230)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visitExecutable(AnnotatedTypeScanner.java:318)
+  	at org.checkerframework.framework.type.typeannotator.TypeAnnotator.visitExecutable(TypeAnnotator.java:42)
+  	at org.checkerframework.framework.type.typeannotator.TypeAnnotator.visitExecutable(TypeAnnotator.java:17)
+  	at org.checkerframework.framework.type.AnnotatedTypeMirror$AnnotatedExecutableType.accept(AnnotatedTypeMirror.java:1280)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.scan(AnnotatedTypeScanner.java:206)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:194)
+  	at org.checkerframework.framework.type.visitor.AnnotatedTypeScanner.visit(AnnotatedTypeScanner.java:181)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addAnnotationsFromDefaultForType(GenericAnnotatedTypeFactory.java:2432)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1933)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1854)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getAnnotatedType(AnnotatedTypeFactory.java:1390)
+  	at org.checkerframework.framework.flow.CFAbstractTransfer.getValueFromFactory(CFAbstractTransfer.java:211)
+  	at org.checkerframework.framework.flow.CFAbstractTransfer.visitNode(CFAbstractTransfer.java:533)
+  	at org.checkerframework.framework.flow.CFAbstractTransfer.visitNode(CFAbstractTransfer.java:98)
+  	at org.checkerframework.dataflow.cfg.node.AbstractNodeVisitor.visitMethodAccess(AbstractNodeVisitor.java:240)
+  	at org.checkerframework.dataflow.cfg.node.MethodAccessNode.accept(MethodAccessNode.java:72)
+  	at org.checkerframework.dataflow.analysis.AbstractAnalysis.callTransferFunction(AbstractAnalysis.java:349)
+  	at org.checkerframework.dataflow.analysis.ForwardAnalysisImpl.callTransferFunction(ForwardAnalysisImpl.java:377)
+  	at org.checkerframework.dataflow.analysis.ForwardAnalysisImpl.performAnalysisBlock(ForwardAnalysisImpl.java:128)
+  	at org.checkerframework.dataflow.analysis.ForwardAnalysisImpl.performAnalysis(ForwardAnalysisImpl.java:105)
+  	at org.checkerframework.framework.flow.CFAbstractAnalysis.performAnalysis(CFAbstractAnalysis.java:147)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.analyze(GenericAnnotatedTypeFactory.java:1591)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1485)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1994)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:425)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:550)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:188)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:86)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:1057)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:559)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:552)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/DatabaseClient.java:38: error: (required.method.not.called) $$ 4 $$ method close $$ DriverManager.getConnection(DB_URL, USER, PASS) $$ java.sql.Connection $$ possible exceptional exit due to con.createStatement() with exception type java.sql.SQLException $$ ( 1093, 1140 ) $$ @MustCall method close may not have been invoked on DriverManager.getConnection(DB_URL, USER, PASS) or any of its aliases.
+            con = DriverManager.getConnection(DB_URL, USER, PASS);
+                                             ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: possible exceptional exit due to con.createStatement() with exception type java.sql.SQLException
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/DatabaseClient.java:104: error: (return) $$ 2 $$ @MustCallUnknown Map<@MustCall String, @MustCall Integer> $$ @MustCall Map<@MustCall String, @MustCall Integer> $$ ( 3907, 3914 ) $$ incompatible types in return.
+        return orgnMap;
+               ^
+  type of expression: @MustCallUnknown Map<@MustCall String, @MustCall Integer>
+  method return type: @MustCall Map<@MustCall String, @MustCall Integer>
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/DatabaseClient.java:158: error: (return) $$ 2 $$ @MustCallUnknown Map<@MustCall String, @MustCall Integer> $$ @MustCall Map<@MustCall String, @MustCall Integer> $$ ( 6728, 6738 ) $$ incompatible types in return.
+        return patientMap;
+               ^
+  type of expression: @MustCallUnknown Map<@MustCall String, @MustCall Integer>
+  method return type: @MustCall Map<@MustCall String, @MustCall Integer>
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/DatabaseClient.java:270: error: (assignment) $$ 2 $$ @MustCall Object @MustCallUnknown [] $$ @MustCall Object @MustCall [] $$ ( 11432, 11439 ) $$ incompatible types in assignment.
+                data[j++] = rowData;
+                            ^
+  found   : @MustCall Object @MustCallUnknown []
+  required: @MustCall Object @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/DatabaseClient.java:276: error: (return) $$ 2 $$ @MustCallUnknown DefaultTableModel $$ @MustCall DefaultTableModel $$ ( 11665, 11668 ) $$ incompatible types in return.
+        return dtm;
+               ^
+  type of expression: @MustCallUnknown DefaultTableModel
+  method return type: @MustCall DefaultTableModel
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/DatabaseClient.java:294: error: (return) $$ 2 $$ @MustCallUnknown CipherKeyPair $$ @MustCall CipherKeyPair $$ ( 12433, 12436 ) $$ incompatible types in return.
+        return ckp;
+               ^
+  type of expression: @MustCallUnknown CipherKeyPair
+  method return type: @MustCall CipherKeyPair
+error: SourceChecker.typeProcess: unexpected Throwable (AssertionError) while processing ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/Bswabe.java; message: @AssumeAssertion(nullness): transferInput should be non-null
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/Bswabe.java
+  Last visited tree at line 16 column 1:
+  public class Bswabe {
+  Exception: java.lang.AssertionError: @AssumeAssertion(nullness): transferInput should be non-null; java.lang.AssertionError: @AssumeAssertion(nullness): transferInput should be non-null
+  	at org.checkerframework.dataflow.analysis.AnalysisResult.getStoreBefore(AnalysisResult.java:313)
+  	at org.checkerframework.checker.mustcall.MustCallAnnotatedTypeFactory.getStoreForBlock(MustCallAnnotatedTypeFactory.java:459)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.propagateObligationsToSuccessorBlock(MustCallConsistencyAnalyzer.java:2141)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.propagateObligationsToSuccessorBlocks(MustCallConsistencyAnalyzer.java:1978)
+  	at org.checkerframework.checker.resourceleak.MustCallConsistencyAnalyzer.analyze(MustCallConsistencyAnalyzer.java:601)
+  	at org.checkerframework.checker.resourceleak.ResourceLeakAnnotatedTypeFactory.postAnalyze(ResourceLeakAnnotatedTypeFactory.java:152)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.analyze(GenericAnnotatedTypeFactory.java:1653)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1485)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1994)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:425)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:550)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:188)
+  	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+  	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:86)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:1057)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:559)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+  	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1404)
+  	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1363)
+  	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:959)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:302)
+  	at com.sun.tools.javac.main.Main.compile(Main.java:162)
+  	at com.sun.tools.javac.Main.compile(Main.java:57)
+  	at com.sun.tools.javac.Main.main(Main.java:43)
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/Bswabe.java:123: error: (return) $$ 2 $$ @MustCallUnknown BswabePrv $$ @MustCall BswabePrv $$ ( 3376, 3379 ) $$ incompatible types in return.
+		return prv;
+		       ^
+  type of expression: @MustCallUnknown BswabePrv
+  method return type: @MustCall BswabePrv
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/Bswabe.java:201: error: (return) $$ 2 $$ @MustCallUnknown BswabePrv $$ @MustCall BswabePrv $$ ( 5821, 5824 ) $$ incompatible types in return.
+            return prv;
+                   ^
+  type of expression: @MustCallUnknown BswabePrv
+  method return type: @MustCall BswabePrv
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/Bswabe.java:255: error: (assignment) $$ 2 $$ @MustCallUnknown BswabeCph $$ @MustCall BswabeCph $$ ( 7538, 7541 ) $$ incompatible types in assignment.
+		keyCph.cph = cph;
+		             ^
+  found   : @MustCallUnknown BswabeCph
+  required: @MustCall BswabeCph
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/Bswabe.java:256: error: (assignment) $$ 2 $$ @MustCallUnknown Element $$ @MustCall Element $$ ( 7558, 7559 ) $$ incompatible types in assignment.
+		keyCph.key = m;
+		             ^
+  found   : @MustCallUnknown Element
+  required: @MustCall Element
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/Bswabe.java:258: error: (return) $$ 2 $$ @MustCallUnknown BswabeCphKey $$ @MustCall BswabeCphKey $$ ( 7571, 7577 ) $$ incompatible types in return.
+		return keyCph;
+		       ^
+  type of expression: @MustCallUnknown BswabeCphKey
+  method return type: @MustCall BswabeCphKey
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/Bswabe.java:282: error: (return) $$ 2 $$ @MustCallUnknown BswabeElementBoolean $$ @MustCall BswabeElementBoolean $$ ( 8318, 8321 ) $$ incompatible types in return.
+			return beb;
+			       ^
+  type of expression: @MustCallUnknown BswabeElementBoolean
+  method return type: @MustCall BswabeElementBoolean
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/Bswabe.java:296: error: (assignment) $$ 2 $$ @MustCallUnknown Element $$ @MustCall Element $$ ( 8547, 8548 ) $$ incompatible types in assignment.
+		beb.e = m;
+		        ^
+  found   : @MustCallUnknown Element
+  required: @MustCall Element
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/Bswabe.java:299: error: (return) $$ 2 $$ @MustCallUnknown BswabeElementBoolean $$ @MustCall BswabeElementBoolean $$ ( 8576, 8579 ) $$ incompatible types in return.
+		return beb;
+		       ^
+  type of expression: @MustCallUnknown BswabeElementBoolean
+  method return type: @MustCall BswabeElementBoolean
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/Bswabe.java:505: error: (return) $$ 2 $$ @MustCallUnknown BswabePolynomial $$ @MustCall BswabePolynomial $$ ( 13295, 13296 ) $$ incompatible types in return.
+		return q;
+		       ^
+  type of expression: @MustCallUnknown BswabePolynomial
+  method return type: @MustCall BswabePolynomial
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/Bswabe.java:571: error: (return) $$ 2 $$ @MustCallUnknown BswabePolicy $$ @MustCall BswabePolicy $$ ( 14946, 14950 ) $$ incompatible types in return.
+		return root;
+		       ^
+  type of expression: @MustCallUnknown BswabePolicy
+  method return type: @MustCall BswabePolicy
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/Bswabe.java:584: error: (return) $$ 2 $$ @MustCallUnknown BswabePolicy $$ @MustCall BswabePolicy $$ ( 15148, 15149 ) $$ incompatible types in return.
+		return p;
+		       ^
+  type of expression: @MustCallUnknown BswabePolicy
+  method return type: @MustCall BswabePolicy
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/SerializeUtils.java:105: error: (return) $$ 2 $$ @MustCallUnknown BswabePub $$ @MustCall BswabePub $$ ( 2814, 2817 ) $$ incompatible types in return.
+		return pub;
+		       ^
+  type of expression: @MustCallUnknown BswabePub
+  method return type: @MustCall BswabePub
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/SerializeUtils.java:129: error: (return) $$ 2 $$ @MustCallUnknown BswabeMsk $$ @MustCall BswabeMsk $$ ( 3457, 3460 ) $$ incompatible types in return.
+		return msk;
+		       ^
+  type of expression: @MustCallUnknown BswabeMsk
+  method return type: @MustCall BswabeMsk
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/SerializeUtils.java:182: error: (return) $$ 2 $$ @MustCallUnknown BswabePrv $$ @MustCall BswabePrv $$ ( 4778, 4781 ) $$ incompatible types in return.
+		return prv;
+		       ^
+  type of expression: @MustCallUnknown BswabePrv
+  method return type: @MustCall BswabePrv
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/SerializeUtils.java:209: error: (return) $$ 2 $$ @MustCallUnknown BswabeCph $$ @MustCall BswabeCph $$ ( 5605, 5608 ) $$ incompatible types in return.
+		return cph;
+		       ^
+  type of expression: @MustCallUnknown BswabeCph
+  method return type: @MustCall BswabeCph
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/SerializeUtils.java:284: error: (return) $$ 2 $$ @MustCallUnknown BswabePolicy $$ @MustCall BswabePolicy $$ ( 7504, 7505 ) $$ incompatible types in return.
+		return p;
+		       ^
+  type of expression: @MustCallUnknown BswabePolicy
+  method return type: @MustCall BswabePolicy
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/bswabe/SerializeUtils.java:306: error: (return) $$ 2 $$ @MustCall byte @MustCallUnknown [] $$ @MustCall byte @MustCall [] $$ ( 7960, 7961 ) $$ incompatible types in return.
+		return b;
+		       ^
+  type of expression: @MustCall byte @MustCallUnknown []
+  method return type: @MustCall byte @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/AESCoder.java:19: error: (return) $$ 2 $$ @MustCall byte @MustCallUnknown [] $$ @MustCall byte @MustCall [] $$ ( 611, 614 ) $$ incompatible types in return.
+        return raw;
+               ^
+  type of expression: @MustCall byte @MustCallUnknown []
+  method return type: @MustCall byte @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/AESCoder.java:29: error: (return) $$ 2 $$ @MustCall byte @MustCallUnknown [] $$ @MustCall byte @MustCall [] $$ ( 1009, 1018 ) $$ incompatible types in return.
+        return encrypted;
+               ^
+  type of expression: @MustCall byte @MustCallUnknown []
+  method return type: @MustCall byte @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/AESCoder.java:40: error: (return) $$ 2 $$ @MustCall byte @MustCallUnknown [] $$ @MustCall byte @MustCall [] $$ ( 1416, 1425 ) $$ incompatible types in return.
+        return decrypted;
+               ^
+  type of expression: @MustCall byte @MustCallUnknown []
+  method return type: @MustCall byte @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Cpabe.java:211: error: (return) $$ 2 $$ @MustCall byte @MustCallUnknown [] $$ @MustCall byte @MustCall [] $$ ( 5674, 5677 ) $$ incompatible types in return.
+			return plt;
+			       ^
+  type of expression: @MustCall byte @MustCallUnknown []
+  method return type: @MustCall byte @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java:15: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ possible exceptional exit due to is.available() with exception type java.io.IOException $$ ( 395, 443 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+        InputStream is = new FileInputStream(inputfile);
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to is.available() with exception type java.io.IOException
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java:22: error: (return) $$ 2 $$ @MustCall byte @MustCallUnknown [] $$ @MustCall byte @MustCall [] $$ ( 583, 590 ) $$ incompatible types in return.
+        return content;
+               ^
+  type of expression: @MustCall byte @MustCallUnknown []
+  method return type: @MustCall byte @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java:27: error: (required.method.not.called) $$ 4 $$ method close $$ os $$ java.io.OutputStream $$ possible exceptional exit due to os.write(b) with exception type java.io.IOException $$ ( 728, 779 ) $$ @MustCall method close may not have been invoked on os or any of its aliases.
+        OutputStream os = new FileOutputStream(outputfile);
+                     ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to os.write(b) with exception type java.io.IOException
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ os $$ java.io.OutputStream $$ possible exceptional exit due to os.write(aesBuf) with exception type java.io.IOException $$ ( 968, 1016 ) $$ @MustCall method close may not have been invoked on os or any of its aliases.
+        OutputStream os = new FileOutputStream(encfile);
+                     ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to os.write(aesBuf) with exception type java.io.IOException
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java:82: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ possible exceptional exit due to is.read() with exception type java.io.IOException $$ ( 2157, 2203 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+        InputStream is = new FileInputStream(encfile);
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to is.read() with exception type java.io.IOException
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java:106: error: (assignment) $$ 2 $$ @MustCall byte @MustCallUnknown [] $$ @MustCall byte @MustCall [] $$ ( 2690, 2696 ) $$ incompatible types in assignment.
+        res[0] = aesBuf;
+                 ^
+  found   : @MustCall byte @MustCallUnknown []
+  required: @MustCall byte @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java:107: error: (assignment) $$ 2 $$ @MustCall byte @MustCallUnknown [] $$ @MustCall byte @MustCall [] $$ ( 2715, 2721 ) $$ incompatible types in assignment.
+        res[1] = cphBuf;
+                 ^
+  found   : @MustCall byte @MustCallUnknown []
+  required: @MustCall byte @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java:108: error: (return) $$ 2 $$ @MustCall byte @MustCallUnknown [] @MustCall [] $$ @MustCall byte @MustCall [] @MustCall [] $$ ( 2738, 2741 ) $$ incompatible types in return.
+        return res;
+               ^
+  type of expression: @MustCall byte @MustCallUnknown [] @MustCall []
+  method return type: @MustCall byte @MustCall [] @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java:144: error: (assignment) $$ 2 $$ @MustCall byte @MustCallUnknown [] $$ @MustCall byte @MustCall [] $$ ( 3486, 3492 ) $$ incompatible types in assignment.
+        res[0] = aesBuf;
+                 ^
+  found   : @MustCall byte @MustCallUnknown []
+  required: @MustCall byte @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java:145: error: (assignment) $$ 2 $$ @MustCall byte @MustCallUnknown [] $$ @MustCall byte @MustCall [] $$ ( 3511, 3517 ) $$ incompatible types in assignment.
+        res[1] = cphBuf;
+                 ^
+  found   : @MustCall byte @MustCallUnknown []
+  required: @MustCall byte @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java:147: error: (return) $$ 2 $$ @MustCall byte @MustCallUnknown [] @MustCall [] $$ @MustCall byte @MustCall [] @MustCall [] $$ ( 3543, 3546 ) $$ incompatible types in return.
+        return res;
+               ^
+  type of expression: @MustCall byte @MustCallUnknown [] @MustCall []
+  method return type: @MustCall byte @MustCall [] @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java:176: error: (return) $$ 2 $$ @MustCallUnknown ByteArrayOutputStream $$ @MustCall ByteArrayOutputStream $$ ( 4381, 4383 ) $$ incompatible types in return.
+        return os;
+               ^
+  type of expression: @MustCallUnknown ByteArrayOutputStream
+  method return type: @MustCall ByteArrayOutputStream
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java:212: error: (assignment) $$ 2 $$ @MustCall byte @MustCallUnknown [] $$ @MustCall byte @MustCall [] $$ ( 5248, 5254 ) $$ incompatible types in assignment.
+        res[0] = aesBuf;
+                 ^
+  found   : @MustCall byte @MustCallUnknown []
+  required: @MustCall byte @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java:213: error: (assignment) $$ 2 $$ @MustCall byte @MustCallUnknown [] $$ @MustCall byte @MustCall [] $$ ( 5273, 5279 ) $$ incompatible types in assignment.
+        res[1] = cphBuf;
+                 ^
+  found   : @MustCall byte @MustCallUnknown []
+  required: @MustCall byte @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java:214: error: (assignment) $$ 2 $$ @MustCall byte @MustCallUnknown [] $$ @MustCall byte @MustCall [] $$ ( 5298, 5302 ) $$ incompatible types in assignment.
+        res[2] = mBuf;
+                 ^
+  found   : @MustCall byte @MustCallUnknown []
+  required: @MustCall byte @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java:215: error: (return) $$ 2 $$ @MustCall byte @MustCallUnknown [] @MustCall [] $$ @MustCall byte @MustCall [] @MustCall [] $$ ( 5319, 5322 ) $$ incompatible types in return.
+        return res;
+               ^
+  type of expression: @MustCall byte @MustCallUnknown [] @MustCall []
+  method return type: @MustCall byte @MustCall [] @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/policy/LangPolicy.java:33: error: (return) $$ 2 $$ @MustCall String @MustCallUnknown [] $$ @MustCall String @MustCall [] $$ ( 776, 779 ) $$ incompatible types in return.
+		return res;
+		       ^
+  type of expression: @MustCall String @MustCallUnknown []
+  method return type: @MustCall String @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/WriterH.java:31: error: (return) $$ 2 $$ @MustCallUnknown CipherKeyPair $$ @MustCall CipherKeyPair $$ ( 1015, 1021 ) $$ incompatible types in return.
+        return result;
+               ^
+  type of expression: @MustCallUnknown CipherKeyPair
+  method return type: @MustCall CipherKeyPair
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/WriterH.java:77: error: (return) $$ 2 $$ @MustCall byte @MustCallUnknown [] $$ @MustCall byte @MustCall [] $$ ( 2929, 2941 ) $$ incompatible types in return.
+        return byteArrayEnc;
+               ^
+  type of expression: @MustCall byte @MustCallUnknown []
+  method return type: @MustCall byte @MustCall []
+../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/CryptoUtil.java:17: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to fis.read(dataBytes) with exception type java.io.FileNotFoundException $$ ( 464, 516 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+            FileInputStream fis = new FileInputStream(filename);
+                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to fis.read(dataBytes) with exception type java.io.FileNotFoundException
+Note: ../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/CpabeTest.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+53 errors

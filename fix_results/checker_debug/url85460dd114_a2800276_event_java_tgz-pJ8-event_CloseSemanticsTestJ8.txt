@@ -1,0 +1,4 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^event/TCPClientLoop.java^79^event.TCPClientLoop.createTCPClient(Levent/Callback$TCPClient;Ljava/net/InetAddress;I)V^14 = invokestatic < Application, Ljava/nio/channels/SocketChannel, open()Ljava/nio/channels/SocketChannel; > @7 exception:13^NULL^FIELD,INVOKE,^false^true^Field escape;
+1^event/Loop.java^33^event.Loop.<init>()V^8 = invokevirtual < Application, Ljava/nio/channels/spi/SelectorProvider, openSelector()Ljava/nio/channels/spi/AbstractSelector; > 6 @13 exception:7^NULL^FIELD,^false^true^Field escape;
+2^event/Speed.java^27^event.Speed.classicClient()V^2 = new <Application,Ljava/net/Socket>@0^NULL^INVOKE,^false^false^Try-catch Fix;

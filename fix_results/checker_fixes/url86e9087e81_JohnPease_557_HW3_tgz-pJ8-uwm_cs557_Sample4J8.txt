@@ -1,0 +1,29 @@
+10832
+808
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url86e9087e81_JohnPease_557_HW3_tgz-pJ8-uwm_cs557_Sample4J8/src/uwm_cs557/MiniDB.java; Line number 71
+vim +71 ../../../dataset/june2020_dataset/url86e9087e81_JohnPease_557_HW3_tgz-pJ8-uwm_cs557_Sample4J8/src/uwm_cs557/MiniDB.java
+
++++ Add following code below line: 77 (uwm_cs557/MiniDB.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 71
+
++++ Delete Line number 75 (uwm_cs557/MiniDB.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url86e9087e81_JohnPease_557_HW3_tgz-pJ8-uwm_cs557_Sample4J8/src/uwm_cs557/MiniDB.java; Line number 182
+vim +182 ../../../dataset/june2020_dataset/url86e9087e81_JohnPease_557_HW3_tgz-pJ8-uwm_cs557_Sample4J8/src/uwm_cs557/MiniDB.java
+
++++ Add following code below line: 188 (uwm_cs557/MiniDB.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 182
+
++++ Delete Line number 186 (uwm_cs557/MiniDB.java)
+
+--------------------------------------------

@@ -1,0 +1,53 @@
+../../../../datasets/june2020_dataset/url75694980d5_fabioalmeid_tp01ftc_tgz-pJ8-agentes_jade_Centralizador_ExemploParserGramaticaCentralizadorJ8/src/Centralizador/Test.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-91 $$ java.io.FileReader $$ regular method exit $$ ( 332, 355 ) $$ @MustCall method close may not have been invoked on temp-var-91 or any of its aliases.
+      else l = new Yylex(new FileReader(args[0]));
+                         ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url75694980d5_fabioalmeid_tp01ftc_tgz-pJ8-agentes_jade_Centralizador_ExemploParserGramaticaCentralizadorJ8/src/monitor/Test.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-713 $$ java.io.FileReader $$ regular method exit $$ ( 314, 337 ) $$ @MustCall method close may not have been invoked on temp-var-713 or any of its aliases.
+      else l = new Yylex(new FileReader(args[0]));
+                         ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url75694980d5_fabioalmeid_tp01ftc_tgz-pJ8-agentes_jade_Centralizador_ExemploParserGramaticaCentralizadorJ8/src/gramatica/Centralizador/Test.java:17: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1191 $$ java.io.FileReader $$ regular method exit $$ ( 373, 396 ) $$ @MustCall method close may not have been invoked on temp-var-1191 or any of its aliases.
+      else l = new Yylex(new FileReader(args[0]));
+                         ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url75694980d5_fabioalmeid_tp01ftc_tgz-pJ8-agentes_jade_Centralizador_ExemploParserGramaticaCentralizadorJ8/src/gramatica/Atuador/Test.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1871 $$ java.io.FileReader $$ regular method exit $$ ( 354, 377 ) $$ @MustCall method close may not have been invoked on temp-var-1871 or any of its aliases.
+      else l = new Yylex(new FileReader(args[0]));
+                         ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url75694980d5_fabioalmeid_tp01ftc_tgz-pJ8-agentes_jade_Centralizador_ExemploParserGramaticaCentralizadorJ8/src/gramatica/Monitor/Test.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2159 $$ java.io.FileReader $$ regular method exit $$ ( 354, 377 ) $$ @MustCall method close may not have been invoked on temp-var-2159 or any of its aliases.
+      else l = new Yylex(new FileReader(args[0]));
+                         ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url75694980d5_fabioalmeid_tp01ftc_tgz-pJ8-agentes_jade_Centralizador_ExemploParserGramaticaCentralizadorJ8/src/gramatica/java_cup/Main.java:354: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-3088 $$ java.io.FileInputStream $$ regular method exit $$ ( 13849, 13877 ) $$ @MustCall method close may not have been invoked on temp-var-3088 or any of its aliases.
+		  System.setIn(new FileInputStream(argv[i]));
+		               ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url75694980d5_fabioalmeid_tp01ftc_tgz-pJ8-agentes_jade_Centralizador_ExemploParserGramaticaCentralizadorJ8/src/gramatica/java_cup/Main.java:396: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-3093 $$ java.io.FileOutputStream $$ regular method exit $$ ( 14948, 14973 ) $$ @MustCall method close may not have been invoked on temp-var-3093 or any of its aliases.
+		 new BufferedOutputStream(new FileOutputStream(fil), 4096));
+		                          ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url75694980d5_fabioalmeid_tp01ftc_tgz-pJ8-agentes_jade_Centralizador_ExemploParserGramaticaCentralizadorJ8/src/gramatica/java_cup/Main.java:407: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-3097 $$ java.io.FileOutputStream $$ regular method exit $$ ( 15314, 15339 ) $$ @MustCall method close may not have been invoked on temp-var-3097 or any of its aliases.
+		 new BufferedOutputStream(new FileOutputStream(fil), 4096));
+		                          ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url75694980d5_fabioalmeid_tp01ftc_tgz-pJ8-agentes_jade_Centralizador_ExemploParserGramaticaCentralizadorJ8/src/agentes/jade/Centralizador/AgenteCentralizador.java:400: error: (required.method.not.called) $$ 4 $$ method close $$ fileWritter $$ java.io.FileWriter $$ possible exceptional exit due to bufferWritter.append(data) with exception type java.io.IOException $$ ( 18879, 18929 ) $$ @MustCall method close may not have been invoked on fileWritter or any of its aliases.
+			fileWritter = new FileWriter(file.getName(), true);
+			            ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bufferWritter.append(data) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url75694980d5_fabioalmeid_tp01ftc_tgz-pJ8-agentes_jade_Centralizador_ExemploParserGramaticaCentralizadorJ8/src/atuador/Test.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-5174 $$ java.io.FileReader $$ regular method exit $$ ( 314, 337 ) $$ @MustCall method close may not have been invoked on temp-var-5174 or any of its aliases.
+      else l = new Yylex(new FileReader(args[0]));
+                         ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+10 errors

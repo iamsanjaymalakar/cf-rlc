@@ -1,0 +1,41 @@
+12000
+138
+
+SOURCE LEVEL FIXES
+
+2] ../../../dataset/june2020_dataset/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/service/Service.java; Line number 113
+vim +113 ../../../dataset/june2020_dataset/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/service/Service.java
+
++++ Add following code below line: 136 (terminal/service/Service.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 113
+
++++ Delete Line number 127 (terminal/service/Service.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/service/Service.java; Line number 160
+vim +160 ../../../dataset/june2020_dataset/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/service/Service.java
+
++++ Add following code below line: 179 (terminal/service/Service.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 160
+
++++ Delete Line number 174 (terminal/service/Service.java)
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/devices/Device.java; Line number 196
+vim +196 ../../../dataset/june2020_dataset/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/devices/Device.java
+
++++ Add following code below line: 207 (terminal/devices/Device.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 196
+
++++ Delete Line number 202 (terminal/devices/Device.java)
+
+--------------------------------------------

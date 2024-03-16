@@ -1,0 +1,4 @@
+Note: ../../../../datasets/june2020_dataset/url64b10c0106_schlabberdog_blocks_tgz-pJ8-com_github_users_schlabberdog_blocks_ui_CliUIJ8/src/com/github/users/schlabberdog/blocks/ui/GamePicker.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: ../../../../datasets/june2020_dataset/url64b10c0106_schlabberdog_blocks_tgz-pJ8-com_github_users_schlabberdog_blocks_ui_CliUIJ8/src/com/github/users/schlabberdog/blocks/ui/GamePicker.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.

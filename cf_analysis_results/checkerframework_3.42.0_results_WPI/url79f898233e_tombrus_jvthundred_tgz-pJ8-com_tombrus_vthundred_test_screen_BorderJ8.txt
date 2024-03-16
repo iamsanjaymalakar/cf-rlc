@@ -1,0 +1,25 @@
+warning: /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url79f898233e_tombrus_jvthundred_tgz-pJ8-com_tombrus_vthundred_test_screen_BorderJ8/wpi-out/com/tombrus/vthundred/screen/Screen-org.checkerframework.checker.mustcall.MustCallChecker.ajava:(line 3,col 1): Imported package not found: com.tombrus.vthundred.terminal.CharProps
+warning: /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url79f898233e_tombrus_jvthundred_tgz-pJ8-com_tombrus_vthundred_test_screen_BorderJ8/wpi-out/com/tombrus/vthundred/terminal/input/InputDecoder-org.checkerframework.checker.mustcall.MustCallChecker.ajava:(line 4,col 1): Imported package not found: com.tombrus.vthundred.terminal.input.Key
+../dataset/june2020_dataset/url79f898233e_tombrus_jvthundred_tgz-pJ8-com_tombrus_vthundred_test_screen_BorderJ8/src/com/tombrus/vthundred/terminal/types/UnixTerminal.java:13: error: (required.method.not.called) $$ 4 $$ method close $$ getReader() $$ java.io.Reader $$ regular method exit $$ ( 346, 357 ) $$ @MustCall method close may not have been invoked on getReader() or any of its aliases.
+        super(new AnsiType(), getReader(), getWriter());
+                                       ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url79f898233e_tombrus_jvthundred_tgz-pJ8-com_tombrus_vthundred_test_screen_BorderJ8/src/com/tombrus/vthundred/terminal/types/UnixTerminal.java:13: error: (required.method.not.called) $$ 4 $$ method close $$ getWriter() $$ java.io.Writer $$ regular method exit $$ ( 359, 370 ) $$ @MustCall method close may not have been invoked on getWriter() or any of its aliases.
+        super(new AnsiType(), getReader(), getWriter());
+                                                    ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url79f898233e_tombrus_jvthundred_tgz-pJ8-com_tombrus_vthundred_test_screen_BorderJ8/src/com/tombrus/vthundred/terminal/TerminalImpl.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ new GraphWriter(type, new BufferedWriter(out, BUFFER_SIZE)) $$ com.tombrus.vthundred.terminal.GraphWriter $$ regular method exit $$ ( 1721, 1780 ) $$ @MustCall method close may not have been invoked on new GraphWriter(type, new BufferedWriter(out, BUFFER_SIZE)) or any of its aliases.
+            this.graphWriter  = new GraphWriter(type, new BufferedWriter(out, BUFFER_SIZE));
+                                ^
+  The type of object is: com.tombrus.vthundred.terminal.GraphWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url79f898233e_tombrus_jvthundred_tgz-pJ8-com_tombrus_vthundred_test_screen_BorderJ8/src/com/tombrus/vthundred/terminal/GraphWriter.java:47: error: (flowexpr.parse.error) $$ 1 $$ 'this.super' in the postcondition EnsuresCalledMethods on the declaration of method 'close': Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 1046, 1150 ) $$ cannot parse the expression 'this.super' in the postcondition EnsuresCalledMethods on the declaration of method 'close': Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+    public void close () throws IOException {
+                ^
+../dataset/june2020_dataset/url79f898233e_tombrus_jvthundred_tgz-pJ8-com_tombrus_vthundred_test_screen_BorderJ8/src/com/tombrus/vthundred/terminal/GraphWriter.java:47: error: (flowexpr.parse.error) $$ 1 $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 1046, 1150 ) $$ cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+    public void close () throws IOException {
+                ^
+5 errors
+2 warnings

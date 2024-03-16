@@ -1,0 +1,4 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^com/jcraft/jzlib/ZInputStream.java^53^com.jcraft.jzlib.ZInputStream.<init>(Ljava/io/InputStream;Z)V^12 = new <Application,Lcom/jcraft/jzlib/InflaterInputStream>@32^com.jcraft.jzlib.ZInputStream.<init>(Ljava/io/InputStream;Z)V#2,com.jcraft.jzlib.ZInputStream.<init>(Ljava/io/InputStream;Z)V#1,^FIELD,INVOKE,PARAM,^false^true^Field escape;
+1^com/jcraft/jzlib/ZOutputStream.java^66^com.jcraft.jzlib.ZOutputStream.<init>(Ljava/io/OutputStream;IZ)V^15 = new <Application,Lcom/jcraft/jzlib/DeflaterOutputStream>@56^com.jcraft.jzlib.ZOutputStream.<init>(Ljava/io/OutputStream;IZ)V#2,com.jcraft.jzlib.ZOutputStream.<init>(Ljava/io/OutputStream;IZ)V#1,^FIELD,INVOKE,PARAM,^false^true^Field escape;
+2^com/jcraft/jzlib/ZOutputStream.java^54^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

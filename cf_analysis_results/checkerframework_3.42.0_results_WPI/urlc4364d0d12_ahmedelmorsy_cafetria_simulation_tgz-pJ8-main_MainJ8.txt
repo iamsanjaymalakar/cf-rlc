@@ -1,0 +1,26 @@
+../dataset/june2020_dataset/urlc4364d0d12_ahmedelmorsy_cafetria_simulation_tgz-pJ8-main_MainJ8/src/simulation/global/Statistics.java:41: error: (assignment) $$ 2 $$ @MustCall("close") FileLogger $$ @MustCall EventsLogger $$ ( 1483, 1517 ) $$ incompatible types in assignment.
+    public static EventsLogger trace = new FileLogger(new File("trial0"));
+                                       ^
+  found   : @MustCall("close") FileLogger
+  required: @MustCall EventsLogger
+../dataset/june2020_dataset/urlc4364d0d12_ahmedelmorsy_cafetria_simulation_tgz-pJ8-main_MainJ8/src/simulation/global/Statistics.java:41: error: (required.method.not.called) $$ 4 $$ method close $$ new FileLogger(new File("trial0")) $$ simulation.logging.FileLogger $$ regular method exit $$ ( 1483, 1517 ) $$ @MustCall method close may not have been invoked on new FileLogger(new File("trial0")) or any of its aliases.
+    public static EventsLogger trace = new FileLogger(new File("trial0"));
+                                       ^
+  The type of object is: simulation.logging.FileLogger.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlc4364d0d12_ahmedelmorsy_cafetria_simulation_tgz-pJ8-main_MainJ8/src/simulation/logging/FileLogger.java:13: error: (required.method.not.called) $$ 4 $$ method close $$ field out $$ java.io.PrintWriter $$  Non-final owning field might be overwritten $$ ( 260, 289 ) $$ @MustCall method close may not have been invoked on field out or any of its aliases.
+            this.out = new PrintWriter(f);
+                     ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlc4364d0d12_ahmedelmorsy_cafetria_simulation_tgz-pJ8-main_MainJ8/src/main/Simulation.java:39: error: (assignment) $$ 2 $$ @MustCall("close") FileLogger $$ @MustCall EventsLogger $$ ( 1229, 1264 ) $$ incompatible types in assignment.
+        Statistics.trace = new FileLogger(new File(traceFile));
+                           ^
+  found   : @MustCall("close") FileLogger
+  required: @MustCall EventsLogger
+../dataset/june2020_dataset/urlc4364d0d12_ahmedelmorsy_cafetria_simulation_tgz-pJ8-main_MainJ8/src/main/Simulation.java:39: error: (required.method.not.called) $$ 4 $$ method close $$ new FileLogger(new File(traceFile)) $$ simulation.logging.FileLogger $$ regular method exit $$ ( 1229, 1264 ) $$ @MustCall method close may not have been invoked on new FileLogger(new File(traceFile)) or any of its aliases.
+        Statistics.trace = new FileLogger(new File(traceFile));
+                           ^
+  The type of object is: simulation.logging.FileLogger.
+  Reason for going out of scope: regular method exit
+5 errors

@@ -1,0 +1,28 @@
+../../../../datasets/june2020_dataset/url85940d3d8e_ccp999_Expr4j_tgz-pJ8-org_boris_expr_util_ExprEvaluatorJ8/src/org/boris/expr/util/IO.java:41: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-765 $$ java.io.FileReader $$ possible exceptional exit due to toString(new FileReader(f)) with exception type java.io.IOException $$ ( 1280, 1297 ) $$ @MustCall method close may not have been invoked on temp-var-765 or any of its aliases.
+        return toString(new FileReader(f));
+                        ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to toString(new FileReader(f)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url85940d3d8e_ccp999_Expr4j_tgz-pJ8-org_boris_expr_util_ExprEvaluatorJ8/src/org/boris/expr/util/IO.java:93: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to fis.read(b) with exception type java.io.IOException $$ ( 2616, 2664 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+        FileInputStream fis = new FileInputStream(file);
+                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to fis.read(b) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url85940d3d8e_ccp999_Expr4j_tgz-pJ8-org_boris_expr_util_ExprEvaluatorJ8/src/org/boris/expr/util/IO.java:121: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-789 $$ java.io.InputStream $$ possible exceptional exit due to readLines(new InputStreamReader(clazz.getResourceAsStream(resource))) with exception type java.io.IOException $$ ( 3522, 3574 ) $$ @MustCall method close may not have been invoked on temp-var-789 or any of its aliases.
+                .getResourceAsStream(resource)));
+                                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to readLines(new InputStreamReader(clazz.getResourceAsStream(resource))) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url85940d3d8e_ccp999_Expr4j_tgz-pJ8-org_boris_expr_util_ExprEvaluatorJ8/src/org/boris/expr/TestGen.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1840 $$ java.io.InputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 735, 779 ) $$ @MustCall method close may not have been invoked on temp-var-1840 or any of its aliases.
+                ZTEST.class.getResourceAsStream("flist.txt")));
+                                               ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url85940d3d8e_ccp999_Expr4j_tgz-pJ8-org_boris_expr_util_ExprEvaluatorJ8/src/org/boris/expr/parser/ExprLexer.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-3384 $$ org.boris.expr.parser.TokenReader $$ regular method exit $$ ( 746, 769 ) $$ @MustCall method close may not have been invoked on temp-var-3384 or any of its aliases.
+        this.reader = new TokenReader(reader);
+                      ^
+  The type of object is: org.boris.expr.parser.TokenReader.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors

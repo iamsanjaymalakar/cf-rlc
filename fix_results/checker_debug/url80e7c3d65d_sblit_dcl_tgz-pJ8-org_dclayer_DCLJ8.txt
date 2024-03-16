@@ -1,0 +1,5 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^org/dclayer/net/socket/UDPSocket.java^31^org.dclayer.net.socket.UDPSocket.<init>(I)V^5 = new <Application,Ljava/net/DatagramSocket>@5^NULL^FIELD,^false^true^Field escape;
+1^org/dclayer/net/socket/TCPSocket.java^38^org.dclayer.net.socket.TCPSocket.run()V^13 = invokevirtual < Application, Ljava/net/ServerSocket, accept()Ljava/net/Socket; > 11 @24 exception:12^NULL^FIELD,INVOKE,^false^true^Field escape;
+2^org/dclayer/net/a2s/ApplicationConnection.java^66^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+3^org/dclayer/net/a2s/ApplicationConnection.java^106^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

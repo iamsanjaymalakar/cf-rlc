@@ -1,0 +1,23 @@
+../../../../datasets/june2020_dataset/url58b12a0c74_tatianaslod_daooTP_tgz-pJ8-tp1_MainTp1J8/src/encoder/MsgEncoderProvider.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ fr $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 1040, 1077 ) $$ @MustCall method close may not have been invoked on fr or any of its aliases.
+            fr = new FileReader("MsgEncoder.txt");
+               ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url58b12a0c74_tatianaslod_daooTP_tgz-pJ8-tp1_MainTp1J8/src/server/TaskExecutorProvider.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ fr $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 1075, 1110 ) $$ @MustCall method close may not have been invoked on fr or any of its aliases.
+            fr = new FileReader("Executor.txt");
+               ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url58b12a0c74_tatianaslod_daooTP_tgz-pJ8-tp1_MainTp1J8/src/server/DaooTaskServer.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ serverSocket $$ java.net.ServerSocket $$ possible exceptional exit due to serverSocket.accept() with exception type java.io.IOException $$ ( 395, 446 ) $$ @MustCall method close may not have been invoked on serverSocket or any of its aliases.
+            ServerSocket serverSocket = new ServerSocket(port);
+                         ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: possible exceptional exit due to serverSocket.accept() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url58b12a0c74_tatianaslod_daooTP_tgz-pJ8-tp1_MainTp1J8/src/server/DaooTaskServer.java:20: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.Socket $$ possible exceptional exit due to Context.getMsgEncoder() with exception type java.lang.Exception $$ ( 608, 646 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+                Socket socket = serverSocket.accept();
+                       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to Context.getMsgEncoder() with exception type java.lang.Exception
+Note: ../../../../datasets/june2020_dataset/url58b12a0c74_tatianaslod_daooTP_tgz-pJ8-tp1_MainTp1J8/src/tp1/visitor/JsonVisitor.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 errors

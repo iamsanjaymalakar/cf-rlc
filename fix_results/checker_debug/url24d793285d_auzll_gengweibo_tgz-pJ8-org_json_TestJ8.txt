@@ -1,0 +1,4 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^net/oauth/http/HttpMessage.java^107^net.oauth.http.HttpMessage.getBody()Ljava/io/InputStream;^6 = invokevirtual < Application, Lnet/oauth/http/HttpMessage, openBody()Ljava/io/InputStream; > 1 @8 exception:5^net.oauth.http.HttpMessage.getBody()Ljava/io/InputStream;#7,^FIELD,^false^true^Field escape;
+1^net/oauth/signature/pem/PEMReader.java^70^net.oauth.signature.pem.PEMReader.<init>(Ljava/lang/String;)V^4 = new <Application,Ljava/io/FileInputStream>@1^NULL^FIELD,INVOKE,^false^true^Field escape;
+2^com/gengweibo/web/GuiceInit.java^45^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

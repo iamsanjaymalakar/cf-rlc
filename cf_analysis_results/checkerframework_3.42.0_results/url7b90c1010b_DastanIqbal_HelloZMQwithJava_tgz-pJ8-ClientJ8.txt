@@ -1,0 +1,169 @@
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/IOThread.java:46: error: (required.method.not.called) $$ 4 $$ method close $$ mailbox.get_fd() $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 1522, 1538 ) $$ @MustCall method close may not have been invoked on mailbox.get_fd() or any of its aliases.
+        mailbox_handle = mailbox.get_fd();
+                                       ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/Poller.java:49: error: (type.argument) $$ 4 $$ K $$ Map $$ @MustCall("close") SelectableChannel $$ @MustCall Object $$ ( 1694, 1711 ) $$ incompatible type argument for type parameter K of Map.
+    final private Map<SelectableChannel, PollSet> fd_table;
+                      ^
+  found   : @MustCall("close") SelectableChannel
+  required: @MustCall Object
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/Poller.java:73: error: (type.argument) $$ 4 $$ K $$ HashMap $$ @MustCall("close") SelectableChannel $$ @MustCall Object $$ ( 2297, 2314 ) $$ incompatible type argument for type parameter K of HashMap.
+        fd_table = new HashMap<SelectableChannel, PollSet>();
+                               ^
+  found   : @MustCall("close") SelectableChannel
+  required: @MustCall Object
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/Poller.java:75: error: (required.method.not.called) $$ 4 $$ method close $$ Selector.open() $$ java.nio.channels.Selector $$ regular method exit $$ ( 2365, 2380 ) $$ @MustCall method close may not have been invoked on Selector.open() or any of its aliases.
+            selector = Selector.open();
+                                    ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/Poller.java:177: error: (type.argument) $$ 4 $$ K $$ Entry $$ @MustCall("close") SelectableChannel $$ @MustCall Object $$ ( 4901, 4918 ) $$ incompatible type argument for type parameter K of Entry.
+                Iterator <Map.Entry <SelectableChannel,PollSet>> it = fd_table.entrySet ().iterator ();
+                                     ^
+  found   : @MustCall("close") SelectableChannel
+  required: @MustCall Object
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/Poller.java:179: error: (type.argument) $$ 4 $$ K $$ Entry $$ @MustCall("close") SelectableChannel $$ @MustCall Object $$ ( 5039, 5056 ) $$ incompatible type argument for type parameter K of Entry.
+                    Map.Entry <SelectableChannel,PollSet> entry = it.next ();
+                               ^
+  found   : @MustCall("close") SelectableChannel
+  required: @MustCall Object
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/Poller.java:180: error: (required.method.not.called) $$ 4 $$ method close $$ ch $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 5106, 5145 ) $$ @MustCall method close may not have been invoked on ch or any of its aliases.
+                    SelectableChannel ch = entry.getKey ();
+                                      ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/Poller.java:257: error: (required.method.not.called) $$ 4 $$ method close $$ newSelector $$ java.nio.channels.Selector $$ regular method exit $$ ( 7526, 7555 ) $$ @MustCall method close may not have been invoked on newSelector or any of its aliases.
+            newSelector = Selector.open();
+                        ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/Signaler.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ Selector.open() $$ java.nio.channels.Selector $$ possible exceptional exit due to r.register(selector, SelectionKey.OP_READ) with exception type java.nio.channels.ClosedChannelException $$ ( 2099, 2114 ) $$ @MustCall method close may not have been invoked on Selector.open() or any of its aliases.
+            selector = Selector.open();
+                                    ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: possible exceptional exit due to r.register(selector, SelectionKey.OP_READ) with exception type java.nio.channels.ClosedChannelException
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/Signaler.java:89: error: (required.method.not.called) $$ 4 $$ method close $$ pipe.source() $$ java.nio.channels.Pipe.SourceChannel $$ regular method exit $$ ( 2820, 2833 ) $$ @MustCall method close may not have been invoked on pipe.source() or any of its aliases.
+        r = pipe.source();
+                       ^
+  The type of object is: java.nio.channels.Pipe.SourceChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/Signaler.java:90: error: (required.method.not.called) $$ 4 $$ method close $$ pipe.sink() $$ java.nio.channels.Pipe.SinkChannel $$ regular method exit $$ ( 2847, 2858 ) $$ @MustCall method close may not have been invoked on pipe.sink() or any of its aliases.
+        w = pipe.sink();
+                     ^
+  The type of object is: java.nio.channels.Pipe.SinkChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/SocketBase.java:280: error: (return) $$ 2 $$ @MustCall("close") SelectableChannel $$ @MustCall Object $$ ( 8813, 8829 ) $$ incompatible types in return.
+            return mailbox.get_fd();
+                                 ^
+  type of expression: @MustCall("close") SelectableChannel
+  method return type: @MustCall Object
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/SocketBase.java:751: error: (required.method.not.called) $$ 4 $$ method close $$ mailbox.get_fd() $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 24621, 24637 ) $$ @MustCall method close may not have been invoked on mailbox.get_fd() or any of its aliases.
+        handle = mailbox.get_fd();
+                               ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/Reaper.java:53: error: (required.method.not.called) $$ 4 $$ method close $$ mailbox.get_fd() $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 1716, 1732 ) $$ @MustCall method close may not have been invoked on mailbox.get_fd() or any of its aliases.
+        mailbox_handle = mailbox.get_fd();
+                                       ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/ZMQ.java:583: error: (required.method.not.called) $$ 4 $$ method close $$ selector $$ java.nio.channels.Selector $$ regular method exit $$ ( 18827, 18857 ) $$ @MustCall method close may not have been invoked on selector or any of its aliases.
+            selector = PollSelector.open();
+                     ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/ZMQ.java:636: error: (type.argument) $$ 4 $$ K $$ HashMap $$ @MustCall("close") SelectableChannel $$ @MustCall Object $$ ( 20403, 20420 ) $$ incompatible type argument for type parameter K of HashMap.
+        HashMap<SelectableChannel, SelectionKey> saved = new HashMap<SelectableChannel, SelectionKey> ();
+                ^
+  found   : @MustCall("close") SelectableChannel
+  required: @MustCall Object
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/ZMQ.java:636: error: (type.argument) $$ 4 $$ K $$ HashMap $$ @MustCall("close") SelectableChannel $$ @MustCall Object $$ ( 20456, 20473 ) $$ incompatible type argument for type parameter K of HashMap.
+        HashMap<SelectableChannel, SelectionKey> saved = new HashMap<SelectableChannel, SelectionKey> ();
+                                                                     ^
+  found   : @MustCall("close") SelectableChannel
+  required: @MustCall Object
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/ZMQ.java:647: error: (required.method.not.called) $$ 4 $$ method close $$ ch $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 20786, 20828 ) $$ @MustCall method close may not have been invoked on ch or any of its aliases.
+            SelectableChannel ch = item.getChannel (); // mailbox channel if ZMQ socket
+                              ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/ZMQ.java:783: error: (required.method.not.called) $$ 4 $$ method close $$ Selector.open() $$ java.nio.channels.Selector $$ regular method exit $$ ( 25216, 25232 ) $$ @MustCall method close may not have been invoked on Selector.open() or any of its aliases.
+                            polls = new PollSelector (Selector.open ());
+                                                                    ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/TcpConnecter.java:145: error: (required.method.not.called) $$ 4 $$ method close $$ fd $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 4127, 4142 ) $$ @MustCall method close may not have been invoked on fd or any of its aliases.
+            fd = connect ();
+               ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/TcpConnecter.java:276: error: (reset.not.owning) $$ 2 $$ connect $$ this.handle $$ ( 8473, 8514 ) $$ Calling method connect resets the must-call obligations of the expression this.handle, which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+        boolean rc = handle.connect(addr.resolved().address());
+                                   ^
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/TcpListener.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ fd $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 2336, 2350 ) $$ @MustCall method close may not have been invoked on fd or any of its aliases.
+            fd = accept ();
+               ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/TcpListener.java:146: error: (reset.not.owning) $$ 2 $$ bind $$ this.handle.socket() $$ ( 4649, 4705 ) $$ Calling method bind resets the must-call obligations of the expression this.handle.socket(), which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+            handle.socket().bind(address.address(), options.backlog);
+                                ^
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/zmq/Utils.java:74: error: (required.method.not.called) $$ 4 $$ method close $$ s.configureBlocking(false) $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 2476, 2502 ) $$ @MustCall method close may not have been invoked on s.configureBlocking(false) or any of its aliases.
+        s.configureBlocking(false);
+                           ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/org/zeromq/ZMQ.java:1215: error: (required.method.not.called) $$ 4 $$ method close $$ item.getRawSocket() $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 41533, 41553 ) $$ @MustCall method close may not have been invoked on item.getRawSocket() or any of its aliases.
+                if (item.getRawSocket () == channel) {
+                                      ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/org/zeromq/ZMQ.java:1438: error: (required.method.not.called) $$ 4 $$ method close $$ getRawSocket() $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 47919, 47934 ) $$ @MustCall method close may not have been invoked on getRawSocket() or any of its aliases.
+            if (getRawSocket () != null && getRawSocket () == target.getRawSocket ())
+                             ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/org/zeromq/ZMQ.java:1438: error: (required.method.not.called) $$ 4 $$ method close $$ getRawSocket() $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 47946, 47961 ) $$ @MustCall method close may not have been invoked on getRawSocket() or any of its aliases.
+            if (getRawSocket () != null && getRawSocket () == target.getRawSocket ())
+                                                        ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/org/zeromq/ZMQ.java:1438: error: (required.method.not.called) $$ 4 $$ method close $$ target.getRawSocket() $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 47965, 47987 ) $$ @MustCall method close may not have been invoked on target.getRawSocket() or any of its aliases.
+            if (getRawSocket () != null && getRawSocket () == target.getRawSocket ())
+                                                                                  ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/org/zeromq/ZThread.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ ccontext $$ org.zeromq.ZContext $$ regular method exit $$ ( 2569, 2611 ) $$ @MustCall method close may not have been invoked on ccontext or any of its aliases.
+        ZContext ccontext = ZContext.shadow (ctx);
+                 ^
+  The type of object is: org.zeromq.ZContext.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/org/zeromq/ZLoop.java:155: error: (required.method.not.called) $$ 4 $$ method close $$ item.getRawSocket() $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 4939, 4958 ) $$ @MustCall method close may not have been invoked on item.getRawSocket() or any of its aliases.
+        if (item.getRawSocket() == null && item.getSocket() == null)
+                             ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/org/zeromq/ZLoop.java:165: error: (required.method.not.called) $$ 4 $$ method close $$ item.getRawSocket() $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 5346, 5365 ) $$ @MustCall method close may not have been invoked on item.getRawSocket() or any of its aliases.
+                    item.getSocket(), item.getRawSocket());
+                                                       ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/org/zeromq/ZLoop.java:189: error: (required.method.not.called) $$ 4 $$ method close $$ item.getRawSocket() $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 6208, 6227 ) $$ @MustCall method close may not have been invoked on item.getRawSocket() or any of its aliases.
+                    item.getSocket(), item.getRawSocket());
+                                                       ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/org/zeromq/ZLoop.java:300: error: (required.method.not.called) $$ 4 $$ method close $$ poller.item.getRawSocket() $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 10651, 10677 ) $$ @MustCall method close may not have been invoked on poller.item.getRawSocket() or any of its aliases.
+                                poller.item.getSocket(), poller.item.getRawSocket());
+                                                                                 ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/org/zeromq/ZLoop.java:313: error: (required.method.not.called) $$ 4 $$ method close $$ poller.item.getRawSocket() $$ java.nio.channels.SelectableChannel $$ regular method exit $$ ( 11394, 11420 ) $$ @MustCall method close may not have been invoked on poller.item.getRawSocket() or any of its aliases.
+                                poller.item.getSocket(), poller.item.getRawSocket());
+                                                                                 ^
+  The type of object is: java.nio.channels.SelectableChannel.
+  Reason for going out of scope: regular method exit
+Note: ../dataset/june2020_dataset/url7b90c1010b_DastanIqbal_HelloZMQwithJava_tgz-pJ8-ClientJ8/src/java5/util/ArrayDeque.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+34 errors

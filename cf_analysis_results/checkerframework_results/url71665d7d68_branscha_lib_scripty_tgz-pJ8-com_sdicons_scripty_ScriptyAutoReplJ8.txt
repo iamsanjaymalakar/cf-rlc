@@ -1,0 +1,100 @@
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/repl/ReplEngine.java:114: error: (override.return) $$ 6 $$ @MustCall("close") Writer $$ @MustCall Appendable $$ @MustCall("close") NullWriter $$ @MustCall("close") Writer append(@MustCall("close") NullWriter this, @MustCall CharSequence p0) throws @MustCall IOException $$ @MustCall("close") Appendable $$ @MustCall Appendable append(@MustCall Appendable this, @MustCall CharSequence p0) throws @MustCall IOException $$ ( 3592, 3598 ) $$ Incompatible return type.
+        public Writer append(CharSequence csq) throws IOException
+               ^
+  found   : @MustCall("close") Writer
+  required: @MustCall Appendable
+  Consequence: method in @MustCall("close") NullWriter
+    @MustCall("close") Writer append(@MustCall("close") NullWriter this, @MustCall CharSequence p0) throws @MustCall IOException
+  cannot override method in @MustCall("close") Appendable
+    @MustCall Appendable append(@MustCall Appendable this, @MustCall CharSequence p0) throws @MustCall IOException
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/repl/ReplEngine.java:119: error: (override.return) $$ 6 $$ @MustCall("close") Writer $$ @MustCall Appendable $$ @MustCall("close") NullWriter $$ @MustCall("close") Writer append(@MustCall("close") NullWriter this, @MustCall CharSequence p0, @MustCall int p1, @MustCall int p2) throws @MustCall IOException $$ @MustCall("close") Appendable $$ @MustCall Appendable append(@MustCall Appendable this, @MustCall CharSequence p0, @MustCall int p1, @MustCall int p2) throws @MustCall IOException $$ ( 3704, 3710 ) $$ Incompatible return type.
+        public Writer append(CharSequence csq, int start, int end) throws IOException
+               ^
+  found   : @MustCall("close") Writer
+  required: @MustCall Appendable
+  Consequence: method in @MustCall("close") NullWriter
+    @MustCall("close") Writer append(@MustCall("close") NullWriter this, @MustCall CharSequence p0, @MustCall int p1, @MustCall int p2) throws @MustCall IOException
+  cannot override method in @MustCall("close") Appendable
+    @MustCall Appendable append(@MustCall Appendable this, @MustCall CharSequence p0, @MustCall int p1, @MustCall int p2) throws @MustCall IOException
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/repl/ReplEngine.java:124: error: (override.return) $$ 6 $$ @MustCall("close") Writer $$ @MustCall Appendable $$ @MustCall("close") NullWriter $$ @MustCall("close") Writer append(@MustCall("close") NullWriter this, @MustCall char p0) throws @MustCall IOException $$ @MustCall("close") Appendable $$ @MustCall Appendable append(@MustCall Appendable this, @MustCall char p0) throws @MustCall IOException $$ ( 3836, 3842 ) $$ Incompatible return type.
+        public Writer append(char c) throws IOException
+               ^
+  found   : @MustCall("close") Writer
+  required: @MustCall Appendable
+  Consequence: method in @MustCall("close") NullWriter
+    @MustCall("close") Writer append(@MustCall("close") NullWriter this, @MustCall char p0) throws @MustCall IOException
+  cannot override method in @MustCall("close") Appendable
+    @MustCall Appendable append(@MustCall Appendable this, @MustCall char p0) throws @MustCall IOException
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/repl/ReplEngine.java:297: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-90 $$ com.sdicons.scripty.repl.ReplEngine.NullWriter $$ possible exceptional exit due to this.startNonInteractive(new StringReader(aExpr), new NullWriter(), new NullWriter()) with exception type com.sdicons.scripty.repl.ReplEngineException $$ ( 9374, 9390 ) $$ @MustCall method close may not have been invoked on temp-var-90 or any of its aliases.
+        return this.startNonInteractive(new StringReader(aExpr), new NullWriter(), new NullWriter());
+                                                                 ^
+  The type of object is: com.sdicons.scripty.repl.ReplEngine.NullWriter.
+  Reason for going out of scope: possible exceptional exit due to this.startNonInteractive(new StringReader(aExpr), new NullWriter(), new NullWriter()) with exception type com.sdicons.scripty.repl.ReplEngineException
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/repl/ReplEngine.java:297: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-91 $$ com.sdicons.scripty.repl.ReplEngine.NullWriter $$ possible exceptional exit due to this.startNonInteractive(new StringReader(aExpr), new NullWriter(), new NullWriter()) with exception type com.sdicons.scripty.repl.ReplEngineException $$ ( 9392, 9408 ) $$ @MustCall method close may not have been invoked on temp-var-91 or any of its aliases.
+        return this.startNonInteractive(new StringReader(aExpr), new NullWriter(), new NullWriter());
+                                                                                   ^
+  The type of object is: com.sdicons.scripty.repl.ReplEngine.NullWriter.
+  Reason for going out of scope: possible exceptional exit due to this.startNonInteractive(new StringReader(aExpr), new NullWriter(), new NullWriter()) with exception type com.sdicons.scripty.repl.ReplEngineException
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/repl/ReplEngine.java:309: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-98 $$ com.sdicons.scripty.repl.ReplEngine.NullWriter $$ possible exceptional exit due to this.startNonInteractive(new InputStreamReader(aIn), new NullWriter(), new NullWriter()) with exception type com.sdicons.scripty.repl.ReplEngineException $$ ( 9843, 9859 ) $$ @MustCall method close may not have been invoked on temp-var-98 or any of its aliases.
+        return this.startNonInteractive(new InputStreamReader(aIn), new NullWriter(), new NullWriter());
+                                                                    ^
+  The type of object is: com.sdicons.scripty.repl.ReplEngine.NullWriter.
+  Reason for going out of scope: possible exceptional exit due to this.startNonInteractive(new InputStreamReader(aIn), new NullWriter(), new NullWriter()) with exception type com.sdicons.scripty.repl.ReplEngineException
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/repl/ReplEngine.java:309: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-99 $$ com.sdicons.scripty.repl.ReplEngine.NullWriter $$ possible exceptional exit due to this.startNonInteractive(new InputStreamReader(aIn), new NullWriter(), new NullWriter()) with exception type com.sdicons.scripty.repl.ReplEngineException $$ ( 9861, 9877 ) $$ @MustCall method close may not have been invoked on temp-var-99 or any of its aliases.
+        return this.startNonInteractive(new InputStreamReader(aIn), new NullWriter(), new NullWriter());
+                                                                                      ^
+  The type of object is: com.sdicons.scripty.repl.ReplEngine.NullWriter.
+  Reason for going out of scope: possible exceptional exit due to this.startNonInteractive(new InputStreamReader(aIn), new NullWriter(), new NullWriter()) with exception type com.sdicons.scripty.repl.ReplEngineException
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/repl/ReplEngine.java:315: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-101 $$ com.sdicons.scripty.repl.ReplEngine.NullWriter $$ possible exceptional exit due to startNonInteractive(aIn, new NullWriter(), new NullWriter()) with exception type com.sdicons.scripty.repl.ReplEngineException $$ ( 10014, 10030 ) $$ @MustCall method close may not have been invoked on temp-var-101 or any of its aliases.
+        return startNonInteractive(aIn, new NullWriter(), new NullWriter());
+                                        ^
+  The type of object is: com.sdicons.scripty.repl.ReplEngine.NullWriter.
+  Reason for going out of scope: possible exceptional exit due to startNonInteractive(aIn, new NullWriter(), new NullWriter()) with exception type com.sdicons.scripty.repl.ReplEngineException
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/repl/ReplEngine.java:315: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-102 $$ com.sdicons.scripty.repl.ReplEngine.NullWriter $$ possible exceptional exit due to startNonInteractive(aIn, new NullWriter(), new NullWriter()) with exception type com.sdicons.scripty.repl.ReplEngineException $$ ( 10032, 10048 ) $$ @MustCall method close may not have been invoked on temp-var-102 or any of its aliases.
+        return startNonInteractive(aIn, new NullWriter(), new NullWriter());
+                                                          ^
+  The type of object is: com.sdicons.scripty.repl.ReplEngine.NullWriter.
+  Reason for going out of scope: possible exceptional exit due to startNonInteractive(aIn, new NullWriter(), new NullWriter()) with exception type com.sdicons.scripty.repl.ReplEngineException
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/ScriptyEmbeddedRepl.java:56: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-841 $$ java.net.ServerSocket $$ regular method exit $$ ( 1381, 1404 ) $$ @MustCall method close may not have been invoked on temp-var-841 or any of its aliases.
+            server = new ServerSocket(aPort);
+                     ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/ScriptyEmbeddedRepl.java:80: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.Socket $$ possible exceptional exit due to socket.setSoTimeout(1000 * 1800) with exception type java.net.SocketException $$ ( 2030, 2062 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+                Socket socket = server.accept();
+                       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to socket.setSoTimeout(1000 * 1800) with exception type java.net.SocketException
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/ScriptyPanel.java:94: error: (required.method.not.called) $$ 4 $$ method close $$ lWriter $$ com.sdicons.scripty.ScriptyPanel.TextPaneWriter $$ regular method exit $$ ( 2935, 2998 ) $$ @MustCall method close may not have been invoked on lWriter or any of its aliases.
+        final TextPaneWriter lWriter = new TextPaneWriter(lOutputPane);
+                             ^
+  The type of object is: com.sdicons.scripty.ScriptyPanel.TextPaneWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/cmdlib/MapLibrary.java:74: error: (argument) $$ 4 $$ arg0 $$ putAll $$ @MustCall Map<? extends @MustCallUnknown Object, ? extends @MustCallUnknown Object> $$ @MustCallUnknown Map<? extends @MustCall Object, ? extends @MustCall Object> $$ ( 3094, 3113 ) $$ incompatible argument for parameter arg0 of putAll.
+                    lMap.putAll((Map<?,?>) aArgs[i]);
+                                ^
+  found   : @MustCall Map<? extends @MustCallUnknown Object, ? extends @MustCallUnknown Object>
+  required: @MustCallUnknown Map<? extends @MustCall Object, ? extends @MustCall Object>
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/cmdlib/DebuggerLibrary.java:65: error: (super.wildcard) $$ 2 $$ @MustCallUnknown Object $$ @MustCall Object $$ ( 3786, 3800 ) $$ bounds must have the same annotations.
+        List<? super Object> lMacro = new ArrayList<Object>();
+             ^
+  super bound  : @MustCallUnknown Object
+  extends bound: @MustCall Object
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/cmdlib/DebuggerLibrary.java:68: error: (super.wildcard) $$ 2 $$ @MustCallUnknown Object $$ @MustCall Object $$ ( 3883, 3897 ) $$ bounds must have the same annotations.
+        List<? super Object> lQuoted = new ArrayList<Object>();
+             ^
+  super bound  : @MustCallUnknown Object
+  extends bound: @MustCall Object
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/cmdlib/LoadLibrary.java:182: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2752 $$ java.io.InputStream $$ regular method exit $$ ( 6089, 6134 ) $$ @MustCall method close may not have been invoked on temp-var-2752 or any of its aliases.
+            if (this.getClass().getResourceAsStream(resource) == null)
+                                                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url71665d7d68_branscha_lib_scripty_tgz-pJ8-com_sdicons_scripty_ScriptyAutoReplJ8/src/com/sdicons/scripty/parser/TestParser.java:201: error: (required.method.not.called) $$ 4 $$ method close $$ lIn $$ java.io.InputStream $$ regular method exit $$ ( 6918, 7003 ) $$ @MustCall method close may not have been invoked on lIn or any of its aliases.
+        InputStream lIn = TestParser.class.getResourceAsStream("/com/sdicons/repl/cmds.lsp");
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+17 errors

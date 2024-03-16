@@ -1,0 +1,109 @@
+21917
+3726
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/input/TBInputEngine.java; Line number 103
+vim +103 ../../../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/input/TBInputEngine.java
+
++++ Add following code below line: 116 (input/TBInputEngine.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 103
+
++++ Delete Line number 113 (input/TBInputEngine.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/input/TBInputEngine.java; Line number 142
+vim +142 ../../../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/input/TBInputEngine.java
+
++++ Add following code below line: 150 (input/TBInputEngine.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 142
+
++++ Delete Line number 147 (input/TBInputEngine.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/serialization/SBufferedImage.java; Line number 39
+vim +39 ../../../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/serialization/SBufferedImage.java
+
++++ Add following code above line:39 (serialization/SBufferedImage.java)
+try{
++++ Add following code after line:39 (serialization/SBufferedImage.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 39
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/serialization/SBufferedImage.java; Line number 48
+vim +48 ../../../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/serialization/SBufferedImage.java
+
++++ Add following code above line:48 (serialization/SBufferedImage.java)
+try{
++++ Add following code after line:48 (serialization/SBufferedImage.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 48
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/editmode/CommandLoad.java; Line number 83
+vim +83 ../../../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/editmode/CommandLoad.java
+
++++ Add following code below line: 98 (editmode/CommandLoad.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 83
+
++++ Delete Line number 88 (editmode/CommandLoad.java)
+
++++ Delete Line number 89 (editmode/CommandLoad.java)
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/editmode/CommandLoad.java; Line number 105
+vim +105 ../../../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/editmode/CommandLoad.java
+
++++ Add following code below line: 119 (editmode/CommandLoad.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 105
+
++++ Delete Line number 109 (editmode/CommandLoad.java)
+
++++ Delete Line number 110 (editmode/CommandLoad.java)
+
+--------------------------------------------
+6] ../../../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/editmode/CommandSave.java; Line number 68
+vim +68 ../../../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/editmode/CommandSave.java
+
++++ Add following code below line: 78 (editmode/CommandSave.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 68
+
++++ Delete Line number 73 (editmode/CommandSave.java)
+
++++ Delete Line number 74 (editmode/CommandSave.java)
+
+--------------------------------------------
+7] ../../../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/editmode/CommandSave.java; Line number 96
+vim +96 ../../../dataset/june2020_dataset/url28dfd00382_byang223_TurnBAPI_tgz-pJ8-units_upgrades_UpgradeTestJ8/src/editmode/CommandSave.java
+
++++ Add following code below line: 106 (editmode/CommandSave.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 96
+
++++ Delete Line number 101 (editmode/CommandSave.java)
+
++++ Delete Line number 102 (editmode/CommandSave.java)
+
+--------------------------------------------

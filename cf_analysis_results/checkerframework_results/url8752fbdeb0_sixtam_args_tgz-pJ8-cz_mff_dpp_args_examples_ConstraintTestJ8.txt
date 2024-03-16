@@ -1,0 +1,11 @@
+../../../../datasets/june2020_dataset/url8752fbdeb0_sixtam_args_tgz-pJ8-cz_mff_dpp_args_examples_ConstraintTestJ8/src/cz/mff/dpp/args/Configurator.java:280: error: (return) $$ 2 $$ @MustCallUnknown List</*INFERENCE FAILED for:*/ ? extends @MustCall Object> $$ @MustCall Object $$ ( 8452, 8456 ) $$ incompatible types in return.
+		return list;
+		       ^
+  type of expression: @MustCallUnknown List</*INFERENCE FAILED for:*/ ? extends @MustCall Object>
+  method return type: @MustCall Object
+../../../../datasets/june2020_dataset/url8752fbdeb0_sixtam_args_tgz-pJ8-cz_mff_dpp_args_examples_ConstraintTestJ8/src/cz/mff/dpp/args/ReflectUtils.java:448: error: (assignment) $$ 2 $$ capture#627 extends @MustCallUnknown Object @MustCall [] $$ @MustCall Object @MustCallUnknown [] $$ ( 11228, 11251 ) $$ incompatible types in assignment.
+		Object[] enumConstants = type.getEnumConstants();
+		                                              ^
+  found   : capture#627 extends @MustCallUnknown Object @MustCall []
+  required: @MustCall Object @MustCallUnknown []
+2 errors

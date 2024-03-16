@@ -1,0 +1,28 @@
+../../../../datasets/june2020_dataset/url21b471891f_Agetac_Model_tgz-pJ8-org_json_TestJ8/src/org/json/JSONObject.java:1555: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-893 $$ java.io.Writer $$ regular method exit $$ ( 52755, 52784 ) $$ @MustCall method close may not have been invoked on temp-var-893 or any of its aliases.
+                    ((JSONObject)v).write(writer);
+                                         ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url21b471891f_Agetac_Model_tgz-pJ8-org_json_TestJ8/src/org/json/JSONObject.java:1557: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-894 $$ java.io.Writer $$ regular method exit $$ ( 52859, 52887 ) $$ @MustCall method close may not have been invoked on temp-var-894 or any of its aliases.
+                    ((JSONArray)v).write(writer);
+                                        ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url21b471891f_Agetac_Model_tgz-pJ8-org_json_TestJ8/src/org/json/JSONArray.java:946: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1072 $$ java.io.Writer $$ regular method exit $$ ( 30563, 30592 ) $$ @MustCall method close may not have been invoked on temp-var-1072 or any of its aliases.
+                    ((JSONObject)v).write(writer);
+                                         ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url21b471891f_Agetac_Model_tgz-pJ8-org_json_TestJ8/src/org/json/JSONArray.java:948: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1073 $$ java.io.Writer $$ regular method exit $$ ( 30667, 30695 ) $$ @MustCall method close may not have been invoked on temp-var-1073 or any of its aliases.
+                    ((JSONArray)v).write(writer);
+                                        ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url21b471891f_Agetac_Model_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java:447: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2002 $$ java.io.Writer $$ possible exceptional exit due to XML.toJSONObject(s) with exception type org.json.JSONException $$ ( 22624, 22651 ) $$ @MustCall method close may not have been invoked on temp-var-2002 or any of its aliases.
+            System.out.println(j.write(new StringWriter()));
+                                      ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: possible exceptional exit due to XML.toJSONObject(s) with exception type org.json.JSONException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors

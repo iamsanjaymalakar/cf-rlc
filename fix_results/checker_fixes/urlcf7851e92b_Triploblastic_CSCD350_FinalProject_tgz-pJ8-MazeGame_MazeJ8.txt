@@ -1,0 +1,16 @@
+18403
+32
+
+SOURCE LEVEL FIXES
+
+1] ../../../dataset/june2020_dataset/urlcf7851e92b_Triploblastic_CSCD350_FinalProject_tgz-pJ8-MazeGame_MazeJ8/src/TriviaQuestions/DataBaseBuilder.java; Line number 57
+vim +57 ../../../dataset/june2020_dataset/urlcf7851e92b_Triploblastic_CSCD350_FinalProject_tgz-pJ8-MazeGame_MazeJ8/src/TriviaQuestions/DataBaseBuilder.java
+
++++ Add following code above line:57 (TriviaQuestions/DataBaseBuilder.java)
+try{
++++ Add following code after line:65 (TriviaQuestions/DataBaseBuilder.java)
+}finally{
+    try{ sc.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

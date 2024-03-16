@@ -1,0 +1,246 @@
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/async/TAsyncClientManager.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ SelectorProvider.provider().openSelector() $$ java.nio.channels.spi.AbstractSelector $$ regular method exit $$ ( 2505, 2547 ) $$ @MustCall method close may not have been invoked on SelectorProvider.provider().openSelector() or any of its aliases.
+            this.selector = SelectorProvider.provider().openSelector();
+                                                                    ^
+  The type of object is: java.nio.channels.spi.AbstractSelector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/server/TNonblockingServer.java:293: error: (required.method.not.called) $$ 4 $$ method close $$ SelectorProvider.provider().openSelector() $$ java.nio.channels.spi.AbstractSelector $$ regular method exit $$ ( 10678, 10720 ) $$ @MustCall method close may not have been invoked on SelectorProvider.provider().openSelector() or any of its aliases.
+            this.selector = SelectorProvider.provider().openSelector();
+                                                                    ^
+  The type of object is: java.nio.channels.spi.AbstractSelector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/server/TNonblockingServer.java:723: error: (required.method.not.called) $$ 4 $$ method close $$ new TIOStreamTransport(response_) $$ org.apache.thrift.transport.TIOStreamTransport $$ regular method exit $$ ( 27664, 27697 ) $$ @MustCall method close may not have been invoked on new TIOStreamTransport(response_) or any of its aliases.
+            return outputTransportFactory_.getTransport(new TIOStreamTransport(response_));
+                                                        ^
+  The type of object is: org.apache.thrift.transport.TIOStreamTransport.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/server/TServlet.java:72: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to response.getOutputStream() with exception type java.io.IOException $$ ( 2262, 2304 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+            InputStream in = request.getInputStream();
+                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to response.getOutputStream() with exception type java.io.IOException
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/server/TServlet.java:75: error: (required.method.not.called) $$ 4 $$ method close $$ transport $$ org.apache.thrift.transport.TTransport $$ possible exceptional exit due to out.flush() with exception type java.io.IOException $$ ( 2377, 2432 ) $$ @MustCall method close may not have been invoked on transport or any of its aliases.
+            TTransport transport = new TIOStreamTransport(in, out);
+                       ^
+  The type of object is: org.apache.thrift.transport.TTransport.
+  Reason for going out of scope: possible exceptional exit due to out.flush() with exception type java.io.IOException
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/TSerializer.java:44: error: (required.method.not.called) $$ 4 $$ method close $$ new TIOStreamTransport(baos_) $$ org.apache.thrift.transport.TIOStreamTransport $$ regular method exit $$ ( 1516, 1545 ) $$ @MustCall method close may not have been invoked on new TIOStreamTransport(baos_) or any of its aliases.
+    private final TIOStreamTransport transport_ = new TIOStreamTransport(baos_);
+                                                  ^
+  The type of object is: org.apache.thrift.transport.TIOStreamTransport.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TIOStreamTransport.java:62: error: (required.method.not.called) $$ 4 $$ method close $$ field inputStream_ $$ java.io.InputStream $$  Non-final owning field might be overwritten $$ ( 1945, 1962 ) $$ @MustCall method close may not have been invoked on field inputStream_ or any of its aliases.
+        inputStream_ = is;
+                     ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TIOStreamTransport.java:71: error: (required.method.not.called) $$ 4 $$ method close $$ field outputStream_ $$ java.io.OutputStream $$  Non-final owning field might be overwritten $$ ( 2129, 2147 ) $$ @MustCall method close may not have been invoked on field outputStream_ or any of its aliases.
+        outputStream_ = os;
+                      ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TIOStreamTransport.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ field inputStream_ $$ java.io.InputStream $$  Non-final owning field might be overwritten $$ ( 2374, 2391 ) $$ @MustCall method close may not have been invoked on field inputStream_ or any of its aliases.
+        inputStream_ = is;
+                     ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TIOStreamTransport.java:82: error: (required.method.not.called) $$ 4 $$ method close $$ field outputStream_ $$ java.io.OutputStream $$  Non-final owning field might be overwritten $$ ( 2401, 2419 ) $$ @MustCall method close may not have been invoked on field outputStream_ or any of its aliases.
+        outputStream_ = os;
+                      ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TIOStreamTransport.java:104: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.inputStream_ $$ this.inputStream_ is @CalledMethods("close") $$ ( 2844, 3383 ) $$ postcondition of close is not satisfied.
+    public void close() {
+                ^
+  found   : no information about this.inputStream_
+  required: this.inputStream_ is @CalledMethods("close")
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TIOStreamTransport.java:111: error: (required.method.not.called) $$ 4 $$ method close $$ field inputStream_ $$ java.io.InputStream $$  Non-final owning field might be overwritten $$ ( 3089, 3108 ) $$ @MustCall method close may not have been invoked on field inputStream_ or any of its aliases.
+            inputStream_ = null;
+                         ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TIOStreamTransport.java:119: error: (required.method.not.called) $$ 4 $$ method close $$ field outputStream_ $$ java.io.OutputStream $$  Non-final owning field might be overwritten $$ ( 3346, 3366 ) $$ @MustCall method close may not have been invoked on field outputStream_ or any of its aliases.
+            outputStream_ = null;
+                          ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/THttpClient.java:113: error: (missing.creates.mustcall.for) $$ 3 $$ flush $$ this $$ inputStream_ $$ ( 3185, 4884 ) $$ Method flush re-assigns the non-final, owning field this.inputStream_, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void flush() throws TTransportException {
+                ^
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/THttpClient.java:142: error: (required.method.not.called) $$ 4 $$ method close $$ connection.getOutputStream() $$ java.io.OutputStream $$ possible exceptional exit due to connection.getOutputStream().write(data) with exception type java.io.IOException $$ ( 4428, 4456 ) $$ @MustCall method close may not have been invoked on connection.getOutputStream() or any of its aliases.
+            connection.getOutputStream().write(data);
+                                      ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to connection.getOutputStream().write(data) with exception type java.io.IOException
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/THttpClient.java:150: error: (required.method.not.called) $$ 4 $$ method close $$ field inputStream_ $$ java.io.InputStream $$  Non-final owning field might be overwritten $$ ( 4740, 4782 ) $$ @MustCall method close may not have been invoked on field inputStream_ or any of its aliases.
+            inputStream_ = connection.getInputStream();
+                         ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TNonblockingServerSocket.java:99: error: (required.method.not.called) $$ 4 $$ method close $$ field serverSocket_ $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 3035, 3079 ) $$ @MustCall method close may not have been invoked on field serverSocket_ or any of its aliases.
+            serverSocket_ = serverSocketChannel.socket();
+                          ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TNonblockingServerSocket.java:105: error: (required.method.not.called) $$ 4 $$ method close $$ field serverSocket_ $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 3319, 3339 ) $$ @MustCall method close may not have been invoked on field serverSocket_ or any of its aliases.
+            serverSocket_ = null;
+                          ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TNonblockingServerSocket.java:121: error: (override.return) $$ 6 $$ @MustCall("close") TNonblockingSocket $$ @MustCall TTransport $$ @MustCall("close") TNonblockingServerSocket $$ @MustCall("close") TNonblockingSocket acceptImpl(@MustCall("close") TNonblockingServerSocket this) throws @MustCall TTransportException $$ @MustCall("close") TServerTransport $$ @MustCall TTransport acceptImpl(@MustCall TServerTransport this) throws @MustCall TTransportException $$ ( 3800, 3818 ) $$ Incompatible return type.
+    protected TNonblockingSocket acceptImpl() throws TTransportException {
+              ^
+  found   : @MustCall("close") TNonblockingSocket
+  required: @MustCall TTransport
+  Consequence: method in @MustCall("close") TNonblockingServerSocket
+    @MustCall("close") TNonblockingSocket acceptImpl(@MustCall("close") TNonblockingServerSocket this) throws @MustCall TTransportException
+  cannot override method in @MustCall("close") TServerTransport
+    @MustCall TTransport acceptImpl(@MustCall TServerTransport this) throws @MustCall TTransportException
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TNonblockingServerSocket.java:158: error: (required.method.not.called) $$ 4 $$ method close $$ field serverSocket_ $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 5173, 5193 ) $$ @MustCall method close may not have been invoked on field serverSocket_ or any of its aliases.
+            serverSocket_ = null;
+                          ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TNonblockingSocket.java:79: error: (assignment) $$ 2 $$ @PolyMustCall SocketChannel $$ @MustCall("close") SocketChannel $$ ( 2692, 2705 ) $$ incompatible types in assignment.
+        socketChannel_ = socketChannel;
+                         ^
+  found   : @PolyMustCall SocketChannel
+  required: @MustCall("close") SocketChannel
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:65: error: (mustcallalias.out.of.scope) $$ 1 $$ regular method exit $$ ( 1833, 1846 ) $$ This @MustCallAlias parameter might go out of scope without being assigned into an owning field of this object (if this is a constructor) or returned.
+    public TSocket(Socket socket) throws TTransportException {
+                          ^
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:66: error: (required.method.not.called) $$ 4 $$ method close $$ field socket_ $$ java.net.Socket $$  Non-final owning field might be overwritten $$ ( 1885, 1901 ) $$ @MustCall method close may not have been invoked on field socket_ or any of its aliases.
+        socket_ = socket;
+                ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:66: error: (assignment) $$ 2 $$ @PolyMustCall Socket $$ @MustCall("close") Socket $$ ( 1895, 1901 ) $$ incompatible types in assignment.
+        socket_ = socket;
+                  ^
+  found   : @PolyMustCall Socket
+  required: @MustCall("close") Socket
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:76: error: (required.method.not.called) $$ 4 $$ method close $$ field inputStream_ $$ java.io.InputStream $$  Non-final owning field might be overwritten $$ ( 2169, 2239 ) $$ @MustCall method close may not have been invoked on field inputStream_ or any of its aliases.
+                inputStream_ = new BufferedInputStream(socket_.getInputStream(), 1024);
+                             ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:77: error: (required.method.not.called) $$ 4 $$ method close $$ field outputStream_ $$ java.io.OutputStream $$  Non-final owning field might be overwritten $$ ( 2257, 2330 ) $$ @MustCall method close may not have been invoked on field outputStream_ or any of its aliases.
+                outputStream_ = new BufferedOutputStream(socket_.getOutputStream(), 1024);
+                              ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:79: error: (flowexpr.parse.error.postcondition) $$ 2 $$ close() $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 2388, 2395 ) $$ error parsing the postcondition expression for close()
+                close();
+                     ^
+  cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:114: error: (missing.creates.mustcall.for) $$ 3 $$ initSocket $$ this $$ socket_ $$ ( 3222, 3539 ) $$ Method initSocket re-assigns the non-final, owning field this.socket_, but does not have a corresponding @CreatesMustCallFor annotation.
+    private void initSocket() {
+                 ^
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:115: error: (required.method.not.called) $$ 4 $$ method close $$ field socket_ $$ java.net.Socket $$  Non-final owning field might be overwritten $$ ( 3258, 3280 ) $$ @MustCall method close may not have been invoked on field socket_ or any of its aliases.
+        socket_ = new Socket();
+                ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:162: error: (missing.creates.mustcall.for) $$ 3 $$ open $$ this $$ inputStream_ $$ ( 4378, 5329 ) $$ Method open re-assigns the non-final, owning field this.inputStream_, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void open() throws TTransportException {
+                ^
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:162: error: (missing.creates.mustcall.for) $$ 3 $$ open $$ this $$ outputStream_ $$ ( 4378, 5329 ) $$ Method open re-assigns the non-final, owning field this.outputStream_, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void open() throws TTransportException {
+                ^
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:180: error: (required.method.not.called) $$ 4 $$ method close $$ field inputStream_ $$ java.io.InputStream $$  Non-final owning field might be overwritten $$ ( 5020, 5090 ) $$ @MustCall method close may not have been invoked on field inputStream_ or any of its aliases.
+            inputStream_ = new BufferedInputStream(socket_.getInputStream(), 1024);
+                         ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:181: error: (required.method.not.called) $$ 4 $$ method close $$ field outputStream_ $$ java.io.OutputStream $$  Non-final owning field might be overwritten $$ ( 5104, 5177 ) $$ @MustCall method close may not have been invoked on field outputStream_ or any of its aliases.
+            outputStream_ = new BufferedOutputStream(socket_.getOutputStream(), 1024);
+                          ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:183: error: (flowexpr.parse.error.postcondition) $$ 2 $$ close() $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 5227, 5234 ) $$ error parsing the postcondition expression for close()
+            close();
+                 ^
+  cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:191: error: (contracts.postcondition.override) $$ 6 $$ this.inputStream_ $$ close $$ org.apache.thrift.transport.TIOStreamTransport $$ @CalledMethods("close") $$ org.apache.thrift.transport.TSocket $$ no information $$ ( 5377, 5731 ) $$ Subclass postcondition is weaker for 'this.inputStream_' in close.
+    public void close() {
+                ^
+    In superclass org.apache.thrift.transport.TIOStreamTransport: @CalledMethods("close")
+    In subclass org.apache.thrift.transport.TSocket: no information
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:191: error: (contracts.postcondition.override) $$ 6 $$ this.outputStream_ $$ close $$ org.apache.thrift.transport.TIOStreamTransport $$ @CalledMethods("close") $$ org.apache.thrift.transport.TSocket $$ no information $$ ( 5377, 5731 ) $$ Subclass postcondition is weaker for 'this.outputStream_' in close.
+    public void close() {
+                ^
+    In superclass org.apache.thrift.transport.TIOStreamTransport: @CalledMethods("close")
+    In subclass org.apache.thrift.transport.TSocket: no information
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:191: error: (flowexpr.parse.error) $$ 1 $$ 'this.super' in the postcondition EnsuresCalledMethods on the declaration of method 'close': Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 5377, 5731 ) $$ cannot parse the expression 'this.super' in the postcondition EnsuresCalledMethods on the declaration of method 'close': Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+    public void close() {
+                ^
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:191: error: (flowexpr.parse.error) $$ 1 $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 5377, 5731 ) $$ cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+    public void close() {
+                ^
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TSocket.java:202: error: (required.method.not.called) $$ 4 $$ method close $$ field socket_ $$ java.net.Socket $$  Non-final owning field might be overwritten $$ ( 5700, 5714 ) $$ @MustCall method close may not have been invoked on field socket_ or any of its aliases.
+            socket_ = null;
+                    ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TServerSocket.java:64: error: (required.method.not.called) $$ 4 $$ method close $$ field serverSocket_ $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 1853, 1881 ) $$ @MustCall method close may not have been invoked on field serverSocket_ or any of its aliases.
+        serverSocket_ = serverSocket;
+                      ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TServerSocket.java:64: error: (assignment) $$ 2 $$ @PolyMustCall ServerSocket $$ @MustCall("close") ServerSocket $$ ( 1869, 1881 ) $$ incompatible types in assignment.
+        serverSocket_ = serverSocket;
+                        ^
+  found   : @PolyMustCall ServerSocket
+  required: @MustCall("close") ServerSocket
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TServerSocket.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ field serverSocket_ $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 2645, 2679 ) $$ @MustCall method close may not have been invoked on field serverSocket_ or any of its aliases.
+            serverSocket_ = new ServerSocket();
+                          ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TServerSocket.java:97: error: (required.method.not.called) $$ 4 $$ method close $$ field serverSocket_ $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 2919, 2939 ) $$ @MustCall method close may not have been invoked on field serverSocket_ or any of its aliases.
+            serverSocket_ = null;
+                          ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TServerSocket.java:113: error: (override.return) $$ 6 $$ @MustCall("close") TSocket $$ @MustCall TTransport $$ @MustCall("close") TServerSocket $$ @MustCall("close") TSocket acceptImpl(@MustCall("close") TServerSocket this) throws @MustCall TTransportException $$ @MustCall("close") TServerTransport $$ @MustCall TTransport acceptImpl(@MustCall TServerTransport this) throws @MustCall TTransportException $$ ( 3429, 3436 ) $$ Incompatible return type.
+    protected TSocket acceptImpl() throws TTransportException {
+              ^
+  found   : @MustCall("close") TSocket
+  required: @MustCall TTransport
+  Consequence: method in @MustCall("close") TServerSocket
+    @MustCall("close") TSocket acceptImpl(@MustCall("close") TServerSocket this) throws @MustCall TTransportException
+  cannot override method in @MustCall("close") TServerTransport
+    @MustCall TTransport acceptImpl(@MustCall TServerTransport this) throws @MustCall TTransportException
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TServerSocket.java:118: error: (required.method.not.called) $$ 4 $$ method close $$ result $$ java.net.Socket $$ possible exceptional exit due to new TSocket(result) with exception type org.apache.thrift.transport.TTransportException $$ ( 3657, 3696 ) $$ @MustCall method close may not have been invoked on result or any of its aliases.
+            Socket result = serverSocket_.accept();
+                   ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to new TSocket(result) with exception type org.apache.thrift.transport.TTransportException
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/org/apache/thrift/transport/TServerSocket.java:134: error: (required.method.not.called) $$ 4 $$ method close $$ field serverSocket_ $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 4179, 4199 ) $$ @MustCall method close may not have been invoked on field serverSocket_ or any of its aliases.
+            serverSocket_ = null;
+                          ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/com/realtimecep/scribe/ScribeJavaServer.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ org.apache.thrift.transport.TNonblockingServerSocket $$ regular method exit $$ ( 975, 1044 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+            TNonblockingServerSocket socket = new TNonblockingServerSocket(PORT);
+                                     ^
+  The type of object is: org.apache.thrift.transport.TNonblockingServerSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/com/realtimecep/scribe/ScribeJavaClient.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ new Socket("localhost", ScribeJavaServer.PORT) $$ java.net.Socket $$ possible exceptional exit due to new TSocket(new Socket("localhost", ScribeJavaServer.PORT)) with exception type org.apache.thrift.transport.TTransportException $$ ( 861, 907 ) $$ @MustCall method close may not have been invoked on new Socket("localhost", ScribeJavaServer.PORT) or any of its aliases.
+            TSocket sock = new TSocket(new Socket("localhost", ScribeJavaServer.PORT));
+                                       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to new TSocket(new Socket("localhost", ScribeJavaServer.PORT)) with exception type org.apache.thrift.transport.TTransportException
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/com/realtimecep/scribe/ScribeClientQuickStartMainClass.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ new Socket(scribeHost, scribePort) $$ java.net.Socket $$ possible exceptional exit due to new TSocket(new Socket(scribeHost, scribePort)) with exception type org.apache.thrift.transport.TTransportException $$ ( 922, 956 ) $$ @MustCall method close may not have been invoked on new Socket(scribeHost, scribePort) or any of its aliases.
+        TSocket sock = new TSocket(new Socket(scribeHost, scribePort));
+                                   ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to new TSocket(new Socket(scribeHost, scribePort)) with exception type org.apache.thrift.transport.TTransportException
+../dataset/june2020_dataset/url00509339cf_tedwon_scribe_log4j_appender_tgz-pJ8-com_realtimecep_scribe_ScribeJavaServerJ8/src/com/realtimecep/scribe/ScribeServerMainClass.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ serverTransport $$ org.apache.thrift.transport.TServerSocket $$ regular method exit $$ ( 482, 538 ) $$ @MustCall method close may not have been invoked on serverTransport or any of its aliases.
+            TServerSocket serverTransport = new TServerSocket(1463);
+                          ^
+  The type of object is: org.apache.thrift.transport.TServerSocket.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+50 errors

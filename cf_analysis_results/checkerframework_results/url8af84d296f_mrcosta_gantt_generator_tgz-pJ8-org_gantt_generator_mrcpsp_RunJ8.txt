@@ -1,0 +1,15 @@
+../../../../datasets/june2020_dataset/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/common/SwingComImageGenerator.java:95: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to encoder.encode(image) with exception type java.io.IOException $$ ( 3115, 3168 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+			FileOutputStream fos = new FileOutputStream(imgFile);
+			                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to encoder.encode(image) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/common/SwingComImageGenerator.java:159: error: (required.method.not.called) $$ 4 $$ method close $$ ios $$ javax.imageio.stream.ImageOutputStream $$ possible exceptional exit due to pngImageWriter.write(image) with exception type java.io.IOException $$ ( 5577, 5636 ) $$ @MustCall method close may not have been invoked on ios or any of its aliases.
+			ImageOutputStream ios = new FileImageOutputStream(imgFile);
+			                  ^
+  The type of object is: javax.imageio.stream.ImageOutputStream.
+  Reason for going out of scope: possible exceptional exit due to pngImageWriter.write(image) with exception type java.io.IOException
+Note: ../../../../datasets/june2020_dataset/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/ui/timeaxis/TimeAxisUtils.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: ../../../../datasets/june2020_dataset/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/common/SystemUtil.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors

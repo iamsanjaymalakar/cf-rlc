@@ -1,0 +1,463 @@
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCacheStressTest.java:27: error: (required.method.not.called) $$ 4 $$ method close $$ new BigCache<String>(TEST_DIR, config) $$ com.ctriposs.bigcache.BigCache<java.lang.String> $$ possible exceptional exit due to cache.delete(String.valueOf(rndKey)) with exception type java.io.IOException $$ ( 818, 856 ) $$ @MustCall method close may not have been invoked on new BigCache<String>(TEST_DIR, config) or any of its aliases.
+		cache = new BigCache<String>(TEST_DIR, config);
+		        ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.String>.
+  Reason for going out of scope: possible exceptional exit due to cache.delete(String.valueOf(rndKey)) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCache.java:109: error: (required.method.not.called) $$ 4 $$ method close $$ new StorageManager(this.cacheDir, config.getCapacityPerBlock(), config.getInitialNumberOfBlocks(), config.getStorageMode(), config.getMaxOffHeapMemorySize()) $$ com.ctriposs.bigcache.storage.StorageManager $$ regular method exit $$ ( 3933, 4095 ) $$ @MustCall method close may not have been invoked on new StorageManager(this.cacheDir, config.getCapacityPerBlock(), config.getInitialNumberOfBlocks(), config.getStorageMode(), config.getMaxOffHeapMemorySize()) or any of its aliases.
+		this.storageManager = new StorageManager(this.cacheDir, config.getCapacityPerBlock(),
+		                      ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageManager.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCache.java:304: error: (type.argument) $$ 4 $$ T $$ WeakReference $$ @MustCall("close") BigCache<K extends @MustCall Object> $$ @MustCall Object $$ ( 10023, 10034 ) $$ incompatible type argument for type parameter T of WeakReference.
+        private WeakReference<BigCache<K>> cacheHolder;
+                                      ^
+  found   : @MustCall("close") BigCache<K extends @MustCall Object>
+  required: @MustCall Object
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCache.java:309: error: (type.argument) $$ 4 $$ T $$ WeakReference $$ @MustCall("close") BigCache<K extends @MustCall Object> $$ @MustCall Object $$ ( 10221, 10232 ) $$ incompatible type argument for type parameter T of WeakReference.
+            cacheHolder = new WeakReference<BigCache<K>>(cache);
+                                                    ^
+  found   : @MustCall("close") BigCache<K extends @MustCall Object>
+  required: @MustCall Object
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCache.java:314: error: (required.method.not.called) $$ 4 $$ method close $$ cache $$ com.ctriposs.bigcache.BigCache $$ regular method exit $$ ( 10316, 10351 ) $$ @MustCall method close may not have been invoked on cache or any of its aliases.
+            BigCache cache = cacheHolder.get();
+                     ^
+  The type of object is: com.ctriposs.bigcache.BigCache.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCache.java:412: error: (required.method.not.called) $$ 4 $$ method close $$ sb $$ com.ctriposs.bigcache.storage.StorageBlock $$ regular method exit $$ ( 14098, 14128 ) $$ @MustCall method close may not have been invoked on sb or any of its aliases.
+                        && ((sb = pointer.getStorageBlock()) != null)
+                                ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCache.java:440: error: (required.method.not.called) $$ 4 $$ method close $$ sb $$ com.ctriposs.bigcache.storage.StorageBlock $$ regular method exit $$ ( 15427, 15484 ) $$ @MustCall method close may not have been invoked on sb or any of its aliases.
+                            StorageBlock sb = wrapper.getPointer().getStorageBlock();
+                                         ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:42: error: (type.argument) $$ 4 $$ E $$ Queue $$ @MustCall("close") IStorageBlock $$ @MustCall Object $$ ( 1068, 1081 ) $$ incompatible type argument for type parameter E of Queue.
+	private final Queue<IStorageBlock> usedBlocks = new ConcurrentLinkedQueue<IStorageBlock>();
+	                    ^
+  found   : @MustCall("close") IStorageBlock
+  required: @MustCall Object
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:42: error: (type.argument) $$ 4 $$ E $$ ConcurrentLinkedQueue $$ @MustCall("close") IStorageBlock $$ @MustCall Object $$ ( 1122, 1135 ) $$ incompatible type argument for type parameter E of ConcurrentLinkedQueue.
+	private final Queue<IStorageBlock> usedBlocks = new ConcurrentLinkedQueue<IStorageBlock>();
+	                                                                          ^
+  found   : @MustCall("close") IStorageBlock
+  required: @MustCall Object
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:47: error: (type.argument) $$ 4 $$ E $$ Queue $$ @MustCall("close") IStorageBlock $$ @MustCall Object $$ ( 1289, 1302 ) $$ incompatible type argument for type parameter E of Queue.
+	private final Queue<IStorageBlock> freeBlocks = new PriorityBlockingQueue<IStorageBlock>();
+	                    ^
+  found   : @MustCall("close") IStorageBlock
+  required: @MustCall Object
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:47: error: (type.argument) $$ 4 $$ E $$ PriorityBlockingQueue $$ @MustCall("close") IStorageBlock $$ @MustCall Object $$ ( 1343, 1356 ) $$ incompatible type argument for type parameter E of PriorityBlockingQueue.
+	private final Queue<IStorageBlock> freeBlocks = new PriorityBlockingQueue<IStorageBlock>();
+	                                                                          ^
+  found   : @MustCall("close") IStorageBlock
+  required: @MustCall Object
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:90: error: (required.method.not.called) $$ 4 $$ method close $$ storageBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ regular method exit $$ ( 2623, 2675 ) $$ @MustCall method close may not have been invoked on storageBlock or any of its aliases.
+			IStorageBlock storageBlock = this.createNewBlock(i);
+			              ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:95: error: (required.method.not.called) $$ 4 $$ method close $$ freeBlocks.poll() $$ com.ctriposs.bigcache.storage.IStorageBlock $$ regular method exit $$ ( 2788, 2805 ) $$ @MustCall method close may not have been invoked on freeBlocks.poll() or any of its aliases.
+		this.activeBlock = freeBlocks.poll();
+		                                  ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:102: error: (required.method.not.called) $$ 4 $$ method close $$ pointer.getStorageBlock() $$ com.ctriposs.bigcache.storage.StorageBlock $$ possible exceptional exit due to pointer.getStorageBlock().retrieve(pointer) with exception type java.io.IOException $$ ( 2942, 2967 ) $$ @MustCall method close may not have been invoked on pointer.getStorageBlock() or any of its aliases.
+		return pointer.getStorageBlock().retrieve(pointer);
+		                              ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: possible exceptional exit due to pointer.getStorageBlock().retrieve(pointer) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:107: error: (required.method.not.called) $$ 4 $$ method close $$ pointer.getStorageBlock() $$ com.ctriposs.bigcache.storage.StorageBlock $$ possible exceptional exit due to pointer.getStorageBlock().remove(pointer) with exception type java.io.IOException $$ ( 3079, 3104 ) $$ @MustCall method close may not have been invoked on pointer.getStorageBlock() or any of its aliases.
+		return pointer.getStorageBlock().remove(pointer);
+		                              ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: possible exceptional exit due to pointer.getStorageBlock().remove(pointer) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:113: error: (required.method.not.called) $$ 4 $$ method close $$ pointer.getStorageBlock() $$ com.ctriposs.bigcache.storage.StorageBlock $$ possible exceptional exit due to pointer.getStorageBlock().removeLight(pointer) with exception type java.io.IOException $$ ( 3213, 3238 ) $$ @MustCall method close may not have been invoked on pointer.getStorageBlock() or any of its aliases.
+		pointer.getStorageBlock().removeLight(pointer);
+		                       ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: possible exceptional exit due to pointer.getStorageBlock().removeLight(pointer) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:127: error: (required.method.not.called) $$ 4 $$ method close $$ freeBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ possible exceptional exit due to freeBlock.store(payload) with exception type java.io.IOException $$ ( 3693, 3742 ) $$ @MustCall method close may not have been invoked on freeBlock or any of its aliases.
+					IStorageBlock freeBlock = this.freeBlocks.poll();
+					              ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: possible exceptional exit due to freeBlock.store(payload) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:129: error: (required.method.not.called) $$ 4 $$ method close $$ freeBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ possible exceptional exit due to freeBlock.store(payload) with exception type java.io.IOException $$ ( 3801, 3867 ) $$ @MustCall method close may not have been invoked on freeBlock or any of its aliases.
+						freeBlock = this.createNewBlock(this.blockCount.getAndIncrement());
+						          ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: possible exceptional exit due to freeBlock.store(payload) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:156: error: (required.method.not.called) $$ 4 $$ method close $$ freeBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ regular method exit $$ ( 4616, 4665 ) $$ @MustCall method close may not have been invoked on freeBlock or any of its aliases.
+				IStorageBlock freeBlock = this.freeBlocks.poll();
+				              ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:158: error: (required.method.not.called) $$ 4 $$ method close $$ freeBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ regular method exit $$ ( 4702, 4768 ) $$ @MustCall method close may not have been invoked on freeBlock or any of its aliases.
+					freeBlock = this.createNewBlock(this.blockCount.getAndIncrement());
+					          ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:171: error: (required.method.not.called) $$ 4 $$ method close $$ pointer.getStorageBlock() $$ com.ctriposs.bigcache.storage.StorageBlock $$ possible exceptional exit due to pointer.getStorageBlock().update(pointer, payload) with exception type java.io.IOException $$ ( 5069, 5094 ) $$ @MustCall method close may not have been invoked on pointer.getStorageBlock() or any of its aliases.
+		Pointer updatePointer = pointer.getStorageBlock().update(pointer, payload);
+		                                               ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: possible exceptional exit due to pointer.getStorageBlock().update(pointer, payload) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:181: error: (required.method.not.called) $$ 4 $$ method close $$ block $$ com.ctriposs.bigcache.storage.IStorageBlock $$ regular method exit $$ ( 5288, 5307 ) $$ @MustCall method close may not have been invoked on block or any of its aliases.
+		for(IStorageBlock block : usedBlocks) {
+		                  ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:187: error: (type.argument) $$ 4 $$ E $$ Set $$ @MustCall("close") IStorageBlock $$ @MustCall Object $$ ( 5414, 5427 ) $$ incompatible type argument for type parameter E of Set.
+    private Set<IStorageBlock> getAllInUsedBlocks() {
+                ^
+  found   : @MustCall("close") IStorageBlock
+  required: @MustCall Object
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:188: error: (type.argument) $$ 4 $$ E $$ Set $$ @MustCall("close") IStorageBlock $$ @MustCall Object $$ ( 5465, 5478 ) $$ incompatible type argument for type parameter E of Set.
+        Set<IStorageBlock> allBlocks = new HashSet<IStorageBlock>();
+            ^
+  found   : @MustCall("close") IStorageBlock
+  required: @MustCall Object
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:188: error: (type.argument) $$ 4 $$ E $$ HashSet $$ @MustCall("close") IStorageBlock $$ @MustCall Object $$ ( 5504, 5517 ) $$ incompatible type argument for type parameter E of HashSet.
+        Set<IStorageBlock> allBlocks = new HashSet<IStorageBlock>();
+                                                   ^
+  found   : @MustCall("close") IStorageBlock
+  required: @MustCall Object
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:197: error: (required.method.not.called) $$ 4 $$ method close $$ block $$ com.ctriposs.bigcache.storage.IStorageBlock $$ regular method exit $$ ( 5724, 5743 ) $$ @MustCall method close may not have been invoked on block or any of its aliases.
+        for(IStorageBlock block : getAllInUsedBlocks()) {
+                          ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:212: error: (required.method.not.called) $$ 4 $$ method close $$ block $$ com.ctriposs.bigcache.storage.IStorageBlock $$ regular method exit $$ ( 6045, 6064 ) $$ @MustCall method close may not have been invoked on block or any of its aliases.
+		for(IStorageBlock block : usedBlocks) {
+		                  ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:221: error: (required.method.not.called) $$ 4 $$ method close $$ storageBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ regular method exit $$ ( 6211, 6237 ) $$ @MustCall method close may not have been invoked on storageBlock or any of its aliases.
+		for(IStorageBlock storageBlock : usedBlocks) {
+		                  ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:226: error: (required.method.not.called) $$ 4 $$ method close $$ freeBlocks.poll() $$ com.ctriposs.bigcache.storage.IStorageBlock $$ regular method exit $$ ( 6370, 6387 ) $$ @MustCall method close may not have been invoked on freeBlocks.poll() or any of its aliases.
+		this.activeBlock = freeBlocks.poll();
+		                                  ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:243: error: (type.argument) $$ 4 $$ E $$ Iterator $$ @MustCall("close") IStorageBlock $$ @MustCall Object $$ ( 6943, 6956 ) $$ incompatible type argument for type parameter E of Iterator.
+            Iterator<IStorageBlock> it = usedBlocks.iterator();
+                     ^
+  found   : @MustCall("close") IStorageBlock
+  required: @MustCall Object
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManager.java:245: error: (required.method.not.called) $$ 4 $$ method close $$ storageBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ regular method exit $$ ( 7038, 7077 ) $$ @MustCall method close may not have been invoked on storageBlock or any of its aliases.
+                IStorageBlock storageBlock = it.next();
+                              ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/IStorageBlock.java:11: error: (type.argument) $$ 4 $$ T $$ Comparable $$ @MustCall("close") IStorageBlock $$ @MustCall Object $$ ( 238, 251 ) $$ incompatible type argument for type parameter T of Comparable.
+public interface IStorageBlock extends Comparable<IStorageBlock>, Closeable {
+                                                  ^
+  found   : @MustCall("close") IStorageBlock
+  required: @MustCall Object
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageBlock.java:44: error: (required.method.not.called) $$ 4 $$ method close $$ new FileChannelStorage(dir, index, capacity) $$ com.ctriposs.bigcache.storage.FileChannelStorage $$ regular method exit $$ ( 1220, 1264 ) $$ @MustCall method close may not have been invoked on new FileChannelStorage(dir, index, capacity) or any of its aliases.
+			underlyingStorage = new FileChannelStorage(dir, index, capacity);
+			                    ^
+  The type of object is: com.ctriposs.bigcache.storage.FileChannelStorage.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageBlock.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ new MemoryMappedStorage(dir, index, capacity) $$ com.ctriposs.bigcache.storage.MemoryMappedStorage $$ regular method exit $$ ( 1331, 1376 ) $$ @MustCall method close may not have been invoked on new MemoryMappedStorage(dir, index, capacity) or any of its aliases.
+			underlyingStorage = new MemoryMappedStorage(dir, index, capacity);
+			                    ^
+  The type of object is: com.ctriposs.bigcache.storage.MemoryMappedStorage.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageBlock.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ new OffHeapStorage(capacity) $$ com.ctriposs.bigcache.storage.OffHeapStorage $$ regular method exit $$ ( 1438, 1466 ) $$ @MustCall method close may not have been invoked on new OffHeapStorage(capacity) or any of its aliases.
+			underlyingStorage = new OffHeapStorage(capacity);
+			                    ^
+  The type of object is: com.ctriposs.bigcache.storage.OffHeapStorage.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCachePerfTestB.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ cache() $$ com.ctriposs.bigcache.BigCache<java.lang.String> $$ possible exceptional exit due to this.doRunProduceThenConsume() with exception type java.lang.InterruptedException $$ ( 2291, 2298 ) $$ @MustCall method close may not have been invoked on cache() or any of its aliases.
+			cache = cache();
+			             ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.String>.
+  Reason for going out of scope: possible exceptional exit due to this.doRunProduceThenConsume() with exception type java.lang.InterruptedException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCachePerfTestB.java:80: error: (required.method.not.called) $$ 4 $$ method close $$ cache() $$ com.ctriposs.bigcache.BigCache<java.lang.String> $$ possible exceptional exit due to this.doRunProduceMixedConsume() with exception type java.lang.InterruptedException $$ ( 2701, 2708 ) $$ @MustCall method close may not have been invoked on cache() or any of its aliases.
+			cache = cache();
+			             ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.String>.
+  Reason for going out of scope: possible exceptional exit due to this.doRunProduceMixedConsume() with exception type java.lang.InterruptedException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:44: error: (required.method.not.called) $$ 4 $$ method close $$ new StorageManager(testDir, 1024 * 1024, 2, storageMode, size) $$ com.ctriposs.bigcache.storage.StorageManager $$ possible exceptional exit due to storageManager.store(testBytes) with exception type java.io.IOException $$ ( 1256, 1318 ) $$ @MustCall method close may not have been invoked on new StorageManager(testDir, 1024 * 1024, 2, storageMode, size) or any of its aliases.
+		storageManager = new StorageManager(testDir, 1024 * 1024, 2, storageMode, size); // 2M Total
+		                 ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageManager.
+  Reason for going out of scope: possible exceptional exit due to storageManager.store(testBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:119: error: (required.method.not.called) $$ 4 $$ method close $$ new StorageManager(testDir, 1024 * 1024, 2, storageMode, size) $$ com.ctriposs.bigcache.storage.StorageManager $$ possible exceptional exit due to storageManager.store(testBytes) with exception type java.io.IOException $$ ( 4733, 4795 ) $$ @MustCall method close may not have been invoked on new StorageManager(testDir, 1024 * 1024, 2, storageMode, size) or any of its aliases.
+		storageManager = new StorageManager(testDir, 1024 * 1024, 2, storageMode, size); // 2M Total
+		                 ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageManager.
+  Reason for going out of scope: possible exceptional exit due to storageManager.store(testBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:211: error: (required.method.not.called) $$ 4 $$ method close $$ new StorageManager(testDir, 1024 * 1024, 2, storageMode, size) $$ com.ctriposs.bigcache.storage.StorageManager $$ possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException $$ ( 8957, 9019 ) $$ @MustCall method close may not have been invoked on new StorageManager(testDir, 1024 * 1024, 2, storageMode, size) or any of its aliases.
+		storageManager = new StorageManager(testDir, 1024 * 1024, 2, storageMode, size); // 2M Total
+		                 ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageManager.
+  Reason for going out of scope: possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:225: error: (required.method.not.called) $$ 4 $$ method close $$ previousBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException $$ ( 9606, 9647 ) $$ @MustCall method close may not have been invoked on previousBlock or any of its aliases.
+			if (previousBlock == null) previousBlock = pointer.getStorageBlock();
+			                                         ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:227: error: (required.method.not.called) $$ 4 $$ method close $$ pointer.getStorageBlock() $$ com.ctriposs.bigcache.storage.StorageBlock $$ regular method exit $$ ( 9676, 9701 ) $$ @MustCall method close may not have been invoked on pointer.getStorageBlock() or any of its aliases.
+				assertTrue(pointer.getStorageBlock() == previousBlock);
+				                                  ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:228: error: (required.method.not.called) $$ 4 $$ method close $$ previousBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException $$ ( 9726, 9767 ) $$ @MustCall method close may not have been invoked on previousBlock or any of its aliases.
+				previousBlock = pointer.getStorageBlock();
+				              ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:234: error: (required.method.not.called) $$ 4 $$ method close $$ pointer.getStorageBlock() $$ com.ctriposs.bigcache.storage.StorageBlock $$ possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException $$ ( 9950, 9975 ) $$ @MustCall method close may not have been invoked on pointer.getStorageBlock() or any of its aliases.
+		assertTrue(previousBlock != pointer.getStorageBlock());
+		                                                   ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:235: error: (required.method.not.called) $$ 4 $$ method close $$ previousBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException $$ ( 9981, 10022 ) $$ @MustCall method close may not have been invoked on previousBlock or any of its aliases.
+		previousBlock = pointer.getStorageBlock();
+		              ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:247: error: (required.method.not.called) $$ 4 $$ method close $$ previousBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException $$ ( 10562, 10603 ) $$ @MustCall method close may not have been invoked on previousBlock or any of its aliases.
+			if (previousBlock == null) previousBlock = pointer.getStorageBlock();
+			                                         ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:249: error: (required.method.not.called) $$ 4 $$ method close $$ pointer.getStorageBlock() $$ com.ctriposs.bigcache.storage.StorageBlock $$ regular method exit $$ ( 10632, 10657 ) $$ @MustCall method close may not have been invoked on pointer.getStorageBlock() or any of its aliases.
+				assertTrue(pointer.getStorageBlock() == previousBlock);
+				                                  ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:250: error: (required.method.not.called) $$ 4 $$ method close $$ previousBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException $$ ( 10682, 10723 ) $$ @MustCall method close may not have been invoked on previousBlock or any of its aliases.
+				previousBlock = pointer.getStorageBlock();
+				              ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:256: error: (required.method.not.called) $$ 4 $$ method close $$ pointer.getStorageBlock() $$ com.ctriposs.bigcache.storage.StorageBlock $$ regular method exit $$ ( 10897, 10922 ) $$ @MustCall method close may not have been invoked on pointer.getStorageBlock() or any of its aliases.
+		assertTrue(previousBlock != pointer.getStorageBlock());
+		                                                   ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:257: error: (required.method.not.called) $$ 4 $$ method close $$ previousBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ regular method exit $$ ( 10928, 10969 ) $$ @MustCall method close may not have been invoked on previousBlock or any of its aliases.
+		previousBlock = pointer.getStorageBlock();
+		              ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:270: error: (required.method.not.called) $$ 4 $$ method close $$ new StorageManager(testDir, 1024 * 1024, 2, storageMode, size) $$ com.ctriposs.bigcache.storage.StorageManager $$ possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException $$ ( 11485, 11547 ) $$ @MustCall method close may not have been invoked on new StorageManager(testDir, 1024 * 1024, 2, storageMode, size) or any of its aliases.
+		storageManager = new StorageManager(testDir, 1024 * 1024, 2, storageMode, size); // 2M Total
+		                 ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageManager.
+  Reason for going out of scope: possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:285: error: (required.method.not.called) $$ 4 $$ method close $$ previousBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException $$ ( 12153, 12194 ) $$ @MustCall method close may not have been invoked on previousBlock or any of its aliases.
+			if (previousBlock == null) previousBlock = pointer.getStorageBlock();
+			                                         ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:287: error: (required.method.not.called) $$ 4 $$ method close $$ pointer.getStorageBlock() $$ com.ctriposs.bigcache.storage.StorageBlock $$ regular method exit $$ ( 12223, 12248 ) $$ @MustCall method close may not have been invoked on pointer.getStorageBlock() or any of its aliases.
+				assertTrue(pointer.getStorageBlock() == previousBlock);
+				                                  ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:288: error: (required.method.not.called) $$ 4 $$ method close $$ previousBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException $$ ( 12273, 12314 ) $$ @MustCall method close may not have been invoked on previousBlock or any of its aliases.
+				previousBlock = pointer.getStorageBlock();
+				              ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:294: error: (required.method.not.called) $$ 4 $$ method close $$ pointer.getStorageBlock() $$ com.ctriposs.bigcache.storage.StorageBlock $$ possible exceptional exit due to storageManager.update(pointer, new byte[1024]) with exception type java.io.IOException $$ ( 12478, 12503 ) $$ @MustCall method close may not have been invoked on pointer.getStorageBlock() or any of its aliases.
+		assertTrue(previousBlock == pointer.getStorageBlock()); // no switch
+		                                                   ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: possible exceptional exit due to storageManager.update(pointer, new byte[1024]) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:298: error: (required.method.not.called) $$ 4 $$ method close $$ pointer.getStorageBlock() $$ com.ctriposs.bigcache.storage.StorageBlock $$ possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException $$ ( 12677, 12702 ) $$ @MustCall method close may not have been invoked on pointer.getStorageBlock() or any of its aliases.
+		assertTrue(previousBlock != pointer.getStorageBlock()); // switch
+		                                                   ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:299: error: (required.method.not.called) $$ 4 $$ method close $$ previousBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException $$ ( 12718, 12759 ) $$ @MustCall method close may not have been invoked on previousBlock or any of its aliases.
+		previousBlock = pointer.getStorageBlock();
+		              ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:312: error: (required.method.not.called) $$ 4 $$ method close $$ previousBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException $$ ( 13397, 13438 ) $$ @MustCall method close may not have been invoked on previousBlock or any of its aliases.
+			if (previousBlock == null) previousBlock = pointer.getStorageBlock();
+			                                         ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:314: error: (required.method.not.called) $$ 4 $$ method close $$ pointer.getStorageBlock() $$ com.ctriposs.bigcache.storage.StorageBlock $$ regular method exit $$ ( 13467, 13492 ) $$ @MustCall method close may not have been invoked on pointer.getStorageBlock() or any of its aliases.
+				assertTrue(pointer.getStorageBlock() == previousBlock);
+				                                  ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:315: error: (required.method.not.called) $$ 4 $$ method close $$ previousBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException $$ ( 13517, 13558 ) $$ @MustCall method close may not have been invoked on previousBlock or any of its aliases.
+				previousBlock = pointer.getStorageBlock();
+				              ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: possible exceptional exit due to storageManager.store(sourceBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:321: error: (required.method.not.called) $$ 4 $$ method close $$ pointer.getStorageBlock() $$ com.ctriposs.bigcache.storage.StorageBlock $$ possible exceptional exit due to storageManager.update(pointer, new byte[1024]) with exception type java.io.IOException $$ ( 13722, 13747 ) $$ @MustCall method close may not have been invoked on pointer.getStorageBlock() or any of its aliases.
+		assertTrue(previousBlock == pointer.getStorageBlock()); // no switch
+		                                                   ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: possible exceptional exit due to storageManager.update(pointer, new byte[1024]) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:325: error: (required.method.not.called) $$ 4 $$ method close $$ pointer.getStorageBlock() $$ com.ctriposs.bigcache.storage.StorageBlock $$ regular method exit $$ ( 13921, 13946 ) $$ @MustCall method close may not have been invoked on pointer.getStorageBlock() or any of its aliases.
+		assertTrue(previousBlock != pointer.getStorageBlock()); // switch
+		                                                   ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageManagerTest.java:326: error: (required.method.not.called) $$ 4 $$ method close $$ previousBlock $$ com.ctriposs.bigcache.storage.IStorageBlock $$ regular method exit $$ ( 13962, 14003 ) $$ @MustCall method close may not have been invoked on previousBlock or any of its aliases.
+		previousBlock = pointer.getStorageBlock();
+		              ^
+  The type of object is: com.ctriposs.bigcache.storage.IStorageBlock.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/MemoryMappedStorage.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(backFileName, "rw") $$ java.io.RandomAccessFile $$ possible exceptional exit due to raf.getChannel().map(FileChannel.MapMode.PRIVATE, 0, capacity) with exception type java.io.IOException $$ ( 633, 673 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(backFileName, "rw") or any of its aliases.
+		raf = new RandomAccessFile(backFileName, "rw");
+		      ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to raf.getChannel().map(FileChannel.MapMode.PRIVATE, 0, capacity) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageBlockTest.java:41: error: (required.method.not.called) $$ 4 $$ method close $$ new StorageBlock(testDir, 1, StorageManager.DEFAULT_CAPACITY_PER_BLOCK, storageMode) $$ com.ctriposs.bigcache.storage.StorageBlock $$ possible exceptional exit due to block.store(testBytes) with exception type java.io.IOException $$ ( 1148, 1232 ) $$ @MustCall method close may not have been invoked on new StorageBlock(testDir, 1, StorageManager.DEFAULT_CAPACITY_PER_BLOCK, storageMode) or any of its aliases.
+		block = new StorageBlock(testDir, 1, StorageManager.DEFAULT_CAPACITY_PER_BLOCK, storageMode);
+		        ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: possible exceptional exit due to block.store(testBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageBlockTest.java:105: error: (required.method.not.called) $$ 4 $$ method close $$ new StorageBlock(testDir, 2, StorageManager.DEFAULT_CAPACITY_PER_BLOCK, storageMode) $$ com.ctriposs.bigcache.storage.StorageBlock $$ possible exceptional exit due to block.store(testBytes) with exception type java.io.IOException $$ ( 3874, 3958 ) $$ @MustCall method close may not have been invoked on new StorageBlock(testDir, 2, StorageManager.DEFAULT_CAPACITY_PER_BLOCK, storageMode) or any of its aliases.
+		block = new StorageBlock(testDir, 2, StorageManager.DEFAULT_CAPACITY_PER_BLOCK, storageMode);
+		        ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: possible exceptional exit due to block.store(testBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageBlockTest.java:183: error: (required.method.not.called) $$ 4 $$ method close $$ new StorageBlock(testDir, 3, 1024 * 1024 + 1023, storageMode) $$ com.ctriposs.bigcache.storage.StorageBlock $$ possible exceptional exit due to block.store(sourceBytes) with exception type java.io.IOException $$ ( 7366, 7427 ) $$ @MustCall method close may not have been invoked on new StorageBlock(testDir, 3, 1024 * 1024 + 1023, storageMode) or any of its aliases.
+		block = new StorageBlock(testDir, 3, 1024 * 1024 + 1023, storageMode); // 1M + 1023
+		        ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: possible exceptional exit due to block.store(sourceBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageBlockTest.java:201: error: (required.method.not.called) $$ 4 $$ method close $$ new StorageBlock(testDir, 4, 1024 * 1024, storageMode) $$ com.ctriposs.bigcache.storage.StorageBlock $$ possible exceptional exit due to block.store(sourceBytes) with exception type java.io.IOException $$ ( 7929, 7983 ) $$ @MustCall method close may not have been invoked on new StorageBlock(testDir, 4, 1024 * 1024, storageMode) or any of its aliases.
+		block = new StorageBlock(testDir, 4, 1024 * 1024, storageMode); // 1M
+		        ^
+  The type of object is: com.ctriposs.bigcache.storage.StorageBlock.
+  Reason for going out of scope: possible exceptional exit due to block.store(sourceBytes) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageUnitTest.java:32: error: (required.method.not.called) $$ 4 $$ method close $$ new FileChannelStorage(TEST_DIR, 0, 16 * 1024 * 1024) $$ com.ctriposs.bigcache.storage.FileChannelStorage $$ possible exceptional exit due to new MemoryMappedStorage(TEST_DIR, 0, 16 * 1024 * 1024) with exception type java.io.IOException $$ ( 891, 944 ) $$ @MustCall method close may not have been invoked on new FileChannelStorage(TEST_DIR, 0, 16 * 1024 * 1024) or any of its aliases.
+		storageData = new IStorage[][] { { new FileChannelStorage(TEST_DIR, 0, 16 * 1024 * 1024) },
+		                                   ^
+  The type of object is: com.ctriposs.bigcache.storage.FileChannelStorage.
+  Reason for going out of scope: possible exceptional exit due to new MemoryMappedStorage(TEST_DIR, 0, 16 * 1024 * 1024) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageUnitTest.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ new MemoryMappedStorage(TEST_DIR, 0, 16 * 1024 * 1024) $$ com.ctriposs.bigcache.storage.MemoryMappedStorage $$ regular method exit $$ ( 954, 1008 ) $$ @MustCall method close may not have been invoked on new MemoryMappedStorage(TEST_DIR, 0, 16 * 1024 * 1024) or any of its aliases.
+				{ new MemoryMappedStorage(TEST_DIR, 0, 16 * 1024 * 1024) },
+				  ^
+  The type of object is: com.ctriposs.bigcache.storage.MemoryMappedStorage.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/StorageUnitTest.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ new OffHeapStorage(16 * 1024 * 1024) $$ com.ctriposs.bigcache.storage.OffHeapStorage $$ regular method exit $$ ( 1018, 1054 ) $$ @MustCall method close may not have been invoked on new OffHeapStorage(16 * 1024 * 1024) or any of its aliases.
+				{ new OffHeapStorage(16 * 1024 * 1024) } };
+				  ^
+  The type of object is: com.ctriposs.bigcache.storage.OffHeapStorage.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/FileChannelStorageTest.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ new FileChannelStorage(testDir, 1, 16 * 1024 * 1024) $$ com.ctriposs.bigcache.storage.FileChannelStorage $$ possible exceptional exit due to fileChannelStorage.put(0, testString.getBytes()) with exception type java.io.IOException $$ ( 555, 607 ) $$ @MustCall method close may not have been invoked on new FileChannelStorage(testDir, 1, 16 * 1024 * 1024) or any of its aliases.
+		fileChannelStorage = new FileChannelStorage(testDir, 1, 16 * 1024 * 1024);
+		                     ^
+  The type of object is: com.ctriposs.bigcache.storage.FileChannelStorage.
+  Reason for going out of scope: possible exceptional exit due to fileChannelStorage.put(0, testString.getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/storage/FileChannelStorage.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(fullFileName, "rw") $$ java.io.RandomAccessFile $$ possible exceptional exit due to raf.setLength(capacity) with exception type java.io.IOException $$ ( 591, 631 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(fullFileName, "rw") or any of its aliases.
+		raf = new RandomAccessFile(fullFileName, "rw");
+		      ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to raf.setLength(capacity) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/sample/BigCachePerfTest.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ new BigCache<String>(testDir, config) $$ com.ctriposs.bigcache.BigCache<java.lang.String> $$ possible exceptional exit due to cache.get(users(user, i)) with exception type java.io.IOException $$ ( 1071, 1108 ) $$ @MustCall method close may not have been invoked on new BigCache<String>(testDir, config) or any of its aliases.
+        cache = new BigCache<String>(testDir, config);
+                ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.String>.
+  Reason for going out of scope: possible exceptional exit due to cache.get(users(user, i)) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/sample/BigCachePerfTest.java:82: error: (required.method.not.called) $$ 4 $$ method close $$ new BigCache<String>(testDir, config) $$ com.ctriposs.bigcache.BigCache<java.lang.String> $$ possible exceptional exit due to future.get() with exception type java.lang.InterruptedException $$ ( 2530, 2567 ) $$ @MustCall method close may not have been invoked on new BigCache<String>(testDir, config) or any of its aliases.
+        cache = new BigCache<String>(testDir, config);
+                ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.String>.
+  Reason for going out of scope: possible exceptional exit due to future.get() with exception type java.lang.InterruptedException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/utils/FileUtil.java:120: error: (required.method.not.called) $$ 4 $$ method close $$ to_s.getFD() $$ java.io.FileDescriptor $$ regular method exit $$ ( 3555, 3567 ) $$ @MustCall method close may not have been invoked on to_s.getFD() or any of its aliases.
+    		to_s.getFD().sync();
+    		          ^
+  The type of object is: java.io.FileDescriptor.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCachePerfTestA.java:61: error: (required.method.not.called) $$ 4 $$ method close $$ cache() $$ com.ctriposs.bigcache.BigCache<java.lang.String> $$ possible exceptional exit due to cache.get(TestSample.users(user, i)) with exception type java.io.IOException $$ ( 1863, 1870 ) $$ @MustCall method close may not have been invoked on cache() or any of its aliases.
+		cache = cache();
+		             ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.String>.
+  Reason for going out of scope: possible exceptional exit due to cache.get(TestSample.users(user, i)) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCachePerfTestA.java:97: error: (required.method.not.called) $$ 4 $$ method close $$ cache() $$ com.ctriposs.bigcache.BigCache<java.lang.String> $$ possible exceptional exit due to future.get() with exception type java.lang.InterruptedException $$ ( 3009, 3016 ) $$ @MustCall method close may not have been invoked on cache() or any of its aliases.
+		cache = cache();
+		             ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.String>.
+  Reason for going out of scope: possible exceptional exit due to future.get() with exception type java.lang.InterruptedException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCacheTest.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ new BigCache<String>(TEST_DIR, config) $$ com.ctriposs.bigcache.BigCache<java.lang.String> $$ regular method exit $$ ( 1429, 1467 ) $$ @MustCall method close may not have been invoked on new BigCache<String>(TEST_DIR, config) or any of its aliases.
+		cache = new BigCache<String>(TEST_DIR, config);
+		        ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.String>.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCacheTest.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ new BigCache<String>(fakeDir, config) $$ com.ctriposs.bigcache.BigCache<java.lang.String> $$ regular method exit $$ ( 2352, 2389 ) $$ @MustCall method close may not have been invoked on new BigCache<String>(fakeDir, config) or any of its aliases.
+			cache = new BigCache<String>(fakeDir, config);
+			        ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.String>.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCacheLimitTest.java:24: error: (required.method.not.called) $$ 4 $$ method close $$ new BigCache<String>(TEST_DIR, config) $$ com.ctriposs.bigcache.BigCache<java.lang.String> $$ possible exceptional exit due to cache.put(Long.toString(counter), rndString.getBytes()) with exception type java.io.IOException $$ ( 693, 731 ) $$ @MustCall method close may not have been invoked on new BigCache<String>(TEST_DIR, config) or any of its aliases.
+		cache = new BigCache<String>(TEST_DIR, config);
+		        ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.String>.
+  Reason for going out of scope: possible exceptional exit due to cache.put(Long.toString(counter), rndString.getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCacheUnitTest.java:41: error: (required.method.not.called) $$ 4 $$ method close $$ cache $$ com.ctriposs.bigcache.BigCache<java.lang.Integer> $$ possible exceptional exit due to cache.put(0, "A".getBytes()) with exception type java.io.IOException $$ ( 1165, 1231 ) $$ @MustCall method close may not have been invoked on cache or any of its aliases.
+		BigCache<Integer> cache = new BigCache<Integer>(TEST_DIR, config);
+		                  ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.Integer>.
+  Reason for going out of scope: possible exceptional exit due to cache.put(0, "A".getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCacheUnitTest.java:53: error: (required.method.not.called) $$ 4 $$ method close $$ cache6() $$ com.ctriposs.bigcache.BigCache<java.lang.Integer> $$ possible exceptional exit due to cache.get(0) with exception type java.io.IOException $$ ( 1505, 1513 ) $$ @MustCall method close may not have been invoked on cache6() or any of its aliases.
+		cache = cache6();
+		              ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.Integer>.
+  Reason for going out of scope: possible exceptional exit due to cache.get(0) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCacheUnitTest.java:64: error: (required.method.not.called) $$ 4 $$ method close $$ cache6() $$ com.ctriposs.bigcache.BigCache<java.lang.Integer> $$ possible exceptional exit due to cache.put(6, "G".getBytes()) with exception type java.io.IOException $$ ( 1862, 1870 ) $$ @MustCall method close may not have been invoked on cache6() or any of its aliases.
+		cache = cache6();
+		              ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.Integer>.
+  Reason for going out of scope: possible exceptional exit due to cache.put(6, "G".getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCacheUnitTest.java:75: error: (required.method.not.called) $$ 4 $$ method close $$ cache6() $$ com.ctriposs.bigcache.BigCache<java.lang.Integer> $$ possible exceptional exit due to cache.delete(0) with exception type java.io.IOException $$ ( 2136, 2144 ) $$ @MustCall method close may not have been invoked on cache6() or any of its aliases.
+		cache = cache6();
+		              ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.Integer>.
+  Reason for going out of scope: possible exceptional exit due to cache.delete(0) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCacheUnitTest.java:87: error: (required.method.not.called) $$ 4 $$ method close $$ cache6() $$ com.ctriposs.bigcache.BigCache<java.lang.Integer> $$ regular method exit $$ ( 2386, 2394 ) $$ @MustCall method close may not have been invoked on cache6() or any of its aliases.
+		cache = cache6();
+		              ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.Integer>.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCacheCleanerTest.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ new BigCache(TestUtil.TEST_BASE_DIR, config) $$ com.ctriposs.bigcache.BigCache $$ regular method exit $$ ( 2947, 2991 ) $$ @MustCall method close may not have been invoked on new BigCache(TestUtil.TEST_BASE_DIR, config) or any of its aliases.
+            cache = new BigCache(TestUtil.TEST_BASE_DIR, config);
+                    ^
+  The type of object is: com.ctriposs.bigcache.BigCache.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCacheReadWriteStressTest.java:49: error: (required.method.not.called) $$ 4 $$ method close $$ cache $$ com.ctriposs.bigcache.BigCache<java.lang.String> $$ possible exceptional exit due to cache.put(key, key.getBytes()) with exception type java.io.IOException $$ ( 1460, 1524 ) $$ @MustCall method close may not have been invoked on cache or any of its aliases.
+		BigCache<String> cache = new BigCache<String>(TEST_DIR, config);
+		                 ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.String>.
+  Reason for going out of scope: possible exceptional exit due to cache.put(key, key.getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCacheReadWriteStressTest.java:63: error: (required.method.not.called) $$ 4 $$ method close $$ cache(0) $$ com.ctriposs.bigcache.BigCache<java.lang.String> $$ possible exceptional exit due to cache.put(key, key.getBytes()) with exception type java.io.IOException $$ ( 1807, 1815 ) $$ @MustCall method close may not have been invoked on cache(0) or any of its aliases.
+		cache = cache(0);
+		             ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.String>.
+  Reason for going out of scope: possible exceptional exit due to cache.put(key, key.getBytes()) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCacheReadWriteStressTest.java:85: error: (required.method.not.called) $$ 4 $$ method close $$ cache(item_count) $$ com.ctriposs.bigcache.BigCache<java.lang.String> $$ possible exceptional exit due to cache.get(key) with exception type java.io.IOException $$ ( 2421, 2438 ) $$ @MustCall method close may not have been invoked on cache(item_count) or any of its aliases.
+		cache = cache(item_count);
+		             ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.String>.
+  Reason for going out of scope: possible exceptional exit due to cache.get(key) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCacheReadWriteStressTest.java:119: error: (required.method.not.called) $$ 4 $$ method close $$ new BigCache<String>(TEST_DIR, config) $$ com.ctriposs.bigcache.BigCache<java.lang.String> $$ possible exceptional exit due to cache.put(key + i, TestUtil.getBytes(value + i)) with exception type java.io.IOException $$ ( 3413, 3451 ) $$ @MustCall method close may not have been invoked on new BigCache<String>(TEST_DIR, config) or any of its aliases.
+		cache = new BigCache<String>(TEST_DIR, config);
+		        ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.String>.
+  Reason for going out of scope: possible exceptional exit due to cache.put(key + i, TestUtil.getBytes(value + i)) with exception type java.io.IOException
+../dataset/june2020_dataset/url61db808cfe_ctriposs_bigcache_tgz-pJ8-com_ctriposs_bigcache_BigCacheStressTestJ8/src/com/ctriposs/bigcache/BigCacheReadWriteStressTest.java:163: error: (required.method.not.called) $$ 4 $$ method close $$ new BigCache<String>(TEST_DIR, config) $$ com.ctriposs.bigcache.BigCache<java.lang.String> $$ possible exceptional exit due to future.get() with exception type java.lang.InterruptedException $$ ( 4710, 4748 ) $$ @MustCall method close may not have been invoked on new BigCache<String>(TEST_DIR, config) or any of its aliases.
+		cache = new BigCache<String>(TEST_DIR, config);
+		        ^
+  The type of object is: com.ctriposs.bigcache.BigCache<java.lang.String>.
+  Reason for going out of scope: possible exceptional exit due to future.get() with exception type java.lang.InterruptedException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+92 errors

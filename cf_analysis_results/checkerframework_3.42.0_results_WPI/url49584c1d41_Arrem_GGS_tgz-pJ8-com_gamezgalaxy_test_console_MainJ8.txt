@@ -1,0 +1,429 @@
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:36: error: (required.method.not.called) $$ 4 $$ method StopReading $$ field pm $$ com.gamezgalaxy.GGS.networking.packets.PacketManager $$ Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "pm", methods = "StopReading") $$ ( 1591, 1616 ) $$ @MustCall method StopReading may not have been invoked on field pm or any of its aliases.
+	private PacketManager pm;
+	                      ^
+  The type of object is: com.gamezgalaxy.GGS.networking.packets.PacketManager.
+  Reason for going out of scope: Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "pm", methods = "StopReading")
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:51: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("CloseConnection") Player $$ @MustCall Object $$ ( 1999, 2005 ) $$ incompatible type argument for type parameter E of ArrayList.
+	public ArrayList<Player> players = new ArrayList<Player>();
+	                 ^
+  found   : @MustCall("CloseConnection") Player
+  required: @MustCall Object
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:51: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("CloseConnection") Player $$ @MustCall Object $$ ( 2031, 2037 ) $$ incompatible type argument for type parameter E of ArrayList.
+	public ArrayList<Player> players = new ArrayList<Player>();
+	                                                 ^
+  found   : @MustCall("CloseConnection") Player
+  required: @MustCall Object
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:248: error: (missing.creates.mustcall.for) $$ 3 $$ startLogger $$ this $$ logger $$ ( 7954, 8675 ) $$ Method startLogger re-assigns the non-final, owning field this.logger, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void startLogger() {
+	            ^
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:254: error: (required.method.not.called) $$ 4 $$ method Stop $$ field logger $$ com.gamezgalaxy.GGS.util.logger.Logger $$  Non-final owning field might be overwritten $$ ( 8154, 8213 ) $$ @MustCall method Stop may not have been invoked on field logger or any of its aliases.
+		logger = new Logger("logs/" + cal.getTime() + ".txt", this);
+		       ^
+  The type of object is: com.gamezgalaxy.GGS.util.logger.Logger.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:272: error: (missing.creates.mustcall.for) $$ 3 $$ Start $$ this $$ pm $$ ( 8712, 10633 ) $$ Method Start re-assigns the non-final, owning field this.pm, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void Start() {
+	            ^
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:284: error: (required.method.not.called) $$ 4 $$ method StopReading $$ field pm $$ com.gamezgalaxy.GGS.networking.packets.PacketManager $$  Non-final owning field might be overwritten $$ ( 8989, 9017 ) $$ @MustCall method StopReading may not have been invoked on field pm or any of its aliases.
+		pm = new PacketManager(this);
+		   ^
+  The type of object is: com.gamezgalaxy.GGS.networking.packets.PacketManager.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:355: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ players.get(i) $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 11190, 11204 ) $$ @MustCall method CloseConnection may not have been invoked on players.get(i) or any of its aliases.
+			if (name.equals(players.get(i).username))
+			                           ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:357: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ players.get(i) $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 11257, 11271 ) $$ @MustCall method CloseConnection may not have been invoked on players.get(i) or any of its aliases.
+			else if (players.get(i).username.indexOf(name) != -1 && toreturn == null)
+			                    ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:358: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ toreturn $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 11327, 11352 ) $$ @MustCall method CloseConnection may not have been invoked on toreturn or any of its aliases.
+				toreturn = players.get(i);
+				         ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:359: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ players.get(i) $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 11367, 11381 ) $$ @MustCall method CloseConnection may not have been invoked on players.get(i) or any of its aliases.
+			else if (players.get(i).username.indexOf(name) != -1 && toreturn != null)
+			                    ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:411: error: (contracts.exceptional.postcondition) $$ 3 $$ Stop $$ no information about this.logger $$ this.logger is @CalledMethods("Stop") $$ ( 12889, 13794 ) $$ on exception, postcondition of Stop is not satisfied.
+	public void Stop() throws InterruptedException, IOException {
+	            ^
+  found   : no information about this.logger
+  required: this.logger is @CalledMethods("Stop")
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:411: error: (contracts.exceptional.postcondition) $$ 3 $$ Stop $$ no information about this.pm $$ this.pm is @CalledMethods("StopReading") $$ ( 12889, 13794 ) $$ on exception, postcondition of Stop is not satisfied.
+	public void Stop() throws InterruptedException, IOException {
+	            ^
+  found   : no information about this.pm
+  required: this.pm is @CalledMethods("StopReading")
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:411: error: (contracts.postcondition) $$ 3 $$ Stop $$ no information about this.logger $$ this.logger is @CalledMethods("Stop") $$ ( 12889, 13794 ) $$ postcondition of Stop is not satisfied.
+	public void Stop() throws InterruptedException, IOException {
+	            ^
+  found   : no information about this.logger
+  required: this.logger is @CalledMethods("Stop")
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:411: error: (contracts.postcondition) $$ 3 $$ Stop $$ this.pm is @CalledMethods $$ this.pm is @CalledMethods("StopReading") $$ ( 12889, 13794 ) $$ postcondition of Stop is not satisfied.
+	public void Stop() throws InterruptedException, IOException {
+	            ^
+  found   : this.pm is @CalledMethods
+  required: this.pm is @CalledMethods("StopReading")
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:416: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ p $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 13037, 13045 ) $$ @MustCall method CloseConnection may not have been invoked on p or any of its aliases.
+		for(Player p : players)
+		           ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:428: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ p $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 13302, 13310 ) $$ @MustCall method CloseConnection may not have been invoked on p or any of its aliases.
+		for(Player p : players) // Implementing this again because I want to stop everything first.
+		           ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/networking/packets/PacketManager.java:76: error: (required.method.not.called) $$ 4 $$ method close $$ field serverSocket $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 2730, 2779 ) $$ @MustCall method close may not have been invoked on field serverSocket or any of its aliases.
+			serverSocket = new ServerSocket(this.server.Port);
+			             ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/networking/packets/PacketManager.java:128: error: (contracts.postcondition) $$ 3 $$ StopReading $$ no information about this.serverSocket $$ this.serverSocket is @CalledMethods("close") $$ ( 3839, 4178 ) $$ postcondition of StopReading is not satisfied.
+	public void StopReading() {
+	            ^
+  found   : no information about this.serverSocket
+  required: this.serverSocket is @CalledMethods("close")
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/networking/packets/PacketManager.java:149: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ new Player(connection, this, firstsend, server) $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 4433, 4480 ) $$ @MustCall method CloseConnection may not have been invoked on new Player(connection, this, firstsend, server) or any of its aliases.
+    		new Player(connection, this, firstsend, server);
+    		^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/networking/packets/PacketManager.java:152: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ new Browser(connection, this, firstsend) $$ com.gamezgalaxy.GGS.iomodel.Browser $$ regular method exit $$ ( 4558, 4598 ) $$ @MustCall method CloseConnection may not have been invoked on new Browser(connection, this, firstsend) or any of its aliases.
+    		new Browser(connection, this, firstsend);
+    		^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Browser.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/networking/packets/PacketManager.java:158: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ ic $$ com.gamezgalaxy.GGS.networking.IOClient $$ regular method exit $$ ( 4740, 4785 ) $$ @MustCall method CloseConnection may not have been invoked on ic or any of its aliases.
+    		IOClient ic = new IOClient(connection, this);
+    		         ^
+  The type of object is: com.gamezgalaxy.GGS.networking.IOClient.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/networking/packets/PacketManager.java:172: error: (required.method.not.called) $$ 4 $$ method close $$ connection $$ java.net.Socket $$ regular method exit $$ ( 5022, 5056 ) $$ @MustCall method close may not have been invoked on connection or any of its aliases.
+					connection = serverSocket.accept();
+					           ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/LevelHandler.java:102: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("CloseConnection") Player $$ @MustCall Object $$ ( 2666, 2672 ) $$ incompatible type argument for type parameter E of ArrayList.
+	public ArrayList<Player> getPlayers(Level level) {
+	                 ^
+  found   : @MustCall("CloseConnection") Player
+  required: @MustCall Object
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/LevelHandler.java:103: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("CloseConnection") Player $$ @MustCall Object $$ ( 2712, 2718 ) $$ incompatible type argument for type parameter E of ArrayList.
+		ArrayList<Player> temp = new ArrayList<Player>();
+		          ^
+  found   : @MustCall("CloseConnection") Player
+  required: @MustCall Object
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/LevelHandler.java:103: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("CloseConnection") Player $$ @MustCall Object $$ ( 2741, 2747 ) $$ incompatible type argument for type parameter E of ArrayList.
+		ArrayList<Player> temp = new ArrayList<Player>();
+		                                       ^
+  found   : @MustCall("CloseConnection") Player
+  required: @MustCall Object
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/LevelHandler.java:105: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ server.players.get(i) $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 2809, 2830 ) $$ @MustCall method CloseConnection may not have been invoked on server.players.get(i) or any of its aliases.
+			if (server.players.get(i).getLevel() == level)
+			                      ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/LevelHandler.java:106: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ server.players.get(i) $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 2865, 2886 ) $$ @MustCall method CloseConnection may not have been invoked on server.players.get(i) or any of its aliases.
+				temp.add(server.players.get(i));
+				                           ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/util/logger/Logger.java:92: error: (contracts.exceptional.postcondition) $$ 3 $$ Stop $$ this.out is @CalledMethods $$ this.out is @CalledMethods("close") $$ ( 2208, 2310 ) $$ on exception, postcondition of Stop is not satisfied.
+	public void Stop() throws InterruptedException {
+	            ^
+  found   : this.out is @CalledMethods
+  required: this.out is @CalledMethods("close")
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/util/logger/Logger.java:115: error: (missing.creates.mustcall.for) $$ 3 $$ ChangeFilePath $$ this $$ out $$ ( 2619, 2824 ) $$ Method ChangeFilePath re-assigns the non-final, owning field this.out, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void ChangeFilePath(String filename) throws IOException {
+	            ^
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/util/logger/Logger.java:120: error: (required.method.not.called) $$ 4 $$ method close $$ field out $$ java.io.PrintWriter $$  Non-final owning field might be overwritten $$ ( 2789, 2820 ) $$ @MustCall method close may not have been invoked on field out or any of its aliases.
+		out = new PrintWriter(filepath);
+		    ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/util/logger/Logger.java:131: error: (missing.creates.mustcall.for) $$ 3 $$ ChangeFilePath $$ this $$ out $$ ( 3083, 3346 ) $$ Method ChangeFilePath re-assigns the non-final, owning field this.out, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void ChangeFilePath(String directory, String filename) throws IOException {
+	            ^
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/util/logger/Logger.java:136: error: (required.method.not.called) $$ 4 $$ method close $$ field out $$ java.io.PrintWriter $$  Non-final owning field might be overwritten $$ ( 3311, 3342 ) $$ @MustCall method close may not have been invoked on field out or any of its aliases.
+		out = new PrintWriter(filepath);
+		    ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/API/plugin/CommandHandler.java:155: error: (required.method.not.called) $$ 4 $$ method close $$ fstream $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 4236, 4312 ) $$ @MustCall method close may not have been invoked on fstream or any of its aliases.
+		FileInputStream fstream = new FileInputStream("properties/commands.config");
+		                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/util/properties/Properties.java:111: error: (required.method.not.called) $$ 4 $$ method close $$ fstream $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 3472, 3544 ) $$ @MustCall method close may not have been invoked on fstream or any of its aliases.
+		FileInputStream fstream = new FileInputStream("properties/" + filename);
+		                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/API/plugin/PluginHandler.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ file $$ java.util.jar.JarFile $$ regular method exit $$ ( 1511, 1545 ) $$ @MustCall method close may not have been invoked on file or any of its aliases.
+					file = new JarFile(pluginFiles[i]);
+					     ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/API/plugin/PluginHandler.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ file.getInputStream(fileName) $$ java.io.InputStream $$ possible exceptional exit due to properties.load(file.getInputStream(fileName)) with exception type java.io.IOException $$ ( 1990, 2019 ) $$ @MustCall method close may not have been invoked on file.getInputStream(fileName) or any of its aliases.
+									properties.load(file.getInputStream(fileName));
+									                                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(file.getInputStream(fileName)) with exception type java.io.IOException
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/API/plugin/PluginHandler.java:92: error: (required.method.not.called) $$ 4 $$ method close $$ loader $$ java.lang.ClassLoader $$ regular method exit $$ ( 2584, 2667 ) $$ @MustCall method close may not have been invoked on loader or any of its aliases.
+			ClassLoader loader = URLClassLoader.newInstance(urls, getClass().getClassLoader());
+			            ^
+  The type of object is: java.lang.ClassLoader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/API/plugin/PluginHandler.java:95: error: (argument) $$ 4 $$ arg0 $$ Class.getConstructor $$ @MustCall Class<@MustCall("Stop") Server> $$ @MustCallUnknown Class<? extends @MustCall Object> $$ ( 2874, 2886 ) $$ incompatible argument for parameter arg0 of Class.getConstructor.
+			Constructor<? extends Plugin> constructor = runClass.getConstructor(Server.class);
+			                                                                          ^
+  found   : @MustCall Class<@MustCall("Stop") Server>
+  required: @MustCallUnknown Class<? extends @MustCall Object>
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Player.java:50: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("CloseConnection") Player $$ @MustCall Object $$ ( 2019, 2025 ) $$ incompatible type argument for type parameter E of ArrayList.
+	protected ArrayList<Player> seeable = new ArrayList<Player>();
+	                    ^
+  found   : @MustCall("CloseConnection") Player
+  required: @MustCall Object
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Player.java:50: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("CloseConnection") Player $$ @MustCall Object $$ ( 2051, 2057 ) $$ incompatible type argument for type parameter E of ArrayList.
+	protected ArrayList<Player> seeable = new ArrayList<Player>();
+	                                                    ^
+  found   : @MustCall("CloseConnection") Player
+  required: @MustCall Object
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Player.java:210: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ p $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 5511, 5519 ) $$ @MustCall method CloseConnection may not have been invoked on p or any of its aliases.
+		for (Player p : getServer().players) {
+		            ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Player.java:310: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ p $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 8812, 8820 ) $$ @MustCall method CloseConnection may not have been invoked on p or any of its aliases.
+		for (Player p : pm.server.players) {
+		            ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Player.java:388: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ p $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 11380, 11388 ) $$ @MustCall method CloseConnection may not have been invoked on p or any of its aliases.
+		for (Player p : s.players)
+		            ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Player.java:421: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("CloseConnection") Player $$ @MustCall Object $$ ( 12432, 12438 ) $$ incompatible type argument for type parameter E of ArrayList.
+	public ArrayList<Player> getSeeable() {
+	                 ^
+  found   : @MustCall("CloseConnection") Player
+  required: @MustCall Object
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Player.java:446: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ p $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 13224, 13232 ) $$ @MustCall method CloseConnection may not have been invoked on p or any of its aliases.
+		for (Player p : pm.server.players) {
+		            ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Player.java:529: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ p $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 15041, 15049 ) $$ @MustCall method CloseConnection may not have been invoked on p or any of its aliases.
+			for (Player p : pm.server.players) {
+			            ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Player.java:659: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ pp $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 17591, 17600 ) $$ @MustCall method CloseConnection may not have been invoked on pp or any of its aliases.
+		for (Player pp : pm.server.players) {
+		            ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Player.java:712: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ p $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 19334, 19342 ) $$ @MustCall method CloseConnection may not have been invoked on p or any of its aliases.
+			for (Player p : pm.server.players) {
+			            ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Player.java:929: error: (contracts.postcondition.override) $$ 6 $$ this.client $$ CloseConnection $$ com.gamezgalaxy.GGS.networking.IOClient $$ @CalledMethods("close") $$ com.gamezgalaxy.GGS.iomodel.Player $$ no information $$ ( 25257, 25804 ) $$ Subclass postcondition is weaker for 'this.client' in CloseConnection.
+	public void CloseConnection() {
+	            ^
+    In superclass com.gamezgalaxy.GGS.networking.IOClient: @CalledMethods("close")
+    In subclass com.gamezgalaxy.GGS.iomodel.Player: no information
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Player.java:929: error: (contracts.postcondition.override) $$ 6 $$ this.reader $$ CloseConnection $$ com.gamezgalaxy.GGS.networking.IOClient $$ @CalledMethods("close") $$ com.gamezgalaxy.GGS.iomodel.Player $$ no information $$ ( 25257, 25804 ) $$ Subclass postcondition is weaker for 'this.reader' in CloseConnection.
+	public void CloseConnection() {
+	            ^
+    In superclass com.gamezgalaxy.GGS.networking.IOClient: @CalledMethods("close")
+    In subclass com.gamezgalaxy.GGS.iomodel.Player: no information
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Player.java:929: error: (contracts.postcondition.override) $$ 6 $$ this.writer $$ CloseConnection $$ com.gamezgalaxy.GGS.networking.IOClient $$ @CalledMethods("close") $$ com.gamezgalaxy.GGS.iomodel.Player $$ no information $$ ( 25257, 25804 ) $$ Subclass postcondition is weaker for 'this.writer' in CloseConnection.
+	public void CloseConnection() {
+	            ^
+    In superclass com.gamezgalaxy.GGS.networking.IOClient: @CalledMethods("close")
+    In subclass com.gamezgalaxy.GGS.iomodel.Player: no information
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Player.java:929: error: (flowexpr.parse.error) $$ 1 $$ 'this.super' in the postcondition EnsuresCalledMethods on the declaration of method 'CloseConnection': Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 25257, 25804 ) $$ cannot parse the expression 'this.super' in the postcondition EnsuresCalledMethods on the declaration of method 'CloseConnection': Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+	public void CloseConnection() {
+	            ^
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Player.java:929: error: (flowexpr.parse.error) $$ 1 $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 25257, 25804 ) $$ cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+	public void CloseConnection() {
+	            ^
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Player.java:937: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ p $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 25543, 25551 ) $$ @MustCall method CloseConnection may not have been invoked on p or any of its aliases.
+		for (Player p : pm.server.players)
+		            ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/networking/IOClient.java:54: error: (required.method.not.called) $$ 4 $$ method close $$ field client $$ java.net.Socket $$  Non-final owning field might be overwritten $$ ( 1533, 1553 ) $$ @MustCall method close may not have been invoked on field client or any of its aliases.
+		this.client = client;
+		            ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/networking/IOClient.java:57: error: (required.method.not.called) $$ 4 $$ method close $$ field writer $$ java.io.PrintStream $$  Non-final owning field might be overwritten $$ ( 1582, 1632 ) $$ @MustCall method close may not have been invoked on field writer or any of its aliases.
+			writer = new PrintStream(client.getOutputStream());
+			       ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/networking/IOClient.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ field reader $$ java.io.DataInputStream $$  Non-final owning field might be overwritten $$ ( 1658, 1711 ) $$ @MustCall method close may not have been invoked on field reader or any of its aliases.
+			reader = new DataInputStream(client.getInputStream());
+			       ^
+  The type of object is: java.io.DataInputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/networking/IOClient.java:81: error: (contracts.postcondition) $$ 3 $$ CloseConnection $$ no information about this.client $$ this.client is @CalledMethods("close") $$ ( 2081, 2276 ) $$ postcondition of CloseConnection is not satisfied.
+	public void CloseConnection() {
+	            ^
+  found   : no information about this.client
+  required: this.client is @CalledMethods("close")
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/networking/IOClient.java:81: error: (contracts.postcondition) $$ 3 $$ CloseConnection $$ no information about this.reader $$ this.reader is @CalledMethods("close") $$ ( 2081, 2276 ) $$ postcondition of CloseConnection is not satisfied.
+	public void CloseConnection() {
+	            ^
+  found   : no information about this.reader
+  required: this.reader is @CalledMethods("close")
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/networking/IOClient.java:81: error: (contracts.postcondition) $$ 3 $$ CloseConnection $$ no information about this.writer $$ this.writer is @CalledMethods("close") $$ ( 2081, 2276 ) $$ postcondition of CloseConnection is not satisfied.
+	public void CloseConnection() {
+	            ^
+  found   : no information about this.writer
+  required: this.writer is @CalledMethods("close")
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/Level.java:266: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to new GZIPOutputStream(fos) with exception type java.io.IOException $$ ( 6810, 6881 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+		FileOutputStream fos = new FileOutputStream("levels/" + name + ".ggs");
+		                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new GZIPOutputStream(fos) with exception type java.io.IOException
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/Level.java:307: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ p $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 8098, 8106 ) $$ @MustCall method CloseConnection may not have been invoked on p or any of its aliases.
+		for (Player p : server.players) {
+		            ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/Level.java:330: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to new GZIPInputStream(fis) with exception type java.io.IOException $$ ( 8832, 8884 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+			FileInputStream fis = new FileInputStream(filename);
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new GZIPInputStream(fis) with exception type java.io.IOException
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/chat/Messages.java:27: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ p $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 853, 861 ) $$ @MustCall method CloseConnection may not have been invoked on p or any of its aliases.
+		for (Player p : server.players)
+		            ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/chat/Messages.java:39: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ p $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 1088, 1096 ) $$ @MustCall method CloseConnection may not have been invoked on p or any of its aliases.
+		for (Player p : server.players)
+		            ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/chat/Messages.java:54: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ p $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 1349, 1357 ) $$ @MustCall method CloseConnection may not have been invoked on p or any of its aliases.
+		for (Player p : server.players)
+		            ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/groups/Group.java:43: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("CloseConnection") Player $$ @MustCall Object $$ ( 1596, 1602 ) $$ incompatible type argument for type parameter E of ArrayList.
+	private ArrayList<Player> online = new ArrayList<Player>();
+	                  ^
+  found   : @MustCall("CloseConnection") Player
+  required: @MustCall Object
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/groups/Group.java:43: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("CloseConnection") Player $$ @MustCall Object $$ ( 1627, 1633 ) $$ incompatible type argument for type parameter E of ArrayList.
+	private ArrayList<Player> online = new ArrayList<Player>();
+	                                                 ^
+  found   : @MustCall("CloseConnection") Player
+  required: @MustCall Object
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/groups/Group.java:154: error: (required.method.not.called) $$ 4 $$ method close $$ fstream $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 4502, 4565 ) $$ @MustCall method close may not have been invoked on fstream or any of its aliases.
+		FileInputStream fstream = new FileInputStream("ranks/" + name);
+		                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/groups/Group.java:233: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ pp $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 6298, 6307 ) $$ @MustCall method CloseConnection may not have been invoked on pp or any of its aliases.
+			for (Player pp : g.online) {
+			            ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/system/heartbeat/Beater.java:52: error: (required.method.not.called) $$ 4 $$ method close $$ connection.getInputStream() $$ java.io.InputStream $$ regular method exit $$ ( 1789, 1816 ) $$ @MustCall method close may not have been invoked on connection.getInputStream() or any of its aliases.
+								reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+								                                                                           ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/system/BanHandler.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ fstream $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.FileNotFoundException $$ ( 1141, 1232 ) $$ @MustCall method close may not have been invoked on fstream or any of its aliases.
+			FileInputStream fstream = new FileInputStream(FileUtils.PROPS_DIR + FileUtils.BANNED_FILE);
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/API/action/Action.java:55: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ p $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 2340, 2348 ) $$ @MustCall method CloseConnection may not have been invoked on p or any of its aliases.
+		for (Player p : server.players) {
+		            ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Browser.java:26: error: (required.method.not.called) $$ 4 $$ method close $$ field writer $$ java.io.PrintStream $$  Non-final owning field might be overwritten $$ ( 1018, 1031 ) $$ @MustCall method close may not have been invoked on field writer or any of its aliases.
+		writer = null;
+		       ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/iomodel/Browser.java:28: error: (required.method.not.called) $$ 4 $$ method close $$ field writer $$ java.io.PrintStream $$  Non-final owning field might be overwritten $$ ( 1044, 1113 ) $$ @MustCall method close may not have been invoked on field writer or any of its aliases.
+			writer = new PrintStream(client.getOutputStream(), false, "US-ASCII");
+			       ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/defaults/commands/Loaded.java:44: error: (required.method.not.called) $$ 4 $$ method Stop $$ player.getServer() $$ com.gamezgalaxy.GGS.server.Server $$ regular method exit $$ ( 1084, 1102 ) $$ @MustCall method Stop may not have been invoked on player.getServer() or any of its aliases.
+		LevelHandler handler = player.getServer().getLevelHandler();
+		                                       ^
+  The type of object is: com.gamezgalaxy.GGS.server.Server.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/defaults/commands/Newlvl.java:49: error: (required.method.not.called) $$ 4 $$ method Stop $$ player.getServer() $$ com.gamezgalaxy.GGS.server.Server $$ regular method exit $$ ( 1119, 1137 ) $$ @MustCall method Stop may not have been invoked on player.getServer() or any of its aliases.
+			LevelHandler handler = player.getServer().getLevelHandler();
+			                                       ^
+  The type of object is: com.gamezgalaxy.GGS.server.Server.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/defaults/commands/TP.java:45: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ other $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 1029, 1082 ) $$ @MustCall method CloseConnection may not have been invoked on other or any of its aliases.
+			Player other = player.getServer().getPlayer(args[0]);
+			       ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/defaults/commands/TP.java:53: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ otherTPing $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 1275, 1333 ) $$ @MustCall method CloseConnection may not have been invoked on otherTPing or any of its aliases.
+			Player otherTPing = player.getServer().getPlayer(args[0]);
+			       ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/defaults/commands/TP.java:54: error: (required.method.not.called) $$ 4 $$ method CloseConnection $$ otherTPto $$ com.gamezgalaxy.GGS.iomodel.Player $$ regular method exit $$ ( 1337, 1394 ) $$ @MustCall method CloseConnection may not have been invoked on otherTPto or any of its aliases.
+			Player otherTPto = player.getServer().getPlayer(args[1]);
+			       ^
+  The type of object is: com.gamezgalaxy.GGS.iomodel.Player.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/defaults/commands/Load.java:46: error: (required.method.not.called) $$ 4 $$ method Stop $$ player.getServer() $$ com.gamezgalaxy.GGS.server.Server $$ regular method exit $$ ( 1079, 1097 ) $$ @MustCall method Stop may not have been invoked on player.getServer() or any of its aliases.
+			LevelHandler handler = player.getServer().getLevelHandler();
+			                                       ^
+  The type of object is: com.gamezgalaxy.GGS.server.Server.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/defaults/commands/Stop.java:44: error: (required.method.not.called) $$ 4 $$ method Stop $$ player.getServer() $$ com.gamezgalaxy.GGS.server.Server $$ regular method exit $$ ( 996, 1014 ) $$ @MustCall method Stop may not have been invoked on player.getServer() or any of its aliases.
+			player.getServer().Stop();
+			                ^
+  The type of object is: com.gamezgalaxy.GGS.server.Server.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/defaults/commands/Help.java:40: error: (required.method.not.called) $$ 4 $$ method Stop $$ player.getServer() $$ com.gamezgalaxy.GGS.server.Server $$ regular method exit $$ ( 1027, 1045 ) $$ @MustCall method Stop may not have been invoked on player.getServer() or any of its aliases.
+		Command cmd = player.getServer().getCommandHandler().find(args[0]);
+		                              ^
+  The type of object is: com.gamezgalaxy.GGS.server.Server.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/convert/DatToGGS.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ regular method exit $$ ( 1015, 1050 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+			fis = new FileInputStream(filename);
+			    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/convert/DatToGGS.java:74: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ regular method exit $$ ( 2095, 2131 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+			fos = new FileOutputStream(filename);
+			    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/sql/MySQL.java:93: error: (required.method.not.called) $$ 4 $$ method close $$ DriverManager.getConnection(getURL() + DB, username, pass) $$ java.sql.Connection $$ regular method exit $$ ( 2276, 2334 ) $$ @MustCall method close may not have been invoked on DriverManager.getConnection(getURL() + DB, username, pass) or any of its aliases.
+			connection = DriverManager.getConnection(getURL() + DB, username, pass);
+			                                        ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/sql/SQLite.java:92: error: (required.method.not.called) $$ 4 $$ method close $$ DriverManager.getConnection(PATH) $$ java.sql.Connection $$ regular method exit $$ ( 2229, 2262 ) $$ @MustCall method close may not have been invoked on DriverManager.getConnection(PATH) or any of its aliases.
+			connection = DriverManager.getConnection(PATH);
+			                                        ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: regular method exit
+88 errors

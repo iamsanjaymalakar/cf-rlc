@@ -1,0 +1,36 @@
+../../../../datasets/june2020_dataset/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/JuegoTorneo.java:158: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-384 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 4779, 4802 ) $$ @MustCall method close may not have been invoked on temp-var-384 or any of its aliases.
+			reader = new BufferedReader(new FileReader(fichero));
+			                            ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/Controlador.java:238: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-452 $$ java.io.FileReader $$ possible exceptional exit due to new FileReader(fichero) with exception type java.io.FileNotFoundException $$ ( 7999, 8022 ) $$ @MustCall method close may not have been invoked on temp-var-452 or any of its aliases.
+			BufferedReader readerPenultimaLinea = new BufferedReader(new FileReader(fichero));
+			                                                         ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new FileReader(fichero) with exception type java.io.FileNotFoundException
+../../../../datasets/june2020_dataset/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/Controlador.java:239: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-454 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 8072, 8095 ) $$ @MustCall method close may not have been invoked on temp-var-454 or any of its aliases.
+			BufferedReader reader = new BufferedReader(new FileReader(fichero));
+			                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/ia/algoritmosGeneticos/Estrategia.java:232: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-648 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 10537, 10560 ) $$ @MustCall method close may not have been invoked on temp-var-648 or any of its aliases.
+				BufferedReader reader = new BufferedReader(new FileReader(fichero));
+				                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/ia/algoritmosGeneticos/Estrategia.java:422: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-709 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 17988, 18011 ) $$ @MustCall method close may not have been invoked on temp-var-709 or any of its aliases.
+			BufferedReader reader = new BufferedReader(new FileReader(fichero));
+			                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/Torneo.java:118: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-808 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 4106, 4129 ) $$ @MustCall method close may not have been invoked on temp-var-808 or any of its aliases.
+			BufferedReader reader = new BufferedReader(new FileReader(fichero));
+			                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/othello/UIJuego.java:392: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-978 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 12788, 12811 ) $$ @MustCall method close may not have been invoked on temp-var-978 or any of its aliases.
+			reader = new BufferedReader(new FileReader(fichero));
+			                            ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+7 errors

@@ -1,0 +1,14 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^soc/client/SOCPlayerClient.java^846^soc.client.SOCPlayerClient.connect()V^36 = new <Application,Ljava/net/Socket>@111^NULL^FIELD,^false^true^Field escape;
+1^soc/client/SOCConnectOrPracticePanel.java^133^soc.client.SOCConnectOrPracticePanel.checkCanLaunchServer()Z^12 = new <Application,Ljava/net/ServerSocket>@50^soc.client.SOCConnectOrPracticePanel.checkCanLaunchServer()Z#30,^INVOKE,^false^false^Loop Fix;Normal Fix;
+2^soc/server/SOCServer.java^5471^soc.server.SOCServer.endGameTurn(Lsoc/game/SOCGame;Lsoc/game/SOCPlayer;)V^59 = new <Application,Ljava/io/FileWriter>@185^soc.server.SOCServer.endGameTurn(Lsoc/game/SOCGame;Lsoc/game/SOCPlayer;)V#62,^INVOKE,^false^false^Try-catch Fix;
+3^soc/server/SOCServer.java^7716^soc.server.SOCServer.sendGameStateOVER(Lsoc/game/SOCGame;)V^96 = new <Application,Ljava/io/FileWriter>@288^soc.server.SOCServer.sendGameStateOVER(Lsoc/game/SOCGame;)V#99,^INVOKE,^false^false^Loop Fix;Normal Fix;
+4^soc/client/SOCAccountClient.java^351^soc.client.SOCAccountClient.connect()V^36 = new <Application,Ljava/net/Socket>@111^NULL^FIELD,^false^true^Field escape;
+5^soc/robot/SOCRobotClient.java^233^soc.robot.SOCRobotClient.init()V^8 = new <Application,Ljava/net/Socket>@8^NULL^FIELD,^false^true^Field escape;
+6^soc/robot/SOCRobotClient.java^273^soc.robot.SOCRobotClient.disconnectReconnect()V^15 = new <Application,Ljava/net/Socket>@30^NULL^FIELD,^false^true^Field escape;
+7^soc/ourRobot/SOCGameStarterRobot.java^86^soc.ourRobot.SOCGameStarterRobot.init()V^8 = new <Application,Ljava/net/Socket>@8^NULL^FIELD,^false^true^Field escape;
+8^soc/util/Version.java^48^soc.util.Version.<clinit>()V^37 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 35,34 @120 exception:36^NULL^INVOKE,ARRAY,^false^true^Array (or collection/map) escape;
+9^soc/server/database/SOCDBHelper.java^242^soc.server.database.SOCDBHelper.connect(Ljava/lang/String;Ljava/lang/String;)Z^6 = invokestatic < Application, Ljava/sql/DriverManager, getConnection(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection; > 4,1,2 @5 exception:5^NULL^FIELD,^false^true^Field escape;
+10^soc/client/SOCConnectOrPracticePanel.java^136^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+11^soc/server/genericServer/Server.java^1063^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+12^soc/server/genericServer/Server.java^1069^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

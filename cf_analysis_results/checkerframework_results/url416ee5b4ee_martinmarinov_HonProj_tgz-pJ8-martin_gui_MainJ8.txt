@@ -1,0 +1,56 @@
+../../../../datasets/june2020_dataset/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/gui/quantum/Item.java:74: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-254 $$ java.io.InputStream $$ regular method exit $$ ( 2526, 2580 ) $$ @MustCall method close may not have been invoked on temp-var-254 or any of its aliases.
+			return icon = ImageIO.read(this.getClass().getResourceAsStream(getIconFileName()));
+			                                                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/gui/quantum/Visualizer.java:503: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.FileOutputStream $$ possible exceptional exit due to p.store(out, "---MBQC Graphical Pattern description---") with exception type java.io.IOException $$ ( 13638, 13667 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+		out = new FileOutputStream(f);
+		    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to p.store(out, "---MBQC Graphical Pattern description---") with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/gui/quantum/Visualizer.java:513: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileInputStream $$ possible exceptional exit due to p.load(in) with exception type java.io.IOException $$ ( 13849, 13899 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			final FileInputStream in = new FileInputStream(f);
+			                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to p.load(in) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/gui/EvaluatorGUI.java:400: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-690 $$ martin.gui.EvaluatorGUI.PrintLogger $$ regular method exit $$ ( 14687, 14704 ) $$ @MustCall method close may not have been invoked on temp-var-690 or any of its aliases.
+	final PrintLogger logger = new PrintLogger();
+	                           ^
+  The type of object is: martin.gui.EvaluatorGUI.PrintLogger.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/gui/CircuitSimulatorGUI.java:102: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1199 $$ java.util.Scanner $$ regular method exit $$ ( 3749, 3766 ) $$ @MustCall method close may not have been invoked on temp-var-1199 or any of its aliases.
+						txtInputCirc.setText(new Scanner(file).useDelimiter("\\Z").next());
+						                     ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/gui/CircuitSimulatorGUI.java:102: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1200 $$ java.util.Scanner $$ regular method exit $$ ( 3749, 3786 ) $$ @MustCall method close may not have been invoked on temp-var-1200 or any of its aliases.
+						txtInputCirc.setText(new Scanner(file).useDelimiter("\\Z").next());
+						                                                   ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/experiments/Worksheet.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1235 $$ java.io.FileReader $$ possible exceptional exit due to file.readLine() with exception type java.io.IOException $$ ( 846, 870 ) $$ @MustCall method close may not have been invoked on temp-var-1235 or any of its aliases.
+		file= new BufferedReader(new FileReader(filename));
+		                         ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to file.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/quantum/McalcDescription.java:63: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileInputStream $$ possible exceptional exit due to p.load(in) with exception type java.io.IOException $$ ( 1982, 2032 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+		final FileInputStream in = new FileInputStream(f);
+		                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to p.load(in) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/quantum/McalcDescription.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.FileOutputStream $$ possible exceptional exit due to p.store(out, "---MBQC Pattern description---") with exception type java.io.IOException $$ ( 2868, 2921 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+			final FileOutputStream out = new FileOutputStream(f);
+			                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to p.store(out, "---MBQC Pattern description---") with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/quantum/tools/Tuple.java:24: error: (return) $$ 2 $$ @MustCallUnknown String $$ @MustCall String $$ ( 709, 725 ) $$ incompatible types in return.
+		return "("+x+", "+y+")";
+		                   ^
+  type of expression: @MustCallUnknown String
+  method return type: @MustCall String
+../../../../datasets/june2020_dataset/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/translatortest/QCGate.java:149: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2059 $$ java.io.InputStream $$ possible exceptional exit due to input.readLine() with exception type java.io.IOException $$ ( 4020, 4038 ) $$ @MustCall method close may not have been invoked on temp-var-2059 or any of its aliases.
+			BufferedReader input = new BufferedReader(new InputStreamReader(p.getInputStream()));
+			                                                                                ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to input.readLine() with exception type java.io.IOException
+11 errors

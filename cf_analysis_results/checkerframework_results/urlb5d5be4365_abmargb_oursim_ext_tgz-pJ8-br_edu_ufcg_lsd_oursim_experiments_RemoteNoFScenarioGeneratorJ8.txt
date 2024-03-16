@@ -1,0 +1,136 @@
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/factories/JsonGridFactoryTest.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-200 $$ java.io.InputStream $$ regular method exit $$ ( 631, 682 ) $$ @MustCall method close may not have been invoked on temp-var-200 or any of its aliases.
+				getClass().getResourceAsStream("grid-example.conf"));
+				                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/factories/JsonGridFactoryTest.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-228 $$ java.io.InputStream $$ regular method exit $$ ( 1611, 1658 ) $$ @MustCall method close may not have been invoked on temp-var-228 or any of its aliases.
+				getClass().getResourceAsStream("grid-bad.conf"));
+				                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/factories/JsonGridFactoryTest.java:57: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-233 $$ java.io.InputStream $$ regular method exit $$ ( 1873, 1924 ) $$ @MustCall method close may not have been invoked on temp-var-233 or any of its aliases.
+				getClass().getResourceAsStream("grid-badpeer.conf"));
+				                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/factories/JsonGridFactoryTest.java:66: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-238 $$ java.io.InputStream $$ regular method exit $$ ( 2136, 2189 ) $$ @MustCall method close may not have been invoked on temp-var-238 or any of its aliases.
+				getClass().getResourceAsStream("grid-badworker.conf"));
+				                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/factories/JsonGridFactoryTest.java:76: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-243 $$ java.io.InputStream $$ regular method exit $$ ( 2406, 2459 ) $$ @MustCall method close may not have been invoked on temp-var-243 or any of its aliases.
+				getClass().getResourceAsStream("grid-badbroker.conf"));
+				                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/factories/JsonGridFactoryTest.java:89: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-250 $$ java.io.InputStream $$ regular method exit $$ ( 2773, 2824 ) $$ @MustCall method close may not have been invoked on temp-var-250 or any of its aliases.
+				getClass().getResourceAsStream("grid-example.conf"));
+				                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/factories/JsonGridFactoryTest.java:102: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-257 $$ java.io.InputStream $$ regular method exit $$ ( 3184, 3235 ) $$ @MustCall method close may not have been invoked on temp-var-257 or any of its aliases.
+				getClass().getResourceAsStream("grid-example.conf"));
+				                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/Main.java:26: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2608 $$ java.io.FileInputStream $$ possible exceptional exit due to new FileInputStream("resources/grid-example.conf") with exception type java.io.FileNotFoundException $$ ( 960, 1011 ) $$ @MustCall method close may not have been invoked on temp-var-2608 or any of its aliases.
+				new FileEventProxy(new FileInputStream("resources/event-example.conf")), 
+				                   ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileInputStream("resources/grid-example.conf") with exception type java.io.FileNotFoundException
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/Main.java:27: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2610 $$ java.io.FileInputStream $$ possible exceptional exit due to new FileOutputStream("trace.out") with exception type java.io.FileNotFoundException $$ ( 1052, 1102 ) $$ @MustCall method close may not have been invoked on temp-var-2610 or any of its aliases.
+				new JsonGridFactory(properties, new FileInputStream("resources/grid-example.conf")).createGrid(),
+				                                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream("trace.out") with exception type java.io.FileNotFoundException
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/Main.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2614 $$ java.io.FileOutputStream $$ regular method exit $$ ( 1191, 1224 ) $$ @MustCall method close may not have been invoked on temp-var-2614 or any of its aliases.
+				new DefaultTraceCollector(new FileOutputStream("trace.out")));
+				                          ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/events/fd/UpdateStatusAvailableEvent.java:37: error: (argument) $$ 4 $$ entityType $$ getOnRecoveryEvent $$ @MustCall Class<capture#562 extends @MustCallUnknown ActiveEntity> $$ @MustCallUnknown Class<? extends @MustCall ActiveEntity> $$ ( 1146, 1169 ) $$ incompatible argument for parameter entityType of getOnRecoveryEvent.
+					monitoredObj.getClass());
+					                     ^
+  found   : @MustCall Class<capture#562 extends @MustCallUnknown ActiveEntity>
+  required: @MustCallUnknown Class<? extends @MustCall ActiveEntity>
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/events/fd/MonitorUtil.java:57: error: (argument) $$ 4 $$ entityType $$ getOnFailureEvent $$ @MustCall Class<capture#19 extends @MustCallUnknown ActiveEntity> $$ @MustCallUnknown Class<? extends @MustCall ActiveEntity> $$ ( 1836, 1859 ) $$ incompatible argument for parameter entityType of getOnFailureEvent.
+					monitoredObj.getClass());
+					                     ^
+  found   : @MustCall Class<capture#19 extends @MustCallUnknown ActiveEntity>
+  required: @MustCallUnknown Class<? extends @MustCall ActiveEntity>
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/events/fd/MonitorUtil.java:132: error: (argument) $$ 4 $$ entityType $$ getOnRecoveryEvent $$ @MustCall Class<capture#180 extends @MustCallUnknown ActiveEntity> $$ @MustCallUnknown Class<? extends @MustCall ActiveEntity> $$ ( 4248, 4265 ) $$ incompatible argument for parameter entityType of getOnRecoveryEvent.
+					object.getClass());
+					               ^
+  found   : @MustCall Class<capture#180 extends @MustCallUnknown ActiveEntity>
+  required: @MustCallUnknown Class<? extends @MustCall ActiveEntity>
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/events/fd/MonitorUtil.java:162: error: (argument) $$ 4 $$ entityType $$ getOnFailureEvent $$ @MustCall Class<capture#921 extends @MustCallUnknown ActiveEntity> $$ @MustCallUnknown Class<? extends @MustCall ActiveEntity> $$ ( 5124, 5141 ) $$ incompatible argument for parameter entityType of getOnFailureEvent.
+					object.getClass());
+					               ^
+  found   : @MustCall Class<capture#921 extends @MustCallUnknown ActiveEntity>
+  required: @MustCallUnknown Class<? extends @MustCall ActiveEntity>
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/events/fd/MonitorUtil.java:187: error: (argument) $$ 4 $$ entityType $$ getOnFailureEvent $$ @MustCall Class<capture#907 extends @MustCallUnknown ActiveEntity> $$ @MustCallUnknown Class<? extends @MustCall ActiveEntity> $$ ( 5893, 5917 ) $$ incompatible argument for parameter entityType of getOnFailureEvent.
+				interestedObj.getClass());
+				                      ^
+  found   : @MustCall Class<capture#907 extends @MustCallUnknown ActiveEntity>
+  required: @MustCallUnknown Class<? extends @MustCall ActiveEntity>
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/experiments/LocalScenarioGenerator.java:137: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-4472 $$ java.io.FileOutputStream $$ regular method exit $$ ( 4837, 4918 ) $$ @MustCall method close may not have been invoked on temp-var-4472 or any of its aliases.
+						new FileOutputStream(parentFile.getAbsolutePath() +"/trace-r" + replica + ".out")));
+						^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/experiments/ScenarioEvaluator.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-4500 $$ java.io.FileInputStream $$ possible exceptional exit due to IOUtils.readLines(new FileInputStream(file)) with exception type java.io.IOException $$ ( 1286, 1311 ) $$ @MustCall method close may not have been invoked on temp-var-4500 or any of its aliases.
+		List<String> lines = IOUtils.readLines(new FileInputStream(file));
+		                                       ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to IOUtils.readLines(new FileInputStream(file)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/experiments/ScalabilityScenarioGenerator.java:165: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-4596 $$ java.io.FileOutputStream $$ possible exceptional exit due to new FileOutputStream(timeFile) with exception type java.io.FileNotFoundException $$ ( 5770, 5801 ) $$ @MustCall method close may not have been invoked on temp-var-4596 or any of its aliases.
+						new FileOutputStream(traceFile)));
+						^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(timeFile) with exception type java.io.FileNotFoundException
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/experiments/ScalabilityScenarioGenerator.java:175: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-4608 $$ java.io.FileOutputStream $$ regular method exit $$ ( 6187, 6217 ) $$ @MustCall method close may not have been invoked on temp-var-4608 or any of its aliases.
+		IOUtils.write(String.valueOf(time), new FileOutputStream(timeFile));
+		                                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/experiments/RemoteNoFScenarioGenerator.java:216: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-4731 $$ java.io.FileOutputStream $$ regular method exit $$ ( 7303, 7334 ) $$ @MustCall method close may not have been invoked on temp-var-4731 or any of its aliases.
+						new FileOutputStream(traceFile)));
+						^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/experiments/JDependRunner.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-4757 $$ java.io.PrintWriter $$ regular method exit $$ ( 495, 534 ) $$ @MustCall method close may not have been invoked on temp-var-4757 or any of its aliases.
+		jdepend.setWriter(new PrintWriter(new File("report.txt")));
+		                  ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/experiments/RemoteAndLocalConcurrentScenarioGenerator.java:188: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-4858 $$ java.io.FileOutputStream $$ regular method exit $$ ( 6666, 6697 ) $$ @MustCall method close may not have been invoked on temp-var-4858 or any of its aliases.
+						new FileOutputStream(traceFile)));
+						^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/experiments/LocalConcurrentScenarioGenerator.java:174: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-4959 $$ java.io.FileOutputStream $$ regular method exit $$ ( 6130, 6161 ) $$ @MustCall method close may not have been invoked on temp-var-4959 or any of its aliases.
+						new FileOutputStream(traceFile)));
+						^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/queue/FileEventProxyTest.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-5048 $$ java.io.InputStream $$ regular method exit $$ ( 305, 355 ) $$ @MustCall method close may not have been invoked on temp-var-5048 or any of its aliases.
+				getClass().getResourceAsStream("event-blank.conf"));
+				                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/queue/FileEventProxyTest.java:25: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-5053 $$ java.io.InputStream $$ regular method exit $$ ( 547, 599 ) $$ @MustCall method close may not have been invoked on temp-var-5053 or any of its aliases.
+				getClass().getResourceAsStream("event-example.conf"));
+				                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/queue/FileEventProxyTest.java:49: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-5072 $$ java.io.InputStream $$ regular method exit $$ ( 1303, 1355 ) $$ @MustCall method close may not have been invoked on temp-var-5072 or any of its aliases.
+				getClass().getResourceAsStream("event-example.conf"));
+				                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlb5d5be4365_abmargb_oursim_ext_tgz-pJ8-br_edu_ufcg_lsd_oursim_experiments_RemoteNoFScenarioGeneratorJ8/src/br/edu/ufcg/lsd/oursim/queue/FileEventProxyTest.java:65: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-5082 $$ java.io.InputStream $$ regular method exit $$ ( 1793, 1841 ) $$ @MustCall method close may not have been invoked on temp-var-5082 or any of its aliases.
+				getClass().getResourceAsStream("event-bad.conf"));
+				                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+27 errors

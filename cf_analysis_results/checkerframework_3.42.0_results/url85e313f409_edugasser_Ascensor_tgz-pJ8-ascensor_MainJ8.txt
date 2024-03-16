@@ -1,0 +1,23 @@
+../dataset/june2020_dataset/url85e313f409_edugasser_Ascensor_tgz-pJ8-ascensor_MainJ8/src/ascensor/Cola.java:24: error: (argument) $$ 4 $$ arg0 $$ ArrayList.add $$ @CalledMethods Pasajero $$ ? extends @CalledMethods Object $$ ( 529, 533 ) $$ incompatible argument for parameter arg0 of ArrayList.add.
+            this.add(dato);
+                     ^
+  found   : @CalledMethods Pasajero
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url85e313f409_edugasser_Ascensor_tgz-pJ8-ascensor_MainJ8/src/ascensor/Main.java:235: error: (argument) $$ 4 $$ arg0 $$ ArrayList.add $$ @CalledMethods Pasajero $$ ? extends @CalledMethods Object $$ ( 8210, 8235 ) $$ incompatible argument for parameter arg0 of ArrayList.add.
+                    cola_subida.get(piso_actual_pasajero).add(getPasajeroFinReflexion());
+                                                                                     ^
+  found   : @CalledMethods Pasajero
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url85e313f409_edugasser_Ascensor_tgz-pJ8-ascensor_MainJ8/src/ascensor/Main.java:239: error: (argument) $$ 4 $$ arg0 $$ ArrayList.add $$ @CalledMethods Pasajero $$ ? extends @CalledMethods Object $$ ( 8475, 8500 ) $$ incompatible argument for parameter arg0 of ArrayList.add.
+                    cola_bajada.get(piso_actual_pasajero).add(getPasajeroFinReflexion());
+                                                                                     ^
+  found   : @CalledMethods Pasajero
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url85e313f409_edugasser_Ascensor_tgz-pJ8-ascensor_MainJ8/src/ascensor/Main.java:262: error: (argument) $$ 4 $$ arg0 $$ ArrayList.add $$ @CalledMethods Pasajero $$ ? extends @CalledMethods Object $$ ( 9661, 9709 ) $$ incompatible argument for parameter arg0 of ArrayList.add.
+            cola_subida.get(0).add( new Pasajero("ASC", piso_destino_pasajero,clock) );
+                                    ^
+  found   : @CalledMethods Pasajero
+  required: ? extends @CalledMethods Object
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 errors

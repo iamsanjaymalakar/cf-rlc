@@ -1,0 +1,4 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^ar/fiuba/tecnicas/framework/JTest/XmlPrinter.java^23^ar.fiuba.tecnicas.framework.JTest.XmlPrinter.inicializar()V^3 = new <Application,Ljava/io/FileWriter>@1^NULL^FIELD,^false^true^Field escape;
+1^ar/fiuba/tecnicas/framework/JTest/XmlPrinter.java^24^ar.fiuba.tecnicas.framework.JTest.XmlPrinter.inicializar()V^8 = new <Application,Ljava/io/PrintWriter>@14^ar.fiuba.tecnicas.framework.JTest.XmlPrinter.inicializar()V#9,^FIELD,^false^true^Field escape;
+2^ar/fiuba/tecnicas/framework/JTest/XmlPrinter.java^15^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

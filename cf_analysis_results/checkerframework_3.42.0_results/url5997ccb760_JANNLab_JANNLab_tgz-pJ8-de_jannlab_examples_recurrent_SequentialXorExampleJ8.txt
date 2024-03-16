@@ -1,0 +1,21 @@
+../dataset/june2020_dataset/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/io/Serializer.java:51: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(file) $$ java.io.FileOutputStream $$ possible exceptional exit due to new GZIPOutputStream(new FileOutputStream(file)) with exception type java.io.IOException $$ ( 1870, 1896 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(file) or any of its aliases.
+            new GZIPOutputStream(new FileOutputStream(file))
+                                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new GZIPOutputStream(new FileOutputStream(file)) with exception type java.io.IOException
+../dataset/june2020_dataset/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/io/Serializer.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(file) $$ java.io.FileInputStream $$ possible exceptional exit due to new GZIPInputStream(new FileInputStream(file)) with exception type java.io.IOException $$ ( 2493, 2518 ) $$ @MustCall method close may not have been invoked on new FileInputStream(file) or any of its aliases.
+            new GZIPInputStream(new FileInputStream(file))
+                                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new GZIPInputStream(new FileInputStream(file)) with exception type java.io.IOException
+../dataset/june2020_dataset/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/data/SampleTools.java:243: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(file) $$ java.io.FileReader $$ possible exceptional exit due to reader.ready() with exception type java.io.IOException $$ ( 8675, 8695 ) $$ @MustCall method close may not have been invoked on new FileReader(file) or any of its aliases.
+        BufferedReader reader = new BufferedReader(new FileReader(file));
+                                                   ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.ready() with exception type java.io.IOException
+../dataset/june2020_dataset/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/data/SampleTools.java:323: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(file) $$ java.io.FileWriter $$ possible exceptional exit due to out.write("# " + size + " samples\n") with exception type java.io.IOException $$ ( 11336, 11356 ) $$ @MustCall method close may not have been invoked on new FileWriter(file) or any of its aliases.
+        BufferedWriter out = new BufferedWriter(new FileWriter(file));
+                                                ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write("# " + size + " samples\n") with exception type java.io.IOException
+4 errors

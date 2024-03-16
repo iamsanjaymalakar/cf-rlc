@@ -1,0 +1,9 @@
+../../../../datasets/june2020_dataset/urld5c972ef81_noxx90_jflam_tgz-pJ8-fr_noxx90_jflam_BenchmarkJ8/src/fr/noxx90/jflam/FlameLogger.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2 $$ java.io.PrintWriter $$ regular method exit $$ ( 424, 446 ) $$ @MustCall method close may not have been invoked on temp-var-2 or any of its aliases.
+			writer = new PrintWriter("log");
+			         ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+warning: (annotation.not.completed) $$ 2 $$ com.google.common.collect $$ @ParametersAreNonnullByDefault $$  $$ Element com.google.common.collect contains annotation @ParametersAreNonnullByDefault which can't be found. Make sure your classpath is set correctly.
+warning: (annotation.not.completed) $$ 2 $$ com.google.common.collect.RangeMap.get(K) $$ @Nullable $$  $$ Element com.google.common.collect.RangeMap.get(K) contains annotation @Nullable which can't be found. Make sure your classpath is set correctly.
+1 error
+2 warnings

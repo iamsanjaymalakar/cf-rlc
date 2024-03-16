@@ -1,0 +1,27 @@
+10979
+70
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/urldae1c57e59_mustafaakin_izuna_mapeditor_tgz-pJ8-in_mustafaak_izuna_actions_ActionTestJ8/src/in/mustafaak/izuna/Shell.java; Line number 34
+vim +34 ../../../dataset/june2020_dataset/urldae1c57e59_mustafaakin_izuna_mapeditor_tgz-pJ8-in_mustafaak_izuna_actions_ActionTestJ8/src/in/mustafaak/izuna/Shell.java
+
++++ Add following code below line: 42 (in/mustafaak/izuna/Shell.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 34
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/urldae1c57e59_mustafaakin_izuna_mapeditor_tgz-pJ8-in_mustafaak_izuna_actions_ActionTestJ8/src/in/mustafaak/izuna/actions/ActionTest.java; Line number 66
+vim +66 ../../../dataset/june2020_dataset/urldae1c57e59_mustafaakin_izuna_mapeditor_tgz-pJ8-in_mustafaak_izuna_actions_ActionTestJ8/src/in/mustafaak/izuna/actions/ActionTest.java
+
++++ Add following code below line: 78 (in/mustafaak/izuna/actions/ActionTest.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 66
+
++++ Delete Line number 75 (in/mustafaak/izuna/actions/ActionTest.java)
+
+--------------------------------------------

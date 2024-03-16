@@ -1,0 +1,223 @@
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/PoulidorProtocol.java:168: error: (required.method.not.called) $$ 4 $$ method close $$ writerMafia $$ java.io.FileWriter $$ possible exceptional exit due to new FileWriter(new File(p.getDistanceFileNameOfValues())) with exception type java.io.IOException $$ ( 4261, 4341 ) $$ @MustCall method close may not have been invoked on writerMafia or any of its aliases.
+		FileWriter writerMafia = new FileWriter(new File(p.getMafiaFileNameOfValues()));
+		           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(new File(p.getDistanceFileNameOfValues())) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/PoulidorProtocol.java:169: error: (required.method.not.called) $$ 4 $$ method close $$ writerDistance $$ java.io.FileWriter $$ possible exceptional exit due to writerMafia.close() with exception type java.io.IOException $$ ( 4344, 4430 ) $$ @MustCall method close may not have been invoked on writerDistance or any of its aliases.
+		FileWriter writerDistance = new FileWriter(new File(p.getDistanceFileNameOfValues()));		
+		           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to writerMafia.close() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/PoulidorProtocol.java:246: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-411 $$ java.io.FileReader $$ possible exceptional exit due to reader.ready() with exception type java.io.IOException $$ ( 6464, 6481 ) $$ @MustCall method close may not have been invoked on temp-var-411 or any of its aliases.
+			BufferedReader reader = new BufferedReader(new FileReader(f));
+			                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.ready() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/PoulidorProtocol.java:279: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-421 $$ java.io.FileReader $$ possible exceptional exit due to reader.ready() with exception type java.io.IOException $$ ( 7319, 7336 ) $$ @MustCall method close may not have been invoked on temp-var-421 or any of its aliases.
+			BufferedReader reader = new BufferedReader(new FileReader(f));
+			                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.ready() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/TMAProtocol.java:247: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-498 $$ java.io.FileReader $$ possible exceptional exit due to reader.ready() with exception type java.io.IOException $$ ( 7183, 7200 ) $$ @MustCall method close may not have been invoked on temp-var-498 or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(f));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.ready() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/TMAProtocol.java:284: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-509 $$ java.io.FileReader $$ possible exceptional exit due to reader.ready() with exception type java.io.IOException $$ ( 8310, 8327 ) $$ @MustCall method close may not have been invoked on temp-var-509 or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(f));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.ready() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/TMAProtocol.java:313: error: (required.method.not.called) $$ 4 $$ method close $$ writerMafia $$ java.io.FileWriter $$ possible exceptional exit due to new FileWriter(new File(p.getDistanceFileNameOfValues())) with exception type java.io.IOException $$ ( 9305, 9385 ) $$ @MustCall method close may not have been invoked on writerMafia or any of its aliases.
+		FileWriter writerMafia = new FileWriter(new File(p.getMafiaFileNameOfValues()));
+		           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(new File(p.getDistanceFileNameOfValues())) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/TMAProtocol.java:314: error: (required.method.not.called) $$ 4 $$ method close $$ writerDistance $$ java.io.FileWriter $$ possible exceptional exit due to writerMafia.close() with exception type java.io.IOException $$ ( 9388, 9474 ) $$ @MustCall method close may not have been invoked on writerDistance or any of its aliases.
+		FileWriter writerDistance = new FileWriter(new File(p.getDistanceFileNameOfValues()));		
+		           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to writerMafia.close() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Optimization.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-853 $$ java.io.PrintStream $$ regular method exit $$ ( 1077, 1140 ) $$ @MustCall method close may not have been invoked on temp-var-853 or any of its aliases.
+		System.setOut(new PrintStream("optimization_reduced"+DBProtocol.MAX_N+".txt"));
+		              ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Data.java:28: error: (required.method.not.called) $$ 4 $$ method close $$ writer $$ java.io.FileWriter $$ possible exceptional exit due to writer.write("# n") with exception type java.io.IOException $$ ( 825, 927 ) $$ @MustCall method close may not have been invoked on writer or any of its aliases.
+			FileWriter writer = new FileWriter(new File(p.getIdentifier()+suffix+"-increment-"+increment+".DAT"));
+			           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to writer.write("# n") with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Data.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ writer $$ java.io.FileWriter $$ possible exceptional exit due to writer.append(protocols[0].getTotalBitsExchangedDuringFastPhase() + " \t ") with exception type java.io.IOException $$ ( 2968, 3081 ) $$ @MustCall method close may not have been invoked on writer or any of its aliases.
+				FileWriter writer = new FileWriter(new File(pName+"-"+attribute.getName()+"-increment-"+increment+".DAT"), true);
+				           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to writer.append(protocols[0].getTotalBitsExchangedDuringFastPhase() + " \t ") with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java:124: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1163 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 5059, 5076 ) $$ @MustCall method close may not have been invoked on temp-var-1163 or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(f));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java:145: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1176 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 5800, 5817 ) $$ @MustCall method close may not have been invoked on temp-var-1176 or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(f));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java:164: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1188 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 6518, 6535 ) $$ @MustCall method close may not have been invoked on temp-var-1188 or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(f));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java:182: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1199 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 7196, 7213 ) $$ @MustCall method close may not have been invoked on temp-var-1199 or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(f));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java:201: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1210 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 7889, 7906 ) $$ @MustCall method close may not have been invoked on temp-var-1210 or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(f));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java:220: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1222 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 8607, 8624 ) $$ @MustCall method close may not have been invoked on temp-var-1222 or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(f));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java:239: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1233 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 9315, 9332 ) $$ @MustCall method close may not have been invoked on temp-var-1233 or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(f));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java:258: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1244 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 10016, 10033 ) $$ @MustCall method close may not have been invoked on temp-var-1244 or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(f));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java:278: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1256 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 10731, 10748 ) $$ @MustCall method close may not have been invoked on temp-var-1256 or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(f));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java:297: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1267 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 11412, 11429 ) $$ @MustCall method close may not have been invoked on temp-var-1267 or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(f));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java:316: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1279 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 12125, 12142 ) $$ @MustCall method close may not have been invoked on temp-var-1279 or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(f));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java:335: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1290 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 12821, 12838 ) $$ @MustCall method close may not have been invoked on temp-var-1290 or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(f));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java:354: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1301 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 13495, 13512 ) $$ @MustCall method close may not have been invoked on temp-var-1301 or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(f));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java:372: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1311 $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 14107, 14124 ) $$ @MustCall method close may not have been invoked on temp-var-1311 or any of its aliases.
+		BufferedReader reader = new BufferedReader(new FileReader(f));
+		                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Gnuplot.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ writer $$ java.io.FileWriter $$ possible exceptional exit due to writer.write(p.getTotalBitsExchangedDuringFastPhase() + "") with exception type java.io.IOException $$ ( 485, 528 ) $$ @MustCall method close may not have been invoked on writer or any of its aliases.
+		FileWriter writer = new FileWriter(points);
+		           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to writer.write(p.getTotalBitsExchangedDuringFastPhase() + "") with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Gnuplot.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1336 $$ java.io.FileWriter $$ regular method exit $$ ( 925, 1007 ) $$ @MustCall method close may not have been invoked on temp-var-1336 or any of its aliases.
+				classes.put(classP, new FileWriter(new File(classP.getName()+"_"+preffix+".DAT")));
+				           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Gnuplot.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1335 $$ java.io.FileWriter $$ regular method exit $$ ( 945, 1006 ) $$ @MustCall method close may not have been invoked on temp-var-1335 or any of its aliases.
+				classes.put(classP, new FileWriter(new File(classP.getName()+"_"+preffix+".DAT")));
+				                    ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Gnuplot.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ writer $$ java.io.FileWriter $$ possible exceptional exit due to writer.write(p.getTotalBitsExchangedDuringFastPhase() + "") with exception type java.io.IOException $$ ( 1091, 1119 ) $$ @MustCall method close may not have been invoked on writer or any of its aliases.
+			writer = classes.get(classP);
+			       ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to writer.write(p.getTotalBitsExchangedDuringFastPhase() + "") with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/SpiderChart.java:129: error: (required.method.not.called) $$ 4 $$ method close $$ writer $$ java.io.FileWriter $$ possible exceptional exit due to writer.append("\\begin{tikzpicture}[label distance=.15cm,rotate=30,scale=0.5]" + newLine) with exception type java.io.IOException $$ ( 4887, 4932 ) $$ @MustCall method close may not have been invoked on writer or any of its aliases.
+		FileWriter writer = new FileWriter(fileName);
+		           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to writer.append("\\begin{tikzpicture}[label distance=.15cm,rotate=30,scale=0.5]" + newLine) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/ParetoFrontier.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.ObjectOutputStream $$ possible exceptional exit due to out.writeObject(state) with exception type java.io.IOException $$ ( 2207, 2295 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+			ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(state.identifier));
+			                   ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.writeObject(state) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/ParetoFrontier.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1539 $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(state.identifier)) with exception type java.io.IOException $$ ( 2255, 2293 ) $$ @MustCall method close may not have been invoked on temp-var-1539 or any of its aliases.
+			ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(state.identifier));
+			                                                ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(state.identifier)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/ParetoFrontier.java:73: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.ObjectOutputStream $$ possible exceptional exit due to out.writeObject(state) with exception type java.io.IOException $$ ( 2342, 2419 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+			out = new ObjectOutputStream(new FileOutputStream(state.identifier+"Backup"));
+			    ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.writeObject(state) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/ParetoFrontier.java:73: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1543 $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(state.identifier + "Backup")) with exception type java.io.IOException $$ ( 2371, 2418 ) $$ @MustCall method close may not have been invoked on temp-var-1543 or any of its aliases.
+			out = new ObjectOutputStream(new FileOutputStream(state.identifier+"Backup"));
+			                             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(state.identifier + "Backup")) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/Evolution.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1568 $$ java.io.PrintStream $$ possible exceptional exit due to ParetoFrontier.computeAllParetoFrontiers(protocols, attributes) with exception type java.io.FileNotFoundException $$ ( 1467, 1499 ) $$ @MustCall method close may not have been invoked on temp-var-1568 or any of its aliases.
+		System.setOut(new PrintStream("evolution.txt"));
+		              ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: possible exceptional exit due to ParetoFrontier.computeAllParetoFrontiers(protocols, attributes) with exception type java.io.FileNotFoundException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/Evolution.java:122: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.ObjectInputStream $$ regular method exit $$ ( 5190, 5283 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+		ObjectInputStream in = new ObjectInputStream(new FileInputStream(new File("evolution.obj")));
+		                  ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/Evolution.java:122: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1621 $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(new FileInputStream(new File("evolution.obj"))) with exception type java.io.IOException $$ ( 5235, 5281 ) $$ @MustCall method close may not have been invoked on temp-var-1621 or any of its aliases.
+		ObjectInputStream in = new ObjectInputStream(new FileInputStream(new File("evolution.obj")));
+		                                             ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(new FileInputStream(new File("evolution.obj"))) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/History.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1654 $$ java.io.PrintStream $$ possible exceptional exit due to ParetoFrontier.computeAllParetoFrontiers(protocols, attributes) with exception type java.io.FileNotFoundException $$ ( 1328, 1358 ) $$ @MustCall method close may not have been invoked on temp-var-1654 or any of its aliases.
+		System.setOut(new PrintStream("history.txt"));
+		              ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: possible exceptional exit due to ParetoFrontier.computeAllParetoFrontiers(protocols, attributes) with exception type java.io.FileNotFoundException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/History.java:75: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.ObjectOutputStream $$ possible exceptional exit due to out.writeObject(frontiers) with exception type java.io.IOException $$ ( 2929, 3005 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(file));
+		                   ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.writeObject(frontiers) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/History.java:75: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1686 $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(file)) with exception type java.io.IOException $$ ( 2977, 3003 ) $$ @MustCall method close may not have been invoked on temp-var-1686 or any of its aliases.
+		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(file));
+		                                                ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(file)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/History.java:113: error: (required.method.not.called) $$ 4 $$ method close $$ writer $$ java.io.FileWriter $$ possible exceptional exit due to Latex.appendTableHeader(writer, attributes) with exception type java.io.IOException $$ ( 4299, 4340 ) $$ @MustCall method close may not have been invoked on writer or any of its aliases.
+		FileWriter writer = new FileWriter(name);
+		           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to Latex.appendTableHeader(writer, attributes) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/mains/Comparison.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1835 $$ java.io.PrintStream $$ possible exceptional exit due to new FileInputStream(f) with exception type java.io.FileNotFoundException $$ ( 1307, 1352 ) $$ @MustCall method close may not have been invoked on temp-var-1835 or any of its aliases.
+		System.setOut(new PrintStream("evolution-"+exponent+".txt"));
+		              ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: possible exceptional exit due to new FileInputStream(f) with exception type java.io.FileNotFoundException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/mains/Comparison.java:64: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1873 $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(new FileInputStream(f)) with exception type java.io.IOException $$ ( 2754, 2776 ) $$ @MustCall method close may not have been invoked on temp-var-1873 or any of its aliases.
+			ObjectInputStream in = new ObjectInputStream(new FileInputStream(f));
+			                                             ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(new FileInputStream(f)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/mains/DecisionMaking.java:46: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1899 $$ java.io.PrintStream $$ possible exceptional exit due to History.saveInDiskTheFrontiers(frontiers, name + ".obj") with exception type java.io.FileNotFoundException $$ ( 1807, 1835 ) $$ @MustCall method close may not have been invoked on temp-var-1899 or any of its aliases.
+		System.setOut(new PrintStream(name+".txt"));		
+		              ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: possible exceptional exit due to History.saveInDiskTheFrontiers(frontiers, name + ".obj") with exception type java.io.FileNotFoundException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+44 errors

@@ -1,0 +1,143 @@
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/DATA/HashMap.java:145: error: (return) $$ 2 $$ @MustCallUnknown String $$ @MustCall String $$ ( 3251, 3254 ) $$ incompatible types in return.
+		return res;
+		       ^
+  type of expression: @MustCallUnknown String
+  method return type: @MustCall String
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/StartFrame.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-807 $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 2008, 2081 ) $$ @MustCall method close may not have been invoked on temp-var-807 or any of its aliases.
+					br = new BufferedReader(new FileReader(System.getProperty("user.dir") + "/dataStoreLocation.loc"));
+					                        ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/StartFrame.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(ds) with exception type java.io.IOException $$ ( 2325, 2406 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+					ObjectOutputStream oos =  new ObjectOutputStream(new FileOutputStream(fichier)) ;
+					                   ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(ds) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/StartFrame.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-811 $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(fichier)) with exception type java.io.IOException $$ ( 2374, 2403 ) $$ @MustCall method close may not have been invoked on temp-var-811 or any of its aliases.
+					ObjectOutputStream oos =  new ObjectOutputStream(new FileOutputStream(fichier)) ;
+					                                                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(fichier)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/StartFrame.java:113: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-820 $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 2863, 2936 ) $$ @MustCall method close may not have been invoked on temp-var-820 or any of its aliases.
+					br = new BufferedReader(new FileReader(System.getProperty("user.dir") + "/dataStoreLocation.loc"));
+					                        ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/StartFrame.java:121: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(ds) with exception type java.io.IOException $$ ( 3180, 3261 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+					ObjectOutputStream oos =  new ObjectOutputStream(new FileOutputStream(fichier)) ;
+					                   ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(ds) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/StartFrame.java:121: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-824 $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(fichier)) with exception type java.io.IOException $$ ( 3229, 3258 ) $$ @MustCall method close may not have been invoked on temp-var-824 or any of its aliases.
+					ObjectOutputStream oos =  new ObjectOutputStream(new FileOutputStream(fichier)) ;
+					                                                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(fichier)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/MainFrame.java:97: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1995 $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 2832, 2905 ) $$ @MustCall method close may not have been invoked on temp-var-1995 or any of its aliases.
+						br = new BufferedReader(new FileReader(System.getProperty("user.dir") + "/dataStoreLocation.loc"));
+						                        ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/MainFrame.java:105: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(dataStore) with exception type java.io.IOException $$ ( 3157, 3238 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+						ObjectOutputStream oos =  new ObjectOutputStream(new FileOutputStream(fichier)) ;
+						                   ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(dataStore) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/MainFrame.java:105: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1999 $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(fichier)) with exception type java.io.IOException $$ ( 3206, 3235 ) $$ @MustCall method close may not have been invoked on temp-var-1999 or any of its aliases.
+						ObjectOutputStream oos =  new ObjectOutputStream(new FileOutputStream(fichier)) ;
+						                                                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(fichier)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/MainFrame.java:131: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2006 $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 4117, 4190 ) $$ @MustCall method close may not have been invoked on temp-var-2006 or any of its aliases.
+							br = new BufferedReader(new FileReader(System.getProperty("user.dir") + "/dataStoreLocation.loc"));
+							                        ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/MainFrame.java:139: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(dataStore) with exception type java.io.IOException $$ ( 4450, 4531 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+							ObjectOutputStream oos =  new ObjectOutputStream(new FileOutputStream(fichier)) ;
+							                   ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(dataStore) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/MainFrame.java:139: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2010 $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(fichier)) with exception type java.io.IOException $$ ( 4499, 4528 ) $$ @MustCall method close may not have been invoked on temp-var-2010 or any of its aliases.
+							ObjectOutputStream oos =  new ObjectOutputStream(new FileOutputStream(fichier)) ;
+							                                                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(fichier)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/MainFrame.java:171: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2021 $$ java.io.FileWriter $$ possible exceptional exit due to writer.write(f.getAbsolutePath()) with exception type java.io.IOException $$ ( 5559, 5592 ) $$ @MustCall method close may not have been invoked on temp-var-2021 or any of its aliases.
+							writer = new BufferedWriter(new FileWriter(dataStoreLocation));
+							                            ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to writer.write(f.getAbsolutePath()) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/MainFrame.java:182: error: (required.method.not.called) $$ 4 $$ method close $$ inputFileStream $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(inputFileStream) with exception type java.io.IOException $$ ( 6024, 6099 ) $$ @MustCall method close may not have been invoked on inputFileStream or any of its aliases.
+							FileInputStream inputFileStream = new FileInputStream(f.getAbsolutePath());
+							                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(inputFileStream) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/MainFrame.java:183: error: (required.method.not.called) $$ 4 $$ method close $$ objectInputStream $$ java.io.ObjectInputStream $$ regular method exit $$ ( 6107, 6184 ) $$ @MustCall method close may not have been invoked on objectInputStream or any of its aliases.
+							ObjectInputStream objectInputStream = new ObjectInputStream(inputFileStream);
+							                  ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/MainFrame.java:217: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2041 $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 7466, 7539 ) $$ @MustCall method close may not have been invoked on temp-var-2041 or any of its aliases.
+							br = new BufferedReader(new FileReader(System.getProperty("user.dir") + "/dataStoreLocation.loc"));
+							                        ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/MainFrame.java:225: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(dataStore) with exception type java.io.IOException $$ ( 7799, 7880 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+							ObjectOutputStream oos =  new ObjectOutputStream(new FileOutputStream(fichier)) ;
+							                   ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(dataStore) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/MainFrame.java:225: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2045 $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(fichier)) with exception type java.io.IOException $$ ( 7848, 7877 ) $$ @MustCall method close may not have been invoked on temp-var-2045 or any of its aliases.
+							ObjectOutputStream oos =  new ObjectOutputStream(new FileOutputStream(fichier)) ;
+							                                                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(fichier)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/WelcomeFrame.java:60: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2227 $$ java.io.FileWriter $$ possible exceptional exit due to writer.write(f.getAbsolutePath()) with exception type java.io.IOException $$ ( 1721, 1754 ) $$ @MustCall method close may not have been invoked on temp-var-2227 or any of its aliases.
+						writer = new BufferedWriter(new FileWriter(dataStoreLocation));
+						                            ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to writer.write(f.getAbsolutePath()) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/WelcomeFrame.java:88: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2242 $$ java.io.FileWriter $$ possible exceptional exit due to writer.write(f.getAbsolutePath()) with exception type java.io.IOException $$ ( 2839, 2872 ) $$ @MustCall method close may not have been invoked on temp-var-2242 or any of its aliases.
+						writer = new BufferedWriter(new FileWriter(dataStoreLocation));
+						                            ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to writer.write(f.getAbsolutePath()) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/WelcomeFrame.java:99: error: (required.method.not.called) $$ 4 $$ method close $$ inputFileStream $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(inputFileStream) with exception type java.io.IOException $$ ( 3295, 3370 ) $$ @MustCall method close may not have been invoked on inputFileStream or any of its aliases.
+						FileInputStream inputFileStream = new FileInputStream(f.getAbsolutePath());
+						                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(inputFileStream) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/WelcomeFrame.java:100: error: (required.method.not.called) $$ 4 $$ method close $$ objectInputStream $$ java.io.ObjectInputStream $$ regular method exit $$ ( 3377, 3454 ) $$ @MustCall method close may not have been invoked on objectInputStream or any of its aliases.
+						ObjectInputStream objectInputStream = new ObjectInputStream(inputFileStream);
+						                  ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/FillFrame.java:107: error: (required.method.not.called) $$ 4 $$ method close $$ ps $$ java.io.PrintStream $$ regular method exit $$ ( 2903, 2941 ) $$ @MustCall method close may not have been invoked on ps or any of its aliases.
+					PrintStream ps = new PrintStream(log);
+					            ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/GUI/FillFrame.java:108: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2328 $$ GUI.FillFrame.TextAreaPrintStream $$ regular method exit $$ ( 2972, 3014 ) $$ @MustCall method close may not have been invoked on temp-var-2328 or any of its aliases.
+					Filler fill = new Filler(new TextAreaPrintStream(txtrResultats, ps), ds);
+					                         ^
+  The type of object is: GUI.FillFrame.TextAreaPrintStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/Main.java:27: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2719 $$ java.io.FileReader $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 603, 656 ) $$ @MustCall method close may not have been invoked on temp-var-2719 or any of its aliases.
+			BufferedReader br = new BufferedReader(new FileReader(workingDir + "/dataStoreLocation.loc"));
+			                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/Main.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ inputFileStream $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(inputFileStream) with exception type java.io.IOException $$ ( 875, 943 ) $$ @MustCall method close may not have been invoked on inputFileStream or any of its aliases.
+			      FileInputStream inputFileStream = new FileInputStream(sCurrentLine);
+			                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(inputFileStream) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/Main.java:36: error: (required.method.not.called) $$ 4 $$ method close $$ objectInputStream $$ java.io.ObjectInputStream $$ regular method exit $$ ( 953, 1030 ) $$ @MustCall method close may not have been invoked on objectInputStream or any of its aliases.
+			      ObjectInputStream objectInputStream = new ObjectInputStream(inputFileStream);
+			                        ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+28 errors

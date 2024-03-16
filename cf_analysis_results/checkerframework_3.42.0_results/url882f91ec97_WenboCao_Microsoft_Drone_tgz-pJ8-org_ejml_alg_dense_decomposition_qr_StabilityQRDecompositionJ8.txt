@@ -1,0 +1,93 @@
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/CodeGeneratorBase.java:64: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(className + ".java") $$ java.io.FileOutputStream $$ regular method exit $$ ( 2463, 2504 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(className + ".java") or any of its aliases.
+        out = new PrintStream(new FileOutputStream(className + ".java"));
+                              ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/ops/MatrixIO.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ fileStream $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(fileStream) with exception type java.io.IOException $$ ( 1321, 1382 ) $$ @MustCall method close may not have been invoked on fileStream or any of its aliases.
+        FileOutputStream fileStream = new FileOutputStream(fileName);
+                         ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(fileStream) with exception type java.io.IOException
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/ops/MatrixIO.java:73: error: (required.method.not.called) $$ 4 $$ method close $$ fileStream $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(fileStream) with exception type java.io.IOException $$ ( 2059, 2118 ) $$ @MustCall method close may not have been invoked on fileStream or any of its aliases.
+        FileInputStream fileStream = new FileInputStream(fileName);
+                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(fileStream) with exception type java.io.IOException
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/ops/MatrixIO.java:126: error: (required.method.not.called) $$ 4 $$ method close $$ fileStream $$ java.io.FileInputStream $$ possible exceptional exit due to csv.read() with exception type java.io.IOException $$ ( 3796, 3855 ) $$ @MustCall method close may not have been invoked on fileStream or any of its aliases.
+        FileInputStream fileStream = new FileInputStream(fileName);
+                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to csv.read() with exception type java.io.IOException
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/ops/MatrixIO.java:149: error: (required.method.not.called) $$ 4 $$ method close $$ fileStream $$ java.io.FileInputStream $$ possible exceptional exit due to csv.read(numRows, numCols) with exception type java.io.IOException $$ ( 4548, 4607 ) $$ @MustCall method close may not have been invoked on fileStream or any of its aliases.
+        FileInputStream fileStream = new FileInputStream(fileName);
+                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to csv.read(numRows, numCols) with exception type java.io.IOException
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/alg/block/GeneratorBlockInnerMultiplication.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ new PrintStream(className + ".java") $$ java.io.PrintStream $$ regular method exit $$ ( 1115, 1149 ) $$ @MustCall method close may not have been invoked on new PrintStream(className + ".java") or any of its aliases.
+        stream = new PrintStream(className+".java");
+                 ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/alg/dense/decomposition/lu/GeneralLuDecompositionChecks.java:122: error: (argument) $$ 4 $$ orig $$ DecompositionInterface.decompose $$ @CalledMethods DenseMatrix64F $$ ? extends @CalledMethods Matrix64F $$ ( 4038, 4039 ) $$ incompatible argument for parameter orig of DecompositionInterface.decompose.
+        assertTrue(alg.decompose(A));
+                                 ^
+  found   : @CalledMethods DenseMatrix64F
+  required: ? extends @CalledMethods Matrix64F
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/alg/dense/decomposition/lu/GeneralLuDecompositionChecks.java:131: error: (argument) $$ 4 $$ orig $$ DecompositionInterface.decompose $$ @CalledMethods DenseMatrix64F $$ ? extends @CalledMethods Matrix64F $$ ( 4300, 4301 ) $$ incompatible argument for parameter orig of DecompositionInterface.decompose.
+        assertTrue(alg.decompose(A));
+                                 ^
+  found   : @CalledMethods DenseMatrix64F
+  required: ? extends @CalledMethods Matrix64F
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/alg/dense/decomposition/svd/TestSafeSvd.java:44: error: (argument) $$ 4 $$ orig $$ DecompositionInterface.decompose $$ @CalledMethods DenseMatrix64F $$ ? extends @CalledMethods Matrix64F $$ ( 1368, 1369 ) $$ incompatible argument for parameter orig of DecompositionInterface.decompose.
+        decomp.decompose(A);
+                         ^
+  found   : @CalledMethods DenseMatrix64F
+  required: ? extends @CalledMethods Matrix64F
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/alg/dense/decomposition/svd/TestSafeSvd.java:53: error: (argument) $$ 4 $$ orig $$ DecompositionInterface.decompose $$ @CalledMethods DenseMatrix64F $$ ? extends @CalledMethods Matrix64F $$ ( 1612, 1613 ) $$ incompatible argument for parameter orig of DecompositionInterface.decompose.
+        decomp.decompose(A);
+                         ^
+  found   : @CalledMethods DenseMatrix64F
+  required: ? extends @CalledMethods Matrix64F
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/alg/dense/decomposition/qr/TestQrUpdate.java:81: error: (argument) $$ 4 $$ orig $$ DecompositionInterface.decompose $$ @CalledMethods DenseMatrix64F $$ ? extends @CalledMethods Matrix64F $$ ( 2536, 2537 ) $$ incompatible argument for parameter orig of DecompositionInterface.decompose.
+        decomp.decompose(A);
+                         ^
+  found   : @CalledMethods DenseMatrix64F
+  required: ? extends @CalledMethods Matrix64F
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/alg/dense/decomposition/qr/TestQrUpdate.java:116: error: (argument) $$ 4 $$ orig $$ DecompositionInterface.decompose $$ @CalledMethods DenseMatrix64F $$ ? extends @CalledMethods Matrix64F $$ ( 3801, 3802 ) $$ incompatible argument for parameter orig of DecompositionInterface.decompose.
+        decomp.decompose(A);
+                         ^
+  found   : @CalledMethods DenseMatrix64F
+  required: ? extends @CalledMethods Matrix64F
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/alg/dense/decomposition/eig/symm/SymmetricEigenStressTest.java:94: error: (argument) $$ 4 $$ orig $$ DecompositionInterface.decompose $$ @CalledMethods DenseMatrix64F $$ ? extends @CalledMethods Matrix64F $$ ( 3020, 3021 ) $$ incompatible argument for parameter orig of DecompositionInterface.decompose.
+            if( !decomp.decompose(A) ) {
+                                  ^
+  found   : @CalledMethods DenseMatrix64F
+  required: ? extends @CalledMethods Matrix64F
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/alg/dense/misc/GenerateDeterminantFromMinor.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ new PrintStream(fileName) $$ java.io.PrintStream $$ regular method exit $$ ( 1263, 1288 ) $$ @MustCall method close may not have been invoked on new PrintStream(fileName) or any of its aliases.
+        stream = new PrintStream(fileName);
+                 ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/alg/dense/misc/GenerateInverseFromMinor.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ new PrintStream(className + ".java") $$ java.io.PrintStream $$ regular method exit $$ ( 1584, 1619 ) $$ @MustCall method close may not have been invoked on new PrintStream(className + ".java") or any of its aliases.
+            stream = new PrintStream(className +".java");
+                     ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/alg/dense/mult/GeneratorMatrixMatrixMult.java:44: error: (required.method.not.called) $$ 4 $$ method close $$ new PrintStream(fileName) $$ java.io.PrintStream $$ regular method exit $$ ( 1450, 1475 ) $$ @MustCall method close may not have been invoked on new PrintStream(fileName) or any of its aliases.
+        stream = new PrintStream(fileName);
+                 ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/Data_Compression.java:9: error: (required.method.not.called) $$ 4 $$ method close $$ dest $$ java.io.FileOutputStream $$ possible exceptional exit due to new FileInputStream(f) with exception type java.io.FileNotFoundException $$ ( 220, 316 ) $$ @MustCall method close may not have been invoked on dest or any of its aliases.
+         FileOutputStream dest = new FileOutputStream("/Users/orangemr/Desktop/Compression/gps_folder2");//an onput stream that write bytes to a file
+                          ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileInputStream(f) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/Data_Compression.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ origin $$ java.io.BufferedInputStream $$ regular method exit $$ ( 778, 822 ) $$ @MustCall method close may not have been invoked on origin or any of its aliases.
+            origin = new BufferedInputStream(fi, BUFFER);
+                   ^
+  The type of object is: java.io.BufferedInputStream.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+18 errors

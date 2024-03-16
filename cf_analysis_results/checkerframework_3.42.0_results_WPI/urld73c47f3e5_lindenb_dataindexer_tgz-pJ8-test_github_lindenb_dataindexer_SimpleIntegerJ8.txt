@@ -1,0 +1,227 @@
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/test/github/lindenb/dataindexer/dbsnp/DBSnpLoader.java:116: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to new GZIPInputStream(in) with exception type java.io.IOException $$ ( 2709, 2750 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			in=new FileInputStream(this.dbSnp137File);
+			  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new GZIPInputStream(in) with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/test/github/lindenb/dataindexer/dbsnp/DBSnpLoader.java:120: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to new GZIPInputStream(in) with exception type java.io.IOException $$ ( 2772, 2868 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			in=new URL("http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/snp137.txt.gz").openStream();
+			  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new GZIPInputStream(in) with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/test/github/lindenb/dataindexer/dbsnp/DBSnpLoader.java:135: error: (required.method.not.called) $$ 4 $$ method close $$ primaryWriter $$ com.github.lindenb.dataindexer.PrimaryDataIndexWriter<test.github.lindenb.dataindexer.dbsnp.DBSnpLoader.Snp> $$ possible exceptional exit due to new SecondaryDataWriter<DBSnpLoader.Snp, Rs>(cfg2, primaryWriter) with exception type java.io.IOException $$ ( 3250, 3346 ) $$ @MustCall method close may not have been invoked on primaryWriter or any of its aliases.
+		PrimaryDataIndexWriter<Snp> primaryWriter=new PrimaryDataIndexWriter<DBSnpLoader.Snp>( config );
+		                            ^
+  The type of object is: com.github.lindenb.dataindexer.PrimaryDataIndexWriter<test.github.lindenb.dataindexer.dbsnp.DBSnpLoader.Snp>.
+  Reason for going out of scope: possible exceptional exit due to new SecondaryDataWriter<DBSnpLoader.Snp, Rs>(cfg2, primaryWriter) with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/test/github/lindenb/dataindexer/dbsnp/DBSnpLoader.java:167: error: (required.method.not.called) $$ 4 $$ method close $$ rs2snp $$ com.github.lindenb.dataindexer.SecondaryDataWriter<test.github.lindenb.dataindexer.dbsnp.DBSnpLoader.Snp,test.github.lindenb.dataindexer.dbsnp.DBSnpLoader.Rs> $$ possible exceptional exit due to opendbSnp137() with exception type java.io.IOException $$ ( 4128, 4229 ) $$ @MustCall method close may not have been invoked on rs2snp or any of its aliases.
+		SecondaryDataWriter<Snp, Rs> rs2snp=new SecondaryDataWriter<DBSnpLoader.Snp, Rs>(cfg2,primaryWriter);
+		                             ^
+  The type of object is: com.github.lindenb.dataindexer.SecondaryDataWriter<test.github.lindenb.dataindexer.dbsnp.DBSnpLoader.Snp,test.github.lindenb.dataindexer.dbsnp.DBSnpLoader.Rs>.
+  Reason for going out of scope: possible exceptional exit due to opendbSnp137() with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/test/github/lindenb/dataindexer/dbsnp/DBSnpLoader.java:171: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.BufferedReader $$ possible exceptional exit due to in.readLine() with exception type java.io.IOException $$ ( 4254, 4287 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+		BufferedReader in=opendbSnp137();
+		               ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope: possible exceptional exit due to in.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/test/github/lindenb/dataindexer/dbsnp/DBSnpLoader.java:191: error: (required.method.not.called) $$ 4 $$ method close $$ primaryDatabaseReader $$ com.github.lindenb.dataindexer.PrimaryDatabaseReader<test.github.lindenb.dataindexer.dbsnp.DBSnpLoader.Snp> $$ possible exceptional exit due to primaryDatabaseReader.open() with exception type java.io.IOException $$ ( 4880, 4980 ) $$ @MustCall method close may not have been invoked on primaryDatabaseReader or any of its aliases.
+		PrimaryDatabaseReader<Snp> primaryDatabaseReader=new PrimaryDatabaseReader<DBSnpLoader.Snp>(config);
+		                           ^
+  The type of object is: com.github.lindenb.dataindexer.PrimaryDatabaseReader<test.github.lindenb.dataindexer.dbsnp.DBSnpLoader.Snp>.
+  Reason for going out of scope: possible exceptional exit due to primaryDatabaseReader.open() with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/test/github/lindenb/dataindexer/dbsnp/DBSnpLoader.java:201: error: (required.method.not.called) $$ 4 $$ method close $$ r2 $$ com.github.lindenb.dataindexer.SecondaryDatabaseReader<test.github.lindenb.dataindexer.dbsnp.DBSnpLoader.Snp,test.github.lindenb.dataindexer.dbsnp.DBSnpLoader.Rs> $$ possible exceptional exit due to r2.open() with exception type java.io.IOException $$ ( 5240, 5353 ) $$ @MustCall method close may not have been invoked on r2 or any of its aliases.
+		SecondaryDatabaseReader<Snp, Rs> r2=new SecondaryDatabaseReader<DBSnpLoader.Snp,Rs>(primaryDatabaseReader, cfg2);
+		                                 ^
+  The type of object is: com.github.lindenb.dataindexer.SecondaryDatabaseReader<test.github.lindenb.dataindexer.dbsnp.DBSnpLoader.Snp,test.github.lindenb.dataindexer.dbsnp.DBSnpLoader.Rs>.
+  Reason for going out of scope: possible exceptional exit due to r2.open() with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/test/github/lindenb/dataindexer/SimpleInteger.java:66: error: (required.method.not.called) $$ 4 $$ method close $$ primary $$ com.github.lindenb.dataindexer.PrimaryDataIndexWriter<java.lang.Integer> $$ possible exceptional exit due to new SecondaryDataWriter<Integer, Integer>(cfg2, primary) with exception type java.io.IOException $$ ( 1630, 1712 ) $$ @MustCall method close may not have been invoked on primary or any of its aliases.
+		PrimaryDataIndexWriter<Integer> primary=new PrimaryDataIndexWriter<Integer>(cfg1);
+		                                ^
+  The type of object is: com.github.lindenb.dataindexer.PrimaryDataIndexWriter<java.lang.Integer>.
+  Reason for going out of scope: possible exceptional exit due to new SecondaryDataWriter<Integer, Integer>(cfg2, primary) with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/test/github/lindenb/dataindexer/SimpleInteger.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ secondary $$ com.github.lindenb.dataindexer.SecondaryDataWriter<java.lang.Integer,java.lang.Integer> $$ possible exceptional exit due to primary.insert(i) with exception type java.io.IOException $$ ( 1715, 1820 ) $$ @MustCall method close may not have been invoked on secondary or any of its aliases.
+		SecondaryDataWriter<Integer, Integer> secondary=new  SecondaryDataWriter<Integer, Integer>(cfg2,primary);
+		                                      ^
+  The type of object is: com.github.lindenb.dataindexer.SecondaryDataWriter<java.lang.Integer,java.lang.Integer>.
+  Reason for going out of scope: possible exceptional exit due to primary.insert(i) with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/test/github/lindenb/dataindexer/SimpleInteger.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ r $$ com.github.lindenb.dataindexer.PrimaryDatabaseReader<java.lang.Integer> $$ possible exceptional exit due to new SecondaryDatabaseReader<Integer, Integer>(r, cfg2) with exception type java.io.IOException $$ ( 1996, 2070 ) $$ @MustCall method close may not have been invoked on r or any of its aliases.
+		PrimaryDatabaseReader<Integer> r=new PrimaryDatabaseReader<Integer>(cfg1);
+		                               ^
+  The type of object is: com.github.lindenb.dataindexer.PrimaryDatabaseReader<java.lang.Integer>.
+  Reason for going out of scope: possible exceptional exit due to new SecondaryDatabaseReader<Integer, Integer>(r, cfg2) with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/test/github/lindenb/dataindexer/SimpleInteger.java:82: error: (required.method.not.called) $$ 4 $$ method close $$ r2 $$ com.github.lindenb.dataindexer.SecondaryDatabaseReader<java.lang.Integer,java.lang.Integer> $$ possible exceptional exit due to r.open() with exception type java.io.IOException $$ ( 2073, 2173 ) $$ @MustCall method close may not have been invoked on r2 or any of its aliases.
+		SecondaryDatabaseReader<Integer, Integer> r2=new SecondaryDatabaseReader<Integer, Integer>(r, cfg2);
+		                                          ^
+  The type of object is: com.github.lindenb.dataindexer.SecondaryDatabaseReader<java.lang.Integer,java.lang.Integer>.
+  Reason for going out of scope: possible exceptional exit due to r.open() with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/AbstractDataIndexer.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(getConfig().getSummaryFile()) $$ java.io.FileOutputStream $$ possible exceptional exit due to daos.writeLong(this.numberOfItems) with exception type java.io.IOException $$ ( 1436, 1486 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(getConfig().getSummaryFile()) or any of its aliases.
+		DataOutputStream daos=new DataOutputStream(new FileOutputStream(getConfig().getSummaryFile()));
+		                                           ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to daos.writeLong(this.numberOfItems) with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/AbstractDatabaseReader.java:52: error: (missing.creates.mustcall.for) $$ 3 $$ open $$ this $$ dataFile $$ ( 1485, 2065 ) $$ Method open re-assigns the non-final, owning field this.dataFile, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void open() throws IOException
+	            ^
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/AbstractDatabaseReader.java:52: error: (missing.creates.mustcall.for) $$ 3 $$ open $$ this $$ indexFile $$ ( 1485, 2065 ) $$ Method open re-assigns the non-final, owning field this.indexFile, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void open() throws IOException
+	            ^
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/AbstractDatabaseReader.java:57: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(getConfig().getSummaryFile()) $$ java.io.FileInputStream $$ possible exceptional exit due to dis.readLong() with exception type java.io.IOException $$ ( 1615, 1664 ) $$ @MustCall method close may not have been invoked on new FileInputStream(getConfig().getSummaryFile()) or any of its aliases.
+		DataInputStream dis=new DataInputStream(new FileInputStream(getConfig().getSummaryFile()));
+		                                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to dis.readLong() with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/AbstractDatabaseReader.java:65: error: (required.method.not.called) $$ 4 $$ method close $$ field indexFile $$ java.io.RandomAccessFile $$  Non-final owning field might be overwritten $$ ( 1889, 1956 ) $$ @MustCall method close may not have been invoked on field indexFile or any of its aliases.
+			this.indexFile=new RandomAccessFile(getConfig().getIndexFile(),"r");
+			              ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/AbstractDatabaseReader.java:68: error: (required.method.not.called) $$ 4 $$ method close $$ field dataFile $$ com.github.lindenb.dataindexer.RandomAccessInput $$  Non-final owning field might be overwritten $$ ( 1968, 2060 ) $$ @MustCall method close may not have been invoked on field dataFile or any of its aliases.
+		this.dataFile=getConfig().getRandomAccessFactory().openForReading(getConfig().getDataFile());
+		             ^
+  The type of object is: com.github.lindenb.dataindexer.RandomAccessInput.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/AbstractDatabaseReader.java:133: error: (contracts.exceptional.postcondition) $$ 3 $$ close $$ this.dataFile is @CalledMethods $$ this.dataFile is @CalledMethods("close") $$ ( 3427, 3718 ) $$ on exception, postcondition of close is not satisfied.
+	public void close() throws IOException
+	            ^
+  found   : this.dataFile is @CalledMethods
+  required: this.dataFile is @CalledMethods("close")
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/AbstractDatabaseReader.java:133: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.indexFile $$ this.indexFile is @CalledMethods("close") $$ ( 3427, 3718 ) $$ postcondition of close is not satisfied.
+	public void close() throws IOException
+	            ^
+  found   : no information about this.indexFile
+  required: this.indexFile is @CalledMethods("close")
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:45: error: (missing.creates.mustcall.for) $$ 3 $$ ensureOpen $$ this $$ tmpOut $$ ( 1168, 1384 ) $$ Method ensureOpen re-assigns the non-final, owning field this.tmpOut, but does not have a corresponding @CreatesMustCallFor annotation.
+	private void ensureOpen()throws IOException
+	             ^
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:51: error: (required.method.not.called) $$ 4 $$ method close $$ field tmpOut $$ java.io.DataOutputStream $$  Non-final owning field might be overwritten $$ ( 1337, 1374 ) $$ @MustCall method close may not have been invoked on field tmpOut or any of its aliases.
+			this.tmpOut=new DataOutputStream(fos);
+			           ^
+  The type of object is: java.io.DataOutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:69: error: (contracts.exceptional.postcondition) $$ 3 $$ close $$ this.tmpOut is @CalledMethods $$ this.tmpOut is @CalledMethods("close") $$ ( 1703, 1890 ) $$ on exception, postcondition of close is not satisfied.
+	public void close() throws IOException
+	            ^
+  found   : this.tmpOut is @CalledMethods
+  required: this.tmpOut is @CalledMethods("close")
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:77: error: (required.method.not.called) $$ 4 $$ method close $$ field tmpOut $$ java.io.DataOutputStream $$  Non-final owning field might be overwritten $$ ( 1864, 1880 ) $$ @MustCall method close may not have been invoked on field tmpOut or any of its aliases.
+			this.tmpOut=null;
+			           ^
+  The type of object is: java.io.DataOutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:93: error: (missing.creates.mustcall.for) $$ 3 $$ openRead $$ this $$ in $$ ( 2174, 2277 ) $$ Method openRead re-assigns the non-final, owning field this.in, but does not have a corresponding @CreatesMustCallFor annotation.
+		void openRead() throws IOException
+		     ^
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:95: error: (required.method.not.called) $$ 4 $$ method close $$ field in $$ java.io.DataInputStream $$  Non-final owning field might be overwritten $$ ( 2217, 2271 ) $$ @MustCall method close may not have been invoked on field in or any of its aliases.
+			in=new DataInputStream(new FileInputStream(this.file));
+			  ^
+  The type of object is: java.io.DataInputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:97: error: (missing.creates.mustcall.for) $$ 3 $$ openWrite $$ this $$ out $$ ( 2280, 2387 ) $$ Method openWrite re-assigns the non-final, owning field this.out, but does not have a corresponding @CreatesMustCallFor annotation.
+		void openWrite() throws IOException
+		     ^
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:99: error: (required.method.not.called) $$ 4 $$ method close $$ field out $$ java.io.DataOutputStream $$  Non-final owning field might be overwritten $$ ( 2324, 2381 ) $$ @MustCall method close may not have been invoked on field out or any of its aliases.
+			out=new DataOutputStream(new FileOutputStream(this.file));
+			   ^
+  The type of object is: java.io.DataOutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:116: error: (contracts.exceptional.postcondition) $$ 3 $$ close $$ no information about this.in $$ this.in is @CalledMethods("close") $$ ( 2725, 2857 ) $$ on exception, postcondition of close is not satisfied.
+		void close() throws IOException
+		     ^
+  found   : no information about this.in
+  required: this.in is @CalledMethods("close")
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:116: error: (contracts.exceptional.postcondition) $$ 3 $$ close $$ this.out is @CalledMethods $$ this.out is @CalledMethods("close") $$ ( 2725, 2857 ) $$ on exception, postcondition of close is not satisfied.
+		void close() throws IOException
+		     ^
+  found   : this.out is @CalledMethods
+  required: this.out is @CalledMethods("close")
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:116: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.in $$ this.in is @CalledMethods("close") $$ ( 2725, 2857 ) $$ postcondition of close is not satisfied.
+		void close() throws IOException
+		     ^
+  found   : no information about this.in
+  required: this.in is @CalledMethods("close")
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:143: error: (required.method.not.called) $$ 4 $$ method close $$ rootFile $$ com.github.lindenb.dataindexer.SecondaryDataWriter<PRIMARY,K>.FileAndSize $$ possible exceptional exit due to rootFile.openRead() with exception type java.io.IOException $$ ( 3280, 3319 ) $$ @MustCall method close may not have been invoked on rootFile or any of its aliases.
+		 FileAndSize rootFile=new FileAndSize();
+		             ^
+  The type of object is: com.github.lindenb.dataindexer.SecondaryDataWriter<PRIMARY,K>.FileAndSize.
+  Reason for going out of scope: possible exceptional exit due to rootFile.openRead() with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:164: error: (required.method.not.called) $$ 4 $$ method close $$ prevFile $$ com.github.lindenb.dataindexer.SecondaryDataWriter<PRIMARY,K>.FileAndSize $$ possible exceptional exit due to tmpFile() with exception type java.io.IOException $$ ( 3913, 3939 ) $$ @MustCall method close may not have been invoked on prevFile or any of its aliases.
+				 prevFile=new FileAndSize();
+				         ^
+  The type of object is: com.github.lindenb.dataindexer.SecondaryDataWriter<PRIMARY,K>.FileAndSize.
+  Reason for going out of scope: possible exceptional exit due to tmpFile() with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:176: error: (required.method.not.called) $$ 4 $$ method close $$ nextFile $$ com.github.lindenb.dataindexer.SecondaryDataWriter<PRIMARY,K>.FileAndSize $$ possible exceptional exit due to tmpFile() with exception type java.io.IOException $$ ( 4175, 4214 ) $$ @MustCall method close may not have been invoked on nextFile or any of its aliases.
+				FileAndSize nextFile=new FileAndSize();
+				            ^
+  The type of object is: com.github.lindenb.dataindexer.SecondaryDataWriter<PRIMARY,K>.FileAndSize.
+  Reason for going out of scope: possible exceptional exit due to tmpFile() with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:243: error: (required.method.not.called) $$ 4 $$ method close $$ dataOut $$ com.github.lindenb.dataindexer.RandomAccessOutput $$ possible exceptional exit due to new RandomAccessFile(getConfig().getIndexFile(), "rw") with exception type java.io.FileNotFoundException $$ ( 5628, 5744 ) $$ @MustCall method close may not have been invoked on dataOut or any of its aliases.
+		RandomAccessOutput dataOut=getConfig().getRandomAccessFactory().openForWriting(
+		                   ^
+  The type of object is: com.github.lindenb.dataindexer.RandomAccessOutput.
+  Reason for going out of scope: possible exceptional exit due to new RandomAccessFile(getConfig().getIndexFile(), "rw") with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:249: error: (required.method.not.called) $$ 4 $$ method close $$ indexFile $$ java.io.RandomAccessFile $$ possible exceptional exit due to throw new IOException(); with exception type java.io.IOException $$ ( 5823, 5887 ) $$ @MustCall method close may not have been invoked on indexFile or any of its aliases.
+			indexFile=new RandomAccessFile(getConfig().getIndexFile(), "rw");
+			         ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to throw new IOException(); with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/SecondaryDataWriter.java:285: error: (required.method.not.called) $$ 4 $$ method close $$ field tmpOut $$ java.io.DataOutputStream $$  Non-final owning field might be overwritten $$ ( 6540, 6556 ) $$ @MustCall method close may not have been invoked on field tmpOut or any of its aliases.
+		this.tmpOut=null;
+		           ^
+  The type of object is: java.io.DataOutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/PrimaryDataIndexWriter.java:18: error: (type.argument) $$ 4 $$ E $$ List $$ @MustCall("close") SecondaryDataWriter<T extends @MustCall Object, ? extends @MustCall Object> $$ @MustCall Object $$ ( 364, 389 ) $$ incompatible type argument for type parameter E of List.
+	private List<SecondaryDataWriter<T, ?>> secondaries=new ArrayList<SecondaryDataWriter<T,?>>();
+	                                ^
+  found   : @MustCall("close") SecondaryDataWriter<T extends @MustCall Object, ? extends @MustCall Object>
+  required: @MustCall Object
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/PrimaryDataIndexWriter.java:18: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("close") SecondaryDataWriter<T extends @MustCall Object, ? extends @MustCall Object> $$ @MustCall Object $$ ( 417, 441 ) $$ incompatible type argument for type parameter E of ArrayList.
+	private List<SecondaryDataWriter<T, ?>> secondaries=new ArrayList<SecondaryDataWriter<T,?>>();
+	                                                                                     ^
+  found   : @MustCall("close") SecondaryDataWriter<T extends @MustCall Object, ? extends @MustCall Object>
+  required: @MustCall Object
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/PrimaryDataIndexWriter.java:39: error: (missing.creates.mustcall.for) $$ 3 $$ ensureOpen $$ this $$ dataOutput $$ ( 919, 1236 ) $$ Method ensureOpen re-assigns the non-final, owning field this.dataOutput, but does not have a corresponding @CreatesMustCallFor annotation.
+	private void ensureOpen() throws IOException
+	             ^
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/PrimaryDataIndexWriter.java:39: error: (missing.creates.mustcall.for) $$ 3 $$ ensureOpen $$ this $$ indexFile $$ ( 919, 1236 ) $$ Method ensureOpen re-assigns the non-final, owning field this.indexFile, but does not have a corresponding @CreatesMustCallFor annotation.
+	private void ensureOpen() throws IOException
+	             ^
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/PrimaryDataIndexWriter.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ field dataOutput $$ com.github.lindenb.dataindexer.RandomAccessOutput $$  Non-final owning field might be overwritten $$ ( 1137, 1231 ) $$ @MustCall method close may not have been invoked on field dataOutput or any of its aliases.
+		if(this.dataOutput==null) this.dataOutput=getConfig().getRandomAccessFactory().openForWriting(getConfig().getDataFile());
+		                                         ^
+  The type of object is: com.github.lindenb.dataindexer.RandomAccessOutput.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/PrimaryDataIndexWriter.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ sdw2 $$ com.github.lindenb.dataindexer.SecondaryDataWriter<T,?> $$ possible exceptional exit due to sdw2.put(item, this.offset) with exception type java.io.IOException $$ ( 1603, 1633 ) $$ @MustCall method close may not have been invoked on sdw2 or any of its aliases.
+		for(SecondaryDataWriter<T, ?> sdw2:this.secondaries)
+		                              ^
+  The type of object is: com.github.lindenb.dataindexer.SecondaryDataWriter<T,?>.
+  Reason for going out of scope: possible exceptional exit due to sdw2.put(item, this.offset) with exception type java.io.IOException
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/PrimaryDataIndexWriter.java:77: error: (contracts.exceptional.postcondition) $$ 3 $$ close $$ no information about this.dataOutput $$ this.dataOutput is @CalledMethods("close") $$ ( 1761, 2040 ) $$ on exception, postcondition of close is not satisfied.
+	public void close() throws IOException
+	            ^
+  found   : no information about this.dataOutput
+  required: this.dataOutput is @CalledMethods("close")
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/PrimaryDataIndexWriter.java:77: error: (contracts.exceptional.postcondition) $$ 3 $$ close $$ no information about this.indexFile $$ this.indexFile is @CalledMethods("close") $$ ( 1761, 2040 ) $$ on exception, postcondition of close is not satisfied.
+	public void close() throws IOException
+	            ^
+  found   : no information about this.indexFile
+  required: this.indexFile is @CalledMethods("close")
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/PrimaryDataIndexWriter.java:77: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.dataOutput $$ this.dataOutput is @CalledMethods("close") $$ ( 1761, 2040 ) $$ postcondition of close is not satisfied.
+	public void close() throws IOException
+	            ^
+  found   : no information about this.dataOutput
+  required: this.dataOutput is @CalledMethods("close")
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/PrimaryDataIndexWriter.java:77: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.indexFile $$ this.indexFile is @CalledMethods("close") $$ ( 1761, 2040 ) $$ postcondition of close is not satisfied.
+	public void close() throws IOException
+	            ^
+  found   : no information about this.indexFile
+  required: this.indexFile is @CalledMethods("close")
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/DefaultRandomAccessInput.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(file, "r") $$ java.io.RandomAccessFile $$ regular method exit $$ ( 445, 476 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(file, "r") or any of its aliases.
+		this.delegate=new RandomAccessFile(file, "r");
+		              ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/DefaultRandomAccessOutput.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(file) $$ java.io.FileOutputStream $$ regular method exit $$ ( 465, 491 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(file) or any of its aliases.
+		this.delegate=new FileOutputStream(file);
+		              ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+48 errors

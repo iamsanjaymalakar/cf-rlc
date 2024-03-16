@@ -1,0 +1,93 @@
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnectorTest.java:27: error: (required.method.not.called) $$ 4 $$ method StopReceiveThread $$ connection1 $$ UDPConnector.UdpConnector $$ regular method exit $$ ( 998, 1048 ) $$ @MustCall method StopReceiveThread may not have been invoked on connection1 or any of its aliases.
+            UdpConnector connection1 = new UdpConnector(1181);
+                         ^
+  The type of object is: UDPConnector.UdpConnector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnectorTest.java:28: error: (required.method.not.called) $$ 4 $$ method StopReceiveThread $$ connection2 $$ UDPConnector.UdpConnector $$ regular method exit $$ ( 1061, 1111 ) $$ @MustCall method StopReceiveThread may not have been invoked on connection2 or any of its aliases.
+            UdpConnector connection2 = new UdpConnector(1182);
+                         ^
+  The type of object is: UDPConnector.UdpConnector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnectorTest.java:111: error: (required.method.not.called) $$ 4 $$ method StopReceiveThread $$ new UdpConnector(1185) $$ UDPConnector.UdpConnector $$ regular method exit $$ ( 4340, 4362 ) $$ @MustCall method StopReceiveThread may not have been invoked on new UdpConnector(1185) or any of its aliases.
+                    new UdpConnector(1185),
+                    ^
+  The type of object is: UDPConnector.UdpConnector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnectorTest.java:119: error: (required.method.not.called) $$ 4 $$ method StopReceiveThread $$ new UdpConnector(1186) $$ UDPConnector.UdpConnector $$ possible exceptional exit due to shapedConn1.Send("Test3_Packet_" + ii + ".") with exception type java.lang.Exception $$ ( 4721, 4743 ) $$ @MustCall method StopReceiveThread may not have been invoked on new UdpConnector(1186) or any of its aliases.
+                    new UdpConnector(1186),
+                    ^
+  The type of object is: UDPConnector.UdpConnector.
+  Reason for going out of scope: possible exceptional exit due to shapedConn1.Send("Test3_Packet_" + ii + ".") with exception type java.lang.Exception
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnectorTest.java:165: error: (required.method.not.called) $$ 4 $$ method StopReceiveThread $$ new UdpConnector(1188) $$ UDPConnector.UdpConnector $$ regular method exit $$ ( 6577, 6599 ) $$ @MustCall method StopReceiveThread may not have been invoked on new UdpConnector(1188) or any of its aliases.
+                        new UdpConnector(1188),
+                        ^
+  The type of object is: UDPConnector.UdpConnector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnectorTest.java:176: error: (required.method.not.called) $$ 4 $$ method StopReceiveThread $$ new UdpConnector(1189) $$ UDPConnector.UdpConnector $$ possible exceptional exit due to InetAddress.getLocalHost() with exception type java.net.UnknownHostException $$ ( 7052, 7074 ) $$ @MustCall method StopReceiveThread may not have been invoked on new UdpConnector(1189) or any of its aliases.
+                        new UdpConnector(1189),
+                        ^
+  The type of object is: UDPConnector.UdpConnector.
+  Reason for going out of scope: possible exceptional exit due to InetAddress.getLocalHost() with exception type java.net.UnknownHostException
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/EfcpConnectorManager.java:35: error: (required.method.not.called) $$ 4 $$ method StopReceiveThread $$ newConn $$ UDPConnector.ConnectorInterface $$ variable overwritten by assignment newConn = new ConnectionShaper(newConn, 100, 10, 1000) $$ ( 1204, 1261 ) $$ @MustCall method StopReceiveThread may not have been invoked on newConn or any of its aliases.
+            ConnectorInterface newConn = new UdpConnector(localPort);
+                               ^
+  The type of object is: UDPConnector.ConnectorInterface.
+  Reason for going out of scope: variable overwritten by assignment newConn = new ConnectionShaper(newConn, 100, 10, 1000)
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnector.java:92: error: (missing.creates.mustcall.for) $$ 3 $$ run $$ this $$ m_recvSocket $$ ( 3360, 7185 ) $$ Method run re-assigns the non-final, owning field this.m_recvSocket, but does not have a corresponding @CreatesMustCallFor annotation.
+        public void run() 
+                    ^
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnector.java:97: error: (required.method.not.called) $$ 4 $$ method close $$ field m_recvSocket $$ java.net.DatagramSocket $$  Non-final owning field might be overwritten $$ ( 3495, 3546 ) $$ @MustCall method close may not have been invoked on field m_recvSocket or any of its aliases.
+                m_recvSocket = new DatagramSocket(m_portToListenOn);
+                             ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnector.java:266: error: (required.method.not.called) $$ 4 $$ method close $$ sendSocket $$ java.net.DatagramSocket $$ possible exceptional exit due to sendSocket.send(sendPacket) with exception type java.io.IOException $$ ( 10664, 10713 ) $$ @MustCall method close may not have been invoked on sendSocket or any of its aliases.
+        DatagramSocket sendSocket = new DatagramSocket();
+                       ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: possible exceptional exit due to sendSocket.send(sendPacket) with exception type java.io.IOException
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnector.java:280: error: (contracts.postcondition) $$ 3 $$ StopReceiveThread $$ no information about this.m_recvSocket $$ this.m_recvSocket is @CalledMethods("close") $$ ( 11002, 11664 ) $$ postcondition of StopReceiveThread is not satisfied.
+    public void StopReceiveThread()
+                ^
+  found   : no information about this.m_recvSocket
+  required: this.m_recvSocket is @CalledMethods("close")
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnectionManager.java:20: error: (type.argument) $$ 4 $$ V $$ Map $$ @MustCall("StopReceiveThread") UdpConnector $$ @MustCall Object $$ ( 772, 784 ) $$ incompatible type argument for type parameter V of Map.
+    Map<Integer, UdpConnector> m_connMap = new HashMap<>();
+                 ^
+  found   : @MustCall("StopReceiveThread") UdpConnector
+  required: @MustCall Object
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnectionManager.java:20: error: (type.arguments.not.inferred) $$ 2 $$ HashMap constructor $$ @MustCall("StopReceiveThread") UdpConnector <: @MustCall Object $$ ( 798, 813 ) $$ Could not infer type arguments for HashMap constructor
+    Map<Integer, UdpConnector> m_connMap = new HashMap<>();
+                                           ^
+  unsatisfiable constraint: @MustCall("StopReceiveThread") UdpConnector <: @MustCall Object
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnectionManager.java:28: error: (required.method.not.called) $$ 4 $$ method StopReceiveThread $$ newConn $$ UDPConnector.UdpConnector $$ regular method exit $$ ( 1017, 1068 ) $$ @MustCall method StopReceiveThread may not have been invoked on newConn or any of its aliases.
+            UdpConnector newConn = new UdpConnector(localPort);
+                         ^
+  The type of object is: UDPConnector.UdpConnector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnectionManager.java:31: error: (required.method.not.called) $$ 4 $$ method StopReceiveThread $$ m_connMap.put(++m_lastHandleValue, newConn) $$ UDPConnector.UdpConnector $$ regular method exit $$ ( 1180, 1223 ) $$ @MustCall method StopReceiveThread may not have been invoked on m_connMap.put(++m_lastHandleValue, newConn) or any of its aliases.
+            m_connMap.put(++m_lastHandleValue, newConn);
+                         ^
+  The type of object is: UDPConnector.UdpConnector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnectionManager.java:43: error: (required.method.not.called) $$ 4 $$ method StopReceiveThread $$ m_connMap.remove(flowHandle) $$ UDPConnector.UdpConnector $$ regular method exit $$ ( 1599, 1627 ) $$ @MustCall method StopReceiveThread may not have been invoked on m_connMap.remove(flowHandle) or any of its aliases.
+            m_connMap.remove(flowHandle);
+                            ^
+  The type of object is: UDPConnector.UdpConnector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnectionManager.java:50: error: (required.method.not.called) $$ 4 $$ method StopReceiveThread $$ conn $$ UDPConnector.UdpConnector $$ regular method exit $$ ( 1742, 1788 ) $$ @MustCall method StopReceiveThread may not have been invoked on conn or any of its aliases.
+        UdpConnector conn = m_connMap.get(flowHandle);
+                     ^
+  The type of object is: UDPConnector.UdpConnector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnectionManager.java:60: error: (required.method.not.called) $$ 4 $$ method StopReceiveThread $$ conn $$ UDPConnector.UdpConnector $$ regular method exit $$ ( 1985, 2031 ) $$ @MustCall method StopReceiveThread may not have been invoked on conn or any of its aliases.
+        UdpConnector conn = m_connMap.get(flowHandle);
+                     ^
+  The type of object is: UDPConnector.UdpConnector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnectionManager.java:72: error: (required.method.not.called) $$ 4 $$ method StopReceiveThread $$ conn $$ UDPConnector.UdpConnector $$ regular method exit $$ ( 2315, 2361 ) $$ @MustCall method StopReceiveThread may not have been invoked on conn or any of its aliases.
+        UdpConnector conn = m_connMap.get(flowHandle);
+                     ^
+  The type of object is: UDPConnector.UdpConnector.
+  Reason for going out of scope: regular method exit
+19 errors

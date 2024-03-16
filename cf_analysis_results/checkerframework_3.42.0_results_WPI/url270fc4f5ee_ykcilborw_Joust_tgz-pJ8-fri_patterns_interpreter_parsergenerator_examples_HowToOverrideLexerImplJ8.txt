@@ -1,0 +1,328 @@
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/examples/HelloWorldParser.java:34: error: (required.method.not.called) $$ 4 $$ method toSourceFile $$ parserTables $$ fri.patterns.interpreter.parsergenerator.ParserTables $$ possible exceptional exit due to parser.parse(lexer, new PrintSemantic()) with exception type java.io.IOException $$ ( 1424, 1502 ) $$ @MustCall method toSourceFile may not have been invoked on parserTables or any of its aliases.
+		ParserTables parserTables = new SLRParserTables(separation.getParserSyntax());
+		             ^
+  The type of object is: fri.patterns.interpreter.parsergenerator.ParserTables.
+  Reason for going out of scope: possible exceptional exit due to parser.parse(lexer, new PrintSemantic()) with exception type java.io.IOException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/examples/DtdLexer.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ DtdLexer.class.getResourceAsStream("Dtd.syntax") $$ java.io.InputStream $$ possible exceptional exit due to new SyntaxBuilder(new InputStreamReader(DtdLexer.class.getResourceAsStream("Dtd.syntax"))) with exception type fri.patterns.interpreter.parsergenerator.syntax.SyntaxException $$ ( 1101, 1149 ) $$ @MustCall method close may not have been invoked on DtdLexer.class.getResourceAsStream("Dtd.syntax") or any of its aliases.
+			Syntax dtdSyntax = new SyntaxBuilder(new InputStreamReader(DtdLexer.class.getResourceAsStream("Dtd.syntax"))).getSyntax();
+			                                                                                             ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new SyntaxBuilder(new InputStreamReader(DtdLexer.class.getResourceAsStream("Dtd.syntax"))) with exception type fri.patterns.interpreter.parsergenerator.syntax.SyntaxException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/examples/DtdLexer.java:36: error: (required.method.not.called) $$ 4 $$ method close $$ DtdLexer.class.getResourceAsStream("Xml.syntax") $$ java.io.InputStream $$ possible exceptional exit due to new SyntaxBuilder(new InputStreamReader(DtdLexer.class.getResourceAsStream("Xml.syntax"))) with exception type fri.patterns.interpreter.parsergenerator.syntax.SyntaxException $$ ( 1268, 1316 ) $$ @MustCall method close may not have been invoked on DtdLexer.class.getResourceAsStream("Xml.syntax") or any of its aliases.
+			Syntax xmlSyntax = new SyntaxBuilder(new InputStreamReader(DtdLexer.class.getResourceAsStream("Xml.syntax"))).getSyntax();
+			                                                                                             ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new SyntaxBuilder(new InputStreamReader(DtdLexer.class.getResourceAsStream("Xml.syntax"))) with exception type fri.patterns.interpreter.parsergenerator.syntax.SyntaxException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/examples/DtdLexer.java:55: error: (required.method.not.called) $$ 4 $$ method close $$ parseInput $$ java.io.FileReader $$ possible exceptional exit due to lexer.setInput(parseInput) with exception type java.io.IOException $$ ( 2016, 2066 ) $$ @MustCall method close may not have been invoked on parseInput or any of its aliases.
+			FileReader parseInput = new FileReader(parseFile);
+			           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to lexer.setInput(parseInput) with exception type java.io.IOException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/examples/JavaParser.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ JavaParser.class.getResourceAsStream("Java.syntax") $$ java.io.InputStream $$ possible exceptional exit due to new SerializedParser().get(null, syntaxInput, "Java") with exception type java.lang.Exception $$ ( 886, 937 ) $$ @MustCall method close may not have been invoked on JavaParser.class.getResourceAsStream("Java.syntax") or any of its aliases.
+			Reader syntaxInput = new InputStreamReader(JavaParser.class.getResourceAsStream("Java.syntax"));
+			                                                                               ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new SerializedParser().get(null, syntaxInput, "Java") with exception type java.lang.Exception
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/examples/JavaParser.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ parseInput $$ java.io.FileReader $$ possible exceptional exit due to parser.setInput(parseInput) with exception type java.io.IOException $$ ( 2419, 2471 ) $$ @MustCall method close may not have been invoked on parseInput or any of its aliases.
+				FileReader parseInput = new FileReader(fileToParse);
+				           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to parser.setInput(parseInput) with exception type java.io.IOException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/examples/Joust.java:388: error: (required.method.not.called) $$ 4 $$ method toSourceFile $$ parserTables $$ fri.patterns.interpreter.parsergenerator.ParserTables $$ possible exceptional exit due to parser.parse(lexer, new Joust()) with exception type java.io.IOException $$ ( 13015, 13094 ) $$ @MustCall method toSourceFile may not have been invoked on parserTables or any of its aliases.
+		ParserTables parserTables = new LALRParserTables(separation.getParserSyntax());
+		             ^
+  The type of object is: fri.patterns.interpreter.parsergenerator.ParserTables.
+  Reason for going out of scope: possible exceptional exit due to parser.parse(lexer, new Joust()) with exception type java.io.IOException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/examples/Joust.java:405: error: (required.method.not.called) $$ 4 $$ method toSourceFile $$ parserTables $$ fri.patterns.interpreter.parsergenerator.ParserTables $$ possible exceptional exit due to parser.parse(lexer, new Joust()) with exception type java.io.IOException $$ ( 13761, 13840 ) $$ @MustCall method toSourceFile may not have been invoked on parserTables or any of its aliases.
+			ParserTables parserTables = new LALRParserTables(separation.getParserSyntax());
+			             ^
+  The type of object is: fri.patterns.interpreter.parsergenerator.ParserTables.
+  Reason for going out of scope: possible exceptional exit due to parser.parse(lexer, new Joust()) with exception type java.io.IOException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/examples/XmlLexer.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ XmlLexer.class.getResourceAsStream("Xml.syntax") $$ java.io.InputStream $$ regular method exit $$ ( 1151, 1199 ) $$ @MustCall method close may not have been invoked on XmlLexer.class.getResourceAsStream("Xml.syntax") or any of its aliases.
+		Reader syntaxInput = new InputStreamReader(XmlLexer.class.getResourceAsStream("Xml.syntax"));
+		                                                                             ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/examples/XmlLexer.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ parseInput $$ java.io.Reader $$ possible exceptional exit due to lexer.setInput(parseInput) with exception type java.io.IOException $$ ( 1528, 1598 ) $$ @MustCall method close may not have been invoked on parseInput or any of its aliases.
+			Reader parseInput = new UnicodeReader(new FileInputStream(parseFile));
+			       ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope: possible exceptional exit due to lexer.setInput(parseInput) with exception type java.io.IOException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/examples/XmlLexer.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(parseFile) $$ java.io.FileInputStream $$ possible exceptional exit due to new UnicodeReader(new FileInputStream(parseFile)) with exception type java.io.IOException $$ ( 1566, 1596 ) $$ @MustCall method close may not have been invoked on new FileInputStream(parseFile) or any of its aliases.
+			Reader parseInput = new UnicodeReader(new FileInputStream(parseFile));
+			                                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new UnicodeReader(new FileInputStream(parseFile)) with exception type java.io.IOException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/examples/CStyleCommentStrip.java:85: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(args[i]) $$ java.io.FileReader $$ possible exceptional exit due to new CStyleCommentStrip(in, out) with exception type fri.patterns.interpreter.parsergenerator.lexer.LexerException $$ ( 2622, 2645 ) $$ @MustCall method close may not have been invoked on new FileReader(args[i]) or any of its aliases.
+					Reader in = new BufferedReader(new FileReader(args[i]));
+					                               ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new CStyleCommentStrip(in, out) with exception type fri.patterns.interpreter.parsergenerator.lexer.LexerException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/examples/ExampleLexer.java:54: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to lexer.setInput(in) with exception type java.io.IOException $$ ( 1725, 1802 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			InputStream in = ExampleLexer.class.getResourceAsStream("ExampleLexer.java");	//Reader in = new FileReader(args[0]);
+			            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to lexer.setInput(in) with exception type java.io.IOException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/Input.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ field inputStream $$ java.io.InputStream $$  Non-final owning field might be overwritten $$ ( 734, 856 ) $$ @MustCall method close may not have been invoked on field inputStream or any of its aliases.
+			this.inputStream = input instanceof BufferedInputStream ? (InputStream)input : new BufferedInputStream((InputStream)input);
+			                 ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/Input.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ field reader $$ java.io.Reader $$  Non-final owning field might be overwritten $$ ( 900, 997 ) $$ @MustCall method close may not have been invoked on field reader or any of its aliases.
+			this.reader = input instanceof BufferedReader ? (Reader)input : new BufferedReader((Reader)input);
+			            ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/Input.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ field reader $$ java.io.Reader $$  Non-final owning field might be overwritten $$ ( 1038, 1099 ) $$ @MustCall method close may not have been invoked on field reader or any of its aliases.
+			this.reader = new BufferedReader(new FileReader((File)input));
+			            ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/Input.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ field reader $$ java.io.Reader $$  Non-final owning field might be overwritten $$ ( 1175, 1223 ) $$ @MustCall method close may not have been invoked on field reader or any of its aliases.
+			this.reader = new StringReader(input.toString());
+			            ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/Input.java:47: error: (contracts.exceptional.postcondition) $$ 3 $$ read $$ this.inputStream is @CalledMethods $$ this.inputStream is @CalledMethods("close") $$ ( 1443, 2150 ) $$ on exception, postcondition of read is not satisfied.
+	public int read()
+	           ^
+  found   : this.inputStream is @CalledMethods
+  required: this.inputStream is @CalledMethods("close")
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/Input.java:47: error: (contracts.exceptional.postcondition) $$ 3 $$ read $$ this.reader is @CalledMethods("read") $$ this.reader is @CalledMethods("close") $$ ( 1443, 2150 ) $$ on exception, postcondition of read is not satisfied.
+	public int read()
+	           ^
+  found   : this.reader is @CalledMethods("read")
+  required: this.reader is @CalledMethods("close")
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/Input.java:47: error: (contracts.postcondition) $$ 3 $$ read $$ no information about this.inputStream $$ this.inputStream is @CalledMethods("close") $$ ( 1443, 2150 ) $$ postcondition of read is not satisfied.
+	public int read()
+	           ^
+  found   : no information about this.inputStream
+  required: this.inputStream is @CalledMethods("close")
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/Input.java:47: error: (contracts.postcondition) $$ 3 $$ read $$ no information about this.reader $$ this.reader is @CalledMethods("close") $$ ( 1443, 2150 ) $$ postcondition of read is not satisfied.
+	public int read()
+	           ^
+  found   : no information about this.reader
+  required: this.reader is @CalledMethods("close")
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/Consumer.java:390: error: (flowexpr.parse.error.postcondition) $$ 2 $$ read() $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 12136, 12148 ) $$ error parsing the postcondition expression for read()
+					int ic = input.read();
+					                   ^
+  cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/Consumer.java:402: error: (flowexpr.parse.error.postcondition) $$ 2 $$ read() $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 12437, 12449 ) $$ error parsing the postcondition expression for read()
+						int ic = input.read();
+						                   ^
+  cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/InputText.java:125: error: (contracts.postcondition.override) $$ 6 $$ this.inputStream $$ read $$ fri.patterns.interpreter.parsergenerator.lexer.Input $$ @CalledMethods("close") $$ fri.patterns.interpreter.parsergenerator.lexer.InputText $$ no information $$ ( 3310, 3394 ) $$ Subclass postcondition is weaker for 'this.inputStream' in read.
+	public int read()	throws IOException	{
+	           ^
+    In superclass fri.patterns.interpreter.parsergenerator.lexer.Input: @CalledMethods("close")
+    In subclass fri.patterns.interpreter.parsergenerator.lexer.InputText: no information
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/InputText.java:125: error: (contracts.postcondition.override) $$ 6 $$ this.reader $$ read $$ fri.patterns.interpreter.parsergenerator.lexer.Input $$ @CalledMethods("close") $$ fri.patterns.interpreter.parsergenerator.lexer.InputText $$ no information $$ ( 3310, 3394 ) $$ Subclass postcondition is weaker for 'this.reader' in read.
+	public int read()	throws IOException	{
+	           ^
+    In superclass fri.patterns.interpreter.parsergenerator.lexer.Input: @CalledMethods("close")
+    In subclass fri.patterns.interpreter.parsergenerator.lexer.InputText: no information
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/InputText.java:125: error: (flowexpr.parse.error) $$ 1 $$ 'this.super' in the postcondition EnsuresCalledMethods on the declaration of method 'read': Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 3310, 3394 ) $$ cannot parse the expression 'this.super' in the postcondition EnsuresCalledMethods on the declaration of method 'read': Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+	public int read()	throws IOException	{
+	           ^
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/InputText.java:125: error: (flowexpr.parse.error) $$ 1 $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 3310, 3394 ) $$ cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+	public int read()	throws IOException	{
+	           ^
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/util/collections/AggregatingHashtable.java:35: error: (argument) $$ 4 $$ arg0 $$ Hashtable.put $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 920, 923 ) $$ incompatible argument for parameter arg0 of Hashtable.put.
+			super.put(key, list);
+			          ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/util/collections/AggregatingHashtable.java:35: error: (argument) $$ 4 $$ arg1 $$ Hashtable.put $$ @CalledMethods List</*RAW*/> $$ ? extends @CalledMethods Object $$ ( 925, 929 ) $$ incompatible argument for parameter arg1 of Hashtable.put.
+			super.put(key, list);
+			               ^
+  found   : @CalledMethods List</*RAW*/>
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/util/collections/AggregatingHashtable.java:60: error: (argument) $$ 4 $$ arg0 $$ Hashtable.put $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 1480, 1483 ) $$ incompatible argument for parameter arg0 of Hashtable.put.
+		super.put(key, newList);
+		          ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/util/collections/AggregatingHashtable.java:60: error: (argument) $$ 4 $$ arg1 $$ Hashtable.put $$ @CalledMethods List</*RAW*/> $$ ? extends @CalledMethods Object $$ ( 1485, 1492 ) $$ incompatible argument for parameter arg1 of Hashtable.put.
+		super.put(key, newList);
+		               ^
+  found   : @CalledMethods List</*RAW*/>
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/util/collections/AggregatingHashtable.java:76: error: (argument) $$ 4 $$ arg0 $$ Hashtable.put $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 2098, 2112 ) $$ incompatible argument for parameter arg0 of Hashtable.put.
+				super.put(entry.getKey(), o);
+				                      ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/util/collections/AggregatingHashtable.java:76: error: (argument) $$ 4 $$ arg1 $$ Hashtable.put $$ @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 2114, 2115 ) $$ incompatible argument for parameter arg1 of Hashtable.put.
+				super.put(entry.getKey(), o);
+				                          ^
+  found   : @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/lexer/LexerImpl.java:107: error: (required.method.not.called) $$ 4 $$ method read $$ new InputText(text) $$ fri.patterns.interpreter.parsergenerator.lexer.InputText $$ regular method exit $$ ( 3710, 3729 ) $$ @MustCall method read may not have been invoked on new InputText(text) or any of its aliases.
+		input = new InputText(text);
+		        ^
+  The type of object is: fri.patterns.interpreter.parsergenerator.lexer.InputText.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/parsertables/LALRParserTables.java:50: error: (required.method.not.called) $$ 4 $$ method toSourceFile $$ p $$ fri.patterns.interpreter.parsergenerator.parsertables.LALRParserTables $$ regular method exit $$ ( 1217, 1279 ) $$ @MustCall method toSourceFile may not have been invoked on p or any of its aliases.
+			LALRParserTables p = new LALRParserTables(new Syntax(syntax));
+			                 ^
+  The type of object is: fri.patterns.interpreter.parsergenerator.parsertables.LALRParserTables.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/parsertables/LRParserTables.java:60: error: (required.method.not.called) $$ 4 $$ method toSourceFile $$ p $$ fri.patterns.interpreter.parsergenerator.parsertables.LRParserTables $$ regular method exit $$ ( 1589, 1647 ) $$ @MustCall method toSourceFile may not have been invoked on p or any of its aliases.
+			LRParserTables p = new LRParserTables(new Syntax(syntax));
+			               ^
+  The type of object is: fri.patterns.interpreter.parsergenerator.parsertables.LRParserTables.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/parsertables/SLRParserTables.java:297: error: (required.method.not.called) $$ 4 $$ method toSourceFile $$ p $$ fri.patterns.interpreter.parsergenerator.parsertables.SLRParserTables $$ regular method exit $$ ( 8206, 8266 ) $$ @MustCall method toSourceFile may not have been invoked on p or any of its aliases.
+			SLRParserTables p = new SLRParserTables(new Syntax(syntax));
+			                ^
+  The type of object is: fri.patterns.interpreter.parsergenerator.parsertables.SLRParserTables.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/parsertables/AbstractParserTables.java:260: error: (contracts.exceptional.postcondition) $$ 3 $$ toSourceFile $$ no information about this.f $$ this.f is @CalledMethods("close") $$ ( 7987, 12434 ) $$ on exception, postcondition of toSourceFile is not satisfied.
+	public String toSourceFile(String parserClassName)
+	              ^
+  found   : no information about this.f
+  required: this.f is @CalledMethods("close")
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/parsertables/AbstractParserTables.java:260: error: (missing.creates.mustcall.for) $$ 3 $$ toSourceFile $$ this $$ f $$ ( 7987, 12434 ) $$ Method toSourceFile re-assigns the non-final, owning field this.f, but does not have a corresponding @CreatesMustCallFor annotation.
+	public String toSourceFile(String parserClassName)
+	              ^
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/parsertables/AbstractParserTables.java:275: error: (required.method.not.called) $$ 4 $$ method close $$ field f $$ java.io.Writer $$  Non-final owning field might be overwritten $$ ( 8492, 8536 ) $$ @MustCall method close may not have been invoked on field f or any of its aliases.
+		f = new BufferedWriter(new FileWriter(file));
+		  ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/parsertables/Nullable.java:109: error: (argument) $$ 4 $$ arg0 $$ Hashtable.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 3520, 3526 ) $$ incompatible argument for parameter arg0 of Hashtable.put.
+		put(symbol, new Boolean(value));
+		    ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/parsertables/Nullable.java:109: error: (argument) $$ 4 $$ arg1 $$ Hashtable.put $$ @CalledMethods Boolean $$ ? extends @CalledMethods Object $$ ( 3528, 3546 ) $$ incompatible argument for parameter arg1 of Hashtable.put.
+		put(symbol, new Boolean(value));
+		            ^
+  found   : @CalledMethods Boolean
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/syntax/builder/examples/Example.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStreamReader $$ possible exceptional exit due to new SyntaxBuilder(in) with exception type fri.patterns.interpreter.parsergenerator.syntax.SyntaxException $$ ( 724, 911 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			InputStreamReader in = args.length <= 0
+			                  ^
+  The type of object is: java.io.InputStreamReader.
+  Reason for going out of scope: possible exceptional exit due to new SyntaxBuilder(in) with exception type fri.patterns.interpreter.parsergenerator.syntax.SyntaxException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/syntax/builder/examples/Example.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStreamReader $$ possible exceptional exit due to builder.getLexer() with exception type fri.patterns.interpreter.parsergenerator.lexer.LexerException $$ ( 1201, 1369 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			in = args.length <= 0
+			   ^
+  The type of object is: java.io.InputStreamReader.
+  Reason for going out of scope: possible exceptional exit due to builder.getLexer() with exception type fri.patterns.interpreter.parsergenerator.lexer.LexerException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/syntax/builder/examples/Example.java:38: error: (required.method.not.called) $$ 4 $$ method toSourceFile $$ parserTables $$ fri.patterns.interpreter.parsergenerator.ParserTables $$ possible exceptional exit due to parser.parse(lexer) with exception type java.io.IOException $$ ( 1511, 1574 ) $$ @MustCall method toSourceFile may not have been invoked on parserTables or any of its aliases.
+			ParserTables parserTables = new LALRParserTables(parserSyntax);
+			             ^
+  The type of object is: fri.patterns.interpreter.parsergenerator.ParserTables.
+  Reason for going out of scope: possible exceptional exit due to parser.parse(lexer) with exception type java.io.IOException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/syntax/builder/SyntaxBuilder.java:68: error: (required.method.not.called) $$ 4 $$ method toSourceFile $$ parserTables $$ fri.patterns.interpreter.parsergenerator.ParserTables $$ possible exceptional exit due to parser.parse(lexer, new SyntaxBuilderSemantic(initialNonterminals)) with exception type java.io.IOException $$ ( 3130, 3190 ) $$ @MustCall method toSourceFile may not have been invoked on parserTables or any of its aliases.
+		ParserTables parserTables = new SyntaxBuilderParserTables();
+		             ^
+  The type of object is: fri.patterns.interpreter.parsergenerator.ParserTables.
+  Reason for going out of scope: possible exceptional exit due to parser.parse(lexer, new SyntaxBuilderSemantic(initialNonterminals)) with exception type java.io.IOException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/builder/SerializedObject.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(in) with exception type java.io.IOException $$ ( 724, 775 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			FileInputStream in = new FileInputStream(fileName);
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(in) with exception type java.io.IOException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/builder/SerializedObject.java:53: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(out) with exception type java.io.IOException $$ ( 1324, 1378 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+			FileOutputStream out = new FileOutputStream(fileName);
+			                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(out) with exception type java.io.IOException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/builder/SerializedObject.java:54: error: (required.method.not.called) $$ 4 $$ method close $$ oout $$ java.io.ObjectOutputStream $$ regular method exit $$ ( 1382, 1416 ) $$ @MustCall method close may not have been invoked on oout or any of its aliases.
+			oout = new ObjectOutputStream(out);
+			     ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/builder/SerializedParser.java:96: error: (required.method.not.called) $$ 4 $$ method toSourceFile $$ tables $$ fri.patterns.interpreter.parsergenerator.ParserTables $$ regular method exit $$ ( 4102, 4213 ) $$ @MustCall method toSourceFile may not have been invoked on tables or any of its aliases.
+			ParserTables tables = tablesFactory.buildAndStoreParserTables(parserType, parserSyntax, syntaxInput, baseName);
+			             ^
+  The type of object is: fri.patterns.interpreter.parsergenerator.ParserTables.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/builder/CompiledTables.java:157: error: (required.method.not.called) $$ 4 $$ method toSourceFile $$ parserTables $$ fri.patterns.interpreter.parsergenerator.parsertables.AbstractParserTables $$ regular method exit $$ ( 6302, 6400 ) $$ @MustCall method toSourceFile may not have been invoked on parserTables or any of its aliases.
+			AbstractParserTables parserTables = new CompiledTables().get(syntax, "SyntaxBuilderParserTables");
+			                     ^
+  The type of object is: fri.patterns.interpreter.parsergenerator.parsertables.AbstractParserTables.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/builder/SerializedTables.java:125: error: (required.method.not.called) $$ 4 $$ method toSourceFile $$ parserTables $$ fri.patterns.interpreter.parsergenerator.ParserTables $$ regular method exit $$ ( 4985, 5065 ) $$ @MustCall method toSourceFile may not have been invoked on parserTables or any of its aliases.
+			ParserTables parserTables = new SerializedTables().get(syntax, "SyntaxBuilder");
+			             ^
+  The type of object is: fri.patterns.interpreter.parsergenerator.ParserTables.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/util/SourceGenerator.java:51: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileWriter $$ possible exceptional exit due to new SemanticSkeletonGenerator(syntax, className, pkgName, fw) with exception type java.lang.Exception $$ ( 1996, 2032 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+			FileWriter fw = new FileWriter(out);
+			           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to new SemanticSkeletonGenerator(syntax, className, pkgName, fw) with exception type java.lang.Exception
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/util/SourceGenerator.java:89: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(fileName) $$ java.io.FileWriter $$ possible exceptional exit due to fwrite("package " + pkgName + ";\n\n", f) with exception type java.io.IOException $$ ( 3339, 3363 ) $$ @MustCall method close may not have been invoked on new FileWriter(fileName) or any of its aliases.
+		Writer f = new BufferedWriter(new FileWriter(fileName));
+		                              ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to fwrite("package " + pkgName + ";\n\n", f) with exception type java.io.IOException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/util/SourceGenerator.java:196: error: (required.method.not.called) $$ 4 $$ method toSourceFile $$ pt $$ fri.patterns.interpreter.parsergenerator.parsertables.AbstractParserTables $$ possible exceptional exit due to generateParserTable(pt, clsName, pkgName) with exception type java.lang.Exception $$ ( 7369, 7558 ) $$ @MustCall method toSourceFile may not have been invoked on pt or any of its aliases.
+							AbstractParserTables pt = type.equals("SLR")
+							                     ^
+  The type of object is: fri.patterns.interpreter.parsergenerator.parsertables.AbstractParserTables.
+  Reason for going out of scope: possible exceptional exit due to generateParserTable(pt, clsName, pkgName) with exception type java.lang.Exception
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/util/SemanticSkeletonGenerator.java:32: error: (required.method.not.called) $$ 4 $$ method close $$ field bw $$ java.io.BufferedWriter $$  [[checkOwningField() did not find a reason!]] $$ ( 1097, 1123 ) $$ @MustCall method close may not have been invoked on field bw or any of its aliases.
+	private BufferedWriter bw;
+	                       ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope:  [[checkOwningField() did not find a reason!]]
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/util/SemanticSkeletonGenerator.java:42: error: (contracts.exceptional.postcondition) $$ 3 $$ <init> $$ no information about this.bw $$ this.bw is @CalledMethods("close") $$ ( 1485, 4014 ) $$ on exception, postcondition of <init> is not satisfied.
+	public SemanticSkeletonGenerator(Syntax syntax, String className, String pkgName, Writer skeletonOutput)
+	       ^
+  found   : no information about this.bw
+  required: this.bw is @CalledMethods("close")
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/util/SemanticSkeletonGenerator.java:46: error: (required.method.not.called) $$ 4 $$ method close $$ field bw $$ java.io.BufferedWriter $$  Non-final owning field might be overwritten $$ ( 1663, 1698 ) $$ @MustCall method close may not have been invoked on field bw or any of its aliases.
+			bw = (BufferedWriter)skeletonOutput;
+			   ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/util/SemanticSkeletonGenerator.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ field bw $$ java.io.BufferedWriter $$  Non-final owning field might be overwritten $$ ( 1710, 1749 ) $$ @MustCall method close may not have been invoked on field bw or any of its aliases.
+			bw = new BufferedWriter(skeletonOutput);
+			   ^
+  The type of object is: java.io.BufferedWriter.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/util/SemanticSkeletonGenerator.java:48: error: (assignment) $$ 2 $$ @PolyMustCall BufferedWriter $$ @MustCall("close") BufferedWriter $$ ( 1715, 1749 ) $$ incompatible types in assignment.
+			bw = new BufferedWriter(skeletonOutput);
+			     ^
+  found   : @PolyMustCall BufferedWriter
+  required: @MustCall("close") BufferedWriter
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/semantics/examples/TreeBuilderExample.java:20: error: (required.method.not.called) $$ 4 $$ method close $$ Parser.class.getResourceAsStream("syntax/builder/examples/SyntaxBuilder.syntax") $$ java.io.InputStream $$ regular method exit $$ ( 717, 797 ) $$ @MustCall method close may not have been invoked on Parser.class.getResourceAsStream("syntax/builder/examples/SyntaxBuilder.syntax") or any of its aliases.
+			Reader input = new InputStreamReader(Parser.class.getResourceAsStream("syntax/builder/examples/SyntaxBuilder.syntax"));
+			                                                                     ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/semantics/examples/TreeBuilderExample.java:25: error: (required.method.not.called) $$ 4 $$ method toSourceFile $$ new SyntaxBuilderParserTables() $$ fri.patterns.interpreter.parsergenerator.syntax.builder.SyntaxBuilderParserTables $$ possible exceptional exit due to p.parse(lexer, new TreeBuilderSemantic()) with exception type java.io.IOException $$ ( 1098, 1129 ) $$ @MustCall method toSourceFile may not have been invoked on new SyntaxBuilderParserTables() or any of its aliases.
+			Parser p = new Parser(new SyntaxBuilderParserTables());
+			                      ^
+  The type of object is: fri.patterns.interpreter.parsergenerator.syntax.builder.SyntaxBuilderParserTables.
+  Reason for going out of scope: possible exceptional exit due to p.parse(lexer, new TreeBuilderSemantic()) with exception type java.io.IOException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/util/io/UnicodeReader.java:40: error: (missing.creates.mustcall.for) $$ 3 $$ init $$ this $$ delegate $$ ( 976, 2371 ) $$ Method init re-assigns the non-final, owning field this.delegate, but does not have a corresponding @CreatesMustCallFor annotation.
+	private void init(InputStream in, String defaultEnc) throws IOException {
+	             ^
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/util/io/UnicodeReader.java:85: error: (required.method.not.called) $$ 4 $$ method close $$ field delegate $$ java.io.InputStreamReader $$  Non-final owning field might be overwritten $$ ( 2247, 2291 ) $$ @MustCall method close may not have been invoked on field delegate or any of its aliases.
+			delegate = new InputStreamReader(internalIn);
+			         ^
+  The type of object is: java.io.InputStreamReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/util/io/UnicodeReader.java:88: error: (required.method.not.called) $$ 4 $$ method close $$ field delegate $$ java.io.InputStreamReader $$  Non-final owning field might be overwritten $$ ( 2309, 2363 ) $$ @MustCall method close may not have been invoked on field delegate or any of its aliases.
+			delegate = new InputStreamReader(internalIn, encoding);
+			         ^
+  The type of object is: java.io.InputStreamReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/com/wroblicky/andrew/joust/pgn/PGNParser.java:28: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(pgnTextFile) $$ java.io.FileReader $$ possible exceptional exit due to in.readLine() with exception type java.io.IOException $$ ( 720, 747 ) $$ @MustCall method close may not have been invoked on new FileReader(pgnTextFile) or any of its aliases.
+			BufferedReader in = new BufferedReader(new FileReader(pgnTextFile));
+			                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to in.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/com/wroblicky/andrew/joust/game/GameSetup.java:341: error: (required.method.not.called) $$ 4 $$ method close $$ fstream $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 11692, 11753 ) $$ @MustCall method close may not have been invoked on fstream or any of its aliases.
+			FileInputStream fstream = new FileInputStream(initialConfig);
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+67 errors

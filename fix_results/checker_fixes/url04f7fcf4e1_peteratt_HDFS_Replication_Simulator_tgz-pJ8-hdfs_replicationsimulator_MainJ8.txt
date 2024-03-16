@@ -1,0 +1,39 @@
+9075
+129
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url04f7fcf4e1_peteratt_HDFS_Replication_Simulator_tgz-pJ8-hdfs_replicationsimulator_MainJ8/src/hdfs/replicationsimulator/Simulator.java; Line number 46
+vim +46 ../../../dataset/june2020_dataset/url04f7fcf4e1_peteratt_HDFS_Replication_Simulator_tgz-pJ8-hdfs_replicationsimulator_MainJ8/src/hdfs/replicationsimulator/Simulator.java
+
++++ Add following code below line: 95 (hdfs/replicationsimulator/Simulator.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 46
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url04f7fcf4e1_peteratt_HDFS_Replication_Simulator_tgz-pJ8-hdfs_replicationsimulator_MainJ8/src/hdfs/replicationsimulator/Simulator.java; Line number 219
+vim +219 ../../../dataset/june2020_dataset/url04f7fcf4e1_peteratt_HDFS_Replication_Simulator_tgz-pJ8-hdfs_replicationsimulator_MainJ8/src/hdfs/replicationsimulator/Simulator.java
+
++++ Add following code below line: 247 (hdfs/replicationsimulator/Simulator.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 219
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url04f7fcf4e1_peteratt_HDFS_Replication_Simulator_tgz-pJ8-hdfs_replicationsimulator_MainJ8/src/hdfs/replicationsimulator/SimFileGenerator.java; Line number 51
+vim +51 ../../../dataset/june2020_dataset/url04f7fcf4e1_peteratt_HDFS_Replication_Simulator_tgz-pJ8-hdfs_replicationsimulator_MainJ8/src/hdfs/replicationsimulator/SimFileGenerator.java
+
++++ Add following code above line:51 (hdfs/replicationsimulator/SimFileGenerator.java)
+try{
++++ Add following code after line:90 (hdfs/replicationsimulator/SimFileGenerator.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 51
+
++++ Delete Line number 92 (hdfs/replicationsimulator/SimFileGenerator.java)
+
+--------------------------------------------

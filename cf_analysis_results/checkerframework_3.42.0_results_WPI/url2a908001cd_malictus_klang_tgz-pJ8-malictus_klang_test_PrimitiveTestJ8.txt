@@ -1,0 +1,75 @@
+warning: MustCallChecker did not find annotation file or directory ../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+warning: ResourceLeakChecker did not find annotation file or directory ../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8//wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/file/FORMFile.java:105: error: (required.method.not.called) $$ 4 $$ method close $$ tempraf $$ java.io.RandomAccessFile $$ possible exceptional exit due to tempraf.seek(0) with exception type java.io.IOException $$ ( 3507, 3571 ) $$ @MustCall method close may not have been invoked on tempraf or any of its aliases.
+		RandomAccessFile tempraf = new RandomAccessFile(tempFile, "rw");
+		                 ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to tempraf.seek(0) with exception type java.io.IOException
+../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/file/FORMFile.java:150: error: (required.method.not.called) $$ 4 $$ method close $$ tempraf $$ java.io.RandomAccessFile $$ possible exceptional exit due to tempraf.seek(0) with exception type java.io.IOException $$ ( 5073, 5137 ) $$ @MustCall method close may not have been invoked on tempraf or any of its aliases.
+		RandomAccessFile tempraf = new RandomAccessFile(tempFile, "rw");
+		                 ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to tempraf.seek(0) with exception type java.io.IOException
+../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/KlangUtil.java:453: error: (required.method.not.called) $$ 4 $$ method close $$ rafDest $$ java.io.RandomAccessFile $$ possible exceptional exit due to new RandomAccessFile(source, "r") with exception type java.io.FileNotFoundException $$ ( 15033, 15095 ) $$ @MustCall method close may not have been invoked on rafDest or any of its aliases.
+		RandomAccessFile rafDest = new RandomAccessFile(target, "rw");
+		                 ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to new RandomAccessFile(source, "r") with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/KlangUtil.java:454: error: (required.method.not.called) $$ 4 $$ method close $$ rafSource $$ java.io.RandomAccessFile $$ possible exceptional exit due to rafDest.close() with exception type java.io.IOException $$ ( 15099, 15162 ) $$ @MustCall method close may not have been invoked on rafSource or any of its aliases.
+		RandomAccessFile rafSource = new RandomAccessFile(source, "r");
+		                 ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to rafDest.close() with exception type java.io.IOException
+../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/KlangUtil.java:526: error: (required.method.not.called) $$ 4 $$ method close $$ fin $$ java.io.FileInputStream $$ possible exceptional exit due to new FileOutputStream(dest) with exception type java.io.FileNotFoundException $$ ( 17864, 17914 ) $$ @MustCall method close may not have been invoked on fin or any of its aliases.
+		FileInputStream fin = new FileInputStream(source);
+		                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(dest) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/KlangUtil.java:527: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to fin.close() with exception type java.io.IOException $$ ( 17918, 17968 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+		FileOutputStream fos = new FileOutputStream(dest);
+		                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to fin.close() with exception type java.io.IOException
+../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/KlangUtil.java:559: error: (required.method.not.called) $$ 4 $$ method close $$ fin $$ java.io.RandomAccessFile $$ possible exceptional exit due to new RandomAccessFile(dest, "rw") with exception type java.io.FileNotFoundException $$ ( 19087, 19144 ) $$ @MustCall method close may not have been invoked on fin or any of its aliases.
+		RandomAccessFile fin = new RandomAccessFile(source, "r");
+		                 ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to new RandomAccessFile(dest, "rw") with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/KlangUtil.java:560: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.RandomAccessFile $$ possible exceptional exit due to fin.close() with exception type java.io.IOException $$ ( 19148, 19204 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+		RandomAccessFile fos = new RandomAccessFile(dest, "rw");
+		                 ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to fin.close() with exception type java.io.IOException
+../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/KlangUtil.java:593: error: (required.method.not.called) $$ 4 $$ method close $$ raf $$ java.io.RandomAccessFile $$ possible exceptional exit due to throw new IOException(KlangConstants.ERROR_GENERAL_FILE); with exception type java.io.IOException $$ ( 20406, 20464 ) $$ @MustCall method close may not have been invoked on raf or any of its aliases.
+		RandomAccessFile raf = new RandomAccessFile(theFile, "r");
+		                 ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to throw new IOException(KlangConstants.ERROR_GENERAL_FILE); with exception type java.io.IOException
+../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/test/FileReadWriteTest.java:46: error: (required.method.not.called) $$ 4 $$ method close $$ raf $$ java.io.RandomAccessFile $$ regular method exit $$ ( 1501, 1539 ) $$ @MustCall method close may not have been invoked on raf or any of its aliases.
+			raf = new RandomAccessFile(temp, "rw");
+			    ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/test/PrimitiveTest.java:26: error: (required.method.not.called) $$ 4 $$ method close $$ raf $$ java.io.RandomAccessFile $$ possible exceptional exit due to raf.seek(0) with exception type java.io.IOException $$ ( 751, 811 ) $$ @MustCall method close may not have been invoked on raf or any of its aliases.
+			RandomAccessFile raf = new RandomAccessFile(tempFile, "rw");
+			                 ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to raf.seek(0) with exception type java.io.IOException
+../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/ui/klangeditor/RawEditPanel.java:471: error: (required.method.not.called) $$ 4 $$ method close $$ raf $$ java.io.RandomAccessFile $$ possible exceptional exit due to JOptionPane.showMessageDialog(parent, err.getMessage(), KlangConstants.ERROR_GENERAL_FILE, JOptionPane.ERROR_MESSAGE) with exception type java.awt.HeadlessException $$ ( 17043, 17110 ) $$ @MustCall method close may not have been invoked on raf or any of its aliases.
+			raf = new RandomAccessFile(parent.getCurrentFile().getFile(), "rw");
+			    ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: possible exceptional exit due to JOptionPane.showMessageDialog(parent, err.getMessage(), KlangConstants.ERROR_GENERAL_FILE, JOptionPane.ERROR_MESSAGE) with exception type java.awt.HeadlessException
+../dataset/june2020_dataset/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/ui/KlangProgressWindow.java:98: error: (required.method.not.called) $$ 4 $$ method close $$ raf $$ java.io.RandomAccessFile $$ regular method exit $$ ( 3437, 3502 ) $$ @MustCall method close may not have been invoked on raf or any of its aliases.
+		        	raf = new RandomAccessFile(CHUNK.getParentFile().getFile(), "rw");
+		        	    ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+13 errors
+2 warnings

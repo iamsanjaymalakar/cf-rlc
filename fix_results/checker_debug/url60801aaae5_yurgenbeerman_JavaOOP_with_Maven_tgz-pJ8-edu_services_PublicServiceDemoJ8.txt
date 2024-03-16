@@ -1,0 +1,5 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^edu/sandbox/collectionsandthreads/CollectionsTests.java^70^edu.sandbox.collectionsandthreads.CollectionsTests.treeTreadsToStackHTMLDemo()V^2 = new <Application,Ledu/sandbox/collectionsandthreads/SynchroHTML>@0^NULL^FIELD,^false^true^Field escape;
+1^edu/sandbox/collectionsandthreads/SynchroHTML.java^14^edu.sandbox.collectionsandthreads.SynchroHTML.<init>(Ljava/lang/String;)V^5 = new <Application,Ljava/io/FileWriter>@5^NULL^FIELD,^false^true^Field escape;
+2^edu/sandbox/collectionsandthreads/CollectionsTests.java^16^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+3^edu/sandbox/collectionsandthreads/CollectionsTests.java^524^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

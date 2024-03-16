@@ -1,0 +1,8 @@
+../dataset/june2020_dataset/urlac20d257ff_zhongdj_Madz_Stochastic_tgz-pJ8-net_madz_test_stochastic_core_impl_DynamicDemoJ8/src/net/madz/test/stochastic/core/report/ExcelFormatTestReporter.java:46: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(targetFile) $$ java.io.FileOutputStream $$ regular method exit $$ ( 1664, 1696 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(targetFile) or any of its aliases.
+                targetOutputStream = new FileOutputStream(targetFile);
+                                     ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+Note: ../dataset/june2020_dataset/urlac20d257ff_zhongdj_Madz_Stochastic_tgz-pJ8-net_madz_test_stochastic_core_impl_DynamicDemoJ8/src/net/madz/test/stochastic/core/report/MergeableCell.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 error

@@ -1,0 +1,38 @@
+../dataset/june2020_dataset/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/optimization/SwimmerOptimization.java:112: error: (required.method.not.called) $$ 4 $$ method close $$ writer $$ java.io.FileWriter $$ possible exceptional exit due to writer.flush() with exception type java.io.IOException $$ ( 3958, 4029 ) $$ @MustCall method close may not have been invoked on writer or any of its aliases.
+		    FileWriter writer = new FileWriter(filePath + "/" + fileName + ".csv");
+		               ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to writer.flush() with exception type java.io.IOException
+../dataset/june2020_dataset/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/optimization/SwimmerOptimization.java:143: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(filePath + "/" + fileName + ".csv") $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 4783, 4833 ) $$ @MustCall method close may not have been invoked on new FileReader(filePath + "/" + fileName + ".csv") or any of its aliases.
+			BufferedReader reader  = new BufferedReader(new FileReader(filePath + "/" + fileName + ".csv"));
+			                                            ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/gui/SwimController.java:362: error: (required.method.not.called) $$ 4 $$ method close $$ stream $$ javax.imageio.stream.ImageOutputStream $$ possible exceptional exit due to writer.write(null, new IIOImage(bi, null, null), param) with exception type java.io.IOException $$ ( 10167, 10235 ) $$ @MustCall method close may not have been invoked on stream or any of its aliases.
+						    ImageOutputStream stream = ImageIO.createImageOutputStream(imgFile);
+						                      ^
+  The type of object is: javax.imageio.stream.ImageOutputStream.
+  Reason for going out of scope: possible exceptional exit due to writer.write(null, new IIOImage(bi, null, null), param) with exception type java.io.IOException
+../dataset/june2020_dataset/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/tests/PaddleTest.java:93: error: (required.method.not.called) $$ 4 $$ method close $$ f $$ java.util.Formatter $$ regular method exit $$ ( 3165, 3195 ) $$ @MustCall method close may not have been invoked on f or any of its aliases.
+			Formatter f = new Formatter();
+			          ^
+  The type of object is: java.util.Formatter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/tests/SliderCrankTest.java:157: error: (required.method.not.called) $$ 4 $$ method close $$ f $$ java.util.Formatter $$ regular method exit $$ ( 4987, 5017 ) $$ @MustCall method close may not have been invoked on f or any of its aliases.
+		Formatter f = new Formatter();
+		          ^
+  The type of object is: java.util.Formatter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/tests/BasicSwimTest.java:112: error: (required.method.not.called) $$ 4 $$ method close $$ f $$ java.util.Formatter $$ regular method exit $$ ( 4105, 4135 ) $$ @MustCall method close may not have been invoked on f or any of its aliases.
+			Formatter f = new Formatter();
+			          ^
+  The type of object is: java.util.Formatter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/fr/inria/optimization/cmaes/CMAEvolutionStrategy.java:808: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to properties.load(fis) with exception type java.io.IOException $$ ( 31815, 31883 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+            java.io.FileInputStream fis = new java.io.FileInputStream(fileName);
+                                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(fis) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+7 errors

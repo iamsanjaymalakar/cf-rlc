@@ -1,0 +1,98 @@
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java:442: error: (required.method.not.called) $$ 4 $$ method close $$ j.write(new StringWriter()) $$ java.io.Writer $$ possible exceptional exit due to XML.toJSONObject(s) with exception type org.json.JSONException $$ ( 22422, 22449 ) $$ @MustCall method close may not have been invoked on j.write(new StringWriter()) or any of its aliases.
+            System.out.println(j.write(new StringWriter()));
+                                      ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: possible exceptional exit due to XML.toJSONObject(s) with exception type org.json.JSONException
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/org/json/JSONArray.java:920: error: (required.method.not.called) $$ 4 $$ method close $$ ((JSONObject)v).write(writer) $$ java.io.Writer $$ regular method exit $$ ( 29730, 29759 ) $$ @MustCall method close may not have been invoked on ((JSONObject)v).write(writer) or any of its aliases.
+                    ((JSONObject)v).write(writer);
+                                         ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/org/json/JSONArray.java:922: error: (required.method.not.called) $$ 4 $$ method close $$ ((JSONArray)v).write(writer) $$ java.io.Writer $$ regular method exit $$ ( 29834, 29862 ) $$ @MustCall method close may not have been invoked on ((JSONArray)v).write(writer) or any of its aliases.
+                    ((JSONArray)v).write(writer);
+                                        ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/org/json/JSONObject.java:1555: error: (required.method.not.called) $$ 4 $$ method close $$ ((JSONObject)v).write(writer) $$ java.io.Writer $$ regular method exit $$ ( 52096, 52125 ) $$ @MustCall method close may not have been invoked on ((JSONObject)v).write(writer) or any of its aliases.
+                    ((JSONObject)v).write(writer);
+                                         ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/org/json/JSONObject.java:1557: error: (required.method.not.called) $$ 4 $$ method close $$ ((JSONArray)v).write(writer) $$ java.io.Writer $$ regular method exit $$ ( 52200, 52228 ) $$ @MustCall method close may not have been invoked on ((JSONArray)v).write(writer) or any of its aliases.
+                    ((JSONArray)v).write(writer);
+                                        ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/net/oauth/client/URLConnectionClient.java:104: error: (required.method.not.called) $$ 4 $$ method close $$ ex $$ net.oauth.client.ExcerptInputStream $$ possible exceptional exit due to ex.read(b) with exception type java.io.IOException $$ ( 4418, 4477 ) $$ @MustCall method close may not have been invoked on ex or any of its aliases.
+                    final ExcerptInputStream ex = new ExcerptInputStream(body);
+                                             ^
+  The type of object is: net.oauth.client.ExcerptInputStream.
+  Reason for going out of scope: possible exceptional exit due to ex.read(b) with exception type java.io.IOException
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/net/oauth/http/HttpMessage.java:107: error: (required.method.not.called) $$ 4 $$ method close $$ raw $$ java.io.InputStream $$ possible exceptional exit due to new ExcerptInputStream(raw) with exception type java.io.IOException $$ ( 3030, 3059 ) $$ @MustCall method close may not have been invoked on raw or any of its aliases.
+            InputStream raw = openBody();
+                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new ExcerptInputStream(raw) with exception type java.io.IOException
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/net/oauth/http/HttpMessage.java:109: error: (required.method.not.called) $$ 4 $$ method close $$ new ExcerptInputStream(raw) $$ net.oauth.client.ExcerptInputStream $$ regular method exit $$ ( 3116, 3143 ) $$ @MustCall method close may not have been invoked on new ExcerptInputStream(raw) or any of its aliases.
+                body = new ExcerptInputStream(raw);
+                       ^
+  The type of object is: net.oauth.client.ExcerptInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/net/oauth/http/HttpMessage.java:133: error: (required.method.not.called) $$ 4 $$ method close $$ body $$ java.io.InputStream $$ possible exceptional exit due to from.getParameters() with exception type java.io.IOException $$ ( 3841, 3883 ) $$ @MustCall method close may not have been invoked on body or any of its aliases.
+        InputStream body = from.getBodyAsStream();
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to from.getParameters() with exception type java.io.IOException
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/net/oauth/OAuthMessage.java:193: error: (required.method.not.called) $$ 4 $$ method close $$ body $$ java.io.InputStream $$ possible exceptional exit due to readAll(body, getBodyEncoding()) with exception type java.io.IOException $$ ( 6324, 6361 ) $$ @MustCall method close may not have been invoked on body or any of its aliases.
+        InputStream body = getBodyAsStream();
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to readAll(body, getBodyEncoding()) with exception type java.io.IOException
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/net/oauth/http/HttpMessageDecoder.java:68: error: (required.method.not.called) $$ 4 $$ method close $$ body $$ java.io.InputStream $$ regular method exit $$ ( 2440, 2472 ) $$ @MustCall method close may not have been invoked on body or any of its aliases.
+        InputStream body = in.getBody();
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/net/oauth/http/HttpMessageDecoder.java:71: error: (required.method.not.called) $$ 4 $$ method close $$ body $$ java.io.InputStream $$ regular method exit $$ ( 2556, 2588 ) $$ @MustCall method close may not have been invoked on body or any of its aliases.
+                body = new GZIPInputStream(body);
+                     ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/net/oauth/http/HttpMessageDecoder.java:73: error: (required.method.not.called) $$ 4 $$ method close $$ body $$ java.io.InputStream $$ regular method exit $$ ( 2654, 2690 ) $$ @MustCall method close may not have been invoked on body or any of its aliases.
+                body = new InflaterInputStream(body);
+                     ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/net/oauth/signature/pem/PEMReader.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(fileName) $$ java.io.FileInputStream $$ possible exceptional exit due to this(new FileInputStream(fileName)) with exception type java.io.IOException $$ ( 2317, 2346 ) $$ @MustCall method close may not have been invoked on new FileInputStream(fileName) or any of its aliases.
+        this(new FileInputStream(fileName));
+             ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to this(new FileInputStream(fileName)) with exception type java.io.IOException
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/com/gengweibo/web/GuiceInit.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ Thread.currentThread().getContextClassLoader().getResourceAsStream("database.properties") $$ java.io.InputStream $$ possible exceptional exit due to throw new ExceptionInInitializerError(e); with exception type java.lang.ExceptionInInitializerError $$ ( 1450, 1599 ) $$ @MustCall method close may not have been invoked on Thread.currentThread().getContextClassLoader().getResourceAsStream("database.properties") or any of its aliases.
+                            .getResourceAsStream("database.properties"));
+                                                ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to throw new ExceptionInInitializerError(e); with exception type java.lang.ExceptionInInitializerError
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/com/gengweibo/dao/mysql/WeiboDaoJdbcImpl.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ conn $$ java.sql.Connection $$ regular method exit $$ ( 2151, 2184 ) $$ @MustCall method close may not have been invoked on conn or any of its aliases.
+            conn = dataSource.getConnection();
+                 ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/com/gengweibo/dao/mysql/WeiboDaoJdbcImpl.java:149: error: (required.method.not.called) $$ 4 $$ method close $$ conn $$ java.sql.Connection $$ regular method exit $$ ( 4695, 4728 ) $$ @MustCall method close may not have been invoked on conn or any of its aliases.
+            conn = dataSource.getConnection();
+                 ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/com/gengweibo/dao/mysql/WeiboDaoJdbcImpl.java:190: error: (required.method.not.called) $$ 4 $$ method close $$ conn $$ java.sql.Connection $$ regular method exit $$ ( 5890, 5923 ) $$ @MustCall method close may not have been invoked on conn or any of its aliases.
+            conn = dataSource.getConnection();
+                 ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/com/gengweibo/dao/mysql/WeiboDaoJdbcImpl.java:245: error: (required.method.not.called) $$ 4 $$ method close $$ conn $$ java.sql.Connection $$ regular method exit $$ ( 8244, 8277 ) $$ @MustCall method close may not have been invoked on conn or any of its aliases.
+            conn = dataSource.getConnection();
+                 ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+19 errors

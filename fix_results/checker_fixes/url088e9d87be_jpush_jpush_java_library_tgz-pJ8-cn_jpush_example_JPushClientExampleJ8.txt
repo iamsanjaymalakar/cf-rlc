@@ -1,0 +1,13 @@
+10260
+377
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url088e9d87be_jpush_jpush_java_library_tgz-pJ8-cn_jpush_example_JPushClientExampleJ8/src/cn/jpush/api/HttpPostClient.java; Line number 64
+vim +64 ../../../dataset/june2020_dataset/url088e9d87be_jpush_jpush_java_library_tgz-pJ8-cn_jpush_example_JPushClientExampleJ8/src/cn/jpush/api/HttpPostClient.java
+
++++ Add following code below line: 80 (cn/jpush/api/HttpPostClient.java)
+try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+// where variable <NEW_VARIABLE> points to the resource from line 64
+
+--------------------------------------------

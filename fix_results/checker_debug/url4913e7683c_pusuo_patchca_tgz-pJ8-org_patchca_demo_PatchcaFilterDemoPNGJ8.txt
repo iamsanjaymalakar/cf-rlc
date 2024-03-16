@@ -1,0 +1,3 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^org/patchca/demo/PatchcaFilterDemoPNG.java^38^org.patchca.demo.PatchcaFilterDemoPNG.main([Ljava/lang/String;)V^33 = new <Application,Ljava/io/FileOutputStream>@147^NULL^INVOKE,^false^false^Loop Fix;Normal Fix;
+1^org/patchca/demo/Sample.java^23^org.patchca.demo.Sample.main([Ljava/lang/String;)V^18 = new <Application,Ljava/io/FileOutputStream>@48^NULL^INVOKE,^false^false^Normal Fix;

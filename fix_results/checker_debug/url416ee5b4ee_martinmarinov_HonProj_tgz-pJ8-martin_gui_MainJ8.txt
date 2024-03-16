@@ -1,0 +1,10 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^martin/quantum/McalcDescription.java^63^martin.quantum.McalcDescription.loadFromFile(Ljava/io/File;)V^4 = new <Application,Ljava/io/FileInputStream>@0^NULL^INVOKE,ARRAY,^false^true^Array (or collection/map) escape;
+1^martin/quantum/McalcDescription.java^91^martin.quantum.McalcDescription.saveToFile(Ljava/io/File;)V^41 = new <Application,Ljava/io/FileOutputStream>@101^NULL^INVOKE,ARRAY,^false^true^Array (or collection/map) escape;
+2^martin/experiments/Worksheet.java^22^martin.experiments.Worksheet.<init>(Ljava/lang/String;)V^7 = new <Application,Ljava/io/BufferedReader>@16^martin.experiments.Worksheet.<init>(Ljava/lang/String;)V#8,^FIELD,^false^true^Field escape;
+3^martin/gui/EvaluatorGUI.java^400^martin.gui.EvaluatorGUI.<init>()V^8 = new <Application,Lmartin/gui/EvaluatorGUI$PrintLogger>@23^NULL^FIELD,^false^true^Field escape;
+4^martin/gui/quantum/Item.java^74^martin.gui.quantum.Item.getIcon()Ljava/awt/image/BufferedImage;^8 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 4,6 @9 exception:7^NULL^INVOKE,^false^false^Try-catch Fix;
+5^martin/gui/quantum/Visualizer.java^503^martin.gui.quantum.Visualizer.saveToFile(Ljava/io/File;)V^66 = new <Application,Ljava/io/FileOutputStream>@186^NULL^INVOKE,ARRAY,^false^true^Array (or collection/map) escape;
+6^martin/gui/quantum/Visualizer.java^513^martin.gui.quantum.Visualizer.loadFromFile(Ljava/io/File;)V^7 = new <Application,Ljava/io/FileInputStream>@11^NULL^INVOKE,ARRAY,^false^true^Array (or collection/map) escape;
+7^martin/gui/CircuitSimulatorGUI.java^102^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+8^martin/gui/CircuitSimulatorGUI.java^102^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

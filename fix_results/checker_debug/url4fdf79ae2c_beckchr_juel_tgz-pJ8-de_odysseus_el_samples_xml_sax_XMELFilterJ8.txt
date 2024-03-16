@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^javax/el/ExpressionFactoryTest.java^30^javax.el.ExpressionFactoryTest.getFactoryClassName()Ljava/lang/String;^21 = invokevirtual < Application, Ljava/lang/ClassLoader, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 19,15 @34 exception:20^javax.el.ExpressionFactoryTest.getFactoryClassName()Ljava/lang/String;#23,javax.el.ExpressionFactoryTest.getFactoryClassName()Ljava/lang/String;#22,^INVOKE,^false^false^Normal Fix;

@@ -1,0 +1,262 @@
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/CommonCore.java:699: error: (required.method.not.called) $$ 4 $$ method close $$ getClass().getResourceAsStream("jcores.version") $$ java.io.InputStream $$ regular method exit $$ ( 23221, 23269 ) $$ @MustCall method close may not have been invoked on getClass().getResourceAsStream("jcores.version") or any of its aliases.
+        return $(getClass().getResourceAsStream("jcores.version")).text().split("\n").hashmap().get("build");
+                                               ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:541: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(new File(path)) $$ java.io.FileOutputStream $$ regular method exit $$ ( 20823, 20859 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(new File(path)) or any of its aliases.
+            Streams.serializeCore(this, new FileOutputStream(new File(path)));
+                                        ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreAudioInputStream.java:50: error: (type.argument) $$ 4 $$ T $$ CoreObject $$ @MustCall("close") AudioInputStream $$ @MustCall Object $$ ( 2267, 2283 ) $$ incompatible type argument for type parameter T of CoreObject.
+public class CoreAudioInputStream extends CoreObject<AudioInputStream> {
+                                                     ^
+  found   : @MustCall("close") AudioInputStream
+  required: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreAudioInputStream.java:83: error: (type.argument) $$ 4 $$ X $$ F1 $$ @MustCall("close") AudioInputStream $$ @MustCall Object $$ ( 3255, 3271 ) $$ incompatible type argument for type parameter X of F1.
+        forEach(new F1<AudioInputStream, Void>() {
+                       ^
+  found   : @MustCall("close") AudioInputStream
+  required: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreClass.java:112: error: (required.method.not.called) $$ 4 $$ method close $$ classloader.getResourceAsStream(classname) $$ java.io.InputStream $$ regular method exit $$ ( 4474, 4516 ) $$ @MustCall method close may not have been invoked on classloader.getResourceAsStream(classname) or any of its aliases.
+                return Streams.getByteData(classloader.getResourceAsStream(classname));
+                                                                          ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreURI.java:117: error: (type.arguments.not.inferred) $$ 2 $$ CoreObject.array $$ @MustCall("close") InputStream <: @MustCall Object $$ ( 3752, 4366 ) $$ Could not infer type arguments for CoreObject.array
+        }).array(InputStream.class));
+                ^
+  unsatisfiable constraint: @MustCall("close") InputStream <: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreURI.java:142: error: (required.method.not.called) $$ 4 $$ method close $$ openStream $$ java.io.InputStream $$ possible exceptional exit due to File.createTempFile("jcores.download.", ".tmp") with exception type java.net.MalformedURLException $$ ( 5134, 5182 ) $$ @MustCall method close may not have been invoked on openStream or any of its aliases.
+                    final InputStream openStream = url.openStream();
+                                      ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to File.createTempFile("jcores.download.", ".tmp") with exception type java.net.MalformedURLException
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreFile.java:194: error: (type.arguments.not.inferred) $$ 2 $$ CoreObject.array $$ @MustCall("close") AudioInputStream <: @MustCall Object $$ ( 7013, 7219 ) $$ Could not infer type arguments for CoreObject.array
+        }).array(AudioInputStream.class));
+                ^
+  unsatisfiable constraint: @MustCall("close") AudioInputStream <: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreFile.java:260: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(x) $$ java.io.FileInputStream $$ possible exceptional exit due to channel.size() with exception type java.io.FileNotFoundException $$ ( 9681, 9703 ) $$ @MustCall method close may not have been invoked on new FileInputStream(x) or any of its aliases.
+                    final FileChannel channel = new FileInputStream(x).getChannel();
+                                                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to channel.size() with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreFile.java:356: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(get(0)) $$ java.io.FileInputStream $$ possible exceptional exit due to Streams.deserializeCore(type, new FileInputStream(get(0)), this.commonCore) with exception type java.lang.SecurityException $$ ( 13192, 13219 ) $$ @MustCall method close may not have been invoked on new FileInputStream(get(0)) or any of its aliases.
+            final CoreObject<T> core = Streams.deserializeCore(type, new FileInputStream(get(0)), this.commonCore);
+                                                                     ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to Streams.deserializeCore(type, new FileInputStream(get(0)), this.commonCore) with exception type java.lang.SecurityException
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreFile.java:503: error: (type.arguments.not.inferred) $$ 2 $$ CoreObject.array $$ @MustCall("close") InputStream <: @MustCall Object $$ ( 17652, 17958 ) $$ Could not infer type arguments for CoreObject.array
+        }).array(InputStream.class));
+                ^
+  unsatisfiable constraint: @MustCall("close") InputStream <: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreInputStream.java:100: error: (type.argument) $$ 4 $$ T $$ CoreObject $$ @MustCall("close") InputStream $$ @MustCall Object $$ ( 3709, 3720 ) $$ incompatible type argument for type parameter T of CoreObject.
+public class CoreInputStream extends CoreObject<InputStream> {
+                                                ^
+  found   : @MustCall("close") InputStream
+  required: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreInputStream.java:135: error: (type.arguments.not.inferred) $$ 2 $$ CoreObject.array $$ @MustCall("close") AudioInputStream <: @MustCall Object $$ ( 4584, 4782 ) $$ Could not infer type arguments for CoreObject.array
+        }).array(AudioInputStream.class));
+                ^
+  unsatisfiable constraint: @MustCall("close") AudioInputStream <: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreInputStream.java:187: error: (required.method.not.called) $$ 4 $$ method close $$ get(0) $$ java.io.InputStream $$ regular method exit $$ ( 6506, 6512 ) $$ @MustCall method close may not have been invoked on get(0) or any of its aliases.
+        final CoreObject<T> core = Streams.deserializeCore(type, get(0), this.commonCore);
+                                                                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreInputStream.java:210: error: (type.argument) $$ 4 $$ X $$ F1 $$ @MustCall("close") InputStream $$ @MustCall Object $$ ( 7284, 7295 ) $$ incompatible type argument for type parameter X of F1.
+        map(new F1<InputStream, Void>() {
+                   ^
+  found   : @MustCall("close") InputStream
+  required: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreInputStream.java:240: error: (type.arguments.not.inferred) $$ 2 $$ CoreObject.map $$ @MustCall("close") ZipInputStream <: @MustCall Object $$ ( 8149, 8316 ) $$ Could not infer type arguments for CoreObject.map
+        return map(new F1<InputStream, ZipInputStream>() {
+                  ^
+  unsatisfiable constraint: @MustCall("close") ZipInputStream <: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreInputStream.java:264: error: (type.argument) $$ 4 $$ X $$ F1 $$ @MustCall("close") InputStream $$ @MustCall Object $$ ( 8854, 8865 ) $$ incompatible type argument for type parameter X of F1.
+        return new CoreBufferedImage(this.commonCore, map(new F1<InputStream, BufferedImage>() {
+                                                                 ^
+  found   : @MustCall("close") InputStream
+  required: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreInputStream.java:295: error: (type.argument) $$ 4 $$ X $$ F1 $$ @MustCall("close") InputStream $$ @MustCall Object $$ ( 9869, 9880 ) $$ incompatible type argument for type parameter X of F1.
+        return new CoreString(this.commonCore, map(new F1<InputStream, String>() {
+                                                          ^
+  found   : @MustCall("close") InputStream
+  required: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreInputStream.java:328: error: (type.argument) $$ 4 $$ X $$ F1 $$ @MustCall("close") InputStream $$ @MustCall Object $$ ( 10965, 10976 ) $$ incompatible type argument for type parameter X of F1.
+        return new CoreString(this.commonCore, map(new F1<InputStream, String>() {
+                                                          ^
+  found   : @MustCall("close") InputStream
+  required: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreInputStream.java:358: error: (type.argument) $$ 4 $$ X $$ F1 $$ @MustCall("close") InputStream $$ @MustCall Object $$ ( 11941, 11952 ) $$ incompatible type argument for type parameter X of F1.
+        return new CoreByteBuffer(this.commonCore, map(new F1<InputStream, ByteBuffer>() {
+                                                              ^
+  found   : @MustCall("close") InputStream
+  required: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreZipInputStream.java:54: error: (type.argument) $$ 4 $$ T $$ CoreObject $$ @MustCall("close") ZipInputStream $$ @MustCall Object $$ ( 2431, 2445 ) $$ incompatible type argument for type parameter T of CoreObject.
+public class CoreZipInputStream extends CoreObject<ZipInputStream> {
+                                                   ^
+  found   : @MustCall("close") ZipInputStream
+  required: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreZipInputStream.java:76: error: (type.argument) $$ 4 $$ T $$ AbstractAdapter $$ @MustCall("close") ZipInputStream $$ @MustCall Object $$ ( 3104, 3118 ) $$ incompatible type argument for type parameter T of AbstractAdapter.
+    public CoreZipInputStream(CommonCore supercore, AbstractAdapter<ZipInputStream> adapter) {
+                                                                    ^
+  found   : @MustCall("close") ZipInputStream
+  required: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreZipInputStream.java:100: error: (type.argument) $$ 4 $$ X $$ F1 $$ @MustCall("close") ZipInputStream $$ @MustCall Object $$ ( 3850, 3864 ) $$ incompatible type argument for type parameter X of F1.
+        map(new F1<ZipInputStream, Void>() {
+                   ^
+  found   : @MustCall("close") ZipInputStream
+  required: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreZipInputStream.java:132: error: (type.argument) $$ 4 $$ X $$ F1 $$ @MustCall("close") ZipInputStream $$ @MustCall Object $$ ( 4829, 4843 ) $$ incompatible type argument for type parameter X of F1.
+        return map(new F1<ZipInputStream, List<String>>() {
+                          ^
+  found   : @MustCall("close") ZipInputStream
+  required: @MustCall Object
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreZipInputStream.java:182: error: (required.method.not.called) $$ 4 $$ method close $$ zipInputStream $$ java.util.zip.ZipInputStream $$ regular method exit $$ ( 6860, 6905 ) $$ @MustCall method close may not have been invoked on zipInputStream or any of its aliases.
+        final ZipInputStream zipInputStream = get(0);
+                             ^
+  The type of object is: java.util.zip.ZipInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreZipInputStream.java:186: error: (required.method.not.called) $$ 4 $$ method close $$ inputStream $$ java.io.InputStream $$ regular method exit $$ ( 6982, 7059 ) $$ @MustCall method close may not have been invoked on inputStream or any of its aliases.
+            final InputStream inputStream = Streams.getInputStream(zipInputStream, path);
+                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/junit/CoreStringTest.java:139: error: (required.method.not.called) $$ 4 $$ method close $$ stream $$ java.io.InputStream $$ regular method exit $$ ( 4417, 4522 ) $$ @MustCall method close may not have been invoked on stream or any of its aliases.
+        final InputStream stream = $(Data.class.getResourceAsStream("ranges.zip")).zipstream().get("ranges.txt");
+                          ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/junit/CoreStringTest.java:139: error: (required.method.not.called) $$ 4 $$ method close $$ Data.class.getResourceAsStream("ranges.zip") $$ java.io.InputStream $$ regular method exit $$ ( 4446, 4490 ) $$ @MustCall method close may not have been invoked on Data.class.getResourceAsStream("ranges.zip") or any of its aliases.
+        final InputStream stream = $(Data.class.getResourceAsStream("ranges.zip")).zipstream().get("ranges.txt");
+                                                                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/junit/CoreZipInputStreamTest.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ Data.class.getResourceAsStream("jIntellitype.zip") $$ java.io.InputStream $$ regular method exit $$ ( 1894, 1944 ) $$ @MustCall method close may not have been invoked on Data.class.getResourceAsStream("jIntellitype.zip") or any of its aliases.
+        $(Data.class.getResourceAsStream("jIntellitype.zip")).zipstream().unzip(tempdir.getAbsolutePath());
+                                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/junit/CoreAudioInputStream.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ Data.class.getResourceAsStream("mouse.wav") $$ java.io.InputStream $$ regular method exit $$ ( 1803, 1846 ) $$ @MustCall method close may not have been invoked on Data.class.getResourceAsStream("mouse.wav") or any of its aliases.
+        $(Data.class.getResourceAsStream("mouse.wav")).audio().play();
+                                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/sandbox/CastTest.java:94: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+            Constructor<F0Impl> constructor = F0Impl.class.getConstructor(null);
+                                                                          ^
+  cast to Class<?> for a varargs call
+  cast to Class<?>[] for a non-varargs call and to suppress this warning
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/sandbox/CastTest.java:95: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+            F0Impl newInstance = constructor.newInstance(null);
+                                                         ^
+  cast to Object for a varargs call
+  cast to Object[] for a non-varargs call and to suppress this warning
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/sandbox/SimpleUnzip.java:65: error: (required.method.not.called) $$ 4 $$ method close $$ zipstream.get("experiment.9.pageThailand.1282134351569.1282134351928.png") $$ java.io.InputStream $$ regular method exit $$ ( 2485, 2559 ) $$ @MustCall method close may not have been invoked on zipstream.get("experiment.9.pageThailand.1282134351569.1282134351928.png") or any of its aliases.
+        System.out.println(zipstream.get("experiment.9.pageThailand.1282134351569.1282134351928.png"));
+                                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/sandbox/SimpleUnzip.java:66: error: (required.method.not.called) $$ 4 $$ method close $$ zipstream.get("experiment.8.pageHonigbiene.1282131517351.1282131517788.png") $$ java.io.InputStream $$ regular method exit $$ ( 2589, 2665 ) $$ @MustCall method close may not have been invoked on zipstream.get("experiment.8.pageHonigbiene.1282131517351.1282131517788.png") or any of its aliases.
+        System.out.println(zipstream.get("experiment.8.pageHonigbiene.1282131517351.1282131517788.png"));
+                                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/sandbox/SimpleUnzip.java:123: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to is.read(data, 0, BUFFER) with exception type java.io.IOException $$ ( 4995, 5055 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+                    final FileOutputStream fos = new FileOutputStream(destFile);
+                                           ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to is.read(data, 0, BUFFER) with exception type java.io.IOException
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/extensions/serialization/CoreSerializer.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ os $$ java.io.OutputStream $$ regular method exit $$ ( 2515, 2573 ) $$ @MustCall method close may not have been invoked on os or any of its aliases.
+            final OutputStream os = new FileOutputStream(destination);
+                               ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/script/ScriptingCommons.java:113: error: (required.method.not.called) $$ 4 $$ method close $$ loader $$ java.net.URLClassLoader $$ variable overwritten by assignment loader = $(loader.getParent()).get(URLClassLoader.class, null) $$ ( 4069, 4156 ) $$ @MustCall method close may not have been invoked on loader or any of its aliases.
+        URLClassLoader loader = $(getClass().getClassLoader()).get(URLClassLoader.class, null);
+                       ^
+  The type of object is: java.net.URLClassLoader.
+  Reason for going out of scope: variable overwritten by assignment loader = $(loader.getParent()).get(URLClassLoader.class, null)
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/script/ScriptingCommons.java:113: error: (type.arguments.not.inferred) $$ 2 $$ CoreObject.get $$ @MustCall("close") URLClassLoader <: @MustCall ClassLoader $$ ( 4093, 4155 ) $$ Could not infer type arguments for CoreObject.get
+        URLClassLoader loader = $(getClass().getClassLoader()).get(URLClassLoader.class, null);
+                                                                  ^
+  unsatisfiable constraint: @MustCall("close") URLClassLoader <: @MustCall ClassLoader
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/script/ScriptingCommons.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ loader $$ java.net.URLClassLoader $$ variable overwritten by assignment loader = $(loader.getParent()).get(URLClassLoader.class, null) $$ ( 4555, 4617 ) $$ @MustCall method close may not have been invoked on loader or any of its aliases.
+            loader = $(loader.getParent()).get(URLClassLoader.class, null);
+                   ^
+  The type of object is: java.net.URLClassLoader.
+  Reason for going out of scope: variable overwritten by assignment loader = $(loader.getParent()).get(URLClassLoader.class, null)
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/script/ScriptingCommons.java:125: error: (type.arguments.not.inferred) $$ 2 $$ CoreObject.get $$ @MustCall("close") URLClassLoader <: @MustCall ClassLoader $$ ( 4564, 4617 ) $$ Could not infer type arguments for CoreObject.get
+            loader = $(loader.getParent()).get(URLClassLoader.class, null);
+                                              ^
+  unsatisfiable constraint: @MustCall("close") URLClassLoader <: @MustCall ClassLoader
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/script/util/console/JCoresConsole.java:99: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.OutputStream $$ regular method exit $$ ( 2456, 2860 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+		OutputStream out = new OutputStream() {
+		             ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Streams.java:105: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to is.read(data, 0, BUFFER) with exception type java.io.IOException $$ ( 4286, 4346 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+                    final FileOutputStream fos = new FileOutputStream(destFile);
+                                           ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to is.read(data, 0, BUFFER) with exception type java.io.IOException
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Files.java:207: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ regular method exit $$ ( 6995, 7047 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+            FileOutputStream fos = new FileOutputStream(target);
+                             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Files.java:226: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileInputStream $$ possible exceptional exit due to out.putNextEntry(entry) with exception type java.io.FileNotFoundException $$ ( 8146, 8200 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+                        final FileInputStream in = new FileInputStream(file2);
+                                              ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to out.putNextEntry(entry) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Files.java:267: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to new JarOutputStream(fos) with exception type java.io.FileNotFoundException $$ ( 9526, 9578 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+            FileOutputStream fos = new FileOutputStream(target);
+                             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new JarOutputStream(fos) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Files.java:291: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileInputStream $$ possible exceptional exit due to out.putNextEntry(entry) with exception type java.io.FileNotFoundException $$ ( 11010, 11064 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+                        final FileInputStream in = new FileInputStream(file2);
+                                              ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to out.putNextEntry(entry) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Sound.java:97: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(file) $$ java.io.FileInputStream $$ regular method exit $$ ( 3800, 3825 ) $$ @MustCall method close may not have been invoked on new FileInputStream(file) or any of its aliases.
+            return getStream(new BufferedInputStream(new FileInputStream(file)));
+                                                     ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/benchmarks/benchmarks/regexdna/RegExDNA.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ stream $$ java.io.InputStream $$ regular method exit $$ ( 2616, 2694 ) $$ @MustCall method close may not have been invoked on stream or any of its aliases.
+                InputStream stream = RegExDNA.class.getResourceAsStream("regexdna-input.txt");
+                            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/benchmarks/benchmarks/regexdna/RegExDNA.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ stream $$ java.io.InputStream $$ regular method exit $$ ( 3203, 3281 ) $$ @MustCall method close may not have been invoked on stream or any of its aliases.
+                InputStream stream = RegExDNA.class.getResourceAsStream("regexdna-input.txt");
+                            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/benchmarks/benchmarks/regexdna/RegExDNA.java:100: error: (required.method.not.called) $$ 4 $$ method close $$ stream $$ java.io.InputStream $$ regular method exit $$ ( 3793, 3871 ) $$ @MustCall method close may not have been invoked on stream or any of its aliases.
+                InputStream stream = RegExDNA.class.getResourceAsStream("regexdna-input.txt");
+                            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/benchmarks/benchmarks/regexdna/RegExDNA.java:117: error: (required.method.not.called) $$ 4 $$ method close $$ stream $$ java.io.InputStream $$ regular method exit $$ ( 4391, 4469 ) $$ @MustCall method close may not have been invoked on stream or any of its aliases.
+                InputStream stream = RegExDNA.class.getResourceAsStream("regexdna-input.txt");
+                            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/benchmarks/benchmarks/regexdna/RegExDNA.java:134: error: (required.method.not.called) $$ 4 $$ method close $$ stream $$ java.io.InputStream $$ regular method exit $$ ( 4988, 5066 ) $$ @MustCall method close may not have been invoked on stream or any of its aliases.
+                InputStream stream = RegExDNA.class.getResourceAsStream("regexdna-input.txt");
+                            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/benchmarks/benchmarks/reversecomplement/ReverseComplement.java:68: error: (required.method.not.called) $$ 4 $$ method close $$ stream $$ java.io.InputStream $$ regular method exit $$ ( 2658, 2744 ) $$ @MustCall method close may not have been invoked on stream or any of its aliases.
+                InputStream stream = ReverseComplement.class.getResourceAsStream("reverse-input.txt");
+                            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+51 errors
+2 warnings

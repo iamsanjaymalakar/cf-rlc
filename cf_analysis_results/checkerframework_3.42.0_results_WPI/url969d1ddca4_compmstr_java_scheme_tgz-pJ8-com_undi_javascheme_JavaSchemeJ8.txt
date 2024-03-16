@@ -1,0 +1,16 @@
+../dataset/june2020_dataset/url969d1ddca4_compmstr_java_scheme_tgz-pJ8-com_undi_javascheme_JavaSchemeJ8/src/com/undi/javascheme/SchemeReader.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ field mBufIn $$ java.io.PushbackInputStream $$  Non-final owning field might be overwritten $$ ( 606, 662 ) $$ @MustCall method close may not have been invoked on field mBufIn or any of its aliases.
+    this.mBufIn = new PushbackInputStream(in, PUSHBACK_SIZE);
+                ^
+  The type of object is: java.io.PushbackInputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url969d1ddca4_compmstr_java_scheme_tgz-pJ8-com_undi_javascheme_JavaSchemeJ8/src/com/undi/javascheme/SchemeReader.java:23: error: (assignment) $$ 2 $$ @PolyMustCall PushbackInputStream $$ @MustCall("close") PushbackInputStream $$ ( 620, 662 ) $$ incompatible types in assignment.
+    this.mBufIn = new PushbackInputStream(in, PUSHBACK_SIZE);
+                  ^
+  found   : @PolyMustCall PushbackInputStream
+  required: @MustCall("close") PushbackInputStream
+../dataset/june2020_dataset/url969d1ddca4_compmstr_java_scheme_tgz-pJ8-com_undi_javascheme_JavaSchemeJ8/src/com/undi/javascheme/SchemeReader.java:69: error: (contracts.postcondition) $$ 3 $$ closeStream $$ no information about this.mBufIn $$ this.mBufIn is @CalledMethods("close") $$ ( 2158, 2283 ) $$ postcondition of closeStream is not satisfied.
+  public void closeStream(){
+              ^
+  found   : no information about this.mBufIn
+  required: this.mBufIn is @CalledMethods("close")
+3 errors

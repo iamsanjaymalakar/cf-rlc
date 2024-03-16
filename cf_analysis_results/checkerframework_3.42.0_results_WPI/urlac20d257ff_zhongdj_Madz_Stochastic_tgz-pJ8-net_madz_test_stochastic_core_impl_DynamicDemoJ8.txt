@@ -1,0 +1,8 @@
+../dataset/june2020_dataset/urlac20d257ff_zhongdj_Madz_Stochastic_tgz-pJ8-net_madz_test_stochastic_core_impl_DynamicDemoJ8/src/net/madz/test/stochastic/core/report/ExcelFormatTestReporter.java:90: error: (contracts.exceptional.postcondition) $$ 3 $$ close $$ this.targetOutputStream is @CalledMethods $$ this.targetOutputStream is @CalledMethods("close") $$ ( 3169, 3306 ) $$ on exception, postcondition of close is not satisfied.
+    public synchronized void close() throws Exception {
+                             ^
+  found   : this.targetOutputStream is @CalledMethods
+  required: this.targetOutputStream is @CalledMethods("close")
+Note: ../dataset/june2020_dataset/urlac20d257ff_zhongdj_Madz_Stochastic_tgz-pJ8-net_madz_test_stochastic_core_impl_DynamicDemoJ8/src/net/madz/test/stochastic/core/report/MergeableCell.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 error

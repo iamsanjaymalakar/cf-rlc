@@ -1,0 +1,38 @@
+../../../../datasets/june2020_dataset/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/ch/zhaw/regularLanguages/helpers/Tuple.java:37: error: (return) $$ 2 $$ @MustCallUnknown String $$ @MustCall String $$ ( 987, 1008 ) $$ incompatible types in return.
+           return first + ": " + second; 
+                               ^
+  type of expression: @MustCallUnknown String
+  method return type: @MustCall String
+../../../../datasets/june2020_dataset/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/ch/zhaw/regularLanguages/helpers/ObjectWithCounter.java:33: error: (return) $$ 2 $$ @MustCallUnknown String $$ @MustCall String $$ ( 610, 634 ) $$ incompatible types in return.
+		return "("+object+")->"+counter;
+		                       ^
+  type of expression: @MustCallUnknown String
+  method return type: @MustCall String
+../../../../datasets/june2020_dataset/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/ch/zhaw/regularLanguages/helpers/Logger.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-45 $$ java.io.PrintWriter $$ regular method exit $$ ( 521, 555 ) $$ @MustCall method close may not have been invoked on temp-var-45 or any of its aliases.
+			writer = new PrintWriter(filePath, "UTF-8");
+			         ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/fr/loria/graphViz/GraphViz.java:170: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to fos.write(img) with exception type java.io.IOException $$ ( 5859, 5907 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+         FileOutputStream fos = new FileOutputStream(to);
+                          ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to fos.write(img) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/fr/loria/graphViz/GraphViz.java:199: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileInputStream $$ possible exceptional exit due to in.available() with exception type java.io.IOException $$ ( 6842, 6906 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+         FileInputStream in = new FileInputStream(img.getAbsolutePath());
+                         ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to in.available() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/fr/loria/graphViz/GraphViz.java:232: error: (required.method.not.called) $$ 4 $$ method close $$ fout $$ java.io.FileWriter $$ possible exceptional exit due to fout.write(str) with exception type java.io.IOException $$ ( 8161, 8200 ) $$ @MustCall method close may not have been invoked on fout or any of its aliases.
+         FileWriter fout = new FileWriter(temp);
+                    ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to fout.write(str) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/fr/loria/graphViz/GraphViz.java:271: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 9058, 9107 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+		   FileInputStream fis = new FileInputStream(input);
+		                   ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+7 errors

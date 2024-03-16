@@ -1,0 +1,23 @@
+../dataset/june2020_dataset/url2b4a2d655b_Yehonal_unisa_prog2_jdm_tgz-pJ8-com_jdeals_tests_TestUserBuyingJ8/src/com/jdeals/main/view/gui/JFrameCli.java:132: error: (required.method.not.called) $$ 4 $$ method close $$ inPipe $$ java.io.PipedInputStream $$ regular method exit $$ ( 3476, 3525 ) $$ @MustCall method close may not have been invoked on inPipe or any of its aliases.
+            PipedInputStream inPipe = new PipedInputStream();
+                             ^
+  The type of object is: java.io.PipedInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2b4a2d655b_Yehonal_unisa_prog2_jdm_tgz-pJ8-com_jdeals_tests_TestUserBuyingJ8/src/com/jdeals/main/view/gui/JFrameCli.java:133: error: (required.method.not.called) $$ 4 $$ method close $$ outPipe $$ java.io.PipedInputStream $$ regular method exit $$ ( 3538, 3588 ) $$ @MustCall method close may not have been invoked on outPipe or any of its aliases.
+            PipedInputStream outPipe = new PipedInputStream();
+                             ^
+  The type of object is: java.io.PipedInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url2b4a2d655b_Yehonal_unisa_prog2_jdm_tgz-pJ8-com_jdeals_tests_TestUserBuyingJ8/src/com/jdeals/main/helper/storage/FileSerialization.java:29: error: (required.method.not.called) $$ 4 $$ method close $$ fileOut $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(fileOut) with exception type java.io.IOException $$ ( 813, 871 ) $$ @MustCall method close may not have been invoked on fileOut or any of its aliases.
+            FileOutputStream fileOut = new FileOutputStream(filePath);
+                             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(fileOut) with exception type java.io.IOException
+../dataset/june2020_dataset/url2b4a2d655b_Yehonal_unisa_prog2_jdm_tgz-pJ8-com_jdeals_tests_TestUserBuyingJ8/src/com/jdeals/main/helper/storage/FileSerialization.java:51: error: (required.method.not.called) $$ 4 $$ method close $$ fileIn $$ java.io.FileInputStream $$ regular method exit $$ ( 1511, 1549 ) $$ @MustCall method close may not have been invoked on fileIn or any of its aliases.
+            fileIn = new FileInputStream(filePath);
+                   ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 errors

@@ -1,0 +1,13 @@
+../../../../datasets/june2020_dataset/urlcf7851e92b_Triploblastic_CSCD350_FinalProject_tgz-pJ8-MazeGame_MazeJ8/src/MazeGeneration/ArrayStack.java:56: error: (return) $$ 2 $$ @MustCallUnknown String $$ @MustCall String $$ ( 1307, 1314 ) $$ incompatible types in return.
+			  return s + "]";
+			           ^
+  type of expression: @MustCallUnknown String
+  method return type: @MustCall String
+../../../../datasets/june2020_dataset/urlcf7851e92b_Triploblastic_CSCD350_FinalProject_tgz-pJ8-MazeGame_MazeJ8/src/TriviaQuestions/DataBaseBuilder.java:57: error: (required.method.not.called) $$ 4 $$ method close $$ sc $$ java.util.Scanner $$ regular method exit $$ ( 1653, 1683 ) $$ @MustCall method close may not have been invoked on sc or any of its aliases.
+		Scanner sc = new Scanner(fin);
+		        ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors

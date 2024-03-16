@@ -1,0 +1,3 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^erilex/data/FileStream.java^43^erilex.data.FileStream.<init>(Ljava/io/File;)V^8 = new <Application,Ljava/io/RandomAccessFile>@29^NULL^FIELD,^false^true^Field escape;
+1^erilex/codegen/Class.java^109^erilex.codegen.Class.writeToFile(Ljava/lang/String;)V^48 = new <Application,Ljava/io/BufferedWriter>@124^erilex.codegen.Class.writeToFile(Ljava/lang/String;)V#49,^INVOKE,^false^false^Normal Fix;

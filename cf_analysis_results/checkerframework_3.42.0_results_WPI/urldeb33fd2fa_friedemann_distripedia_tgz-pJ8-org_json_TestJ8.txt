@@ -1,0 +1,474 @@
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java:58: error: (required.method.not.called) $$ 4 $$ method stopServer $$ new CtrlServer(this, GrinderSettings.CONTROLLER_DEFAULT_PORT) $$ grinder.controller.CtrlServer $$ regular method exit $$ ( 1606, 1667 ) $$ @MustCall method stopServer may not have been invoked on new CtrlServer(this, GrinderSettings.CONTROLLER_DEFAULT_PORT) or any of its aliases.
+		cServer = new CtrlServer(this, GrinderSettings.CONTROLLER_DEFAULT_PORT);
+		          ^
+  The type of object is: grinder.controller.CtrlServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java:74: error: (required.method.not.called) $$ 4 $$ method close $$ stream $$ java.io.FileInputStream $$ possible exceptional exit due to p.load(stream) with exception type java.io.FileNotFoundException $$ ( 1943, 2008 ) $$ @MustCall method close may not have been invoked on stream or any of its aliases.
+			final FileInputStream stream = new FileInputStream(propFileName);
+			                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to p.load(stream) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java:141: error: (required.method.not.called) $$ 4 $$ method run $$ cst $$ grinder.controller.CtrlServerThread $$ regular method exit $$ ( 3515, 3541 ) $$ @MustCall method run may not have been invoked on cst or any of its aliases.
+			for (final CtrlServerThread cst : cServer.getServerThreads())
+			                            ^
+  The type of object is: grinder.controller.CtrlServerThread.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java:162: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(filePath) $$ java.io.FileInputStream $$ regular method exit $$ ( 4100, 4134 ) $$ @MustCall method close may not have been invoked on new FileInputStream(filePath) or any of its aliases.
+		final BufferedInputStream fileStream = new BufferedInputStream(new FileInputStream(
+		                                                               ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java:232: error: (required.method.not.called) $$ 4 $$ method run $$ cst $$ grinder.controller.CtrlServerThread $$ regular method exit $$ ( 5504, 5530 ) $$ @MustCall method run may not have been invoked on cst or any of its aliases.
+		for (final CtrlServerThread cst : cServer.getServerThreads())
+		                            ^
+  The type of object is: grinder.controller.CtrlServerThread.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java:247: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("run") CtrlServerThread $$ @MustCall Object $$ ( 5925, 5941 ) $$ incompatible type argument for type parameter E of ArrayList.
+		final ArrayList<CtrlServerThread> threadList = cServer.getServerThreads();
+		                ^
+  found   : @MustCall("run") CtrlServerThread
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java:252: error: (required.method.not.called) $$ 4 $$ method run $$ threadList.get(i) $$ grinder.controller.CtrlServerThread $$ regular method exit $$ ( 6113, 6130 ) $$ @MustCall method run may not have been invoked on threadList.get(i) or any of its aliases.
+			clientData[i][0] = threadList.get(i).getClientIP().toString();
+			                                 ^
+  The type of object is: grinder.controller.CtrlServerThread.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java:253: error: (required.method.not.called) $$ 4 $$ method run $$ threadList.get(i) $$ grinder.controller.CtrlServerThread $$ regular method exit $$ ( 6179, 6196 ) $$ @MustCall method run may not have been invoked on threadList.get(i) or any of its aliases.
+			clientData[i][1] = threadList.get(i).getClientID().toString();
+			                                 ^
+  The type of object is: grinder.controller.CtrlServerThread.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java:254: error: (required.method.not.called) $$ 4 $$ method run $$ threadList.get(i) $$ grinder.controller.CtrlServerThread $$ regular method exit $$ ( 6245, 6262 ) $$ @MustCall method run may not have been invoked on threadList.get(i) or any of its aliases.
+			clientData[i][2] = threadList.get(i).getDeployedTicketID();
+			                                 ^
+  The type of object is: grinder.controller.CtrlServerThread.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java:255: error: (required.method.not.called) $$ 4 $$ method run $$ threadList.get(i) $$ grinder.controller.CtrlServerThread $$ regular method exit $$ ( 6308, 6325 ) $$ @MustCall method run may not have been invoked on threadList.get(i) or any of its aliases.
+			clientData[i][3] = threadList.get(i).getClientState().toString();
+			                                 ^
+  The type of object is: grinder.controller.CtrlServerThread.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java:264: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("run") CtrlServerThread $$ @MustCall Object $$ ( 6517, 6533 ) $$ incompatible type argument for type parameter E of ArrayList.
+		final ArrayList<CtrlServerThread> threadList = cServer.getServerThreads();
+		                ^
+  found   : @MustCall("run") CtrlServerThread
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java:268: error: (required.method.not.called) $$ 4 $$ method run $$ cst $$ grinder.controller.CtrlServerThread $$ regular method exit $$ ( 6612, 6638 ) $$ @MustCall method run may not have been invoked on cst or any of its aliases.
+		for (final CtrlServerThread cst : threadList)
+		                            ^
+  The type of object is: grinder.controller.CtrlServerThread.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java:314: error: (required.method.not.called) $$ 4 $$ method run $$ cst $$ grinder.controller.CtrlServerThread $$ regular method exit $$ ( 7909, 7935 ) $$ @MustCall method run may not have been invoked on cst or any of its aliases.
+				for (final CtrlServerThread cst : cServer.getServerThreads())
+				                            ^
+  The type of object is: grinder.controller.CtrlServerThread.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServer.java:24: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("run") CtrlServerThread $$ @MustCall Object $$ ( 447, 463 ) $$ incompatible type argument for type parameter E of ArrayList.
+	private final ArrayList<CtrlServerThread> serverThreads;
+	                        ^
+  found   : @MustCall("run") CtrlServerThread
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServer.java:36: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("run") CtrlServerThread $$ @MustCall Object $$ ( 770, 786 ) $$ incompatible type argument for type parameter E of ArrayList.
+		serverThreads = new ArrayList<CtrlServerThread>();
+		                              ^
+  found   : @MustCall("run") CtrlServerThread
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServer.java:44: error: (missing.creates.mustcall.for) $$ 3 $$ run $$ this $$ serverSocket $$ ( 857, 2054 ) $$ Method run re-assigns the non-final, owning field this.serverSocket, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void run() {
+	            ^
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServer.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ field serverSocket $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 902, 939 ) $$ @MustCall method close may not have been invoked on field serverSocket or any of its aliases.
+			serverSocket = new ServerSocket(port);
+			             ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServer.java:92: error: (required.method.not.called) $$ 4 $$ method run $$ cst $$ grinder.controller.CtrlServerThread $$ regular method exit $$ ( 1885, 1979 ) $$ @MustCall method run may not have been invoked on cst or any of its aliases.
+			final CtrlServerThread cst = new CtrlServerThread(ctrl, this, "ct-"
+			                       ^
+  The type of object is: grinder.controller.CtrlServerThread.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServer.java:104: error: (contracts.postcondition) $$ 3 $$ stopServer $$ no information about this.serverSocket $$ this.serverSocket is @CalledMethods("close") $$ ( 2134, 2460 ) $$ postcondition of stopServer is not satisfied.
+	public synchronized void stopServer() {
+	                         ^
+  found   : no information about this.serverSocket
+  required: this.serverSocket is @CalledMethods("close")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServer.java:135: error: (type.argument) $$ 4 $$ E $$ ArrayList $$ @MustCall("run") CtrlServerThread $$ @MustCall Object $$ ( 2821, 2837 ) $$ incompatible type argument for type parameter E of ArrayList.
+	public ArrayList<CtrlServerThread> getServerThreads() {
+	                 ^
+  found   : @MustCall("run") CtrlServerThread
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServer.java:144: error: (contracts.postcondition) $$ 3 $$ finalize $$ no information about this.serverSocket $$ this.serverSocket is @CalledMethods("close") $$ ( 2953, 3055 ) $$ postcondition of finalize is not satisfied.
+	protected void finalize() throws Throwable {
+	               ^
+  found   : no information about this.serverSocket
+  required: this.serverSocket is @CalledMethods("close")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServerThread.java:104: error: (contracts.postcondition) $$ 3 $$ run $$ no information about this.ois $$ this.ois is @CalledMethods("close") $$ ( 2352, 6475 ) $$ postcondition of run is not satisfied.
+	public void run() {
+	            ^
+  found   : no information about this.ois
+  required: this.ois is @CalledMethods("close")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServerThread.java:104: error: (contracts.postcondition) $$ 3 $$ run $$ no information about this.oos $$ this.oos is @CalledMethods("close") $$ ( 2352, 6475 ) $$ postcondition of run is not satisfied.
+	public void run() {
+	            ^
+  found   : no information about this.oos
+  required: this.oos is @CalledMethods("close")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServerThread.java:104: error: (contracts.postcondition) $$ 3 $$ run $$ this.clientSocket is @CalledMethods("getInputStream") $$ this.clientSocket is @CalledMethods("close") $$ ( 2352, 6475 ) $$ postcondition of run is not satisfied.
+	public void run() {
+	            ^
+  found   : this.clientSocket is @CalledMethods("getInputStream")
+  required: this.clientSocket is @CalledMethods("close")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServerThread.java:104: error: (missing.creates.mustcall.for) $$ 3 $$ run $$ this $$ ois $$ ( 2352, 6475 ) $$ Method run re-assigns the non-final, owning field this.ois, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void run() {
+	            ^
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServerThread.java:104: error: (missing.creates.mustcall.for) $$ 3 $$ run $$ this $$ oos $$ ( 2352, 6475 ) $$ Method run re-assigns the non-final, owning field this.oos, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void run() {
+	            ^
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServerThread.java:109: error: (required.method.not.called) $$ 4 $$ method close $$ field ois $$ java.io.ObjectInputStream $$  Non-final owning field might be overwritten $$ ( 2432, 2490 ) $$ @MustCall method close may not have been invoked on field ois or any of its aliases.
+			ois = new ObjectInputStream(clientSocket.getInputStream());
+			    ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServerThread.java:110: error: (required.method.not.called) $$ 4 $$ method close $$ field oos $$ java.io.ObjectOutputStream $$  Non-final owning field might be overwritten $$ ( 2495, 2555 ) $$ @MustCall method close may not have been invoked on field oos or any of its aliases.
+			oos = new ObjectOutputStream(clientSocket.getOutputStream());
+			    ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServerThread.java:178: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to fos.flush() with exception type java.io.OptionalDataException $$ ( 4205, 4278 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+					final FileOutputStream fos = new FileOutputStream(completeLogFile, true);
+					                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to fos.flush() with exception type java.io.OptionalDataException
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:62: error: (type.argument) $$ 4 $$ V $$ Hashtable $$ @MustCall("run") User $$ @MustCall Object $$ ( 1757, 1761 ) $$ incompatible type argument for type parameter V of Hashtable.
+	public Hashtable<UUID, User> userHTTP;
+	                       ^
+  found   : @MustCall("run") User
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:65: error: (type.argument) $$ 4 $$ V $$ Hashtable $$ @MustCall("run") User $$ @MustCall Object $$ ( 1851, 1855 ) $$ incompatible type argument for type parameter V of Hashtable.
+	public Hashtable<UUID, User> userWS;
+	                       ^
+  found   : @MustCall("run") User
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:68: error: (type.argument) $$ 4 $$ V $$ Hashtable $$ @MustCall("run") User $$ @MustCall Object $$ ( 1941, 1945 ) $$ incompatible type argument for type parameter V of Hashtable.
+	public Hashtable<UUID, User> userSTRATUS;
+	                       ^
+  found   : @MustCall("run") User
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:89: error: (type.argument) $$ 4 $$ V $$ Hashtable $$ @MustCall("run") User $$ @MustCall Object $$ ( 2323, 2327 ) $$ incompatible type argument for type parameter V of Hashtable.
+		userHTTP = new Hashtable<UUID, User>(50);
+		                               ^
+  found   : @MustCall("run") User
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:90: error: (type.argument) $$ 4 $$ V $$ Hashtable $$ @MustCall("run") User $$ @MustCall Object $$ ( 2365, 2369 ) $$ incompatible type argument for type parameter V of Hashtable.
+		userWS = new Hashtable<UUID, User>(50);
+		                             ^
+  found   : @MustCall("run") User
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:91: error: (type.argument) $$ 4 $$ V $$ Hashtable $$ @MustCall("run") User $$ @MustCall Object $$ ( 2412, 2416 ) $$ incompatible type argument for type parameter V of Hashtable.
+		userSTRATUS = new Hashtable<UUID, User>(50);
+		                                  ^
+  found   : @MustCall("run") User
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:109: error: (required.method.not.called) $$ 4 $$ method close $$ stream $$ java.io.FileInputStream $$ possible exceptional exit due to p.load(stream) with exception type java.io.FileNotFoundException $$ ( 2751, 2816 ) $$ @MustCall method close may not have been invoked on stream or any of its aliases.
+			final FileInputStream stream = new FileInputStream(propFileName);
+			                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to p.load(stream) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:171: error: (contracts.postcondition) $$ 3 $$ panic $$ no information about this.lf $$ this.lf is @CalledMethods("closeLogFile") $$ ( 3865, 4137 ) $$ postcondition of panic is not satisfied.
+	public synchronized void panic(final String reason) {
+	                         ^
+  found   : no information about this.lf
+  required: this.lf is @CalledMethods("closeLogFile")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:202: error: (required.method.not.called) $$ 4 $$ method close $$ new Socket(controllerIP, GrinderSettings.CONTROLLER_DEFAULT_PORT) $$ java.net.Socket $$ regular method exit $$ ( 4486, 4551 ) $$ @MustCall method close may not have been invoked on new Socket(controllerIP, GrinderSettings.CONTROLLER_DEFAULT_PORT) or any of its aliases.
+			clientSocket = new Socket(controllerIP, GrinderSettings.CONTROLLER_DEFAULT_PORT);
+			               ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:203: error: (required.method.not.called) $$ 4 $$ method run $$ new ClientConnectionThread(this, clientSocket, "ClientConnectionThread") $$ grinder.client.ClientConnectionThread $$ regular method exit $$ ( 4562, 4634 ) $$ @MustCall method run may not have been invoked on new ClientConnectionThread(this, clientSocket, "ClientConnectionThread") or any of its aliases.
+			cct = new ClientConnectionThread(this, clientSocket, "ClientConnectionThread");
+			      ^
+  The type of object is: grinder.client.ClientConnectionThread.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:254: error: (flowexpr.parse.error) $$ 1 $$ 'this.this' in the postcondition EnsuresCalledMethods on the declaration of method 'setTestTicket': Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 5615, 5975 ) $$ cannot parse the expression 'this.this' in the postcondition EnsuresCalledMethods on the declaration of method 'setTestTicket': Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+	public void setTestTicket(final TestTicket ticket) {
+	            ^
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:266: error: (flowexpr.parse.error.postcondition) $$ 2 $$ setTestTicket(TestTicket) $$ Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 5847, 5873 ) $$ error parsing the postcondition expression for setTestTicket(TestTicket)
+			this.setTestTicket(ticket);
+			                  ^
+  cannot parse the expression Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:289: error: (required.method.not.called) $$ 4 $$ method run $$ usr $$ grinder.client.user.User $$ regular method exit $$ ( 6271, 6309 ) $$ @MustCall method run may not have been invoked on usr or any of its aliases.
+			usr = new User(this, type, timeToLive);
+			    ^
+  The type of object is: grinder.client.user.User.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:301: error: (required.method.not.called) $$ 4 $$ method run $$ userHTTP.put(userID, usr) $$ grinder.client.user.User $$ regular method exit $$ ( 6519, 6544 ) $$ @MustCall method run may not have been invoked on userHTTP.put(userID, usr) or any of its aliases.
+			userHTTP.put(userID, usr);
+			            ^
+  The type of object is: grinder.client.user.User.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:304: error: (required.method.not.called) $$ 4 $$ method run $$ userWS.put(userID, usr) $$ grinder.client.user.User $$ regular method exit $$ ( 6577, 6600 ) $$ @MustCall method run may not have been invoked on userWS.put(userID, usr) or any of its aliases.
+			userWS.put(userID, usr);
+			          ^
+  The type of object is: grinder.client.user.User.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:307: error: (required.method.not.called) $$ 4 $$ method run $$ userSTRATUS.put(userID, usr) $$ grinder.client.user.User $$ regular method exit $$ ( 6631, 6659 ) $$ @MustCall method run may not have been invoked on userSTRATUS.put(userID, usr) or any of its aliases.
+			userSTRATUS.put(userID, usr);
+			               ^
+  The type of object is: grinder.client.user.User.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:330: error: (required.method.not.called) $$ 4 $$ method run $$ usr $$ grinder.client.user.User $$ regular method exit $$ ( 7034, 7063 ) $$ @MustCall method run may not have been invoked on usr or any of its aliases.
+		usr = userHTTP.remove(userID);
+		    ^
+  The type of object is: grinder.client.user.User.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:334: error: (required.method.not.called) $$ 4 $$ method run $$ usr $$ grinder.client.user.User $$ regular method exit $$ ( 7092, 7119 ) $$ @MustCall method run may not have been invoked on usr or any of its aliases.
+			usr = userWS.remove(userID);
+			    ^
+  The type of object is: grinder.client.user.User.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:338: error: (required.method.not.called) $$ 4 $$ method run $$ usr $$ grinder.client.user.User $$ regular method exit $$ ( 7151, 7183 ) $$ @MustCall method run may not have been invoked on usr or any of its aliases.
+			usr = userSTRATUS.remove(userID);
+			    ^
+  The type of object is: grinder.client.user.User.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:362: error: (type.argument) $$ 4 $$ E $$ Enumeration $$ @MustCall("run") User $$ @MustCall Object $$ ( 7583, 7587 ) $$ incompatible type argument for type parameter E of Enumeration.
+			Enumeration<User> users = null;
+			            ^
+  found   : @MustCall("run") User
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:379: error: (required.method.not.called) $$ 4 $$ method run $$ usr $$ grinder.client.user.User $$ regular method exit $$ ( 7859, 7896 ) $$ @MustCall method run may not have been invoked on usr or any of its aliases.
+				final User usr = users.nextElement();
+				           ^
+  The type of object is: grinder.client.user.User.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:450: error: (missing.creates.mustcall.for) $$ 3 $$ beginTestRun $$ this $$ lf $$ ( 9085, 9701 ) $$ Method beginTestRun re-assigns the non-final, owning field this.lf, but does not have a corresponding @CreatesMustCallFor annotation.
+	private void beginTestRun() {
+	             ^
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:459: error: (required.method.not.called) $$ 4 $$ method closeLogFile $$ field lf $$ grinder.client.LogFiler $$  Non-final owning field might be overwritten $$ ( 9263, 9272 ) $$ @MustCall method closeLogFile may not have been invoked on field lf or any of its aliases.
+				lf = null;
+				   ^
+  The type of object is: grinder.client.LogFiler.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientConnectionThread.java:22: error: (required.method.not.called) $$ 4 $$ method panic $$ field client $$ grinder.client.Client $$ Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "client", methods = "panic") $$ ( 549, 577 ) $$ @MustCall method panic may not have been invoked on field client or any of its aliases.
+	private final Client client;
+	                     ^
+  The type of object is: grinder.client.Client.
+  Reason for going out of scope: Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "client", methods = "panic")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientConnectionThread.java:55: error: (contracts.postcondition) $$ 3 $$ run $$ no information about this.ois $$ this.ois is @CalledMethods("close") $$ ( 1209, 3932 ) $$ postcondition of run is not satisfied.
+	public void run() {
+	            ^
+  found   : no information about this.ois
+  required: this.ois is @CalledMethods("close")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientConnectionThread.java:55: error: (contracts.postcondition) $$ 3 $$ run $$ no information about this.oos $$ this.oos is @CalledMethods("close") $$ ( 1209, 3932 ) $$ postcondition of run is not satisfied.
+	public void run() {
+	            ^
+  found   : no information about this.oos
+  required: this.oos is @CalledMethods("close")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientConnectionThread.java:55: error: (contracts.postcondition) $$ 3 $$ run $$ this.client is @CalledMethods $$ this.client is @CalledMethods("panic") $$ ( 1209, 3932 ) $$ postcondition of run is not satisfied.
+	public void run() {
+	            ^
+  found   : this.client is @CalledMethods
+  required: this.client is @CalledMethods("panic")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientConnectionThread.java:55: error: (contracts.postcondition) $$ 3 $$ run $$ this.clientSocket is @CalledMethods("getOutputStream") $$ this.clientSocket is @CalledMethods("close") $$ ( 1209, 3932 ) $$ postcondition of run is not satisfied.
+	public void run() {
+	            ^
+  found   : this.clientSocket is @CalledMethods("getOutputStream")
+  required: this.clientSocket is @CalledMethods("close")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientConnectionThread.java:55: error: (missing.creates.mustcall.for) $$ 3 $$ run $$ this $$ ois $$ ( 1209, 3932 ) $$ Method run re-assigns the non-final, owning field this.ois, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void run() {
+	            ^
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientConnectionThread.java:55: error: (missing.creates.mustcall.for) $$ 3 $$ run $$ this $$ oos $$ ( 1209, 3932 ) $$ Method run re-assigns the non-final, owning field this.oos, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void run() {
+	            ^
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientConnectionThread.java:60: error: (required.method.not.called) $$ 4 $$ method close $$ field oos $$ java.io.ObjectOutputStream $$  Non-final owning field might be overwritten $$ ( 1279, 1339 ) $$ @MustCall method close may not have been invoked on field oos or any of its aliases.
+			oos = new ObjectOutputStream(clientSocket.getOutputStream());
+			    ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientConnectionThread.java:63: error: (required.method.not.called) $$ 4 $$ method close $$ field ois $$ java.io.ObjectInputStream $$  Non-final owning field might be overwritten $$ ( 1393, 1451 ) $$ @MustCall method close may not have been invoked on field ois or any of its aliases.
+			ois = new ObjectInputStream(clientSocket.getInputStream());
+			    ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientConnectionThread.java:107: error: (flowexpr.parse.error.postcondition) $$ 2 $$ setTestTicket(TestTicket) $$ Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 2430, 2453 ) $$ error parsing the postcondition expression for setTestTicket(TestTicket)
+						client.setTestTicket(t);
+						                    ^
+  cannot parse the expression Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientConnectionThread.java:112: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to oos.writeLong(totalBytesAvailable) with exception type java.io.IOException $$ ( 2500, 2569 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+						final FileInputStream fis = new FileInputStream(client.getLogFile());
+						                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeLong(totalBytesAvailable) with exception type java.io.IOException
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientConnectionThread.java:205: error: (contracts.postcondition) $$ 3 $$ finalize $$ no information about this.ois $$ this.ois is @CalledMethods("close") $$ ( 4454, 4587 ) $$ postcondition of finalize is not satisfied.
+	protected void finalize() throws Throwable {
+	               ^
+  found   : no information about this.ois
+  required: this.ois is @CalledMethods("close")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientConnectionThread.java:205: error: (contracts.postcondition) $$ 3 $$ finalize $$ no information about this.oos $$ this.oos is @CalledMethods("close") $$ ( 4454, 4587 ) $$ postcondition of finalize is not satisfied.
+	protected void finalize() throws Throwable {
+	               ^
+  found   : no information about this.oos
+  required: this.oos is @CalledMethods("close")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/GrinderThread.java:101: error: (type.argument) $$ 4 $$ E $$ Enumeration $$ @MustCall("run") User $$ @MustCall Object $$ ( 2337, 2341 ) $$ incompatible type argument for type parameter E of Enumeration.
+				Enumeration<User> users = null;
+				            ^
+  found   : @MustCall("run") User
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/GrinderThread.java:118: error: (required.method.not.called) $$ 4 $$ method run $$ usr $$ grinder.client.user.User $$ regular method exit $$ ( 2649, 2686 ) $$ @MustCall method run may not have been invoked on usr or any of its aliases.
+					final User usr = users.nextElement();
+					           ^
+  The type of object is: grinder.client.user.User.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientGUI.java:139: error: (required.method.not.called) $$ 4 $$ method panic $$ new Client(this) $$ grinder.client.Client $$ regular method exit $$ ( 3191, 3207 ) $$ @MustCall method panic may not have been invoked on new Client(this) or any of its aliases.
+		c = new Client(this);
+		    ^
+  The type of object is: grinder.client.Client.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientGUI.java:380: error: (flowexpr.parse.error.postcondition) $$ 2 $$ setTestTicket(TestTicket) $$ Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 9302, 9323 ) $$ error parsing the postcondition expression for setTestTicket(TestTicket)
+		c.setTestTicket(null);
+		               ^
+  cannot parse the expression Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/LogFiler.java:65: error: (contracts.postcondition) $$ 3 $$ closeLogFile $$ no information about this.bw $$ this.bw is @CalledMethods("close") $$ ( 1385, 1623 ) $$ postcondition of closeLogFile is not satisfied.
+	public void closeLogFile() {
+	            ^
+  found   : no information about this.bw
+  required: this.bw is @CalledMethods("close")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/LogFiler.java:117: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ possible exceptional exit due to is.read(bytes, offset, bytes.length - offset) with exception type java.io.IOException $$ ( 2182, 2231 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+		final InputStream is = new FileInputStream(file);
+		                  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to is.read(bytes, offset, bytes.length - offset) with exception type java.io.IOException
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/client/WebSocket.java:99: error: (missing.creates.mustcall.for) $$ 3 $$ connect $$ this $$ in $$ ( 1890, 2444 ) $$ Method connect re-assigns the non-final, owning field this.in, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void connect()
+	            ^
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/client/WebSocket.java:99: error: (missing.creates.mustcall.for) $$ 3 $$ connect $$ this $$ out $$ ( 1890, 2444 ) $$ Method connect re-assigns the non-final, owning field this.out, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void connect()
+	            ^
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/client/WebSocket.java:99: error: (missing.creates.mustcall.for) $$ 3 $$ connect $$ this $$ socket $$ ( 1890, 2444 ) $$ Method connect re-assigns the non-final, owning field this.socket, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void connect()
+	            ^
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/client/WebSocket.java:106: error: (required.method.not.called) $$ 4 $$ method close $$ field socket $$ java.net.Socket $$  Non-final owning field might be overwritten $$ ( 2002, 2033 ) $$ @MustCall method close may not have been invoked on field socket or any of its aliases.
+			socket = new Socket(host, port);
+			       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/client/WebSocket.java:107: error: (required.method.not.called) $$ 4 $$ method close $$ field in $$ java.io.InputStream $$  Non-final owning field might be overwritten $$ ( 2038, 2091 ) $$ @MustCall method close may not have been invoked on field in or any of its aliases.
+			in = new BufferedInputStream(socket.getInputStream());
+			   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/client/WebSocket.java:108: error: (required.method.not.called) $$ 4 $$ method close $$ field out $$ java.io.PrintStream $$  Non-final owning field might be overwritten $$ ( 2096, 2159 ) $$ @MustCall method close may not have been invoked on field out or any of its aliases.
+			out = new PrintStream(socket.getOutputStream(), false, "UTF-8");
+			    ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/client/WebSocket.java:282: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.in $$ this.in is @CalledMethods("close") $$ ( 5634, 6321 ) $$ postcondition of close is not satisfied.
+	public void close()
+	            ^
+  found   : no information about this.in
+  required: this.in is @CalledMethods("close")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/client/WebSocket.java:282: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.out $$ this.out is @CalledMethods("close") $$ ( 5634, 6321 ) $$ postcondition of close is not satisfied.
+	public void close()
+	            ^
+  found   : no information about this.out
+  required: this.out is @CalledMethods("close")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/client/WebSocket.java:282: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.socket $$ this.socket is @CalledMethods("close") $$ ( 5634, 6321 ) $$ postcondition of close is not satisfied.
+	public void close()
+	            ^
+  found   : no information about this.socket
+  required: this.socket is @CalledMethods("close")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/user/Browser.java:64: error: (required.method.not.called) $$ 4 $$ method disconnect $$ field dpc $$ websocket.client.DistripediaClient $$  Non-final owning field might be overwritten $$ ( 1658, 1696 ) $$ @MustCall method disconnect may not have been invoked on field dpc or any of its aliases.
+			dpc = new DistripediaClient(uriWS, LS);
+			    ^
+  The type of object is: websocket.client.DistripediaClient.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/user/Browser.java:201: error: (required.method.not.called) $$ 4 $$ method close $$ url.openStream() $$ java.io.InputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 4391, 4413 ) $$ @MustCall method close may not have been invoked on url.openStream() or any of its aliases.
+					.openStream()));
+					           ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/user/Browser.java:236: error: (contracts.postcondition) $$ 3 $$ close $$ this.dpc is @CalledMethods $$ this.dpc is @CalledMethods("disconnect") $$ ( 4957, 5047 ) $$ postcondition of close is not satisfied.
+	public void close() {
+	            ^
+  found   : this.dpc is @CalledMethods
+  required: this.dpc is @CalledMethods("disconnect")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/ActivityMonitoringServer.java:33: error: (missing.creates.mustcall.for) $$ 3 $$ init $$ this $$ masterSocket $$ ( 549, 725 ) $$ Method init re-assigns the non-final, owning field this.masterSocket, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void init()
+	            ^
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/ActivityMonitoringServer.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ field masterSocket $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 584, 621 ) $$ @MustCall method close may not have been invoked on field masterSocket or any of its aliases.
+			masterSocket = new ServerSocket(PORT);
+			             ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/ActivityMonitoringServer.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ new ActivityWorker(client) $$ websocket.server.ActivityWorker $$ regular method exit $$ ( 1033, 1059 ) $$ @MustCall method close may not have been invoked on new ActivityWorker(client) or any of its aliases.
+					worker = new ActivityWorker(client);
+					         ^
+  The type of object is: websocket.server.ActivityWorker.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/ActivityMonitoringServer.java:85: error: (contracts.postcondition) $$ 3 $$ stop $$ no information about this.masterSocket $$ this.masterSocket is @CalledMethods("close") $$ ( 1510, 1737 ) $$ postcondition of stop is not satisfied.
+	public void stop()
+	            ^
+  found   : no information about this.masterSocket
+  required: this.masterSocket is @CalledMethods("close")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/WebSocket.java:52: error: (contracts.postcondition) $$ 3 $$ close $$ this.client is @CalledMethods $$ this.client is @CalledMethods("close") $$ ( 1211, 1424 ) $$ postcondition of close is not satisfied.
+	protected void close()
+	               ^
+  found   : this.client is @CalledMethods
+  required: this.client is @CalledMethods("close")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/ContextListener.java:46: error: (missing.creates.mustcall.for) $$ 3 $$ contextInitialized $$ this $$ activityServer $$ ( 1105, 1573 ) $$ Method contextInitialized re-assigns the non-final, owning field this.activityServer, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void contextInitialized(ServletContextEvent arg0)
+	            ^
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/ContextListener.java:46: error: (missing.creates.mustcall.for) $$ 3 $$ contextInitialized $$ this $$ distriServer $$ ( 1105, 1573 ) $$ Method contextInitialized re-assigns the non-final, owning field this.distriServer, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void contextInitialized(ServletContextEvent arg0)
+	            ^
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/ContextListener.java:52: error: (required.method.not.called) $$ 4 $$ method stop $$ field distriServer $$ websocket.server.WebSocketServer $$  Non-final owning field might be overwritten $$ ( 1271, 1311 ) $$ @MustCall method stop may not have been invoked on field distriServer or any of its aliases.
+		distriServer = new WebSocketServer(path);
+		             ^
+  The type of object is: websocket.server.WebSocketServer.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/ContextListener.java:56: error: (required.method.not.called) $$ 4 $$ method stop $$ field activityServer $$ websocket.server.ActivityMonitoringServer $$  Non-final owning field might be overwritten $$ ( 1415, 1462 ) $$ @MustCall method stop may not have been invoked on field activityServer or any of its aliases.
+		activityServer = new ActivityMonitoringServer();
+		               ^
+  The type of object is: websocket.server.ActivityMonitoringServer.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/ContextListener.java:64: error: (contracts.postcondition) $$ 3 $$ contextDestroyed $$ no information about this.activityServer $$ this.activityServer is @CalledMethods("stop") $$ ( 1656, 1871 ) $$ postcondition of contextDestroyed is not satisfied.
+	public void contextDestroyed(ServletContextEvent arg0)
+	            ^
+  found   : no information about this.activityServer
+  required: this.activityServer is @CalledMethods("stop")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/ContextListener.java:64: error: (contracts.postcondition) $$ 3 $$ contextDestroyed $$ no information about this.distriServer $$ this.distriServer is @CalledMethods("stop") $$ ( 1656, 1871 ) $$ postcondition of contextDestroyed is not satisfied.
+	public void contextDestroyed(ServletContextEvent arg0)
+	            ^
+  found   : no information about this.distriServer
+  required: this.distriServer is @CalledMethods("stop")
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/WebSocketServer.java:26: error: (type.argument) $$ 4 $$ E $$ List $$ @MustCall("close") DistripediaWorker $$ @MustCall Object $$ ( 869, 886 ) $$ incompatible type argument for type parameter E of List.
+	protected final static ConcurrentHashMap<String, List<DistripediaWorker>> allWorkersWithArticles = new ConcurrentHashMap<String, List<DistripediaWorker>>();
+	                                                      ^
+  found   : @MustCall("close") DistripediaWorker
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/WebSocketServer.java:26: error: (type.argument) $$ 4 $$ E $$ List $$ @MustCall("close") DistripediaWorker $$ @MustCall Object $$ ( 949, 966 ) $$ incompatible type argument for type parameter E of List.
+	protected final static ConcurrentHashMap<String, List<DistripediaWorker>> allWorkersWithArticles = new ConcurrentHashMap<String, List<DistripediaWorker>>();
+	                                                                                                                                      ^
+  found   : @MustCall("close") DistripediaWorker
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/WebSocketServer.java:32: error: (type.argument) $$ 4 $$ E $$ List $$ @MustCall("close") DistripediaWorker $$ @MustCall Object $$ ( 1222, 1239 ) $$ incompatible type argument for type parameter E of List.
+	protected final static ConcurrentHashMap<String, List<DistripediaWorker>> stratusWorkersWithArticles = new ConcurrentHashMap<String, List<DistripediaWorker>>();
+	                                                      ^
+  found   : @MustCall("close") DistripediaWorker
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/WebSocketServer.java:32: error: (type.argument) $$ 4 $$ E $$ List $$ @MustCall("close") DistripediaWorker $$ @MustCall Object $$ ( 1306, 1323 ) $$ incompatible type argument for type parameter E of List.
+	protected final static ConcurrentHashMap<String, List<DistripediaWorker>> stratusWorkersWithArticles = new ConcurrentHashMap<String, List<DistripediaWorker>>();
+	                                                                                                                                          ^
+  found   : @MustCall("close") DistripediaWorker
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/WebSocketServer.java:36: error: (type.argument) $$ 4 $$ V $$ ConcurrentHashMap $$ @MustCall("close") DistripediaWorker $$ @MustCall Object $$ ( 1474, 1491 ) $$ incompatible type argument for type parameter V of ConcurrentHashMap.
+	protected final static ConcurrentHashMap<Integer, DistripediaWorker> reqIdsToWorkers = new ConcurrentHashMap<Integer, DistripediaWorker>();
+	                                                  ^
+  found   : @MustCall("close") DistripediaWorker
+  required: @MustCall Object
+../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/WebSocketServer.java:36: error: (type.argument) $$ 4 $$ V $$ ConcurrentHashMap $$ @MustCall("close") DistripediaWorker $$ @MustCall Object $$ ( 1542, 1559 ) $$ incompatible type argument for type parameter V of ConcurrentHashMap.
+	protected final static ConcurrentHashMap<Integer, DistripediaWorker> reqIdsToWorkers = new ConcurrentHashMap<Integer, DistripediaWorker>();
+	                                                                                                                      ^
+  found   : @MustCall("close") DistripediaWorker
+  required: @MustCall Object
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+100 errors

@@ -1,0 +1,56 @@
+../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/http/HttpSocket.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ new Socket(host, port) $$ java.net.Socket $$ regular method exit $$ ( 744, 766 ) $$ @MustCall method close may not have been invoked on new Socket(host, port) or any of its aliases.
+		this(new Socket(host, port));
+		     ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/Profile.java:352: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(file) $$ java.io.FileReader $$ possible exceptional exit due to in.readLine() with exception type java.io.FileNotFoundException $$ ( 8695, 8715 ) $$ @MustCall method close may not have been invoked on new FileReader(file) or any of its aliases.
+			BufferedReader in = new BufferedReader(new FileReader(file));
+			                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to in.readLine() with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/http/HttpServer.java:93: error: (required.method.not.called) $$ 4 $$ method close $$ sock $$ java.net.Socket $$ regular method exit $$ ( 2435, 2461 ) $$ @MustCall method close may not have been invoked on sock or any of its aliases.
+			Socket sock = getSocket();
+			       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/http/HttpServer.java:124: error: (required.method.not.called) $$ 4 $$ method close $$ new ServerSocket(port) $$ java.net.ServerSocket $$ regular method exit $$ ( 3087, 3109 ) $$ @MustCall method close may not have been invoked on new ServerSocket(port) or any of its aliases.
+		serverskt = new ServerSocket(port);
+		            ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/episodes/managers/UpnpManager.java:104: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(pmsConf) $$ java.io.FileReader $$ possible exceptional exit due to r.readLine() with exception type java.io.FileNotFoundException $$ ( 3365, 3388 ) $$ @MustCall method close may not have been invoked on new FileReader(pmsConf) or any of its aliases.
+                BufferedReader r = new BufferedReader(new FileReader(pmsConf));
+                                                      ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to r.readLine() with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/episodes/managers/FileSystemManager.java:156: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(cfgFile.getCanonicalFile()) $$ java.io.FileInputStream $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 5359, 5406 ) $$ @MustCall method close may not have been invoked on new FileInputStream(cfgFile.getCanonicalFile()) or any of its aliases.
+                                    new FileInputStream(cfgFile.getCanonicalFile())
+                                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/templating/TemplateReader.java:24: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(source) $$ java.io.FileReader $$ regular method exit $$ ( 590, 612 ) $$ @MustCall method close may not have been invoked on new FileReader(source) or any of its aliases.
+			new FileReader(source)
+			^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/database/MysqlDatabase.java:727: error: (required.method.not.called) $$ 4 $$ method close $$ getConnection() $$ java.sql.Connection $$ regular method exit $$ ( 20310, 20325 ) $$ @MustCall method close may not have been invoked on getConnection() or any of its aliases.
+			conn = getConnection();
+			                    ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/FileHandler.java:77: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(theFile) $$ java.io.FileReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.FileNotFoundException $$ ( 1998, 2021 ) $$ @MustCall method close may not have been invoked on new FileReader(theFile) or any of its aliases.
+				BufferedReader reader = new BufferedReader(new FileReader(theFile));
+				                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/FileHandler.java:108: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ regular method exit $$ ( 2645, 2688 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+        InputStream is = new FileInputStream(file);
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/util/CoverHandler.java:140: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ regular method exit $$ ( 3608, 3651 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+        InputStream is = new FileInputStream(file);
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+11 errors

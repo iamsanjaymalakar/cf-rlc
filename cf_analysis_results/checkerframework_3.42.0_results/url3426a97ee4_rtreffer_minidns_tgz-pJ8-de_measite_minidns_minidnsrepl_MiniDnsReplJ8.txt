@@ -1,0 +1,6 @@
+../dataset/june2020_dataset/url3426a97ee4_rtreffer_minidns_tgz-pJ8-de_measite_minidns_minidnsrepl_MiniDnsReplJ8/src/de/measite/minidns/DNSMessageTest.java:62: error: (required.method.not.called) $$ 4 $$ method close $$ inputStream $$ java.io.InputStream $$ possible exceptional exit due to inputStream.read() with exception type java.io.IOException $$ ( 2136, 2223 ) $$ @MustCall method close may not have been invoked on inputStream or any of its aliases.
+        InputStream inputStream =
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to inputStream.read() with exception type java.io.IOException
+1 error

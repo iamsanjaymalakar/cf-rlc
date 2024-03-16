@@ -1,0 +1,78 @@
+../../../../datasets/june2020_dataset/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONArray.java:840: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-92 $$ java.io.Writer $$ regular method exit $$ ( 27518, 27549 ) $$ @MustCall method close may not have been invoked on temp-var-92 or any of its aliases.
+            return this.write(sw, indentFactor, 0).toString();
+                             ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONArray.java:878: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-97 $$ java.io.Writer $$ regular method exit $$ ( 28694, 28794 ) $$ @MustCall method close may not have been invoked on temp-var-97 or any of its aliases.
+                JSONObject.writeValue(writer, this.myArrayList.get(0),
+                                     ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONArray.java:891: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-102 $$ java.io.Writer $$ regular method exit $$ ( 29240, 29347 ) $$ @MustCall method close may not have been invoked on temp-var-102 or any of its aliases.
+                    JSONObject.writeValue(writer, this.myArrayList.get(i),
+                                         ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONObject.java:1194: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-330 $$ java.io.Writer $$ regular method exit $$ ( 39450, 39467 ) $$ @MustCall method close may not have been invoked on temp-var-330 or any of its aliases.
+                return quote(string, sw).toString();
+                            ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONObject.java:1401: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-359 $$ java.io.Writer $$ regular method exit $$ ( 46266, 46296 ) $$ @MustCall method close may not have been invoked on temp-var-359 or any of its aliases.
+            return this.write(w, indentFactor, 0).toString();
+                             ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONObject.java:1534: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-389 $$ java.io.Writer $$ regular method exit $$ ( 51690, 51746 ) $$ @MustCall method close may not have been invoked on temp-var-389 or any of its aliases.
+            ((JSONObject) value).write(writer, indentFactor, indent);
+                                      ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONObject.java:1536: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-390 $$ java.io.Writer $$ regular method exit $$ ( 51809, 51864 ) $$ @MustCall method close may not have been invoked on temp-var-390 or any of its aliases.
+            ((JSONArray) value).write(writer, indentFactor, indent);
+                                     ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONObject.java:1538: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-392 $$ java.io.Writer $$ regular method exit $$ ( 51921, 51984 ) $$ @MustCall method close may not have been invoked on temp-var-392 or any of its aliases.
+            new JSONObject((Map) value).write(writer, indentFactor, indent);
+                                             ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONObject.java:1540: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-394 $$ java.io.Writer $$ regular method exit $$ ( 52048, 52137 ) $$ @MustCall method close may not have been invoked on temp-var-394 or any of its aliases.
+            new JSONArray((Collection) value).write(writer, indentFactor,
+                                                   ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONObject.java:1543: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-397 $$ java.io.Writer $$ regular method exit $$ ( 52200, 52256 ) $$ @MustCall method close may not have been invoked on temp-var-397 or any of its aliases.
+            new JSONArray(value).write(writer, indentFactor, indent);
+                                      ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONObject.java:1557: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-409 $$ java.io.Writer $$ regular method exit $$ ( 52801, 52832 ) $$ @MustCall method close may not have been invoked on temp-var-409 or any of its aliases.
+            quote(value.toString(), writer);
+                 ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONObject.java:1597: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-420 $$ java.io.Writer $$ regular method exit $$ ( 54091, 54150 ) $$ @MustCall method close may not have been invoked on temp-var-420 or any of its aliases.
+                writeValue(writer, this.map.get(key), indentFactor, indent);
+                          ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONObject.java:1615: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-431 $$ java.io.Writer $$ regular method exit $$ ( 54898, 54988 ) $$ @MustCall method close may not have been invoked on temp-var-431 or any of its aliases.
+                    writeValue(writer, this.map.get(key), indentFactor,
+                              ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/ded/model/Diagram.java:534: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2105 $$ java.io.Writer $$ possible exceptional exit due to w.append('\n') with exception type java.io.IOException $$ ( 19191, 19216 ) $$ @MustCall method close may not have been invoked on temp-var-2105 or any of its aliases.
+                serialized.write(w, 2, 0);
+                                ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: possible exceptional exit due to w.append('\n') with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/ded/model/Diagram.java:645: error: (required.method.not.called) $$ 4 $$ method close $$ flat $$ util.FlattenInputStream $$ possible exceptional exit due to flat.readInt() with exception type util.XParse $$ ( 22681, 22734 ) $$ @MustCall method close may not have been invoked on flat or any of its aliases.
+        FlattenInputStream flat = new FlattenInputStream(is);
+                           ^
+  The type of object is: util.FlattenInputStream.
+  Reason for going out of scope: possible exceptional exit due to flat.readInt() with exception type util.XParse
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+15 errors

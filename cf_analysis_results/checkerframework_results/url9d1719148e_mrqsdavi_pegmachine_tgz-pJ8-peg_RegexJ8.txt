@@ -1,0 +1,8 @@
+../../../../datasets/june2020_dataset/url9d1719148e_mrqsdavi_pegmachine_tgz-pJ8-peg_RegexJ8/src/peg/parser.java:209: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-96 $$ java.io.FileReader $$ possible exceptional exit due to parser.parse() with exception type java.lang.Exception $$ ( 10352, 10383 ) $$ @MustCall method close may not have been invoked on temp-var-96 or any of its aliases.
+                        scanner = new AnalizadorLexico( new java.io.FileReader(argv[i]) );
+                                                        ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to parser.parse() with exception type java.lang.Exception
+Note: ../../../../datasets/june2020_dataset/url9d1719148e_mrqsdavi_pegmachine_tgz-pJ8-peg_RegexJ8/src/peg/EstadoMaquina.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error

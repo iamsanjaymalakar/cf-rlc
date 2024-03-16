@@ -1,0 +1,5 @@
+warning: Garbage collection consumed 26% of CPU during the past 60 seconds.
+    max memory = 30542397440
+  total memory = 5239734272
+   free memory = 537103072
+1 warning

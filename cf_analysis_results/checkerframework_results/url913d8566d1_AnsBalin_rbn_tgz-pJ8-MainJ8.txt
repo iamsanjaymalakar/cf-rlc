@@ -1,0 +1,25 @@
+../../../../datasets/june2020_dataset/url913d8566d1_AnsBalin_rbn_tgz-pJ8-MainJ8/src/DataOutput.java:68: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException $$ ( 1326, 1384 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+    FileOutputStream fos = new FileOutputStream(path, append);
+                     ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url913d8566d1_AnsBalin_rbn_tgz-pJ8-MainJ8/src/DataOutput.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(obj) with exception type java.io.IOException $$ ( 1389, 1442 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+    ObjectOutputStream oos = new ObjectOutputStream(fos);
+                       ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(obj) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url913d8566d1_AnsBalin_rbn_tgz-pJ8-MainJ8/src/DataOutput.java:80: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(fis) with exception type java.io.IOException $$ ( 1604, 1652 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+    FileInputStream fis = new FileInputStream(path);
+                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(fis) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url913d8566d1_AnsBalin_rbn_tgz-pJ8-MainJ8/src/DataOutput.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ ois $$ java.io.ObjectInputStream $$ regular method exit $$ ( 1657, 1708 ) $$ @MustCall method close may not have been invoked on ois or any of its aliases.
+    ObjectInputStream ois = new ObjectInputStream(fis);
+                      ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: regular method exit
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: ../../../../datasets/june2020_dataset/url913d8566d1_AnsBalin_rbn_tgz-pJ8-MainJ8/src/Graph.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 errors

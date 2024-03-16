@@ -1,0 +1,110 @@
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/C64Applet.java:331: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-96 $$ java.io.InputStream $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 8898, 8935 ) $$ @MustCall method close may not have been invoked on temp-var-96 or any of its aliases.
+	new LineNumberReader(new InputStreamReader(url.openConnection().getInputStream()));
+	                                                                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/C64Applet.java:566: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-187 $$ java.io.OutputStream $$ possible exceptional exit due to out.writeBytes(data) with exception type java.io.IOException $$ ( 15276, 15308 ) $$ @MustCall method close may not have been invoked on temp-var-187 or any of its aliases.
+	new DataOutputStream(httpConnection.getOutputStream());
+	                                                   ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.writeBytes(data) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/C64Applet.java:571: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ possible exceptional exit due to is.read() with exception type java.io.IOException $$ ( 15384, 15433 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+      InputStream is = httpConnection.getInputStream();
+                  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to is.read() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/CPU.java:237: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-268 $$ java.io.InputStream $$ regular method exit $$ ( 6302, 6346 ) $$ @MustCall method close may not have been invoked on temp-var-268 or any of its aliases.
+    loadROM(loader.getResourceStream("/roms/kernal.c64"), KERNAL_ROM2,
+                                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/CPU.java:239: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-270 $$ java.io.InputStream $$ regular method exit $$ ( 6390, 6433 ) $$ @MustCall method close may not have been invoked on temp-var-270 or any of its aliases.
+    loadROM(loader.getResourceStream("/roms/basic.c64"), BASIC_ROM2, 0x2000);
+                                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/CPU.java:240: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-272 $$ java.io.InputStream $$ regular method exit $$ ( 6468, 6513 ) $$ @MustCall method close may not have been invoked on temp-var-272 or any of its aliases.
+    loadROM(loader.getResourceStream("/roms/chargen.c64"), CHAR_ROM2,
+                                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java:658: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.FileInputStream $$ regular method exit $$ ( 18946, 18997 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+      FileInputStream reader = new FileInputStream(name);
+                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java:669: error: (required.method.not.called) $$ 4 $$ method close $$ s $$ java.io.InputStream $$ regular method exit $$ ( 19274, 19307 ) $$ @MustCall method close may not have been invoked on s or any of its aliases.
+      InputStream s = url.openStream();
+                  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java:680: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-621 $$ java.io.FileInputStream $$ regular method exit $$ ( 19589, 19614 ) $$ @MustCall method close may not have been invoked on temp-var-621 or any of its aliases.
+      return readPGM(new FileInputStream(file), address);
+                     ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java:691: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.InputStream $$ regular method exit $$ ( 19905, 19964 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+      InputStream reader = url.openConnection().getInputStream();
+                  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java:703: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.FileInputStream $$ regular method exit $$ ( 20277, 20328 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+      FileInputStream reader = new FileInputStream(name);
+                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java:715: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.InputStream $$ regular method exit $$ ( 20649, 20708 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+      InputStream reader = url.openConnection().getInputStream();
+                  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java:728: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.FileInputStream $$ regular method exit $$ ( 21025, 21076 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+      FileInputStream reader = new FileInputStream(name);
+                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java:746: error: (required.method.not.called) $$ 4 $$ method close $$ fio $$ java.io.FileOutputStream $$ regular method exit $$ ( 21540, 21593 ) $$ @MustCall method close may not have been invoked on fio or any of its aliases.
+        FileOutputStream fio = new FileOutputStream(args[2]);
+                         ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C1541Emu.java:137: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1338 $$ java.io.InputStream $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 3527, 3572 ) $$ @MustCall method close may not have been invoked on temp-var-1338 or any of its aliases.
+						 getInputStream()));
+						               ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C1541Emu.java:165: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1354 $$ java.io.InputStream $$ regular method exit $$ ( 4385, 4422 ) $$ @MustCall method close may not have been invoked on temp-var-1354 or any of its aliases.
+      loadROM(new DataInputStream(url.openConnection().getInputStream()),
+                                                                     ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/Loader.java:19: error: (required.method.not.called) $$ 4 $$ method close $$ inStr $$ java.io.InputStream $$ regular method exit $$ ( 353, 395 ) $$ @MustCall method close may not have been invoked on inStr or any of its aliases.
+    InputStream inStr = getResourceStream(rs);
+                ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/c64utils/AutoStore.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ possible exceptional exit due to is.read() with exception type java.io.IOException $$ ( 1835, 1884 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+      InputStream is = httpConnection.getInputStream();
+                  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to is.read() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/c64utils/IPPacket.java:128: error: (required.method.not.called) $$ 4 $$ method close $$ fs $$ java.io.FileInputStream $$ possible exceptional exit due to p.readIPPacket(fs) with exception type java.io.IOException $$ ( 2639, 2692 ) $$ @MustCall method close may not have been invoked on fs or any of its aliases.
+    FileInputStream fs = new FileInputStream("test.txt");
+                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to p.readIPPacket(fs) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/c64utils/Assembler.java:346: error: (required.method.not.called) $$ 4 $$ method close $$ fs $$ java.io.InputStream $$ regular method exit $$ ( 9230, 9279 ) $$ @MustCall method close may not have been invoked on fs or any of its aliases.
+      InputStream fs = openBinary(workingDir + binary);
+                  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/C64Test.java:362: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2964 $$ java.io.FileOutputStream $$ possible exceptional exit due to reader.writeDisk(new FileOutputStream(filename)) with exception type java.io.IOException $$ ( 10521, 10551 ) $$ @MustCall method close may not have been invoked on temp-var-2964 or any of its aliases.
+      reader.writeDisk(new FileOutputStream(filename));
+                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to reader.writeDisk(new FileOutputStream(filename)) with exception type java.io.IOException
+Note: ../../../../datasets/june2020_dataset/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/C64Test.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+21 errors

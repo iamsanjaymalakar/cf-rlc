@@ -1,0 +1,160 @@
+WARNING: No callers found for method with resource return:net.jcores.jre.cores.CoreZipInputStream.get(Ljava/lang/String;)Ljava/io/InputStream;
+27157
+4088
+
+SOURCE LEVEL FIXES
+
+1] ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreFile.java; Line number 356
+vim +356 ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreFile.java
+
++++ Add following code below line: 364 (net/jcores/jre/cores/CoreFile.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 356
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreZipInputStream.java; Line number 182
+vim +182 ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreZipInputStream.java
+
++++ NOTE: Resource escapes via return statement and needs to be closed in the callers of get
++++ Nothing to be done. No callers found for method with resource return
+--------------------------------------------
+7] ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/sandbox/SimpleUnzip.java; Line number 65
+vim +65 ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/sandbox/SimpleUnzip.java
+
++++ Add following code above line:65 (sandbox/SimpleUnzip.java)
+try{
++++ Add following code after line:65 (sandbox/SimpleUnzip.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 65
+
+--------------------------------------------
+8] ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/sandbox/SimpleUnzip.java; Line number 66
+vim +66 ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/sandbox/SimpleUnzip.java
+
++++ Add following code above line:66 (sandbox/SimpleUnzip.java)
+try{
++++ Add following code after line:66 (sandbox/SimpleUnzip.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 66
+
+--------------------------------------------
+9] ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/sandbox/SimpleUnzip.java; Line number 123
+vim +123 ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/sandbox/SimpleUnzip.java
+
++++ Add following code above line:123 (sandbox/SimpleUnzip.java)
+try{
++++ Add following code after line:130 (sandbox/SimpleUnzip.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 123
+
++++ Delete Line number 131 (sandbox/SimpleUnzip.java)
+
+--------------------------------------------
+10] ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/extensions/serialization/CoreSerializer.java; Line number 67
+vim +67 ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/extensions/serialization/CoreSerializer.java
+
++++ Add following code below line: 71 (net/jcores/extensions/serialization/CoreSerializer.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 67
+
+--------------------------------------------
+11] ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/script/util/console/JCoresConsole.java; Line number 99
+vim +99 ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/script/util/console/JCoresConsole.java
+
++++ Add following code above line:99 (net/jcores/script/util/console/JCoresConsole.java)
+try{
++++ Add following code after line:117 (net/jcores/script/util/console/JCoresConsole.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 99
+
+--------------------------------------------
+12] ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Streams.java; Line number 105
+vim +105 ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Streams.java
+
++++ Add following code above line:105 (net/jcores/jre/utils/internal/Streams.java)
+try{
++++ Add following code after line:112 (net/jcores/jre/utils/internal/Streams.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 105
+
++++ Delete Line number 113 (net/jcores/jre/utils/internal/Streams.java)
+
+--------------------------------------------
+13] ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Files.java; Line number 207
+vim +207 ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Files.java
+
++++ Add following code below line: 250 (net/jcores/jre/utils/internal/Files.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 207
+
++++ Delete Line number 243 (net/jcores/jre/utils/internal/Files.java)
+
++++ Delete Line number 245 (net/jcores/jre/utils/internal/Files.java)
+
+--------------------------------------------
+14] ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Files.java; Line number 226
+vim +226 ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Files.java
+
++++ Add following code above line:226 (net/jcores/jre/utils/internal/Files.java)
+try{
++++ Add following code after line:230 (net/jcores/jre/utils/internal/Files.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 226
+
++++ Delete Line number 231 (net/jcores/jre/utils/internal/Files.java)
+
+--------------------------------------------
+15] ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Files.java; Line number 267
+vim +267 ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Files.java
+
++++ Add following code below line: 315 (net/jcores/jre/utils/internal/Files.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 267
+
++++ Delete Line number 308 (net/jcores/jre/utils/internal/Files.java)
+
++++ Delete Line number 310 (net/jcores/jre/utils/internal/Files.java)
+
+--------------------------------------------
+16] ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Files.java; Line number 291
+vim +291 ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Files.java
+
++++ Add following code below line: 301 (net/jcores/jre/utils/internal/Files.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 291
+
++++ Delete Line number 296 (net/jcores/jre/utils/internal/Files.java)
+
+--------------------------------------------
+17] ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Sound.java; Line number 97
+vim +97 ../../../dataset/june2020_dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Sound.java
+
++++ Add following code below line: 101 (net/jcores/jre/utils/internal/Sound.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 97
+
+--------------------------------------------

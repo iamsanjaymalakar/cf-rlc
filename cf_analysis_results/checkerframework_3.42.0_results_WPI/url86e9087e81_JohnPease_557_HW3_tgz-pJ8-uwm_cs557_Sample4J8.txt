@@ -1,0 +1,23 @@
+../dataset/june2020_dataset/url86e9087e81_JohnPease_557_HW3_tgz-pJ8-uwm_cs557_Sample4J8/src/uwm_cs557/BPlusTree.java:102: error: (vector.copyinto) $$ 2 $$ /*INFERENCE FAILED for:*/ ? extends @MustCall Object $$ @MustCall BPlusTreeNode $$ ( 3422, 3426 ) $$ incompatible component type in Vector.copyinto.
+    vPath.copyInto(path);
+                   ^
+  found   : /*INFERENCE FAILED for:*/ ? extends @MustCall Object
+  required: @MustCall BPlusTreeNode
+../dataset/june2020_dataset/url86e9087e81_JohnPease_557_HW3_tgz-pJ8-uwm_cs557_Sample4J8/src/uwm_cs557/BPlusTree.java:102: error: (vector.copyinto) $$ 2 $$ /*INFERENCE FAILED for:*/ ? extends @CalledMethods Object $$ @CalledMethods BPlusTreeNode $$ ( 3422, 3426 ) $$ incompatible component type in Vector.copyinto.
+    vPath.copyInto(path);
+                   ^
+  found   : /*INFERENCE FAILED for:*/ ? extends @CalledMethods Object
+  required: @CalledMethods BPlusTreeNode
+../dataset/june2020_dataset/url86e9087e81_JohnPease_557_HW3_tgz-pJ8-uwm_cs557_Sample4J8/src/uwm_cs557/MiniDB.java:71: error: (required.method.not.called) $$ 4 $$ method close $$ fin $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(fin) with exception type java.io.IOException $$ ( 1863, 1919 ) $$ @MustCall method close may not have been invoked on fin or any of its aliases.
+      FileInputStream fin = new FileInputStream(osFilename());
+                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(fin) with exception type java.io.IOException
+../dataset/june2020_dataset/url86e9087e81_JohnPease_557_HW3_tgz-pJ8-uwm_cs557_Sample4J8/src/uwm_cs557/MiniDB.java:182: error: (required.method.not.called) $$ 4 $$ method close $$ fout $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(fout) with exception type java.io.IOException $$ ( 5056, 5115 ) $$ @MustCall method close may not have been invoked on fout or any of its aliases.
+      FileOutputStream fout = new FileOutputStream(osFilename());
+                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(fout) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 errors

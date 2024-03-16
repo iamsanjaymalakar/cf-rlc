@@ -1,0 +1,186 @@
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/TCPServerLoop.java:22: error: (reset.not.owning) $$ 2 $$ bind $$ ssc.socket() $$ ( 571, 592 ) $$ Calling method bind resets the must-call obligations of the expression ssc.socket(), which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+      ssc.socket().bind(sa);
+                       ^
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/TCPClientLoop.java:23: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ field dnsLoop $$ event.DNSLoop $$ Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "dnsLoop", methods = "stopLoop"), @EnsuresCalledMethodsOnException(value = "dnsLoop", methods = "stopLoop") $$ ( 465, 489 ) $$ @MustCall method stopLoop may not have been invoked on field dnsLoop or any of its aliases.
+  private DNSLoop dnsLoop;  // quick and dirty hack to keep DNS Queries form blocking in
+                  ^
+  The type of object is: event.DNSLoop.
+  Reason for going out of scope: Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "dnsLoop", methods = "stopLoop"), @EnsuresCalledMethodsOnException(value = "dnsLoop", methods = "stopLoop")
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/TCPClientLoop.java:20: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ field dnsLoop $$ event.DNSLoop $$  Non-final owning field might be overwritten $$ ( 426, 454 ) $$ @MustCall method stopLoop may not have been invoked on field dnsLoop or any of its aliases.
+    this.dnsLoop = new DNSLoop();
+                 ^
+  The type of object is: event.DNSLoop.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/TCPClientLoop.java:33: error: (contracts.postcondition) $$ 3 $$ stopLoop $$ no information about this.selector $$ this.selector is @CalledMethods("close") $$ ( 868, 1445 ) $$ postcondition of stopLoop is not satisfied.
+  public void stopLoop() {
+              ^
+  found   : no information about this.selector
+  required: this.selector is @CalledMethods("close")
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/TCPClientLoop.java:43: error: (flowexpr.parse.error.postcondition) $$ 2 $$ _stopLoop() $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 1353, 1383 ) $$ error parsing the postcondition expression for _stopLoop()
+          TCPClientLoop.this._stopLoop();
+                                      ^
+  cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/TCPClientLoop.java:48: error: (flowexpr.parse.error.postcondition) $$ 2 $$ _stopLoop() $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 1429, 1440 ) $$ error parsing the postcondition expression for _stopLoop()
+    _stopLoop();
+             ^
+  cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/TCPClientLoop.java:50: error: (contracts.postcondition) $$ 3 $$ _stopLoop $$ no information about this.dnsLoop $$ this.dnsLoop is @CalledMethods("stopLoop") $$ ( 1448, 1586 ) $$ postcondition of _stopLoop is not satisfied.
+  private void _stopLoop() {
+               ^
+  found   : no information about this.dnsLoop
+  required: this.dnsLoop is @CalledMethods("stopLoop")
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/TCPClientLoop.java:50: error: (flowexpr.parse.error) $$ 1 $$ 'this.super' in the postcondition EnsuresCalledMethods on the declaration of method '_stopLoop': Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 1448, 1586 ) $$ cannot parse the expression 'this.super' in the postcondition EnsuresCalledMethods on the declaration of method '_stopLoop': Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+  private void _stopLoop() {
+               ^
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/TCPClientLoop.java:79: error: (required.method.not.called) $$ 4 $$ method close $$ sc $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 2361, 2407 ) $$ @MustCall method close may not have been invoked on sc or any of its aliases.
+        final SocketChannel sc = SocketChannel.open();
+                            ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/TCPClientLoop.java:501: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ loop $$ event.TCPClientLoop $$ regular method exit $$ ( 13792, 13833 ) $$ @MustCall method stopLoop may not have been invoked on loop or any of its aliases.
+    TCPClientLoop loop = new TCPClientLoop();
+                  ^
+  The type of object is: event.TCPClientLoop.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/TimeoutLoop.java:248: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ loop $$ event.TimeoutLoop $$ possible exceptional exit due to Thread.sleep(1000) with exception type java.lang.InterruptedException $$ ( 5887, 5924 ) $$ @MustCall method stopLoop may not have been invoked on loop or any of its aliases.
+    TimeoutLoop loop = new TimeoutLoop();
+                ^
+  The type of object is: event.TimeoutLoop.
+  Reason for going out of scope: possible exceptional exit due to Thread.sleep(1000) with exception type java.lang.InterruptedException
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/Loop.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ field selector $$ java.nio.channels.Selector $$  Non-final owning field might be overwritten $$ ( 1062, 1120 ) $$ @MustCall method close may not have been invoked on field selector or any of its aliases.
+      this.selector = SelectorProvider.provider().openSelector();
+                    ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/Loop.java:106: error: (contracts.postcondition) $$ 3 $$ stopLoop $$ no information about this.selector $$ this.selector is @CalledMethods("close") $$ ( 2673, 2946 ) $$ postcondition of stopLoop is not satisfied.
+  public void stopLoop () {
+              ^
+  found   : no information about this.selector
+  required: this.selector is @CalledMethods("close")
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/EchoTest.java:20: error: (required.method.not.called) $$ 4 $$ method onData $$ new EchoTest.Client() $$ event.EchoTest.Client $$ regular method exit $$ ( 364, 385 ) $$ @MustCall method onData may not have been invoked on new EchoTest.Client() or any of its aliases.
+    setClientServer(new EchoTest.Client(), new EchoTest.Server());
+                    ^
+  The type of object is: event.EchoTest.Client.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/EchoTest.java:95: error: (flowexpr.parse.error) $$ 1 $$ 'this.this' in the postcondition EnsuresCalledMethods on the declaration of method 'onData': Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 2410, 2914 ) $$ cannot parse the expression 'this.this' in the postcondition EnsuresCalledMethods on the declaration of method 'onData': Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+    public void onData(TCPClientLoop l,  SocketChannel sc, ByteBuffer buf) {
+                ^
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/EchoTest.java:95: error: (flowexpr.parse.error) $$ 1 $$ Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 2410, 2914 ) $$ cannot parse the expression Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+    public void onData(TCPClientLoop l,  SocketChannel sc, ByteBuffer buf) {
+                ^
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/EchoTest.java:148: error: (required.method.not.called) $$ 4 $$ method done $$ test $$ event.EchoTest $$ regular method exit $$ ( 3738, 3769 ) $$ @MustCall method done may not have been invoked on test or any of its aliases.
+    EchoTest test = new EchoTest();
+             ^
+  The type of object is: event.EchoTest.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/stress/TimeoutStressTest.java:12: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ field loop $$ event.TimeoutLoop $$  The enclosing element event.stress.TimeoutStressTest has an empty @MustCall annotation $$ ( 216, 256 ) $$ @MustCall method stopLoop may not have been invoked on field loop or any of its aliases.
+  TimeoutLoop   loop  = new TimeoutLoop();
+                ^
+  The type of object is: event.TimeoutLoop.
+  Reason for going out of scope:  The enclosing element event.stress.TimeoutStressTest has an empty @MustCall annotation
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/stress/TimeoutStressTest.java:11: error: (type.argument) $$ 4 $$ E $$ Queue $$ @MustCall TimeoutStressTest.@MustCall("go") Worker $$ @MustCall Object $$ ( 172, 178 ) $$ incompatible type argument for type parameter E of Queue.
+  Queue<Worker> queue = new LinkedList<Worker>();
+        ^
+  found   : @MustCall TimeoutStressTest.@MustCall("go") Worker
+  required: @MustCall Object
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/stress/TimeoutStressTest.java:11: error: (type.argument) $$ 4 $$ E $$ LinkedList $$ @MustCall TimeoutStressTest.@MustCall("go") Worker $$ @MustCall Object $$ ( 203, 209 ) $$ incompatible type argument for type parameter E of LinkedList.
+  Queue<Worker> queue = new LinkedList<Worker>();
+                                       ^
+  found   : @MustCall TimeoutStressTest.@MustCall("go") Worker
+  required: @MustCall Object
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/stress/TimeoutStressTest.java:47: error: (required.method.not.called) $$ 4 $$ method go $$ w $$ event.stress.TimeoutStressTest.Worker $$ regular method exit $$ ( 1034, 1057 ) $$ @MustCall method go may not have been invoked on w or any of its aliases.
+        Worker w = getWorker();
+               ^
+  The type of object is: event.stress.TimeoutStressTest.Worker.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/stress/TimeoutStressTest.java:100: error: (contracts.postcondition) $$ 3 $$ go $$ no information about this.loop $$ this.loop is @CalledMethods("stopLoop") $$ ( 1990, 2355 ) $$ postcondition of go is not satisfied.
+    public void go (TimeoutLoop loop) {
+                ^
+  found   : no information about this.loop
+  required: this.loop is @CalledMethods("stopLoop")
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/CancelTimeoutTest.java:10: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ loop $$ event.TimeoutLoop $$ regular method exit $$ ( 174, 217 ) $$ @MustCall method stopLoop may not have been invoked on loop or any of its aliases.
+    final TimeoutLoop loop = new TimeoutLoop();
+                      ^
+  The type of object is: event.TimeoutLoop.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/CancelTimeoutTest.java:58: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ loop $$ event.TimeoutLoop $$ regular method exit $$ ( 1345, 1388 ) $$ @MustCall method stopLoop may not have been invoked on loop or any of its aliases.
+    final TimeoutLoop loop = new TimeoutLoop();
+                      ^
+  The type of object is: event.TimeoutLoop.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/CancelTimeoutTest.java:84: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ loop $$ event.TimeoutLoop $$ regular method exit $$ ( 1970, 2013 ) $$ @MustCall method stopLoop may not have been invoked on loop or any of its aliases.
+    final TimeoutLoop loop = new TimeoutLoop();
+                      ^
+  The type of object is: event.TimeoutLoop.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/OnWriteTest.java:31: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ client_loop $$ event.TCPClientLoop $$ regular method exit $$ ( 631, 685 ) $$ @MustCall method stopLoop may not have been invoked on client_loop or any of its aliases.
+    final TCPClientLoop client_loop = new TCPClientLoop();
+                        ^
+  The type of object is: event.TCPClientLoop.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/OnWriteTest.java:62: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ client_loop $$ event.TCPClientLoop $$ regular method exit $$ ( 1677, 1731 ) $$ @MustCall method stopLoop may not have been invoked on client_loop or any of its aliases.
+    final TCPClientLoop client_loop = new TCPClientLoop();
+                        ^
+  The type of object is: event.TCPClientLoop.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/OnWriteTest.java:102: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ clientLoop $$ event.TCPClientLoop $$ regular method exit $$ ( 3018, 3071 ) $$ @MustCall method stopLoop may not have been invoked on clientLoop or any of its aliases.
+    final TCPClientLoop clientLoop = new TCPClientLoop();
+                        ^
+  The type of object is: event.TCPClientLoop.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/OnWriteTest.java:122: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ server_loop $$ event.TCPServerLoop $$ regular method exit $$ ( 3678, 3732 ) $$ @MustCall method stopLoop may not have been invoked on server_loop or any of its aliases.
+    final TCPServerLoop server_loop = new TCPServerLoop();
+                        ^
+  The type of object is: event.TCPServerLoop.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/CloseSemanticsTest.java:18: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ client_loop $$ event.TCPClientLoop $$ regular method exit $$ ( 297, 351 ) $$ @MustCall method stopLoop may not have been invoked on client_loop or any of its aliases.
+    final TCPClientLoop client_loop = new TCPClientLoop();
+                        ^
+  The type of object is: event.TCPClientLoop.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/CloseSemanticsTest.java:51: error: (contracts.postcondition) $$ 3 $$ onClose $$ event.CloseSemanticsTest.server_loop is @CalledMethods $$ event.CloseSemanticsTest.server_loop is @CalledMethods("stopLoop") $$ ( 1206, 1352 ) $$ postcondition of onClose is not satisfied.
+      public void onClose (TCPClientLoop l, SocketChannel c) {
+                  ^
+  found   : event.CloseSemanticsTest.server_loop is @CalledMethods
+  required: event.CloseSemanticsTest.server_loop is @CalledMethods("stopLoop")
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/CloseSemanticsTest.java:66: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ client_loop $$ event.TCPClientLoop $$ regular method exit $$ ( 1603, 1657 ) $$ @MustCall method stopLoop may not have been invoked on client_loop or any of its aliases.
+    final TCPClientLoop client_loop = new TCPClientLoop();
+                        ^
+  The type of object is: event.TCPClientLoop.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/CloseSemanticsTest.java:90: error: (contracts.postcondition) $$ 3 $$ onClose $$ event.CloseSemanticsTest.server_loop is @CalledMethods $$ event.CloseSemanticsTest.server_loop is @CalledMethods("stopLoop") $$ ( 2324, 2484 ) $$ postcondition of onClose is not satisfied.
+      public void onClose (TCPClientLoop l, SocketChannel c) {
+                  ^
+  found   : event.CloseSemanticsTest.server_loop is @CalledMethods
+  required: event.CloseSemanticsTest.server_loop is @CalledMethods("stopLoop")
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/CloseSemanticsTest.java:112: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ client_loop $$ event.TCPClientLoop $$ regular method exit $$ ( 2881, 2935 ) $$ @MustCall method stopLoop may not have been invoked on client_loop or any of its aliases.
+    final TCPClientLoop client_loop = new TCPClientLoop();
+                        ^
+  The type of object is: event.TCPClientLoop.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/CloseSemanticsTest.java:137: error: (contracts.postcondition) $$ 3 $$ onClose $$ event.CloseSemanticsTest.server_loop is @CalledMethods $$ event.CloseSemanticsTest.server_loop is @CalledMethods("stopLoop") $$ ( 3655, 3807 ) $$ postcondition of onClose is not satisfied.
+      public void onClose (TCPClientLoop l, SocketChannel c) {
+                  ^
+  found   : event.CloseSemanticsTest.server_loop is @CalledMethods
+  required: event.CloseSemanticsTest.server_loop is @CalledMethods("stopLoop")
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/CloseSemanticsTest.java:188: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ client_loop $$ event.TCPClientLoop $$ regular method exit $$ ( 5237, 5291 ) $$ @MustCall method stopLoop may not have been invoked on client_loop or any of its aliases.
+    final TCPClientLoop client_loop = new TCPClientLoop();
+                        ^
+  The type of object is: event.TCPClientLoop.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/Speed.java:19: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ loop $$ event.TCPClientLoop $$ regular method exit $$ ( 312, 353 ) $$ @MustCall method stopLoop may not have been invoked on loop or any of its aliases.
+    TCPClientLoop loop = new TCPClientLoop();
+                  ^
+  The type of object is: event.TCPClientLoop.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/Speed.java:27: error: (required.method.not.called) $$ 4 $$ method close $$ s $$ java.net.Socket $$ possible exceptional exit due to s.getOutputStream() with exception type java.io.IOException $$ ( 516, 557 ) $$ @MustCall method close may not have been invoked on s or any of its aliases.
+      Socket s = new Socket("localhost", 4321);
+             ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to s.getOutputStream() with exception type java.io.IOException
+../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/Speed.java:44: error: (required.method.not.called) $$ 4 $$ method stopLoop $$ loop $$ event.TCPServerLoop $$ regular method exit $$ ( 877, 918 ) $$ @MustCall method stopLoop may not have been invoked on loop or any of its aliases.
+    TCPServerLoop loop = new TCPServerLoop();
+                  ^
+  The type of object is: event.TCPServerLoop.
+  Reason for going out of scope: regular method exit
+39 errors

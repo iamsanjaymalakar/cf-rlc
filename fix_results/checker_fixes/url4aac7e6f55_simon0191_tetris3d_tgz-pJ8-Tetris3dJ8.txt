@@ -1,0 +1,139 @@
+21817
+1035
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/TargaImage.java; Line number 64
+vim +64 ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/TargaImage.java
+
++++ Add following code above line:64 (vsdk/toolkit/io/image/TargaImage.java)
+try{
++++ Add following code after line:211 (vsdk/toolkit/io/image/TargaImage.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 64
+
++++ Delete Line number 212 (vsdk/toolkit/io/image/TargaImage.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 96
+vim +96 ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 106 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 96
+
++++ Delete Line number 99 (vsdk/toolkit/io/image/ImagePersistence.java)
+
++++ Delete Line number 100 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 177
+vim +177 ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 187 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 177
+
++++ Delete Line number 180 (vsdk/toolkit/io/image/ImagePersistence.java)
+
++++ Delete Line number 181 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 199
+vim +199 ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 276 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 199
+
++++ Delete Line number 267 (vsdk/toolkit/io/image/ImagePersistence.java)
+
++++ Delete Line number 268 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 309
+vim +309 ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 317 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 309
+
++++ Delete Line number 313 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 359
+vim +359 ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 367 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 359
+
++++ Delete Line number 363 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+6] ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 435
+vim +435 ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 448 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 435
+
++++ Delete Line number 444 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+7] ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 462
+vim +462 ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 497 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 462
+
++++ Delete Line number 492 (vsdk/toolkit/io/image/ImagePersistence.java)
+
++++ Delete Line number 493 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+8] ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 511
+vim +511 ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 557 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 511
+
++++ Delete Line number 552 (vsdk/toolkit/io/image/ImagePersistence.java)
+
++++ Delete Line number 553 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+9] ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 571
+vim +571 ../../../dataset/june2020_dataset/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 602 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 571
+
++++ Delete Line number 597 (vsdk/toolkit/io/image/ImagePersistence.java)
+
++++ Delete Line number 598 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------

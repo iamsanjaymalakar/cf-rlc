@@ -1,0 +1,31 @@
+../../../../datasets/june2020_dataset/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/tffsr/Tffsr.java:144: error: (required.method.not.called) $$ 4 $$ method close $$ s $$ java.io.ObjectInputStream $$ regular method exit $$ ( 4142, 4194 ) $$ @MustCall method close may not have been invoked on s or any of its aliases.
+    ObjectInputStream s = new ObjectInputStream(stream);
+                      ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/tffsr/Tffsr.java:166: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1015 $$ java.io.InputStream $$ possible exceptional exit due to load(url.openStream()) with exception type java.io.IOException $$ ( 5036, 5052 ) $$ @MustCall method close may not have been invoked on temp-var-1015 or any of its aliases.
+    return load(url.openStream());
+                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to load(url.openStream()) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/tffsr/Tffsr.java:857: error: (required.method.not.called) $$ 4 $$ method close $$ s $$ java.io.ObjectOutputStream $$ possible exceptional exit due to s.writeObject(this) with exception type java.io.IOException $$ ( 24341, 24395 ) $$ @MustCall method close may not have been invoked on s or any of its aliases.
+    ObjectOutputStream s = new ObjectOutputStream(stream);
+                       ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to s.writeObject(this) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/test/old/ObjectMeter.java:26: error: (required.method.not.called) $$ 4 $$ method close $$ oos $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.writeObject(object) with exception type java.io.IOException $$ ( 686, 740 ) $$ @MustCall method close may not have been invoked on oos or any of its aliases.
+      ObjectOutputStream oos = new ObjectOutputStream(baos);
+                         ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeObject(object) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/utils/Utils.java:58: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-4918 $$ java.io.FileWriter $$ possible exceptional exit due to out.write(dot) with exception type java.io.IOException $$ ( 1586, 1610 ) $$ @MustCall method close may not have been invoked on temp-var-4918 or any of its aliases.
+	  BufferedWriter out = new BufferedWriter(new FileWriter(filename));
+	                                          ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(dot) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/utils/Utils.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-4923 $$ java.io.FileWriter $$ possible exceptional exit due to out.write(tfs.toString() + "\n") with exception type java.io.IOException $$ ( 1851, 1875 ) $$ @MustCall method close may not have been invoked on temp-var-4923 or any of its aliases.
+	  BufferedWriter out = new BufferedWriter(new FileWriter(filename));
+	                                          ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(tfs.toString() + "\n") with exception type java.io.IOException
+6 errors

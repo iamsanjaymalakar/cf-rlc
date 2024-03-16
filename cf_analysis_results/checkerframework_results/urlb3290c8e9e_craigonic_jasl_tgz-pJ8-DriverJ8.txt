@@ -1,0 +1,21 @@
+../../../../datasets/june2020_dataset/urlb3290c8e9e_craigonic_jasl_tgz-pJ8-DriverJ8/src/jasl/utilities/Serialization.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ objectOutputStream $$ java.io.ObjectOutputStream $$ possible exceptional exit due to objectOutputStream.writeObject(object) with exception type java.io.IOException $$ ( 2451, 2550 ) $$ @MustCall method close may not have been invoked on objectOutputStream or any of its aliases.
+			ObjectOutputStream objectOutputStream =
+			                   ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to objectOutputStream.writeObject(object) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlb3290c8e9e_craigonic_jasl_tgz-pJ8-DriverJ8/src/jasl/utilities/Serialization.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-293 $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(filename)) with exception type java.io.IOException $$ ( 2518, 2548 ) $$ @MustCall method close may not have been invoked on temp-var-293 or any of its aliases.
+				new ObjectOutputStream(new FileOutputStream(filename));
+				                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(filename)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlb3290c8e9e_craigonic_jasl_tgz-pJ8-DriverJ8/src/jasl/utilities/Serialization.java:122: error: (required.method.not.called) $$ 4 $$ method close $$ objectInputStream $$ java.io.ObjectInputStream $$ possible exceptional exit due to objectInputStream.readObject() with exception type java.io.IOException $$ ( 4017, 4112 ) $$ @MustCall method close may not have been invoked on objectInputStream or any of its aliases.
+			ObjectInputStream objectInputStream =
+			                  ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: possible exceptional exit due to objectInputStream.readObject() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlb3290c8e9e_craigonic_jasl_tgz-pJ8-DriverJ8/src/jasl/utilities/Serialization.java:123: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-303 $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(new FileInputStream(filename)) with exception type java.io.IOException $$ ( 4081, 4110 ) $$ @MustCall method close may not have been invoked on temp-var-303 or any of its aliases.
+				new ObjectInputStream(new FileInputStream(filename));
+				                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(new FileInputStream(filename)) with exception type java.io.IOException
+4 errors

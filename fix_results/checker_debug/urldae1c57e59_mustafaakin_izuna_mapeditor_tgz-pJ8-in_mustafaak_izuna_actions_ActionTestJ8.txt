@@ -1,0 +1,3 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^in/mustafaak/izuna/Shell.java^34^in.mustafaak.izuna.Shell.StreamWave(Lin/mustafaak/izuna/meta/WaveInfo;)V^3 = new <Application,Ljava/net/Socket>@0^NULL^INVOKE,^false^false^Try-catch Fix;
+1^in/mustafaak/izuna/actions/ActionTest.java^66^in.mustafaak.izuna.actions.ActionTest.streamWave(Lin/mustafaak/izuna/meta/WaveInfo;)V^3 = new <Application,Ljava/net/Socket>@0^NULL^INVOKE,^false^false^Try-catch Fix;

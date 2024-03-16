@@ -1,0 +1,65 @@
+17057
+2961
+
+SOURCE LEVEL FIXES
+
+4] ../../../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/Profile.java; Line number 352
+vim +352 ../../../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/Profile.java
+
++++ Add following code below line: 366 (stv6/Profile.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 352
+
+--------------------------------------------
+6] ../../../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/episodes/managers/UpnpManager.java; Line number 104
+vim +104 ../../../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/episodes/managers/UpnpManager.java
+
++++ Add following code below line: 124 (stv6/episodes/managers/UpnpManager.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 104
+
+--------------------------------------------
+8] ../../../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/FileHandler.java; Line number 77
+vim +77 ../../../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/FileHandler.java
+
++++ Add following code below line: 95 (stv6/handlers/FileHandler.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 77
+
++++ Delete Line number 84 (stv6/handlers/FileHandler.java)
+
+--------------------------------------------
+9] ../../../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/FileHandler.java; Line number 108
+vim +108 ../../../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/FileHandler.java
+
++++ Add following code above line:108 (stv6/handlers/FileHandler.java)
+try{
++++ Add following code after line:132 (stv6/handlers/FileHandler.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 108
+
++++ Delete Line number 140 (stv6/handlers/FileHandler.java)
+
+--------------------------------------------
+10] ../../../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/util/CoverHandler.java; Line number 140
+vim +140 ../../../dataset/june2020_dataset/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/util/CoverHandler.java
+
++++ Add following code above line:140 (stv6/handlers/util/CoverHandler.java)
+try{
++++ Add following code after line:164 (stv6/handlers/util/CoverHandler.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 140
+
++++ Delete Line number 172 (stv6/handlers/util/CoverHandler.java)
+
+--------------------------------------------

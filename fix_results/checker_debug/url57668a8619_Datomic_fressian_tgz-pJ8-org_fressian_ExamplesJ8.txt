@@ -1,0 +1,5 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^org/fressian/FressianWriter.java^43^org.fressian.FressianWriter.<init>(Ljava/io/OutputStream;Lorg/fressian/handlers/ILookup;)V^9 = new <Application,Lorg/fressian/impl/RawOutput>@26^org.fressian.FressianWriter.<init>(Ljava/io/OutputStream;Lorg/fressian/handlers/ILookup;)V#10,^FIELD,^false^true^Field escape;
+1^org/fressian/Examples.java^70^org.fressian.Examples.writePerson()[B^6 = new <Application,Lorg/fressian/FressianWriter>@16^NULL^INVOKE,FIELD,^false^true^Field escape;
+2^org/fressian/Examples.java^82^org.fressian.Examples.writeCached()V^7 = new <Application,Lorg/fressian/FressianWriter>@16^NULL^INVOKE,FIELD,^false^true^Field escape;
+3^org/fressian/Examples.java^120^org.fressian.Examples.readAndWrite()V^7 = new <Application,Lorg/fressian/FressianWriter>@16^NULL^INVOKE,FIELD,^false^true^Field escape;

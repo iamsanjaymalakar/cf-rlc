@@ -1,0 +1,28 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^xscript/executils/console/Console.java^61^xscript.executils.console.Console.<init>(Ljava/lang/String;)V^77 = invokevirtual < Application, Lxscript/executils/console/Console, getOutWithAttrs(Ljavax/swing/text/AttributeSet;)Ljava/io/PrintStream; > 1,75 @273 exception:76^NULL^FIELD,^false^true^Field escape;
+1^xscript/executils/console/Console.java^62^xscript.executils.console.Console.<init>(Ljava/lang/String;)V^80 = invokevirtual < Application, Lxscript/executils/console/Console, getOutWithAttrs(Ljavax/swing/text/AttributeSet;)Ljava/io/PrintStream; > 1,78 @285 exception:79^NULL^FIELD,^false^true^Field escape;
+2^xscript/executils/console/Console.java^63^xscript.executils.console.Console.<init>(Ljava/lang/String;)V^81 = new <Application,Lxscript/executils/console/ConsoleInputStream>@292^NULL^FIELD,^false^true^Field escape;
+3^xscript/executils/ArgReader.java^78^xscript.executils.ArgReader.next()Ljava/lang/String;^58 = new <Application,Lxscript/executils/ArgReader$FileArgReader>@282^NULL^INVOKE,ARRAY,^false^true^Array (or collection/map) escape;
+4^xscript/executils/Utils.java^39^xscript.executils.Utils.initConsoleIfNeeded(Ljava/lang/String;)V^16 = new <Application,Lxscript/executils/MultiplexOutputStream>@37^xscript.executils.Utils.initConsoleIfNeeded(Ljava/lang/String;)V#38,^INVOKE,^false^false^Normal Fix;
+5^xscript/executils/Utils.java^42^xscript.executils.Utils.initConsoleIfNeeded(Ljava/lang/String;)V^24 = new <Application,Lxscript/executils/MultiplexOutputStream>@62^xscript.executils.Utils.initConsoleIfNeeded(Ljava/lang/String;)V#41,^INVOKE,^false^false^Normal Fix;
+6^xscript/executils/Utils.java^45^xscript.executils.Utils.initConsoleIfNeeded(Ljava/lang/String;)V^32 = new <Application,Lxscript/executils/InputToOutputStream>@87^xscript.executils.Utils.initConsoleIfNeeded(Ljava/lang/String;)V#35,^INVOKE,^false^false^Normal Fix;
+7^xscript/XScriptEngine.java^767^xscript.XScriptEngine.loadModule(Ljava/lang/String;)Lxscript/object/XConstPoolImpl;^77 = invokevirtual < Application, Ljava/nio/file/spi/FileSystemProvider, newInputStream(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/InputStream; > 72,70,74 @342 exception:76^xscript.XScriptEngine.loadModule(Ljava/lang/String;)Lxscript/object/XConstPoolImpl;#78,xscript.XScriptEngine.loadModule(Ljava/lang/String;)Lxscript/object/XConstPoolImpl;#116,xscript.XScriptEngine.loadModule(Ljava/lang/String;)Lxscript/object/XConstPoolImpl;#118,xscript.XScriptEngine.loadModule(Ljava/lang/String;)Lxscript/object/XConstPoolImpl;#120,xscript.XScriptEngine.loadModule(Ljava/lang/String;)Lxscript/object/XConstPoolImpl;#168,xscript.XScriptEngine.loadModule(Ljava/lang/String;)Lxscript/object/XConstPoolImpl;#196,xscript.XScriptEngine.loadModule(Ljava/lang/String;)Lxscript/object/XConstPoolImpl;#162,^FIELD,INVOKE,^false^true^Field escape;
+8^xscript/compiler/main/Main.java^253^xscript.compiler.main.Main.processFile(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)V^9 = new <Application,Lxscript/compiler/XFileReader>@16^xscript.compiler.main.Main.processFile(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)V#7,xscript.compiler.main.Main.processFile(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)V#69,^FIELD,INVOKE,^false^true^Field escape;
+9^xscript/XNativeFunctions.java^130^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+10^xscript/XNativeFunctions.java^132^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+11^xscript/XNativeFunctions.java^149^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+12^xscript/executils/ArgReader.java^41^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+13^xscript/executils/ArgReader.java^46^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+14^xscript/executils/ArgReader.java^57^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+15^xscript/executils/ArgReader.java^67^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+16^xscript/executils/ArgReader.java^70^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+17^xscript/executils/ArgReader.java^83^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+18^xscript/executils/ArgReader.java^88^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+19^xscript/executils/ArgReader.java^112^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+20^xscript/executils/InputToOutputStream.java^14^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+21^xscript/executils/InputToOutputStream.java^15^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+22^xscript/executils/MultiplexOutputStream.java^25^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+23^xscript/executils/MultiplexOutputStream.java^40^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+24^xscript/executils/MultiplexOutputStream.java^55^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+25^xscript/executils/MultiplexOutputStream.java^70^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+26^xscript/compiler/XFileReader.java^13^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

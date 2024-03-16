@@ -1,0 +1,15 @@
+17822
+2533
+
+SOURCE LEVEL FIXES
+
+3] ../../../dataset/june2020_dataset/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/memorymappedfile/MemoryMappedFileBasedOffHeapBenchmarkWorker.java; Line number 25
+vim +25 ../../../dataset/june2020_dataset/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/memorymappedfile/MemoryMappedFileBasedOffHeapBenchmarkWorker.java
+
++++ Add following code below line: 41 (com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/memorymappedfile/MemoryMappedFileBasedOffHeapBenchmarkWorker.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 25
+
+--------------------------------------------

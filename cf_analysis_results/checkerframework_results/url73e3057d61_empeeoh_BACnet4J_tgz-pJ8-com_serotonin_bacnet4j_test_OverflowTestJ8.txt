@@ -1,0 +1,68 @@
+../../../../datasets/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/org/free/bacnet4j/util/StreamUtils.java:72: error: (required.method.not.called) $$ 4 $$ method close $$ writer $$ java.io.CharArrayWriter $$ possible exceptional exit due to transfer(reader, writer) with exception type java.io.IOException $$ ( 1943, 1990 ) $$ @MustCall method close may not have been invoked on writer or any of its aliases.
+		CharArrayWriter writer = new CharArrayWriter();
+		                ^
+  The type of object is: java.io.CharArrayWriter.
+  Reason for going out of scope: possible exceptional exit due to transfer(reader, writer) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/npdu/ip/IpNetwork.java:124: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2814 $$ java.net.DatagramSocket $$ regular method exit $$ ( 4440, 4464 ) $$ @MustCall method close may not have been invoked on temp-var-2814 or any of its aliases.
+            socket = new DatagramSocket(port);
+                     ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/npdu/ip/IpNetwork.java:126: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2816 $$ java.net.DatagramSocket $$ regular method exit $$ ( 4500, 4565 ) $$ @MustCall method close may not have been invoked on temp-var-2816 or any of its aliases.
+            socket = new DatagramSocket(port, InetAddress.getByName(localBindAddress));
+                     ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/MessageControl.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2904 $$ java.net.DatagramSocket $$ regular method exit $$ ( 1786, 1810 ) $$ @MustCall method close may not have been invoked on temp-var-2904 or any of its aliases.
+        socket = new DatagramSocket(port);
+                 ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/test/SerializationTests.java:88: error: (assignment) $$ 2 $$ @MustCall Constructor<capture#457 extends @MustCallUnknown Encodable> $$ @MustCallUnknown Constructor<? extends @MustCall Encodable> $$ ( 4552, 4604 ) $$ incompatible types in assignment.
+            Constructor<? extends Encodable> c = encodable.getClass().getConstructor(ByteQueue.class);
+                                                                                    ^
+  found   : @MustCall Constructor<capture#457 extends @MustCallUnknown Encodable>
+  required: @MustCallUnknown Constructor<? extends @MustCall Encodable>
+../../../../datasets/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/npdu/mstp/MstpNode.java:94: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-4991 $$ java.io.InputStream $$ possible exceptional exit due to serialPort.getOutputStream() with exception type java.io.IOException $$ ( 2800, 2827 ) $$ @MustCall method close may not have been invoked on temp-var-4991 or any of its aliases.
+                in = serialPort.getInputStream();
+                                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to serialPort.getOutputStream() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/npdu/mstp/MstpNode.java:95: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-4992 $$ java.io.OutputStream $$ regular method exit $$ ( 2851, 2879 ) $$ @MustCall method close may not have been invoked on temp-var-4992 or any of its aliases.
+                out = serialPort.getOutputStream();
+                                                ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/PortTest.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to in.read() with exception type java.io.IOException $$ ( 522, 567 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+        InputStream in = serialPort.getInputStream();
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to in.read() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/HubServer.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.Socket $$ regular method exit $$ ( 970, 1004 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+                Socket socket = acceptor.accept();
+                       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/HubClient.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-5502 $$ java.net.Socket $$ possible exceptional exit due to new MessageReader() with exception type java.lang.Exception $$ ( 394, 424 ) $$ @MustCall method close may not have been invoked on temp-var-5502 or any of its aliases.
+        socket = new Socket("localhost", 50505);
+                 ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to new MessageReader() with exception type java.lang.Exception
+../../../../datasets/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/ScriptTest.java:20: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-5524 $$ java.io.InputStream $$ possible exceptional exit due to new MasterNode(getInputStream(), new DumpOut(), (byte)4, 2) with exception type java.lang.IllegalArgumentException $$ ( 608, 624 ) $$ @MustCall method close may not have been invoked on temp-var-5524 or any of its aliases.
+        MasterNode master = new MasterNode(getInputStream(), new DumpOut(), (byte) 4, 2);
+                                                         ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new MasterNode(getInputStream(), new DumpOut(), (byte)4, 2) with exception type java.lang.IllegalArgumentException
+../../../../datasets/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/ScriptTest.java:20: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-5525 $$ com.serotonin.bacnet4j.rs485.ScriptTest.DumpOut $$ possible exceptional exit due to new MasterNode(getInputStream(), new DumpOut(), (byte)4, 2) with exception type java.lang.IllegalArgumentException $$ ( 626, 639 ) $$ @MustCall method close may not have been invoked on temp-var-5525 or any of its aliases.
+        MasterNode master = new MasterNode(getInputStream(), new DumpOut(), (byte) 4, 2);
+                                                             ^
+  The type of object is: com.serotonin.bacnet4j.rs485.ScriptTest.DumpOut.
+  Reason for going out of scope: possible exceptional exit due to new MasterNode(getInputStream(), new DumpOut(), (byte)4, 2) with exception type java.lang.IllegalArgumentException
+../../../../datasets/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/type/AmbiguousValue.java:142: error: (type.argument) $$ 4 $$ T extends @MustCall Encodable $$ convertTo $$ capture#848 extends @MustCallUnknown Encodable $$ @MustCall Encodable $$ ( 4814, 4840 ) $$ incompatible type argument for type parameter T extends @MustCall Encodable of convertTo.
+            return convertTo(eobj.getClass()).equals(obj);
+                            ^
+  found   : capture#848 extends @MustCallUnknown Encodable
+  required: @MustCall Encodable
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+13 errors

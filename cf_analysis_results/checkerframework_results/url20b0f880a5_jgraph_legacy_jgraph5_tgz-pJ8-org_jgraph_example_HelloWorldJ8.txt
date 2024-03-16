@@ -1,0 +1,125 @@
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/plaf/basic/BasicGraphTransferable.java:132: error: (return) $$ 2 $$ @MustCall("close") StringBufferInputStream $$ @MustCall Object $$ ( 4402, 4435 ) $$ incompatible types in return.
+				return new StringBufferInputStream(data);
+				       ^
+  type of expression: @MustCall("close") StringBufferInputStream
+  method return type: @MustCall Object
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/org/jgraph/plaf/basic/BasicGraphTransferable.java:144: error: (return) $$ 2 $$ @MustCall("close") StringBufferInputStream $$ @MustCall Object $$ ( 4861, 4894 ) $$ incompatible types in return.
+				return new StringBufferInputStream(data);
+				       ^
+  type of expression: @MustCall("close") StringBufferInputStream
+  method return type: @MustCall Object
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphLayoutExample.java:282: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-8065 $$ java.io.FileInputStream $$ regular method exit $$ ( 8913, 8963 ) $$ @MustCall method close may not have been invoked on temp-var-8065 or any of its aliases.
+						new FileInputStream(fileChooser.getSelectedFile())));
+						^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java:315: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.ObjectOutputStream $$ possible exceptional exit due to out.writeObject(graph) with exception type java.io.IOException $$ ( 10018, 10161 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+				ObjectOutputStream out = new ObjectOutputStream(
+				                   ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.writeObject(graph) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java:316: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-8194 $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(fileChooser.getSelectedFile()))) with exception type java.io.IOException $$ ( 10098, 10158 ) $$ @MustCall method close may not have been invoked on temp-var-8194 or any of its aliases.
+						new BufferedOutputStream(new FileOutputStream(
+						                         ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(fileChooser.getSelectedFile()))) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java:351: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.ObjectInputStream $$ regular method exit $$ ( 11131, 11269 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+				ObjectInputStream in = new ObjectInputStream(
+				                  ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java:352: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-8213 $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(new BufferedInputStream(new FileInputStream(fileChooser.getSelectedFile()))) with exception type java.io.IOException $$ ( 11207, 11266 ) $$ @MustCall method close may not have been invoked on temp-var-8213 or any of its aliases.
+						new BufferedInputStream(new FileInputStream(fileChooser
+						                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(new BufferedInputStream(new FileInputStream(fileChooser.getSelectedFile()))) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java:388: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-8229 $$ java.io.FileOutputStream $$ regular method exit $$ ( 12361, 12412 ) $$ @MustCall method close may not have been invoked on temp-var-8229 or any of its aliases.
+						new FileOutputStream(fileChooser.getSelectedFile())));
+						^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java:421: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-8246 $$ java.io.FileInputStream $$ regular method exit $$ ( 13403, 13453 ) $$ @MustCall method close may not have been invoked on temp-var-8246 or any of its aliases.
+						new FileInputStream(fileChooser.getSelectedFile())));
+						^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/svg/SVGExample.java:104: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-8923 $$ java.io.FileOutputStream $$ possible exceptional exit due to out.flush() with exception type java.io.IOException $$ ( 2757, 2818 ) $$ @MustCall method close may not have been invoked on temp-var-8923 or any of its aliases.
+				OutputStream out = new BufferedOutputStream(new FileOutputStream(
+				                                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.flush() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphWordBrowser.java:320: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-9199 $$ java.io.OutputStream $$ possible exceptional exit due to printout.writeBytes(content) with exception type java.io.IOException $$ ( 8907, 8937 ) $$ @MustCall method close may not have been invoked on temp-var-9199 or any of its aliases.
+				.getOutputStream());
+				                ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to printout.writeBytes(content) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphWordBrowser.java:327: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-9205 $$ java.io.InputStream $$ possible exceptional exit due to ireader.readLine() with exception type java.io.IOException $$ ( 9187, 9211 ) $$ @MustCall method close may not have been invoked on temp-var-9205 or any of its aliases.
+				urlConn.getInputStream()));
+				                      ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to ireader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/mycellview/GPCellViewFactory.java:35: error: (return) $$ 2 $$ @MustCallUnknown VertexView $$ @MustCall VertexView $$ ( 1232, 1236 ) $$ incompatible types in return.
+			return view;
+			       ^
+  type of expression: @MustCallUnknown VertexView
+  method return type: @MustCall VertexView
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/SerialGraph.java:54: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.ObjectOutputStream $$ possible exceptional exit due to out.writeObject(object) with exception type java.io.IOException $$ ( 1522, 1634 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+			ObjectOutputStream out = new ObjectOutputStream(
+			                   ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.writeObject(object) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/SerialGraph.java:55: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-10181 $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(filename))) with exception type java.io.IOException $$ ( 1601, 1631 ) $$ @MustCall method close may not have been invoked on temp-var-10181 or any of its aliases.
+					new BufferedOutputStream(new FileOutputStream(filename)));
+					                         ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(filename))) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/SerialGraph.java:68: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.ObjectInputStream $$ possible exceptional exit due to in.readObject() with exception type java.io.IOException $$ ( 1920, 2027 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			ObjectInputStream in = new ObjectInputStream(
+			                  ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: possible exceptional exit due to in.readObject() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/SerialGraph.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-10191 $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(new BufferedInputStream(new FileInputStream(filename))) with exception type java.io.IOException $$ ( 1995, 2024 ) $$ @MustCall method close may not have been invoked on temp-var-10191 or any of its aliases.
+					new BufferedInputStream(new FileInputStream(filename)));
+					                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(new BufferedInputStream(new FileInputStream(filename))) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/io/mxObjectCodec.java:220: error: (return) $$ 2 $$ @MustCallUnknown Object $$ @MustCall Object $$ ( 5236, 5239 ) $$ incompatible types in return.
+		return obj;
+		       ^
+  type of expression: @MustCallUnknown Object
+  method return type: @MustCall Object
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/io/mxCodecRegistry.java:163: error: (return) $$ 2 $$ capture#782 extends @MustCallUnknown Object $$ @MustCall Object $$ ( 4080, 4107 ) $$ incompatible types in return.
+				return clazz.getEnumConstants()[0];
+				                               ^
+  type of expression: capture#782 extends @MustCallUnknown Object
+  method return type: @MustCall Object
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/io/mxCodecRegistry.java:169: error: (return) $$ 2 $$ capture#715 extends @MustCallUnknown Object $$ @MustCall Object $$ ( 4153, 4172 ) $$ incompatible types in return.
+					return clazz.newInstance();
+					                        ^
+  type of expression: capture#715 extends @MustCallUnknown Object
+  method return type: @MustCall Object
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/io/mxCodecRegistry.java:228: error: (assignment) $$ 2 $$ @MustCall Class<capture#179 extends @MustCallUnknown Object> $$ @MustCallUnknown Class<? extends @MustCall Object> $$ ( 5202, 5221 ) $$ incompatible types in assignment.
+		Class<? extends Object> type = instance.getClass();
+		                                                ^
+  found   : @MustCall Class<capture#179 extends @MustCallUnknown Object>
+  required: @MustCallUnknown Class<? extends @MustCall Object>
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java:1708: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-13864 $$ java.io.FileInputStream $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 43282, 43311 ) $$ @MustCall method close may not have been invoked on temp-var-13864 or any of its aliases.
+				new FileInputStream(filename)));
+				^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java:1735: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileWriter $$ possible exceptional exit due to fw.write(contents) with exception type java.io.IOException $$ ( 43854, 43895 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+		FileWriter fw = new FileWriter(filename);
+		           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to fw.write(contents) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java:2427: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-14041 $$ java.io.Writer $$ regular method exit $$ ( 60719, 60735 ) $$ @MustCall method close may not have been invoked on temp-var-14041 or any of its aliases.
+			return dest.getWriter().toString();
+			                     ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+24 errors

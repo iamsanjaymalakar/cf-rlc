@@ -1,0 +1,18 @@
+../../../../datasets/june2020_dataset/url78d0cbe382_TeeAaTeeUu_SitsiPlaseeraus_tgz-pJ8-sitsiplaseeraus_MainJ8/src/omatTietorakenteet/ArrayList.java:44: error: (assignment) $$ 2 $$ E extends @MustCallUnknown Object $$ @MustCall Object $$ ( 1035, 1041 ) $$ incompatible types in assignment.
+            varasto[i] = get(i);
+                            ^
+  found   : E extends @MustCallUnknown Object
+  required: @MustCall Object
+../../../../datasets/june2020_dataset/url78d0cbe382_TeeAaTeeUu_SitsiPlaseeraus_tgz-pJ8-sitsiplaseeraus_MainJ8/src/Lataaja/TiedostonKasittelija.java:92: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-522 $$ java.io.FileReader $$ possible exceptional exit due to poytienMaara(br, cvsSplitBy) with exception type java.lang.NumberFormatException $$ ( 2451, 2474 ) $$ @MustCall method close may not have been invoked on temp-var-522 or any of its aliases.
+            br = new BufferedReader(new FileReader(csvFile));
+                                    ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to poytienMaara(br, cvsSplitBy) with exception type java.lang.NumberFormatException
+../../../../datasets/june2020_dataset/url78d0cbe382_TeeAaTeeUu_SitsiPlaseeraus_tgz-pJ8-sitsiplaseeraus_MainJ8/src/Lataaja/AsetustenTulostaja.java:79: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-588 $$ java.io.FileWriter $$ possible exceptional exit due to bw.write(sisalto) with exception type java.io.IOException $$ ( 2018, 2056 ) $$ @MustCall method close may not have been invoked on temp-var-588 or any of its aliases.
+            fw = new FileWriter(file.getAbsoluteFile());
+                 ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bw.write(sisalto) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 errors

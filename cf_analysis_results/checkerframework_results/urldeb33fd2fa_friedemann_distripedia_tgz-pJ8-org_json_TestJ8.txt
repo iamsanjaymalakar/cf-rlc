@@ -1,0 +1,178 @@
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/wikipedia/utils/URLUtils.java:61: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-10 $$ java.io.InputStream $$ possible exceptional exit due to in.readLine() with exception type java.io.IOException $$ ( 1722, 1744 ) $$ @MustCall method close may not have been invoked on temp-var-10 or any of its aliases.
+            BufferedReader in = new BufferedReader(new InputStreamReader (conn.getInputStream (), "UTF-8"));
+                                                                                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to in.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/wikipedia/Main.java:107: error: (required.method.not.called) $$ 4 $$ method close $$ propInFile $$ java.io.FileInputStream $$ possible exceptional exit due to articles_prop.load(propInFile) with exception type java.io.IOException $$ ( 2367, 2467 ) $$ @MustCall method close may not have been invoked on propInFile or any of its aliases.
+			FileInputStream propInFile = new FileInputStream(WebSocketServer.path
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to articles_prop.load(propInFile) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/wikipedia/Main.java:156: error: (required.method.not.called) $$ 4 $$ method close $$ propOutFile $$ java.io.FileOutputStream $$ possible exceptional exit due to articles_prop.store(propOutFile, "Contains the total amount of articles") with exception type java.io.IOException $$ ( 3434, 3537 ) $$ @MustCall method close may not have been invoked on propOutFile or any of its aliases.
+			FileOutputStream propOutFile = new FileOutputStream(WebSocketServer.path
+			                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to articles_prop.store(propOutFile, "Contains the total amount of articles") with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/org/json/JSONObject.java:1569: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-387 $$ java.io.Writer $$ regular method exit $$ ( 52515, 52544 ) $$ @MustCall method close may not have been invoked on temp-var-387 or any of its aliases.
+                    ((JSONObject)v).write(writer);
+                                         ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/org/json/JSONObject.java:1571: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-388 $$ java.io.Writer $$ regular method exit $$ ( 52619, 52647 ) $$ @MustCall method close may not have been invoked on temp-var-388 or any of its aliases.
+                    ((JSONArray)v).write(writer);
+                                        ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/org/json/JSONArray.java:904: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-560 $$ java.io.Writer $$ regular method exit $$ ( 29067, 29096 ) $$ @MustCall method close may not have been invoked on temp-var-560 or any of its aliases.
+                    ((JSONObject)v).write(writer);
+                                         ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/org/json/JSONArray.java:906: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-561 $$ java.io.Writer $$ regular method exit $$ ( 29171, 29199 ) $$ @MustCall method close may not have been invoked on temp-var-561 or any of its aliases.
+                    ((JSONArray)v).write(writer);
+                                        ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java:474: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1135 $$ java.io.Writer $$ possible exceptional exit due to XML.toJSONObject(s) with exception type org.json.JSONException $$ ( 23510, 23537 ) $$ @MustCall method close may not have been invoked on temp-var-1135 or any of its aliases.
+            System.out.println(j.write(new StringWriter()));
+                                      ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: possible exceptional exit due to XML.toJSONObject(s) with exception type org.json.JSONException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/client/WebSocket.java:106: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1579 $$ java.net.Socket $$ possible exceptional exit due to socket.getInputStream() with exception type java.io.IOException $$ ( 2011, 2033 ) $$ @MustCall method close may not have been invoked on temp-var-1579 or any of its aliases.
+			socket = new Socket(host, port);
+			         ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to socket.getInputStream() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/WebSocketServer.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1737 $$ java.net.ServerSocket $$ regular method exit $$ ( 2204, 2226 ) $$ @MustCall method close may not have been invoked on temp-var-1737 or any of its aliases.
+			masterSocket = new ServerSocket(PORT);
+			               ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/WebSocketServer.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ java.net.Socket $$ regular method exit $$ ( 2468, 2506 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+				Socket client = masterSocket.accept();
+				       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/ActivityMonitoringServer.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1760 $$ java.net.ServerSocket $$ regular method exit $$ ( 599, 621 ) $$ @MustCall method close may not have been invoked on temp-var-1760 or any of its aliases.
+			masterSocket = new ServerSocket(PORT);
+			               ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/ActivityMonitoringServer.java:53: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ java.net.Socket $$ regular method exit $$ ( 867, 905 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+				Socket client = masterSocket.accept();
+				       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/LogViewerServlet.java:76: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1959 $$ java.io.PrintWriter $$ possible exceptional exit due to input.ready() with exception type java.io.IOException $$ ( 2030, 2050 ) $$ @MustCall method close may not have been invoked on temp-var-1959 or any of its aliases.
+			response.getWriter().print(top);
+			                  ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: possible exceptional exit due to input.ready() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/LogViewerServlet.java:80: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1961 $$ java.io.PrintWriter $$ possible exceptional exit due to input.readLine() with exception type java.io.IOException $$ ( 2098, 2118 ) $$ @MustCall method close may not have been invoked on temp-var-1961 or any of its aliases.
+				response.getWriter().print(input.readLine());
+				                  ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: possible exceptional exit due to input.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/LogViewerServlet.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1964 $$ java.io.PrintWriter $$ regular method exit $$ ( 2148, 2168 ) $$ @MustCall method close may not have been invoked on temp-var-1964 or any of its aliases.
+				response.getWriter().print("<br/>");
+				                  ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/LogViewerServlet.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1966 $$ java.io.PrintWriter $$ regular method exit $$ ( 2193, 2213 ) $$ @MustCall method close may not have been invoked on temp-var-1966 or any of its aliases.
+			response.getWriter().print(bottom);
+			                  ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:109: error: (required.method.not.called) $$ 4 $$ method close $$ stream $$ java.io.FileInputStream $$ possible exceptional exit due to p.load(stream) with exception type java.io.IOException $$ ( 2751, 2816 ) $$ @MustCall method close may not have been invoked on stream or any of its aliases.
+			final FileInputStream stream = new FileInputStream(propFileName);
+			                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to p.load(stream) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/Client.java:202: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2087 $$ java.net.Socket $$ regular method exit $$ ( 4486, 4551 ) $$ @MustCall method close may not have been invoked on temp-var-2087 or any of its aliases.
+			clientSocket = new Socket(controllerIP, GrinderSettings.CONTROLLER_DEFAULT_PORT);
+			               ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientConnectionThread.java:60: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2165 $$ java.io.ObjectOutputStream $$ possible exceptional exit due to oos.flush() with exception type java.io.IOException $$ ( 1285, 1339 ) $$ @MustCall method close may not have been invoked on temp-var-2165 or any of its aliases.
+			oos = new ObjectOutputStream(clientSocket.getOutputStream());
+			      ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.flush() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientConnectionThread.java:63: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2168 $$ java.io.ObjectInputStream $$ regular method exit $$ ( 1399, 1451 ) $$ @MustCall method close may not have been invoked on temp-var-2168 or any of its aliases.
+			ois = new ObjectInputStream(clientSocket.getInputStream());
+			      ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/ClientConnectionThread.java:112: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to oos.writeLong(totalBytesAvailable) with exception type java.io.IOException $$ ( 2500, 2569 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+						final FileInputStream fis = new FileInputStream(client.getLogFile());
+						                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to oos.writeLong(totalBytesAvailable) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/LogFiler.java:36: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2367 $$ java.io.FileWriter $$ regular method exit $$ ( 794, 818 ) $$ @MustCall method close may not have been invoked on temp-var-2367 or any of its aliases.
+		bw = new BufferedWriter(new FileWriter(fileName));
+		                        ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/LogFiler.java:117: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ possible exceptional exit due to is.read(bytes, offset, bytes.length - offset) with exception type java.io.IOException $$ ( 2182, 2231 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+		final InputStream is = new FileInputStream(file);
+		                  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to is.read(bytes, offset, bytes.length - offset) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/user/Browser.java:201: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2411 $$ java.io.InputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 4391, 4413 ) $$ @MustCall method close may not have been invoked on temp-var-2411 or any of its aliases.
+					.openStream()));
+					           ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServerThread.java:109: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2450 $$ java.io.ObjectInputStream $$ possible exceptional exit due to clientSocket.getOutputStream() with exception type java.io.IOException $$ ( 2438, 2490 ) $$ @MustCall method close may not have been invoked on temp-var-2450 or any of its aliases.
+			ois = new ObjectInputStream(clientSocket.getInputStream());
+			      ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: possible exceptional exit due to clientSocket.getOutputStream() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServerThread.java:110: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2452 $$ java.io.ObjectOutputStream $$ possible exceptional exit due to requestClientInformation() with exception type java.io.IOException $$ ( 2501, 2555 ) $$ @MustCall method close may not have been invoked on temp-var-2452 or any of its aliases.
+			oos = new ObjectOutputStream(clientSocket.getOutputStream());
+			      ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to requestClientInformation() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServerThread.java:178: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to fos.flush() with exception type java.io.IOException $$ ( 4205, 4278 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+					final FileOutputStream fos = new FileOutputStream(completeLogFile, true);
+					                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to fos.flush() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java:74: error: (required.method.not.called) $$ 4 $$ method close $$ stream $$ java.io.FileInputStream $$ possible exceptional exit due to p.load(stream) with exception type java.io.IOException $$ ( 1943, 2008 ) $$ @MustCall method close may not have been invoked on stream or any of its aliases.
+			final FileInputStream stream = new FileInputStream(propFileName);
+			                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to p.load(stream) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java:162: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2535 $$ java.io.FileInputStream $$ regular method exit $$ ( 4100, 4134 ) $$ @MustCall method close may not have been invoked on temp-var-2535 or any of its aliases.
+		final BufferedInputStream fileStream = new BufferedInputStream(new FileInputStream(
+		                                                               ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServer.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2591 $$ java.net.ServerSocket $$ regular method exit $$ ( 917, 939 ) $$ @MustCall method close may not have been invoked on temp-var-2591 or any of its aliases.
+			serverSocket = new ServerSocket(port);
+			               ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/CtrlServer.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.Socket $$ regular method exit $$ ( 1644, 1674 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+				socket = serverSocket.accept();
+				       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/trash/HttpServer.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ masterSocket $$ java.net.ServerSocket $$ possible exceptional exit due to masterSocket.accept() with exception type java.io.IOException $$ ( 685, 753 ) $$ @MustCall method close may not have been invoked on masterSocket or any of its aliases.
+			final ServerSocket masterSocket = new ServerSocket(HttpServer.PORT);
+			                   ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: possible exceptional exit due to masterSocket.accept() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/trash/HttpServer.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ java.net.Socket $$ possible exceptional exit due to client.getInputStream() with exception type java.io.IOException $$ ( 862, 900 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+				Socket client = masterSocket.accept();
+				       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to client.getInputStream() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/trash/HttpServer.java:58: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2887 $$ java.io.FileReader $$ possible exceptional exit due to fileReader.read() with exception type java.io.IOException $$ ( 1616, 1633 ) $$ @MustCall method close may not have been invoked on temp-var-2887 or any of its aliases.
+					BufferedReader fileReader = new BufferedReader(new FileReader(f));
+					                                               ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to fileReader.read() with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+35 errors

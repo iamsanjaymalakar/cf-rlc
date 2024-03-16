@@ -1,0 +1,68 @@
+../../../../datasets/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/com/beust/jcommander/Parameterized.java:41: error: (assignment) $$ 2 $$ @MustCall Class<capture#904 extends @MustCallUnknown Object> $$ @MustCallUnknown Class<? extends @MustCall Object> $$ ( 1117, 1131 ) $$ incompatible types in assignment.
+    Class<? extends Object> cls = arg.getClass();
+                                              ^
+  found   : @MustCall Class<capture#904 extends @MustCallUnknown Object>
+  required: @MustCallUnknown Class<? extends @MustCall Object>
+../../../../datasets/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/com/beust/jcommander/Parameterized.java:58: error: (assignment) $$ 2 $$ @MustCall Class<capture#652 extends @MustCallUnknown Object super capture#504 extends @MustCall Object> $$ @MustCallUnknown Class<? extends @MustCall Object> $$ ( 1965, 1984 ) $$ incompatible types in assignment.
+      cls = cls.getSuperclass();
+                             ^
+  found   : @MustCall Class<capture#652 extends @MustCallUnknown Object super capture#504 extends @MustCall Object>
+  required: @MustCallUnknown Class<? extends @MustCall Object>
+../../../../datasets/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/com/beust/jcommander/Parameterized.java:62: error: (assignment) $$ 2 $$ @MustCall Class<capture#316 extends @MustCallUnknown Object> $$ @MustCallUnknown Class<? extends @MustCall Object> $$ ( 2022, 2036 ) $$ incompatible types in assignment.
+    cls = arg.getClass();
+                      ^
+  found   : @MustCall Class<capture#316 extends @MustCallUnknown Object>
+  required: @MustCallUnknown Class<? extends @MustCall Object>
+../../../../datasets/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/com/beust/jcommander/Parameterized.java:79: error: (assignment) $$ 2 $$ @MustCall Class<capture#365 extends @MustCallUnknown Object super capture#893 extends @MustCall Object> $$ @MustCallUnknown Class<? extends @MustCall Object> $$ ( 2866, 2885 ) $$ incompatible types in assignment.
+      cls = cls.getSuperclass();
+                             ^
+  found   : @MustCall Class<capture#365 extends @MustCallUnknown Object super capture#893 extends @MustCall Object>
+  required: @MustCallUnknown Class<? extends @MustCall Object>
+../../../../datasets/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/com/beust/jcommander/JCommander.java:482: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-376 $$ java.io.FileReader $$ possible exceptional exit due to bufRead.readLine() with exception type java.io.IOException $$ ( 15049, 15073 ) $$ @MustCall method close may not have been invoked on temp-var-376 or any of its aliases.
+      BufferedReader bufRead = new BufferedReader(new FileReader(fileName));
+                                                  ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to bufRead.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/com/beust/jcommander/JCommander.java:1295: error: (return) $$ 2 $$ @MustCallUnknown Object $$ @MustCall Object $$ ( 42810, 42816 ) $$ incompatible types in return.
+    return result;
+           ^
+  type of expression: @MustCallUnknown Object
+  method return type: @MustCall Object
+../../../../datasets/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/com/beust/jcommander/defaultprovider/PropertyFileDefaultProvider.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-767 $$ java.io.InputStream $$ possible exceptional exit due to m_properties.load(url.openStream()) with exception type java.io.IOException $$ ( 1593, 1609 ) $$ @MustCall method close may not have been invoked on temp-var-767 or any of its aliases.
+        m_properties.load(url.openStream());
+                                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to m_properties.load(url.openStream()) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/sg/edu/nus/cs5344/spring14/twitter/Jobs/JobFTweetsForTrends.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ fs $$ org.apache.hadoop.fs.FileSystem $$ possible exceptional exit due to FileUtils.getAllParts(trendsFolder, fs) with exception type java.io.IOException $$ ( 1237, 1274 ) $$ @MustCall method close may not have been invoked on fs or any of its aliases.
+		FileSystem fs = FileSystem.get(conf);
+		           ^
+  The type of object is: org.apache.hadoop.fs.FileSystem.
+  Reason for going out of scope: possible exceptional exit due to FileUtils.getAllParts(trendsFolder, fs) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/sg/edu/nus/cs5344/spring14/twitter/Jobs/JobEFilterTweets.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ fs $$ org.apache.hadoop.fs.FileSystem $$ possible exceptional exit due to FileUtils.getAllParts(dataStatsFolder, fs) with exception type java.io.IOException $$ ( 1152, 1189 ) $$ @MustCall method close may not have been invoked on fs or any of its aliases.
+		FileSystem fs = FileSystem.get(conf);
+		           ^
+  The type of object is: org.apache.hadoop.fs.FileSystem.
+  Reason for going out of scope: possible exceptional exit due to FileUtils.getAllParts(dataStatsFolder, fs) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/sg/edu/nus/cs5344/spring14/twitter/TwMain.java:228: error: (required.method.not.called) $$ 4 $$ method close $$ fs $$ org.apache.hadoop.fs.FileSystem $$ possible exceptional exit due to fileStream.close() with exception type java.io.IOException $$ ( 9317, 9354 ) $$ @MustCall method close may not have been invoked on fs or any of its aliases.
+		FileSystem fs = FileSystem.get(conf);
+		           ^
+  The type of object is: org.apache.hadoop.fs.FileSystem.
+  Reason for going out of scope: possible exceptional exit due to fileStream.close() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/sg/edu/nus/cs5344/spring14/twitter/TwMain.java:243: error: (required.method.not.called) $$ 4 $$ method close $$ fs $$ org.apache.hadoop.fs.FileSystem $$ possible exceptional exit due to fileStream.close() with exception type java.io.IOException $$ ( 9857, 9894 ) $$ @MustCall method close may not have been invoked on fs or any of its aliases.
+		FileSystem fs = FileSystem.get(conf);
+		           ^
+  The type of object is: org.apache.hadoop.fs.FileSystem.
+  Reason for going out of scope: possible exceptional exit due to fileStream.close() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/sg/edu/nus/cs5344/spring14/twitter/TwMain.java:268: error: (required.method.not.called) $$ 4 $$ method close $$ fs $$ org.apache.hadoop.fs.FileSystem $$ possible exceptional exit due to FileUtils.getAllParts(folder, fs) with exception type java.io.IOException $$ ( 10684, 10721 ) $$ @MustCall method close may not have been invoked on fs or any of its aliases.
+		FileSystem fs = FileSystem.get(conf);
+		           ^
+  The type of object is: org.apache.hadoop.fs.FileSystem.
+  Reason for going out of scope: possible exceptional exit due to FileUtils.getAllParts(folder, fs) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/urlead5353366_Zeldon_BigData_Class_tgz-pJ8-LocalTestsJ8/src/sg/edu/nus/cs5344/spring14/twitter/TwMain.java:291: error: (required.method.not.called) $$ 4 $$ method close $$ fs $$ org.apache.hadoop.fs.FileSystem $$ possible exceptional exit due to fs.delete(dir, true) with exception type java.io.IOException $$ ( 11262, 11305 ) $$ @MustCall method close may not have been invoked on fs or any of its aliases.
+		final FileSystem fs = FileSystem.get(conf);
+		                 ^
+  The type of object is: org.apache.hadoop.fs.FileSystem.
+  Reason for going out of scope: possible exceptional exit due to fs.delete(dir, true) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+13 errors

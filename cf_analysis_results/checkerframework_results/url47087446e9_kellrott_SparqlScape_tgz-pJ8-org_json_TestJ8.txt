@@ -1,0 +1,45 @@
+../../../../datasets/june2020_dataset/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/sparql/Client.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 831, 870 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			InputStream in = conn.getInputStream();
+			            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/json/JSONObject.java:1559: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-357 $$ java.io.Writer $$ regular method exit $$ ( 52317, 52346 ) $$ @MustCall method close may not have been invoked on temp-var-357 or any of its aliases.
+                    ((JSONObject)v).write(writer);
+                                         ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/json/JSONObject.java:1561: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-358 $$ java.io.Writer $$ regular method exit $$ ( 52421, 52449 ) $$ @MustCall method close may not have been invoked on temp-var-358 or any of its aliases.
+                    ((JSONArray)v).write(writer);
+                                        ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/json/JSONArray.java:903: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-530 $$ java.io.Writer $$ regular method exit $$ ( 29067, 29096 ) $$ @MustCall method close may not have been invoked on temp-var-530 or any of its aliases.
+                    ((JSONObject)v).write(writer);
+                                         ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/json/JSONArray.java:905: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-531 $$ java.io.Writer $$ regular method exit $$ ( 29171, 29199 ) $$ @MustCall method close may not have been invoked on temp-var-531 or any of its aliases.
+                    ((JSONArray)v).write(writer);
+                                        ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java:474: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1113 $$ java.io.Writer $$ possible exceptional exit due to XML.toJSONObject(s) with exception type org.json.JSONException $$ ( 23975, 24002 ) $$ @MustCall method close may not have been invoked on temp-var-1113 or any of its aliases.
+            System.out.println(j.write(new StringWriter()));
+                                      ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: possible exceptional exit due to XML.toJSONObject(s) with exception type org.json.JSONException
+../../../../datasets/june2020_dataset/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/sparqlscape/SearchTest.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1772 $$ java.io.FileInputStream $$ possible exceptional exit due to p.getLine() with exception type java.io.IOException $$ ( 1165, 1203 ) $$ @MustCall method close may not have been invoked on temp-var-1772 or any of its aliases.
+		CSVParser p = new CSVParser( new InputStreamReader( new FileInputStream(new File(args[0])) ), new CSVStrategy('\t', '"',	'#'));
+		                                                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to p.getLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/sparqlscape/ConnectTest.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-1987 $$ java.io.FileInputStream $$ possible exceptional exit due to p.getLine() with exception type java.io.IOException $$ ( 1166, 1204 ) $$ @MustCall method close may not have been invoked on temp-var-1987 or any of its aliases.
+		CSVParser p = new CSVParser( new InputStreamReader( new FileInputStream(new File(args[0])) ), new CSVStrategy('\t', '"',	'#'));
+		                                                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to p.getLine() with exception type java.io.IOException
+Note: ../../../../datasets/june2020_dataset/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/sparqlscape/SparqlInterface.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+8 errors

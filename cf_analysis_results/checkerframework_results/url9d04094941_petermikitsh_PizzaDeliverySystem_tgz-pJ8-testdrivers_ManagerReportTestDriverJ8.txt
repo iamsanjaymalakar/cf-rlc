@@ -1,0 +1,18 @@
+../../../../datasets/june2020_dataset/url9d04094941_petermikitsh_PizzaDeliverySystem_tgz-pJ8-testdrivers_ManagerReportTestDriverJ8/src/model/database/Database.java:136: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-258 $$ java.io.FileOutputStream $$ regular method exit $$ ( 2890, 2931 ) $$ @MustCall method close may not have been invoked on temp-var-258 or any of its aliases.
+		        new FileOutputStream(_name +"_table.xml")));
+		        ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url9d04094941_petermikitsh_PizzaDeliverySystem_tgz-pJ8-testdrivers_ManagerReportTestDriverJ8/src/model/database/Database.java:161: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-264 $$ java.io.FileInputStream $$ regular method exit $$ ( 3451, 3491 ) $$ @MustCall method close may not have been invoked on temp-var-264 or any of its aliases.
+							new FileInputStream(_name +"_table.xml") ) );
+							^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url9d04094941_petermikitsh_PizzaDeliverySystem_tgz-pJ8-testdrivers_ManagerReportTestDriverJ8/src/neworder/addside/AddSideViewGUI.java:176: error: (argument) $$ 4 $$ quantity $$ SidePickerPanel $$ @MustCallUnknown Integer $$ @MustCall int $$ ( 4954, 4974 ) $$ incompatible argument for parameter quantity of SidePickerPanel.
+															(Integer)list.get(i) );
+															^
+  found   : @MustCallUnknown Integer
+  required: @MustCall int
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 errors

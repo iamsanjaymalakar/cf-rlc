@@ -1,0 +1,68 @@
+../../../../datasets/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/CodeGeneratorBase.java:64: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-937 $$ java.io.FileOutputStream $$ regular method exit $$ ( 2463, 2504 ) $$ @MustCall method close may not have been invoked on temp-var-937 or any of its aliases.
+        out = new PrintStream(new FileOutputStream(className + ".java"));
+                              ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/alg/block/GeneratorBlockInnerMultiplication.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-2513 $$ java.io.PrintStream $$ regular method exit $$ ( 1115, 1149 ) $$ @MustCall method close may not have been invoked on temp-var-2513 or any of its aliases.
+        stream = new PrintStream(className+".java");
+                 ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/alg/dense/misc/GenerateInverseFromMinor.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-3214 $$ java.io.PrintStream $$ regular method exit $$ ( 1584, 1619 ) $$ @MustCall method close may not have been invoked on temp-var-3214 or any of its aliases.
+            stream = new PrintStream(className +".java");
+                     ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/alg/dense/misc/GenerateDeterminantFromMinor.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-3334 $$ java.io.PrintStream $$ regular method exit $$ ( 1263, 1288 ) $$ @MustCall method close may not have been invoked on temp-var-3334 or any of its aliases.
+        stream = new PrintStream(fileName);
+                 ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/alg/dense/mult/GeneratorMatrixMatrixMult.java:44: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-6530 $$ java.io.PrintStream $$ regular method exit $$ ( 1450, 1475 ) $$ @MustCall method close may not have been invoked on temp-var-6530 or any of its aliases.
+        stream = new PrintStream(fileName);
+                 ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/ops/MatrixIO.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ fileStream $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(fileStream) with exception type java.io.IOException $$ ( 1321, 1382 ) $$ @MustCall method close may not have been invoked on fileStream or any of its aliases.
+        FileOutputStream fileStream = new FileOutputStream(fileName);
+                         ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(fileStream) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/ops/MatrixIO.java:73: error: (required.method.not.called) $$ 4 $$ method close $$ fileStream $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(fileStream) with exception type java.io.IOException $$ ( 2059, 2118 ) $$ @MustCall method close may not have been invoked on fileStream or any of its aliases.
+        FileInputStream fileStream = new FileInputStream(fileName);
+                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(fileStream) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/ops/MatrixIO.java:74: error: (required.method.not.called) $$ 4 $$ method close $$ stream $$ java.io.ObjectInputStream $$ possible exceptional exit due to stream.available() with exception type java.io.IOException $$ ( 2127, 2188 ) $$ @MustCall method close may not have been invoked on stream or any of its aliases.
+        ObjectInputStream stream = new ObjectInputStream(fileStream);
+                          ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: possible exceptional exit due to stream.available() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/ops/MatrixIO.java:126: error: (required.method.not.called) $$ 4 $$ method close $$ fileStream $$ java.io.FileInputStream $$ possible exceptional exit due to csv.read() with exception type java.io.IOException $$ ( 3796, 3855 ) $$ @MustCall method close may not have been invoked on fileStream or any of its aliases.
+        FileInputStream fileStream = new FileInputStream(fileName);
+                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to csv.read() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/org/ejml/ops/MatrixIO.java:149: error: (required.method.not.called) $$ 4 $$ method close $$ fileStream $$ java.io.FileInputStream $$ possible exceptional exit due to csv.read(numRows, numCols) with exception type java.io.IOException $$ ( 4548, 4607 ) $$ @MustCall method close may not have been invoked on fileStream or any of its aliases.
+        FileInputStream fileStream = new FileInputStream(fileName);
+                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to csv.read(numRows, numCols) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/Data_Compression.java:9: error: (required.method.not.called) $$ 4 $$ method close $$ dest $$ java.io.FileOutputStream $$ possible exceptional exit due to new FileInputStream(f) with exception type java.io.FileNotFoundException $$ ( 220, 316 ) $$ @MustCall method close may not have been invoked on dest or any of its aliases.
+         FileOutputStream dest = new FileOutputStream("/Users/orangemr/Desktop/Compression/gps_folder2");//an onput stream that write bytes to a file
+                          ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileInputStream(f) with exception type java.io.FileNotFoundException
+../../../../datasets/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/Data_Compression.java:10: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.util.zip.ZipOutputStream $$ possible exceptional exit due to new FileInputStream(f) with exception type java.io.FileNotFoundException $$ ( 370, 444 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+         ZipOutputStream out = new ZipOutputStream(new BufferedOutputStream(dest));//an output stream to write in the zip file
+                         ^
+  The type of object is: java.util.zip.ZipOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileInputStream(f) with exception type java.io.FileNotFoundException
+../../../../datasets/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/Data_Compression.java:18: error: (required.method.not.called) $$ 4 $$ method close $$ origin $$ java.io.BufferedInputStream $$ regular method exit $$ ( 778, 822 ) $$ @MustCall method close may not have been invoked on origin or any of its aliases.
+            origin = new BufferedInputStream(fi, BUFFER);
+                   ^
+  The type of object is: java.io.BufferedInputStream.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+13 errors

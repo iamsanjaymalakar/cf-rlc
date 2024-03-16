@@ -1,0 +1,256 @@
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/MulticastReceiver.java:27: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.MulticastSocket $$ regular method exit $$ ( 550, 584 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+			socket = new MulticastSocket(port);
+			       ^
+  The type of object is: java.net.MulticastSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/MulticastReceiver.java:39: error: (required.method.not.called) $$ 4 $$ method close $$ socket2 $$ java.net.DatagramSocket $$ regular method exit $$ ( 971, 1001 ) $$ @MustCall method close may not have been invoked on socket2 or any of its aliases.
+				socket2 = new DatagramSocket();
+				        ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/messenger/UDPServer.java:21: error: (missing.creates.mustcall.for) $$ 3 $$ run $$ this $$ aSocket $$ ( 459, 1735 ) $$ Method run re-assigns the non-final, owning field this.aSocket, but does not have a corresponding @CreatesMustCallFor annotation.
+			public void run() {
+			            ^
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/messenger/UDPServer.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ field aSocket $$ java.net.DatagramSocket $$  Non-final owning field might be overwritten $$ ( 494, 528 ) $$ @MustCall method close may not have been invoked on field aSocket or any of its aliases.
+					aSocket = new DatagramSocket(port);
+					        ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/Replica3Test.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ replica3 $$ edu.concordia.dpis.Replica $$ regular method exit $$ ( 951, 1066 ) $$ @MustCall method close may not have been invoked on replica3 or any of its aliases.
+		Replica replica3 = new Replica(2400, 50, frontEndAddress)
+		        ^
+  The type of object is: edu.concordia.dpis.Replica.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/Replica3Test.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ new Replica(2400, 50, frontEndAddress) $$ edu.concordia.dpis.Replica $$ regular method exit $$ ( 970, 1008 ) $$ @MustCall method close may not have been invoked on new Replica(2400, 50, frontEndAddress) or any of its aliases.
+		Replica replica3 = new Replica(2400, 50, frontEndAddress)
+		                   ^
+  The type of object is: edu.concordia.dpis.Replica.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/Replica3Test.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ new Replica(2400, 50, frontEndAddress).addNode(leader) $$ edu.concordia.dpis.Replica $$ regular method exit $$ ( 970, 1029 ) $$ @MustCall method close may not have been invoked on new Replica(2400, 50, frontEndAddress).addNode(leader) or any of its aliases.
+				.addNode(leader).addNode(replica2).addNode(replica4);
+				        ^
+  The type of object is: edu.concordia.dpis.Replica.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/Replica3Test.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ new Replica(2400, 50, frontEndAddress).addNode(leader).addNode(replica2) $$ edu.concordia.dpis.Replica $$ regular method exit $$ ( 970, 1047 ) $$ @MustCall method close may not have been invoked on new Replica(2400, 50, frontEndAddress).addNode(leader).addNode(replica2) or any of its aliases.
+				.addNode(leader).addNode(replica2).addNode(replica4);
+				                        ^
+  The type of object is: edu.concordia.dpis.Replica.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/MulticastListener.java:33: error: (missing.creates.mustcall.for) $$ 3 $$ joinGroup $$ this $$ multicastSocket $$ ( 806, 2203 ) $$ Method joinGroup re-assigns the non-final, owning field this.multicastSocket, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void joinGroup() {
+	            ^
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/MulticastListener.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ field multicastSocket $$ java.net.MulticastSocket $$  Non-final owning field might be overwritten $$ ( 843, 891 ) $$ @MustCall method close may not have been invoked on field multicastSocket or any of its aliases.
+			this.multicastSocket = new MulticastSocket(port);
+			                     ^
+  The type of object is: java.net.MulticastSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/MulticastListener.java:84: error: (contracts.postcondition) $$ 3 $$ leaveGroup $$ no information about this.multicastSocket $$ this.multicastSocket is @CalledMethods("close") $$ ( 2364, 2624 ) $$ postcondition of leaveGroup is not satisfied.
+	public void leaveGroup() {
+	            ^
+  found   : no information about this.multicastSocket
+  required: this.multicastSocket is @CalledMethods("close")
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/Replica2Test.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ replica2 $$ edu.concordia.dpis.Replica $$ regular method exit $$ ( 951, 1066 ) $$ @MustCall method close may not have been invoked on replica2 or any of its aliases.
+		Replica replica2 = new Replica(2300, 75, frontEndAddress)
+		        ^
+  The type of object is: edu.concordia.dpis.Replica.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/Replica2Test.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ new Replica(2300, 75, frontEndAddress) $$ edu.concordia.dpis.Replica $$ regular method exit $$ ( 970, 1008 ) $$ @MustCall method close may not have been invoked on new Replica(2300, 75, frontEndAddress) or any of its aliases.
+		Replica replica2 = new Replica(2300, 75, frontEndAddress)
+		                   ^
+  The type of object is: edu.concordia.dpis.Replica.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/Replica2Test.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ new Replica(2300, 75, frontEndAddress).addNode(leader) $$ edu.concordia.dpis.Replica $$ regular method exit $$ ( 970, 1029 ) $$ @MustCall method close may not have been invoked on new Replica(2300, 75, frontEndAddress).addNode(leader) or any of its aliases.
+				.addNode(leader).addNode(replica3).addNode(replica4);
+				        ^
+  The type of object is: edu.concordia.dpis.Replica.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/Replica2Test.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ new Replica(2300, 75, frontEndAddress).addNode(leader).addNode(replica3) $$ edu.concordia.dpis.Replica $$ regular method exit $$ ( 970, 1047 ) $$ @MustCall method close may not have been invoked on new Replica(2300, 75, frontEndAddress).addNode(leader).addNode(replica3) or any of its aliases.
+				.addNode(leader).addNode(replica3).addNode(replica4);
+				                        ^
+  The type of object is: edu.concordia.dpis.Replica.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/Replica.java:58: error: (required.method.not.called) $$ 4 $$ method leaveGroup $$ field multicastListener $$ edu.concordia.dpis.MulticastListener $$  [[checkOwningField() did not find a reason!]] $$ ( 1767, 1811 ) $$ @MustCall method leaveGroup may not have been invoked on field multicastListener or any of its aliases.
+	private MulticastListener multicastListener;
+	                          ^
+  The type of object is: edu.concordia.dpis.MulticastListener.
+  Reason for going out of scope:  [[checkOwningField() did not find a reason!]]
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/Replica.java:68: error: (required.method.not.called) $$ 4 $$ method leaveGroup $$ field multicastListener $$ edu.concordia.dpis.MulticastListener $$  Non-final owning field might be overwritten $$ ( 2109, 2151 ) $$ @MustCall method leaveGroup may not have been invoked on field multicastListener or any of its aliases.
+		multicastListener = getMulticastListener();
+		                  ^
+  The type of object is: edu.concordia.dpis.MulticastListener.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/Replica.java:187: error: (missing.creates.mustcall.for) $$ 3 $$ newLeader $$ this $$ multicastListener $$ ( 6097, 7499 ) $$ Method newLeader re-assigns the non-final, owning field this.multicastListener, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void newLeader(final String name) {
+	            ^
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/Replica.java:223: error: (required.method.not.called) $$ 4 $$ method leaveGroup $$ field multicastListener $$ edu.concordia.dpis.MulticastListener $$  Non-final owning field might be overwritten $$ ( 7399, 7446 ) $$ @MustCall method leaveGroup may not have been invoked on field multicastListener or any of its aliases.
+				this.multicastListener = getMulticastListener();
+				                       ^
+  The type of object is: edu.concordia.dpis.MulticastListener.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ new UDPServer(Integer.valueOf(port)) $$ edu.concordia.dpis.stationserver.StationServerImpl.UDPServer $$ regular method exit $$ ( 2264, 2300 ) $$ @MustCall method close may not have been invoked on new UDPServer(Integer.valueOf(port)) or any of its aliases.
+		this.udpServer = new UDPServer(Integer.valueOf(port));
+		                 ^
+  The type of object is: edu.concordia.dpis.stationserver.StationServerImpl.UDPServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream("./udp.properties") $$ java.io.FileInputStream $$ possible exceptional exit due to udpProperties.load(new FileInputStream("./udp.properties")) with exception type java.io.FileNotFoundException $$ ( 4393, 4432 ) $$ @MustCall method close may not have been invoked on new FileInputStream("./udp.properties") or any of its aliases.
+			udpProperties.load(new FileInputStream("./udp.properties"));
+			                   ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to udpProperties.load(new FileInputStream("./udp.properties")) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:136: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream("tcp.properties") $$ java.io.FileInputStream $$ possible exceptional exit due to tcpProperties.load(new FileInputStream("tcp.properties")) with exception type java.io.IOException $$ ( 4666, 4703 ) $$ @MustCall method close may not have been invoked on new FileInputStream("tcp.properties") or any of its aliases.
+			tcpProperties.load(new FileInputStream("tcp.properties"));
+			                   ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to tcpProperties.load(new FileInputStream("tcp.properties")) with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:153: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream("./udp.properties") $$ java.io.FileOutputStream $$ possible exceptional exit due to udpProperties.store(new FileOutputStream("./udp.properties"), null) with exception type java.io.IOException $$ ( 5126, 5166 ) $$ @MustCall method close may not have been invoked on new FileOutputStream("./udp.properties") or any of its aliases.
+			udpProperties.store(new FileOutputStream("./udp.properties"), null);
+			                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to udpProperties.store(new FileOutputStream("./udp.properties"), null) with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:170: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream("./tcp.properties") $$ java.io.FileOutputStream $$ possible exceptional exit due to tcpProperties.store(new FileOutputStream("./tcp.properties"), null) with exception type java.io.IOException $$ ( 5632, 5672 ) $$ @MustCall method close may not have been invoked on new FileOutputStream("./tcp.properties") or any of its aliases.
+			tcpProperties.store(new FileOutputStream("./tcp.properties"), null);
+			                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to tcpProperties.store(new FileOutputStream("./tcp.properties"), null) with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:548: error: (required.method.not.called) $$ 4 $$ method close $$ s $$ java.net.Socket $$ regular method exit $$ ( 17537, 17579 ) $$ @MustCall method close may not have been invoked on s or any of its aliases.
+				s = new Socket(hostAndPort[0], serverPort);
+				  ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:572: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream("udp.properties") $$ java.io.FileInputStream $$ possible exceptional exit due to properties.load(new FileInputStream("udp.properties")) with exception type java.io.IOException $$ ( 18230, 18267 ) $$ @MustCall method close may not have been invoked on new FileInputStream("udp.properties") or any of its aliases.
+			properties.load(new FileInputStream("udp.properties"));
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(new FileInputStream("udp.properties")) with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:616: error: (missing.creates.mustcall.for) $$ 3 $$ run $$ this $$ aSocket $$ ( 19427, 20338 ) $$ Method run re-assigns the non-final, owning field this.aSocket, but does not have a corresponding @CreatesMustCallFor annotation.
+				public void run() {
+				            ^
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:618: error: (required.method.not.called) $$ 4 $$ method close $$ field aSocket $$ java.net.DatagramSocket $$  Non-final owning field might be overwritten $$ ( 19478, 19512 ) $$ @MustCall method close may not have been invoked on field aSocket or any of its aliases.
+						aSocket = new DatagramSocket(port);
+						        ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:672: error: (required.method.not.called) $$ 4 $$ method close $$ listenSocket $$ java.net.ServerSocket $$ possible exceptional exit due to listenSocket.accept() with exception type java.io.IOException $$ ( 20679, 20730 ) $$ @MustCall method close may not have been invoked on listenSocket or any of its aliases.
+						ServerSocket listenSocket = new ServerSocket(port);
+						             ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: possible exceptional exit due to listenSocket.accept() with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/StationServerImpl.java:674: error: (required.method.not.called) $$ 4 $$ method close $$ clientSocket $$ java.net.Socket $$ regular method exit $$ ( 20759, 20803 ) $$ @MustCall method close may not have been invoked on clientSocket or any of its aliases.
+							Socket clientSocket = listenSocket.accept();
+							       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ new UDPServer(Integer.valueOf(port)) $$ edu.concordia.dpis.stationserver.FaultyStationServerImpl.UDPServer $$ regular method exit $$ ( 2276, 2312 ) $$ @MustCall method close may not have been invoked on new UDPServer(Integer.valueOf(port)) or any of its aliases.
+		this.udpServer = new UDPServer(Integer.valueOf(port));
+		                 ^
+  The type of object is: edu.concordia.dpis.stationserver.FaultyStationServerImpl.UDPServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream("./udp.properties") $$ java.io.FileInputStream $$ possible exceptional exit due to udpProperties.load(new FileInputStream("./udp.properties")) with exception type java.io.FileNotFoundException $$ ( 4429, 4468 ) $$ @MustCall method close may not have been invoked on new FileInputStream("./udp.properties") or any of its aliases.
+			udpProperties.load(new FileInputStream("./udp.properties"));
+			                   ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to udpProperties.load(new FileInputStream("./udp.properties")) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:136: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream("tcp.properties") $$ java.io.FileInputStream $$ possible exceptional exit due to tcpProperties.load(new FileInputStream("tcp.properties")) with exception type java.io.IOException $$ ( 4702, 4739 ) $$ @MustCall method close may not have been invoked on new FileInputStream("tcp.properties") or any of its aliases.
+			tcpProperties.load(new FileInputStream("tcp.properties"));
+			                   ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to tcpProperties.load(new FileInputStream("tcp.properties")) with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:153: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream("./udp.properties") $$ java.io.FileOutputStream $$ possible exceptional exit due to udpProperties.store(new FileOutputStream("./udp.properties"), null) with exception type java.io.IOException $$ ( 5162, 5202 ) $$ @MustCall method close may not have been invoked on new FileOutputStream("./udp.properties") or any of its aliases.
+			udpProperties.store(new FileOutputStream("./udp.properties"), null);
+			                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to udpProperties.store(new FileOutputStream("./udp.properties"), null) with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:170: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream("./tcp.properties") $$ java.io.FileOutputStream $$ possible exceptional exit due to tcpProperties.store(new FileOutputStream("./tcp.properties"), null) with exception type java.io.IOException $$ ( 5668, 5708 ) $$ @MustCall method close may not have been invoked on new FileOutputStream("./tcp.properties") or any of its aliases.
+			tcpProperties.store(new FileOutputStream("./tcp.properties"), null);
+			                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to tcpProperties.store(new FileOutputStream("./tcp.properties"), null) with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:304: error: (required.method.not.called) $$ 4 $$ method close $$ s $$ java.net.Socket $$ regular method exit $$ ( 9582, 9624 ) $$ @MustCall method close may not have been invoked on s or any of its aliases.
+				s = new Socket(hostAndPort[0], serverPort);
+				  ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:328: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream("udp.properties") $$ java.io.FileInputStream $$ possible exceptional exit due to properties.load(new FileInputStream("udp.properties")) with exception type java.io.IOException $$ ( 10275, 10312 ) $$ @MustCall method close may not have been invoked on new FileInputStream("udp.properties") or any of its aliases.
+			properties.load(new FileInputStream("udp.properties"));
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(new FileInputStream("udp.properties")) with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:372: error: (missing.creates.mustcall.for) $$ 3 $$ run $$ this $$ aSocket $$ ( 11472, 12383 ) $$ Method run re-assigns the non-final, owning field this.aSocket, but does not have a corresponding @CreatesMustCallFor annotation.
+				public void run() {
+				            ^
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:374: error: (required.method.not.called) $$ 4 $$ method close $$ field aSocket $$ java.net.DatagramSocket $$  Non-final owning field might be overwritten $$ ( 11523, 11557 ) $$ @MustCall method close may not have been invoked on field aSocket or any of its aliases.
+						aSocket = new DatagramSocket(port);
+						        ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:428: error: (required.method.not.called) $$ 4 $$ method close $$ listenSocket $$ java.net.ServerSocket $$ possible exceptional exit due to listenSocket.accept() with exception type java.io.IOException $$ ( 12724, 12775 ) $$ @MustCall method close may not have been invoked on listenSocket or any of its aliases.
+						ServerSocket listenSocket = new ServerSocket(port);
+						             ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: possible exceptional exit due to listenSocket.accept() with exception type java.io.IOException
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/stationserver/FaultyStationServerImpl.java:430: error: (required.method.not.called) $$ 4 $$ method close $$ clientSocket $$ java.net.Socket $$ regular method exit $$ ( 12804, 12848 ) $$ @MustCall method close may not have been invoked on clientSocket or any of its aliases.
+							Socket clientSocket = listenSocket.accept();
+							       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/Replica4Test.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ replica4 $$ edu.concordia.dpis.Replica $$ regular method exit $$ ( 1015, 1130 ) $$ @MustCall method close may not have been invoked on replica4 or any of its aliases.
+		Replica replica4 = new Replica(2500, 25, frontEndAddress)
+		        ^
+  The type of object is: edu.concordia.dpis.Replica.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/Replica4Test.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ new Replica(2500, 25, frontEndAddress) $$ edu.concordia.dpis.Replica $$ regular method exit $$ ( 1034, 1072 ) $$ @MustCall method close may not have been invoked on new Replica(2500, 25, frontEndAddress) or any of its aliases.
+		Replica replica4 = new Replica(2500, 25, frontEndAddress)
+		                   ^
+  The type of object is: edu.concordia.dpis.Replica.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/Replica4Test.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ new Replica(2500, 25, frontEndAddress).addNode(leader) $$ edu.concordia.dpis.Replica $$ regular method exit $$ ( 1034, 1093 ) $$ @MustCall method close may not have been invoked on new Replica(2500, 25, frontEndAddress).addNode(leader) or any of its aliases.
+				.addNode(leader).addNode(replica2).addNode(replica3);
+				        ^
+  The type of object is: edu.concordia.dpis.Replica.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/Replica4Test.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ new Replica(2500, 25, frontEndAddress).addNode(leader).addNode(replica2) $$ edu.concordia.dpis.Replica $$ regular method exit $$ ( 1034, 1111 ) $$ @MustCall method close may not have been invoked on new Replica(2500, 25, frontEndAddress).addNode(leader).addNode(replica2) or any of its aliases.
+				.addNode(leader).addNode(replica2).addNode(replica3);
+				                        ^
+  The type of object is: edu.concordia.dpis.Replica.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/LeaderTest.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ leader $$ edu.concordia.dpis.Replica $$ regular method exit $$ ( 958, 1080 ) $$ @MustCall method close may not have been invoked on leader or any of its aliases.
+		Replica leader = new Replica(2200, true, 100, frontEndAddress)
+		        ^
+  The type of object is: edu.concordia.dpis.Replica.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/LeaderTest.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ new Replica(2200, true, 100, frontEndAddress) $$ edu.concordia.dpis.Replica $$ regular method exit $$ ( 975, 1020 ) $$ @MustCall method close may not have been invoked on new Replica(2200, true, 100, frontEndAddress) or any of its aliases.
+		Replica leader = new Replica(2200, true, 100, frontEndAddress)
+		                 ^
+  The type of object is: edu.concordia.dpis.Replica.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/LeaderTest.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ new Replica(2200, true, 100, frontEndAddress).addNode(replica2) $$ edu.concordia.dpis.Replica $$ regular method exit $$ ( 975, 1043 ) $$ @MustCall method close may not have been invoked on new Replica(2200, true, 100, frontEndAddress).addNode(replica2) or any of its aliases.
+				.addNode(replica2).addNode(replica3).addNode(replica4);
+				        ^
+  The type of object is: edu.concordia.dpis.Replica.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/LeaderTest.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ new Replica(2200, true, 100, frontEndAddress).addNode(replica2).addNode(replica3) $$ edu.concordia.dpis.Replica $$ regular method exit $$ ( 975, 1061 ) $$ @MustCall method close may not have been invoked on new Replica(2200, true, 100, frontEndAddress).addNode(replica2).addNode(replica3) or any of its aliases.
+				.addNode(replica2).addNode(replica3).addNode(replica4);
+				                          ^
+  The type of object is: edu.concordia.dpis.Replica.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/fifo/MulticastSender.java:19: error: (required.method.not.called) $$ 4 $$ method close $$ field multicastSocket $$ java.net.MulticastSocket $$  Non-final owning field might be overwritten $$ ( 378, 422 ) $$ @MustCall method close may not have been invoked on field multicastSocket or any of its aliases.
+			this.multicastSocket = new MulticastSocket();
+			                     ^
+  The type of object is: java.net.MulticastSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/fifo/MulticastSender.java:31: error: (contracts.postcondition) $$ 3 $$ close $$ this.multicastSocket is @CalledMethods $$ this.multicastSocket is @CalledMethods("close") $$ ( 694, 842 ) $$ postcondition of close is not satisfied.
+	public void close() {
+	            ^
+  found   : this.multicastSocket is @CalledMethods
+  required: this.multicastSocket is @CalledMethods("close")
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/fifo/FIFO.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ new MulticastSender(3000, "230.0.0.1") $$ edu.concordia.dpis.fifo.MulticastSender $$ regular method exit $$ ( 623, 661 ) $$ @MustCall method close may not have been invoked on new MulticastSender(3000, "230.0.0.1") or any of its aliases.
+		this.multicastSender = new MulticastSender(3000, "230.0.0.1");
+		                       ^
+  The type of object is: edu.concordia.dpis.fifo.MulticastSender.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/MulticastServer.java:29: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.DatagramSocket $$ regular method exit $$ ( 515, 544 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+				socket = new DatagramSocket();
+				       ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+53 errors

@@ -1,0 +1,23 @@
+../../../../datasets/june2020_dataset/urla39b63eb76_tef_pipeline_tgz-pJ8-org_twentygototen_pipeline_ExampleJ8/src/org/twentygototen/pipeline/util/Pair.java:18: error: (return) $$ 2 $$ @MustCallUnknown String $$ @MustCall String $$ ( 399, 418 ) $$ incompatible types in return.
+		return first + ", "+second;
+		                   ^
+  type of expression: @MustCallUnknown String
+  method return type: @MustCall String
+../../../../datasets/june2020_dataset/urla39b63eb76_tef_pipeline_tgz-pJ8-org_twentygototen_pipeline_ExampleJ8/src/org/twentygototen/pipeline/sources/SourceWithPipe.java:65: error: (argument) $$ 4 $$ sink $$ sink $$ @MustCall Sink<capture#621 extends @MustCallUnknown Object super I extends @MustCallUnknown Object> $$ @MustCallUnknown Sink<? extends @MustCallUnknown Object super capture#627 extends I extends @MustCallUnknown Object> $$ ( 1493, 1508 ) $$ incompatible argument for parameter sink of sink.
+	return Pipeline.sink(source, pipe.next(sink));
+	                                      ^
+  found   : @MustCall Sink<capture#621 extends @MustCallUnknown Object super I extends @MustCallUnknown Object>
+  required: @MustCallUnknown Sink<? extends @MustCallUnknown Object super capture#627 extends I extends @MustCallUnknown Object>
+../../../../datasets/june2020_dataset/urla39b63eb76_tef_pipeline_tgz-pJ8-org_twentygototen_pipeline_ExampleJ8/src/org/twentygototen/pipeline/sources/SourceWithPipe.java:65: error: (argument) $$ 4 $$ sink $$ sink $$ @CalledMethods Sink<capture#556 extends @CalledMethods Object super I extends @CalledMethods Object> $$ @CalledMethods Sink<? extends @CalledMethods Object super capture#368 extends I extends @CalledMethods Object> $$ ( 1493, 1508 ) $$ incompatible argument for parameter sink of sink.
+	return Pipeline.sink(source, pipe.next(sink));
+	                                      ^
+  found   : @CalledMethods Sink<capture#556 extends @CalledMethods Object super I extends @CalledMethods Object>
+  required: @CalledMethods Sink<? extends @CalledMethods Object super capture#368 extends I extends @CalledMethods Object>
+../../../../datasets/june2020_dataset/urla39b63eb76_tef_pipeline_tgz-pJ8-org_twentygototen_pipeline_ExampleJ8/src/org/twentygototen/pipeline/pipes/FileReaderPipe.java:19: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-307 $$ java.io.FileReader $$ possible exceptional exit due to bufferedReader.readLine() with exception type java.io.IOException $$ ( 497, 518 ) $$ @MustCall method close may not have been invoked on temp-var-307 or any of its aliases.
+			BufferedReader bufferedReader = new BufferedReader(new FileReader(input));
+			                                                   ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to bufferedReader.readLine() with exception type java.io.IOException
+Note: ../../../../datasets/june2020_dataset/urla39b63eb76_tef_pipeline_tgz-pJ8-org_twentygototen_pipeline_ExampleJ8/src/org/twentygototen/pipeline/Pipeline.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 errors

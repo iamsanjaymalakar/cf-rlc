@@ -1,0 +1,14 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^stv6/http/HttpSocket.java^21^stv6.http.HttpSocket.<init>(Ljava/net/Socket;)V^5 = new <Application,Ljava/io/BufferedReader>@10^stv6.http.HttpSocket.<init>(Ljava/net/Socket;)V#6,stv6.http.HttpSocket.<init>(Ljava/net/Socket;)V#9,^FIELD,^false^true^Field escape;
+1^stv6/http/HttpSocket.java^24^stv6.http.HttpSocket.<init>(Ljava/net/Socket;)V^5 = new <Application,Ljava/io/BufferedReader>@10^stv6.http.HttpSocket.<init>(Ljava/net/Socket;)V#6,stv6.http.HttpSocket.<init>(Ljava/net/Socket;)V#9,^FIELD,^true^true^Field escape;
+2^stv6/http/HttpSocket.java^26^stv6.http.HttpSocket.<init>(Ljava/net/Socket;)V^12 = new <Application,Ljava/io/PrintWriter>@35^stv6.http.HttpSocket.<init>(Ljava/net/Socket;)V#15,^FIELD,^false^true^Field escape;
+3^stv6/http/HttpRequestor.java^80^stv6.http.HttpRequestor.createFor(Ljava/lang/String;Ljava/lang/String;I)Lstv6/http/HttpRequestor;^23 = new <Application,Lstv6/http/HttpSocket>@57^NULL^FIELD,INVOKE,^false^true^Field escape;
+4^stv6/Profile.java^352^stv6.Profile.loadFromFile(Ljava/io/File;)V^6 = new <Application,Ljava/io/BufferedReader>@8^stv6.Profile.loadFromFile(Ljava/io/File;)V#7,^INVOKE,^false^false^Try-catch Fix;
+5^stv6/http/HttpServer.java^103^stv6.http.HttpServer.run()V^16 = new <Application,Lstv6/http/HttpSocket>@44^stv6.http.HttpServer.run()V#9,^FIELD,INVOKE,^false^true^Field escape;
+6^stv6/episodes/managers/UpnpManager.java^104^stv6.episodes.managers.UpnpManager.reload()V^11 = new <Application,Ljava/io/BufferedReader>@42^stv6.episodes.managers.UpnpManager.reload()V#12,^INVOKE,^false^false^Try-catch Fix;
+7^stv6/templating/TemplateReader.java^24^stv6.templating.TemplateReader.<init>(Ljava/io/File;)V^7 = new <Application,Ljava/io/BufferedReader>@20^stv6.templating.TemplateReader.<init>(Ljava/io/File;)V#8,^FIELD,^false^true^Field escape;
+8^stv6/handlers/FileHandler.java^77^stv6.handlers.FileHandler.handle(Lstv6/http/request/Request;Lstv6/http/request/Response;)Z^33 = new <Application,Ljava/io/BufferedReader>@214^stv6.handlers.FileHandler.handle(Lstv6/http/request/Request;Lstv6/http/request/Response;)Z#34,^INVOKE,^false^false^Try-catch Fix;
+9^stv6/handlers/FileHandler.java^108^stv6.handlers.FileHandler.getBytesFromFile(Ljava/io/File;)[B^3 = new <Application,Ljava/io/FileInputStream>@0^NULL^INVOKE,^false^false^Normal Fix;
+10^stv6/handlers/util/CoverHandler.java^140^stv6.handlers.util.CoverHandler.getBytesFromFile(Ljava/io/File;)[B^3 = new <Application,Ljava/io/FileInputStream>@0^NULL^INVOKE,^false^false^Normal Fix;
+11^stv6/episodes/managers/FileSystemManager.java^156^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+12^stv6/database/MysqlDatabase.java^136^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

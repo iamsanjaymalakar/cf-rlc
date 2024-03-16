@@ -1,0 +1,106 @@
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/system/BanHandler.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ fstream $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 1141, 1232 ) $$ @MustCall method close may not have been invoked on fstream or any of its aliases.
+			FileInputStream fstream = new FileInputStream(FileUtils.PROPS_DIR + FileUtils.BANNED_FILE);
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/system/heartbeat/Beater.java:52: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-65 $$ java.io.InputStream $$ regular method exit $$ ( 1789, 1816 ) $$ @MustCall method close may not have been invoked on temp-var-65 or any of its aliases.
+								reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+								                                                                           ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:227: error: (assignment) $$ 2 $$ @MustCallUnknown ISQL $$ @MustCall ISQL $$ ( 7148, 7227 ) $$ incompatible types in assignment.
+			sql = (ISQL)Class.forName(getSystemProperties().getValue("SQL-Driver")).newInstance();
+			      ^
+  found   : @MustCallUnknown ISQL
+  required: @MustCall ISQL
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/networking/packets/PacketManager.java:76: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-289 $$ java.net.ServerSocket $$ regular method exit $$ ( 2745, 2779 ) $$ @MustCall method close may not have been invoked on temp-var-289 or any of its aliases.
+			serverSocket = new ServerSocket(this.server.Port);
+			               ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/networking/packets/PacketManager.java:172: error: (required.method.not.called) $$ 4 $$ method close $$ connection $$ java.net.Socket $$ regular method exit $$ ( 5022, 5056 ) $$ @MustCall method close may not have been invoked on connection or any of its aliases.
+					connection = serverSocket.accept();
+					           ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/util/logger/Logger.java:120: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-364 $$ java.io.PrintWriter $$ regular method exit $$ ( 2795, 2820 ) $$ @MustCall method close may not have been invoked on temp-var-364 or any of its aliases.
+		out = new PrintWriter(filepath);
+		      ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/util/logger/Logger.java:136: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-367 $$ java.io.PrintWriter $$ regular method exit $$ ( 3317, 3342 ) $$ @MustCall method close may not have been invoked on temp-var-367 or any of its aliases.
+		out = new PrintWriter(filepath);
+		      ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/API/plugin/CommandHandler.java:155: error: (required.method.not.called) $$ 4 $$ method close $$ fstream $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 4236, 4312 ) $$ @MustCall method close may not have been invoked on fstream or any of its aliases.
+		FileInputStream fstream = new FileInputStream("properties/commands.config");
+		                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/util/properties/Properties.java:111: error: (required.method.not.called) $$ 4 $$ method close $$ fstream $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 3472, 3544 ) $$ @MustCall method close may not have been invoked on fstream or any of its aliases.
+		FileInputStream fstream = new FileInputStream("properties/" + filename);
+		                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/API/plugin/PluginHandler.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ file $$ java.util.jar.JarFile $$ regular method exit $$ ( 1511, 1545 ) $$ @MustCall method close may not have been invoked on file or any of its aliases.
+					file = new JarFile(pluginFiles[i]);
+					     ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/API/plugin/PluginHandler.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ temp-var-526 $$ java.io.InputStream $$ possible exceptional exit due to properties.load(file.getInputStream(fileName)) with exception type java.io.IOException $$ ( 1990, 2019 ) $$ @MustCall method close may not have been invoked on temp-var-526 or any of its aliases.
+									properties.load(file.getInputStream(fileName));
+									                                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to properties.load(file.getInputStream(fileName)) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/API/plugin/PluginHandler.java:92: error: (required.method.not.called) $$ 4 $$ method close $$ loader $$ java.lang.ClassLoader $$ regular method exit $$ ( 2584, 2667 ) $$ @MustCall method close may not have been invoked on loader or any of its aliases.
+			ClassLoader loader = URLClassLoader.newInstance(urls, getClass().getClassLoader());
+			            ^
+  The type of object is: java.lang.ClassLoader.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/Level.java:266: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to new GZIPOutputStream(fos) with exception type java.io.IOException $$ ( 6810, 6881 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+		FileOutputStream fos = new FileOutputStream("levels/" + name + ".ggs");
+		                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new GZIPOutputStream(fos) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/Level.java:268: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.ObjectOutputStream $$ possible exceptional exit due to out.writeLong(serialVersionUID) with exception type java.io.IOException $$ ( 6936, 6989 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+		ObjectOutputStream out = new ObjectOutputStream(gos);
+		                   ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.writeLong(serialVersionUID) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/Level.java:330: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to new GZIPInputStream(fis) with exception type java.io.IOException $$ ( 8832, 8884 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+			FileInputStream fis = new FileInputStream(filename);
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new GZIPInputStream(fis) with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/Level.java:332: error: (required.method.not.called) $$ 4 $$ method close $$ obj $$ java.io.ObjectInputStream $$ possible exceptional exit due to obj.readLong() with exception type java.io.IOException $$ ( 8939, 8990 ) $$ @MustCall method close may not have been invoked on obj or any of its aliases.
+			ObjectInputStream obj = new ObjectInputStream(gis);
+			                  ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: possible exceptional exit due to obj.readLong() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/groups/Group.java:154: error: (required.method.not.called) $$ 4 $$ method close $$ fstream $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 4502, 4565 ) $$ @MustCall method close may not have been invoked on fstream or any of its aliases.
+		FileInputStream fstream = new FileInputStream("ranks/" + name);
+		                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/convert/DatToGGS.java:34: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ regular method exit $$ ( 1015, 1050 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+			fis = new FileInputStream(filename);
+			    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/convert/DatToGGS.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.ObjectInputStream $$ regular method exit $$ ( 1447, 1479 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			in = new ObjectInputStream(gzis);
+			   ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/convert/DatToGGS.java:74: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ regular method exit $$ ( 2095, 2131 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+			fos = new FileOutputStream(filename);
+			    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: regular method exit
+../../../../datasets/june2020_dataset/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/convert/DatToGGS.java:79: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.ObjectOutputStream $$ regular method exit $$ ( 2287, 2321 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+			out = new ObjectOutputStream(gzos);
+			    ^
+  The type of object is: java.io.ObjectOutputStream.
+  Reason for going out of scope: regular method exit
+21 errors

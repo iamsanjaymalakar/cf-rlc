@@ -1,0 +1,5 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^v/Util.java^31^v.Util.getresource(Ljava/lang/String;)Ljava/lang/String;^5 = new <Application,Ljava/io/BufferedReader>@8^v.Util.getresource(Ljava/lang/String;)Ljava/lang/String;#6,v.Util.getresource(Ljava/lang/String;)Ljava/lang/String;#9,^INVOKE,^false^false^Try-catch Fix;
+1^v/FileCharStream.java^7^v.FileCharStream.<init>(Ljava/lang/String;)V^6 = new <Application,Ljava/io/BufferedReader>@7^v.FileCharStream.<init>(Ljava/lang/String;)V#7,^FIELD,^false^true^Field escape;
+2^v/ConsoleCharStream.java^21^v.ConsoleCharStream.gets()Ljava/lang/String;^4 = invokevirtual < Application, Lv/ConsoleCharStream, reader()Ljava/io/BufferedReader; > 1 @1 exception:3^NULL^FIELD,INVOKE,^false^true^Field escape;
+3^v/ConsoleCharStream.java^42^v.ConsoleCharStream.read_nobuf()Ljava/lang/String;^14 = invokevirtual < Application, Lv/ConsoleCharStream, reader()Ljava/io/BufferedReader; > 1 @30 exception:13^NULL^FIELD,INVOKE,^false^true^Field escape;

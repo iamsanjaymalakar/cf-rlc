@@ -1,0 +1,107 @@
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/MainApplet.java:170: error: (required.method.not.called) $$ 4 $$ method close $$ vttyAMA[i].getInputStream() $$ java.io.InputStream $$ regular method exit $$ ( 5838, 5865 ) $$ @MustCall method close may not have been invoked on vttyAMA[i].getInputStream() or any of its aliases.
+            emu.getBoard().setUARTInputStream(i, vttyAMA[i].getInputStream());
+                                                                          ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/MainApplet.java:171: error: (required.method.not.called) $$ 4 $$ method close $$ vttyAMA[i].getOutputStream() $$ java.io.OutputStream $$ regular method exit $$ ( 5918, 5946 ) $$ @MustCall method close may not have been invoked on vttyAMA[i].getOutputStream() or any of its aliases.
+            emu.getBoard().setUARTOutputStream(i, vttyAMA[i].getOutputStream());
+                                                                            ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/StdoutPanel.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ spane.getOutputStream() $$ java.io.PrintStream $$ regular method exit $$ ( 459, 482 ) $$ @MustCall method close may not have been invoked on spane.getOutputStream() or any of its aliases.
+        System.setOut(spane.getOutputStream());
+                                           ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/VirtualTerminal.java:66: error: (required.method.not.called) $$ 4 $$ method close $$ new PipedInputStream() $$ java.io.PipedInputStream $$ possible exceptional exit due to throw new IllegalStateException(e); with exception type java.lang.IllegalStateException $$ ( 1763, 1785 ) $$ @MustCall method close may not have been invoked on new PipedInputStream() or any of its aliases.
+            inPin = new PipedInputStream();
+                    ^
+  The type of object is: java.io.PipedInputStream.
+  Reason for going out of scope: possible exceptional exit due to throw new IllegalStateException(e); with exception type java.lang.IllegalStateException
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/VirtualTerminal.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ new PipedInputStream() $$ java.io.PipedInputStream $$ possible exceptional exit due to new PipedOutputStream(outPinRaw) with exception type java.io.IOException $$ ( 1863, 1885 ) $$ @MustCall method close may not have been invoked on new PipedInputStream() or any of its aliases.
+            outPinRaw = new PipedInputStream();
+                        ^
+  The type of object is: java.io.PipedInputStream.
+  Reason for going out of scope: possible exceptional exit due to new PipedOutputStream(outPinRaw) with exception type java.io.IOException
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/SystemPane.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ new PipedInputStream(16384) $$ java.io.PipedInputStream $$ regular method exit $$ ( 905, 932 ) $$ @MustCall method close may not have been invoked on new PipedInputStream(16384) or any of its aliases.
+        outPin = new PipedInputStream(16384);
+                 ^
+  The type of object is: java.io.PipedInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/SystemPane.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ new PipedOutputStream() $$ java.io.PipedOutputStream $$ regular method exit $$ ( 1177, 1200 ) $$ @MustCall method close may not have been invoked on new PipedOutputStream() or any of its aliases.
+            outPout = new PipedOutputStream();
+                      ^
+  The type of object is: java.io.PipedOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/SystemPane.java:55: error: (required.method.not.called) $$ 4 $$ method close $$ new ForkedPrintStream(outInner, systemOut) $$ net.katsuster.ememu.ui.ForkedPrintStream $$ regular method exit $$ ( 1368, 1410 ) $$ @MustCall method close may not have been invoked on new ForkedPrintStream(outInner, systemOut) or any of its aliases.
+        out = new ForkedPrintStream(outInner, systemOut);
+              ^
+  The type of object is: net.katsuster.ememu.ui.ForkedPrintStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/ARMLinuxLoader.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ uri.toURL().openStream() $$ java.io.InputStream $$ possible exceptional exit due to s.readByte() with exception type java.io.IOException $$ ( 1067, 1091 ) $$ @MustCall method close may not have been invoked on uri.toURL().openStream() or any of its aliases.
+                    new BufferedInputStream(uri.toURL().openStream()));
+                                                                  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to s.readByte() with exception type java.io.IOException
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/MainWindow.java:104: error: (required.method.not.called) $$ 4 $$ method close $$ vttyAMA[i].getInputStream() $$ java.io.InputStream $$ regular method exit $$ ( 3191, 3218 ) $$ @MustCall method close may not have been invoked on vttyAMA[i].getInputStream() or any of its aliases.
+            emu.getBoard().setUARTInputStream(i, vttyAMA[i].getInputStream());
+                                                                          ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/MainWindow.java:105: error: (required.method.not.called) $$ 4 $$ method close $$ vttyAMA[i].getOutputStream() $$ java.io.OutputStream $$ regular method exit $$ ( 3271, 3299 ) $$ @MustCall method close may not have been invoked on vttyAMA[i].getOutputStream() or any of its aliases.
+            emu.getBoard().setUARTOutputStream(i, vttyAMA[i].getOutputStream());
+                                                                            ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/ForkedPrintStream.java:40: error: (override.return) $$ 6 $$ @MustCall("close") PrintStream $$ @MustCall Appendable $$ @MustCall("close") ForkedPrintStream $$ @MustCall("close") PrintStream append(@MustCall("close") ForkedPrintStream this, @MustCall char p0) $$ @MustCall("close") Appendable $$ @MustCall Appendable append(@MustCall Appendable this, @MustCall char p0) throws @MustCall IOException $$ ( 818, 829 ) $$ Incompatible return type.
+    public PrintStream append(char c) {
+           ^
+  found   : @MustCall("close") PrintStream
+  required: @MustCall Appendable
+  Consequence: method in @MustCall("close") ForkedPrintStream
+    @MustCall("close") PrintStream append(@MustCall("close") ForkedPrintStream this, @MustCall char p0)
+  cannot override method in @MustCall("close") Appendable
+    @MustCall Appendable append(@MustCall Appendable this, @MustCall char p0) throws @MustCall IOException
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/ForkedPrintStream.java:57: error: (override.return) $$ 6 $$ @MustCall("close") PrintStream $$ @MustCall Appendable $$ @MustCall("close") ForkedPrintStream $$ @MustCall("close") PrintStream append(@MustCall("close") ForkedPrintStream this, @MustCall CharSequence p0) $$ @MustCall("close") Appendable $$ @MustCall Appendable append(@MustCall Appendable this, @MustCall CharSequence p0) throws @MustCall IOException $$ ( 1181, 1192 ) $$ Incompatible return type.
+    public PrintStream append(CharSequence csq) {
+           ^
+  found   : @MustCall("close") PrintStream
+  required: @MustCall Appendable
+  Consequence: method in @MustCall("close") ForkedPrintStream
+    @MustCall("close") PrintStream append(@MustCall("close") ForkedPrintStream this, @MustCall CharSequence p0)
+  cannot override method in @MustCall("close") Appendable
+    @MustCall Appendable append(@MustCall Appendable this, @MustCall CharSequence p0) throws @MustCall IOException
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/ForkedPrintStream.java:81: error: (override.return) $$ 6 $$ @MustCall("close") PrintStream $$ @MustCall Appendable $$ @MustCall("close") ForkedPrintStream $$ @MustCall("close") PrintStream append(@MustCall("close") ForkedPrintStream this, @MustCall CharSequence p0, @MustCall int p1, @MustCall int p2) $$ @MustCall("close") Appendable $$ @MustCall Appendable append(@MustCall Appendable this, @MustCall CharSequence p0, @MustCall int p1, @MustCall int p2) throws @MustCall IOException $$ ( 1758, 1769 ) $$ Incompatible return type.
+    public PrintStream append(CharSequence csq, int start, int end) {
+           ^
+  found   : @MustCall("close") PrintStream
+  required: @MustCall Appendable
+  Consequence: method in @MustCall("close") ForkedPrintStream
+    @MustCall("close") PrintStream append(@MustCall("close") ForkedPrintStream this, @MustCall CharSequence p0, @MustCall int p1, @MustCall int p2)
+  cannot override method in @MustCall("close") Appendable
+    @MustCall Appendable append(@MustCall Appendable this, @MustCall CharSequence p0, @MustCall int p1, @MustCall int p2) throws @MustCall IOException
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/ForkedPrintStream.java:146: error: (owning.override.return) $$ 4 $$ format $$ net.katsuster.ememu.ui.ForkedPrintStream $$ format $$ java.io.PrintStream $$ ( 3148, 3422 ) $$ Incompatible ownership for return.
+    public PrintStream format(Locale l, String format, Object... args) {
+                       ^
+  found   : no ownership annotation or @Owning
+  required: @NotOwning
+  Consequence: method format in net.katsuster.ememu.ui.ForkedPrintStream cannot override method format in java.io.PrintStream
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/ForkedPrintStream.java:165: error: (owning.override.return) $$ 4 $$ format $$ net.katsuster.ememu.ui.ForkedPrintStream $$ format $$ java.io.PrintStream $$ ( 3645, 3903 ) $$ Incompatible ownership for return.
+    public PrintStream format(String format, Object... args) {
+                       ^
+  found   : no ownership annotation or @Owning
+  required: @NotOwning
+  Consequence: method format in net.katsuster.ememu.ui.ForkedPrintStream cannot override method format in java.io.PrintStream
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/ForkedPrintStream.java:331: error: (owning.override.return) $$ 4 $$ printf $$ net.katsuster.ememu.ui.ForkedPrintStream $$ printf $$ java.io.PrintStream $$ ( 6700, 6974 ) $$ Incompatible ownership for return.
+    public PrintStream printf(Locale l, String format, Object... args) {
+                       ^
+  found   : no ownership annotation or @Owning
+  required: @NotOwning
+  Consequence: method printf in net.katsuster.ememu.ui.ForkedPrintStream cannot override method printf in java.io.PrintStream
+../dataset/june2020_dataset/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/ForkedPrintStream.java:352: error: (owning.override.return) $$ 4 $$ printf $$ net.katsuster.ememu.ui.ForkedPrintStream $$ printf $$ java.io.PrintStream $$ ( 7236, 7494 ) $$ Incompatible ownership for return.
+    public PrintStream printf(String format, Object... args) {
+                       ^
+  found   : no ownership annotation or @Owning
+  required: @NotOwning
+  Consequence: method printf in net.katsuster.ememu.ui.ForkedPrintStream cannot override method printf in java.io.PrintStream
+18 errors

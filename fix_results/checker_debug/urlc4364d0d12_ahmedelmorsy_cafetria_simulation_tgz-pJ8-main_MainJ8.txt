@@ -1,0 +1,4 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^simulation/global/Statistics.java^41^simulation.global.Statistics.<clinit>()V^4 = new <Application,Lsimulation/logging/FileLogger>@10^NULL^FIELD,^false^true^Field escape;
+1^simulation/logging/FileLogger.java^13^simulation.logging.FileLogger.<init>(Ljava/io/File;)V^5 = new <Application,Ljava/io/PrintWriter>@5^NULL^FIELD,^false^true^Field escape;
+2^main/Simulation.java^39^main.Simulation.<init>(IIILjava/lang/String;)V^13 = new <Application,Lsimulation/logging/FileLogger>@28^NULL^FIELD,^false^true^Field escape;

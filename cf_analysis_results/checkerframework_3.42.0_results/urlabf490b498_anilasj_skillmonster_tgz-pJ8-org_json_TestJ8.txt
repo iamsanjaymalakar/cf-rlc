@@ -1,0 +1,34 @@
+../dataset/june2020_dataset/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java:474: error: (required.method.not.called) $$ 4 $$ method close $$ j.write(new StringWriter()) $$ java.io.Writer $$ possible exceptional exit due to XML.toJSONObject(s) with exception type org.json.JSONException $$ ( 23983, 24010 ) $$ @MustCall method close may not have been invoked on j.write(new StringWriter()) or any of its aliases.
+            System.out.println(j.write(new StringWriter()));
+                                      ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: possible exceptional exit due to XML.toJSONObject(s) with exception type org.json.JSONException
+../dataset/june2020_dataset/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/org/json/JSONArray.java:904: error: (required.method.not.called) $$ 4 $$ method close $$ ((JSONObject)v).write(writer) $$ java.io.Writer $$ regular method exit $$ ( 29067, 29096 ) $$ @MustCall method close may not have been invoked on ((JSONObject)v).write(writer) or any of its aliases.
+                    ((JSONObject)v).write(writer);
+                                         ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/org/json/JSONArray.java:906: error: (required.method.not.called) $$ 4 $$ method close $$ ((JSONArray)v).write(writer) $$ java.io.Writer $$ regular method exit $$ ( 29171, 29199 ) $$ @MustCall method close may not have been invoked on ((JSONArray)v).write(writer) or any of its aliases.
+                    ((JSONArray)v).write(writer);
+                                        ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/org/json/JSONObject.java:1570: error: (required.method.not.called) $$ 4 $$ method close $$ ((JSONObject)v).write(writer) $$ java.io.Writer $$ regular method exit $$ ( 52568, 52597 ) $$ @MustCall method close may not have been invoked on ((JSONObject)v).write(writer) or any of its aliases.
+                    ((JSONObject)v).write(writer);
+                                         ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/org/json/JSONObject.java:1572: error: (required.method.not.called) $$ 4 $$ method close $$ ((JSONArray)v).write(writer) $$ java.io.Writer $$ regular method exit $$ ( 52672, 52700 ) $$ @MustCall method close may not have been invoked on ((JSONArray)v).write(writer) or any of its aliases.
+                    ((JSONArray)v).write(writer);
+                                        ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope: regular method exit
+error: SourceChecker.typeProcess: unexpected Throwable (CompletionFailure) while processing ../dataset/june2020_dataset/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/com/skm/test/AngelListTest.java; message: class file for com.sun.jersey.core.util.FeaturesAndProperties not found
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch 6480-dev, 2024-03-07, commit b2d6fdd. 
+  Compilation unit: ../dataset/june2020_dataset/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/com/skm/test/AngelListTest.java
+  Last visited tree at line 25 column 1:
+  public class AngelListTest {
+  Exception: com.sun.tools.javac.code.Symbol$CompletionFailure: class file for com.sun.jersey.core.util.FeaturesAndProperties not found; com.sun.tools.javac.code.Symbol$CompletionFailure: class file for com.sun.jersey.core.util.FeaturesAndProperties not found
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+6 errors

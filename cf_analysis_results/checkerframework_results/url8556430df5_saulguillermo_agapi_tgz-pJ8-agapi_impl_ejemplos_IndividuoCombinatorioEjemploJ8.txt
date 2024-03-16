@@ -1,0 +1,6 @@
+../../../../datasets/june2020_dataset/url8556430df5_saulguillermo_agapi_tgz-pJ8-agapi_impl_ejemplos_IndividuoCombinatorioEjemploJ8/src/agapi/Individuo.java:93: error: (assignment) $$ 2 $$ @MustCall Class<capture#417 extends @MustCallUnknown Individuo> $$ @MustCallUnknown Class<? extends @MustCall Individuo> $$ ( 3591, 3615 ) $$ incompatible types in assignment.
+		Class<? extends Individuo> claseIndividuo = tipoIndividuo.getClass();
+		                                                                  ^
+  found   : @MustCall Class<capture#417 extends @MustCallUnknown Individuo>
+  required: @MustCallUnknown Class<? extends @MustCall Individuo>
+1 error
