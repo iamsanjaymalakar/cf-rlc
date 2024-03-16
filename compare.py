@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 CF_3_21 = '/home/smala009/RLF/cf-rlc/cf_analysis_results/checkerframework_results'
 CF_3_43 = '/home/smala009/RLF/cf-rlc/cf_analysis_results/checkerframework_3.42.0_results'
 CF_3_43_WPI = '/home/smala009/RLF/cf-rlc/cf_analysis_results/checkerframework_3.42.0_results_WPI'
-OUT_CSV = 'comparison_results/comparison_output.csv'
+OUT_CSV = 'comparison_results/cf_comparison_output.csv'
 
 
 def read_error_file(file_path):
@@ -165,7 +165,7 @@ def generate_error_count_graph(csv_file, output_dir):
     plt.legend()
 
     # Save the image to the output directory
-    output_path = os.path.join(output_dir, 'error_count_comparison.png')
+    output_path = os.path.join(output_dir, 'cf_error_count_comparison.png')
     plt.savefig(output_path, dpi=300)
     print(f"Image saved: {output_path}")
 
