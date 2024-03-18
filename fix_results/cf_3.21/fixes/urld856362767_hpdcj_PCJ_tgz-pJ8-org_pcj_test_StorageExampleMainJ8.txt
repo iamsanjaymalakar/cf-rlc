@@ -1,0 +1,47 @@
+10865
+2017
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/test/PcjMicroBenchmarkPingPong.java; Line number 172
+vim +172 ../../../../datasets/debug_supplemented_njr/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/test/PcjMicroBenchmarkPingPong.java
+
++++ Add following code above line:179 (org/pcj/test/PcjMicroBenchmarkPingPong.java)
+try{ 
++++ Add following code below line:180 (org/pcj/test/PcjMicroBenchmarkPingPong.java)
+} catch(Exception e){ 
+    if (nf!=null) { nf.close();}
+    throw e; 
+}
++++ Add following code above line:190 (org/pcj/test/PcjMicroBenchmarkPingPong.java)
+try{
+    nf.close();
+} catch(Exception e){ e.printStackTrace(); }
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/test/PcjMicroBenchmarkBroadcast.java; Line number 88
+vim +88 ../../../../datasets/debug_supplemented_njr/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/test/PcjMicroBenchmarkBroadcast.java
+
++++ Add following code above line:101 (org/pcj/test/PcjMicroBenchmarkBroadcast.java)
+try{ 
++++ Add following code below line:102 (org/pcj/test/PcjMicroBenchmarkBroadcast.java)
+} catch(Exception e){ 
+    if (nf!=null) { nf.close();}
+    throw e; 
+}
++++ Add following code above line:132 (org/pcj/test/PcjMicroBenchmarkBroadcast.java)
+try{
+    nf.close();
+} catch(Exception e){ e.printStackTrace(); }
+
+--------------------------------------------
+27] ../../../../datasets/debug_supplemented_njr/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageValueBroadcastBytes.java; Line number 102
+vim +102 ../../../../datasets/debug_supplemented_njr/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageValueBroadcastBytes.java
+
++++ Add following code below line: 107 (org/pcj/internal/message/MessageValueBroadcastBytes.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 102
+
+--------------------------------------------

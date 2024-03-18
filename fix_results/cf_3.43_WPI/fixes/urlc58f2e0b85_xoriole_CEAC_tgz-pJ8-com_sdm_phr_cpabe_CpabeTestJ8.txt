@@ -1,0 +1,71 @@
+18962
+126
+
+SOURCE LEVEL FIXES
+
+2] ../../../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java; Line number 15
+vim +15 ../../../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java
+
++++ Add following code above line:15 (com/sdm/phr/cpabe/Common.java)
+try{
++++ Add following code after line:19 (com/sdm/phr/cpabe/Common.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 15
+
++++ Delete Line number 21 (com/sdm/phr/cpabe/Common.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java; Line number 27
+vim +27 ../../../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java
+
++++ Add following code above line:27 (com/sdm/phr/cpabe/Common.java)
+try{
++++ Add following code after line:28 (com/sdm/phr/cpabe/Common.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 27
+
++++ Delete Line number 29 (com/sdm/phr/cpabe/Common.java)
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java; Line number 35
+vim +35 ../../../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java
+
++++ Add following code above line:35 (com/sdm/phr/cpabe/Common.java)
+try{
++++ Add following code after line:47 (com/sdm/phr/cpabe/Common.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 35
+
++++ Delete Line number 49 (com/sdm/phr/cpabe/Common.java)
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java; Line number 82
+vim +82 ../../../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/cpabe/Common.java
+
++++ Add following code above line:82 (com/sdm/phr/cpabe/Common.java)
+try{
++++ Add following code after line:102 (com/sdm/phr/cpabe/Common.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 82
+
++++ Delete Line number 104 (com/sdm/phr/cpabe/Common.java)
+
+--------------------------------------------
+6] ../../../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/CryptoUtil.java; Line number 17
+vim +17 ../../../dataset/june2020_dataset/urlc58f2e0b85_xoriole_CEAC_tgz-pJ8-com_sdm_phr_cpabe_CpabeTestJ8/src/com/sdm/phr/CryptoUtil.java
+
++++ Add following code below line: 35 (com/sdm/phr/CryptoUtil.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 17
+
+--------------------------------------------

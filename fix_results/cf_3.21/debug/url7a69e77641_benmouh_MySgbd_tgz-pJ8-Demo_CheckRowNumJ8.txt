@@ -1,0 +1,11 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^org/sgbd/Mysgbd/data/Test.java^17^org.sgbd.Mysgbd.data.Test.main([Ljava/lang/String;)V^6 = new <Application,Ljava/io/BufferedReader>@8^org.sgbd.Mysgbd.data.Test.main([Ljava/lang/String;)V#7,^INVOKE,^false^false^Try-catch Fix;
+1^org/sgbd/Mysgbd/data/Test.java^26^org.sgbd.Mysgbd.data.Test.main([Ljava/lang/String;)V^23 = new <Application,Ljava/io/BufferedReader>@71^org.sgbd.Mysgbd.data.Test.main([Ljava/lang/String;)V#24,^INVOKE,^false^false^Loop Fix;Normal Fix;
+2^org/sgbd/Mysgbd/MqlParser.java^50^org.sgbd.Mysgbd.MqlParser.main([Ljava/lang/String;)V^7 = new <Application,Ljava/io/DataInputStream>@34^org.sgbd.Mysgbd.MqlParser.main([Ljava/lang/String;)V#8,^INVOKE,FIELD,^false^true^Field escape;
+3^org/sgbd/Mysgbd/parser/MysgbdParser.java^27^org.sgbd.Mysgbd.parser.MysgbdParser.main([Ljava/lang/String;)V^7 = new <Application,Ljava/io/DataInputStream>@34^org.sgbd.Mysgbd.parser.MysgbdParser.main([Ljava/lang/String;)V#8,^INVOKE,FIELD,^false^true^Field escape;
+4^Demo/NextPage.java^19^Demo.NextPage.<init>(Ljava/lang/String;)V^29 = new <Application,LDemo/TextAreaOutputStream>@69^NULL^INVOKE,^false^false^Normal Fix;
+5^Demo/PreparedDemo.java^42^Demo.PreparedDemo.main([Ljava/lang/String;)V^7 = new <Application,Ljava/io/DataInputStream>@34^Demo.PreparedDemo.main([Ljava/lang/String;)V#8,^INVOKE,FIELD,^false^true^Field escape;
+6^Demo/CustomFct.java^45^Demo.CustomFct.main([Ljava/lang/String;)V^7 = new <Application,Ljava/io/DataInputStream>@34^Demo.CustomFct.main([Ljava/lang/String;)V#8,^INVOKE,FIELD,^false^true^Field escape;
+7^Demo/CheckRowNum.java^33^Demo.CheckRowNum.fixSqlWithRowNum(Ljava/lang/String;)Ljava/lang/String;^4 = new <Application,Ljava/io/StringBufferInputStream>@0^NULL^INVOKE,FIELD,^false^true^Field escape;
+8^Demo/MDemo.java^69^Demo.MDemo.main([Ljava/lang/String;)V^9 = new <Application,Ljava/io/DataInputStream>@42^Demo.MDemo.main([Ljava/lang/String;)V#10,^INVOKE,FIELD,^false^true^Field escape;
+9^Demo/MDemo.java^109^Demo.MDemo.queryDB(Lorg/sgbd/Mysgbd/MQuery;)V^17 = new <Application,Ljava/io/BufferedReader>@46^Demo.MDemo.queryDB(Lorg/sgbd/Mysgbd/MQuery;)V#18,^INVOKE,^false^false^Normal Fix;

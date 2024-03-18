@@ -1,0 +1,15 @@
+20851
+31
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url64700e9ab7_dwicke_course_scheduler_tgz-pJ8-org_json_TestJ8/src/coursescheduleapp/view/ResultsController.java; Line number 345
+vim +345 ../../../dataset/june2020_dataset/url64700e9ab7_dwicke_course_scheduler_tgz-pJ8-org_json_TestJ8/src/coursescheduleapp/view/ResultsController.java
+
++++ Add following code below line: 355 (coursescheduleapp/view/ResultsController.java)
+try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+// where variable <NEW_VARIABLE> points to the resource from line 345
+
++++ Delete Line number 349 (coursescheduleapp/view/ResultsController.java)
+
+--------------------------------------------

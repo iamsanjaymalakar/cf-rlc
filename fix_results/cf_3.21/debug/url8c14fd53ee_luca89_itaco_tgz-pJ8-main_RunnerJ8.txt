@@ -1,0 +1,16 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^main/FileItaco.java^221^main.FileItaco.getContenuto()Ljava/lang/String;^3 = new <Application,Ljava/util/Scanner>@0^main.FileItaco.getContenuto()Ljava/lang/String;#4,^INVOKE,^false^false^Try-catch Fix;
+1^test/JasminTest.java^57^test.JasminTest.testFile(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V^47 = new <Application,Ljava/io/PrintStream>@104^NULL^INVOKE,^false^false^Try-catch Fix;
+2^test/JasminTest.java^67^test.JasminTest.testFile(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V^57 = new <Application,Ljava/util/Scanner>@161^test.JasminTest.testFile(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V#59,^INVOKE,^false^false^Try-catch Fix;
+3^compilatore/CTarget.java^424^compilatore.CTarget.eseguiFunzione(Ljava/lang/String;Lcompilatore/Espressione;)V^17 = new <Application,Lcompilatore/CTarget$AggiungiVirgola>@32^NULL^FIELD,^false^true^Field escape;
+4^compilatore/CTarget.java^527^compilatore.CTarget.compilaFile(Ljava/lang/String;)V^14 = new <Application,Ljava/io/FileReader>@45^NULL^FIELD,INVOKE,^false^true^Field escape;
+5^compilatore/CTarget.java^539^compilatore.CTarget.compilaFile(Ljava/lang/String;)V^60 = new <Application,Ljava/io/FileOutputStream>@162^NULL^INVOKE,^false^false^Normal Fix;
+6^compilatore/RubyTarget.java^398^compilatore.RubyTarget.eseguiFunzione(Ljava/lang/String;Lcompilatore/Espressione;)V^17 = new <Application,Lcompilatore/RubyTarget$AggiungiVirgola>@32^NULL^FIELD,^false^true^Field escape;
+7^compilatore/RubyTarget.java^497^compilatore.RubyTarget.compilaFile(Ljava/lang/String;)V^14 = new <Application,Ljava/io/FileReader>@45^NULL^FIELD,INVOKE,^false^true^Field escape;
+8^compilatore/RubyTarget.java^509^compilatore.RubyTarget.compilaFile(Ljava/lang/String;)V^60 = new <Application,Ljava/io/FileOutputStream>@162^NULL^INVOKE,^false^false^Normal Fix;
+9^compilatore/JasminTarget.java^139^compilatore.JasminTarget.scriviContenutoStub(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V^6 = new <Application,Ljava/io/InputStreamReader>@0^compilatore.JasminTarget.scriviContenutoStub(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V#18,^INVOKE,^false^false^Normal Fix;
+10^compilatore/JasminTarget.java^162^compilatore.JasminTarget.scriviContenutoStub(Ljava/lang/String;)V^15 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 4,13 @21 exception:14^NULL^INVOKE,^false^false^Normal Fix;
+11^compilatore/JasminTarget.java^374^compilatore.JasminTarget.compilaFile(Ljava/lang/String;Z)V^15 = new <Application,Ljava/io/FileReader>@47^NULL^FIELD,INVOKE,^false^true^Field escape;
+12^compilatore/JasminTarget.java^391^compilatore.JasminTarget.compilaFile(Ljava/lang/String;Z)V^62 = new <Application,Ljava/io/FileOutputStream>@185^NULL^INVOKE,^false^false^Normal Fix;
+13^compilatore/JasminTarget.java^414^compilatore.JasminTarget.compilaFile(Ljava/lang/String;Z)V^97 = new <Application,Ljava/io/CharArrayReader>@287^NULL^INVOKE,^false^true^Escaped-try-catch and no post-dominator found;Try-catch Fix;
+14^compilatore/JasminTarget.java^421^compilatore.JasminTarget.compilaFile(Ljava/lang/String;Z)V^113 = new <Application,Ljava/io/FileOutputStream>@341^NULL^INVOKE,^false^false^Try-catch Fix;

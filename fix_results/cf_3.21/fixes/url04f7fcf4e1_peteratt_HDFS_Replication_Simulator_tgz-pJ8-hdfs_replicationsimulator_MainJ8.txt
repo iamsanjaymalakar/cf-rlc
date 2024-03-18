@@ -1,0 +1,36 @@
+7776
+114
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url04f7fcf4e1_peteratt_HDFS_Replication_Simulator_tgz-pJ8-hdfs_replicationsimulator_MainJ8/src/hdfs/replicationsimulator/Simulator.java; Line number 46
+vim +46 ../../../../datasets/debug_supplemented_njr/url04f7fcf4e1_peteratt_HDFS_Replication_Simulator_tgz-pJ8-hdfs_replicationsimulator_MainJ8/src/hdfs/replicationsimulator/Simulator.java
+
++++ Add following code below line: 95 (hdfs/replicationsimulator/Simulator.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url04f7fcf4e1_peteratt_HDFS_Replication_Simulator_tgz-pJ8-hdfs_replicationsimulator_MainJ8/src/hdfs/replicationsimulator/Simulator.java; Line number 219
+vim +219 ../../../../datasets/debug_supplemented_njr/url04f7fcf4e1_peteratt_HDFS_Replication_Simulator_tgz-pJ8-hdfs_replicationsimulator_MainJ8/src/hdfs/replicationsimulator/Simulator.java
+
++++ Add following code below line: 247 (hdfs/replicationsimulator/Simulator.java)
+finally{
+    try{ fw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url04f7fcf4e1_peteratt_HDFS_Replication_Simulator_tgz-pJ8-hdfs_replicationsimulator_MainJ8/src/hdfs/replicationsimulator/SimFileGenerator.java; Line number 51
+vim +51 ../../../../datasets/debug_supplemented_njr/url04f7fcf4e1_peteratt_HDFS_Replication_Simulator_tgz-pJ8-hdfs_replicationsimulator_MainJ8/src/hdfs/replicationsimulator/SimFileGenerator.java
+
++++ Add following code above line:51 (hdfs/replicationsimulator/SimFileGenerator.java)
+try{
++++ Add following code after line:90 (hdfs/replicationsimulator/SimFileGenerator.java)
+}finally{
+    try{ fw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 92 (hdfs/replicationsimulator/SimFileGenerator.java)
+
+--------------------------------------------

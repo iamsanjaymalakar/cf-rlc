@@ -1,0 +1,15 @@
+11839
+297
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url21b471891f_Agetac_Model_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java; Line number 447
+vim +447 ../../../dataset/june2020_dataset/url21b471891f_Agetac_Model_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java
+
++++ Add following code below line: 627 (org/json/Test.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 447
+
+--------------------------------------------

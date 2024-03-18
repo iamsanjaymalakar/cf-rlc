@@ -1,0 +1,41 @@
+22603
+1656
+
+SOURCE LEVEL FIXES
+
+4] ../../../dataset/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java; Line number 39
+vim +39 ../../../dataset/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java
+
++++ Add following code above line:39 (xscript/executils/Utils.java)
+try{
++++ Add following code after line:46 (xscript/executils/Utils.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 39
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java; Line number 42
+vim +42 ../../../dataset/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java
+
++++ Add following code above line:42 (xscript/executils/Utils.java)
+try{
++++ Add following code after line:47 (xscript/executils/Utils.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 42
+
+--------------------------------------------
+6] ../../../dataset/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java; Line number 45
+vim +45 ../../../dataset/june2020_dataset/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java
+
++++ Add following code above line:45 (xscript/executils/Utils.java)
+try{
++++ Add following code after line:48 (xscript/executils/Utils.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 45
+
+--------------------------------------------

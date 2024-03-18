@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^com/fidelis/argface/sample/Sample.java^83^com.fidelis.argface.sample.Sample.processFile(Ljava/lang/String;)V^42 = invokestatic < Application, Ljava/nio/file/Files, newBufferedReader(Ljava/nio/file/Path;Ljava/nio/charset/Charset;)Ljava/io/BufferedReader; > 37,40 @92 exception:41^NULL^INVOKE,^false^false^Try-catch Fix;

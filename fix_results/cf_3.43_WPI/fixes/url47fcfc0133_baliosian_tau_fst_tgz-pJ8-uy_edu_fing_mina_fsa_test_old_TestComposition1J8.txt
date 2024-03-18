@@ -1,0 +1,41 @@
+13849
+619
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/tffsr/Tffsr.java; Line number 166
+vim +166 ../../../dataset/june2020_dataset/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/tffsr/Tffsr.java
+
++++ Add following code above line:166 (uy/edu/fing/mina/fsa/tffsr/Tffsr.java)
+try{
++++ Add following code after line:166 (uy/edu/fing/mina/fsa/tffsr/Tffsr.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 166
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/utils/Utils.java; Line number 58
+vim +58 ../../../dataset/june2020_dataset/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/utils/Utils.java
+
++++ Add following code below line: 62 (uy/edu/fing/mina/fsa/utils/Utils.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 58
+
++++ Delete Line number 60 (uy/edu/fing/mina/fsa/utils/Utils.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/utils/Utils.java; Line number 69
+vim +69 ../../../dataset/june2020_dataset/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/utils/Utils.java
+
++++ Add following code below line: 77 (uy/edu/fing/mina/fsa/utils/Utils.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 69
+
++++ Delete Line number 75 (uy/edu/fing/mina/fsa/utils/Utils.java)
+
+--------------------------------------------

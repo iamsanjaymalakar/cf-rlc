@@ -1,0 +1,29 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^org/jsl/tests/queue_socket_send/Receiver.java^27^org.jsl.tests.queue_socket_send.Receiver.run()V^4 = invokestatic < Application, Ljava/nio/channels/SocketChannel, open()Ljava/nio/channels/SocketChannel; > @0 exception:3^NULL^INVOKE,^false^false^Try-catch Fix;
+1^org/jsl/tests/dgram_listener/Main.java^162^org.jsl.tests.dgram_listener.Main.run(I)V^6 = invokestatic < Application, Ljava/nio/channels/DatagramChannel, open(Ljava/net/ProtocolFamily;)Ljava/nio/channels/DatagramChannel; > 4 @3 exception:5^NULL^ARRAY,INVOKE,^false^true^Array (or collection/map) escape;
+2^org/jsl/tests/dgram_listener/Main.java^163^org.jsl.tests.dgram_listener.Main.run(I)V^8 = invokevirtual < Application, Ljava/nio/channels/DatagramChannel, socket()Ljava/net/DatagramSocket; > 6 @8 exception:7^NULL^INVOKE,^false^false^Try-catch Fix;
+3^org/jsl/tests/dgram_listener/Main.java^164^org.jsl.tests.dgram_listener.Main.run(I)V^19 = invokevirtual < Application, Ljava/nio/channels/DatagramChannel, socket()Ljava/net/DatagramSocket; > 6 @35 exception:18^NULL^INVOKE,^false^false^Try-catch Fix;
+4^org/jsl/tests/dgram_listener/Main.java^165^org.jsl.tests.dgram_listener.Main.run(I)V^19 = invokevirtual < Application, Ljava/nio/channels/DatagramChannel, socket()Ljava/net/DatagramSocket; > 6 @35 exception:18^NULL^INVOKE,^true^false^Try-catch Fix;
+5^org/jsl/tests/dgram_listener/Main.java^166^org.jsl.tests.dgram_listener.Main.run(I)V^38 = invokestatic < Application, Ljava/nio/channels/DatagramChannel, open(Ljava/net/ProtocolFamily;)Ljava/nio/channels/DatagramChannel; > 36 @79 exception:37^NULL^ARRAY,INVOKE,^false^true^Array (or collection/map) escape;
+6^org/jsl/tests/dgram_listener/Main.java^169^org.jsl.tests.dgram_listener.Main.run(I)V^38 = invokestatic < Application, Ljava/nio/channels/DatagramChannel, open(Ljava/net/ProtocolFamily;)Ljava/nio/channels/DatagramChannel; > 36 @79 exception:37^NULL^ARRAY,INVOKE,^true^true^Array (or collection/map) escape;
+7^org/jsl/tests/dgram_listener/Main.java^170^org.jsl.tests.dgram_listener.Main.run(I)V^40 = invokevirtual < Application, Ljava/nio/channels/DatagramChannel, socket()Ljava/net/DatagramSocket; > 38 @86 exception:39^NULL^INVOKE,^false^false^Try-catch Fix;
+8^org/jsl/tests/dgram_listener/Main.java^171^org.jsl.tests.dgram_listener.Main.run(I)V^48 = invokevirtual < Application, Ljava/nio/channels/DatagramChannel, socket()Ljava/net/DatagramSocket; > 38 @115 exception:47^NULL^INVOKE,^false^false^Try-catch Fix;
+9^org/jsl/tests/dgram_listener/Main.java^172^org.jsl.tests.dgram_listener.Main.run(I)V^48 = invokevirtual < Application, Ljava/nio/channels/DatagramChannel, socket()Ljava/net/DatagramSocket; > 38 @115 exception:47^NULL^INVOKE,^true^false^Try-catch Fix;
+10^org/jsl/tests/dgram_listener/Main.java^173^org.jsl.tests.dgram_listener.Main.run(I)V^48 = invokevirtual < Application, Ljava/nio/channels/DatagramChannel, socket()Ljava/net/DatagramSocket; > 38 @115 exception:47^NULL^INVOKE,^true^false^Try-catch Fix;
+11^org/jsl/collider/ColliderImpl.java^365^org.jsl.collider.ColliderImpl.<init>(Lorg/jsl/collider/Collider$Config;)V^6 = invokestatic < Application, Ljava/nio/channels/Selector, open()Ljava/nio/channels/Selector; > @6 exception:5^NULL^FIELD,^false^true^Field escape;
+12^org/jsl/collider/ColliderImpl.java^576^org.jsl.collider.ColliderImpl.addAcceptor(Lorg/jsl/collider/Acceptor;)V^10 = invokevirtual < Application, Ljava/nio/channels/ServerSocketChannel, socket()Ljava/net/ServerSocket; > 5 @11 exception:9^NULL^INVOKE,^false^false^Normal Fix;
+13^org/jsl/collider/ColliderImpl.java^675^org.jsl.collider.ColliderImpl.addDatagramListener(Lorg/jsl/collider/DatagramListener;Ljava/net/NetworkInterface;)V^9 = invokestatic < Application, Ljava/nio/channels/DatagramChannel, open(Ljava/net/ProtocolFamily;)Ljava/nio/channels/DatagramChannel; > 7 @8 exception:8^NULL^FIELD,INVOKE,^false^true^Field escape;
+14^org/jsl/collider/ColliderImpl.java^676^org.jsl.collider.ColliderImpl.addDatagramListener(Lorg/jsl/collider/DatagramListener;Ljava/net/NetworkInterface;)V^11 = invokevirtual < Application, Ljava/nio/channels/DatagramChannel, socket()Ljava/net/DatagramSocket; > 9 @15 exception:10^NULL^INVOKE,^false^false^Normal Fix;
+15^org/jsl/collider/ShMem.java^49^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+16^org/jsl/tests/session_latency/Client.java^43^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+17^org/jsl/tests/echo_throughput/Client.java^47^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+18^org/jsl/tests/recv_throughput/Client.java^46^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+19^org/jsl/tests/send_throughput/Client.java^45^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+20^org/jsl/tests/session_close/Client.java^68^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+21^org/jsl/tests/echo_latency/Client.java^46^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+22^org/jsl/tests/session_throughput/Client.java^99^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+23^org/jsl/tests/remove_acceptor/Main.java^232^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+24^org/jsl/collider/ColliderImpl.java^699^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+25^org/jsl/collider/ColliderImpl.java^700^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+26^org/jsl/collider/ColliderImpl.java^704^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+27^org/jsl/collider/ColliderImpl.java^705^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

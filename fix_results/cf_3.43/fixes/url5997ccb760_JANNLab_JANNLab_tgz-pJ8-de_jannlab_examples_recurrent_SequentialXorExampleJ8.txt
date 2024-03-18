@@ -1,0 +1,61 @@
+16365
+2191
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/io/Serializer.java; Line number 51
+vim +51 ../../../dataset/june2020_dataset/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/io/Serializer.java
+
++++ Add following code above line:50 (de/jannlab/io/Serializer.java)
+try{
++++ Add following code after line:54 (de/jannlab/io/Serializer.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 50
+
++++ Delete Line number 55 (de/jannlab/io/Serializer.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/io/Serializer.java; Line number 70
+vim +70 ../../../dataset/june2020_dataset/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/io/Serializer.java
+
++++ Add following code above line:69 (de/jannlab/io/Serializer.java)
+try{
++++ Add following code after line:74 (de/jannlab/io/Serializer.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 69
+
++++ Delete Line number 75 (de/jannlab/io/Serializer.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/data/SampleTools.java; Line number 243
+vim +243 ../../../dataset/june2020_dataset/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/data/SampleTools.java
+
++++ Add following code above line:243 (de/jannlab/data/SampleTools.java)
+try{
++++ Add following code after line:292 (de/jannlab/data/SampleTools.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 243
+
++++ Delete Line number 293 (de/jannlab/data/SampleTools.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/data/SampleTools.java; Line number 323
+vim +323 ../../../dataset/june2020_dataset/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/data/SampleTools.java
+
++++ Add following code above line:323 (de/jannlab/data/SampleTools.java)
+try{
++++ Add following code after line:345 (de/jannlab/data/SampleTools.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 323
+
++++ Delete Line number 346 (de/jannlab/data/SampleTools.java)
+
+--------------------------------------------

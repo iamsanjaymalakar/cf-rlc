@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^Game/DefFile.java^23^Game.DefFile.readFile(Ljava/lang/String;)[Ljava/lang/String;^11 = new <Application,Ljava/io/BufferedReader>@23^Game.DefFile.readFile(Ljava/lang/String;)[Ljava/lang/String;#12,^INVOKE,^false^false^Try-catch Fix;

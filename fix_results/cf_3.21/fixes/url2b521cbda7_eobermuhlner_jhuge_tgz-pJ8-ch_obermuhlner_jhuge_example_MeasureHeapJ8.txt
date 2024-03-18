@@ -1,0 +1,25 @@
+10098
+759
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url2b521cbda7_eobermuhlner_jhuge_tgz-pJ8-ch_obermuhlner_jhuge_example_MeasureHeapJ8/src/ch/obermuhlner/jhuge/converter/ZipCompressionConverter.java; Line number 73
+vim +73 ../../../../datasets/debug_supplemented_njr/url2b521cbda7_eobermuhlner_jhuge_tgz-pJ8-ch_obermuhlner_jhuge_example_MeasureHeapJ8/src/ch/obermuhlner/jhuge/converter/ZipCompressionConverter.java
+
++++ Add following code below line: 94 (ch/obermuhlner/jhuge/converter/ZipCompressionConverter.java)
+finally{
+    try{ byteOutputStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 77 (ch/obermuhlner/jhuge/converter/ZipCompressionConverter.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url2b521cbda7_eobermuhlner_jhuge_tgz-pJ8-ch_obermuhlner_jhuge_example_MeasureHeapJ8/src/ch/obermuhlner/jhuge/converter/ZipCompressionConverter.java; Line number 109
+vim +109 ../../../../datasets/debug_supplemented_njr/url2b521cbda7_eobermuhlner_jhuge_tgz-pJ8-ch_obermuhlner_jhuge_example_MeasureHeapJ8/src/ch/obermuhlner/jhuge/converter/ZipCompressionConverter.java
+
++++ Add following code below line: 124 (ch/obermuhlner/jhuge/converter/ZipCompressionConverter.java)
+finally{
+    try{ byteInputStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

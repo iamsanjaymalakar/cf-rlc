@@ -1,0 +1,5 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^uwm_cs557/MiniDB.java^71^uwm_cs557.MiniDB.restoreDBFromOSFile()V^3 = new <Application,Ljava/io/FileInputStream>@0^uwm_cs557.MiniDB.restoreDBFromOSFile()V#7,^INVOKE,^false^false^Try-catch Fix;
+1^uwm_cs557/MiniDB.java^72^uwm_cs557.MiniDB.restoreDBFromOSFile()V^7 = new <Application,Ljava/io/ObjectInputStream>@12^uwm_cs557.MiniDB.restoreDBFromOSFile()V#3,^INVOKE,^true^false^Try-catch Fix;
+2^uwm_cs557/MiniDB.java^182^uwm_cs557.MiniDB.writeDBToOSFile()V^5 = new <Application,Ljava/io/FileOutputStream>@6^uwm_cs557.MiniDB.writeDBToOSFile()V#9,^INVOKE,^false^false^Try-catch Fix;
+3^uwm_cs557/MiniDB.java^183^uwm_cs557.MiniDB.writeDBToOSFile()V^9 = new <Application,Ljava/io/ObjectOutputStream>@18^uwm_cs557.MiniDB.writeDBToOSFile()V#5,^INVOKE,^true^false^Try-catch Fix;

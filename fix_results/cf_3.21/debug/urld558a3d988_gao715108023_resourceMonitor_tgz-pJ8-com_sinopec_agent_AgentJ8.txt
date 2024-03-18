@@ -1,0 +1,6 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^com/sinopec/utils/ConfigUtils.java^22^com.sinopec.utils.ConfigUtils.<init>(Ljava/lang/String;)V^7 = new <Application,Ljava/io/FileInputStream>@16^NULL^FIELD,^false^true^Field escape;
+1^com/sinopec/utils/ConfigUtils.java^75^com.sinopec.utils.ConfigUtils.getValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;^6 = new <Application,Ljava/io/FileInputStream>@4^NULL^FIELD,^false^true^Field escape;
+2^com/sinopec/mybatis/MybatisCommon.java^32^com.sinopec.mybatis.MybatisCommon.<clinit>()V^5 = invokestatic < Application, Lorg/apache/ibatis/io/Resources, getResourceAsReader(Ljava/lang/String;)Ljava/io/Reader; > 3 @8 exception:4^NULL^FIELD,^false^true^Field escape;
+3^com/sinopec/mybatis/MybatisCommon.java^39^com.sinopec.mybatis.MybatisCommon.<clinit>()V^15 = invokeinterface < Application, Lorg/apache/ibatis/session/SqlSessionFactory, openSession()Lorg/apache/ibatis/session/SqlSession; > 13 @39 exception:14^NULL^FIELD,^false^true^Field escape;
+4^com/sinopec/mybatis/MybatisCommon.java^67^com.sinopec.mybatis.MybatisCommon.createSession()V^8 = invokeinterface < Application, Lorg/apache/ibatis/session/SqlSessionFactory, openSession()Lorg/apache/ibatis/session/SqlSession; > 6 @17 exception:7^NULL^FIELD,^false^true^Field escape;

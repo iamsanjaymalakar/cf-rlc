@@ -1,0 +1,33 @@
+31834
+811
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestSerialization.java; Line number 293
+vim +293 ../../../dataset/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestSerialization.java
+
++++ Add following code above line:293 (org/joda/time/TestSerialization.java)
+try{
++++ Add following code after line:295 (org/joda/time/TestSerialization.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 293
+
++++ Delete Line number 296 (org/joda/time/TestSerialization.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/tz/TestCompiler.java; Line number 145
+vim +145 ../../../dataset/june2020_dataset/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/tz/TestCompiler.java
+
++++ Add following code above line:145 (org/joda/time/tz/TestCompiler.java)
+try{
++++ Add following code after line:150 (org/joda/time/tz/TestCompiler.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 145
+
++++ Delete Line number 151 (org/joda/time/tz/TestCompiler.java)
+
+--------------------------------------------

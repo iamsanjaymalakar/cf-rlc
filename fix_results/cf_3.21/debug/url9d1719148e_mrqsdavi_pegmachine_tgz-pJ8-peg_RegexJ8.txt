@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^peg/parser.java^209^peg.parser.main([Ljava/lang/String;)V^8 = new <Application,Ljava/io/FileReader>@47^NULL^INVOKE,FIELD,^false^true^Field escape;

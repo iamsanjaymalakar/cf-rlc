@@ -1,0 +1,17 @@
+21523
+41
+
+SOURCE LEVEL FIXES
+
+8] ../../../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/PortTest.java; Line number 16
+vim +16 ../../../dataset/june2020_dataset/url73e3057d61_empeeoh_BACnet4J_tgz-pJ8-com_serotonin_bacnet4j_test_OverflowTestJ8/src/com/serotonin/bacnet4j/rs485/PortTest.java
+
++++ Add following code above line:16 (com/serotonin/bacnet4j/rs485/PortTest.java)
+try{
++++ Add following code after line:21 (com/serotonin/bacnet4j/rs485/PortTest.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 16
+
+--------------------------------------------

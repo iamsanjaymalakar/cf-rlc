@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^org/twentygototen/pipeline/pipes/FileReaderPipe.java^19^org.twentygototen.pipeline.pipes.FileReaderPipe.process(Ljava/io/File;)Lorg/twentygototen/pipeline/util/Pair;^6 = new <Application,Ljava/io/BufferedReader>@8^org.twentygototen.pipeline.pipes.FileReaderPipe.process(Ljava/io/File;)Lorg/twentygototen/pipeline/util/Pair;#7,^INVOKE,^false^false^Try-catch Fix;

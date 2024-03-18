@@ -1,0 +1,53 @@
+11987
+2302
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/org/sgbd/Mysgbd/data/Test.java; Line number 17
+vim +17 ../../../../datasets/debug_supplemented_njr/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/org/sgbd/Mysgbd/data/Test.java
+
++++ Add following code below line: 39 (org/sgbd/Mysgbd/data/Test.java)
+finally{
+    try{ db.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 36 (org/sgbd/Mysgbd/data/Test.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/org/sgbd/Mysgbd/data/Test.java; Line number 26
+vim +26 ../../../../datasets/debug_supplemented_njr/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/org/sgbd/Mysgbd/data/Test.java
+
++++ Add following code above line:26 (org/sgbd/Mysgbd/data/Test.java)
+try{
++++ Add following code after line:33 (org/sgbd/Mysgbd/data/Test.java)
+}finally{
+    try{ sql.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 34 (org/sgbd/Mysgbd/data/Test.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/Demo/NextPage.java; Line number 19
+vim +19 ../../../../datasets/debug_supplemented_njr/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/Demo/NextPage.java
+
++++ Add following code above line:19 (Demo/NextPage.java)
+try{
++++ Add following code after line:20 (Demo/NextPage.java)
+}finally{
+    try{ taos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/Demo/MDemo.java; Line number 109
+vim +109 ../../../../datasets/debug_supplemented_njr/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/Demo/MDemo.java
+
++++ Add following code above line:109 (Demo/MDemo.java)
+try{
++++ Add following code after line:130 (Demo/MDemo.java)
+}finally{
+    try{ db.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 132 (Demo/MDemo.java)
+
+--------------------------------------------

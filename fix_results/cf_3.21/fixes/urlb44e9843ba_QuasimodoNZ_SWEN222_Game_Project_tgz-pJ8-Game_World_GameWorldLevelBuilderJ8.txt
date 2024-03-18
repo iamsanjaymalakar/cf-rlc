@@ -1,0 +1,52 @@
+22011
+1297
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/Game_World/GameWorld.java; Line number 374
+vim +374 ../../../../datasets/debug_supplemented_njr/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/Game_World/GameWorld.java
+
++++ Add following code above line:372 (Game_World/GameWorld.java)
+try{ 
++++ Add following code below line:372 (Game_World/GameWorld.java)
+} catch(Exception e){ 
+    if (bos!=null) { bos.close();}
+    throw e; 
+}
++++ Add following code above line:381 (Game_World/GameWorld.java)
+try{ 
++++ Add following code below line:381 (Game_World/GameWorld.java)
+} catch(Exception e){ 
+    if (bos!=null) { bos.close();}
+    throw e; 
+}
++++ Add following code above line:386 (Game_World/GameWorld.java)
+try{
+    bos.close();
+} catch(Exception e){ e.printStackTrace(); }
+
++++ Delete Line number 380 (Game_World/GameWorld.java)
+
++++ Delete Line number 379 (Game_World/GameWorld.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/Game_World/GameWorld.java; Line number 401
+vim +401 ../../../../datasets/debug_supplemented_njr/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/Game_World/GameWorld.java
+
++++ Add following code below line: 414 (Game_World/GameWorld.java)
+finally{
+    try{ bis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/Graphics_Renderer/MapEditor.java; Line number 351
+vim +351 ../../../../datasets/debug_supplemented_njr/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/Graphics_Renderer/MapEditor.java
+
++++ Add following code below line: 380 (Graphics_Renderer/MapEditor.java)
+finally{
+    try{ writer.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 376 (Graphics_Renderer/MapEditor.java)
+
+--------------------------------------------

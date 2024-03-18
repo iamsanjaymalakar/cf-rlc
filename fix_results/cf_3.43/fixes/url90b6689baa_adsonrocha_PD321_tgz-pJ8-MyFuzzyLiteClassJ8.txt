@@ -1,0 +1,52 @@
+10895
+393
+
+SOURCE LEVEL FIXES
+
+1] ../../../dataset/june2020_dataset/url90b6689baa_adsonrocha_PD321_tgz-pJ8-MyFuzzyLiteClassJ8/src/com/fuzzylite/Console.java; Line number 275
+vim +275 ../../../dataset/june2020_dataset/url90b6689baa_adsonrocha_PD321_tgz-pJ8-MyFuzzyLiteClassJ8/src/com/fuzzylite/Console.java
+
++++ Add following code above line:275 (com/fuzzylite/Console.java)
+try{ 
++++ Add following code below line:275 (com/fuzzylite/Console.java)
+} catch(Exception e){ 
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+    throw e; 
+}
++++ Add following code below line: 299 (com/fuzzylite/Console.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 275
+
++++ Delete Line number 297 (com/fuzzylite/Console.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url90b6689baa_adsonrocha_PD321_tgz-pJ8-MyFuzzyLiteClassJ8/src/com/fuzzylite/Console.java; Line number 524
+vim +524 ../../../dataset/june2020_dataset/url90b6689baa_adsonrocha_PD321_tgz-pJ8-MyFuzzyLiteClassJ8/src/com/fuzzylite/Console.java
+
++++ Add following code above line:524 (com/fuzzylite/Console.java)
+try{
++++ Add following code after line:528 (com/fuzzylite/Console.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 524
+
++++ Delete Line number 529 (com/fuzzylite/Console.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url90b6689baa_adsonrocha_PD321_tgz-pJ8-MyFuzzyLiteClassJ8/src/com/fuzzylite/Console.java; Line number 551
+vim +551 ../../../dataset/june2020_dataset/url90b6689baa_adsonrocha_PD321_tgz-pJ8-MyFuzzyLiteClassJ8/src/com/fuzzylite/Console.java
+
++++ Add following code above line:551 (com/fuzzylite/Console.java)
+try{
++++ Add following code after line:577 (com/fuzzylite/Console.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 551
+
++++ Delete Line number 578 (com/fuzzylite/Console.java)
+
+--------------------------------------------

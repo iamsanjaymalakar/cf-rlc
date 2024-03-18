@@ -1,0 +1,12 @@
+WARNING: No callers found for method with resource return:com.sohu.t.api.sdk.https.MySSLSocketFactory.createSocket(Ljava/lang/String;ILjava/net/InetAddress;ILorg/apache/commons/httpclient/params/HttpConnectionParams;)Ljava/net/Socket;
+13155
+27
+
+SOURCE LEVEL FIXES
+
+6] ../../../dataset/june2020_dataset/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/https/MySSLSocketFactory.java; Line number 83
+vim +83 ../../../dataset/june2020_dataset/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/https/MySSLSocketFactory.java
+
++++ NOTE: Resource escapes via return statement and needs to be closed in the callers of createSocket
++++ Nothing to be done. No callers found for method with resource return
+--------------------------------------------

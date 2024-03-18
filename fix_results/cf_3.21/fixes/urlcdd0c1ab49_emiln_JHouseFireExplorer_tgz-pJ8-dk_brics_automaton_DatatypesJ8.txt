@@ -1,0 +1,119 @@
+15061
+2787
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/Util.java; Line number 26
+vim +26 ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/Util.java
+
++++ Add following code below line: 31 (Util.java)
+finally{
+    try{ bw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 29 (Util.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/Automaton.java; Line number 679
+vim +679 ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/Automaton.java
+
++++ Add following code above line:679 (dk/brics/automaton/Automaton.java)
+try{
++++ Add following code after line:679 (dk/brics/automaton/Automaton.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 679
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/Automaton.java; Line number 693
+vim +693 ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/Automaton.java
+
++++ NOTE: Resource escapes via a parameter and needs to be closed in the callers of this function.load
++++ Add following code below line: 477 (dk/brics/automaton/Datatypes.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 470
+
++++ Add following code above line:679 (dk/brics/automaton/Automaton.java)
+try{
++++ Add following code after line:679 (dk/brics/automaton/Automaton.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 679
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/Automaton.java; Line number 703
+vim +703 ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/Automaton.java
+
++++ NOTE: Resource escapes via a parameter and needs to be closed in the callers of this function.store
++++ Add following code below line: 488 (dk/brics/automaton/Datatypes.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 485
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/RunAutomaton.java; Line number 165
+vim +165 ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/RunAutomaton.java
+
++++ Add following code above line:165 (dk/brics/automaton/RunAutomaton.java)
+try{
++++ Add following code after line:165 (dk/brics/automaton/RunAutomaton.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 165
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/RunAutomaton.java; Line number 179
+vim +179 ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/RunAutomaton.java
+
++++ NOTE: Resource escapes via a parameter and needs to be closed in the callers of this function.load
++++ Add following code above line:165 (dk/brics/automaton/RunAutomaton.java)
+try{
++++ Add following code after line:165 (dk/brics/automaton/RunAutomaton.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 165
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/RunAutomaton.java; Line number 189
+vim +189 ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/RunAutomaton.java
+
++++ NOTE: Resource escapes via a parameter and needs to be closed in the callers of this function.store
++++ Nothing to be done. No callers found for method with resource return
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/Datatypes.java; Line number 470
+vim +470 ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/Datatypes.java
+
++++ Add following code below line: 477 (dk/brics/automaton/Datatypes.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 470
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/Datatypes.java; Line number 485
+vim +485 ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/Datatypes.java
+
++++ Add following code below line: 488 (dk/brics/automaton/Datatypes.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 485
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/Datatypes.java; Line number 795
+vim +795 ../../../../datasets/debug_supplemented_njr/urlcdd0c1ab49_emiln_JHouseFireExplorer_tgz-pJ8-dk_brics_automaton_DatatypesJ8/src/dk/brics/automaton/Datatypes.java
+
++++ Add following code below line: 823 (dk/brics/automaton/Datatypes.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 795
+
+--------------------------------------------

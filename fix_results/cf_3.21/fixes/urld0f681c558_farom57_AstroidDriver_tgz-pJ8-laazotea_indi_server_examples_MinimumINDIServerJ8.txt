@@ -1,0 +1,296 @@
+10146
+2462
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/INDIProperty.java; Line number 522
+vim +522 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/INDIProperty.java
+
++++ Add following code above line:522 (laazotea/indi/driver/INDIProperty.java)
+try{
++++ Add following code after line:526 (laazotea/indi/driver/INDIProperty.java)
+}finally{
+    try{ oos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 528 (laazotea/indi/driver/INDIProperty.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/INDIProperty.java; Line number 583
+vim +583 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/INDIProperty.java
+
++++ Add following code below line: 594 (laazotea/indi/driver/INDIProperty.java)
+finally{
+    try{ ois.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 589 (laazotea/indi/driver/INDIProperty.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDIProtocolReader.java; Line number 94
+vim +94 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDIProtocolReader.java
+
++++ Add following code above line:94 (laazotea/indi/INDIProtocolReader.java)
+try{ 
++++ Add following code below line:94 (laazotea/indi/INDIProtocolReader.java)
+} catch(Exception e){ 
+    if (in!=null) { in.close();}
+    throw e; 
+}
++++ Add following code above line:130 (laazotea/indi/INDIProtocolReader.java)
+try{
+    in.close();
+} catch(Exception e){ e.printStackTrace(); }
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDIBLOBValue.java; Line number 161
+vim +161 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDIBLOBValue.java
+
++++ Add following code above line:161 (laazotea/indi/INDIBLOBValue.java)
+try{
++++ Add following code after line:163 (laazotea/indi/INDIBLOBValue.java)
+}finally{
+    try{ fos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 165 (laazotea/indi/INDIBLOBValue.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/INDINumberElement.java; Line number 321
+vim +321 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/INDINumberElement.java
+
++++ Add following code above line:321 (laazotea/indi/driver/INDINumberElement.java)
+try{
++++ Add following code after line:322 (laazotea/indi/driver/INDINumberElement.java)
+}finally{
+    try{ formatter.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java; Line number 281
+vim +281 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java
+
++++ Add following code above line:281 (laazotea/indi/INDISexagesimalFormatter.java)
+try{
++++ Add following code after line:282 (laazotea/indi/INDISexagesimalFormatter.java)
+}finally{
+    try{ formatter.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java; Line number 282
+vim +282 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java
+
++++ Add following code above line:282 (laazotea/indi/INDISexagesimalFormatter.java)
+try{
++++ Add following code after line:282 (laazotea/indi/INDISexagesimalFormatter.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 282
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java; Line number 289
+vim +289 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java
+
++++ Add following code above line:289 (laazotea/indi/INDISexagesimalFormatter.java)
+try{
++++ Add following code after line:290 (laazotea/indi/INDISexagesimalFormatter.java)
+}finally{
+    try{ formatter.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java; Line number 305
+vim +305 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java
+
++++ Add following code above line:305 (laazotea/indi/INDISexagesimalFormatter.java)
+try{
++++ Add following code after line:306 (laazotea/indi/INDISexagesimalFormatter.java)
+}finally{
+    try{ formatter.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+11] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java; Line number 306
+vim +306 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java
+
++++ Add following code above line:306 (laazotea/indi/INDISexagesimalFormatter.java)
+try{
++++ Add following code after line:306 (laazotea/indi/INDISexagesimalFormatter.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 306
+
+--------------------------------------------
+12] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java; Line number 313
+vim +313 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java
+
++++ Add following code above line:313 (laazotea/indi/INDISexagesimalFormatter.java)
+try{
++++ Add following code after line:314 (laazotea/indi/INDISexagesimalFormatter.java)
+}finally{
+    try{ formatter.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+13] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java; Line number 314
+vim +314 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java
+
++++ Add following code above line:314 (laazotea/indi/INDISexagesimalFormatter.java)
+try{
++++ Add following code after line:314 (laazotea/indi/INDISexagesimalFormatter.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 314
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java; Line number 321
+vim +321 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/INDISexagesimalFormatter.java
+
++++ Add following code above line:321 (laazotea/indi/INDISexagesimalFormatter.java)
+try{
++++ Add following code after line:322 (laazotea/indi/INDISexagesimalFormatter.java)
+}finally{
+    try{ formatter.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+15] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/examples/INDIDriverExample.java; Line number 139
+vim +139 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/examples/INDIDriverExample.java
+
++++ Add following code below line: 146 (laazotea/indi/driver/examples/INDIDriverExample.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 141 (laazotea/indi/driver/examples/INDIDriverExample.java)
+
+--------------------------------------------
+16] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/examples/INDIElTiempoDriver.java; Line number 331
+vim +331 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/examples/INDIElTiempoDriver.java
+
++++ Add following code above line:331 (laazotea/indi/driver/examples/INDIElTiempoDriver.java)
+try{
++++ Add following code after line:339 (laazotea/indi/driver/examples/INDIElTiempoDriver.java)
+}finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+17] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/examples/INDIElTiempoDriver.java; Line number 353
+vim +353 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/examples/INDIElTiempoDriver.java
+
++++ Add following code above line:353 (laazotea/indi/driver/examples/INDIElTiempoDriver.java)
+try{
++++ Add following code after line:367 (laazotea/indi/driver/examples/INDIElTiempoDriver.java)
+}finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+18] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/examples/INDIElTiempoDriver.java; Line number 387
+vim +387 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/examples/INDIElTiempoDriver.java
+
++++ Add following code above line:387 (laazotea/indi/driver/examples/INDIElTiempoDriver.java)
+try{
++++ Add following code after line:399 (laazotea/indi/driver/examples/INDIElTiempoDriver.java)
+}finally{
+    try{ bis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 401 (laazotea/indi/driver/examples/INDIElTiempoDriver.java)
+
+--------------------------------------------
+19] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/examples/INDIElTiempoDriver.java; Line number 389
+vim +389 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/driver/examples/INDIElTiempoDriver.java
+
++++ Add following code above line:389 (laazotea/indi/driver/examples/INDIElTiempoDriver.java)
+try{
++++ Add following code after line:399 (laazotea/indi/driver/examples/INDIElTiempoDriver.java)
+}finally{
+    try{ fos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 402 (laazotea/indi/driver/examples/INDIElTiempoDriver.java)
+
+--------------------------------------------
+20] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIDevice.java; Line number 287
+vim +287 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIDevice.java
+
++++ Add following code below line: 291 (laazotea/indi/server/INDIDevice.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 287
+
+--------------------------------------------
+21] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIDevice.java; Line number 288
+vim +288 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIDevice.java
+
++++ Add following code below line: 291 (laazotea/indi/server/INDIDevice.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 288
+
+--------------------------------------------
+25] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/AbstractINDIServer.java; Line number 545
+vim +545 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/AbstractINDIServer.java
+
++++ Add following code below line: 560 (laazotea/indi/server/AbstractINDIServer.java)
+finally{
+    try{ jarFile.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+29] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIJavaDevice.java; Line number 184
+vim +184 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIJavaDevice.java
+
++++ Add following code below line: 186 (laazotea/indi/server/INDIJavaDevice.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 184
+
++++ Delete Line number 184 (laazotea/indi/server/INDIJavaDevice.java)
+
+--------------------------------------------
+30] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIJavaDevice.java; Line number 188
+vim +188 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIJavaDevice.java
+
++++ Add following code below line: 190 (laazotea/indi/server/INDIJavaDevice.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 188
+
++++ Delete Line number 188 (laazotea/indi/server/INDIJavaDevice.java)
+
+--------------------------------------------
+31] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIJavaDevice.java; Line number 192
+vim +192 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIJavaDevice.java
+
++++ Add following code below line: 194 (laazotea/indi/server/INDIJavaDevice.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 192
+
++++ Delete Line number 192 (laazotea/indi/server/INDIJavaDevice.java)
+
+--------------------------------------------
+32] ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIJavaDevice.java; Line number 196
+vim +196 ../../../../datasets/debug_supplemented_njr/urld0f681c558_farom57_AstroidDriver_tgz-pJ8-laazotea_indi_server_examples_MinimumINDIServerJ8/src/laazotea/indi/server/INDIJavaDevice.java
+
++++ Add following code below line: 198 (laazotea/indi/server/INDIJavaDevice.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 196
+
++++ Delete Line number 196 (laazotea/indi/server/INDIJavaDevice.java)
+
+--------------------------------------------

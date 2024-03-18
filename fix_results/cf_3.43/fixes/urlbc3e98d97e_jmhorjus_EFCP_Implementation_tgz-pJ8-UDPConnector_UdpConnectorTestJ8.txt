@@ -1,0 +1,17 @@
+9442
+44
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnector.java; Line number 266
+vim +266 ../../../dataset/june2020_dataset/urlbc3e98d97e_jmhorjus_EFCP_Implementation_tgz-pJ8-UDPConnector_UdpConnectorTestJ8/src/UDPConnector/UdpConnector.java
+
++++ Add following code above line:266 (UDPConnector/UdpConnector.java)
+try{
++++ Add following code after line:273 (UDPConnector/UdpConnector.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 266
+
+--------------------------------------------

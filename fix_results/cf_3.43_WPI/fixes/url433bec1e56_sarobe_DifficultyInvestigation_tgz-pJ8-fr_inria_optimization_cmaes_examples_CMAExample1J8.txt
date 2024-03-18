@@ -1,0 +1,129 @@
+19773
+1516
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java; Line number 52
+vim +52 ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java
+
++++ Add following code above line:52 (gnuplot/Grapher.java)
+try{
++++ Add following code after line:53 (gnuplot/Grapher.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 52
+
++++ Delete Line number 54 (gnuplot/Grapher.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java; Line number 57
+vim +57 ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java
+
++++ Add following code above line:57 (gnuplot/Grapher.java)
+try{
++++ Add following code after line:58 (gnuplot/Grapher.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 57
+
++++ Delete Line number 59 (gnuplot/Grapher.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java; Line number 71
+vim +71 ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java
+
++++ Add following code above line:71 (gnuplot/Grapher.java)
+try{
++++ Add following code after line:79 (gnuplot/Grapher.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 71
+
++++ Delete Line number 80 (gnuplot/Grapher.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java; Line number 72
+vim +72 ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java
+
++++ Add following code above line:72 (gnuplot/Grapher.java)
+try{
++++ Add following code after line:79 (gnuplot/Grapher.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 72
+
++++ Delete Line number 81 (gnuplot/Grapher.java)
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java; Line number 90
+vim +90 ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java
+
++++ Add following code above line:90 (gnuplot/Grapher.java)
+try{
++++ Add following code after line:98 (gnuplot/Grapher.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 90
+
++++ Delete Line number 99 (gnuplot/Grapher.java)
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java; Line number 91
+vim +91 ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/gnuplot/Grapher.java
+
++++ Add following code above line:91 (gnuplot/Grapher.java)
+try{
++++ Add following code after line:98 (gnuplot/Grapher.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 91
+
++++ Delete Line number 100 (gnuplot/Grapher.java)
+
+--------------------------------------------
+9] ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/SerialClone.java; Line number 52
+vim +52 ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ssamot/utilities/SerialClone.java
+
++++ Add following code above line:51 (ssamot/utilities/SerialClone.java)
+try{
++++ Add following code after line:55 (ssamot/utilities/SerialClone.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 52
+
+--------------------------------------------
+11] ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/main/ConvertToReadable.java; Line number 25
+vim +25 ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/main/ConvertToReadable.java
+
++++ Add following code above line:25 (main/ConvertToReadable.java)
+try{
++++ Add following code after line:69 (main/ConvertToReadable.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 25
+
++++ Delete Line number 71 (main/ConvertToReadable.java)
+
+--------------------------------------------
+12] ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/main/ConvertToReadable.java; Line number 26
+vim +26 ../../../dataset/june2020_dataset/url433bec1e56_sarobe_DifficultyInvestigation_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/main/ConvertToReadable.java
+
++++ Add following code above line:26 (main/ConvertToReadable.java)
+try{
++++ Add following code after line:70 (main/ConvertToReadable.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 26
+
++++ Delete Line number 72 (main/ConvertToReadable.java)
+
+--------------------------------------------

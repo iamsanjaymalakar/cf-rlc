@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^ocr/MainEntry.java^399^ocr.MainEntry.load_actionPerformed(Ljava/awt/event/ActionEvent;)V^4 = new <Application,Ljava/io/FileReader>@0^ocr.MainEntry.load_actionPerformed(Ljava/awt/event/ActionEvent;)V#9,^INVOKE,^false^false^Try-catch Fix;

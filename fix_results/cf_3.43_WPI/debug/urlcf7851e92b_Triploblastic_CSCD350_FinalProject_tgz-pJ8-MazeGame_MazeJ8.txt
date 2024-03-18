@@ -1,0 +1,4 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^TriviaQuestions/DataBaseBuilder.java^32^TriviaQuestions.DataBaseBuilder.connectToDatabase()V^7 = invokestatic < Application, Ljava/sql/DriverManager, getConnection(Ljava/lang/String;)Ljava/sql/Connection; > 5 @8 exception:6^NULL^FIELD,^false^true^Field escape;
+1^TriviaQuestions/DataBaseBuilder.java^57^TriviaQuestions.DataBaseBuilder.insertQuoteAndMovie()V^5 = new <Application,Ljava/util/Scanner>@10^NULL^INVOKE,^false^false^Normal Fix;
+2^TriviaQuestions/MovieTriviaDatabaseManager.java^23^TriviaQuestions.MovieTriviaDatabaseManager.connectToDatabase()V^8 = invokestatic < Application, Ljava/sql/DriverManager, getConnection(Ljava/lang/String;)Ljava/sql/Connection; > 6 @9 exception:7^NULL^FIELD,^false^true^Field escape;

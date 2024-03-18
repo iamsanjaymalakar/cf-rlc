@@ -1,0 +1,27 @@
+12662
+83
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/common/SwingComImageGenerator.java; Line number 95
+vim +95 ../../../../datasets/debug_supplemented_njr/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/common/SwingComImageGenerator.java
+
++++ Add following code below line: 106 (org/swiftgantt/common/SwingComImageGenerator.java)
+finally{
+    try{ bos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 99 (org/swiftgantt/common/SwingComImageGenerator.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/common/SwingComImageGenerator.java; Line number 159
+vim +159 ../../../../datasets/debug_supplemented_njr/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/common/SwingComImageGenerator.java
+
++++ Add following code below line: 171 (org/swiftgantt/common/SwingComImageGenerator.java)
+finally{
+    try{ ios.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 167 (org/swiftgantt/common/SwingComImageGenerator.java)
+
+--------------------------------------------

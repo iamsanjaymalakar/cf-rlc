@@ -1,0 +1,78 @@
+10273
+256
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/queue_socket_send/Receiver.java; Line number 27
+vim +27 ../../../../datasets/debug_supplemented_njr/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/queue_socket_send/Receiver.java
+
++++ Add following code below line: 87 (org/jsl/tests/queue_socket_send/Receiver.java)
+finally{
+    try{ socketChannel.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 78 (org/jsl/tests/queue_socket_send/Receiver.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java; Line number 163
+vim +163 ../../../../datasets/debug_supplemented_njr/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java
+
++++ Add following code below line: 202 (org/jsl/tests/dgram_listener/Main.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 163
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java; Line number 164
+vim +164 ../../../../datasets/debug_supplemented_njr/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java
+
++++ Add following code below line: 202 (org/jsl/tests/dgram_listener/Main.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 165
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java; Line number 170
+vim +170 ../../../../datasets/debug_supplemented_njr/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java
+
++++ Add following code below line: 202 (org/jsl/tests/dgram_listener/Main.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 170
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java; Line number 171
+vim +171 ../../../../datasets/debug_supplemented_njr/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/tests/dgram_listener/Main.java
+
++++ Add following code below line: 202 (org/jsl/tests/dgram_listener/Main.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 172
+
+--------------------------------------------
+12] ../../../../datasets/debug_supplemented_njr/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/collider/ColliderImpl.java; Line number 576
+vim +576 ../../../../datasets/debug_supplemented_njr/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/collider/ColliderImpl.java
+
++++ Add following code above line:576 (org/jsl/collider/ColliderImpl.java)
+try{
++++ Add following code after line:578 (org/jsl/collider/ColliderImpl.java)
+}finally{
+    try{ socket.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/collider/ColliderImpl.java; Line number 676
+vim +676 ../../../../datasets/debug_supplemented_njr/url0307c0e995_js_labs_js_collider_tgz-pJ8-org_jsl_tests_shmem_throughput_MainJ8/src/org/jsl/collider/ColliderImpl.java
+
++++ Add following code above line:676 (org/jsl/collider/ColliderImpl.java)
+try{
++++ Add following code after line:686 (org/jsl/collider/ColliderImpl.java)
+}finally{
+    try{ socket.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

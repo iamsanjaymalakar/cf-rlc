@@ -1,0 +1,26 @@
+8292
+566
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url72c32f3c54_Quickhull3d_quickhull3d_tgz-pJ8-com_github_quickhull3d_SimpleExampleJ8/src/com/github/quickhull3d/QuickHull3D.java; Line number 354
+vim +354 ../../../../datasets/debug_supplemented_njr/url72c32f3c54_Quickhull3d_quickhull3d_tgz-pJ8-com_github_quickhull3d_SimpleExampleJ8/src/com/github/quickhull3d/QuickHull3D.java
+
++++ Add following code above line:354 (com/github/quickhull3d/QuickHull3D.java)
+try{
++++ Add following code after line:359 (com/github/quickhull3d/QuickHull3D.java)
+}finally{
+    try{ es.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url72c32f3c54_Quickhull3d_quickhull3d_tgz-pJ8-com_github_quickhull3d_SimpleExampleJ8/src/com/github/quickhull3d/QuickHull3D.java; Line number 374
+vim +374 ../../../../datasets/debug_supplemented_njr/url72c32f3c54_Quickhull3d_quickhull3d_tgz-pJ8-com_github_quickhull3d_SimpleExampleJ8/src/com/github/quickhull3d/QuickHull3D.java
+
++++ Add following code below line: 417 (com/github/quickhull3d/QuickHull3D.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 374
+
+--------------------------------------------

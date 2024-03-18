@@ -1,0 +1,12 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^hw4/CircuitProblem.java^64^hw4.CircuitProblem.loadCircuitProblems(Ljava/lang/String;)Ljava/util/ArrayList;^6 = new <Application,Ljava/util/Scanner>@10^hw4.CircuitProblem.loadCircuitProblems(Ljava/lang/String;)Ljava/util/ArrayList;#13,^INVOKE,^false^true^Escaped-try-catch and no post-dominator found;Try-catch Fix;
+1^org/json/Test.java^447^org.json.Test.main([Ljava/lang/String;)V^1180 = new <Application,Ljava/io/StringWriter>@3132^NULL^INVOKE,^false^false^Try-catch Fix;
+2^hw2_P1/Parser.java^71^hw2_P1.Parser.getAnchorsInPage(Ljava/lang/String;Ljava/lang/String;)Ljava/util/LinkedList;^28 = new <Application,Ljava/io/BufferedReader>@71^hw2_P1.Parser.getAnchorsInPage(Ljava/lang/String;Ljava/lang/String;)Ljava/util/LinkedList;#29,hw2_P1.Parser.getAnchorsInPage(Ljava/lang/String;Ljava/lang/String;)Ljava/util/LinkedList;#31,^INVOKE,^false^false^Try-catch Fix;
+3^hw5/P3bMain.java^76^hw5.P3bMain.makefiles(Ljava/util/Scanner;)V^21 = new <Application,Ljava/util/Scanner>@50^hw5.P3bMain.makefiles(Ljava/util/Scanner;)V#28,^INVOKE,^false^false^Try-catch Fix;
+4^hw5/P3bMain.java^126^hw5.P3bMain.spellcheck(Ljava/util/Scanner;)V^27 = new <Application,Ljava/util/Scanner>@61^hw5.P3bMain.spellcheck(Ljava/util/Scanner;)V#34,hw5.P3bMain.spellcheck(Ljava/util/Scanner;)V#63,hw5.P3bMain.spellcheck(Ljava/util/Scanner;)V#56,^INVOKE,^false^false^Try-catch Fix;
+5^hw5/P3bMain.java^141^hw5.P3bMain.spellcheck(Ljava/util/Scanner;)V^56 = new <Application,Ljava/util/Scanner>@141^hw5.P3bMain.spellcheck(Ljava/util/Scanner;)V#63,hw5.P3bMain.spellcheck(Ljava/util/Scanner;)V#34,hw5.P3bMain.spellcheck(Ljava/util/Scanner;)V#27,^INVOKE,^true^false^Try-catch Fix;
+6^hw5/P3bMain.java^198^hw5.P3bMain.makeErrors(Ljava/lang/String;Ljava/lang/String;D)Ljava/lang/String;^68 = new <Application,Ljava/io/BufferedWriter>@193^hw5.P3bMain.makeErrors(Ljava/lang/String;Ljava/lang/String;D)Ljava/lang/String;#69,^INVOKE,^false^false^Try-catch Fix;
+7^org/json/JSONObject.java^1555^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+8^org/json/JSONObject.java^1557^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+9^org/json/JSONArray.java^946^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+10^org/json/JSONArray.java^948^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^ar/fiuba/tecnicas/framework/JTest/XmlPrinter.java^23^ar.fiuba.tecnicas.framework.JTest.XmlPrinter.inicializar()V^3 = new <Application,Ljava/io/FileWriter>@1^NULL^FIELD,^false^true^Field escape;

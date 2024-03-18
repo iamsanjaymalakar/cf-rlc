@@ -1,0 +1,27 @@
+7713
+29
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urlfd6bd5edbe_AntonPoznyak_LogFileGenerator_tgz-pJ8-logfilegen_StartMePleaseJ8/src/logfilegen/forFile/WriterFile.java; Line number 17
+vim +17 ../../../../datasets/debug_supplemented_njr/urlfd6bd5edbe_AntonPoznyak_LogFileGenerator_tgz-pJ8-logfilegen_StartMePleaseJ8/src/logfilegen/forFile/WriterFile.java
+
++++ Add following code below line: 22 (logfilegen/forFile/WriterFile.java)
+finally{
+    try{ fileWriter.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 19 (logfilegen/forFile/WriterFile.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/urlfd6bd5edbe_AntonPoznyak_LogFileGenerator_tgz-pJ8-logfilegen_StartMePleaseJ8/src/logfilegen/forFile/Reader.java; Line number 15
+vim +15 ../../../../datasets/debug_supplemented_njr/urlfd6bd5edbe_AntonPoznyak_LogFileGenerator_tgz-pJ8-logfilegen_StartMePleaseJ8/src/logfilegen/forFile/Reader.java
+
++++ Add following code below line: 25 (logfilegen/forFile/Reader.java)
+finally{
+    try{ fileR.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 19 (logfilegen/forFile/Reader.java)
+
+--------------------------------------------

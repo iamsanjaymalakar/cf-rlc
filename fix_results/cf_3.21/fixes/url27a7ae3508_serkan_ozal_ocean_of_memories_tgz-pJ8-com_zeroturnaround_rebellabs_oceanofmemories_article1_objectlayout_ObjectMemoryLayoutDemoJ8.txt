@@ -1,0 +1,23 @@
+13202
+1431
+
+SOURCE LEVEL FIXES
+
+5] ../../../../datasets/debug_supplemented_njr/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/Util.java; Line number 66
+vim +66 ../../../../datasets/debug_supplemented_njr/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/Util.java
+
++++ Add following code below line: 85 (com/zeroturnaround/rebellabs/oceanofmemories/common/util/Util.java)
+finally{
+    try{ outputReader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/Util.java; Line number 67
+vim +67 ../../../../datasets/debug_supplemented_njr/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/Util.java
+
++++ Add following code below line: 85 (com/zeroturnaround/rebellabs/oceanofmemories/common/util/Util.java)
+finally{
+    try{ errorReader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

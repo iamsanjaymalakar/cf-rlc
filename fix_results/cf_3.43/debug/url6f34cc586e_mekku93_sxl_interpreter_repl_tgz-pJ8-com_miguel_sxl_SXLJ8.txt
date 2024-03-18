@@ -1,0 +1,3 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^com/miguel/sxl/SXL.java^29^com.miguel.sxl.SXL.<init>(Ljava/io/InputStream;)V^11 = new <Application,Ljava/util/Scanner>@39^com.miguel.sxl.SXL.<init>(Ljava/io/InputStream;)V#12,^INVOKE,^false^false^Normal Fix;
+1^com/miguel/sxl/SXL.java^51^com.miguel.sxl.SXL.main([Ljava/lang/String;)V^11 = new <Application,Ljava/io/FileInputStream>@43^com.miguel.sxl.SXL.main([Ljava/lang/String;)V#16,com.miguel.sxl.SXL.main([Ljava/lang/String;)V#19,^FIELD,INVOKE,^false^true^Field escape;

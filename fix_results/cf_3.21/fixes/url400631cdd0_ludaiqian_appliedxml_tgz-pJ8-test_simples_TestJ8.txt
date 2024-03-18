@@ -1,0 +1,27 @@
+8678
+598
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url400631cdd0_ludaiqian_appliedxml_tgz-pJ8-test_simples_TestJ8/src/test/fromlist/Test.java; Line number 37
+vim +37 ../../../../datasets/debug_supplemented_njr/url400631cdd0_ludaiqian_appliedxml_tgz-pJ8-test_simples_TestJ8/src/test/fromlist/Test.java
+
++++ Add following code above line:37 (test/fromlist/Test.java)
+try{
++++ Add following code after line:39 (test/fromlist/Test.java)
+}finally{
+    try{ inReader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url400631cdd0_ludaiqian_appliedxml_tgz-pJ8-test_simples_TestJ8/src/test/simples/Test.java; Line number 109
+vim +109 ../../../../datasets/debug_supplemented_njr/url400631cdd0_ludaiqian_appliedxml_tgz-pJ8-test_simples_TestJ8/src/test/simples/Test.java
+
++++ Add following code above line:109 (test/simples/Test.java)
+try{
++++ Add following code after line:111 (test/simples/Test.java)
+}finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

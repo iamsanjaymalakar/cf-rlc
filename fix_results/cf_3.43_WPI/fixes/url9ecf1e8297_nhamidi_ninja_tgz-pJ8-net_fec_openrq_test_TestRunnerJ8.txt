@@ -1,0 +1,86 @@
+11721
+2428
+
+SOURCE LEVEL FIXES
+
+2] ../../../dataset/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Receiver_2.java; Line number 63
+vim +63 ../../../dataset/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Receiver_2.java
+
++++ Add following code above line:63 (Receiver_2.java)
+try{ 
++++ Add following code below line:64 (Receiver_2.java)
+} catch(Exception e){ 
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+    throw e; 
+}
++++ Add following code below line: 84 (Receiver_2.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 63
+
++++ Delete Line number 86 (Receiver_2.java)
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Receiver_multicast.java; Line number 43
+vim +43 ../../../dataset/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Receiver_multicast.java
+
++++ Add following code above line:43 (Receiver_multicast.java)
+try{ 
++++ Add following code below line:44 (Receiver_multicast.java)
+} catch(Exception e){ 
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+    throw e; 
+}
++++ Add following code below line: 56 (Receiver_multicast.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 43
+
++++ Delete Line number 58 (Receiver_multicast.java)
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Receiver_multicast.java; Line number 162
+vim +162 ../../../dataset/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Receiver_multicast.java
+
++++ Add following code above line:179 (Receiver_multicast.java)
+try{ 
++++ Add following code below line:179 (Receiver_multicast.java)
+} catch(Exception e){ 
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+    throw e; 
+}
++++ Add following code below line:179 (Receiver_multicast.java)
+try{
+    <NEW_VARIABLE>.close();
+} catch(Exception e){ e.printStackTrace(); }
+// where variable <NEW_VARIABLE> points to the resource from line 162
+
++++ Delete Line number 194 (Receiver_multicast.java)
+
+--------------------------------------------
+6] ../../../dataset/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Receiver_multicast.java; Line number 238
+vim +238 ../../../dataset/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Receiver_multicast.java
+
++++ Add following code above line:360 (Receiver_multicast.java)
+try{
+    <NEW_VARIABLE>.close();
+} catch(Exception e){ e.printStackTrace(); }
+// where variable <NEW_VARIABLE> points to the resource from line 238
+
++++ Delete Line number 360 (Receiver_multicast.java)
+
+--------------------------------------------
+7] ../../../dataset/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Utils.java; Line number 41
+vim +41 ../../../dataset/june2020_dataset/url9ecf1e8297_nhamidi_ninja_tgz-pJ8-net_fec_openrq_test_TestRunnerJ8/src/Utils.java
+
++++ Add following code below line: 48 (Utils.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 41
+
++++ Delete Line number 44 (Utils.java)
+
+--------------------------------------------

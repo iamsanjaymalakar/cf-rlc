@@ -1,0 +1,3 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^Programm.java^61^Programm.quit()V^4 = new <Application,Ljava/io/ObjectOutputStream>@2^Programm.quit()V#5,Programm.quit()V#12,Programm.quit()V#15,^INVOKE,^false^true^Escaped-try-catch and no post-dominator found;Try-catch Fix;
+1^Programm.java^81^Programm.read()V^4 = new <Application,Ljava/io/ObjectInputStream>@2^Programm.read()V#5,Programm.read()V#30,Programm.read()V#37,^INVOKE,^false^true^Escaped-try-catch and no post-dominator found;Try-catch Fix;

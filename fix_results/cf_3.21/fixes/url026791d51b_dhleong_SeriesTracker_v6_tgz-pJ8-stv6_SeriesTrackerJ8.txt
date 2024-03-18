@@ -1,0 +1,112 @@
+10499
+1273
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/episodes/managers/UpnpManager.java; Line number 104
+vim +104 ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/episodes/managers/UpnpManager.java
+
++++ Add following code below line: 124 (stv6/episodes/managers/UpnpManager.java)
+finally{
+    try{ r.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/Profile.java; Line number 352
+vim +352 ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/Profile.java
+
++++ Add following code below line: 366 (stv6/Profile.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/util/CoverHandler.java; Line number 140
+vim +140 ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/util/CoverHandler.java
+
++++ Add following code above line:140 (stv6/handlers/util/CoverHandler.java)
+try{
++++ Add following code after line:164 (stv6/handlers/util/CoverHandler.java)
+}finally{
+    try{ is.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 172 (stv6/handlers/util/CoverHandler.java)
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/PluginHandler.java; Line number 58
+vim +58 ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/PluginHandler.java
+
++++ Add following code below line: 123 (stv6/handlers/PluginHandler.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 58
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/PluginHandler.java; Line number 60
+vim +60 ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/PluginHandler.java
+
++++ Add following code below line: 123 (stv6/handlers/PluginHandler.java)
+finally{
+    try{ stdInput.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 108 (stv6/handlers/PluginHandler.java)
+
++++ Delete Line number 119 (stv6/handlers/PluginHandler.java)
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/PluginHandler.java; Line number 93
+vim +93 ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/PluginHandler.java
+
++++ Add following code below line: 123 (stv6/handlers/PluginHandler.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 93
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/PluginHandler.java; Line number 94
+vim +94 ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/PluginHandler.java
+
++++ Add following code below line: 123 (stv6/handlers/PluginHandler.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 94
+
+--------------------------------------------
+11] ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/PluginHandler.java; Line number 96
+vim +96 ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/PluginHandler.java
+
++++ Add following code below line: 123 (stv6/handlers/PluginHandler.java)
+finally{
+    try{ is.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+12] ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/FileHandler.java; Line number 77
+vim +77 ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/FileHandler.java
+
++++ Add following code below line: 95 (stv6/handlers/FileHandler.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 84 (stv6/handlers/FileHandler.java)
+
+--------------------------------------------
+13] ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/FileHandler.java; Line number 108
+vim +108 ../../../../datasets/debug_supplemented_njr/url026791d51b_dhleong_SeriesTracker_v6_tgz-pJ8-stv6_SeriesTrackerJ8/src/stv6/handlers/FileHandler.java
+
++++ Add following code above line:108 (stv6/handlers/FileHandler.java)
+try{
++++ Add following code after line:132 (stv6/handlers/FileHandler.java)
+}finally{
+    try{ is.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 140 (stv6/handlers/FileHandler.java)
+
+--------------------------------------------

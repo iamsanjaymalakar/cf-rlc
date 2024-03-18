@@ -1,0 +1,29 @@
+26424
+3483
+
+SOURCE LEVEL FIXES
+
+9] ../../../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/Data_Compression.java; Line number 9
+vim +9 ../../../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/Data_Compression.java
+
++++ Add following code below line: 32 (Data_Compression.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 9
+
++++ Delete Line number 29 (Data_Compression.java)
+
+--------------------------------------------
+10] ../../../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/Data_Compression.java; Line number 18
+vim +18 ../../../dataset/june2020_dataset/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/Data_Compression.java
+
++++ Add following code below line: 32 (Data_Compression.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 18
+
++++ Delete Line number 27 (Data_Compression.java)
+
+--------------------------------------------

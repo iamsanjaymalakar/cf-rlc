@@ -1,0 +1,49 @@
+10354
+738
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urlaf656038a0_Salihan04_MOBLIMA_tgz-pJ8-com_moblima_util_dataTestJ8/src/com/moblima/util/showTimeReadtest.java; Line number 163
+vim +163 ../../../../datasets/debug_supplemented_njr/urlaf656038a0_Salihan04_MOBLIMA_tgz-pJ8-com_moblima_util_dataTestJ8/src/com/moblima/util/showTimeReadtest.java
+
++++ Add following code below line: 179 (com/moblima/util/showTimeReadtest.java)
+finally{
+    try{ fop.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 173 (com/moblima/util/showTimeReadtest.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/urlaf656038a0_Salihan04_MOBLIMA_tgz-pJ8-com_moblima_util_dataTestJ8/src/com/moblima/util/showTimeReadtest.java; Line number 186
+vim +186 ../../../../datasets/debug_supplemented_njr/urlaf656038a0_Salihan04_MOBLIMA_tgz-pJ8-com_moblima_util_dataTestJ8/src/com/moblima/util/showTimeReadtest.java
+
++++ Add following code below line: 203 (com/moblima/util/showTimeReadtest.java)
+finally{
+    try{ fop.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 197 (com/moblima/util/showTimeReadtest.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/urlaf656038a0_Salihan04_MOBLIMA_tgz-pJ8-com_moblima_util_dataTestJ8/src/com/moblima/dataaccess/SerializeDB.java; Line number 63
+vim +63 ../../../../datasets/debug_supplemented_njr/urlaf656038a0_Salihan04_MOBLIMA_tgz-pJ8-com_moblima_util_dataTestJ8/src/com/moblima/dataaccess/SerializeDB.java
+
++++ Add following code below line: 93 (com/moblima/dataaccess/SerializeDB.java)
+finally{
+    try{ oos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 89 (com/moblima/dataaccess/SerializeDB.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/urlaf656038a0_Salihan04_MOBLIMA_tgz-pJ8-com_moblima_util_dataTestJ8/src/com/moblima/dataaccess/SerializeDB.java; Line number 131
+vim +131 ../../../../datasets/debug_supplemented_njr/urlaf656038a0_Salihan04_MOBLIMA_tgz-pJ8-com_moblima_util_dataTestJ8/src/com/moblima/dataaccess/SerializeDB.java
+
++++ Add following code below line: 185 (com/moblima/dataaccess/SerializeDB.java)
+finally{
+    try{ ois.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 156 (com/moblima/dataaccess/SerializeDB.java)
+
+--------------------------------------------

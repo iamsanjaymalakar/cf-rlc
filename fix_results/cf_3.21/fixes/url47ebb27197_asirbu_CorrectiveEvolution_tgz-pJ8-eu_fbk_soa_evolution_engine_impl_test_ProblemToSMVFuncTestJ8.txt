@@ -1,0 +1,76 @@
+9842
+1474
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/util/test/IOUtilsTest.java; Line number 73
+vim +73 ../../../../datasets/debug_supplemented_njr/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/util/test/IOUtilsTest.java
+
++++ Add following code below line: 79 (eu/fbk/soa/util/test/IOUtilsTest.java)
+finally{
+    try{ stream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 76 (eu/fbk/soa/util/test/IOUtilsTest.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/util/IOUtils.java; Line number 146
+vim +146 ../../../../datasets/debug_supplemented_njr/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/util/IOUtils.java
+
++++ Add following code below line: 151 (eu/fbk/soa/util/IOUtils.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 148 (eu/fbk/soa/util/IOUtils.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/util/IOUtils.java; Line number 157
+vim +157 ../../../../datasets/debug_supplemented_njr/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/util/IOUtils.java
+
++++ Add following code below line: 160 (eu/fbk/soa/util/IOUtils.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 157
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/util/IOUtils.java; Line number 198
+vim +198 ../../../../datasets/debug_supplemented_njr/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/util/IOUtils.java
+
++++ Add following code below line: 202 (eu/fbk/soa/util/IOUtils.java)
+finally{
+    try{ writer.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/evolution/engine/RelaxedEngine.java; Line number 82
+vim +82 ../../../../datasets/debug_supplemented_njr/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/evolution/engine/RelaxedEngine.java
+
++++ Add following code below line: 99 (eu/fbk/soa/evolution/engine/RelaxedEngine.java)
+finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/evolution/sts/minimizer/BisimulationMinimizer.java; Line number 44
+vim +44 ../../../../datasets/debug_supplemented_njr/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/evolution/sts/minimizer/BisimulationMinimizer.java
+
++++ Add following code below line: 48 (eu/fbk/soa/evolution/sts/minimizer/BisimulationMinimizer.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 44
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/evolution/sts/minimizer/TraceEquivalenceMinimizer.java; Line number 24
+vim +24 ../../../../datasets/debug_supplemented_njr/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/evolution/sts/minimizer/TraceEquivalenceMinimizer.java
+
++++ Add following code below line: 31 (eu/fbk/soa/evolution/sts/minimizer/TraceEquivalenceMinimizer.java)
+finally{
+    try{ fout.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 27 (eu/fbk/soa/evolution/sts/minimizer/TraceEquivalenceMinimizer.java)
+
+--------------------------------------------

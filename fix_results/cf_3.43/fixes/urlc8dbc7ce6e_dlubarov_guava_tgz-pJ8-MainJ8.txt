@@ -1,0 +1,17 @@
+13874
+19
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/urlc8dbc7ce6e_dlubarov_guava_tgz-pJ8-MainJ8/src/util/FileUtils.java; Line number 9
+vim +9 ../../../dataset/june2020_dataset/urlc8dbc7ce6e_dlubarov_guava_tgz-pJ8-MainJ8/src/util/FileUtils.java
+
++++ Add following code above line:9 (util/FileUtils.java)
+try{
++++ Add following code after line:17 (util/FileUtils.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 9
+
+--------------------------------------------

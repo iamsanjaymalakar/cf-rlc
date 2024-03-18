@@ -1,0 +1,39 @@
+8492
+161
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java; Line number 474
+vim +474 ../../../../datasets/debug_supplemented_njr/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java
+
++++ Add following code below line: 676 (org/json/Test.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 474
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/com/skm/AcctAction.java; Line number 93
+vim +93 ../../../../datasets/debug_supplemented_njr/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/com/skm/AcctAction.java
+
++++ Add following code above line:93 (com/skm/AcctAction.java)
+try{
++++ Add following code after line:93 (com/skm/AcctAction.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 93
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/com/skm/AcctAction.java; Line number 102
+vim +102 ../../../../datasets/debug_supplemented_njr/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/com/skm/AcctAction.java
+
++++ Add following code above line:102 (com/skm/AcctAction.java)
+try{
++++ Add following code after line:102 (com/skm/AcctAction.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 102
+
+--------------------------------------------

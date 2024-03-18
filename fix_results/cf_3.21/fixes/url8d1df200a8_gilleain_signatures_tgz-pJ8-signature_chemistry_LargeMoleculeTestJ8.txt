@@ -1,0 +1,62 @@
+12150
+1581
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/MoleculeWriter.java; Line number 16
+vim +16 ../../../../datasets/debug_supplemented_njr/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/MoleculeWriter.java
+
++++ Add following code below line: 19 (signature/chemistry/MoleculeWriter.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 16
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/MoleculeReader.java; Line number 22
+vim +22 ../../../../datasets/debug_supplemented_njr/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/MoleculeReader.java
+
++++ Add following code below line: 34 (signature/chemistry/MoleculeReader.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 29 (signature/chemistry/MoleculeReader.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/MoleculeReader.java; Line number 48
+vim +48 ../../../../datasets/debug_supplemented_njr/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/MoleculeReader.java
+
++++ Add following code below line: 51 (signature/chemistry/MoleculeReader.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 48
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/LargeMoleculeTest.java; Line number 211
+vim +211 ../../../../datasets/debug_supplemented_njr/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/LargeMoleculeTest.java
+
++++ Add following code above line:211 (signature/chemistry/LargeMoleculeTest.java)
+try{
++++ Add following code after line:220 (signature/chemistry/LargeMoleculeTest.java)
+}finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 221 (signature/chemistry/LargeMoleculeTest.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/LargeMoleculeTest.java; Line number 227
+vim +227 ../../../../datasets/debug_supplemented_njr/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/LargeMoleculeTest.java
+
++++ Add following code above line:227 (signature/chemistry/LargeMoleculeTest.java)
+try{
++++ Add following code after line:234 (signature/chemistry/LargeMoleculeTest.java)
+}finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 235 (signature/chemistry/LargeMoleculeTest.java)
+
+--------------------------------------------

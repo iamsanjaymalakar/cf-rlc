@@ -1,0 +1,15 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^com/gesoftware/venta/network/Server.java^466^com.gesoftware.venta.network.Server.openServerSocket()Z^3 = new <Application,Ljava/net/ServerSocket>@1^NULL^FIELD,^false^true^Field escape;
+1^com/gesoftware/venta/network/Server.java^535^com.gesoftware.venta.network.Server.run()V^14 = invokespecial < Application, Lcom/gesoftware/venta/network/Server, acceptConnection()Ljava/net/Socket; > 1 @35 exception:13^NULL^INVOKE,FIELD,^false^true^Field escape;
+2^com/gesoftware/venta/network/Connection.java^100^com.gesoftware.venta.network.Connection.connect()Z^7 = new <Application,Ljava/net/Socket>@22^NULL^INVOKE,^false^false^Try-catch Fix;
+3^com/gesoftware/venta/network/Connection.java^103^com.gesoftware.venta.network.Connection.connect()Z^15 = new <Application,Ljava/io/ObjectInputStream>@53^com.gesoftware.venta.network.Connection.connect()Z#17,^FIELD,^false^true^Field escape;
+4^com/gesoftware/venta/network/Connection.java^104^com.gesoftware.venta.network.Connection.connect()Z^19 = new <Application,Ljava/io/ObjectOutputStream>@68^com.gesoftware.venta.network.Connection.connect()Z#21,^FIELD,^false^true^Field escape;
+5^com/gesoftware/venta/io/FileSaver.java^19^com.gesoftware.venta.io.FileSaver.<init>(Ljava/lang/String;)V^5 = new <Application,Ljava/io/FileOutputStream>@5^NULL^FIELD,^false^true^Field escape;
+6^com/gesoftware/venta/io/FileSaver.java^20^com.gesoftware.venta.io.FileSaver.<init>(Ljava/lang/String;)V^7 = new <Application,Ljava/io/ObjectOutputStream>@17^com.gesoftware.venta.io.FileSaver.<init>(Ljava/lang/String;)V#8,^FIELD,^false^true^Field escape;
+7^com/gesoftware/venta/io/FileLoader.java^16^com.gesoftware.venta.io.FileLoader.<init>(Ljava/lang/String;)V^5 = new <Application,Ljava/io/FileInputStream>@5^NULL^FIELD,^false^true^Field escape;
+8^com/gesoftware/venta/io/FileLoader.java^17^com.gesoftware.venta.io.FileLoader.<init>(Ljava/lang/String;)V^7 = new <Application,Ljava/io/ObjectInputStream>@17^com.gesoftware.venta.io.FileLoader.<init>(Ljava/lang/String;)V#8,^FIELD,^false^true^Field escape;
+9^com/gesoftware/venta/utility/PropertiesUtility.java^23^com.gesoftware.venta.utility.PropertiesUtility.<init>(Ljava/lang/String;)V^8 = new <Application,Ljava/io/FileInputStream>@19^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+10^com/gesoftware/venta/utility/ApplicationUtility.java^47^com.gesoftware.venta.utility.ApplicationUtility.<init>(Ljava/lang/String;)V^68 = new <Application,Ljava/io/FileOutputStream>@173^NULL^FIELD,^false^true^Field escape;
+11^com/gesoftware/venta/logging/LoggingUtility.java^125^com.gesoftware.venta.logging.LoggingUtility.print2File(Ljava/lang/String;)V^6 = new <Application,Ljava/io/FileWriter>@8^com.gesoftware.venta.logging.LoggingUtility.print2File(Ljava/lang/String;)V#10,^INVOKE,^false^false^Try-catch Fix;
+12^com/gesoftware/venta/network/Server.java^85^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+13^com/gesoftware/venta/network/Server.java^184^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

@@ -1,0 +1,12 @@
+Total Count: 1947
+Duplicates: 75
+Unmatched Count:357
+Total (minus duplicates and unmatched) Count: 1515
+Both_array_and_field:38
+Both_array_and_field:0.025082508250825083
+Array Escapes:114
+Array Escapes Percentage:0.07524752475247524
+Field Escapes:619
+Field Escapes Percentage:0.4085808580858086
+Unfixable Count:799
+Unfixable Percentage:0.5273927392739274

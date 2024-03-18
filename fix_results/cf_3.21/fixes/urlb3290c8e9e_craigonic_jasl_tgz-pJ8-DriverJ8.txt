@@ -1,0 +1,27 @@
+8550
+646
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urlb3290c8e9e_craigonic_jasl_tgz-pJ8-DriverJ8/src/jasl/utilities/Serialization.java; Line number 69
+vim +69 ../../../../datasets/debug_supplemented_njr/urlb3290c8e9e_craigonic_jasl_tgz-pJ8-DriverJ8/src/jasl/utilities/Serialization.java
+
++++ Add following code below line: 78 (jasl/utilities/Serialization.java)
+finally{
+    try{ objectOutputStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 72 (jasl/utilities/Serialization.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/urlb3290c8e9e_craigonic_jasl_tgz-pJ8-DriverJ8/src/jasl/utilities/Serialization.java; Line number 122
+vim +122 ../../../../datasets/debug_supplemented_njr/urlb3290c8e9e_craigonic_jasl_tgz-pJ8-DriverJ8/src/jasl/utilities/Serialization.java
+
++++ Add following code below line: 136 (jasl/utilities/Serialization.java)
+finally{
+    try{ objectInputStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 125 (jasl/utilities/Serialization.java)
+
+--------------------------------------------

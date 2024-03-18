@@ -1,0 +1,93 @@
+12247
+3018
+
+SOURCE LEVEL FIXES
+
+2] ../../../../datasets/debug_supplemented_njr/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/model3d/TetrahedronNet3DComp.java; Line number 1742
+vim +1742 ../../../../datasets/debug_supplemented_njr/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/model3d/TetrahedronNet3DComp.java
+
++++ Add following code below line: 1758 (de/uos/igf/db3d/dbms/model3d/TetrahedronNet3DComp.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1750 (de/uos/igf/db3d/dbms/model3d/TetrahedronNet3DComp.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/model3d/TetrahedronNet3DComp.java; Line number 1745
+vim +1745 ../../../../datasets/debug_supplemented_njr/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/model3d/TetrahedronNet3DComp.java
+
++++ Add following code below line: 1758 (de/uos/igf/db3d/dbms/model3d/TetrahedronNet3DComp.java)
+finally{
+    try{ is.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1748 (de/uos/igf/db3d/dbms/model3d/TetrahedronNet3DComp.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/model3d/TriangleNet3DComp.java; Line number 997
+vim +997 ../../../../datasets/debug_supplemented_njr/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/model3d/TriangleNet3DComp.java
+
++++ Add following code below line: 1013 (de/uos/igf/db3d/dbms/model3d/TriangleNet3DComp.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1005 (de/uos/igf/db3d/dbms/model3d/TriangleNet3DComp.java)
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/model3d/TriangleNet3DComp.java; Line number 1000
+vim +1000 ../../../../datasets/debug_supplemented_njr/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/model3d/TriangleNet3DComp.java
+
++++ Add following code below line: 1013 (de/uos/igf/db3d/dbms/model3d/TriangleNet3DComp.java)
+finally{
+    try{ is.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1003 (de/uos/igf/db3d/dbms/model3d/TriangleNet3DComp.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/model3d/SegmentNet3DComp.java; Line number 989
+vim +989 ../../../../datasets/debug_supplemented_njr/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/model3d/SegmentNet3DComp.java
+
++++ Add following code below line: 1005 (de/uos/igf/db3d/dbms/model3d/SegmentNet3DComp.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 997 (de/uos/igf/db3d/dbms/model3d/SegmentNet3DComp.java)
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/model3d/SegmentNet3DComp.java; Line number 992
+vim +992 ../../../../datasets/debug_supplemented_njr/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/model3d/SegmentNet3DComp.java
+
++++ Add following code below line: 1005 (de/uos/igf/db3d/dbms/model3d/SegmentNet3DComp.java)
+finally{
+    try{ is.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 995 (de/uos/igf/db3d/dbms/model3d/SegmentNet3DComp.java)
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/model3d/PointNet3DComp.java; Line number 336
+vim +336 ../../../../datasets/debug_supplemented_njr/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/model3d/PointNet3DComp.java
+
++++ Add following code below line: 352 (de/uos/igf/db3d/dbms/model3d/PointNet3DComp.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 344 (de/uos/igf/db3d/dbms/model3d/PointNet3DComp.java)
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/model3d/PointNet3DComp.java; Line number 339
+vim +339 ../../../../datasets/debug_supplemented_njr/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/model3d/PointNet3DComp.java
+
++++ Add following code below line: 352 (de/uos/igf/db3d/dbms/model3d/PointNet3DComp.java)
+finally{
+    try{ is.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 342 (de/uos/igf/db3d/dbms/model3d/PointNet3DComp.java)
+
+--------------------------------------------

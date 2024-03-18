@@ -1,0 +1,39 @@
+82432
+10745
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/sparqlscape/SearchTest.java; Line number 50
+vim +50 ../../../dataset/june2020_dataset/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/sparqlscape/SearchTest.java
+
++++ Add following code above line:50 (org/sparqlscape/SearchTest.java)
+try{
++++ Add following code after line:50 (org/sparqlscape/SearchTest.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 50
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/sparqlscape/ConnectTest.java; Line number 50
+vim +50 ../../../dataset/june2020_dataset/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/sparqlscape/ConnectTest.java
+
++++ Add following code above line:50 (org/sparqlscape/ConnectTest.java)
+try{
++++ Add following code after line:50 (org/sparqlscape/ConnectTest.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 50
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/sparql/Client.java; Line number 35
+vim +35 ../../../dataset/june2020_dataset/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/sparql/Client.java
+
++++ Add following code below line: 89 (org/sparql/Client.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 35
+
+--------------------------------------------

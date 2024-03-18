@@ -1,0 +1,27 @@
+8346
+707
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url86e9087e81_JohnPease_557_HW3_tgz-pJ8-uwm_cs557_Sample4J8/src/uwm_cs557/MiniDB.java; Line number 71
+vim +71 ../../../../datasets/debug_supplemented_njr/url86e9087e81_JohnPease_557_HW3_tgz-pJ8-uwm_cs557_Sample4J8/src/uwm_cs557/MiniDB.java
+
++++ Add following code below line: 77 (uwm_cs557/MiniDB.java)
+finally{
+    try{ ois.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 75 (uwm_cs557/MiniDB.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url86e9087e81_JohnPease_557_HW3_tgz-pJ8-uwm_cs557_Sample4J8/src/uwm_cs557/MiniDB.java; Line number 182
+vim +182 ../../../../datasets/debug_supplemented_njr/url86e9087e81_JohnPease_557_HW3_tgz-pJ8-uwm_cs557_Sample4J8/src/uwm_cs557/MiniDB.java
+
++++ Add following code below line: 188 (uwm_cs557/MiniDB.java)
+finally{
+    try{ oos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 186 (uwm_cs557/MiniDB.java)
+
+--------------------------------------------

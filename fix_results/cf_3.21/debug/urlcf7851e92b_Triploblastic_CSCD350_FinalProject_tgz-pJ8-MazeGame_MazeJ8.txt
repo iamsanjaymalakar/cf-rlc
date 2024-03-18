@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^TriviaQuestions/DataBaseBuilder.java^57^TriviaQuestions.DataBaseBuilder.insertQuoteAndMovie()V^5 = new <Application,Ljava/util/Scanner>@10^NULL^INVOKE,^false^false^Normal Fix;

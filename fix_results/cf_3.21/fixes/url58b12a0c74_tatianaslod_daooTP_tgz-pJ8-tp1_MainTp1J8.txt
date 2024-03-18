@@ -1,0 +1,47 @@
+7746
+57
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url58b12a0c74_tatianaslod_daooTP_tgz-pJ8-tp1_MainTp1J8/src/encoder/MsgEncoderProvider.java; Line number 37
+vim +37 ../../../../datasets/debug_supplemented_njr/url58b12a0c74_tatianaslod_daooTP_tgz-pJ8-tp1_MainTp1J8/src/encoder/MsgEncoderProvider.java
+
++++ Add following code below line: 46 (encoder/MsgEncoderProvider.java)
+finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 40 (encoder/MsgEncoderProvider.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url58b12a0c74_tatianaslod_daooTP_tgz-pJ8-tp1_MainTp1J8/src/server/TaskExecutorProvider.java; Line number 37
+vim +37 ../../../../datasets/debug_supplemented_njr/url58b12a0c74_tatianaslod_daooTP_tgz-pJ8-tp1_MainTp1J8/src/server/TaskExecutorProvider.java
+
++++ Add following code below line: 46 (server/TaskExecutorProvider.java)
+finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 40 (server/TaskExecutorProvider.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url58b12a0c74_tatianaslod_daooTP_tgz-pJ8-tp1_MainTp1J8/src/server/DaooTaskServer.java; Line number 16
+vim +16 ../../../../datasets/debug_supplemented_njr/url58b12a0c74_tatianaslod_daooTP_tgz-pJ8-tp1_MainTp1J8/src/server/DaooTaskServer.java
+
++++ Add following code below line: 27 (server/DaooTaskServer.java)
+finally{
+    try{ serverSocket.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url58b12a0c74_tatianaslod_daooTP_tgz-pJ8-tp1_MainTp1J8/src/server/DaooTaskServer.java; Line number 20
+vim +20 ../../../../datasets/debug_supplemented_njr/url58b12a0c74_tatianaslod_daooTP_tgz-pJ8-tp1_MainTp1J8/src/server/DaooTaskServer.java
+
++++ Add following code above line:20 (server/DaooTaskServer.java)
+try{
++++ Add following code after line:23 (server/DaooTaskServer.java)
+}finally{
+    try{ task.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

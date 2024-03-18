@@ -1,0 +1,180 @@
+10931
+474
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/MessagePackBufferPacker.java; Line number 31
+vim +31 ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/MessagePackBufferPacker.java
+
++++ NOTE: Resource escapes via a parameter and needs to be closed in the callers of this function.<init>
++++ NOTE: Resource escapes via return statement and needs to be closed in the callers of createBufferPacker
++++ Add following code above line:212 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:214 (org/msgpack/MessagePack.java)
+}finally{
+    try{ pk.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Add following code above line:267 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:269 (org/msgpack/MessagePack.java)
+}finally{
+    try{ pk.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Add following code above line:190 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:198 (org/msgpack/MessagePack.java)
+}finally{
+    try{ pk.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/MessagePackPacker.java; Line number 36
+vim +36 ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/packer/MessagePackPacker.java
+
++++ NOTE: Resource escapes via a parameter and needs to be closed in the callers of this function.<init>
++++ NOTE: Resource escapes via return statement and needs to be closed in the callers of createPacker
++++ Add following code above line:252 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:253 (org/msgpack/MessagePack.java)
+}finally{
+    try{ pk.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Add following code above line:228 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:235 (org/msgpack/MessagePack.java)
+}finally{
+    try{ pk.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 190
+vim +190 ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ Add following code above line:190 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:198 (org/msgpack/MessagePack.java)
+}finally{
+    try{ pk.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 212
+vim +212 ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ Add following code above line:212 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:214 (org/msgpack/MessagePack.java)
+}finally{
+    try{ pk.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 228
+vim +228 ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ Add following code above line:228 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:235 (org/msgpack/MessagePack.java)
+}finally{
+    try{ pk.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 252
+vim +252 ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ Add following code above line:252 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:253 (org/msgpack/MessagePack.java)
+}finally{
+    try{ pk.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+11] ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 267
+vim +267 ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ Add following code above line:267 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:269 (org/msgpack/MessagePack.java)
+}finally{
+    try{ pk.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+20] ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 542
+vim +542 ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ Add following code above line:542 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:542 (org/msgpack/MessagePack.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 542
+
+--------------------------------------------
+21] ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 557
+vim +557 ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ Add following code above line:557 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:557 (org/msgpack/MessagePack.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 557
+
+--------------------------------------------
+22] ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 570
+vim +570 ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ Add following code above line:570 (org/msgpack/MessagePack.java)
+try{
++++ Add following code after line:570 (org/msgpack/MessagePack.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 570
+
+--------------------------------------------
+29] ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 791
+vim +791 ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ NOTE: Resource escapes via a parameter and needs to be closed in the callers of this function.unpack
++++ Nothing to be done. No callers found for method with resource return
+--------------------------------------------
+30] ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java; Line number 806
+vim +806 ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/MessagePack.java
+
++++ NOTE: Resource escapes via a parameter and needs to be closed in the callers of this function.unpack
++++ Nothing to be done. No callers found for method with resource return
+--------------------------------------------
+33] ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/util/TemplatePrecompiler.java; Line number 78
+vim +78 ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/util/TemplatePrecompiler.java
+
++++ Add following code above line:78 (org/msgpack/util/TemplatePrecompiler.java)
+try{
++++ Add following code after line:96 (org/msgpack/util/TemplatePrecompiler.java)
+}finally{
+    try{ fm.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+39] ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/util/json/JSONBufferPacker.java; Line number 40
+vim +40 ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/util/json/JSONBufferPacker.java
+
++++ NOTE: Resource escapes via a parameter and needs to be closed in the callers of this function.<init>
++++ NOTE: Resource escapes via return statement and needs to be closed in the callers of createBufferPacker
++++ Nothing to be done. No callers found for method with resource return
+--------------------------------------------
+40] ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/util/json/JSONPacker.java; Line number 66
+vim +66 ../../../../datasets/debug_supplemented_njr/url56b1dc76d3_wufunxiang_Libs_tgz-pJ8-org_msgpack_util_TemplatePrecompilerJ8/src/org/msgpack/util/json/JSONPacker.java
+
++++ NOTE: Resource escapes via a parameter and needs to be closed in the callers of this function.<init>
++++ NOTE: Resource escapes via return statement and needs to be closed in the callers of createPacker
++++ Nothing to be done. No callers found for method with resource return
+--------------------------------------------

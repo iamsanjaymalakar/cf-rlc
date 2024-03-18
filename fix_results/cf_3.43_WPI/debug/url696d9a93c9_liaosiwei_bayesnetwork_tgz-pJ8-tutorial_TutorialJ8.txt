@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^com/alibaba/DataRead.java^21^com.alibaba.DataRead.read()Ljava/lang/Boolean;^3 = new <Application,Ljava/io/BufferedReader>@1^com.alibaba.DataRead.read()Ljava/lang/Boolean;#4,^FIELD,^false^true^Field escape;

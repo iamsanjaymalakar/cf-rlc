@@ -1,0 +1,21 @@
+7906
+51
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url78d0cbe382_TeeAaTeeUu_SitsiPlaseeraus_tgz-pJ8-sitsiplaseeraus_MainJ8/src/Lataaja/TiedostonKasittelija.java; Line number 92
+vim +92 ../../../../datasets/debug_supplemented_njr/url78d0cbe382_TeeAaTeeUu_SitsiPlaseeraus_tgz-pJ8-sitsiplaseeraus_MainJ8/src/Lataaja/TiedostonKasittelija.java
+
++++ Add following code above line:92 (Lataaja/TiedostonKasittelija.java)
+try{ 
++++ Add following code below line:92 (Lataaja/TiedostonKasittelija.java)
+} catch(Exception e){ 
+    if (br!=null) { br.close();}
+    throw e; 
+}
++++ Add following code above line:108 (Lataaja/TiedostonKasittelija.java)
+try{
+    br.close();
+} catch(Exception e){ e.printStackTrace(); }
+
+--------------------------------------------

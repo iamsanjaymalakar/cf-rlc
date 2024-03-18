@@ -1,0 +1,128 @@
+20874
+970
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2client.java; Line number 14
+vim +14 ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2client.java
+
++++ Add following code above line:23 (ft2client.java)
+try{
+    <NEW_VARIABLE>.close();
+} catch(Exception e){ e.printStackTrace(); }
+// where variable <NEW_VARIABLE> points to the resource from line 14
+
++++ Delete Line number 36 (ft2client.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2client.java; Line number 28
+vim +28 ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2client.java
+
++++ Add following code above line:28 (ft2client.java)
+try{
++++ Add following code after line:33 (ft2client.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 28
+
++++ Delete Line number 34 (ft2client.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2server.java; Line number 10
+vim +10 ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2server.java
+
++++ Add following code below line: 27 (ft2server.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 10
+
++++ Delete Line number 51 (ft2server.java)
+
++++ Delete Line number 57 (ft2server.java)
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2server.java; Line number 20
+vim +20 ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2server.java
+
++++ Add following code above line:28 (ft2server.java)
+try{ 
++++ Add following code below line:30 (ft2server.java)
+} catch(Exception e){ 
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+    throw e; 
+}
++++ Add following code below line:30 (ft2server.java)
+try{
+    <NEW_VARIABLE>.close();
+} catch(Exception e){ e.printStackTrace(); }
+// where variable <NEW_VARIABLE> points to the resource from line 20
+
++++ Delete Line number 50 (ft2server.java)
+
++++ Delete Line number 56 (ft2server.java)
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2server.java; Line number 37
+vim +37 ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2server.java
+
++++ Add following code below line: 59 (ft2server.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 37
+
+--------------------------------------------
+6] ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2server.java; Line number 41
+vim +41 ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2server.java
+
++++ Add following code below line: 59 (ft2server.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 41
+
++++ Delete Line number 48 (ft2server.java)
+
+--------------------------------------------
+8] ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/nl/rug/peerbox/logic/filesystem/Filelist.java; Line number 42
+vim +42 ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/nl/rug/peerbox/logic/filesystem/Filelist.java
+
++++ Add following code below line: 52 (nl/rug/peerbox/logic/filesystem/Filelist.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 42
+
++++ Delete Line number 47 (nl/rug/peerbox/logic/filesystem/Filelist.java)
+
++++ Delete Line number 47 (nl/rug/peerbox/logic/filesystem/Filelist.java)
+
++++ Delete Line number 47 (nl/rug/peerbox/logic/filesystem/Filelist.java)
+
++++ Delete Line number 47 (nl/rug/peerbox/logic/filesystem/Filelist.java)
+
+--------------------------------------------
+10] ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/nl/rug/peerbox/logic/filesystem/FileRequestTask.java; Line number 73
+vim +73 ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/nl/rug/peerbox/logic/filesystem/FileRequestTask.java
+
++++ Add following code below line: 85 (nl/rug/peerbox/logic/filesystem/FileRequestTask.java)
+try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+// where variable <NEW_VARIABLE> points to the resource from line 73
+
++++ Delete Line number 80 (nl/rug/peerbox/logic/filesystem/FileRequestTask.java)
+
+--------------------------------------------
+11] ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/nl/rug/peerbox/ui/LogView.java; Line number 61
+vim +61 ../../../dataset/june2020_dataset/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/nl/rug/peerbox/ui/LogView.java
+
++++ Add following code below line: 79 (nl/rug/peerbox/ui/LogView.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 61
+
++++ Delete Line number 72 (nl/rug/peerbox/ui/LogView.java)
+
+--------------------------------------------

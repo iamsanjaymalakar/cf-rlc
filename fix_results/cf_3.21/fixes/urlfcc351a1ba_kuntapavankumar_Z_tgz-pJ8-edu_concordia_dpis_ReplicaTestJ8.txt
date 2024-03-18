@@ -1,0 +1,54 @@
+9825
+629
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/MulticastReceiver.java; Line number 27
+vim +27 ../../../../datasets/debug_supplemented_njr/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/MulticastReceiver.java
+
++++ Add following code below line: 49 (edu/concordia/dpis/MulticastReceiver.java)
+finally{
+    try{ socket.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/MulticastReceiver.java; Line number 39
+vim +39 ../../../../datasets/debug_supplemented_njr/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/MulticastReceiver.java
+
++++ Add following code above line:39 (edu/concordia/dpis/MulticastReceiver.java)
+try{
++++ Add following code after line:43 (edu/concordia/dpis/MulticastReceiver.java)
+}finally{
+    try{ socket2.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/commons/MessageTransformer.java; Line number 15
+vim +15 ../../../../datasets/debug_supplemented_njr/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/commons/MessageTransformer.java
+
++++ Add following code above line:14 (edu/concordia/dpis/commons/MessageTransformer.java)
+try{
++++ Add following code after line:18 (edu/concordia/dpis/commons/MessageTransformer.java)
+}finally{
+    try{ bos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 17 (edu/concordia/dpis/commons/MessageTransformer.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/commons/MessageTransformer.java; Line number 23
+vim +23 ../../../../datasets/debug_supplemented_njr/urlfcc351a1ba_kuntapavankumar_Z_tgz-pJ8-edu_concordia_dpis_ReplicaTestJ8/src/edu/concordia/dpis/commons/MessageTransformer.java
+
++++ Add following code above line:23 (edu/concordia/dpis/commons/MessageTransformer.java)
+try{ 
++++ Add following code below line:23 (edu/concordia/dpis/commons/MessageTransformer.java)
+} catch(Exception e){ 
+    if (reader!=null) { reader.close();}
+    throw e; 
+}
++++ Add following code below line: 30 (edu/concordia/dpis/commons/MessageTransformer.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

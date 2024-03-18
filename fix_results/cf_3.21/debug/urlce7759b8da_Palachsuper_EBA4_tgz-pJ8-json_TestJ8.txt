@@ -1,0 +1,15 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^terminal/tools/PropTools.java^19^terminal.tools.PropTools.load(Ljava/lang/String;)Ljava/util/Properties;^5 = new <Application,Ljava/io/FileInputStream>@8^NULL^ARRAY,INVOKE,^false^true^Array (or collection/map) escape;
+1^terminal/tools/PropTools.java^47^terminal.tools.PropTools.setProperty(Ljava/lang/String;Ljava/lang/String;)V^10 = new <Application,Ljava/io/FileOutputStream>@16^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+2^terminal/http_server/HttpServer.java^43^terminal.http_server.HttpServer.main(Ljava/lang/String;)V^37 = invokevirtual < Application, Ljava/net/ServerSocket, accept()Ljava/net/Socket; > 34 @76 exception:36^NULL^INVOKE,FIELD,^false^true^Field escape;
+3^terminal/service/ServiceRunner.java^155^terminal.service.ServiceRunner.getRuntime(Ljava/lang/String;)Ljava/lang/String;^6 = new <Application,Ljava/io/BufferedReader>@5^terminal.service.ServiceRunner.getRuntime(Ljava/lang/String;)Ljava/lang/String;#7,terminal.service.ServiceRunner.getRuntime(Ljava/lang/String;)Ljava/lang/String;#13,^INVOKE,^false^false^Try-catch Fix;
+4^terminal/service/Service.java^113^terminal.service.Service.WritePaymentLog(Ljava/lang/String;Ljava/lang/String;)V^28 = new <Application,Ljava/io/BufferedReader>@67^terminal.service.Service.WritePaymentLog(Ljava/lang/String;Ljava/lang/String;)V#29,^INVOKE,^false^false^Try-catch Fix;
+5^terminal/service/Service.java^160^terminal.service.Service.WriteLog(Ljava/lang/String;)V^37 = new <Application,Ljava/io/BufferedReader>@97^terminal.service.Service.WriteLog(Ljava/lang/String;)V#38,^INVOKE,^false^false^Try-catch Fix;
+6^terminal/devices/Device.java^196^terminal.devices.Device.getPropPort()Ljava/lang/String;^6 = new <Application,Ljava/io/BufferedReader>@14^terminal.devices.Device.getPropPort()Ljava/lang/String;#7,^INVOKE,^false^false^Try-catch Fix;
+7^terminal/devices/Device.java^265^terminal.devices.Device.connect()Z^53 = invokevirtual < Application, Lgnu/io/SerialPort, getInputStream()Ljava/io/InputStream; > 51 @203 exception:52^NULL^FIELD,^false^true^Field escape;
+8^terminal/devices/Device.java^266^terminal.devices.Device.connect()Z^56 = invokevirtual < Application, Lgnu/io/SerialPort, getOutputStream()Ljava/io/OutputStream; > 54 @214 exception:55^NULL^FIELD,^false^true^Field escape;
+9^json/Test.java^447^json.Test.main([Ljava/lang/String;)V^1180 = new <Application,Ljava/io/StringWriter>@3132^NULL^INVOKE,^false^false^Try-catch Fix;
+10^json/JSONObject.java^1551^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+11^json/JSONObject.java^1553^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+12^json/JSONArray.java^946^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+13^json/JSONArray.java^948^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

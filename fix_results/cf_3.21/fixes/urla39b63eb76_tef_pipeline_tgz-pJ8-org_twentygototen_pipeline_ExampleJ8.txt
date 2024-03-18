@@ -1,0 +1,14 @@
+7193
+27
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urla39b63eb76_tef_pipeline_tgz-pJ8-org_twentygototen_pipeline_ExampleJ8/src/org/twentygototen/pipeline/pipes/FileReaderPipe.java; Line number 19
+vim +19 ../../../../datasets/debug_supplemented_njr/urla39b63eb76_tef_pipeline_tgz-pJ8-org_twentygototen_pipeline_ExampleJ8/src/org/twentygototen/pipeline/pipes/FileReaderPipe.java
+
++++ Add following code below line: 28 (org/twentygototen/pipeline/pipes/FileReaderPipe.java)
+finally{
+    try{ bufferedReader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

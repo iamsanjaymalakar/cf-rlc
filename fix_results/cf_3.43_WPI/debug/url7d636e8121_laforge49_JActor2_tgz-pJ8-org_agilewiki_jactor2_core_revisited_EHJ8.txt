@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^org/agilewiki/jactor2/metrics/MetricsTimerImpl.java^58^org.agilewiki.jactor2.metrics.MetricsTimerImpl.setupConsoleReporter(J)V^15 = invokevirtual < Application, Lcom/codahale/metrics/ConsoleReporter$Builder, build()Lcom/codahale/metrics/ConsoleReporter; > 13 @24 exception:14^NULL^FIELD,^false^true^Field escape;

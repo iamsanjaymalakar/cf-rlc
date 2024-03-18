@@ -1,0 +1,159 @@
+23430
+165
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/XMI2XMLtransformer.java; Line number 26
+vim +26 ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/XMI2XMLtransformer.java
+
++++ Add following code above line:26 (risiko/XMI2XMLtransformer.java)
+try{
++++ Add following code after line:26 (risiko/XMI2XMLtransformer.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 26
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/ExecutorTest.java; Line number 43
+vim +43 ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/ExecutorTest.java
+
++++ Add following code above line:43 (risiko/ExecutorTest.java)
+try{
++++ Add following code after line:43 (risiko/ExecutorTest.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 43
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/MainNio.java; Line number 30
+vim +30 ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/MainNio.java
+
++++ Add following code above line:30 (risiko/main/MainNio.java)
+try{
++++ Add following code after line:30 (risiko/main/MainNio.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 30
+
+--------------------------------------------
+7] ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java; Line number 16
+vim +16 ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java
+
++++ Add following code below line: 28 (risiko/main/Main.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 16
+
+--------------------------------------------
+8] ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java; Line number 18
+vim +18 ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java
+
++++ Add following code below line: 28 (risiko/main/Main.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 18
+
+--------------------------------------------
+9] ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java; Line number 20
+vim +20 ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java
+
++++ Add following code below line: 28 (risiko/main/Main.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 20
+
+--------------------------------------------
+10] ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java; Line number 22
+vim +22 ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java
+
++++ Add following code below line: 28 (risiko/main/Main.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 22
+
+--------------------------------------------
+11] ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java; Line number 24
+vim +24 ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java
+
++++ Add following code below line: 28 (risiko/main/Main.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 24
+
+--------------------------------------------
+12] ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java; Line number 25
+vim +25 ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java
+
++++ Add following code below line: 28 (risiko/main/Main.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 25
+
+--------------------------------------------
+13] ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java; Line number 32
+vim +32 ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/main/Main.java
+
++++ Add following code above line:32 (risiko/main/Main.java)
+try{
++++ Add following code after line:37 (risiko/main/Main.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 32
+
++++ Delete Line number 38 (risiko/main/Main.java)
+
+--------------------------------------------
+17] ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/tcp/ClientTcp.java; Line number 92
+vim +92 ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/tcp/ClientTcp.java
+
++++ Add following code below line: 118 (risiko/tcp/ClientTcp.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 92
+
+--------------------------------------------
+18] ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/tcp/ClientTcp.java; Line number 93
+vim +93 ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/tcp/ClientTcp.java
+
++++ Add following code below line: 118 (risiko/tcp/ClientTcp.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 93
+
+--------------------------------------------
+19] ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/EngineTest.java; Line number 15
+vim +15 ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/EngineTest.java
+
++++ Add following code above line:15 (risiko/EngineTest.java)
+try{
++++ Add following code after line:15 (risiko/EngineTest.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 15
+
+--------------------------------------------
+20] ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/EngineTest.java; Line number 17
+vim +17 ../../../dataset/june2020_dataset/url70997c83aa_Xilaew_risiko_tgz-pJ8-risiko_XMI2XMLtransformerJ8/src/risiko/EngineTest.java
+
++++ Add following code above line:17 (risiko/EngineTest.java)
+try{
++++ Add following code after line:17 (risiko/EngineTest.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 17
+
+--------------------------------------------

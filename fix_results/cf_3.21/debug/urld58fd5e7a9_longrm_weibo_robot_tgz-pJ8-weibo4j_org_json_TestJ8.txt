@@ -1,0 +1,19 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^weibo4j/org/json/Test.java^442^weibo4j.org.json.Test.main([Ljava/lang/String;)V^1172 = new <Application,Ljava/io/StringWriter>@3103^NULL^INVOKE,^false^false^Try-catch Fix;
+1^weibo4j/http/Response.java^87^weibo4j.http.Response.<init>(Ljava/net/HttpURLConnection;)V^10 = invokevirtual < Application, Ljava/net/HttpURLConnection, getErrorStream()Ljava/io/InputStream; > 2 @35 exception:9^NULL^FIELD,^false^true^Field escape;
+2^weibo4j/http/Response.java^88^weibo4j.http.Response.<init>(Ljava/net/HttpURLConnection;)V^12 = invokevirtual < Application, Ljava/net/HttpURLConnection, getInputStream()Ljava/io/InputStream; > 2 @47 exception:11^NULL^FIELD,^false^true^Field escape;
+3^weibo4j/http/Response.java^139^weibo4j.http.Response.asString()Ljava/lang/String;^6 = invokevirtual < Application, Lweibo4j/http/Response, asStream()Ljava/io/InputStream; > 1 @9 exception:5^weibo4j.http.Response.asString()Ljava/lang/String;#8,weibo4j.http.Response.asString()Ljava/lang/String;#7,^INVOKE,FIELD,^false^true^Field escape;
+4^weibo4j/Configuration.java^80^weibo4j.Configuration.init()V^113 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 102,111 @256 exception:112^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+5^weibo4j/Configuration.java^81^weibo4j.Configuration.init()V^128 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 117,126 @289 exception:127^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+6^weibo4j/Configuration.java^88^weibo4j.Configuration.loadProperties(Ljava/util/Properties;Ljava/lang/String;)Z^11 = new <Application,Ljava/io/FileInputStream>@24^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+7^com/ufgov/longrm/RobotFrame.java^208^com.ufgov.longrm.RobotFrame.initSettingPanel()V^86 = new <Application,Ljava/io/FileInputStream>@259^NULL^ARRAY,INVOKE,^false^true^Array (or collection/map) escape;
+8^com/ufgov/longrm/RobotFrame.java^246^com.ufgov.longrm.RobotFrame.doStart()V^27 = new <Application,Ljava/io/FileInputStream>@78^NULL^ARRAY,INVOKE,^false^true^Array (or collection/map) escape;
+9^com/ufgov/longrm/RobotFrame.java^256^com.ufgov.longrm.RobotFrame.doStart()V^67 = new <Application,Ljava/io/FileOutputStream>@179^NULL^ARRAY,INVOKE,^false^true^Array (or collection/map) escape;
+10^com/ufgov/longrm/AccessTokenUtil.java^22^com.ufgov.longrm.AccessTokenUtil.getToken(Ljava/lang/String;)Ljava/util/Map;^5 = new <Application,Ljava/io/FileInputStream>@8^NULL^ARRAY,INVOKE,^false^true^Array (or collection/map) escape;
+11^com/ufgov/longrm/AccessTokenUtil.java^36^com.ufgov.longrm.AccessTokenUtil.getScreenNameList()Ljava/util/List;^4 = new <Application,Ljava/io/FileInputStream>@8^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+12^com/ufgov/longrm/AccessTokenUtil.java^53^com.ufgov.longrm.AccessTokenUtil.save(Ljava/lang/String;Lweibo4j/http/AccessToken;)V^6 = new <Application,Ljava/io/FileInputStream>@8^NULL^ARRAY,INVOKE,^false^true^Array (or collection/map) escape;
+13^com/ufgov/longrm/AccessTokenUtil.java^60^com.ufgov.longrm.AccessTokenUtil.save(Ljava/lang/String;Lweibo4j/http/AccessToken;)V^58 = new <Application,Ljava/io/FileOutputStream>@125^NULL^ARRAY,INVOKE,^false^true^Array (or collection/map) escape;
+14^weibo4j/org/json/JSONObject.java^1555^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+15^weibo4j/org/json/JSONObject.java^1557^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+16^weibo4j/org/json/JSONArray.java^920^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+17^weibo4j/org/json/JSONArray.java^922^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

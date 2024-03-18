@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^de/measite/minidns/DNSMessageTest.java^62^de.measite.minidns.DNSMessageTest.getMessageFromResource(Ljava/lang/String;)Lde/measite/minidns/DNSMessage;^7 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 5,2 @5 exception:6^NULL^INVOKE,^false^true^Could not figure out finally block location;Normal Fix;

@@ -1,0 +1,63 @@
+11913
+263
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/test/TestXML2JSON.java; Line number 57
+vim +57 ../../../dataset/june2020_dataset/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/test/TestXML2JSON.java
+
++++ Add following code above line:57 (test/TestXML2JSON.java)
+try{
++++ Add following code after line:63 (test/TestXML2JSON.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 57
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/test/properties/PropertyLoader.java; Line number 9
+vim +9 ../../../dataset/june2020_dataset/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/test/properties/PropertyLoader.java
+
++++ Add following code above line:9 (test/properties/PropertyLoader.java)
+try{
++++ Add following code after line:13 (test/properties/PropertyLoader.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 9
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/test/properties/PropertyLoader.java; Line number 14
+vim +14 ../../../dataset/june2020_dataset/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/test/properties/PropertyLoader.java
+
++++ Add following code above line:14 (test/properties/PropertyLoader.java)
+try{
++++ Add following code after line:17 (test/properties/PropertyLoader.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 14
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java; Line number 442
+vim +442 ../../../dataset/june2020_dataset/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java
+
++++ Add following code below line: 622 (org/json/Test.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 442
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/nio/samples/NBTimeServer.java; Line number 31
+vim +31 ../../../dataset/june2020_dataset/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/nio/samples/NBTimeServer.java
+
++++ Add following code above line:31 (nio/samples/NBTimeServer.java)
+try{
++++ Add following code after line:76 (nio/samples/NBTimeServer.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 31
+
+--------------------------------------------

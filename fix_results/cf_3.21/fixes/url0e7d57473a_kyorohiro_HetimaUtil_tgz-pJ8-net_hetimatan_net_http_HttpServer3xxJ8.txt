@@ -1,0 +1,29 @@
+10752
+1059
+
+SOURCE LEVEL FIXES
+
+13] ../../../../datasets/debug_supplemented_njr/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroDatagramImpl.java; Line number 35
+vim +35 ../../../../datasets/debug_supplemented_njr/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroDatagramImpl.java
+
++++ Add following code above line:35 (net/hetimatan/util/event/net/io/KyoroDatagramImpl.java)
+try{
++++ Add following code after line:35 (net/hetimatan/util/event/net/io/KyoroDatagramImpl.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 35
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroDatagramImpl.java; Line number 40
+vim +40 ../../../../datasets/debug_supplemented_njr/url0e7d57473a_kyorohiro_HetimaUtil_tgz-pJ8-net_hetimatan_net_http_HttpServer3xxJ8/src/net/hetimatan/util/event/net/io/KyoroDatagramImpl.java
+
++++ Add following code above line:40 (net/hetimatan/util/event/net/io/KyoroDatagramImpl.java)
+try{
++++ Add following code after line:40 (net/hetimatan/util/event/net/io/KyoroDatagramImpl.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 40
+
+--------------------------------------------

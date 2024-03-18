@@ -1,0 +1,224 @@
+10829
+2948
+
+SOURCE LEVEL FIXES
+
+1] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java; Line number 320
+vim +320 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java
+
++++ Add following code above line:320 (Test.java)
+try{
++++ Add following code after line:322 (Test.java)
+}finally{
+    try{ fis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 323 (Test.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java; Line number 359
+vim +359 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java
+
++++ Add following code above line:359 (Test.java)
+try{
++++ Add following code after line:361 (Test.java)
+}finally{
+    try{ fis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 362 (Test.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java; Line number 549
+vim +549 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java
+
++++ Add following code above line:549 (Test.java)
+try{
++++ Add following code after line:551 (Test.java)
+}finally{
+    try{ fis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java; Line number 622
+vim +622 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java
+
++++ Add following code below line: 641 (Test.java)
+finally{
+    try{ osw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 625 (Test.java)
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java; Line number 1041
+vim +1041 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java
+
++++ Add following code above line:1041 (Test.java)
+try{
++++ Add following code after line:1042 (Test.java)
+}finally{
+    try{ fos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java; Line number 1047
+vim +1047 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java
+
++++ Add following code above line:1047 (Test.java)
+try{
++++ Add following code after line:1051 (Test.java)
+}finally{
+    try{ fis1.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java; Line number 1048
+vim +1048 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java
+
++++ Add following code above line:1048 (Test.java)
+try{
++++ Add following code after line:1052 (Test.java)
+}finally{
+    try{ fis2.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/graph/suffixtree/SuffixTree.java; Line number 951
+vim +951 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/graph/suffixtree/SuffixTree.java
+
++++ Add following code above line:951 (edu/luc/nmerge/graph/suffixtree/SuffixTree.java)
+try{
++++ Add following code after line:953 (edu/luc/nmerge/graph/suffixtree/SuffixTree.java)
+}finally{
+    try{ fis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 954 (edu/luc/nmerge/graph/suffixtree/SuffixTree.java)
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/XMLGuideFile.java; Line number 238
+vim +238 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/XMLGuideFile.java
+
++++ Add following code below line: 246 (edu/luc/nmerge/mvd/XMLGuideFile.java)
+finally{
+    try{ fos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 241 (edu/luc/nmerge/mvd/XMLGuideFile.java)
+
+--------------------------------------------
+11] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/XMLGuideFile.java; Line number 307
+vim +307 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/XMLGuideFile.java
+
++++ Add following code below line: 331 (edu/luc/nmerge/mvd/XMLGuideFile.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 307
+
+--------------------------------------------
+12] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDFile.java; Line number 212
+vim +212 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDFile.java
+
++++ Add following code above line:212 (edu/luc/nmerge/mvd/MVDFile.java)
+try{
++++ Add following code after line:213 (edu/luc/nmerge/mvd/MVDFile.java)
+}finally{
+    try{ fw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 214 (edu/luc/nmerge/mvd/MVDFile.java)
+
+--------------------------------------------
+13] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDFile.java; Line number 269
+vim +269 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDFile.java
+
++++ Add following code above line:269 (edu/luc/nmerge/mvd/MVDFile.java)
+try{
++++ Add following code after line:278 (edu/luc/nmerge/mvd/MVDFile.java)
+}finally{
+    try{ fr.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 275 (edu/luc/nmerge/mvd/MVDFile.java)
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDXMLFile.java; Line number 84
+vim +84 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDXMLFile.java
+
++++ Add following code above line:84 (edu/luc/nmerge/mvd/MVDXMLFile.java)
+try{
++++ Add following code after line:84 (edu/luc/nmerge/mvd/MVDXMLFile.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 84
+
+--------------------------------------------
+15] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDXMLFile.java; Line number 374
+vim +374 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDXMLFile.java
+
++++ Add following code below line: 384 (edu/luc/nmerge/mvd/MVDXMLFile.java)
+finally{
+    try{ fos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 378 (edu/luc/nmerge/mvd/MVDXMLFile.java)
+
+--------------------------------------------
+20] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDError.java; Line number 17
+vim +17 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDError.java
+
++++ Add following code below line: 23 (edu/luc/nmerge/mvd/MVDError.java)
+finally{
+    try{ fw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 19 (edu/luc/nmerge/mvd/MVDError.java)
+
+--------------------------------------------
+21] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java; Line number 427
+vim +427 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java
+
++++ Add following code below line: 441 (MvdTool.java)
+finally{
+    try{ fis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+22] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java; Line number 567
+vim +567 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java
+
++++ Add following code below line: 589 (MvdTool.java)
+finally{
+    try{ fis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+23] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java; Line number 621
+vim +621 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java
+
++++ Add following code above line:621 (MvdTool.java)
+try{
++++ Add following code after line:623 (MvdTool.java)
+}finally{
+    try{ osw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 624 (MvdTool.java)
+
+--------------------------------------------
+24] ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java; Line number 664
+vim +664 ../../../../datasets/debug_supplemented_njr/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java
+
++++ Add following code above line:664 (MvdTool.java)
+try{
++++ Add following code after line:666 (MvdTool.java)
+}finally{
+    try{ fis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 667 (MvdTool.java)
+
+--------------------------------------------

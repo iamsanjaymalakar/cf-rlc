@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^http/SongkickConnector.java^112^http.SongkickConnector.executeRequest(Ljava/net/URI;)Lcom/google/gson/JsonObject;^10 = invokevirtual < Application, Ljava/net/URL, openStream()Ljava/io/InputStream; > 8 @16 exception:9^NULL^INVOKE,^false^false^Try-catch Fix;

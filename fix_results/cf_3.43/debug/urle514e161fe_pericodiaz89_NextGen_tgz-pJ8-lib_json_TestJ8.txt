@@ -1,0 +1,11 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^lib/json/Test.java^478^lib.json.Test.main([Ljava/lang/String;)V^1183 = new <Application,Ljava/io/StringWriter>@3179^NULL^INVOKE,^false^false^Try-catch Fix;
+1^lib/GUIHelper.java^26^lib.GUIHelper.setIconOnFrame(Ljavax/swing/JFrame;Ljava/lang/String;)V^7 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 5,2 @5 exception:6^NULL^INVOKE,^false^false^Try-catch Fix;
+2^nextgen/dao/FileManager.java^31^nextgen.dao.FileManager.loadData(Ljava/lang/String;)Llib/json/JSONObject;^4 = new <Application,Ljava/io/DataInputStream>@0^nextgen.dao.FileManager.loadData(Ljava/lang/String;)Llib/json/JSONObject;#5,nextgen.dao.FileManager.loadData(Ljava/lang/String;)Llib/json/JSONObject;#9,nextgen.dao.FileManager.loadData(Ljava/lang/String;)Llib/json/JSONObject;#8,^INVOKE,^false^false^Normal Fix;
+3^nextgen/dao/FileManager.java^69^nextgen.dao.FileManager.generateFile(Ljava/lang/String;Ljava/lang/String;)V^11 = new <Application,Ljava/io/FileWriter>@21^nextgen.dao.FileManager.generateFile(Ljava/lang/String;Ljava/lang/String;)V#15,^INVOKE,^false^false^Try-catch Fix;
+4^nextgen/dao/FileManager.java^123^nextgen.dao.FileManager.copyFolder(Ljava/io/File;Ljava/io/File;)V^7 = new <Application,Ljava/io/FileInputStream>@120^NULL^INVOKE,^false^false^Normal Fix;
+5^nextgen/dao/FileManager.java^124^nextgen.dao.FileManager.copyFolder(Ljava/io/File;Ljava/io/File;)V^9 = new <Application,Ljava/io/FileOutputStream>@129^NULL^INVOKE,^false^false^Normal Fix;
+6^lib/json/JSONArray.java^878^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+7^lib/json/JSONArray.java^880^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+8^lib/json/JSONObject.java^1535^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+9^lib/json/JSONObject.java^1537^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

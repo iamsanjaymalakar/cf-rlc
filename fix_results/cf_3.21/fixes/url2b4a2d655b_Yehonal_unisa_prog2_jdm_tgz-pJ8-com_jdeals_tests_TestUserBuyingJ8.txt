@@ -1,0 +1,36 @@
+14949
+2340
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url2b4a2d655b_Yehonal_unisa_prog2_jdm_tgz-pJ8-com_jdeals_tests_TestUserBuyingJ8/src/com/jdeals/main/view/gui/JFrameCli.java; Line number 132
+vim +132 ../../../../datasets/debug_supplemented_njr/url2b4a2d655b_Yehonal_unisa_prog2_jdm_tgz-pJ8-com_jdeals_tests_TestUserBuyingJ8/src/com/jdeals/main/view/gui/JFrameCli.java
+
++++ Add following code below line: 147 (com/jdeals/main/view/gui/JFrameCli.java)
+finally{
+    try{ inPipe.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url2b4a2d655b_Yehonal_unisa_prog2_jdm_tgz-pJ8-com_jdeals_tests_TestUserBuyingJ8/src/com/jdeals/main/view/gui/JFrameCli.java; Line number 135
+vim +135 ../../../../datasets/debug_supplemented_njr/url2b4a2d655b_Yehonal_unisa_prog2_jdm_tgz-pJ8-com_jdeals_tests_TestUserBuyingJ8/src/com/jdeals/main/view/gui/JFrameCli.java
+
++++ Add following code below line: 147 (com/jdeals/main/view/gui/JFrameCli.java)
+finally{
+    try{ outStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url2b4a2d655b_Yehonal_unisa_prog2_jdm_tgz-pJ8-com_jdeals_tests_TestUserBuyingJ8/src/com/jdeals/main/helper/storage/FileSerialization.java; Line number 29
+vim +29 ../../../../datasets/debug_supplemented_njr/url2b4a2d655b_Yehonal_unisa_prog2_jdm_tgz-pJ8-com_jdeals_tests_TestUserBuyingJ8/src/com/jdeals/main/helper/storage/FileSerialization.java
+
++++ Add following code below line: 38 (com/jdeals/main/helper/storage/FileSerialization.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 34 (com/jdeals/main/helper/storage/FileSerialization.java)
+
++++ Delete Line number 35 (com/jdeals/main/helper/storage/FileSerialization.java)
+
+--------------------------------------------

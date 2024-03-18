@@ -1,0 +1,28 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^Main.java^27^Main.main([Ljava/lang/String;)V^6 = new <Application,Ljava/io/BufferedReader>@6^Main.main([Ljava/lang/String;)V#7,^INVOKE,^false^false^Try-catch Fix;
+1^Main.java^35^Main.main([Ljava/lang/String;)V^22 = new <Application,Ljava/io/FileInputStream>@52^Main.main([Ljava/lang/String;)V#24,^INVOKE,^false^false^Loop Fix;Try-catch Fix;
+2^Main.java^36^Main.main([Ljava/lang/String;)V^24 = new <Application,Ljava/io/ObjectInputStream>@62^Main.main([Ljava/lang/String;)V#22,^INVOKE,^true^false^Loop Fix;Try-catch Fix;
+3^GUI/StartFrame.java^83^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+4^GUI/StartFrame.java^91^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+5^GUI/StartFrame.java^91^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+6^GUI/StartFrame.java^113^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+7^GUI/StartFrame.java^121^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+8^GUI/StartFrame.java^121^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+9^GUI/MainFrame.java^97^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+10^GUI/MainFrame.java^105^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+11^GUI/MainFrame.java^105^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+12^GUI/MainFrame.java^131^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+13^GUI/MainFrame.java^139^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+14^GUI/MainFrame.java^139^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+15^GUI/MainFrame.java^171^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+16^GUI/MainFrame.java^182^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+17^GUI/MainFrame.java^183^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+18^GUI/MainFrame.java^217^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+19^GUI/MainFrame.java^225^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+20^GUI/MainFrame.java^225^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+21^GUI/WelcomeFrame.java^60^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+22^GUI/WelcomeFrame.java^88^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+23^GUI/WelcomeFrame.java^99^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+24^GUI/WelcomeFrame.java^100^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+25^GUI/FillFrame.java^107^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+26^GUI/FillFrame.java^108^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

@@ -1,0 +1,77 @@
+17485
+11576
+
+SOURCE LEVEL FIXES
+
+1] ../../../dataset/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java; Line number 1956
+vim +1956 ../../../dataset/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java
+
++++ Add following code below line: 1966 (net/nexon/vindictus/itemcomparer/inport/StaticImport.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 1955
+
++++ Delete Line number 1963 (net/nexon/vindictus/itemcomparer/inport/StaticImport.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java; Line number 2026
+vim +2026 ../../../dataset/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java
+
++++ Add following code below line: 2033 (net/nexon/vindictus/itemcomparer/inport/StaticImport.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 2025
+
++++ Delete Line number 2030 (net/nexon/vindictus/itemcomparer/inport/StaticImport.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java; Line number 2041
+vim +2041 ../../../dataset/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java
+
++++ Add following code below line: 2052 (net/nexon/vindictus/itemcomparer/inport/StaticImport.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 2040
+
++++ Delete Line number 2050 (net/nexon/vindictus/itemcomparer/inport/StaticImport.java)
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java; Line number 2091
+vim +2091 ../../../dataset/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java
+
++++ Add following code below line: 2109 (net/nexon/vindictus/itemcomparer/inport/StaticImport.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 2090
+
++++ Delete Line number 2106 (net/nexon/vindictus/itemcomparer/inport/StaticImport.java)
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java; Line number 286
+vim +286 ../../../dataset/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java
+
++++ Add following code below line: 307 (net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 285
+
++++ Delete Line number 295 (net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java)
+
+--------------------------------------------
+6] ../../../dataset/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java; Line number 299
+vim +299 ../../../dataset/june2020_dataset/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java
+
++++ Add following code below line: 307 (net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 298
+
++++ Delete Line number 302 (net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java)
+
+--------------------------------------------

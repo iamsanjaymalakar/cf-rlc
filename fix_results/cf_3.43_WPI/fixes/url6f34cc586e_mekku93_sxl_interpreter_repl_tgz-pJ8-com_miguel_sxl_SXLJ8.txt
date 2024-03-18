@@ -1,0 +1,17 @@
+10811
+967
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url6f34cc586e_mekku93_sxl_interpreter_repl_tgz-pJ8-com_miguel_sxl_SXLJ8/src/com/miguel/sxl/SXL.java; Line number 29
+vim +29 ../../../dataset/june2020_dataset/url6f34cc586e_mekku93_sxl_interpreter_repl_tgz-pJ8-com_miguel_sxl_SXLJ8/src/com/miguel/sxl/SXL.java
+
++++ Add following code above line:29 (com/miguel/sxl/SXL.java)
+try{
++++ Add following code after line:29 (com/miguel/sxl/SXL.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 29
+
+--------------------------------------------

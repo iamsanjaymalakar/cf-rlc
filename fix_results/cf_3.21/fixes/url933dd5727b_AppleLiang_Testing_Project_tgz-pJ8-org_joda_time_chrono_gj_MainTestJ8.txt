@@ -1,0 +1,615 @@
+22526
+14967
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeZone.java; Line number 465
+vim +465 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeZone.java
+
++++ Add following code below line: 473 (org/joda/time/TestDateTimeZone.java)
+baos.close();
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeZone.java; Line number 579
+vim +579 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeZone.java
+
++++ Add following code below line: 587 (org/joda/time/TestDateTimeZone.java)
+baos.close();
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeZone.java; Line number 982
+vim +982 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeZone.java
+
++++ Add following code above line:981 (org/joda/time/TestDateTimeZone.java)
+try{
++++ Add following code after line:984 (org/joda/time/TestDateTimeZone.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 985 (org/joda/time/TestDateTimeZone.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeZone.java; Line number 1000
+vim +1000 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeZone.java
+
++++ Add following code above line:999 (org/joda/time/TestDateTimeZone.java)
+try{
++++ Add following code after line:1002 (org/joda/time/TestDateTimeZone.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1003 (org/joda/time/TestDateTimeZone.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestYearMonth_Basics.java; Line number 604
+vim +604 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestYearMonth_Basics.java
+
++++ Add following code above line:603 (org/joda/time/TestYearMonth_Basics.java)
+try{
++++ Add following code after line:606 (org/joda/time/TestYearMonth_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 607 (org/joda/time/TestYearMonth_Basics.java)
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMutablePeriod_Basics.java; Line number 164
+vim +164 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMutablePeriod_Basics.java
+
++++ Add following code above line:163 (org/joda/time/TestMutablePeriod_Basics.java)
+try{
++++ Add following code after line:166 (org/joda/time/TestMutablePeriod_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 167 (org/joda/time/TestMutablePeriod_Basics.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDurationFieldType.java; Line number 177
+vim +177 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDurationFieldType.java
+
++++ Add following code above line:176 (org/joda/time/TestDurationFieldType.java)
+try{
++++ Add following code after line:179 (org/joda/time/TestDurationFieldType.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 180 (org/joda/time/TestDurationFieldType.java)
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/tz/TestCachedDateTimeZone.java; Line number 69
+vim +69 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/tz/TestCachedDateTimeZone.java
+
++++ Add following code above line:68 (org/joda/time/tz/TestCachedDateTimeZone.java)
+try{
++++ Add following code after line:71 (org/joda/time/tz/TestCachedDateTimeZone.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 72 (org/joda/time/tz/TestCachedDateTimeZone.java)
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/tz/TestCompiler.java; Line number 145
+vim +145 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/tz/TestCompiler.java
+
++++ Add following code above line:145 (org/joda/time/tz/TestCompiler.java)
+try{
++++ Add following code after line:150 (org/joda/time/tz/TestCompiler.java)
+}finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 151 (org/joda/time/tz/TestCompiler.java)
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestLocalDate_Basics.java; Line number 1080
+vim +1080 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestLocalDate_Basics.java
+
++++ Add following code above line:1079 (org/joda/time/TestLocalDate_Basics.java)
+try{
++++ Add following code after line:1082 (org/joda/time/TestLocalDate_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1083 (org/joda/time/TestLocalDate_Basics.java)
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMutableInterval_Basics.java; Line number 453
+vim +453 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMutableInterval_Basics.java
+
++++ Add following code above line:452 (org/joda/time/TestMutableInterval_Basics.java)
+try{
++++ Add following code after line:455 (org/joda/time/TestMutableInterval_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 456 (org/joda/time/TestMutableInterval_Basics.java)
+
+--------------------------------------------
+11] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMutableDateTime_Basics.java; Line number 392
+vim +392 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMutableDateTime_Basics.java
+
++++ Add following code above line:391 (org/joda/time/TestMutableDateTime_Basics.java)
+try{
++++ Add following code after line:394 (org/joda/time/TestMutableDateTime_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 395 (org/joda/time/TestMutableDateTime_Basics.java)
+
+--------------------------------------------
+12] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestHours.java; Line number 210
+vim +210 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestHours.java
+
++++ Add following code above line:209 (org/joda/time/TestHours.java)
+try{
++++ Add following code after line:212 (org/joda/time/TestHours.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 213 (org/joda/time/TestHours.java)
+
+--------------------------------------------
+13] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestWeeks.java; Line number 199
+vim +199 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestWeeks.java
+
++++ Add following code above line:198 (org/joda/time/TestWeeks.java)
+try{
++++ Add following code after line:201 (org/joda/time/TestWeeks.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 202 (org/joda/time/TestWeeks.java)
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestInterval_Basics.java; Line number 1028
+vim +1028 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestInterval_Basics.java
+
++++ Add following code above line:1027 (org/joda/time/TestInterval_Basics.java)
+try{
++++ Add following code after line:1030 (org/joda/time/TestInterval_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1031 (org/joda/time/TestInterval_Basics.java)
+
+--------------------------------------------
+15] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestTimeOfDay_Basics.java; Line number 854
+vim +854 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestTimeOfDay_Basics.java
+
++++ Add following code above line:853 (org/joda/time/TestTimeOfDay_Basics.java)
+try{
++++ Add following code after line:856 (org/joda/time/TestTimeOfDay_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 857 (org/joda/time/TestTimeOfDay_Basics.java)
+
+--------------------------------------------
+16] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/field/TestScaledDurationField.java; Line number 279
+vim +279 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/field/TestScaledDurationField.java
+
++++ Add following code above line:278 (org/joda/time/field/TestScaledDurationField.java)
+try{
++++ Add following code after line:281 (org/joda/time/field/TestScaledDurationField.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 282 (org/joda/time/field/TestScaledDurationField.java)
+
+--------------------------------------------
+17] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/field/TestPreciseDurationField.java; Line number 262
+vim +262 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/field/TestPreciseDurationField.java
+
++++ Add following code above line:261 (org/joda/time/field/TestPreciseDurationField.java)
+try{
++++ Add following code after line:264 (org/joda/time/field/TestPreciseDurationField.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 265 (org/joda/time/field/TestPreciseDurationField.java)
+
+--------------------------------------------
+18] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/field/TestMillisDurationField.java; Line number 203
+vim +203 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/field/TestMillisDurationField.java
+
++++ Add following code above line:202 (org/joda/time/field/TestMillisDurationField.java)
+try{
++++ Add following code after line:205 (org/joda/time/field/TestMillisDurationField.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 206 (org/joda/time/field/TestMillisDurationField.java)
+
+--------------------------------------------
+19] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestPeriod_Basics.java; Line number 230
+vim +230 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestPeriod_Basics.java
+
++++ Add following code above line:229 (org/joda/time/TestPeriod_Basics.java)
+try{
++++ Add following code after line:232 (org/joda/time/TestPeriod_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 233 (org/joda/time/TestPeriod_Basics.java)
+
+--------------------------------------------
+20] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMinutes.java; Line number 200
+vim +200 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMinutes.java
+
++++ Add following code above line:199 (org/joda/time/TestMinutes.java)
+try{
++++ Add following code after line:202 (org/joda/time/TestMinutes.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 203 (org/joda/time/TestMinutes.java)
+
+--------------------------------------------
+21] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestYearMonthDay_Basics.java; Line number 780
+vim +780 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestYearMonthDay_Basics.java
+
++++ Add following code above line:779 (org/joda/time/TestYearMonthDay_Basics.java)
+try{
++++ Add following code after line:782 (org/joda/time/TestYearMonthDay_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 783 (org/joda/time/TestYearMonthDay_Basics.java)
+
+--------------------------------------------
+22] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateMidnight_Basics.java; Line number 423
+vim +423 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateMidnight_Basics.java
+
++++ Add following code above line:422 (org/joda/time/TestDateMidnight_Basics.java)
+try{
++++ Add following code after line:425 (org/joda/time/TestDateMidnight_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 426 (org/joda/time/TestDateMidnight_Basics.java)
+
+--------------------------------------------
+23] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestPeriodType.java; Line number 111
+vim +111 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestPeriodType.java
+
++++ Add following code above line:110 (org/joda/time/TestPeriodType.java)
+try{
++++ Add following code after line:113 (org/joda/time/TestPeriodType.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 114 (org/joda/time/TestPeriodType.java)
+
+--------------------------------------------
+24] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestPeriodType.java; Line number 126
+vim +126 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestPeriodType.java
+
++++ Add following code above line:125 (org/joda/time/TestPeriodType.java)
+try{
++++ Add following code after line:128 (org/joda/time/TestPeriodType.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 129 (org/joda/time/TestPeriodType.java)
+
+--------------------------------------------
+25] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMonths.java; Line number 227
+vim +227 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMonths.java
+
++++ Add following code above line:226 (org/joda/time/TestMonths.java)
+try{
++++ Add following code after line:229 (org/joda/time/TestMonths.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 230 (org/joda/time/TestMonths.java)
+
+--------------------------------------------
+26] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTime_Basics.java; Line number 488
+vim +488 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTime_Basics.java
+
++++ Add following code above line:487 (org/joda/time/TestDateTime_Basics.java)
+try{
++++ Add following code after line:490 (org/joda/time/TestDateTime_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 491 (org/joda/time/TestDateTime_Basics.java)
+
+--------------------------------------------
+27] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMonthDay_Basics.java; Line number 693
+vim +693 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestMonthDay_Basics.java
+
++++ Add following code above line:692 (org/joda/time/TestMonthDay_Basics.java)
+try{
++++ Add following code after line:695 (org/joda/time/TestMonthDay_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 696 (org/joda/time/TestMonthDay_Basics.java)
+
+--------------------------------------------
+28] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeFieldType.java; Line number 315
+vim +315 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeFieldType.java
+
++++ Add following code above line:314 (org/joda/time/TestDateTimeFieldType.java)
+try{
++++ Add following code after line:317 (org/joda/time/TestDateTimeFieldType.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 318 (org/joda/time/TestDateTimeFieldType.java)
+
+--------------------------------------------
+29] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestLocalTime_Basics.java; Line number 767
+vim +767 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestLocalTime_Basics.java
+
++++ Add following code above line:766 (org/joda/time/TestLocalTime_Basics.java)
+try{
++++ Add following code after line:769 (org/joda/time/TestLocalTime_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 770 (org/joda/time/TestLocalTime_Basics.java)
+
+--------------------------------------------
+30] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestPartial_Basics.java; Line number 749
+vim +749 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestPartial_Basics.java
+
++++ Add following code above line:748 (org/joda/time/TestPartial_Basics.java)
+try{
++++ Add following code after line:751 (org/joda/time/TestPartial_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 752 (org/joda/time/TestPartial_Basics.java)
+
+--------------------------------------------
+31] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDays.java; Line number 241
+vim +241 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDays.java
+
++++ Add following code above line:240 (org/joda/time/TestDays.java)
+try{
++++ Add following code after line:243 (org/joda/time/TestDays.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 244 (org/joda/time/TestDays.java)
+
+--------------------------------------------
+32] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestInstant_Basics.java; Line number 368
+vim +368 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestInstant_Basics.java
+
++++ Add following code above line:367 (org/joda/time/TestInstant_Basics.java)
+try{
++++ Add following code after line:370 (org/joda/time/TestInstant_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 371 (org/joda/time/TestInstant_Basics.java)
+
+--------------------------------------------
+33] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestLocalDateTime_Basics.java; Line number 1028
+vim +1028 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestLocalDateTime_Basics.java
+
++++ Add following code above line:1027 (org/joda/time/TestLocalDateTime_Basics.java)
+try{
++++ Add following code after line:1030 (org/joda/time/TestLocalDateTime_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1031 (org/joda/time/TestLocalDateTime_Basics.java)
+
+--------------------------------------------
+34] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestYears.java; Line number 182
+vim +182 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestYears.java
+
++++ Add following code above line:181 (org/joda/time/TestYears.java)
+try{
++++ Add following code after line:184 (org/joda/time/TestYears.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 185 (org/joda/time/TestYears.java)
+
+--------------------------------------------
+35] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeComparator.java; Line number 272
+vim +272 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeComparator.java
+
++++ Add following code above line:271 (org/joda/time/TestDateTimeComparator.java)
+try{
++++ Add following code after line:274 (org/joda/time/TestDateTimeComparator.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 275 (org/joda/time/TestDateTimeComparator.java)
+
+--------------------------------------------
+36] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeComparator.java; Line number 290
+vim +290 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDateTimeComparator.java
+
++++ Add following code above line:289 (org/joda/time/TestDateTimeComparator.java)
+try{
++++ Add following code after line:292 (org/joda/time/TestDateTimeComparator.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 293 (org/joda/time/TestDateTimeComparator.java)
+
+--------------------------------------------
+37] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDuration_Basics.java; Line number 238
+vim +238 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestDuration_Basics.java
+
++++ Add following code above line:237 (org/joda/time/TestDuration_Basics.java)
+try{
++++ Add following code after line:240 (org/joda/time/TestDuration_Basics.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 241 (org/joda/time/TestDuration_Basics.java)
+
+--------------------------------------------
+38] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestSerialization.java; Line number 293
+vim +293 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestSerialization.java
+
++++ Add following code above line:293 (org/joda/time/TestSerialization.java)
+try{
++++ Add following code after line:295 (org/joda/time/TestSerialization.java)
+}finally{
+    try{ ois.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 296 (org/joda/time/TestSerialization.java)
+
+--------------------------------------------
+40] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestSerialization.java; Line number 319
+vim +319 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestSerialization.java
+
++++ Add following code above line:318 (org/joda/time/TestSerialization.java)
+try{
++++ Add following code after line:323 (org/joda/time/TestSerialization.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 321 (org/joda/time/TestSerialization.java)
+
+--------------------------------------------
+41] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestSerialization.java; Line number 324
+vim +324 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestSerialization.java
+
++++ Add following code above line:323 (org/joda/time/TestSerialization.java)
+try{
++++ Add following code after line:325 (org/joda/time/TestSerialization.java)
+}finally{
+    try{ bais.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 326 (org/joda/time/TestSerialization.java)
+
+--------------------------------------------
+42] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestSeconds.java; Line number 197
+vim +197 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestSeconds.java
+
++++ Add following code above line:196 (org/joda/time/TestSeconds.java)
+try{
++++ Add following code after line:199 (org/joda/time/TestSeconds.java)
+}finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 200 (org/joda/time/TestSeconds.java)
+
+--------------------------------------------
+43] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestPeriodFormatter.java; Line number 121
+vim +121 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestPeriodFormatter.java
+
++++ Add following code above line:121 (org/joda/time/format/TestPeriodFormatter.java)
+try{
++++ Add following code after line:123 (org/joda/time/format/TestPeriodFormatter.java)
+}finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+44] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestPeriodFormatter.java; Line number 125
+vim +125 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestPeriodFormatter.java
+
++++ Add following code above line:125 (org/joda/time/format/TestPeriodFormatter.java)
+try{ 
++++ Add following code below line:125 (org/joda/time/format/TestPeriodFormatter.java)
+} catch(Exception e){ 
+    if (out!=null) { out.close();}
+    throw e; 
+}
++++ Add following code below line: 129 (org/joda/time/format/TestPeriodFormatter.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+45] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestDateTimeFormatter.java; Line number 184
+vim +184 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestDateTimeFormatter.java
+
++++ Add following code above line:184 (org/joda/time/format/TestDateTimeFormatter.java)
+try{
++++ Add following code after line:186 (org/joda/time/format/TestDateTimeFormatter.java)
+}finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+46] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestDateTimeFormatter.java; Line number 188
+vim +188 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestDateTimeFormatter.java
+
++++ Add following code above line:188 (org/joda/time/format/TestDateTimeFormatter.java)
+try{
++++ Add following code after line:190 (org/joda/time/format/TestDateTimeFormatter.java)
+}finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+47] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestDateTimeFormatter.java; Line number 192
+vim +192 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestDateTimeFormatter.java
+
++++ Add following code above line:192 (org/joda/time/format/TestDateTimeFormatter.java)
+try{
++++ Add following code after line:194 (org/joda/time/format/TestDateTimeFormatter.java)
+}finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+48] ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestDateTimeFormatter.java; Line number 196
+vim +196 ../../../../datasets/debug_supplemented_njr/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/format/TestDateTimeFormatter.java
+
++++ Add following code above line:196 (org/joda/time/format/TestDateTimeFormatter.java)
+try{ 
++++ Add following code below line:196 (org/joda/time/format/TestDateTimeFormatter.java)
+} catch(Exception e){ 
+    if (out!=null) { out.close();}
+    throw e; 
+}
++++ Add following code above line:201 (org/joda/time/format/TestDateTimeFormatter.java)
+try{
+    out.close();
+} catch(Exception e){ e.printStackTrace(); }
+
+--------------------------------------------

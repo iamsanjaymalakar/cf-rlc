@@ -1,0 +1,5 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^com/moblima/util/showTimeReadtest.java^163^com.moblima.util.showTimeReadtest.write(I)V^6 = new <Application,Ljava/io/FileOutputStream>@10^NULL^INVOKE,^false^false^Try-catch Fix;
+1^com/moblima/util/showTimeReadtest.java^186^com.moblima.util.showTimeReadtest.write(Ljava/lang/String;)V^6 = new <Application,Ljava/io/FileOutputStream>@10^NULL^INVOKE,^false^false^Try-catch Fix;
+2^com/moblima/dataaccess/SerializeDB.java^63^com.moblima.dataaccess.SerializeDB.saveData()V^3 = new <Application,Ljava/io/FileOutputStream>@0^com.moblima.dataaccess.SerializeDB.saveData()V#6,^INVOKE,^false^false^Try-catch Fix;
+3^com/moblima/dataaccess/SerializeDB.java^131^com.moblima.dataaccess.SerializeDB.loadData()V^9 = new <Application,Ljava/io/FileInputStream>@238^com.moblima.dataaccess.SerializeDB.loadData()V#57,^INVOKE,^false^false^Try-catch Fix;

@@ -1,0 +1,19 @@
+15005
+630
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url4fdf79ae2c_beckchr_juel_tgz-pJ8-de_odysseus_el_samples_xml_sax_XMELFilterJ8/src/javax/el/ExpressionFactoryTest.java; Line number 30
+vim +30 ../../../dataset/june2020_dataset/url4fdf79ae2c_beckchr_juel_tgz-pJ8-de_odysseus_el_samples_xml_sax_XMELFilterJ8/src/javax/el/ExpressionFactoryTest.java
+
++++ Add following code above line:30 (javax/el/ExpressionFactoryTest.java)
+try{
++++ Add following code after line:35 (javax/el/ExpressionFactoryTest.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 30
+
++++ Delete Line number 34 (javax/el/ExpressionFactoryTest.java)
+
+--------------------------------------------

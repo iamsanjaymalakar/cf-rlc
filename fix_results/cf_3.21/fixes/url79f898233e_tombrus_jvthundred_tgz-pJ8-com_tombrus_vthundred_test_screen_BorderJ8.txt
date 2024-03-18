@@ -1,0 +1,14 @@
+8048
+264
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url79f898233e_tombrus_jvthundred_tgz-pJ8-com_tombrus_vthundred_test_screen_BorderJ8/src/com/tombrus/vthundred/util/Shell.java; Line number 9
+vim +9 ../../../../datasets/debug_supplemented_njr/url79f898233e_tombrus_jvthundred_tgz-pJ8-com_tombrus_vthundred_test_screen_BorderJ8/src/com/tombrus/vthundred/util/Shell.java
+
++++ Add following code below line: 18 (com/tombrus/vthundred/util/Shell.java)
+finally{
+    try{ stdout.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

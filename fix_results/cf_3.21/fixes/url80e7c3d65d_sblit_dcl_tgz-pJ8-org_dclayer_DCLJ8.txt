@@ -1,0 +1,14 @@
+11726
+61
+
+SOURCE LEVEL FIXES
+
+4] ../../../../datasets/debug_supplemented_njr/url80e7c3d65d_sblit_dcl_tgz-pJ8-org_dclayer_DCLJ8/src/org/dclayer/application/ApplicationInstance.java; Line number 81
+vim +81 ../../../../datasets/debug_supplemented_njr/url80e7c3d65d_sblit_dcl_tgz-pJ8-org_dclayer_DCLJ8/src/org/dclayer/application/ApplicationInstance.java
+
++++ Add following code below line: 90 (org/dclayer/application/ApplicationInstance.java)
+finally{
+    try{ socket.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

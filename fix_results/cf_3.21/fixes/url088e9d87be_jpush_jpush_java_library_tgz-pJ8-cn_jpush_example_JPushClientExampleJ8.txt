@@ -1,0 +1,12 @@
+7917
+305
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url088e9d87be_jpush_jpush_java_library_tgz-pJ8-cn_jpush_example_JPushClientExampleJ8/src/cn/jpush/api/HttpPostClient.java; Line number 64
+vim +64 ../../../../datasets/debug_supplemented_njr/url088e9d87be_jpush_jpush_java_library_tgz-pJ8-cn_jpush_example_JPushClientExampleJ8/src/cn/jpush/api/HttpPostClient.java
+
++++ Add following code below line: 80 (cn/jpush/api/HttpPostClient.java)
+reader.close();
+
+--------------------------------------------

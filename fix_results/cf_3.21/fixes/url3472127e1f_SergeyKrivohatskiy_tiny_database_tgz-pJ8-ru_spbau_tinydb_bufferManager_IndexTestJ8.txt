@@ -1,0 +1,17 @@
+9068
+976
+
+SOURCE LEVEL FIXES
+
+9] ../../../../datasets/debug_supplemented_njr/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/grammar/GrammarTester.java; Line number 48
+vim +48 ../../../../datasets/debug_supplemented_njr/url3472127e1f_SergeyKrivohatskiy_tiny_database_tgz-pJ8-ru_spbau_tinydb_bufferManager_IndexTestJ8/src/ru/spbau/tinydb/grammar/GrammarTester.java
+
++++ Add following code above line:47 (ru/spbau/tinydb/grammar/GrammarTester.java)
+try{
++++ Add following code after line:48 (ru/spbau/tinydb/grammar/GrammarTester.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 47
+
+--------------------------------------------

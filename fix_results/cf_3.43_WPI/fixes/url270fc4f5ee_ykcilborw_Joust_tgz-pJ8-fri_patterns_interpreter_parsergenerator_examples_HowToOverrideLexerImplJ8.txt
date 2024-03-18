@@ -1,0 +1,57 @@
+WARNING: Unknown instruction(class com.ibm.wala.classLoader.JavaLanguage$JavaInstructionFactory$1): 4 = arraylength 1
+Warning:fri/patterns/interpreter/parsergenerator/examples/JavaParser.java,30
+WARNING: Unknown instruction(class com.ibm.wala.classLoader.JavaLanguage$JavaInstructionFactory$1): 5 = arraylength 1
+Warning:fri/patterns/interpreter/parsergenerator/examples/JavaParser.java,30
+WARNING: Unknown instruction(class com.ibm.wala.classLoader.JavaLanguage$JavaInstructionFactory$2): 6 = arrayload 1[17]
+Warning:fri/patterns/interpreter/parsergenerator/examples/JavaParser.java,30
+WARNING: Unknown instruction(class com.ibm.wala.classLoader.JavaLanguage$JavaInstructionFactory$2): 8 = arrayload 1[17]
+Warning:fri/patterns/interpreter/parsergenerator/examples/JavaParser.java,30
+WARNING: Unknown instruction(class com.ibm.wala.classLoader.JavaLanguage$JavaInstructionFactory$1): 4 = arraylength 1
+Warning:fri/patterns/interpreter/parsergenerator/examples/XmlLexer.java,35
+WARNING: Unknown instruction(class com.ibm.wala.classLoader.JavaLanguage$JavaInstructionFactory$1): 5 = arraylength 1
+Warning:fri/patterns/interpreter/parsergenerator/examples/XmlLexer.java,35
+WARNING: Unknown instruction(class com.ibm.wala.classLoader.JavaLanguage$JavaInstructionFactory$2): 6 = arrayload 1[17]
+Warning:fri/patterns/interpreter/parsergenerator/examples/XmlLexer.java,35
+WARNING: Unknown instruction(class com.ibm.wala.classLoader.JavaLanguage$JavaInstructionFactory$2): 8 = arrayload 1[17]
+Warning:fri/patterns/interpreter/parsergenerator/examples/XmlLexer.java,35
+26122
+8434
+
+SOURCE LEVEL FIXES
+
+21] ../../../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/util/SourceGenerator.java; Line number 89
+vim +89 ../../../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/util/SourceGenerator.java
+
++++ Add following code above line:89 (fri/patterns/interpreter/parsergenerator/util/SourceGenerator.java)
+try{
++++ Add following code after line:132 (fri/patterns/interpreter/parsergenerator/util/SourceGenerator.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 89
+
++++ Delete Line number 134 (fri/patterns/interpreter/parsergenerator/util/SourceGenerator.java)
+
+--------------------------------------------
+27] ../../../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/com/wroblicky/andrew/joust/pgn/PGNParser.java; Line number 28
+vim +28 ../../../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/com/wroblicky/andrew/joust/pgn/PGNParser.java
+
++++ Add following code below line: 89 (com/wroblicky/andrew/joust/pgn/PGNParser.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 28
+
+--------------------------------------------
+28] ../../../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/com/wroblicky/andrew/joust/game/GameSetup.java; Line number 341
+vim +341 ../../../dataset/june2020_dataset/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/com/wroblicky/andrew/joust/game/GameSetup.java
+
++++ Add following code below line: 502 (com/wroblicky/andrew/joust/game/GameSetup.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 341
+
++++ Delete Line number 498 (com/wroblicky/andrew/joust/game/GameSetup.java)
+
+--------------------------------------------

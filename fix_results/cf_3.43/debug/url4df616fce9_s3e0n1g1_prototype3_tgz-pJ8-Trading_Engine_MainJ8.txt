@@ -1,0 +1,4 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^Trading_Engine/myDatabase.java^18^Trading_Engine.myDatabase.<init>()V^22 = invokestatic < Application, Ljava/sql/DriverManager, getConnection(Ljava/lang/String;)Ljava/sql/Connection; > 20 @41 exception:21^NULL^FIELD,^false^true^Field escape;
+1^Trading_Engine/myDatabase.java^114^Trading_Engine.myDatabase.insertAll(Ljava/io/File;Ljava/lang/String;)Ljava/util/LinkedList;^11 = new <Application,Ljava/io/BufferedReader>@22^Trading_Engine.myDatabase.insertAll(Ljava/io/File;Ljava/lang/String;)Ljava/util/LinkedList;#12,^INVOKE,^false^false^Try-catch Fix;
+2^Test/myDatabaseTest.java^47^Test.myDatabaseTest.testInsertSmallData()V^42 = new <Application,Ljava/io/BufferedReader>@93^Test.myDatabaseTest.testInsertSmallData()V#43,^INVOKE,^false^false^Try-catch Fix;

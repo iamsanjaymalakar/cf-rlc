@@ -1,0 +1,4 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^tivoo/output/HTMLBuilder.java^233^tivoo.output.HTMLBuilder.writeSummaryPageHTML(Ljava/io/File;Ljava/util/List;)V^5 = new <Application,Ljava/io/FileOutputStream>@0^tivoo.output.HTMLBuilder.writeSummaryPageHTML(Ljava/io/File;Ljava/util/List;)V#7,^INVOKE,^false^false^Normal Fix;
+1^tivoo/output/HTMLBuilder.java^273^tivoo.output.HTMLBuilder.writeDetailsPageHTML(Ltivoo/Event;Ljava/io/File;)V^5 = new <Application,Ljava/io/FileOutputStream>@0^tivoo.output.HTMLBuilder.writeDetailsPageHTML(Ltivoo/Event;Ljava/io/File;)V#7,^INVOKE,^false^false^Normal Fix;
+2^tivoo/input/CalendarParser.java^47^tivoo.input.CalendarParser.getInputSource(Ljava/lang/String;)Lorg/xml/sax/InputSource;^5 = new <Application,Ljava/io/FileInputStream>@9^tivoo.input.CalendarParser.getInputSource(Ljava/lang/String;)Lorg/xml/sax/InputSource;#7,^INVOKE,^false^false^Normal Fix;

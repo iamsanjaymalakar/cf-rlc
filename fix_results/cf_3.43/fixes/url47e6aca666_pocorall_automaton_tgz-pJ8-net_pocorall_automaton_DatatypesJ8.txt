@@ -1,0 +1,37 @@
+10847
+1122
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url47e6aca666_pocorall_automaton_tgz-pJ8-net_pocorall_automaton_DatatypesJ8/src/net/pocorall/automaton/Datatypes.java; Line number 477
+vim +477 ../../../dataset/june2020_dataset/url47e6aca666_pocorall_automaton_tgz-pJ8-net_pocorall_automaton_DatatypesJ8/src/net/pocorall/automaton/Datatypes.java
+
++++ Add following code below line: 484 (net/pocorall/automaton/Datatypes.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 477
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url47e6aca666_pocorall_automaton_tgz-pJ8-net_pocorall_automaton_DatatypesJ8/src/net/pocorall/automaton/Datatypes.java; Line number 492
+vim +492 ../../../dataset/june2020_dataset/url47e6aca666_pocorall_automaton_tgz-pJ8-net_pocorall_automaton_DatatypesJ8/src/net/pocorall/automaton/Datatypes.java
+
++++ Add following code below line: 498 (net/pocorall/automaton/Datatypes.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 492
+
++++ Delete Line number 495 (net/pocorall/automaton/Datatypes.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url47e6aca666_pocorall_automaton_tgz-pJ8-net_pocorall_automaton_DatatypesJ8/src/net/pocorall/automaton/Datatypes.java; Line number 805
+vim +805 ../../../dataset/june2020_dataset/url47e6aca666_pocorall_automaton_tgz-pJ8-net_pocorall_automaton_DatatypesJ8/src/net/pocorall/automaton/Datatypes.java
+
++++ Add following code below line: 833 (net/pocorall/automaton/Datatypes.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 805
+
+--------------------------------------------

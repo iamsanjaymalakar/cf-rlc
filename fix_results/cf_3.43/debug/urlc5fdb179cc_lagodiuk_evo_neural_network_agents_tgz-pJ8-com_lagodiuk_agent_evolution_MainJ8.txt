@@ -1,0 +1,3 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^com/lagodiuk/agent/evolution/Main.java^339^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+1^com/lagodiuk/agent/evolution/Main.java^376^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

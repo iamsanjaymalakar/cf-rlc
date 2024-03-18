@@ -1,0 +1,27 @@
+10116
+193
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url8f84d8d956_klapaukh_JTuttePoly_tgz-pJ8-BitTutteJ8/src/BitTutte.java; Line number 97
+vim +97 ../../../dataset/june2020_dataset/url8f84d8d956_klapaukh_JTuttePoly_tgz-pJ8-BitTutteJ8/src/BitTutte.java
+
++++ Add following code below line: 119 (BitTutte.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 96
+
++++ Delete Line number 113 (BitTutte.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url8f84d8d956_klapaukh_JTuttePoly_tgz-pJ8-BitTutteJ8/src/Tutte.java; Line number 68
+vim +68 ../../../dataset/june2020_dataset/url8f84d8d956_klapaukh_JTuttePoly_tgz-pJ8-BitTutteJ8/src/Tutte.java
+
++++ Add following code below line: 81 (Tutte.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 68
+
+--------------------------------------------

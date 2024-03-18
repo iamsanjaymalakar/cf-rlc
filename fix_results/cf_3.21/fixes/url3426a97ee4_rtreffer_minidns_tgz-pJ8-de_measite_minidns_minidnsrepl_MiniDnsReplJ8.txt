@@ -1,0 +1,14 @@
+11387
+587
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url3426a97ee4_rtreffer_minidns_tgz-pJ8-de_measite_minidns_minidnsrepl_MiniDnsReplJ8/src/de/measite/minidns/dnsserverlookup/AndroidUsingExec.java; Line number 39
+vim +39 ../../../../datasets/debug_supplemented_njr/url3426a97ee4_rtreffer_minidns_tgz-pJ8-de_measite_minidns_minidnsrepl_MiniDnsReplJ8/src/de/measite/minidns/dnsserverlookup/AndroidUsingExec.java
+
++++ Add following code below line: 74 (de/measite/minidns/dnsserverlookup/AndroidUsingExec.java)
+finally{
+    try{ lnr.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

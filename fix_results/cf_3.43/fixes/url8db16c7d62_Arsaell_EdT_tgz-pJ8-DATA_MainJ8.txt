@@ -1,0 +1,29 @@
+23714
+978
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/Main.java; Line number 27
+vim +27 ../../../dataset/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/Main.java
+
++++ Add following code below line: 57 (Main.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 27
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/Main.java; Line number 35
+vim +35 ../../../dataset/june2020_dataset/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/Main.java
+
++++ Add following code below line: 50 (Main.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 35
+
++++ Delete Line number 38 (Main.java)
+
++++ Delete Line number 39 (Main.java)
+
+--------------------------------------------

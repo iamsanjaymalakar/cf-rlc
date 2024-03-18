@@ -1,0 +1,53 @@
+10221
+126
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/algorithms/StdIn.java; Line number 149
+vim +149 ../../../dataset/june2020_dataset/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/algorithms/StdIn.java
+
++++ Add following code above line:149 (algorithms/StdIn.java)
+try{
++++ Add following code after line:149 (algorithms/StdIn.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 149
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/tests/Test.java; Line number 83
+vim +83 ../../../dataset/june2020_dataset/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/tests/Test.java
+
++++ Add following code above line:83 (tests/Test.java)
+try{
++++ Add following code after line:140 (tests/Test.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 83
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/tests/KnapsackInstances.java; Line number 23
+vim +23 ../../../dataset/june2020_dataset/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/tests/KnapsackInstances.java
+
++++ Add following code above line:23 (tests/KnapsackInstances.java)
+try{
++++ Add following code after line:53 (tests/KnapsackInstances.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 23
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/knapSavings/KnapSavings.java; Line number 151
+vim +151 ../../../dataset/june2020_dataset/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/knapSavings/KnapSavings.java
+
++++ Add following code above line:151 (knapSavings/KnapSavings.java)
+try{
++++ Add following code after line:181 (knapSavings/KnapSavings.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 151
+
+--------------------------------------------

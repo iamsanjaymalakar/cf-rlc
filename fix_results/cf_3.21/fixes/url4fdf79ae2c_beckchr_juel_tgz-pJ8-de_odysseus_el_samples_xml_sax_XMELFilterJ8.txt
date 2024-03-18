@@ -1,0 +1,42 @@
+11247
+1380
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url4fdf79ae2c_beckchr_juel_tgz-pJ8-de_odysseus_el_samples_xml_sax_XMELFilterJ8/src/javax/el/ExpressionFactoryTest.java; Line number 30
+vim +30 ../../../../datasets/debug_supplemented_njr/url4fdf79ae2c_beckchr_juel_tgz-pJ8-de_odysseus_el_samples_xml_sax_XMELFilterJ8/src/javax/el/ExpressionFactoryTest.java
+
++++ Add following code above line:30 (javax/el/ExpressionFactoryTest.java)
+try{
++++ Add following code after line:35 (javax/el/ExpressionFactoryTest.java)
+}finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 34 (javax/el/ExpressionFactoryTest.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url4fdf79ae2c_beckchr_juel_tgz-pJ8-de_odysseus_el_samples_xml_sax_XMELFilterJ8/src/de/odysseus/el/TestCase.java; Line number 38
+vim +38 ../../../../datasets/debug_supplemented_njr/url4fdf79ae2c_beckchr_juel_tgz-pJ8-de_odysseus_el_samples_xml_sax_XMELFilterJ8/src/de/odysseus/el/TestCase.java
+
++++ Add following code above line:37 (de/odysseus/el/TestCase.java)
+try{
++++ Add following code after line:41 (de/odysseus/el/TestCase.java)
+}finally{
+    try{ bout.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 40 (de/odysseus/el/TestCase.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url4fdf79ae2c_beckchr_juel_tgz-pJ8-de_odysseus_el_samples_xml_sax_XMELFilterJ8/src/de/odysseus/el/TestCase.java; Line number 46
+vim +46 ../../../../datasets/debug_supplemented_njr/url4fdf79ae2c_beckchr_juel_tgz-pJ8-de_odysseus_el_samples_xml_sax_XMELFilterJ8/src/de/odysseus/el/TestCase.java
+
++++ Add following code above line:45 (de/odysseus/el/TestCase.java)
+try{
++++ Add following code after line:47 (de/odysseus/el/TestCase.java)
+}finally{
+    try{ bin.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

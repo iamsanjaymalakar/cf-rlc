@@ -1,0 +1,18 @@
+8799
+107
+
+SOURCE LEVEL FIXES
+
+1] ../../../../datasets/debug_supplemented_njr/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/codegen/Class.java; Line number 109
+vim +109 ../../../../datasets/debug_supplemented_njr/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/codegen/Class.java
+
++++ Add following code above line:109 (erilex/codegen/Class.java)
+try{
++++ Add following code after line:111 (erilex/codegen/Class.java)
+}finally{
+    try{ w.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 112 (erilex/codegen/Class.java)
+
+--------------------------------------------

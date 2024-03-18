@@ -1,0 +1,15 @@
+9959
+34
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/urla39b63eb76_tef_pipeline_tgz-pJ8-org_twentygototen_pipeline_ExampleJ8/src/org/twentygototen/pipeline/pipes/FileReaderPipe.java; Line number 19
+vim +19 ../../../dataset/june2020_dataset/urla39b63eb76_tef_pipeline_tgz-pJ8-org_twentygototen_pipeline_ExampleJ8/src/org/twentygototen/pipeline/pipes/FileReaderPipe.java
+
++++ Add following code below line: 28 (org/twentygototen/pipeline/pipes/FileReaderPipe.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 19
+
+--------------------------------------------

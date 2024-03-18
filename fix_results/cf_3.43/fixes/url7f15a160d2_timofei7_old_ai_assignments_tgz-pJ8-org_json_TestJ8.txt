@@ -1,0 +1,78 @@
+12516
+1191
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/hw2_P1/Parser.java; Line number 71
+vim +71 ../../../dataset/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/hw2_P1/Parser.java
+
++++ Add following code below line: 76 (hw2_P1/Parser.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 71
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java; Line number 447
+vim +447 ../../../dataset/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java
+
++++ Add following code below line: 633 (org/json/Test.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 447
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/hw5/P3bMain.java; Line number 76
+vim +76 ../../../dataset/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/hw5/P3bMain.java
+
++++ Add following code above line:82 (hw5/P3bMain.java)
+try{ 
++++ Add following code below line:84 (hw5/P3bMain.java)
+} catch(Exception e){ 
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+    throw e; 
+}
++++ Add following code below line:82 (hw5/P3bMain.java)
+try{
+    <NEW_VARIABLE>.close();
+} catch(Exception e){ e.printStackTrace(); }
+// where variable <NEW_VARIABLE> points to the resource from line 76
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/hw5/P3bMain.java; Line number 126
+vim +126 ../../../dataset/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/hw5/P3bMain.java
+
++++ Add following code above line:132 (hw5/P3bMain.java)
+try{ 
++++ Add following code below line:134 (hw5/P3bMain.java)
+} catch(Exception e){ 
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+    throw e; 
+}
++++ Add following code above line:147 (hw5/P3bMain.java)
+try{ 
++++ Add following code below line:149 (hw5/P3bMain.java)
+} catch(Exception e){ 
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+    throw e; 
+}
++++ Add following code below line:147 (hw5/P3bMain.java)
+try{
+    <NEW_VARIABLE>.close();
+} catch(Exception e){ e.printStackTrace(); }
+// where variable <NEW_VARIABLE> points to the resource from line 126
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/hw5/P3bMain.java; Line number 198
+vim +198 ../../../dataset/june2020_dataset/url7f15a160d2_timofei7_old_ai_assignments_tgz-pJ8-org_json_TestJ8/src/hw5/P3bMain.java
+
++++ Add following code below line: 205 (hw5/P3bMain.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 198
+
++++ Delete Line number 200 (hw5/P3bMain.java)
+
+--------------------------------------------

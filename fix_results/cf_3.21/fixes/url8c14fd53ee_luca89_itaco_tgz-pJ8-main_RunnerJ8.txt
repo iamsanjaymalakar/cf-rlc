@@ -1,0 +1,107 @@
+14006
+3053
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/main/FileItaco.java; Line number 221
+vim +221 ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/main/FileItaco.java
+
++++ Add following code below line: 231 (main/FileItaco.java)
+finally{
+    try{ scanner.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/test/JasminTest.java; Line number 57
+vim +57 ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/test/JasminTest.java
+
++++ Add following code below line: 92 (test/JasminTest.java)
+finally{
+    try{ pout.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/test/JasminTest.java; Line number 67
+vim +67 ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/test/JasminTest.java
+
++++ Add following code below line: 92 (test/JasminTest.java)
+finally{
+    try{ pin.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/CTarget.java; Line number 539
+vim +539 ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/CTarget.java
+
++++ Add following code above line:539 (compilatore/CTarget.java)
+try{
++++ Add following code after line:540 (compilatore/CTarget.java)
+}finally{
+    try{ sorgenteCStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/RubyTarget.java; Line number 509
+vim +509 ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/RubyTarget.java
+
++++ Add following code above line:509 (compilatore/RubyTarget.java)
+try{
++++ Add following code after line:510 (compilatore/RubyTarget.java)
+}finally{
+    try{ sorgenteCStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java; Line number 139
+vim +139 ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java
+
++++ Add following code above line:139 (compilatore/JasminTarget.java)
+try{
++++ Add following code after line:147 (compilatore/JasminTarget.java)
+}finally{
+    try{ stub.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java; Line number 162
+vim +162 ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java
+
++++ Add following code above line:162 (compilatore/JasminTarget.java)
+try{
++++ Add following code after line:171 (compilatore/JasminTarget.java)
+}finally{
+    try{ stub.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+12] ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java; Line number 391
+vim +391 ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java
+
++++ Add following code above line:391 (compilatore/JasminTarget.java)
+try{
++++ Add following code after line:392 (compilatore/JasminTarget.java)
+}finally{
+    try{ fileOut.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 393 (compilatore/JasminTarget.java)
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java; Line number 421
+vim +421 ../../../../datasets/debug_supplemented_njr/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java
+
++++ Add following code above line:421 (compilatore/JasminTarget.java)
+try{ 
++++ Add following code below line:421 (compilatore/JasminTarget.java)
+} catch(Exception e){ 
+    if (classFOut!=null) { classFOut.close();}
+    throw e; 
+}
++++ Add following code below line: 426 (compilatore/JasminTarget.java)
+finally{
+    try{ classFOut.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 427 (compilatore/JasminTarget.java)
+
+--------------------------------------------

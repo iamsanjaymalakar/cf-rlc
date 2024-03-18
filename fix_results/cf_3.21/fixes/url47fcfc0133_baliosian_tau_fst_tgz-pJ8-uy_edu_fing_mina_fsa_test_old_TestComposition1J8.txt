@@ -1,0 +1,71 @@
+10134
+1126
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/tffsr/Tffsr.java; Line number 144
+vim +144 ../../../../datasets/debug_supplemented_njr/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/tffsr/Tffsr.java
+
++++ NOTE: Resource escapes via a parameter and needs to be closed in the callers of this function.load
++++ Add following code above line:166 (uy/edu/fing/mina/fsa/tffsr/Tffsr.java)
+try{
++++ Add following code after line:166 (uy/edu/fing/mina/fsa/tffsr/Tffsr.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 166
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/tffsr/Tffsr.java; Line number 166
+vim +166 ../../../../datasets/debug_supplemented_njr/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/tffsr/Tffsr.java
+
++++ Add following code above line:166 (uy/edu/fing/mina/fsa/tffsr/Tffsr.java)
+try{
++++ Add following code after line:166 (uy/edu/fing/mina/fsa/tffsr/Tffsr.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 166
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/tffsr/Tffsr.java; Line number 857
+vim +857 ../../../../datasets/debug_supplemented_njr/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/tffsr/Tffsr.java
+
++++ NOTE: Resource escapes via a parameter and needs to be closed in the callers of this function.store
++++ Nothing to be done. No callers found for method with resource return
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/test/old/ObjectMeter.java; Line number 26
+vim +26 ../../../../datasets/debug_supplemented_njr/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/test/old/ObjectMeter.java
+
++++ Add following code below line: 35 (uy/edu/fing/mina/fsa/test/old/ObjectMeter.java)
+finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 30 (uy/edu/fing/mina/fsa/test/old/ObjectMeter.java)
+
++++ Delete Line number 29 (uy/edu/fing/mina/fsa/test/old/ObjectMeter.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/utils/Utils.java; Line number 58
+vim +58 ../../../../datasets/debug_supplemented_njr/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/utils/Utils.java
+
++++ Add following code below line: 62 (uy/edu/fing/mina/fsa/utils/Utils.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 60 (uy/edu/fing/mina/fsa/utils/Utils.java)
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/utils/Utils.java; Line number 69
+vim +69 ../../../../datasets/debug_supplemented_njr/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/utils/Utils.java
+
++++ Add following code below line: 77 (uy/edu/fing/mina/fsa/utils/Utils.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 75 (uy/edu/fing/mina/fsa/utils/Utils.java)
+
+--------------------------------------------

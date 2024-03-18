@@ -1,0 +1,41 @@
+16192
+230
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/jneat/Population.java; Line number 595
+vim +595 ../../../../datasets/debug_supplemented_njr/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/jneat/Population.java
+
++++ Add following code below line: 630 (jneat/Population.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/utilities/FIO.java; Line number 185
+vim +185 ../../../../datasets/debug_supplemented_njr/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/utilities/FIO.java
+
++++ Add following code below line: 218 (utilities/FIO.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/utilities/FIO.java; Line number 225
+vim +225 ../../../../datasets/debug_supplemented_njr/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/utilities/FIO.java
+
++++ Add following code below line: 266 (utilities/FIO.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/utilities/FIO.java; Line number 284
+vim +284 ../../../../datasets/debug_supplemented_njr/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/utilities/FIO.java
+
++++ Add following code below line: 492 (utilities/FIO.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

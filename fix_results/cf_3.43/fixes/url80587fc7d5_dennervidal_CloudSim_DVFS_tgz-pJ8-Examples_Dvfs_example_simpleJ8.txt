@@ -1,0 +1,73 @@
+15511
+2021
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/UtilizationModelPlanetLabInMemory.java; Line number 29
+vim +29 ../../../dataset/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/UtilizationModelPlanetLabInMemory.java
+
++++ Add following code above line:29 (org/cloudbus/cloudsim/UtilizationModelPlanetLabInMemory.java)
+try{
++++ Add following code after line:33 (org/cloudbus/cloudsim/UtilizationModelPlanetLabInMemory.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 29
+
++++ Delete Line number 35 (org/cloudbus/cloudsim/UtilizationModelPlanetLabInMemory.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/network/GraphReaderBrite.java; Line number 50
+vim +50 ../../../dataset/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/network/GraphReaderBrite.java
+
++++ Add following code above line:50 (org/cloudbus/cloudsim/network/GraphReaderBrite.java)
+try{
++++ Add following code after line:85 (org/cloudbus/cloudsim/network/GraphReaderBrite.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 50
+
++++ Delete Line number 87 (org/cloudbus/cloudsim/network/GraphReaderBrite.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/workflow/WorkflowEngine.java; Line number 419
+vim +419 ../../../dataset/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/workflow/WorkflowEngine.java
+
++++ Add following code below line: 458 (org/cloudbus/cloudsim/workflow/WorkflowEngine.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 419
+
++++ Delete Line number 455 (org/cloudbus/cloudsim/workflow/WorkflowEngine.java)
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/UtilizationModelStochastic.java; Line number 92
+vim +92 ../../../dataset/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/UtilizationModelStochastic.java
+
++++ Add following code above line:92 (org/cloudbus/cloudsim/UtilizationModelStochastic.java)
+try{
++++ Add following code after line:94 (org/cloudbus/cloudsim/UtilizationModelStochastic.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 92
+
++++ Delete Line number 95 (org/cloudbus/cloudsim/UtilizationModelStochastic.java)
+
+--------------------------------------------
+6] ../../../dataset/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/UtilizationModelStochastic.java; Line number 106
+vim +106 ../../../dataset/june2020_dataset/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/UtilizationModelStochastic.java
+
++++ Add following code above line:106 (org/cloudbus/cloudsim/UtilizationModelStochastic.java)
+try{
++++ Add following code after line:108 (org/cloudbus/cloudsim/UtilizationModelStochastic.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 106
+
++++ Delete Line number 109 (org/cloudbus/cloudsim/UtilizationModelStochastic.java)
+
+--------------------------------------------

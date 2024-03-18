@@ -1,0 +1,110 @@
+12299
+2082
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/cache/JARCache.java; Line number 112
+vim +112 ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/cache/JARCache.java
+
++++ Add following code below line: 134 (net/xeoh/plugins/base/impl/classpath/cache/JARCache.java)
+finally{
+    try{ ois.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 118 (net/xeoh/plugins/base/impl/classpath/cache/JARCache.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/cache/JARCache.java; Line number 182
+vim +182 ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/cache/JARCache.java
+
++++ Add following code below line: 191 (net/xeoh/plugins/base/impl/classpath/cache/JARCache.java)
+finally{
+    try{ oos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/cache/JARCache.java; Line number 225
+vim +225 ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/cache/JARCache.java
+
++++ Add following code below line: 263 (net/xeoh/plugins/base/impl/classpath/cache/JARCache.java)
+fis.close();
+
++++ Delete Line number 251 (net/xeoh/plugins/base/impl/classpath/cache/JARCache.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/locator/locations/JARClasspathLocation.java; Line number 98
+vim +98 ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/locator/locations/JARClasspathLocation.java
+
++++ Add following code below line: 120 (net/xeoh/plugins/base/impl/classpath/locator/locations/JARClasspathLocation.java)
+finally{
+    try{ jarFile.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/locator/locations/JARClasspathLocation.java; Line number 173
+vim +173 ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/locator/locations/JARClasspathLocation.java
+
++++ Add following code below line: 194 (net/xeoh/plugins/base/impl/classpath/locator/locations/JARClasspathLocation.java)
+finally{
+    try{ jarFile.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/locator/locations/JARClasspathLocation.java; Line number 219
+vim +219 ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/locator/locations/JARClasspathLocation.java
+
++++ Add following code below line: 258 (net/xeoh/plugins/base/impl/classpath/locator/locations/JARClasspathLocation.java)
+finally{
+    try{ jarFile.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/locator/locations/MultiPluginClasspathLocation.java; Line number 103
+vim +103 ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/locator/locations/MultiPluginClasspathLocation.java
+
++++ Add following code below line: 123 (net/xeoh/plugins/base/impl/classpath/locator/locations/MultiPluginClasspathLocation.java)
+finally{
+    try{ jarFile.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/loader/HTTPLoader.java; Line number 71
+vim +71 ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/loader/HTTPLoader.java
+
++++ Add following code below line: 92 (net/xeoh/plugins/base/impl/classpath/loader/HTTPLoader.java)
+finally{
+    try{ fos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 83 (net/xeoh/plugins/base/impl/classpath/loader/HTTPLoader.java)
+
+--------------------------------------------
+11] ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/loader/HTTPLoader.java; Line number 74
+vim +74 ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/base/impl/classpath/loader/HTTPLoader.java
+
++++ Add following code below line: 92 (net/xeoh/plugins/base/impl/classpath/loader/HTTPLoader.java)
+finally{
+    try{ openStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 84 (net/xeoh/plugins/base/impl/classpath/loader/HTTPLoader.java)
+
+--------------------------------------------
+15] ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/diagnosis/local/impl/serialization/java/LogFileReader.java; Line number 57
+vim +57 ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/plugins/diagnosis/local/impl/serialization/java/LogFileReader.java
+
++++ Add following code below line: 71 (net/xeoh/plugins/diagnosis/local/impl/serialization/java/LogFileReader.java)
+finally{
+    try{ stream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+17] ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/nexus/JARLocator.java; Line number 117
+vim +117 ../../../../datasets/debug_supplemented_njr/url5a01f2c1d9_core9_core_tgz-pJ8-io_core9_core_boot_BootstrapFrameworkJ8/src/net/xeoh/nexus/JARLocator.java
+
++++ Add following code below line: 141 (net/xeoh/nexus/JARLocator.java)
+finally{
+    try{ jarFile.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

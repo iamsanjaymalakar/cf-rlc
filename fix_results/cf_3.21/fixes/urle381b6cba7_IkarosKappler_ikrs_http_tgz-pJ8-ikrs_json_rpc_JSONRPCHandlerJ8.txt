@@ -1,0 +1,150 @@
+16297
+8507
+
+SOURCE LEVEL FIXES
+
+2] ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/XMLExampleHandler.java; Line number 332
+vim +332 ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/XMLExampleHandler.java
+
++++ Add following code below line: 352 (XMLExampleHandler.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/fileio/htaccess/HypertextAccessFile.java; Line number 158
+vim +158 ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/fileio/htaccess/HypertextAccessFile.java
+
++++ Add following code above line:158 (ikrs/io/fileio/htaccess/HypertextAccessFile.java)
+try{
++++ Add following code after line:161 (ikrs/io/fileio/htaccess/HypertextAccessFile.java)
+}finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 163 (ikrs/io/fileio/htaccess/HypertextAccessFile.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/HTTPHandler.java; Line number 395
+vim +395 ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/HTTPHandler.java
+
++++ Add following code below line: 485 (ikrs/httpd/HTTPHandler.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/util/HexDumpOutputStream.java; Line number 281
+vim +281 ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/util/HexDumpOutputStream.java
+
++++ Add following code below line: 301 (ikrs/util/HexDumpOutputStream.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 293 (ikrs/util/HexDumpOutputStream.java)
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/socketmngr/ServerSocketThread.java; Line number 272
+vim +272 ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/socketmngr/ServerSocketThread.java
+
++++ Add following code above line:272 (ikrs/yuccasrv/socketmngr/ServerSocketThread.java)
+try{
++++ Add following code after line:274 (ikrs/yuccasrv/socketmngr/ServerSocketThread.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 272
+
+--------------------------------------------
+11] ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/socketmngr/ServerSocketThread.java; Line number 301
+vim +301 ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/socketmngr/ServerSocketThread.java
+
++++ Add following code above line:301 (ikrs/yuccasrv/socketmngr/ServerSocketThread.java)
+try{
++++ Add following code after line:312 (ikrs/yuccasrv/socketmngr/ServerSocketThread.java)
+}finally{
+    try{ sock.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/json/AbstractJSONValue.java; Line number 257
+vim +257 ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/json/AbstractJSONValue.java
+
++++ Add following code below line: 263 (ikrs/json/AbstractJSONValue.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+30] ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/fileio/inifile/IniFile.java; Line number 96
+vim +96 ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/fileio/inifile/IniFile.java
+
++++ Add following code above line:96 (ikrs/io/fileio/inifile/IniFile.java)
+try{
++++ Add following code after line:98 (ikrs/io/fileio/inifile/IniFile.java)
+}finally{
+    try{ fin.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 99 (ikrs/io/fileio/inifile/IniFile.java)
+
+--------------------------------------------
+31] ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/fileio/htaccess/HypertextPasswordFile.java; Line number 61
+vim +61 ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/fileio/htaccess/HypertextPasswordFile.java
+
++++ Add following code above line:61 (ikrs/io/fileio/htaccess/HypertextPasswordFile.java)
+try{
++++ Add following code after line:65 (ikrs/io/fileio/htaccess/HypertextPasswordFile.java)
+}finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 66 (ikrs/io/fileio/htaccess/HypertextPasswordFile.java)
+
+--------------------------------------------
+43] ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/resource/ProcessableResource.java; Line number 141
+vim +141 ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/resource/ProcessableResource.java
+
++++ Add following code above line:140 (ikrs/httpd/resource/ProcessableResource.java)
+try{
++++ Add following code after line:144 (ikrs/httpd/resource/ProcessableResource.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 141
+
+--------------------------------------------
+44] ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/resource/ProcessableResource.java; Line number 155
+vim +155 ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/resource/ProcessableResource.java
+
++++ Add following code above line:155 (ikrs/httpd/resource/ProcessableResource.java)
+try{
++++ Add following code after line:164 (ikrs/httpd/resource/ProcessableResource.java)
+}finally{
+    try{ bufferedInputStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+62] ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/Yucca.java; Line number 239
+vim +239 ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/Yucca.java
+
++++ Add following code below line: 255 (ikrs/yuccasrv/Yucca.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 247 (ikrs/yuccasrv/Yucca.java)
+
+--------------------------------------------
+63] ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/Yucca.java; Line number 267
+vim +267 ../../../../datasets/debug_supplemented_njr/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/Yucca.java
+
++++ Add following code below line: 281 (ikrs/yuccasrv/Yucca.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 275 (ikrs/yuccasrv/Yucca.java)
+
+--------------------------------------------

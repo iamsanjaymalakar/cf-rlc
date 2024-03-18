@@ -1,0 +1,71 @@
+12576
+6106
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java; Line number 286
+vim +286 ../../../../datasets/debug_supplemented_njr/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java
+
++++ Add following code below line: 307 (net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java)
+finally{
+    try{ bw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 295 (net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java; Line number 299
+vim +299 ../../../../datasets/debug_supplemented_njr/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java
+
++++ Add following code below line: 307 (net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java)
+finally{
+    try{ bufferedWriter.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 302 (net/nexon/vindictus/itemcomparer/logic/ThreadStarter.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java; Line number 1956
+vim +1956 ../../../../datasets/debug_supplemented_njr/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java
+
++++ Add following code below line: 1966 (net/nexon/vindictus/itemcomparer/inport/StaticImport.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1963 (net/nexon/vindictus/itemcomparer/inport/StaticImport.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java; Line number 2026
+vim +2026 ../../../../datasets/debug_supplemented_njr/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java
+
++++ Add following code below line: 2033 (net/nexon/vindictus/itemcomparer/inport/StaticImport.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 2030 (net/nexon/vindictus/itemcomparer/inport/StaticImport.java)
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java; Line number 2041
+vim +2041 ../../../../datasets/debug_supplemented_njr/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java
+
++++ Add following code below line: 2052 (net/nexon/vindictus/itemcomparer/inport/StaticImport.java)
+finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 2050 (net/nexon/vindictus/itemcomparer/inport/StaticImport.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java; Line number 2091
+vim +2091 ../../../../datasets/debug_supplemented_njr/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java
+
++++ Add following code below line: 2109 (net/nexon/vindictus/itemcomparer/inport/StaticImport.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 2106 (net/nexon/vindictus/itemcomparer/inport/StaticImport.java)
+
+--------------------------------------------

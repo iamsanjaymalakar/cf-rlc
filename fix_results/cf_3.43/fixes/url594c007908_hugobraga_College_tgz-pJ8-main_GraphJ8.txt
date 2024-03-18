@@ -1,0 +1,89 @@
+9273
+640
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/dataStructure/PositionTable.java; Line number 31
+vim +31 ../../../dataset/june2020_dataset/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/dataStructure/PositionTable.java
+
++++ Add following code below line: 61 (dataStructure/PositionTable.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 31
+
++++ Delete Line number 58 (dataStructure/PositionTable.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/dataStructure/AdjList.java; Line number 236
+vim +236 ../../../dataset/june2020_dataset/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/dataStructure/AdjList.java
+
++++ Add following code below line: 267 (dataStructure/AdjList.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 236
+
++++ Delete Line number 265 (dataStructure/AdjList.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java; Line number 99
+vim +99 ../../../dataset/june2020_dataset/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java
+
++++ Add following code below line: 268 (main/Graph.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 99
+
++++ Delete Line number 259 (main/Graph.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java; Line number 100
+vim +100 ../../../dataset/june2020_dataset/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java
+
++++ Add following code below line: 268 (main/Graph.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 100
+
++++ Delete Line number 260 (main/Graph.java)
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java; Line number 101
+vim +101 ../../../dataset/june2020_dataset/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java
+
++++ Add following code below line: 268 (main/Graph.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 101
+
++++ Delete Line number 262 (main/Graph.java)
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java; Line number 102
+vim +102 ../../../dataset/june2020_dataset/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java
+
++++ Add following code below line: 268 (main/Graph.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 102
+
++++ Delete Line number 263 (main/Graph.java)
+
+--------------------------------------------
+6] ../../../dataset/june2020_dataset/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java; Line number 103
+vim +103 ../../../dataset/june2020_dataset/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java
+
++++ Add following code below line: 268 (main/Graph.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 103
+
++++ Delete Line number 261 (main/Graph.java)
+
+--------------------------------------------

@@ -1,0 +1,203 @@
+14445
+1953
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/C64Applet.java; Line number 331
+vim +331 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/C64Applet.java
+
++++ Add following code below line: 363 (C64Applet.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/C64Applet.java; Line number 566
+vim +566 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/C64Applet.java
+
++++ Add following code below line: 581 (C64Applet.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 569 (C64Applet.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/C64Applet.java; Line number 571
+vim +571 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/C64Applet.java
+
++++ Add following code below line: 581 (C64Applet.java)
+finally{
+    try{ is.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/CPU.java; Line number 237
+vim +237 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/CPU.java
+
++++ Add following code above line:237 (com/dreamfabric/jac64/CPU.java)
+try{
++++ Add following code after line:238 (com/dreamfabric/jac64/CPU.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 237
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/CPU.java; Line number 239
+vim +239 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/CPU.java
+
++++ Add following code above line:239 (com/dreamfabric/jac64/CPU.java)
+try{
++++ Add following code after line:239 (com/dreamfabric/jac64/CPU.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 239
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/CPU.java; Line number 240
+vim +240 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/CPU.java
+
++++ Add following code above line:240 (com/dreamfabric/jac64/CPU.java)
+try{
++++ Add following code after line:241 (com/dreamfabric/jac64/CPU.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 240
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java; Line number 658
+vim +658 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java
+
++++ Add following code below line: 663 (com/dreamfabric/jac64/C64Reader.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java; Line number 669
+vim +669 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java
+
++++ Add following code below line: 674 (com/dreamfabric/jac64/C64Reader.java)
+finally{
+    try{ s.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java; Line number 680
+vim +680 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java
+
++++ Add following code below line: 684 (com/dreamfabric/jac64/C64Reader.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 680
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java; Line number 691
+vim +691 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java
+
++++ Add following code below line: 696 (com/dreamfabric/jac64/C64Reader.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java; Line number 703
+vim +703 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java
+
++++ Add following code below line: 708 (com/dreamfabric/jac64/C64Reader.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+11] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java; Line number 715
+vim +715 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java
+
++++ Add following code below line: 720 (com/dreamfabric/jac64/C64Reader.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+12] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java; Line number 728
+vim +728 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java
+
++++ Add following code below line: 733 (com/dreamfabric/jac64/C64Reader.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+13] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java; Line number 746
+vim +746 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C64Reader.java
+
++++ Add following code below line: 750 (com/dreamfabric/jac64/C64Reader.java)
+finally{
+    try{ fio.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C1541Emu.java; Line number 137
+vim +137 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C1541Emu.java
+
++++ Add following code below line: 155 (com/dreamfabric/jac64/C1541Emu.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+15] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C1541Emu.java; Line number 165
+vim +165 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/jac64/C1541Emu.java
+
++++ Add following code below line: 169 (com/dreamfabric/jac64/C1541Emu.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 165
+
+--------------------------------------------
+16] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/c64utils/AutoStore.java; Line number 70
+vim +70 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/c64utils/AutoStore.java
+
++++ Add following code below line: 80 (com/dreamfabric/c64utils/AutoStore.java)
+finally{
+    try{ is.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+17] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/c64utils/IPPacket.java; Line number 128
+vim +128 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/c64utils/IPPacket.java
+
++++ Add following code above line:128 (com/dreamfabric/c64utils/IPPacket.java)
+try{
++++ Add following code after line:130 (com/dreamfabric/c64utils/IPPacket.java)
+}finally{
+    try{ fs.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+18] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/c64utils/Assembler.java; Line number 346
+vim +346 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/com/dreamfabric/c64utils/Assembler.java
+
++++ Add following code below line: 358 (com/dreamfabric/c64utils/Assembler.java)
+finally{
+    try{ fs.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 355 (com/dreamfabric/c64utils/Assembler.java)
+
+--------------------------------------------
+19] ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/C64Test.java; Line number 362
+vim +362 ../../../../datasets/debug_supplemented_njr/url8d3c4d17f5_catseye_JaC64_tgz-pJ8-JaC64J8/src/C64Test.java
+
++++ Add following code below line: 365 (C64Test.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 362
+
+--------------------------------------------

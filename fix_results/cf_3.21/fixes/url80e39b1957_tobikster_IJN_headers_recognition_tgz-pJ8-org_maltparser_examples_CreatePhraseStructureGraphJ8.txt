@@ -1,0 +1,529 @@
+16555
+12663
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/SingleMalt.java; Line number 184
+vim +184 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/SingleMalt.java
+
++++ Add following code above line:184 (org/maltparser/parser/SingleMalt.java)
+try{
++++ Add following code after line:184 (org/maltparser/parser/SingleMalt.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 184
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/SingleMalt.java; Line number 190
+vim +190 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/parser/SingleMalt.java
+
++++ Add following code above line:190 (org/maltparser/parser/SingleMalt.java)
+try{
++++ Add following code after line:190 (org/maltparser/parser/SingleMalt.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 190
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/io/dataformat/DataFormatSpecification.java; Line number 73
+vim +73 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/io/dataformat/DataFormatSpecification.java
+
++++ Add following code below line: 105 (org/maltparser/core/io/dataformat/DataFormatSpecification.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 73
+
+--------------------------------------------
+15] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 319
+vim +319 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 329 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ mcoFile.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+16] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 337
+vim +337 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 349 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ mcoFile.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+17] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 354
+vim +354 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 367 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ mcoFile.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+18] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 378
+vim +378 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 392 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ mcoFile.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+19] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 397
+vim +397 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 412 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ mcoFile.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+20] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 477
+vim +477 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 491 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ bis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 486 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+21] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 478
+vim +478 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 491 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ bos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 485 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+22] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 522
+vim +522 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 536 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ bis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 531 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+23] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 523
+vim +523 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 536 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ bos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 530 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+25] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 652
+vim +652 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 660 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ jos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 655 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+27] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 679
+vim +679 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code above line:679 (org/maltparser/core/config/ConfigurationDir.java)
+try{
++++ Add following code after line:688 (org/maltparser/core/config/ConfigurationDir.java)
+}finally{
+    try{ fis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 690 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+28] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 702
+vim +702 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 757 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ jar.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 754 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+29] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 703
+vim +703 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 757 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ tempJar.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 753 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+31] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 711
+vim +711 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code above line:711 (org/maltparser/core/config/ConfigurationDir.java)
+try{
++++ Add following code after line:730 (org/maltparser/core/config/ConfigurationDir.java)
+}finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+32] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 734
+vim +734 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 757 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ bis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 740 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+33] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 744
+vim +744 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 757 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ bis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 750 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+34] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 766
+vim +766 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 792 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ jis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 785 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+36] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 805
+vim +805 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 826 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ jis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 821 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+40] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 840
+vim +840 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 853 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ jis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 845 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+45] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 1031
+vim +1031 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 1044 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1039 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+46] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 1095
+vim +1095 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 1114 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1106 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+47] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 1096
+vim +1096 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 1114 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ bw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1108 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+48] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 1116
+vim +1116 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 1135 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1127 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+49] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 1117
+vim +1117 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 1135 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ bw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1129 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+50] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 1147
+vim +1147 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 1193 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1161 (org/maltparser/core/config/ConfigurationDir.java)
+
++++ Delete Line number 1185 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+51] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java; Line number 1148
+vim +1148 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/config/ConfigurationDir.java
+
++++ Add following code below line: 1193 (org/maltparser/core/config/ConfigurationDir.java)
+finally{
+    try{ bw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1163 (org/maltparser/core/config/ConfigurationDir.java)
+
++++ Delete Line number 1187 (org/maltparser/core/config/ConfigurationDir.java)
+
+--------------------------------------------
+54] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java; Line number 197
+vim +197 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java
+
++++ Add following code below line: 202 (org/maltparser/core/options/OptionManager.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 197
+
+--------------------------------------------
+55] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java; Line number 265
+vim +265 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java
+
++++ Add following code below line: 270 (org/maltparser/core/options/OptionManager.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 265
+
+--------------------------------------------
+56] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java; Line number 310
+vim +310 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java
+
++++ Add following code below line: 315 (org/maltparser/core/options/OptionManager.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 310
+
+--------------------------------------------
+57] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java; Line number 552
+vim +552 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java
+
++++ Add following code above line:552 (org/maltparser/core/options/OptionManager.java)
+try{
++++ Add following code after line:552 (org/maltparser/core/options/OptionManager.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 552
+
+--------------------------------------------
+58] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java; Line number 567
+vim +567 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java
+
++++ Add following code above line:567 (org/maltparser/core/options/OptionManager.java)
+try{
++++ Add following code after line:567 (org/maltparser/core/options/OptionManager.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 567
+
+--------------------------------------------
+59] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java; Line number 569
+vim +569 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionManager.java
+
++++ Add following code above line:569 (org/maltparser/core/options/OptionManager.java)
+try{
++++ Add following code after line:569 (org/maltparser/core/options/OptionManager.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 569
+
+--------------------------------------------
+60] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/feature/system/FeatureEngine.java; Line number 83
+vim +83 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/feature/system/FeatureEngine.java
+
++++ Add following code below line: 96 (org/maltparser/core/feature/system/FeatureEngine.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 83
+
+--------------------------------------------
+63] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/plugin/JarLoader.java; Line number 127
+vim +127 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/plugin/JarLoader.java
+
++++ Add following code below line: 157 (org/maltparser/core/plugin/JarLoader.java)
+finally{
+    try{ jis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+65] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionDescriptions.java; Line number 158
+vim +158 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/options/OptionDescriptions.java
+
++++ Add following code below line: 181 (org/maltparser/core/options/OptionDescriptions.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 158
+
+--------------------------------------------
+66] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/flow/FlowChartManager.java; Line number 75
+vim +75 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/flow/FlowChartManager.java
+
++++ Add following code below line: 86 (org/maltparser/core/flow/FlowChartManager.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 75
+
+--------------------------------------------
+67] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/flow/system/FlowChartSystem.java; Line number 65
+vim +65 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/flow/system/FlowChartSystem.java
+
++++ Add following code below line: 78 (org/maltparser/core/flow/system/FlowChartSystem.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 65
+
+--------------------------------------------
+68] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/examples/ParseSentence2.java; Line number 41
+vim +41 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/examples/ParseSentence2.java
+
++++ Add following code below line: 92 (org/maltparser/examples/ParseSentence2.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 79 (org/maltparser/examples/ParseSentence2.java)
+
+--------------------------------------------
+69] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/examples/ParseSentence2.java; Line number 42
+vim +42 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/examples/ParseSentence2.java
+
++++ Add following code below line: 92 (org/maltparser/examples/ParseSentence2.java)
+finally{
+    try{ writer.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 81 (org/maltparser/examples/ParseSentence2.java)
+
+--------------------------------------------
+71] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/symbol/trie/TrieSymbolTableHandler.java; Line number 107
+vim +107 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/symbol/trie/TrieSymbolTableHandler.java
+
++++ Add following code below line: 112 (org/maltparser/core/symbol/trie/TrieSymbolTableHandler.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 107
+
+--------------------------------------------
+72] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/symbol/trie/TrieSymbolTableHandler.java; Line number 168
+vim +168 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/symbol/trie/TrieSymbolTableHandler.java
+
++++ Add following code below line: 174 (org/maltparser/core/symbol/trie/TrieSymbolTableHandler.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 168
+
+--------------------------------------------
+73] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/symbol/trie/TrieSymbolTableHandler.java; Line number 180
+vim +180 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/symbol/trie/TrieSymbolTableHandler.java
+
++++ Add following code below line: 194 (org/maltparser/core/symbol/trie/TrieSymbolTableHandler.java)
+finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+81] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/reader/TigerXMLReader.java; Line number 82
+vim +82 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/reader/TigerXMLReader.java
+
++++ Add following code below line: 85 (org/maltparser/core/syntaxgraph/reader/TigerXMLReader.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 82
+
+--------------------------------------------
+82] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/reader/TigerXMLReader.java; Line number 91
+vim +91 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/syntaxgraph/reader/TigerXMLReader.java
+
++++ Add following code below line: 94 (org/maltparser/core/syntaxgraph/reader/TigerXMLReader.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 91
+
+--------------------------------------------
+87] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/helper/Util.java; Line number 129
+vim +129 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/helper/Util.java
+
++++ Add following code below line: 142 (org/maltparser/core/helper/Util.java)
+finally{
+    try{ bis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 137 (org/maltparser/core/helper/Util.java)
+
+--------------------------------------------
+88] ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/helper/Util.java; Line number 130
+vim +130 ../../../../datasets/debug_supplemented_njr/url80e39b1957_tobikster_IJN_headers_recognition_tgz-pJ8-org_maltparser_examples_CreatePhraseStructureGraphJ8/src/org/maltparser/core/helper/Util.java
+
++++ Add following code below line: 142 (org/maltparser/core/helper/Util.java)
+finally{
+    try{ bos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 136 (org/maltparser/core/helper/Util.java)
+
+--------------------------------------------

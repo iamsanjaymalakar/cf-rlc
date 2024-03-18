@@ -1,0 +1,5 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^karlney/tetris/swing/Highscore.java^38^karlney.tetris.swing.Highscore.readFile()V^2 = new <Application,Ljava/io/FileInputStream>@0^karlney.tetris.swing.Highscore.readFile()V#5,^INVOKE,^false^false^Try-catch Fix;
+1^karlney/tetris/swing/Highscore.java^39^karlney.tetris.swing.Highscore.readFile()V^5 = new <Application,Ljava/io/ObjectInputStream>@11^karlney.tetris.swing.Highscore.readFile()V#2,^INVOKE,^true^false^Try-catch Fix;
+2^karlney/tetris/swing/Highscore.java^84^karlney.tetris.swing.Highscore.updateFile(I)V^3 = new <Application,Ljava/io/FileOutputStream>@0^karlney.tetris.swing.Highscore.updateFile(I)V#6,^INVOKE,^false^false^Try-catch Fix;
+3^karlney/tetris/swing/Highscore.java^85^karlney.tetris.swing.Highscore.updateFile(I)V^6 = new <Application,Ljava/io/ObjectOutputStream>@11^karlney.tetris.swing.Highscore.updateFile(I)V#3,^INVOKE,^true^false^Try-catch Fix;

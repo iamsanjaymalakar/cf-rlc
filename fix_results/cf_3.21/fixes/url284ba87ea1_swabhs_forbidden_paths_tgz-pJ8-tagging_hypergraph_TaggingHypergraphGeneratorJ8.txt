@@ -1,0 +1,41 @@
+8901
+1129
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/learning/InputReader.java; Line number 25
+vim +25 ../../../../datasets/debug_supplemented_njr/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/learning/InputReader.java
+
++++ Add following code below line: 38 (learning/InputReader.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/learning/InputReader.java; Line number 55
+vim +55 ../../../../datasets/debug_supplemented_njr/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/learning/InputReader.java
+
++++ Add following code below line: 79 (learning/InputReader.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/hypergraph/BaseTest.java; Line number 81
+vim +81 ../../../../datasets/debug_supplemented_njr/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/hypergraph/BaseTest.java
+
++++ Add following code below line: 113 (hypergraph/BaseTest.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/hypergraph/BaseTest.java; Line number 139
+vim +139 ../../../../datasets/debug_supplemented_njr/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/hypergraph/BaseTest.java
+
++++ Add following code below line: 161 (hypergraph/BaseTest.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

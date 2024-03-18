@@ -1,0 +1,29 @@
+8333
+619
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url913d8566d1_AnsBalin_rbn_tgz-pJ8-MainJ8/src/DataOutput.java; Line number 68
+vim +68 ../../../../datasets/debug_supplemented_njr/url913d8566d1_AnsBalin_rbn_tgz-pJ8-MainJ8/src/DataOutput.java
+
++++ Add following code above line:68 (DataOutput.java)
+try{
++++ Add following code after line:73 (DataOutput.java)
+}finally{
+    try{ oos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 74 (DataOutput.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url913d8566d1_AnsBalin_rbn_tgz-pJ8-MainJ8/src/DataOutput.java; Line number 80
+vim +80 ../../../../datasets/debug_supplemented_njr/url913d8566d1_AnsBalin_rbn_tgz-pJ8-MainJ8/src/DataOutput.java
+
++++ Add following code above line:80 (DataOutput.java)
+try{
++++ Add following code after line:83 (DataOutput.java)
+}finally{
+    try{ ois.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

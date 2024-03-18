@@ -1,0 +1,25 @@
+8103
+172
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url8f84d8d956_klapaukh_JTuttePoly_tgz-pJ8-BitTutteJ8/src/BitTutte.java; Line number 97
+vim +97 ../../../../datasets/debug_supplemented_njr/url8f84d8d956_klapaukh_JTuttePoly_tgz-pJ8-BitTutteJ8/src/BitTutte.java
+
++++ Add following code below line: 119 (BitTutte.java)
+finally{
+    try{ scan.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 113 (BitTutte.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url8f84d8d956_klapaukh_JTuttePoly_tgz-pJ8-BitTutteJ8/src/Tutte.java; Line number 68
+vim +68 ../../../../datasets/debug_supplemented_njr/url8f84d8d956_klapaukh_JTuttePoly_tgz-pJ8-BitTutteJ8/src/Tutte.java
+
++++ Add following code below line: 81 (Tutte.java)
+finally{
+    try{ scan.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

@@ -1,0 +1,29 @@
+17133
+1440
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url063b9533f6_karlney_tetris_ai_tgz-pJ8-karlney_tetris_cmd_TetrisGameRunnerJ8/src/karlney/tetris/swing/Highscore.java; Line number 38
+vim +38 ../../../dataset/june2020_dataset/url063b9533f6_karlney_tetris_ai_tgz-pJ8-karlney_tetris_cmd_TetrisGameRunnerJ8/src/karlney/tetris/swing/Highscore.java
+
++++ Add following code below line: 50 (karlney/tetris/swing/Highscore.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 38
+
++++ Delete Line number 47 (karlney/tetris/swing/Highscore.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url063b9533f6_karlney_tetris_ai_tgz-pJ8-karlney_tetris_cmd_TetrisGameRunnerJ8/src/karlney/tetris/swing/Highscore.java; Line number 84
+vim +84 ../../../dataset/june2020_dataset/url063b9533f6_karlney_tetris_ai_tgz-pJ8-karlney_tetris_cmd_TetrisGameRunnerJ8/src/karlney/tetris/swing/Highscore.java
+
++++ Add following code below line: 99 (karlney/tetris/swing/Highscore.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 84
+
++++ Delete Line number 96 (karlney/tetris/swing/Highscore.java)
+
+--------------------------------------------

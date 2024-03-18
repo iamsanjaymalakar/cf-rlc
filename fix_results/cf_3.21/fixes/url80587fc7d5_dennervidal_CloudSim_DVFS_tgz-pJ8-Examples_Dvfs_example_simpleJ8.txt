@@ -1,0 +1,81 @@
+11035
+1880
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/network/GraphReaderBrite.java; Line number 50
+vim +50 ../../../../datasets/debug_supplemented_njr/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/network/GraphReaderBrite.java
+
++++ Add following code above line:50 (org/cloudbus/cloudsim/network/GraphReaderBrite.java)
+try{
++++ Add following code after line:85 (org/cloudbus/cloudsim/network/GraphReaderBrite.java)
+}finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 87 (org/cloudbus/cloudsim/network/GraphReaderBrite.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/util/WorkloadFileReader.java; Line number 475
+vim +475 ../../../../datasets/debug_supplemented_njr/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/util/WorkloadFileReader.java
+
++++ Add following code above line:475 (org/cloudbus/cloudsim/util/WorkloadFileReader.java)
+try{
++++ Add following code after line:482 (org/cloudbus/cloudsim/util/WorkloadFileReader.java)
+}finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 484 (org/cloudbus/cloudsim/util/WorkloadFileReader.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/UtilizationModelStochastic.java; Line number 92
+vim +92 ../../../../datasets/debug_supplemented_njr/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/UtilizationModelStochastic.java
+
++++ Add following code above line:92 (org/cloudbus/cloudsim/UtilizationModelStochastic.java)
+try{
++++ Add following code after line:94 (org/cloudbus/cloudsim/UtilizationModelStochastic.java)
+}finally{
+    try{ oos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 95 (org/cloudbus/cloudsim/UtilizationModelStochastic.java)
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/UtilizationModelStochastic.java; Line number 106
+vim +106 ../../../../datasets/debug_supplemented_njr/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/UtilizationModelStochastic.java
+
++++ Add following code above line:106 (org/cloudbus/cloudsim/UtilizationModelStochastic.java)
+try{
++++ Add following code after line:108 (org/cloudbus/cloudsim/UtilizationModelStochastic.java)
+}finally{
+    try{ ois.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 109 (org/cloudbus/cloudsim/UtilizationModelStochastic.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/UtilizationModelPlanetLabInMemory.java; Line number 29
+vim +29 ../../../../datasets/debug_supplemented_njr/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/UtilizationModelPlanetLabInMemory.java
+
++++ Add following code above line:29 (org/cloudbus/cloudsim/UtilizationModelPlanetLabInMemory.java)
+try{
++++ Add following code after line:33 (org/cloudbus/cloudsim/UtilizationModelPlanetLabInMemory.java)
+}finally{
+    try{ input.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 35 (org/cloudbus/cloudsim/UtilizationModelPlanetLabInMemory.java)
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/workflow/WorkflowEngine.java; Line number 419
+vim +419 ../../../../datasets/debug_supplemented_njr/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/workflow/WorkflowEngine.java
+
++++ Add following code below line: 458 (org/cloudbus/cloudsim/workflow/WorkflowEngine.java)
+finally{
+    try{ fw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 455 (org/cloudbus/cloudsim/workflow/WorkflowEngine.java)
+
+--------------------------------------------

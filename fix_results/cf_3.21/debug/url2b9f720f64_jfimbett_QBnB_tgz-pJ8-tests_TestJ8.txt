@@ -1,0 +1,11 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^algorithms/StdIn.java^149^algorithms.StdIn.readAll()Ljava/lang/String;^9 = invokevirtual < Application, Ljava/util/Scanner, useDelimiter(Ljava/util/regex/Pattern;)Ljava/util/Scanner; > 6,7 @18 exception:8^NULL^INVOKE,^false^false^Normal Fix;
+1^algorithms/StdIn.java^151^algorithms.StdIn.readAll()Ljava/lang/String;^9 = invokevirtual < Application, Ljava/util/Scanner, useDelimiter(Ljava/util/regex/Pattern;)Ljava/util/Scanner; > 6,7 @18 exception:8^NULL^INVOKE,^true^false^Normal Fix;
+2^knapSavings/KnapSavings.java^151^knapSavings.KnapSavings.loadFromFile(Ljava/lang/String;)V^6 = new <Application,Ljava/io/FileReader>@9^knapSavings.KnapSavings.loadFromFile(Ljava/lang/String;)V#8,^INVOKE,^false^false^Normal Fix;
+3^tests/Test.java^83^tests.Test.loadFromFile(Ljava/lang/String;)V^9 = new <Application,Ljava/io/FileReader>@15^tests.Test.loadFromFile(Ljava/lang/String;)V#11,^INVOKE,^false^false^Normal Fix;
+4^tests/KnapsackInstances.java^23^tests.KnapsackInstances.loadFromFile(Ljava/lang/String;)V^6 = new <Application,Ljava/io/FileReader>@9^tests.KnapsackInstances.loadFromFile(Ljava/lang/String;)V#8,^INVOKE,^false^false^Normal Fix;
+5^algorithms/StdIn.java^109^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+6^algorithms/StdIn.java^111^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+7^algorithms/StdIn.java^132^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+8^algorithms/StdIn.java^136^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+9^algorithms/StdIn.java^310^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

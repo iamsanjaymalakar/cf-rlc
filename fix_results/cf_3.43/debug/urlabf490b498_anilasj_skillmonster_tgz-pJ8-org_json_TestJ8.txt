@@ -1,0 +1,6 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^org/json/Test.java^474^org.json.Test.main([Ljava/lang/String;)V^1183 = new <Application,Ljava/io/StringWriter>@3179^NULL^INVOKE,^false^false^Try-catch Fix;
+1^org/json/JSONArray.java^904^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+2^org/json/JSONArray.java^906^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+3^org/json/JSONObject.java^1570^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+4^org/json/JSONObject.java^1572^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

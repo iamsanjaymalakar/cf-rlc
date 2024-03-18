@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^cn/jpush/api/HttpPostClient.java^64^cn.jpush.api.HttpPostClient.sendPost(Ljava/lang/String;Z[B)Lcn/jpush/api/MessageResult;^62 = invokevirtual < Application, Ljava/net/HttpURLConnection, getInputStream()Ljava/io/InputStream; > 15 @153 exception:61^cn.jpush.api.HttpPostClient.sendPost(Ljava/lang/String;Z[B)Lcn/jpush/api/MessageResult;#65,^INVOKE,^false^false^Try-catch Fix;

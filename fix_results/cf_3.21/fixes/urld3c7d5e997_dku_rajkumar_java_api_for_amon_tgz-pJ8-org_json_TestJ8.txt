@@ -1,0 +1,28 @@
+7880
+616
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urld3c7d5e997_dku_rajkumar_java_api_for_amon_tgz-pJ8-org_json_TestJ8/src/org/amon/AmonLogger.java; Line number 59
+vim +59 ../../../../datasets/debug_supplemented_njr/urld3c7d5e997_dku_rajkumar_java_api_for_amon_tgz-pJ8-org_json_TestJ8/src/org/amon/AmonLogger.java
+
++++ Add following code above line:59 (org/amon/AmonLogger.java)
+try{
++++ Add following code after line:60 (org/amon/AmonLogger.java)
+}finally{
+    try{ writer.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 61 (org/amon/AmonLogger.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/urld3c7d5e997_dku_rajkumar_java_api_for_amon_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java; Line number 348
+vim +348 ../../../../datasets/debug_supplemented_njr/urld3c7d5e997_dku_rajkumar_java_api_for_amon_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java
+
++++ Add following code below line: 437 (org/json/Test.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 348
+
+--------------------------------------------

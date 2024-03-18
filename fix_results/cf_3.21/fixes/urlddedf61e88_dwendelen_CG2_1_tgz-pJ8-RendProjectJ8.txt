@@ -1,0 +1,16 @@
+7897
+34
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urlddedf61e88_dwendelen_CG2_1_tgz-pJ8-RendProjectJ8/src/ImagePack/RGBEFormat.java; Line number 28
+vim +28 ../../../../datasets/debug_supplemented_njr/urlddedf61e88_dwendelen_CG2_1_tgz-pJ8-RendProjectJ8/src/ImagePack/RGBEFormat.java
+
++++ Add following code above line:28 (ImagePack/RGBEFormat.java)
+try{
++++ Add following code after line:30 (ImagePack/RGBEFormat.java)
+}finally{
+    try{ os.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

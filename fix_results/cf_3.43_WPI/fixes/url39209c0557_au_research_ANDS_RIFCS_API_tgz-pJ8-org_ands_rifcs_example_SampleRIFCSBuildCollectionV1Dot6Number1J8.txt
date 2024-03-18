@@ -1,0 +1,113 @@
+17419
+194
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java; Line number 244
+vim +244 ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java
+
++++ Add following code above line:243 (org/ands/rifcs/base/RIFCSWrapper.java)
+try{
++++ Add following code after line:244 (org/ands/rifcs/base/RIFCSWrapper.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 244
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java; Line number 246
+vim +246 ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java
+
++++ Add following code above line:245 (org/ands/rifcs/base/RIFCSWrapper.java)
+try{
++++ Add following code after line:246 (org/ands/rifcs/base/RIFCSWrapper.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 246
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java; Line number 248
+vim +248 ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java
+
++++ Add following code above line:247 (org/ands/rifcs/base/RIFCSWrapper.java)
+try{
++++ Add following code after line:248 (org/ands/rifcs/base/RIFCSWrapper.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 248
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java; Line number 250
+vim +250 ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java
+
++++ Add following code above line:249 (org/ands/rifcs/base/RIFCSWrapper.java)
+try{
++++ Add following code after line:250 (org/ands/rifcs/base/RIFCSWrapper.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 250
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java; Line number 252
+vim +252 ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java
+
++++ Add following code above line:251 (org/ands/rifcs/base/RIFCSWrapper.java)
+try{
++++ Add following code after line:252 (org/ands/rifcs/base/RIFCSWrapper.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 252
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java; Line number 254
+vim +254 ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java
+
++++ Add following code above line:253 (org/ands/rifcs/base/RIFCSWrapper.java)
+try{
++++ Add following code after line:254 (org/ands/rifcs/base/RIFCSWrapper.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 254
+
+--------------------------------------------
+6] ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java; Line number 256
+vim +256 ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java
+
++++ Add following code above line:255 (org/ands/rifcs/base/RIFCSWrapper.java)
+try{
++++ Add following code after line:256 (org/ands/rifcs/base/RIFCSWrapper.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 256
+
+--------------------------------------------
+7] ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java; Line number 362
+vim +362 ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/base/RIFCSWrapper.java
+
++++ Add following code above line:362 (org/ands/rifcs/base/RIFCSWrapper.java)
+try{
++++ Add following code after line:362 (org/ands/rifcs/base/RIFCSWrapper.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 362
+
+--------------------------------------------
+8] ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/example/SampleRIFCSRead.java; Line number 62
+vim +62 ../../../dataset/june2020_dataset/url39209c0557_au_research_ANDS_RIFCS_API_tgz-pJ8-org_ands_rifcs_example_SampleRIFCSBuildCollectionV1Dot6Number1J8/src/org/ands/rifcs/example/SampleRIFCSRead.java
+
++++ Add following code above line:62 (org/ands/rifcs/example/SampleRIFCSRead.java)
+try{
++++ Add following code after line:62 (org/ands/rifcs/example/SampleRIFCSRead.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 62
+
+--------------------------------------------

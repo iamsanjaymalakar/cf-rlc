@@ -1,6 +1,0 @@
-Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
-0^com/sdm/phr/cpabe/Common.java^15^com.sdm.phr.cpabe.Common.suckFile(Ljava/lang/String;)[B^3 = new <Application,Ljava/io/FileInputStream>@0^NULL^INVOKE,^false^false^Normal Fix;
-1^com/sdm/phr/cpabe/Common.java^27^com.sdm.phr.cpabe.Common.spitFile(Ljava/lang/String;[B)V^4 = new <Application,Ljava/io/FileOutputStream>@0^NULL^INVOKE,^false^false^Normal Fix;
-2^com/sdm/phr/cpabe/Common.java^35^com.sdm.phr.cpabe.Common.writeCpabeFile(Ljava/lang/String;[B[B)V^5 = new <Application,Ljava/io/FileOutputStream>@0^NULL^INVOKE,^false^false^Normal Fix;
-3^com/sdm/phr/cpabe/Common.java^82^com.sdm.phr.cpabe.Common.readCpabeFile(Ljava/lang/String;)[[B^3 = new <Application,Ljava/io/FileInputStream>@0^NULL^INVOKE,^false^false^Normal Fix;
-4^com/sdm/phr/CryptoUtil.java^17^com.sdm.phr.CryptoUtil.getFileChecksum(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;^11 = new <Application,Ljava/io/FileInputStream>@19^NULL^INVOKE,^false^false^Try-catch Fix;

@@ -1,0 +1,88 @@
+Warning: App class not in appMethodsMap - Luk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler for warning: uk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler.java,107
+Warning: App class not in appMethodsMap - Luk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler for warning: uk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler.java,107
+Warning: App class not in appMethodsMap - Luk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler for warning: uk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler.java,107
+Warning: App class not in appMethodsMap - Luk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler for warning: uk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler.java,107
+Warning: App class not in appMethodsMap - Luk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler for warning: uk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler.java,107
+Warning: App class not in appMethodsMap - Luk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler for warning: uk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler.java,107
+Warning: App class not in appMethodsMap - Luk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler for warning: uk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler.java,107
+Warning: App class not in appMethodsMap - Luk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler for warning: uk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler.java,114
+Warning: App class not in appMethodsMap - Luk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler for warning: uk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler.java,114
+Warning: App class not in appMethodsMap - Luk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler for warning: uk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler.java,114
+Warning: App class not in appMethodsMap - Luk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler for warning: uk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler.java,114
+Warning: App class not in appMethodsMap - Luk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler for warning: uk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler.java,114
+Warning: App class not in appMethodsMap - Luk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler for warning: uk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler.java,114
+Warning: App class not in appMethodsMap - Luk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler for warning: uk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler.java,114
+25174
+2192
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/io/Generic_StaticIO.java; Line number 348
+vim +348 ../../../dataset/june2020_dataset/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/io/Generic_StaticIO.java
+
++++ NOTE: Resource escapes via return statement and needs to be closed in the callers of getObjectInputStream
++++ Add following code below line: 138 (uk/ac/leeds/ccg/andyt/generic/io/Generic_StaticIO.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 127
+
++++ Delete Line number 129 (uk/ac/leeds/ccg/andyt/generic/io/Generic_StaticIO.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/io/Generic_StaticIO.java; Line number 364
+vim +364 ../../../dataset/june2020_dataset/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/io/Generic_StaticIO.java
+
++++ NOTE: Resource escapes via return statement and needs to be closed in the callers of getObjectOutputStream
++++ Add following code below line: 112 (uk/ac/leeds/ccg/andyt/generic/io/Generic_StaticIO.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 104
+
++++ Delete Line number 107 (uk/ac/leeds/ccg/andyt/generic/io/Generic_StaticIO.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/io/Generic_ReadCSV.java; Line number 50
+vim +50 ../../../dataset/june2020_dataset/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/io/Generic_ReadCSV.java
+
++++ Add following code above line:92 (uk/ac/leeds/ccg/andyt/generic/io/Generic_ReadCSV.java)
+try{ 
++++ Add following code below line:92 (uk/ac/leeds/ccg/andyt/generic/io/Generic_ReadCSV.java)
+} catch(Exception e){ 
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+    throw e; 
+}
++++ Add following code above line:129 (uk/ac/leeds/ccg/andyt/generic/io/Generic_ReadCSV.java)
+try{
+    <NEW_VARIABLE>.close();
+} catch(Exception e){ e.printStackTrace(); }
+// where variable <NEW_VARIABLE> points to the resource from line 50
+
++++ Delete Line number 122 (uk/ac/leeds/ccg/andyt/generic/io/Generic_ReadCSV.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/io/Generic_ReadCSV.java; Line number 58
+vim +58 ../../../dataset/june2020_dataset/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/io/Generic_ReadCSV.java
+
++++ Add following code below line: 125 (uk/ac/leeds/ccg/andyt/generic/io/Generic_ReadCSV.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 58
+
++++ Delete Line number 120 (uk/ac/leeds/ccg/andyt/generic/io/Generic_ReadCSV.java)
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/logging/Generic_Log.java; Line number 138
+vim +138 ../../../dataset/june2020_dataset/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/logging/Generic_Log.java
+
++++ Add following code below line: 145 (uk/ac/leeds/ccg/andyt/generic/logging/Generic_Log.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 138
+
++++ Delete Line number 140 (uk/ac/leeds/ccg/andyt/generic/logging/Generic_Log.java)
+
+--------------------------------------------

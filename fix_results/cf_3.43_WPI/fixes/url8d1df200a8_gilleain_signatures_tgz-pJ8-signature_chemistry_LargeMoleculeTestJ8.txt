@@ -1,0 +1,55 @@
+16826
+1266
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/LargeMoleculeTest.java; Line number 211
+vim +211 ../../../dataset/june2020_dataset/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/LargeMoleculeTest.java
+
++++ Add following code above line:211 (signature/chemistry/LargeMoleculeTest.java)
+try{
++++ Add following code after line:220 (signature/chemistry/LargeMoleculeTest.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 211
+
++++ Delete Line number 221 (signature/chemistry/LargeMoleculeTest.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/LargeMoleculeTest.java; Line number 227
+vim +227 ../../../dataset/june2020_dataset/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/LargeMoleculeTest.java
+
++++ Add following code above line:227 (signature/chemistry/LargeMoleculeTest.java)
+try{
++++ Add following code after line:234 (signature/chemistry/LargeMoleculeTest.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 227
+
++++ Delete Line number 235 (signature/chemistry/LargeMoleculeTest.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/MoleculeReader.java; Line number 22
+vim +22 ../../../dataset/june2020_dataset/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/MoleculeReader.java
+
++++ Add following code below line: 34 (signature/chemistry/MoleculeReader.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 22
+
++++ Delete Line number 29 (signature/chemistry/MoleculeReader.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/MoleculeReader.java; Line number 48
+vim +48 ../../../dataset/june2020_dataset/url8d1df200a8_gilleain_signatures_tgz-pJ8-signature_chemistry_LargeMoleculeTestJ8/src/signature/chemistry/MoleculeReader.java
+
++++ Add following code below line: 51 (signature/chemistry/MoleculeReader.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 48
+
+--------------------------------------------

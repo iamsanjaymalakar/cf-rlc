@@ -1,0 +1,23 @@
+13953
+204
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urld8e41b4f7f_warrenfalk_jbox2dtest_tgz-pJ8-org_jbox2d_testbed_framework_TestbedMainJ8/src/org/jbox2d/testbed/framework/TestbedTest.java; Line number 411
+vim +411 ../../../../datasets/debug_supplemented_njr/urld8e41b4f7f_warrenfalk_jbox2dtest_tgz-pJ8-org_jbox2d_testbed_framework_TestbedMainJ8/src/org/jbox2d/testbed/framework/TestbedTest.java
+
++++ Add following code below line: 427 (org/jbox2d/testbed/framework/TestbedTest.java)
+finally{
+    try{ fos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/urld8e41b4f7f_warrenfalk_jbox2dtest_tgz-pJ8-org_jbox2d_testbed_framework_TestbedMainJ8/src/org/jbox2d/testbed/framework/TestbedTest.java; Line number 435
+vim +435 ../../../../datasets/debug_supplemented_njr/urld8e41b4f7f_warrenfalk_jbox2dtest_tgz-pJ8-org_jbox2d_testbed_framework_TestbedMainJ8/src/org/jbox2d/testbed/framework/TestbedTest.java
+
++++ Add following code below line: 458 (org/jbox2d/testbed/framework/TestbedTest.java)
+finally{
+    try{ fis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

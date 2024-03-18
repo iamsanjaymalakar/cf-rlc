@@ -1,0 +1,74 @@
+15178
+703
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/nextgen/dao/FileManager.java; Line number 31
+vim +31 ../../../../datasets/debug_supplemented_njr/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/nextgen/dao/FileManager.java
+
++++ Add following code above line:31 (nextgen/dao/FileManager.java)
+try{
++++ Add following code after line:37 (nextgen/dao/FileManager.java)
+}finally{
+    try{ buffer.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 40 (nextgen/dao/FileManager.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/nextgen/dao/FileManager.java; Line number 69
+vim +69 ../../../../datasets/debug_supplemented_njr/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/nextgen/dao/FileManager.java
+
++++ Add following code below line: 75 (nextgen/dao/FileManager.java)
+finally{
+    try{ bw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 72 (nextgen/dao/FileManager.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/nextgen/dao/FileManager.java; Line number 123
+vim +123 ../../../../datasets/debug_supplemented_njr/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/nextgen/dao/FileManager.java
+
++++ Add following code above line:123 (nextgen/dao/FileManager.java)
+try{
++++ Add following code after line:132 (nextgen/dao/FileManager.java)
+}finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 134 (nextgen/dao/FileManager.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/nextgen/dao/FileManager.java; Line number 124
+vim +124 ../../../../datasets/debug_supplemented_njr/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/nextgen/dao/FileManager.java
+
++++ Add following code above line:124 (nextgen/dao/FileManager.java)
+try{
++++ Add following code after line:132 (nextgen/dao/FileManager.java)
+}finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 135 (nextgen/dao/FileManager.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/lib/GUIHelper.java; Line number 26
+vim +26 ../../../../datasets/debug_supplemented_njr/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/lib/GUIHelper.java
+
++++ Add following code below line: 32 (lib/GUIHelper.java)
+finally{
+    try{ imgStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/lib/json/Test.java; Line number 478
+vim +478 ../../../../datasets/debug_supplemented_njr/urle514e161fe_pericodiaz89_NextGen_tgz-pJ8-lib_json_TestJ8/src/lib/json/Test.java
+
++++ Add following code below line: 680 (lib/json/Test.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 478
+
+--------------------------------------------

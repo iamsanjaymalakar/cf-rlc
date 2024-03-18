@@ -1,0 +1,4 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^rummikub/Server.java^208^rummikub.Server.acceptClients()V^23 = new <Application,Ljava/net/ServerSocket>@42^NULL^FIELD,^false^true^Field escape;
+1^rummikub/Server.java^217^rummikub.Server.acceptClients()V^55 = invokevirtual < Application, Ljava/net/ServerSocket, accept()Ljava/net/Socket; > 53 @123 exception:54^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+2^rummikub/Client.java^62^rummikub.Client.connect(Ljava/lang/String;I)I^5 = new <Application,Ljava/net/Socket>@1^NULL^FIELD,^false^true^Field escape;

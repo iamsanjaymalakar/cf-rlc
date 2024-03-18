@@ -1,0 +1,9 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^permlab/ui/TextFrame.java^120^permlab.ui.TextFrame.saveActionPerformed(Ljava/awt/event/ActionEvent;)V^15 = new <Application,Ljava/io/FileWriter>@25^NULL^INVOKE,^false^false^Try-catch Fix;
+1^permlab/ui/TextFrame.java^139^permlab.ui.TextFrame.openActionPerformed(Ljava/awt/event/ActionEvent;)V^15 = new <Application,Ljava/io/FileReader>@25^NULL^INVOKE,^false^false^Try-catch Fix;
+2^permlab/ui/AnimatedPermFrame.java^555^permlab.ui.AnimatedPermFrame.exportPermCollectionAsGIF([Lpermlib/Permutation;II)V^36 = invokestatic < Application, Ljavax/imageio/ImageIO, createImageOutputStream(Ljava/lang/Object;)Ljavax/imageio/stream/ImageOutputStream; > 17 @116 exception:35^NULL^INVOKE,^false^false^Try-catch Fix;
+3^permlab/utilities/ExportType.java^204^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+4^permlab/utilities/ExportType.java^206^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+5^permlab/utilities/ExportType.java^341^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+6^permlab/utilities/ExportType.java^471^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+7^permlab/utilities/ExportType.java^751^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

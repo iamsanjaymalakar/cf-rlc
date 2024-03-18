@@ -1,0 +1,106 @@
+29302
+5803
+
+SOURCE LEVEL FIXES
+
+1] ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java; Line number 162
+vim +162 ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java
+
++++ Add following code above line:162 (grinder/controller/Controller.java)
+try{ 
++++ Add following code below line:164 (grinder/controller/Controller.java)
+} catch(Exception e){ 
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+    throw e; 
+}
++++ Add following code below line: 196 (grinder/controller/Controller.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 162
+
+--------------------------------------------
+9] ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/LogFiler.java; Line number 117
+vim +117 ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/LogFiler.java
+
++++ Add following code above line:117 (grinder/client/LogFiler.java)
+try{
++++ Add following code after line:132 (grinder/client/LogFiler.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 117
+
++++ Delete Line number 139 (grinder/client/LogFiler.java)
+
+--------------------------------------------
+11] ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/user/Browser.java; Line number 201
+vim +201 ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/user/Browser.java
+
++++ Add following code below line: 213 (grinder/client/user/Browser.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 201
+
+--------------------------------------------
+16] ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/wikipedia/utils/URLUtils.java; Line number 61
+vim +61 ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/wikipedia/utils/URLUtils.java
+
++++ Add following code above line:61 (wikipedia/utils/URLUtils.java)
+try{
++++ Add following code after line:67 (wikipedia/utils/URLUtils.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 61
+
+--------------------------------------------
+20] ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java; Line number 474
+vim +474 ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java
+
++++ Add following code below line: 676 (org/json/Test.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 474
+
+--------------------------------------------
+21] ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/trash/HttpServer.java; Line number 30
+vim +30 ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/trash/HttpServer.java
+
++++ Add following code below line: 92 (trash/HttpServer.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 30
+
+--------------------------------------------
+22] ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/trash/HttpServer.java; Line number 35
+vim +35 ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/trash/HttpServer.java
+
++++ Add following code above line:35 (trash/HttpServer.java)
+try{
++++ Add following code after line:41 (trash/HttpServer.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 35
+
++++ Delete Line number 80 (trash/HttpServer.java)
+
+--------------------------------------------
+23] ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/trash/HttpServer.java; Line number 58
+vim +58 ../../../dataset/june2020_dataset/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/trash/HttpServer.java
+
++++ Add following code above line:58 (trash/HttpServer.java)
+try{
++++ Add following code after line:65 (trash/HttpServer.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 58
+
++++ Delete Line number 67 (trash/HttpServer.java)
+
+--------------------------------------------

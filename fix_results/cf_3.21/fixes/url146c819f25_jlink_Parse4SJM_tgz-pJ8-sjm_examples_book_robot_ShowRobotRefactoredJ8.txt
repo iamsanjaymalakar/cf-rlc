@@ -1,0 +1,29 @@
+18084
+199
+
+SOURCE LEVEL FIXES
+
+1] ../../../../datasets/debug_supplemented_njr/url146c819f25_jlink_Parse4SJM_tgz-pJ8-sjm_examples_book_robot_ShowRobotRefactoredJ8/src/sjm/examples/book/coffee/ShowCoffee.java; Line number 30
+vim +30 ../../../../datasets/debug_supplemented_njr/url146c819f25_jlink_Parse4SJM_tgz-pJ8-sjm_examples_book_robot_ShowRobotRefactoredJ8/src/sjm/examples/book/coffee/ShowCoffee.java
+
++++ Add following code above line:30 (sjm/examples/book/coffee/ShowCoffee.java)
+try{
++++ Add following code after line:44 (sjm/examples/book/coffee/ShowCoffee.java)
+}finally{
+    try{ r.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url146c819f25_jlink_Parse4SJM_tgz-pJ8-sjm_examples_book_robot_ShowRobotRefactoredJ8/src/sjm/examples/book/tokens/ShowSuppliedReader.java; Line number 21
+vim +21 ../../../../datasets/debug_supplemented_njr/url146c819f25_jlink_Parse4SJM_tgz-pJ8-sjm_examples_book_robot_ShowRobotRefactoredJ8/src/sjm/examples/book/tokens/ShowSuppliedReader.java
+
++++ Add following code above line:21 (sjm/examples/book/tokens/ShowSuppliedReader.java)
+try{
++++ Add following code after line:22 (sjm/examples/book/tokens/ShowSuppliedReader.java)
+}finally{
+    try{ fw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 23 (sjm/examples/book/tokens/ShowSuppliedReader.java)
+
+--------------------------------------------

@@ -1,0 +1,26 @@
+14179
+1022
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/gui/quantum/Item.java; Line number 74
+vim +74 ../../../../datasets/debug_supplemented_njr/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/gui/quantum/Item.java
+
++++ Add following code below line: 77 (martin/gui/quantum/Item.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 74
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/translatortest/QCGate.java; Line number 149
+vim +149 ../../../../datasets/debug_supplemented_njr/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/translatortest/QCGate.java
+
++++ Add following code above line:149 (martin/translatortest/QCGate.java)
+try{
++++ Add following code after line:165 (martin/translatortest/QCGate.java)
+}finally{
+    try{ input.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

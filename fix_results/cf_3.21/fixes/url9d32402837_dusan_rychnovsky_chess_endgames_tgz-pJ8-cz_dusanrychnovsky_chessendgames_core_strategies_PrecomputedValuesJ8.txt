@@ -1,0 +1,18 @@
+12976
+1905
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url9d32402837_dusan_rychnovsky_chess_endgames_tgz-pJ8-cz_dusanrychnovsky_chessendgames_core_strategies_PrecomputedValuesJ8/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java; Line number 61
+vim +61 ../../../../datasets/debug_supplemented_njr/url9d32402837_dusan_rychnovsky_chess_endgames_tgz-pJ8-cz_dusanrychnovsky_chessendgames_core_strategies_PrecomputedValuesJ8/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java
+
++++ Add following code above line:61 (cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java)
+try{
++++ Add following code after line:64 (cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java)
+}finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 65 (cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java)
+
+--------------------------------------------

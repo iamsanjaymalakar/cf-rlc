@@ -1,0 +1,7 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^org/amon/AmonLogger.java^59^org.amon.AmonLogger.send(Ljava/lang/String;Ljava/net/HttpURLConnection;)V^5 = new <Application,Ljava/io/OutputStreamWriter>@0^org.amon.AmonLogger.send(Ljava/lang/String;Ljava/net/HttpURLConnection;)V#7,^INVOKE,^false^false^Normal Fix;
+1^org/json/Test.java^348^org.json.Test.main([Ljava/lang/String;)V^1019 = new <Application,Ljava/io/StringWriter>@2640^NULL^INVOKE,^false^false^Try-catch Fix;
+2^org/json/JSONObject.java^1248^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+3^org/json/JSONObject.java^1250^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+4^org/json/JSONArray.java^857^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+5^org/json/JSONArray.java^859^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

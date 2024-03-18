@@ -1,0 +1,63 @@
+7419
+263
+
+SOURCE LEVEL FIXES
+
+1] ../../../../datasets/debug_supplemented_njr/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/DefenderHelper.java; Line number 66
+vim +66 ../../../../datasets/debug_supplemented_njr/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/DefenderHelper.java
+
++++ Add following code below line: 122 (securitygame/DefenderHelper.java)
+finally{
+    try{ parser.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 119 (securitygame/DefenderHelper.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/Parser.java; Line number 31
+vim +31 ../../../../datasets/debug_supplemented_njr/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/Parser.java
+
++++ Add following code below line: 82 (securitygame/Parser.java)
+finally{
+    try{ parser.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/Parser.java; Line number 32
+vim +32 ../../../../datasets/debug_supplemented_njr/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/Parser.java
+
++++ Add following code below line: 82 (securitygame/Parser.java)
+finally{
+    try{ parseRecords.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/Parser.java; Line number 105
+vim +105 ../../../../datasets/debug_supplemented_njr/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/Parser.java
+
++++ Add following code below line: 208 (securitygame/Parser.java)
+finally{
+    try{ parser.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/Parser.java; Line number 226
+vim +226 ../../../../datasets/debug_supplemented_njr/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/Parser.java
+
++++ Add following code below line: 261 (securitygame/Parser.java)
+finally{
+    try{ parser.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/AttackerMonitor.java; Line number 86
+vim +86 ../../../../datasets/debug_supplemented_njr/url9a01f43c15_poragchowdhury_securitygame_tgz-pJ8-securitygame_GameMasterJ8/src/securitygame/AttackerMonitor.java
+
++++ Add following code below line: 243 (securitygame/AttackerMonitor.java)
+finally{
+    try{ parser.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 238 (securitygame/AttackerMonitor.java)
+
+--------------------------------------------

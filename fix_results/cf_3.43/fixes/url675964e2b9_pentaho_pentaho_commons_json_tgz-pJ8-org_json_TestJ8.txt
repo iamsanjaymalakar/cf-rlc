@@ -1,0 +1,15 @@
+9948
+221
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url675964e2b9_pentaho_pentaho_commons_json_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java; Line number 438
+vim +438 ../../../dataset/june2020_dataset/url675964e2b9_pentaho_pentaho_commons_json_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java
+
++++ Add following code below line: 593 (org/json/Test.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 438
+
+--------------------------------------------

@@ -1,0 +1,29 @@
+11965
+872
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/urlb3290c8e9e_craigonic_jasl_tgz-pJ8-DriverJ8/src/jasl/utilities/Serialization.java; Line number 70
+vim +70 ../../../dataset/june2020_dataset/urlb3290c8e9e_craigonic_jasl_tgz-pJ8-DriverJ8/src/jasl/utilities/Serialization.java
+
++++ Add following code below line: 78 (jasl/utilities/Serialization.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 69
+
++++ Delete Line number 72 (jasl/utilities/Serialization.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/urlb3290c8e9e_craigonic_jasl_tgz-pJ8-DriverJ8/src/jasl/utilities/Serialization.java; Line number 123
+vim +123 ../../../dataset/june2020_dataset/urlb3290c8e9e_craigonic_jasl_tgz-pJ8-DriverJ8/src/jasl/utilities/Serialization.java
+
++++ Add following code below line: 136 (jasl/utilities/Serialization.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 122
+
++++ Delete Line number 125 (jasl/utilities/Serialization.java)
+
+--------------------------------------------

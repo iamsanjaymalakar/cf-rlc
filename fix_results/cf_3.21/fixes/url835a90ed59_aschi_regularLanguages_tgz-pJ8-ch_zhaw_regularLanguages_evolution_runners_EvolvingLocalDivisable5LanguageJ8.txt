@@ -1,0 +1,49 @@
+9498
+395
+
+SOURCE LEVEL FIXES
+
+1] ../../../../datasets/debug_supplemented_njr/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/fr/loria/graphViz/GraphViz.java; Line number 170
+vim +170 ../../../../datasets/debug_supplemented_njr/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/fr/loria/graphViz/GraphViz.java
+
++++ Add following code below line: 173 (fr/loria/graphViz/GraphViz.java)
+finally{
+    try{ fos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 172 (fr/loria/graphViz/GraphViz.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/fr/loria/graphViz/GraphViz.java; Line number 199
+vim +199 ../../../../datasets/debug_supplemented_njr/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/fr/loria/graphViz/GraphViz.java
+
++++ Add following code below line: 216 (fr/loria/graphViz/GraphViz.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 203 (fr/loria/graphViz/GraphViz.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/fr/loria/graphViz/GraphViz.java; Line number 232
+vim +232 ../../../../datasets/debug_supplemented_njr/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/fr/loria/graphViz/GraphViz.java
+
++++ Add following code below line: 239 (fr/loria/graphViz/GraphViz.java)
+finally{
+    try{ fout.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 234 (fr/loria/graphViz/GraphViz.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/fr/loria/graphViz/GraphViz.java; Line number 271
+vim +271 ../../../../datasets/debug_supplemented_njr/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/fr/loria/graphViz/GraphViz.java
+
++++ Add following code below line: 282 (fr/loria/graphViz/GraphViz.java)
+finally{
+    try{ dis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 278 (fr/loria/graphViz/GraphViz.java)
+
+--------------------------------------------

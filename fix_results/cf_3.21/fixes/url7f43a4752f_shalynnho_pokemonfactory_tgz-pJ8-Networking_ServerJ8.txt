@@ -1,0 +1,260 @@
+25267
+9845
+
+SOURCE LEVEL FIXES
+
+3] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Networking/Server.java; Line number 471
+vim +471 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Networking/Server.java
+
++++ Add following code below line: 495 (Networking/Server.java)
+finally{
+    try{ outputKC.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 485 (Networking/Server.java)
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Networking/Server.java; Line number 478
+vim +478 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Networking/Server.java
+
++++ Add following code below line: 495 (Networking/Server.java)
+finally{
+    try{ outputPT.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 486 (Networking/Server.java)
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ConsoleWriter.java; Line number 197
+vim +197 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ConsoleWriter.java
+
++++ Add following code below line: 205 (Utils/ConsoleWriter.java)
+finally{
+    try{ output.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ConsoleWriter.java; Line number 200
+vim +200 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ConsoleWriter.java
+
++++ Add following code below line: 205 (Utils/ConsoleWriter.java)
+finally{
+    try{ response.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+12] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java; Line number 61
+vim +61 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java
+
++++ Add following code below line: 69 (manager/FPMMusicAgent.java)
+finally{
+    try{ audioIn.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+13] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java; Line number 72
+vim +72 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java
+
++++ Add following code below line: 77 (manager/FPMMusicAgent.java)
+finally{
+    try{ pokeAudioIn.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java; Line number 80
+vim +80 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java
+
++++ Add following code below line: 85 (manager/FPMMusicAgent.java)
+finally{
+    try{ recoverAudioIn.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+15] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java; Line number 88
+vim +88 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java
+
++++ Add following code below line: 93 (manager/FPMMusicAgent.java)
+finally{
+    try{ audioIn.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+16] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java; Line number 96
+vim +96 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java
+
++++ Add following code below line: 101 (manager/FPMMusicAgent.java)
+finally{
+    try{ audioIn.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+17] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java; Line number 126
+vim +126 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java
+
++++ Add following code below line: 132 (manager/FactoryProductionManager.java)
+finally{
+    try{ audioIn.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+18] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java; Line number 135
+vim +135 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java
+
++++ Add following code below line: 140 (manager/FactoryProductionManager.java)
+finally{
+    try{ pokeAudioIn.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+19] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java; Line number 143
+vim +143 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java
+
++++ Add following code below line: 148 (manager/FactoryProductionManager.java)
+finally{
+    try{ recoverAudioIn.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+20] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java; Line number 151
+vim +151 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java
+
++++ Add following code below line: 156 (manager/FactoryProductionManager.java)
+finally{
+    try{ audioIn.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+21] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java; Line number 159
+vim +159 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java
+
++++ Add following code below line: 164 (manager/FactoryProductionManager.java)
+finally{
+    try{ audioIn.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+22] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/StringUtil.java; Line number 381
+vim +381 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/StringUtil.java
+
++++ Add following code above line:381 (Utils/StringUtil.java)
+try{
++++ Add following code after line:381 (Utils/StringUtil.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 381
+
+--------------------------------------------
+23] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ReadSaveData.java; Line number 31
+vim +31 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ReadSaveData.java
+
++++ Add following code below line: 44 (Utils/ReadSaveData.java)
+finally{
+    try{ buffer.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 40 (Utils/ReadSaveData.java)
+
+--------------------------------------------
+24] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ReadSaveData.java; Line number 58
+vim +58 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ReadSaveData.java
+
++++ Add following code below line: 72 (Utils/ReadSaveData.java)
+finally{
+    try{ buffer.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 68 (Utils/ReadSaveData.java)
+
+--------------------------------------------
+25] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/com/ptzlabs/debug/MessageListenServlet.java; Line number 40
+vim +40 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/com/ptzlabs/debug/MessageListenServlet.java
+
++++ Add following code above line:40 (com/ptzlabs/debug/MessageListenServlet.java)
+try{
++++ Add following code after line:40 (com/ptzlabs/debug/MessageListenServlet.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 40
+
+--------------------------------------------
+26] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/com/ptzlabs/debug/MessageListenServlet.java; Line number 53
+vim +53 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/com/ptzlabs/debug/MessageListenServlet.java
+
++++ Add following code above line:53 (com/ptzlabs/debug/MessageListenServlet.java)
+try{
++++ Add following code after line:53 (com/ptzlabs/debug/MessageListenServlet.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 53
+
+--------------------------------------------
+27] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/com/ptzlabs/debug/MessageListenServlet.java; Line number 69
+vim +69 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/com/ptzlabs/debug/MessageListenServlet.java
+
++++ Add following code above line:69 (com/ptzlabs/debug/MessageListenServlet.java)
+try{
++++ Add following code after line:69 (com/ptzlabs/debug/MessageListenServlet.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 69
+
+--------------------------------------------
+28] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_KitRobotAgent_Test_NormativeScenario.java; Line number 355
+vim +355 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_KitRobotAgent_Test_NormativeScenario.java
+
++++ Add following code below line: 362 (agent/test/V0_JUnit_KitRobotAgent_Test_NormativeScenario.java)
+finally{
+    try{ oos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 359 (agent/test/V0_JUnit_KitRobotAgent_Test_NormativeScenario.java)
+
+--------------------------------------------
+30] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_ConveyorAgent_Test_NormativeScenario.java; Line number 200
+vim +200 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_ConveyorAgent_Test_NormativeScenario.java
+
++++ Add following code below line: 207 (agent/test/V0_JUnit_ConveyorAgent_Test_NormativeScenario.java)
+finally{
+    try{ oos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 204 (agent/test/V0_JUnit_ConveyorAgent_Test_NormativeScenario.java)
+
+--------------------------------------------
+32] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_GantryFeederLaneNestNormativeScenario.java; Line number 225
+vim +225 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_GantryFeederLaneNestNormativeScenario.java
+
++++ Add following code below line: 232 (agent/test/V0_JUnit_GantryFeederLaneNestNormativeScenario.java)
+finally{
+    try{ oos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 229 (agent/test/V0_JUnit_GantryFeederLaneNestNormativeScenario.java)
+
+--------------------------------------------
+34] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V1_JUnit_FCS_Test_Normative.java; Line number 723
+vim +723 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V1_JUnit_FCS_Test_Normative.java
+
++++ Add following code below line: 730 (agent/test/V1_JUnit_FCS_Test_Normative.java)
+finally{
+    try{ oos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 727 (agent/test/V1_JUnit_FCS_Test_Normative.java)
+
+--------------------------------------------
+36] ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_StandAgent_Test_NormativeScenario.java; Line number 182
+vim +182 ../../../../datasets/debug_supplemented_njr/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_StandAgent_Test_NormativeScenario.java
+
++++ Add following code below line: 189 (agent/test/V0_JUnit_StandAgent_Test_NormativeScenario.java)
+finally{
+    try{ oos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 186 (agent/test/V0_JUnit_StandAgent_Test_NormativeScenario.java)
+
+--------------------------------------------

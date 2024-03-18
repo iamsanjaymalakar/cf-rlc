@@ -1,0 +1,145 @@
+46404
+7795
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphLayoutExample.java; Line number 282
+vim +282 ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphLayoutExample.java
+
++++ Add following code below line: 302 (com/jgraph/layout/JGraphLayoutExample.java)
+finally{
+    try{ decoder.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java; Line number 315
+vim +315 ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java
+
++++ Add following code below line: 325 (com/jgraph/example/GraphEdX.java)
+out.close();
+
++++ Delete Line number 320 (com/jgraph/example/GraphEdX.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java; Line number 351
+vim +351 ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java
+
++++ Add following code below line: 373 (com/jgraph/example/GraphEdX.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java; Line number 388
+vim +388 ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java
+
++++ Add following code below line: 395 (com/jgraph/example/GraphEdX.java)
+encoder.close();
+
++++ Delete Line number 391 (com/jgraph/example/GraphEdX.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java; Line number 421
+vim +421 ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java
+
++++ Add following code below line: 453 (com/jgraph/example/GraphEdX.java)
+finally{
+    try{ decoder.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/svg/SVGExample.java; Line number 104
+vim +104 ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/svg/SVGExample.java
+
++++ Add following code below line: 120 (com/jgraph/layout/svg/SVGExample.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 116 (com/jgraph/layout/svg/SVGExample.java)
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphWordBrowser.java; Line number 320
+vim +320 ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphWordBrowser.java
+
++++ Add following code above line:319 (com/jgraph/layout/JGraphWordBrowser.java)
+try{
++++ Add following code after line:324 (com/jgraph/layout/JGraphWordBrowser.java)
+}finally{
+    try{ printout.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 325 (com/jgraph/layout/JGraphWordBrowser.java)
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphWordBrowser.java; Line number 327
+vim +327 ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphWordBrowser.java
+
++++ Add following code above line:326 (com/jgraph/layout/JGraphWordBrowser.java)
+try{
++++ Add following code after line:332 (com/jgraph/layout/JGraphWordBrowser.java)
+}finally{
+    try{ ireader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 333 (com/jgraph/layout/JGraphWordBrowser.java)
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/SerialGraph.java; Line number 54
+vim +54 ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/SerialGraph.java
+
++++ Add following code below line: 63 (com/jgraph/example/SerialGraph.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 58 (com/jgraph/example/SerialGraph.java)
+
+--------------------------------------------
+12] ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/SerialGraph.java; Line number 68
+vim +68 ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/SerialGraph.java
+
++++ Add following code below line: 77 (com/jgraph/example/SerialGraph.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 71 (com/jgraph/example/SerialGraph.java)
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java; Line number 1708
+vim +1708 ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java
+
++++ Add following code above line:1707 (com/mxgraph/util/mxUtils.java)
+try{
++++ Add following code after line:1716 (com/mxgraph/util/mxUtils.java)
+}finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1718 (com/mxgraph/util/mxUtils.java)
+
+--------------------------------------------
+15] ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java; Line number 1735
+vim +1735 ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java
+
++++ Add following code above line:1735 (com/mxgraph/util/mxUtils.java)
+try{
++++ Add following code after line:1737 (com/mxgraph/util/mxUtils.java)
+}finally{
+    try{ fw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 1738 (com/mxgraph/util/mxUtils.java)
+
+--------------------------------------------
+16] ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java; Line number 2427
+vim +2427 ../../../../datasets/debug_supplemented_njr/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java
+
++++ Add following code below line: 2432 (com/mxgraph/util/mxUtils.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 2427
+
+--------------------------------------------

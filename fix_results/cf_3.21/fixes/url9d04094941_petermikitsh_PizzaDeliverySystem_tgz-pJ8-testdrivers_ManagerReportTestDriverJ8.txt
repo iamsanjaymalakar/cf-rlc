@@ -1,0 +1,27 @@
+16494
+458
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url9d04094941_petermikitsh_PizzaDeliverySystem_tgz-pJ8-testdrivers_ManagerReportTestDriverJ8/src/model/database/Database.java; Line number 136
+vim +136 ../../../../datasets/debug_supplemented_njr/url9d04094941_petermikitsh_PizzaDeliverySystem_tgz-pJ8-testdrivers_ManagerReportTestDriverJ8/src/model/database/Database.java
+
++++ Add following code below line: 146 (model/database/Database.java)
+finally{
+    try{ encoder.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 143 (model/database/Database.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url9d04094941_petermikitsh_PizzaDeliverySystem_tgz-pJ8-testdrivers_ManagerReportTestDriverJ8/src/model/database/Database.java; Line number 161
+vim +161 ../../../../datasets/debug_supplemented_njr/url9d04094941_petermikitsh_PizzaDeliverySystem_tgz-pJ8-testdrivers_ManagerReportTestDriverJ8/src/model/database/Database.java
+
++++ Add following code below line: 169 (model/database/Database.java)
+finally{
+    try{ decoder.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 166 (model/database/Database.java)
+
+--------------------------------------------

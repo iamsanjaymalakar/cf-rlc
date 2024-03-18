@@ -10,7 +10,7 @@ import subprocess
 import shlex
 
 BENCHMARKS_FOLDER = "../dataset/june2020_dataset"
-RESULTS_FOLDER = "cf_analysis_results/checkerframework_3.42.0_results"
+RESULTS_FOLDER = "cf_analysis_results/checkerframework_3.43.0_WPI_results"
 COMPILED_CLASSES_FOLDER = "cf_classes"
 SRC_FILES = "cf_srcs.txt"
 CF_ROOT= "/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0"
@@ -19,8 +19,8 @@ CF_BINARY = f"{CF_ROOT}/checker/bin/javac"
 CF_DIST_JAR_ARG=f"-processorpath {CF_ROOT}/checker/dist/checker.jar"
 CHECKER_QUAL_JAR=f"{CF_ROOT}/checker/dist/checker-qual.jar"
 CF_COMMAND = "-processor org.checkerframework.checker.resourceleak.ResourceLeakChecker -Adetailedmsgtext"
-SKIP_COMPLETED = True #skips if the output file is already there.
-RUN_WPI = False
+SKIP_COMPLETED = False #skips if the output file is already there.
+RUN_WPI = True
 WPI_TIMEOUT = 60 * 60 #60 minutes
 
 #create the output folder if it doesn't exist
@@ -44,6 +44,14 @@ for benchmark in os.listdir(BENCHMARKS_FOLDER):
     # Run WPI.
     if RUN_WPI:
         print(f"Running WPI on {benchmark}")
+        items_to_delete = ['wpi-iterations', 'wpi-log.txt', 'wpi-out']
+        for item in items_to_delete:
+            path = os.path.join(BENCHMARKS_FOLDER, benchmark, item)
+            if os.path.exists(path):
+                if os.path.isfile(path) or os.path.islink(path):
+                    os.remove(path)
+                else:
+                    shutil.rmtree(path)
         with open(f'{BENCHMARKS_FOLDER}/{benchmark}/wpi-log.txt', 'w') as file:
             process = subprocess.Popen(shlex.split(f'./wpi/wpi.sh {BENCHMARKS_FOLDER}/{benchmark}'), stdout=file, stderr=subprocess.STDOUT)
             try:

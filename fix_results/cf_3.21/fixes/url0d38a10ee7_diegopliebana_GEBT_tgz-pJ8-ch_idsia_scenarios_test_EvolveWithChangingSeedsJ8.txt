@@ -1,0 +1,130 @@
+17334
+1588
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/LevelScene.java; Line number 91
+vim +91 ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/LevelScene.java
+
++++ Add following code below line: 97 (ch/idsia/mario/engine/LevelScene.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 91
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/Art.java; Line number 59
+vim +59 ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/Art.java
+
++++ Add following code below line: 60 (ch/idsia/mario/engine/Art.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 59
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/mapedit/LevelEditor.java; Line number 36
+vim +36 ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/mapedit/LevelEditor.java
+
++++ Add following code below line: 43 (ch/idsia/mario/engine/mapedit/LevelEditor.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 36
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/mapedit/LevelEditor.java; Line number 124
+vim +124 ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/mapedit/LevelEditor.java
+
++++ Add following code below line: 134 (ch/idsia/mario/engine/mapedit/LevelEditor.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 124
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/mapedit/LevelEditor.java; Line number 128
+vim +128 ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/mapedit/LevelEditor.java
+
++++ Add following code below line: 134 (ch/idsia/mario/engine/mapedit/LevelEditor.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 128
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/utils/StatisticalSummary.java; Line number 243
+vim +243 ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/utils/StatisticalSummary.java
+
++++ Add following code below line: 250 (ch/idsia/utils/StatisticalSummary.java)
+finally{
+    try{ oos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 247 (ch/idsia/utils/StatisticalSummary.java)
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/utils/StatisticalSummary.java; Line number 255
+vim +255 ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/utils/StatisticalSummary.java
+
++++ Add following code below line: 264 (ch/idsia/utils/StatisticalSummary.java)
+finally{
+    try{ ois.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 259 (ch/idsia/utils/StatisticalSummary.java)
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/maibe/tasks/ProgressTask.java; Line number 88
+vim +88 ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/maibe/tasks/ProgressTask.java
+
++++ Add following code below line: 94 (ch/idsia/maibe/tasks/ProgressTask.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 90 (ch/idsia/maibe/tasks/ProgressTask.java)
+
+--------------------------------------------
+11] ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/GEBT_Mario/Map.java; Line number 283
+vim +283 ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/GEBT_Mario/Map.java
+
++++ Add following code below line: 306 (grammaticalbehaviors/GEBT_Mario/Map.java)
+finally{
+    try{ bw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 301 (grammaticalbehaviors/GEBT_Mario/Map.java)
+
+--------------------------------------------
+12] ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/GEBT_Mario/Map.java; Line number 313
+vim +313 ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/GEBT_Mario/Map.java
+
++++ Add following code below line: 349 (grammaticalbehaviors/GEBT_Mario/Map.java)
+finally{
+    try{ bw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 344 (grammaticalbehaviors/GEBT_Mario/Map.java)
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/Easy.java; Line number 25
+vim +25 ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/Easy.java
+
++++ Add following code below line: 31 (wox/serial/Easy.java)
+finally{
+    try{ file.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 27 (wox/serial/Easy.java)
+
+--------------------------------------------
+15] ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/Easy.java; Line number 38
+vim +38 ../../../../datasets/debug_supplemented_njr/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/Easy.java
+
++++ Add following code below line: 47 (wox/serial/Easy.java)
+finally{
+    try{ is.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

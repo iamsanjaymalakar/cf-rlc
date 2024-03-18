@@ -1,0 +1,14 @@
+7691
+34
+
+SOURCE LEVEL FIXES
+
+2] ../../../../datasets/debug_supplemented_njr/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/Speed.java; Line number 27
+vim +27 ../../../../datasets/debug_supplemented_njr/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/Speed.java
+
++++ Add following code below line: 40 (event/Speed.java)
+finally{
+    try{ s.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

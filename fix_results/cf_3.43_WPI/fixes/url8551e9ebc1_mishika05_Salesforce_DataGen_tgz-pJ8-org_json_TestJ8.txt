@@ -1,0 +1,19 @@
+13364
+40
+
+SOURCE LEVEL FIXES
+
+1] ../../../dataset/june2020_dataset/url8551e9ebc1_mishika05_Salesforce_DataGen_tgz-pJ8-org_json_TestJ8/src/RecordGen.java; Line number 44
+vim +44 ../../../dataset/june2020_dataset/url8551e9ebc1_mishika05_Salesforce_DataGen_tgz-pJ8-org_json_TestJ8/src/RecordGen.java
+
++++ Add following code above line:44 (RecordGen.java)
+try{
++++ Add following code after line:46 (RecordGen.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 44
+
++++ Delete Line number 59 (RecordGen.java)
+
+--------------------------------------------

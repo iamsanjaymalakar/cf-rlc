@@ -1,0 +1,147 @@
+13909
+3029
+
+SOURCE LEVEL FIXES
+
+3] ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/nl/rug/peerbox/logic/messaging/Message.java; Line number 50
+vim +50 ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/nl/rug/peerbox/logic/messaging/Message.java
+
++++ Add following code below line: 55 (nl/rug/peerbox/logic/messaging/Message.java)
+finally{
+    try{ baos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/nl/rug/peerbox/logic/messaging/Message.java; Line number 63
+vim +63 ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/nl/rug/peerbox/logic/messaging/Message.java
+
++++ Add following code below line: 70 (nl/rug/peerbox/logic/messaging/Message.java)
+finally{
+    try{ bais.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/MessagePrinter.java; Line number 15
+vim +15 ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/MessagePrinter.java
+
++++ Add following code below line: 21 (MessagePrinter.java)
+finally{
+    try{ bais.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2server.java; Line number 10
+vim +10 ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2server.java
+
++++ Add following code below line: 27 (ft2server.java)
+finally{
+    try{ ss.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 51 (ft2server.java)
+
++++ Delete Line number 57 (ft2server.java)
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2server.java; Line number 20
+vim +20 ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2server.java
+
++++ Add following code above line:28 (ft2server.java)
+try{ 
++++ Add following code below line:30 (ft2server.java)
+} catch(Exception e){ 
+    if (cs!=null) { cs.close();}
+    throw e; 
+}
++++ Add following code below line:30 (ft2server.java)
+try{
+    cs.close();
+} catch(Exception e){ e.printStackTrace(); }
+
++++ Delete Line number 50 (ft2server.java)
+
++++ Delete Line number 56 (ft2server.java)
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2server.java; Line number 37
+vim +37 ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2server.java
+
++++ Add following code below line: 59 (ft2server.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 37
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2server.java; Line number 41
+vim +41 ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2server.java
+
++++ Add following code below line: 59 (ft2server.java)
+finally{
+    try{ d.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 48 (ft2server.java)
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/nl/rug/peerbox/logic/filesystem/Filelist.java; Line number 42
+vim +42 ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/nl/rug/peerbox/logic/filesystem/Filelist.java
+
++++ Add following code below line: 52 (nl/rug/peerbox/logic/filesystem/Filelist.java)
+finally{
+    try{ buffer.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 47 (nl/rug/peerbox/logic/filesystem/Filelist.java)
+
++++ Delete Line number 47 (nl/rug/peerbox/logic/filesystem/Filelist.java)
+
++++ Delete Line number 47 (nl/rug/peerbox/logic/filesystem/Filelist.java)
+
++++ Delete Line number 47 (nl/rug/peerbox/logic/filesystem/Filelist.java)
+
+--------------------------------------------
+12] ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/nl/rug/peerbox/logic/filesystem/FileRequestTask.java; Line number 73
+vim +73 ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/nl/rug/peerbox/logic/filesystem/FileRequestTask.java
+
++++ Add following code below line: 85 (nl/rug/peerbox/logic/filesystem/FileRequestTask.java)
+bos.close();
+
++++ Delete Line number 80 (nl/rug/peerbox/logic/filesystem/FileRequestTask.java)
+
+--------------------------------------------
+13] ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/nl/rug/peerbox/ui/LogView.java; Line number 61
+vim +61 ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/nl/rug/peerbox/ui/LogView.java
+
++++ Add following code below line: 79 (nl/rug/peerbox/ui/LogView.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 72 (nl/rug/peerbox/ui/LogView.java)
+
+--------------------------------------------
+15] ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2client.java; Line number 14
+vim +14 ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2client.java
+
++++ Add following code above line:23 (ft2client.java)
+try{
+    s.close();
+} catch(Exception e){ e.printStackTrace(); }
+
++++ Delete Line number 36 (ft2client.java)
+
+--------------------------------------------
+16] ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2client.java; Line number 28
+vim +28 ../../../../datasets/debug_supplemented_njr/urla958522fc1_spirosikmd_inmdsy_08_tgz-pJ8-TesterAppJ8/src/ft2client.java
+
++++ Add following code above line:28 (ft2client.java)
+try{
++++ Add following code after line:33 (ft2client.java)
+}finally{
+    try{ fs.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 34 (ft2client.java)
+
+--------------------------------------------

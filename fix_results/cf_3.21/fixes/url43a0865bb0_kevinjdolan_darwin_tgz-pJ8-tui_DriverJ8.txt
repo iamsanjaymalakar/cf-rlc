@@ -1,0 +1,278 @@
+17862
+7695
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/Ticker.java; Line number 272
+vim +272 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/Ticker.java
+
++++ Add following code below line: 293 (darwInvest/data/Ticker.java)
+finally{
+    try{ s.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 283 (darwInvest/data/Ticker.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/Ticker.java; Line number 315
+vim +315 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/Ticker.java
+
++++ Add following code above line:314 (darwInvest/data/Ticker.java)
+try{
++++ Add following code after line:330 (darwInvest/data/Ticker.java)
+}finally{
+    try{ s.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 329 (darwInvest/data/Ticker.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/FileManager.java; Line number 33
+vim +33 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/FileManager.java
+
++++ Add following code below line: 41 (darwInvest/data/FileManager.java)
+finally{
+    try{ input.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 39 (darwInvest/data/FileManager.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/FileManager.java; Line number 61
+vim +61 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/FileManager.java
+
++++ Add following code below line: 69 (darwInvest/data/FileManager.java)
+finally{
+    try{ input.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 67 (darwInvest/data/FileManager.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/index/TickerIndex.java; Line number 64
+vim +64 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/index/TickerIndex.java
+
++++ Add following code below line: 70 (darwInvest/data/index/TickerIndex.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 67 (darwInvest/data/index/TickerIndex.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/utility/DefaultSerializer.java; Line number 18
+vim +18 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/utility/DefaultSerializer.java
+
++++ Add following code below line: 24 (darwInvest/data/utility/DefaultSerializer.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 21 (darwInvest/data/utility/DefaultSerializer.java)
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/utility/DefaultSerializer.java; Line number 33
+vim +33 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/utility/DefaultSerializer.java
+
++++ Add following code below line: 40 (darwInvest/data/utility/DefaultSerializer.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 37 (darwInvest/data/utility/DefaultSerializer.java)
+
+--------------------------------------------
+11] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/GoogleFinanceAutoNYSE.java; Line number 57
+vim +57 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/GoogleFinanceAutoNYSE.java
+
++++ Add following code above line:57 (darwInvest/data/gathering/dataSource/GoogleFinanceAutoNYSE.java)
+try{
++++ Add following code after line:62 (darwInvest/data/gathering/dataSource/GoogleFinanceAutoNYSE.java)
+}finally{
+    try{ googlecsvread.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 61 (darwInvest/data/gathering/dataSource/GoogleFinanceAutoNYSE.java)
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ReutersGoogleFinanceNYSE.java; Line number 102
+vim +102 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ReutersGoogleFinanceNYSE.java
+
++++ Add following code above line:102 (darwInvest/data/gathering/dataSource/ReutersGoogleFinanceNYSE.java)
+try{
++++ Add following code after line:144 (darwInvest/data/gathering/dataSource/ReutersGoogleFinanceNYSE.java)
+}finally{
+    try{ reutersreader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 143 (darwInvest/data/gathering/dataSource/ReutersGoogleFinanceNYSE.java)
+
+--------------------------------------------
+15] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ReutersGoogleFinanceNYSE.java; Line number 105
+vim +105 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ReutersGoogleFinanceNYSE.java
+
++++ Add following code above line:104 (darwInvest/data/gathering/dataSource/ReutersGoogleFinanceNYSE.java)
+try{
++++ Add following code after line:141 (darwInvest/data/gathering/dataSource/ReutersGoogleFinanceNYSE.java)
+}finally{
+    try{ s3.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 140 (darwInvest/data/gathering/dataSource/ReutersGoogleFinanceNYSE.java)
+
+--------------------------------------------
+17] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java; Line number 163
+vim +163 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java
+
++++ Add following code below line: 183 (darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java)
+finally{
+    try{ s.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 174 (darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java)
+
+--------------------------------------------
+18] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java; Line number 211
+vim +211 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java
+
++++ Add following code above line:211 (darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java)
+try{
++++ Add following code after line:291 (darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java)
+}finally{
+    try{ proquestsearchreader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 290 (darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java)
+
+--------------------------------------------
+19] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java; Line number 214
+vim +214 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java
+
++++ Add following code above line:213 (darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java)
+try{
++++ Add following code after line:288 (darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java)
+}finally{
+    try{ s3.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 287 (darwInvest/data/gathering/dataSource/ProquestGoogleFinanceNYSE.java)
+
+--------------------------------------------
+21] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/GoogleFinanceAutoNASDAQ.java; Line number 57
+vim +57 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/GoogleFinanceAutoNASDAQ.java
+
++++ Add following code above line:57 (darwInvest/data/gathering/dataSource/GoogleFinanceAutoNASDAQ.java)
+try{
++++ Add following code after line:62 (darwInvest/data/gathering/dataSource/GoogleFinanceAutoNASDAQ.java)
+}finally{
+    try{ googlecsvread.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 61 (darwInvest/data/gathering/dataSource/GoogleFinanceAutoNASDAQ.java)
+
+--------------------------------------------
+23] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ReutersNews.java; Line number 106
+vim +106 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ReutersNews.java
+
++++ Add following code above line:106 (darwInvest/data/gathering/dataSource/ReutersNews.java)
+try{
++++ Add following code after line:143 (darwInvest/data/gathering/dataSource/ReutersNews.java)
+}finally{
+    try{ reutersreader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 142 (darwInvest/data/gathering/dataSource/ReutersNews.java)
+
+--------------------------------------------
+24] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ReutersNews.java; Line number 109
+vim +109 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/data/gathering/dataSource/ReutersNews.java
+
++++ Add following code above line:108 (darwInvest/data/gathering/dataSource/ReutersNews.java)
+try{
++++ Add following code after line:140 (darwInvest/data/gathering/dataSource/ReutersNews.java)
+}finally{
+    try{ s3.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 139 (darwInvest/data/gathering/dataSource/ReutersNews.java)
+
+--------------------------------------------
+25] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/Test.java; Line number 275
+vim +275 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/Test.java
+
++++ Add following code below line: 278 (darwInvest/Test.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 277 (darwInvest/Test.java)
+
+--------------------------------------------
+26] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTestSummarizer.java; Line number 43
+vim +43 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTestSummarizer.java
+
++++ Add following code above line:43 (darwInvest/news/test/NewsTestSummarizer.java)
+try{
++++ Add following code after line:59 (darwInvest/news/test/NewsTestSummarizer.java)
+}finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 60 (darwInvest/news/test/NewsTestSummarizer.java)
+
+--------------------------------------------
+27] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTestSummarizer.java; Line number 101
+vim +101 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTestSummarizer.java
+
++++ Add following code below line: 139 (darwInvest/news/test/NewsTestSummarizer.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 103 (darwInvest/news/test/NewsTestSummarizer.java)
+
+--------------------------------------------
+28] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTestSummarizer.java; Line number 111
+vim +111 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTestSummarizer.java
+
++++ Add following code below line: 139 (darwInvest/news/test/NewsTestSummarizer.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 113 (darwInvest/news/test/NewsTestSummarizer.java)
+
+--------------------------------------------
+29] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTestSummarizer.java; Line number 121
+vim +121 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTestSummarizer.java
+
++++ Add following code below line: 139 (darwInvest/news/test/NewsTestSummarizer.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 123 (darwInvest/news/test/NewsTestSummarizer.java)
+
+--------------------------------------------
+30] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTestSummarizer.java; Line number 131
+vim +131 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTestSummarizer.java
+
++++ Add following code below line: 139 (darwInvest/news/test/NewsTestSummarizer.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 133 (darwInvest/news/test/NewsTestSummarizer.java)
+
+--------------------------------------------
+31] ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTester.java; Line number 141
+vim +141 ../../../../datasets/debug_supplemented_njr/url43a0865bb0_kevinjdolan_darwin_tgz-pJ8-tui_DriverJ8/src/darwInvest/news/test/NewsTester.java
+
++++ Add following code below line: 147 (darwInvest/news/test/NewsTester.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 144 (darwInvest/news/test/NewsTester.java)
+
+--------------------------------------------

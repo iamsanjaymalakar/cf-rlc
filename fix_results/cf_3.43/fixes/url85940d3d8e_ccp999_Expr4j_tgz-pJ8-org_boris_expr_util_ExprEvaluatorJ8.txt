@@ -1,0 +1,57 @@
+11773
+759
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url85940d3d8e_ccp999_Expr4j_tgz-pJ8-org_boris_expr_util_ExprEvaluatorJ8/src/org/boris/expr/util/IO.java; Line number 41
+vim +41 ../../../dataset/june2020_dataset/url85940d3d8e_ccp999_Expr4j_tgz-pJ8-org_boris_expr_util_ExprEvaluatorJ8/src/org/boris/expr/util/IO.java
+
++++ Add following code above line:41 (org/boris/expr/util/IO.java)
+try{
++++ Add following code after line:41 (org/boris/expr/util/IO.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 41
+
++++ Delete Line number 52 (org/boris/expr/util/IO.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url85940d3d8e_ccp999_Expr4j_tgz-pJ8-org_boris_expr_util_ExprEvaluatorJ8/src/org/boris/expr/util/IO.java; Line number 93
+vim +93 ../../../dataset/june2020_dataset/url85940d3d8e_ccp999_Expr4j_tgz-pJ8-org_boris_expr_util_ExprEvaluatorJ8/src/org/boris/expr/util/IO.java
+
++++ Add following code above line:93 (org/boris/expr/util/IO.java)
+try{
++++ Add following code after line:94 (org/boris/expr/util/IO.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 93
+
++++ Delete Line number 95 (org/boris/expr/util/IO.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url85940d3d8e_ccp999_Expr4j_tgz-pJ8-org_boris_expr_util_ExprEvaluatorJ8/src/org/boris/expr/util/IO.java; Line number 121
+vim +121 ../../../dataset/june2020_dataset/url85940d3d8e_ccp999_Expr4j_tgz-pJ8-org_boris_expr_util_ExprEvaluatorJ8/src/org/boris/expr/util/IO.java
+
++++ Add following code above line:120 (org/boris/expr/util/IO.java)
+try{
++++ Add following code after line:121 (org/boris/expr/util/IO.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 121
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/url85940d3d8e_ccp999_Expr4j_tgz-pJ8-org_boris_expr_util_ExprEvaluatorJ8/src/org/boris/expr/TestGen.java; Line number 21
+vim +21 ../../../dataset/june2020_dataset/url85940d3d8e_ccp999_Expr4j_tgz-pJ8-org_boris_expr_util_ExprEvaluatorJ8/src/org/boris/expr/TestGen.java
+
++++ Add following code above line:20 (org/boris/expr/TestGen.java)
+try{
++++ Add following code after line:32 (org/boris/expr/TestGen.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 21
+
+--------------------------------------------

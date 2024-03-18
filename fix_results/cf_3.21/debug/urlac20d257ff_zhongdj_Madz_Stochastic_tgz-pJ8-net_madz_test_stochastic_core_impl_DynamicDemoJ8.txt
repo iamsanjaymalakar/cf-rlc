@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^net/madz/test/stochastic/core/report/ExcelFormatTestReporter.java^46^net.madz.test.stochastic.core.report.ExcelFormatTestReporter.<init>(Ljava/lang/String;)V^64 = new <Application,Ljava/io/FileOutputStream>@214^NULL^FIELD,^false^true^Field escape;

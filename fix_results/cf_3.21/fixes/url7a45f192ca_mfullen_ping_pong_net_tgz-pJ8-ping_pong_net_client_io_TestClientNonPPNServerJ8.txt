@@ -1,0 +1,310 @@
+10445
+8854
+
+SOURCE LEVEL FIXES
+
+7] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoUdpReadRunnableTest.java; Line number 56
+vim +56 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoUdpReadRunnableTest.java
+
++++ Add following code above line:56 (ping/pong/net/connection/io/IoUdpReadRunnableTest.java)
+try{
++++ Add following code after line:59 (ping/pong/net/connection/io/IoUdpReadRunnableTest.java)
+}finally{
+    try{ clientUdpSocket.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+13] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ssl/SSLTestClient.java; Line number 33
+vim +33 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ssl/SSLTestClient.java
+
++++ Add following code below line: 48 (ping/pong/net/connection/ssl/SSLTestClient.java)
+finally{
+    try{ clientSocket.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ssl/SSLTestClient.java; Line number 59
+vim +59 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ssl/SSLTestClient.java
+
++++ Add following code below line: 74 (ping/pong/net/connection/ssl/SSLTestClient.java)
+finally{
+    try{ clientSocket.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+15] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ssl/SSLUtils.java; Line number 125
+vim +125 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ssl/SSLUtils.java
+
++++ Add following code above line:125 (ping/pong/net/connection/ssl/SSLUtils.java)
+try{
++++ Add following code after line:125 (ping/pong/net/connection/ssl/SSLUtils.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 125
+
+--------------------------------------------
+16] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ssl/SSLUtils.java; Line number 167
+vim +167 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ssl/SSLUtils.java
+
++++ Add following code above line:167 (ping/pong/net/connection/ssl/SSLUtils.java)
+try{
++++ Add following code after line:167 (ping/pong/net/connection/ssl/SSLUtils.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 167
+
+--------------------------------------------
+17] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ssl/SSLTestServer.java; Line number 47
+vim +47 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ssl/SSLTestServer.java
+
++++ Add following code below line: 62 (ping/pong/net/connection/ssl/SSLTestServer.java)
+finally{
+    try{ accept.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+18] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ConnectionUtils.java; Line number 97
+vim +97 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ConnectionUtils.java
+
++++ Add following code above line:96 (ping/pong/net/connection/ConnectionUtils.java)
+try{
++++ Add following code after line:102 (ping/pong/net/connection/ConnectionUtils.java)
+}finally{
+    try{ bos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 101 (ping/pong/net/connection/ConnectionUtils.java)
+
++++ Delete Line number 100 (ping/pong/net/connection/ConnectionUtils.java)
+
+--------------------------------------------
+22] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/TestClientNonPPNServer.java; Line number 92
+vim +92 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/TestClientNonPPNServer.java
+
++++ Add following code below line: 109 (ping/pong/net/client/io/TestClientNonPPNServer.java)
+finally{
+    try{ tcpServerSocket.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+23] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/TestClientNonPPNServer.java; Line number 104
+vim +104 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/TestClientNonPPNServer.java
+
++++ Add following code above line:140 (ping/pong/net/client/io/TestClientNonPPNServer.java)
+try{
+    acceptingSocket.close();
+} catch(Exception e){ e.printStackTrace(); }
+
+--------------------------------------------
+30] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java; Line number 154
+vim +154 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java
+
++++ Add following code above line:154 (ping/pong/net/server/io/ServerConnectionManagerTest.java)
+try{
++++ Add following code after line:154 (ping/pong/net/server/io/ServerConnectionManagerTest.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 154
+
+--------------------------------------------
+31] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java; Line number 161
+vim +161 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java
+
++++ Add following code above line:161 (ping/pong/net/server/io/ServerConnectionManagerTest.java)
+try{
++++ Add following code after line:162 (ping/pong/net/server/io/ServerConnectionManagerTest.java)
+}finally{
+    try{ client.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+32] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 91
+vim +91 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:91 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:97 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ client.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+33] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 94
+vim +94 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:94 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:95 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ inputStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+34] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 97
+vim +97 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:97 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:102 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ outputStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 103 (ping/pong/net/server/ClientExample.java)
+
+--------------------------------------------
+35] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 125
+vim +125 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:125 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:125 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 125
+
+--------------------------------------------
+36] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 132
+vim +132 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:132 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:139 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ client.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 147 (ping/pong/net/server/ClientExample.java)
+
+--------------------------------------------
+37] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 136
+vim +136 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:136 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:137 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ inputStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+38] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 139
+vim +139 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:139 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:144 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ outputStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 145 (ping/pong/net/server/ClientExample.java)
+
+--------------------------------------------
+39] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 199
+vim +199 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:199 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:203 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ client.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+40] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 200
+vim +200 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:200 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:201 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ inputStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+41] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 203
+vim +203 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:203 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:208 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ outputStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 209 (ping/pong/net/server/ClientExample.java)
+
+--------------------------------------------
+42] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 221
+vim +221 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:221 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:225 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ client.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+43] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 222
+vim +222 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:222 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:223 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ inputStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+44] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 225
+vim +225 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:225 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:230 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ outputStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+45] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 243
+vim +243 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:243 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:247 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ client.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+46] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 244
+vim +244 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:244 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:245 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ inputStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+47] ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 247
+vim +247 ../../../../datasets/debug_supplemented_njr/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:247 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:253 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ outputStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 254 (ping/pong/net/server/ClientExample.java)
+
+--------------------------------------------

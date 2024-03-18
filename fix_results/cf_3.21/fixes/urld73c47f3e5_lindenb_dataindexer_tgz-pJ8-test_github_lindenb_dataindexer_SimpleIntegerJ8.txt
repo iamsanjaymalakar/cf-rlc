@@ -1,0 +1,56 @@
+7916
+1106
+
+SOURCE LEVEL FIXES
+
+7] ../../../../datasets/debug_supplemented_njr/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/test/github/lindenb/dataindexer/dbsnp/DBSnpLoader.java; Line number 167
+vim +167 ../../../../datasets/debug_supplemented_njr/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/test/github/lindenb/dataindexer/dbsnp/DBSnpLoader.java
+
++++ Add following code above line:167 (test/github/lindenb/dataindexer/dbsnp/DBSnpLoader.java)
+try{
++++ Add following code after line:167 (test/github/lindenb/dataindexer/dbsnp/DBSnpLoader.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 167
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/test/github/lindenb/dataindexer/dbsnp/DBSnpLoader.java; Line number 171
+vim +171 ../../../../datasets/debug_supplemented_njr/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/test/github/lindenb/dataindexer/dbsnp/DBSnpLoader.java
+
++++ Add following code above line:171 (test/github/lindenb/dataindexer/dbsnp/DBSnpLoader.java)
+try{
++++ Add following code after line:186 (test/github/lindenb/dataindexer/dbsnp/DBSnpLoader.java)
+}finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 187 (test/github/lindenb/dataindexer/dbsnp/DBSnpLoader.java)
+
+--------------------------------------------
+11] ../../../../datasets/debug_supplemented_njr/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/AbstractDatabaseReader.java; Line number 57
+vim +57 ../../../../datasets/debug_supplemented_njr/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/AbstractDatabaseReader.java
+
++++ Add following code above line:57 (com/github/lindenb/dataindexer/AbstractDatabaseReader.java)
+try{
++++ Add following code after line:58 (com/github/lindenb/dataindexer/AbstractDatabaseReader.java)
+}finally{
+    try{ dis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 59 (com/github/lindenb/dataindexer/AbstractDatabaseReader.java)
+
+--------------------------------------------
+16] ../../../../datasets/debug_supplemented_njr/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/AbstractDataIndexer.java; Line number 59
+vim +59 ../../../../datasets/debug_supplemented_njr/urld73c47f3e5_lindenb_dataindexer_tgz-pJ8-test_github_lindenb_dataindexer_SimpleIntegerJ8/src/com/github/lindenb/dataindexer/AbstractDataIndexer.java
+
++++ Add following code above line:59 (com/github/lindenb/dataindexer/AbstractDataIndexer.java)
+try{
++++ Add following code after line:61 (com/github/lindenb/dataindexer/AbstractDataIndexer.java)
+}finally{
+    try{ daos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 62 (com/github/lindenb/dataindexer/AbstractDataIndexer.java)
+
+--------------------------------------------

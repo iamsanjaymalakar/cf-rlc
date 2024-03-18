@@ -1,0 +1,245 @@
+33482
+11415
+
+SOURCE LEVEL FIXES
+
+1] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Networking/Server.java; Line number 471
+vim +471 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Networking/Server.java
+
++++ Add following code below line: 495 (Networking/Server.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 471
+
++++ Delete Line number 485 (Networking/Server.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Networking/Server.java; Line number 478
+vim +478 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Networking/Server.java
+
++++ Add following code below line: 495 (Networking/Server.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 478
+
++++ Delete Line number 486 (Networking/Server.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ConsoleWriter.java; Line number 197
+vim +197 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ConsoleWriter.java
+
++++ Add following code below line: 205 (Utils/ConsoleWriter.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 197
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ConsoleWriter.java; Line number 200
+vim +200 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ConsoleWriter.java
+
++++ Add following code below line: 205 (Utils/ConsoleWriter.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 200
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V1_JUnit_FCS_Test_Normative.java; Line number 723
+vim +723 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V1_JUnit_FCS_Test_Normative.java
+
++++ Add following code below line: 730 (agent/test/V1_JUnit_FCS_Test_Normative.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 723
+
++++ Delete Line number 727 (agent/test/V1_JUnit_FCS_Test_Normative.java)
+
+--------------------------------------------
+6] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_StandAgent_Test_NormativeScenario.java; Line number 182
+vim +182 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_StandAgent_Test_NormativeScenario.java
+
++++ Add following code below line: 189 (agent/test/V0_JUnit_StandAgent_Test_NormativeScenario.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 182
+
++++ Delete Line number 186 (agent/test/V0_JUnit_StandAgent_Test_NormativeScenario.java)
+
+--------------------------------------------
+7] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_KitRobotAgent_Test_NormativeScenario.java; Line number 355
+vim +355 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_KitRobotAgent_Test_NormativeScenario.java
+
++++ Add following code below line: 362 (agent/test/V0_JUnit_KitRobotAgent_Test_NormativeScenario.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 355
+
++++ Delete Line number 359 (agent/test/V0_JUnit_KitRobotAgent_Test_NormativeScenario.java)
+
+--------------------------------------------
+8] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_ConveyorAgent_Test_NormativeScenario.java; Line number 200
+vim +200 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_ConveyorAgent_Test_NormativeScenario.java
+
++++ Add following code below line: 207 (agent/test/V0_JUnit_ConveyorAgent_Test_NormativeScenario.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 200
+
++++ Delete Line number 204 (agent/test/V0_JUnit_ConveyorAgent_Test_NormativeScenario.java)
+
+--------------------------------------------
+9] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_GantryFeederLaneNestNormativeScenario.java; Line number 225
+vim +225 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_GantryFeederLaneNestNormativeScenario.java
+
++++ Add following code below line: 232 (agent/test/V0_JUnit_GantryFeederLaneNestNormativeScenario.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 225
+
++++ Delete Line number 229 (agent/test/V0_JUnit_GantryFeederLaneNestNormativeScenario.java)
+
+--------------------------------------------
+11] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java; Line number 61
+vim +61 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java
+
++++ Add following code below line: 69 (manager/FPMMusicAgent.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 61
+
+--------------------------------------------
+12] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java; Line number 72
+vim +72 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java
+
++++ Add following code below line: 77 (manager/FPMMusicAgent.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 72
+
+--------------------------------------------
+13] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java; Line number 80
+vim +80 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java
+
++++ Add following code below line: 85 (manager/FPMMusicAgent.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 80
+
+--------------------------------------------
+14] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java; Line number 88
+vim +88 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java
+
++++ Add following code below line: 93 (manager/FPMMusicAgent.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 88
+
+--------------------------------------------
+15] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java; Line number 96
+vim +96 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java
+
++++ Add following code below line: 101 (manager/FPMMusicAgent.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 96
+
+--------------------------------------------
+16] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java; Line number 126
+vim +126 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java
+
++++ Add following code below line: 132 (manager/FactoryProductionManager.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 126
+
+--------------------------------------------
+17] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java; Line number 135
+vim +135 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java
+
++++ Add following code below line: 140 (manager/FactoryProductionManager.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 135
+
+--------------------------------------------
+18] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java; Line number 143
+vim +143 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java
+
++++ Add following code below line: 148 (manager/FactoryProductionManager.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 143
+
+--------------------------------------------
+19] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java; Line number 151
+vim +151 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java
+
++++ Add following code below line: 156 (manager/FactoryProductionManager.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 151
+
+--------------------------------------------
+20] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java; Line number 159
+vim +159 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java
+
++++ Add following code below line: 164 (manager/FactoryProductionManager.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 159
+
+--------------------------------------------
+21] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ReadSaveData.java; Line number 31
+vim +31 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ReadSaveData.java
+
++++ Add following code below line: 44 (Utils/ReadSaveData.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 31
+
++++ Delete Line number 40 (Utils/ReadSaveData.java)
+
+--------------------------------------------
+22] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ReadSaveData.java; Line number 58
+vim +58 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ReadSaveData.java
+
++++ Add following code below line: 72 (Utils/ReadSaveData.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 58
+
++++ Delete Line number 68 (Utils/ReadSaveData.java)
+
+--------------------------------------------
+23] ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/StringUtil.java; Line number 381
+vim +381 ../../../dataset/june2020_dataset/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/StringUtil.java
+
++++ Add following code above line:381 (Utils/StringUtil.java)
+try{
++++ Add following code after line:381 (Utils/StringUtil.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 381
+
+--------------------------------------------

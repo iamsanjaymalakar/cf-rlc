@@ -1,0 +1,8 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^org/json/Test.java^474^org.json.Test.main([Ljava/lang/String;)V^1183 = new <Application,Ljava/io/StringWriter>@3179^NULL^INVOKE,^false^false^Try-catch Fix;
+1^com/skm/AcctAction.java^93^com.skm.AcctAction.signUp(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Ljava/lang/String;^64 = invokeinterface < Application, Ljavax/servlet/http/HttpServletResponse, getWriter()Ljava/io/PrintWriter; > 3 @239 exception:63^NULL^INVOKE,^false^false^Normal Fix;
+2^com/skm/AcctAction.java^102^com.skm.AcctAction.logoff(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Ljava/lang/String;^16 = invokeinterface < Application, Ljavax/servlet/http/HttpServletResponse, getWriter()Ljava/io/PrintWriter; > 3 @38 exception:15^NULL^INVOKE,^false^false^Normal Fix;
+3^org/json/JSONObject.java^1570^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+4^org/json/JSONObject.java^1572^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+5^org/json/JSONArray.java^904^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+6^org/json/JSONArray.java^906^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

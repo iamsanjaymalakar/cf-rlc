@@ -1,0 +1,59 @@
+9086
+226
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java; Line number 442
+vim +442 ../../../../datasets/debug_supplemented_njr/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java
+
++++ Add following code below line: 622 (org/json/Test.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 442
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/test/TestXML2JSON.java; Line number 57
+vim +57 ../../../../datasets/debug_supplemented_njr/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/test/TestXML2JSON.java
+
++++ Add following code above line:57 (test/TestXML2JSON.java)
+try{
++++ Add following code after line:63 (test/TestXML2JSON.java)
+}finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/test/properties/PropertyLoader.java; Line number 9
+vim +9 ../../../../datasets/debug_supplemented_njr/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/test/properties/PropertyLoader.java
+
++++ Add following code above line:9 (test/properties/PropertyLoader.java)
+try{
++++ Add following code after line:13 (test/properties/PropertyLoader.java)
+}finally{
+    try{ is.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/test/properties/PropertyLoader.java; Line number 14
+vim +14 ../../../../datasets/debug_supplemented_njr/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/test/properties/PropertyLoader.java
+
++++ Add following code above line:14 (test/properties/PropertyLoader.java)
+try{
++++ Add following code after line:17 (test/properties/PropertyLoader.java)
+}finally{
+    try{ is.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/nio/samples/NBTimeServer.java; Line number 31
+vim +31 ../../../../datasets/debug_supplemented_njr/url8be3f02398_vnamboo_LearnJava_tgz-pJ8-org_json_TestJ8/src/nio/samples/NBTimeServer.java
+
++++ Add following code above line:31 (nio/samples/NBTimeServer.java)
+try{
++++ Add following code after line:76 (nio/samples/NBTimeServer.java)
+}finally{
+    try{ acceptSelector.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

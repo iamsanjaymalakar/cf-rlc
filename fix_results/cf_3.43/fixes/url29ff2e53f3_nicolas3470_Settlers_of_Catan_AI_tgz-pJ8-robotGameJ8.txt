@@ -1,0 +1,47 @@
+24327
+1301
+
+SOURCE LEVEL FIXES
+
+1] ../../../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/client/SOCConnectOrPracticePanel.java; Line number 133
+vim +133 ../../../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/client/SOCConnectOrPracticePanel.java
+
++++ Add following code above line:133 (soc/client/SOCConnectOrPracticePanel.java)
+try{
++++ Add following code after line:136 (soc/client/SOCConnectOrPracticePanel.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 133
+
++++ Delete Line number 144 (soc/client/SOCConnectOrPracticePanel.java)
+
++++ Delete Line number 137 (soc/client/SOCConnectOrPracticePanel.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/server/SOCServer.java; Line number 5471
+vim +5471 ../../../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/server/SOCServer.java
+
++++ Add following code below line: 5508 (soc/server/SOCServer.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 5471
+
++++ Delete Line number 5501 (soc/server/SOCServer.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/server/SOCServer.java; Line number 7716
+vim +7716 ../../../dataset/june2020_dataset/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/src/soc/server/SOCServer.java
+
++++ Add following code above line:7716 (soc/server/SOCServer.java)
+try{
++++ Add following code after line:7732 (soc/server/SOCServer.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 7716
+
++++ Delete Line number 7739 (soc/server/SOCServer.java)
+
+--------------------------------------------

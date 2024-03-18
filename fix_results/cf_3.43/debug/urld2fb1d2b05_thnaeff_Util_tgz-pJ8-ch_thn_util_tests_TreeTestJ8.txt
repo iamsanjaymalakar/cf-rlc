@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^ch/thn/util/file/SingleInstanceLock.java^151^ch.thn.util.file.SingleInstanceLock.lock()Z^34 = new <Application,Ljava/io/RandomAccessFile>@47^NULL^FIELD,^false^true^Field escape;

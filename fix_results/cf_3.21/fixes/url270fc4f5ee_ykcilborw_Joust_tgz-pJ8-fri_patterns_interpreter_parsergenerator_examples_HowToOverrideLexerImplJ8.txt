@@ -1,0 +1,38 @@
+16300
+5397
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/com/wroblicky/andrew/joust/pgn/PGNParser.java; Line number 28
+vim +28 ../../../../datasets/debug_supplemented_njr/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/com/wroblicky/andrew/joust/pgn/PGNParser.java
+
++++ Add following code below line: 89 (com/wroblicky/andrew/joust/pgn/PGNParser.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/com/wroblicky/andrew/joust/game/GameSetup.java; Line number 341
+vim +341 ../../../../datasets/debug_supplemented_njr/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/com/wroblicky/andrew/joust/game/GameSetup.java
+
++++ Add following code below line: 502 (com/wroblicky/andrew/joust/game/GameSetup.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 498 (com/wroblicky/andrew/joust/game/GameSetup.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/util/SourceGenerator.java; Line number 89
+vim +89 ../../../../datasets/debug_supplemented_njr/url270fc4f5ee_ykcilborw_Joust_tgz-pJ8-fri_patterns_interpreter_parsergenerator_examples_HowToOverrideLexerImplJ8/src/fri/patterns/interpreter/parsergenerator/util/SourceGenerator.java
+
++++ Add following code above line:89 (fri/patterns/interpreter/parsergenerator/util/SourceGenerator.java)
+try{
++++ Add following code after line:132 (fri/patterns/interpreter/parsergenerator/util/SourceGenerator.java)
+}finally{
+    try{ f.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 134 (fri/patterns/interpreter/parsergenerator/util/SourceGenerator.java)
+
+--------------------------------------------

@@ -1,0 +1,4 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^m68k/Monitor.java^96^m68k.Monitor.run()V^15 = invokevirtual < Application, Ljava/io/Console, writer()Ljava/io/PrintWriter; > 4 @10 exception:14^NULL^FIELD,^false^true^Field escape;
+1^m68k/Monitor.java^97^m68k.Monitor.run()V^16 = new <Application,Ljava/io/BufferedReader>@17^m68k.Monitor.run()V#18,^FIELD,^false^true^Field escape;
+2^m68k/Monitor.java^919^m68k.Monitor.handleLoad([Ljava/lang/String;)V^40 = new <Application,Ljava/io/FileInputStream>@162^NULL^INVOKE,^false^false^Try-catch Fix;

@@ -1,0 +1,57 @@
+9299
+756
+
+SOURCE LEVEL FIXES
+
+3] ../../../../datasets/debug_supplemented_njr/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/service/ServiceRunner.java; Line number 155
+vim +155 ../../../../datasets/debug_supplemented_njr/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/service/ServiceRunner.java
+
++++ Add following code below line: 161 (terminal/service/ServiceRunner.java)
+finally{
+    try{ stdInput.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/service/Service.java; Line number 113
+vim +113 ../../../../datasets/debug_supplemented_njr/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/service/Service.java
+
++++ Add following code below line: 136 (terminal/service/Service.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 127 (terminal/service/Service.java)
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/service/Service.java; Line number 160
+vim +160 ../../../../datasets/debug_supplemented_njr/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/service/Service.java
+
++++ Add following code below line: 179 (terminal/service/Service.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 174 (terminal/service/Service.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/devices/Device.java; Line number 196
+vim +196 ../../../../datasets/debug_supplemented_njr/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/devices/Device.java
+
++++ Add following code below line: 207 (terminal/devices/Device.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 202 (terminal/devices/Device.java)
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/json/Test.java; Line number 447
+vim +447 ../../../../datasets/debug_supplemented_njr/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/json/Test.java
+
++++ Add following code below line: 633 (json/Test.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 447
+
+--------------------------------------------

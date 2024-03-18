@@ -1,0 +1,25 @@
+8484
+56
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urldae1c57e59_mustafaakin_izuna_mapeditor_tgz-pJ8-in_mustafaak_izuna_actions_ActionTestJ8/src/in/mustafaak/izuna/actions/ActionTest.java; Line number 66
+vim +66 ../../../../datasets/debug_supplemented_njr/urldae1c57e59_mustafaakin_izuna_mapeditor_tgz-pJ8-in_mustafaak_izuna_actions_ActionTestJ8/src/in/mustafaak/izuna/actions/ActionTest.java
+
++++ Add following code below line: 78 (in/mustafaak/izuna/actions/ActionTest.java)
+finally{
+    try{ socket.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 75 (in/mustafaak/izuna/actions/ActionTest.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/urldae1c57e59_mustafaakin_izuna_mapeditor_tgz-pJ8-in_mustafaak_izuna_actions_ActionTestJ8/src/in/mustafaak/izuna/Shell.java; Line number 34
+vim +34 ../../../../datasets/debug_supplemented_njr/urldae1c57e59_mustafaakin_izuna_mapeditor_tgz-pJ8-in_mustafaak_izuna_actions_ActionTestJ8/src/in/mustafaak/izuna/Shell.java
+
++++ Add following code below line: 42 (in/mustafaak/izuna/Shell.java)
+finally{
+    try{ socket.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

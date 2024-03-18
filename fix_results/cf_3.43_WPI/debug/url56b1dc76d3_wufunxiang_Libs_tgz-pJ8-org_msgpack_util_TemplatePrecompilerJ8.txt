@@ -1,0 +1,101 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^org/msgpack/unpacker/MessagePackBufferUnpacker.java^34^org.msgpack.unpacker.MessagePackBufferUnpacker.<init>(Lorg/msgpack/MessagePack;I)V^5 = new <Application,Lorg/msgpack/io/LinkedBufferInput>@2^org.msgpack.unpacker.MessagePackBufferUnpacker.<init>(Lorg/msgpack/MessagePack;I)V#1,^RETURN,INVOKE,PARAM,FIELD,^false^true^Field escape;Field escape;Field escape;Parameter Fix;
+1^org/msgpack/unpacker/MessagePackUnpacker.java^55^org.msgpack.unpacker.MessagePackUnpacker.<init>(Lorg/msgpack/MessagePack;Ljava/io/InputStream;)V^5 = new <Application,Lorg/msgpack/io/StreamInput>@2^org.msgpack.unpacker.MessagePackUnpacker.<init>(Lorg/msgpack/MessagePack;Ljava/io/InputStream;)V#3,org.msgpack.unpacker.MessagePackUnpacker.<init>(Lorg/msgpack/MessagePack;Ljava/io/InputStream;)V#1,^INVOKE,PARAM,FIELD,^false^true^Field escape;
+2^org/msgpack/unpacker/AbstractUnpacker.java^64^org.msgpack.unpacker.AbstractUnpacker.readValue()Lorg/msgpack/type/Value;^3 = new <Application,Lorg/msgpack/packer/Unconverter>@0^NULL^INVOKE,FIELD,^false^true^Field escape;
+3^org/msgpack/MessagePack.java^152^org.msgpack.MessagePack.createBufferUnpacker([B)Lorg/msgpack/unpacker/BufferUnpacker;^5 = invokevirtual < Application, Lorg/msgpack/MessagePack, createBufferUnpacker()Lorg/msgpack/unpacker/BufferUnpacker; > 1 @1 exception:4^NULL^RETURN,INVOKE,FIELD,^false^true^Field escape;
+4^org/msgpack/MessagePack.java^165^org.msgpack.MessagePack.createBufferUnpacker([BII)Lorg/msgpack/unpacker/BufferUnpacker;^7 = invokevirtual < Application, Lorg/msgpack/MessagePack, createBufferUnpacker()Lorg/msgpack/unpacker/BufferUnpacker; > 1 @1 exception:6^NULL^RETURN,INVOKE,FIELD,^false^true^Field escape;
+5^org/msgpack/MessagePack.java^177^org.msgpack.MessagePack.createBufferUnpacker(Ljava/nio/ByteBuffer;)Lorg/msgpack/unpacker/BufferUnpacker;^5 = invokevirtual < Application, Lorg/msgpack/MessagePack, createBufferUnpacker()Lorg/msgpack/unpacker/BufferUnpacker; > 1 @1 exception:4^NULL^RETURN,INVOKE,FIELD,^false^true^Field escape;
+6^org/msgpack/MessagePack.java^190^org.msgpack.MessagePack.write(Ljava/lang/Object;)[B^5 = invokevirtual < Application, Lorg/msgpack/MessagePack, createBufferPacker()Lorg/msgpack/packer/BufferPacker; > 1 @1 exception:4^NULL^INVOKE,^false^false^Normal Fix;
+7^org/msgpack/MessagePack.java^192^org.msgpack.MessagePack.write(Ljava/lang/Object;)[B^5 = invokevirtual < Application, Lorg/msgpack/MessagePack, createBufferPacker()Lorg/msgpack/packer/BufferPacker; > 1 @1 exception:4^NULL^INVOKE,^true^false^Normal Fix;
+8^org/msgpack/MessagePack.java^212^org.msgpack.MessagePack.write(Ljava/lang/Object;Lorg/msgpack/template/Template;)[B^6 = invokevirtual < Application, Lorg/msgpack/MessagePack, createBufferPacker()Lorg/msgpack/packer/BufferPacker; > 1 @1 exception:5^NULL^INVOKE,^false^false^Normal Fix;
+9^org/msgpack/MessagePack.java^228^org.msgpack.MessagePack.write(Ljava/io/OutputStream;Ljava/lang/Object;)V^6 = invokevirtual < Application, Lorg/msgpack/MessagePack, createPacker(Ljava/io/OutputStream;)Lorg/msgpack/packer/Packer; > 1,2 @2 exception:5^NULL^INVOKE,^false^false^Normal Fix;
+10^org/msgpack/MessagePack.java^230^org.msgpack.MessagePack.write(Ljava/io/OutputStream;Ljava/lang/Object;)V^6 = invokevirtual < Application, Lorg/msgpack/MessagePack, createPacker(Ljava/io/OutputStream;)Lorg/msgpack/packer/Packer; > 1,2 @2 exception:5^NULL^INVOKE,^true^false^Normal Fix;
+11^org/msgpack/MessagePack.java^252^org.msgpack.MessagePack.write(Ljava/io/OutputStream;Ljava/lang/Object;Lorg/msgpack/template/Template;)V^7 = invokevirtual < Application, Lorg/msgpack/MessagePack, createPacker(Ljava/io/OutputStream;)Lorg/msgpack/packer/Packer; > 1,2 @2 exception:6^NULL^INVOKE,^false^false^Normal Fix;
+12^org/msgpack/MessagePack.java^267^org.msgpack.MessagePack.write(Lorg/msgpack/type/Value;)[B^5 = invokevirtual < Application, Lorg/msgpack/MessagePack, createBufferPacker()Lorg/msgpack/packer/BufferPacker; > 1 @1 exception:4^NULL^INVOKE,^false^false^Normal Fix;
+13^org/msgpack/MessagePack.java^268^org.msgpack.MessagePack.write(Lorg/msgpack/type/Value;)[B^5 = invokevirtual < Application, Lorg/msgpack/MessagePack, createBufferPacker()Lorg/msgpack/packer/BufferPacker; > 1 @1 exception:4^NULL^INVOKE,^true^false^Normal Fix;
+14^org/msgpack/MessagePack.java^297^org.msgpack.MessagePack.read([BII)Lorg/msgpack/type/Value;^7 = invokevirtual < Application, Lorg/msgpack/MessagePack, createBufferUnpacker([BII)Lorg/msgpack/unpacker/BufferUnpacker; > 1,2,3,4 @4 exception:6^NULL^INVOKE,FIELD,^false^true^Field escape;
+15^org/msgpack/MessagePack.java^311^org.msgpack.MessagePack.read(Ljava/nio/ByteBuffer;)Lorg/msgpack/type/Value;^5 = invokevirtual < Application, Lorg/msgpack/MessagePack, createBufferUnpacker(Ljava/nio/ByteBuffer;)Lorg/msgpack/unpacker/BufferUnpacker; > 1,2 @2 exception:4^NULL^INVOKE,FIELD,^false^true^Field escape;
+16^org/msgpack/MessagePack.java^324^org.msgpack.MessagePack.read(Ljava/io/InputStream;)Lorg/msgpack/type/Value;^5 = invokevirtual < Application, Lorg/msgpack/MessagePack, createUnpacker(Ljava/io/InputStream;)Lorg/msgpack/unpacker/Unpacker; > 1,2 @2 exception:4^NULL^INVOKE,FIELD,^false^true^Field escape;
+17^org/msgpack/MessagePack.java^387^org.msgpack.MessagePack.read([BLjava/lang/Object;Lorg/msgpack/template/Template;)Ljava/lang/Object;^7 = invokevirtual < Application, Lorg/msgpack/MessagePack, createBufferUnpacker([B)Lorg/msgpack/unpacker/BufferUnpacker; > 1,2 @2 exception:6^NULL^INVOKE,FIELD,^false^true^Field escape;
+18^org/msgpack/MessagePack.java^404^org.msgpack.MessagePack.read([BIILjava/lang/Class;)Ljava/lang/Object;^11 = invokevirtual < Application, Lorg/msgpack/MessagePack, createBufferUnpacker([BII)Lorg/msgpack/unpacker/BufferUnpacker; > 1,2,3,4 @15 exception:10^NULL^INVOKE,FIELD,^false^true^Field escape;
+19^org/msgpack/MessagePack.java^465^org.msgpack.MessagePack.read(Ljava/nio/ByteBuffer;Ljava/lang/Object;Lorg/msgpack/template/Template;)Ljava/lang/Object;^7 = invokevirtual < Application, Lorg/msgpack/MessagePack, createBufferUnpacker(Ljava/nio/ByteBuffer;)Lorg/msgpack/unpacker/BufferUnpacker; > 1,2 @2 exception:6^NULL^INVOKE,FIELD,^false^true^Field escape;
+20^org/msgpack/MessagePack.java^526^org.msgpack.MessagePack.read(Ljava/io/InputStream;Ljava/lang/Object;Lorg/msgpack/template/Template;)Ljava/lang/Object;^7 = invokevirtual < Application, Lorg/msgpack/MessagePack, createUnpacker(Ljava/io/InputStream;)Lorg/msgpack/unpacker/Unpacker; > 1,2 @2 exception:6^NULL^INVOKE,FIELD,^false^true^Field escape;
+21^org/msgpack/MessagePack.java^542^org.msgpack.MessagePack.convert(Lorg/msgpack/type/Value;Ljava/lang/Object;)Ljava/lang/Object;^10 = new <Application,Lorg/msgpack/unpacker/Converter>@13^NULL^INVOKE,^false^false^Normal Fix;
+22^org/msgpack/MessagePack.java^557^org.msgpack.MessagePack.convert(Lorg/msgpack/type/Value;Ljava/lang/Class;)Ljava/lang/Object;^8 = new <Application,Lorg/msgpack/unpacker/Converter>@10^NULL^INVOKE,^false^false^Normal Fix;
+23^org/msgpack/MessagePack.java^570^org.msgpack.MessagePack.convert(Lorg/msgpack/type/Value;Lorg/msgpack/template/Template;)Ljava/lang/Object;^5 = new <Application,Lorg/msgpack/unpacker/Converter>@1^NULL^INVOKE,^false^false^Normal Fix;
+24^org/msgpack/MessagePack.java^582^org.msgpack.MessagePack.unconvert(Ljava/lang/Object;)Lorg/msgpack/type/Value;^4 = new <Application,Lorg/msgpack/packer/Unconverter>@0^NULL^INVOKE,FIELD,^false^true^Field escape;
+25^org/msgpack/MessagePack.java^584^org.msgpack.MessagePack.unconvert(Ljava/lang/Object;)Lorg/msgpack/type/Value;^4 = new <Application,Lorg/msgpack/packer/Unconverter>@0^NULL^INVOKE,FIELD,^true^true^Field escape;
+26^org/msgpack/MessagePack.java^730^org.msgpack.MessagePack.unpack([BLorg/msgpack/template/Template;)Ljava/lang/Object;^4 = new <Application,Lorg/msgpack/unpacker/MessagePackBufferUnpacker>@0^NULL^INVOKE,FIELD,^false^true^Field escape;
+27^org/msgpack/MessagePack.java^730^org.msgpack.MessagePack.unpack([BLorg/msgpack/template/Template;)Ljava/lang/Object;^4 = new <Application,Lorg/msgpack/unpacker/MessagePackBufferUnpacker>@0^NULL^INVOKE,FIELD,^true^true^Field escape;
+28^org/msgpack/MessagePack.java^736^org.msgpack.MessagePack.unpack([BLorg/msgpack/template/Template;Ljava/lang/Object;)Ljava/lang/Object;^5 = new <Application,Lorg/msgpack/unpacker/MessagePackBufferUnpacker>@0^NULL^INVOKE,FIELD,^false^true^Field escape;
+29^org/msgpack/MessagePack.java^736^org.msgpack.MessagePack.unpack([BLorg/msgpack/template/Template;Ljava/lang/Object;)Ljava/lang/Object;^5 = new <Application,Lorg/msgpack/unpacker/MessagePackBufferUnpacker>@0^NULL^INVOKE,FIELD,^true^true^Field escape;
+30^org/msgpack/MessagePack.java^791^org.msgpack.MessagePack.unpack(Ljava/io/InputStream;Lorg/msgpack/template/Template;)Ljava/lang/Object;^4 = new <Application,Lorg/msgpack/unpacker/MessagePackUnpacker>@1^org.msgpack.MessagePack.unpack(Ljava/io/InputStream;Lorg/msgpack/template/Template;)Ljava/lang/Object;#1,^INVOKE,PARAM,^false^false^Parameter Fix;
+31^org/msgpack/MessagePack.java^806^org.msgpack.MessagePack.unpack(Ljava/io/InputStream;Lorg/msgpack/template/Template;Ljava/lang/Object;)Ljava/lang/Object;^5 = new <Application,Lorg/msgpack/unpacker/MessagePackUnpacker>@1^org.msgpack.MessagePack.unpack(Ljava/io/InputStream;Lorg/msgpack/template/Template;Ljava/lang/Object;)Ljava/lang/Object;#1,^INVOKE,PARAM,^false^false^Parameter Fix;
+32^org/msgpack/unpacker/UnpackerIterator.java^34^org.msgpack.unpacker.UnpackerIterator.<init>(Lorg/msgpack/unpacker/AbstractUnpacker;)V^5 = new <Application,Lorg/msgpack/packer/Unconverter>@10^NULL^FIELD,^false^true^Field escape;
+33^org/msgpack/unpacker/MessagePackUnpacker.java^575^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+34^org/msgpack/unpacker/MessagePackUnpacker.java^579^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+35^org/msgpack/unpacker/ValueAccept.java^39^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+36^org/msgpack/unpacker/ValueAccept.java^44^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+37^org/msgpack/unpacker/ValueAccept.java^49^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+38^org/msgpack/unpacker/ValueAccept.java^54^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+39^org/msgpack/unpacker/ValueAccept.java^59^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+40^org/msgpack/unpacker/ValueAccept.java^64^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+41^org/msgpack/unpacker/ValueAccept.java^69^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+42^org/msgpack/unpacker/ValueAccept.java^76^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+43^org/msgpack/unpacker/ValueAccept.java^78^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+44^org/msgpack/unpacker/ValueAccept.java^87^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+45^org/msgpack/unpacker/ValueAccept.java^89^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+46^org/msgpack/unpacker/ValueAccept.java^95^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+47^org/msgpack/unpacker/ValueAccept.java^100^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+48^org/msgpack/unpacker/ValueAccept.java^108^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+49^org/msgpack/unpacker/ValueAccept.java^113^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+50^org/msgpack/unpacker/ValueAccept.java^118^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+51^org/msgpack/unpacker/ValueAccept.java^123^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+52^org/msgpack/unpacker/ValueAccept.java^128^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+53^org/msgpack/unpacker/ValueAccept.java^133^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+54^org/msgpack/packer/Unconverter.java^145^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+55^org/msgpack/packer/Unconverter.java^185^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+56^org/msgpack/packer/AbstractPacker.java^79^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+57^org/msgpack/packer/AbstractPacker.java^89^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+58^org/msgpack/packer/AbstractPacker.java^99^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+59^org/msgpack/packer/AbstractPacker.java^109^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+60^org/msgpack/packer/AbstractPacker.java^119^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+61^org/msgpack/packer/AbstractPacker.java^129^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+62^org/msgpack/packer/AbstractPacker.java^139^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+63^org/msgpack/packer/AbstractPacker.java^149^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+64^org/msgpack/packer/AbstractPacker.java^159^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+65^org/msgpack/packer/AbstractPacker.java^169^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+66^org/msgpack/packer/AbstractPacker.java^179^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+67^org/msgpack/packer/AbstractPacker.java^189^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+68^org/msgpack/packer/AbstractPacker.java^200^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+69^org/msgpack/packer/AbstractPacker.java^211^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+70^org/msgpack/packer/AbstractPacker.java^220^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+71^org/msgpack/packer/AbstractPacker.java^226^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+72^org/msgpack/type/NilValue.java^60^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+73^org/msgpack/unpacker/Converter.java^311^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+74^org/msgpack/unpacker/Converter.java^324^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+75^org/msgpack/unpacker/Converter.java^327^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+76^org/msgpack/unpacker/Converter.java^344^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+77^org/msgpack/unpacker/Converter.java^351^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+78^org/msgpack/unpacker/Converter.java^357^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+79^org/msgpack/template/IntegerTemplate.java^35^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+80^org/msgpack/template/IntegerTemplate.java^38^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+81^org/msgpack/template/LongTemplate.java^35^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+82^org/msgpack/template/LongTemplate.java^38^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+83^org/msgpack/template/ShortTemplate.java^35^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+84^org/msgpack/template/ShortTemplate.java^38^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+85^org/msgpack/template/MessagePackableTemplate.java^39^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+86^org/msgpack/template/ByteBufferTemplate.java^37^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+87^org/msgpack/template/ByteBufferTemplate.java^40^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+88^org/msgpack/template/MapTemplate.java^43^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+89^org/msgpack/template/MapTemplate.java^49^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+90^org/msgpack/template/MapTemplate.java^54^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+91^org/msgpack/template/ShortArrayTemplate.java^35^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+92^org/msgpack/template/ShortArrayTemplate.java^38^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+93^org/msgpack/template/ShortArrayTemplate.java^40^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+94^org/msgpack/template/ShortArrayTemplate.java^42^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+95^org/msgpack/template/BigIntegerTemplate.java^36^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+96^org/msgpack/template/BigIntegerTemplate.java^39^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+97^org/msgpack/template/ByteArrayTemplate.java^35^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+98^org/msgpack/template/ByteArrayTemplate.java^38^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+99^org/msgpack/template/CharacterTemplate.java^42^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

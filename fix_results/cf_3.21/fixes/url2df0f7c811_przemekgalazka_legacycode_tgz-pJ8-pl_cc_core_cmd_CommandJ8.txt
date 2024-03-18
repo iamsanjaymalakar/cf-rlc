@@ -1,0 +1,138 @@
+13433
+3672
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/utils/IniFile.java; Line number 57
+vim +57 ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/utils/IniFile.java
+
++++ Add following code above line:57 (pl/cc/utils/IniFile.java)
+try{
++++ Add following code after line:57 (pl/cc/utils/IniFile.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 57
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/utils/IniFile.java; Line number 210
+vim +210 ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/utils/IniFile.java
+
++++ Add following code above line:210 (pl/cc/utils/IniFile.java)
+try{
++++ Add following code after line:210 (pl/cc/utils/IniFile.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 210
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/utils/IniFile.java; Line number 222
+vim +222 ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/utils/IniFile.java
+
++++ Add following code above line:222 (pl/cc/utils/IniFile.java)
+try{
++++ Add following code after line:222 (pl/cc/utils/IniFile.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 222
+
++++ Delete Line number 285 (pl/cc/utils/IniFile.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/utils/IniFile.java; Line number 320
+vim +320 ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/utils/IniFile.java
+
++++ Add following code above line:320 (pl/cc/utils/IniFile.java)
+try{
++++ Add following code after line:320 (pl/cc/utils/IniFile.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 320
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java; Line number 889
+vim +889 ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java
+
++++ Add following code below line: 912 (ccproxy/AgentConnection.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 889
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java; Line number 890
+vim +890 ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java
+
++++ Add following code below line: 912 (ccproxy/AgentConnection.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 890
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java; Line number 891
+vim +891 ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java
+
++++ Add following code below line: 912 (ccproxy/AgentConnection.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 891
+
+--------------------------------------------
+11] ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java; Line number 893
+vim +893 ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java
+
++++ Add following code below line: 912 (ccproxy/AgentConnection.java)
+finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 899 (ccproxy/AgentConnection.java)
+
+--------------------------------------------
+13] ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/ReadConfig.java; Line number 54
+vim +54 ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/ReadConfig.java
+
++++ Add following code below line: 223 (ccproxy/ReadConfig.java)
+finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/CCproxy.java; Line number 26
+vim +26 ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/CCproxy.java
+
++++ Add following code above line:26 (ccproxy/CCproxy.java)
+try{
++++ Add following code after line:27 (ccproxy/CCproxy.java)
+}finally{
+    try{ vis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+15] ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/CCproxy.java; Line number 94
+vim +94 ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/CCproxy.java
+
++++ Add following code below line: 128 (ccproxy/CCproxy.java)
+finally{
+    try{ fis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 102 (ccproxy/CCproxy.java)
+
+--------------------------------------------
+16] ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/CCproxy.java; Line number 112
+vim +112 ../../../../datasets/debug_supplemented_njr/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/CCproxy.java
+
++++ Add following code below line: 128 (ccproxy/CCproxy.java)
+finally{
+    try{ input.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 117 (ccproxy/CCproxy.java)
+
+--------------------------------------------

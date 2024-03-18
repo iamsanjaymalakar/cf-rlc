@@ -1,0 +1,469 @@
+12502
+2990
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/Evolution.java; Line number 45
+vim +45 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/Evolution.java
+
++++ Add following code above line:45 (methodology/Evolution.java)
+try{
++++ Add following code after line:45 (methodology/Evolution.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 45
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/Evolution.java; Line number 122
+vim +122 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/Evolution.java
+
++++ Add following code above line:122 (methodology/Evolution.java)
+try{
++++ Add following code after line:123 (methodology/Evolution.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 122
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/ParetoFrontier.java; Line number 70
+vim +70 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/ParetoFrontier.java
+
++++ Add following code above line:70 (methodology/ParetoFrontier.java)
+try{
++++ Add following code after line:71 (methodology/ParetoFrontier.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 70
+
++++ Delete Line number 72 (methodology/ParetoFrontier.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/ParetoFrontier.java; Line number 73
+vim +73 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/ParetoFrontier.java
+
++++ Add following code above line:73 (methodology/ParetoFrontier.java)
+try{
++++ Add following code after line:74 (methodology/ParetoFrontier.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 73
+
++++ Delete Line number 75 (methodology/ParetoFrontier.java)
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/History.java; Line number 43
+vim +43 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/History.java
+
++++ Add following code above line:43 (methodology/History.java)
+try{
++++ Add following code after line:43 (methodology/History.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 43
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/History.java; Line number 75
+vim +75 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/methodology/History.java
+
++++ Add following code above line:75 (methodology/History.java)
+try{
++++ Add following code after line:76 (methodology/History.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 75
+
++++ Delete Line number 77 (methodology/History.java)
+
+--------------------------------------------
+7] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Gnuplot.java; Line number 21
+vim +21 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Gnuplot.java
+
++++ Add following code above line:21 (utils/Gnuplot.java)
+try{
++++ Add following code after line:27 (utils/Gnuplot.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 21
+
++++ Delete Line number 28 (utils/Gnuplot.java)
+
+--------------------------------------------
+10] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Optimization.java; Line number 34
+vim +34 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Optimization.java
+
++++ Add following code above line:34 (utils/Optimization.java)
+try{
++++ Add following code after line:34 (utils/Optimization.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 34
+
+--------------------------------------------
+11] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Data.java; Line number 28
+vim +28 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Data.java
+
++++ Add following code above line:28 (utils/Data.java)
+try{
++++ Add following code after line:40 (utils/Data.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 28
+
++++ Delete Line number 41 (utils/Data.java)
+
+--------------------------------------------
+12] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java; Line number 124
+vim +124 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java
+
++++ Add following code above line:124 (utils/Report.java)
+try{
++++ Add following code after line:137 (utils/Report.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 124
+
++++ Delete Line number 138 (utils/Report.java)
+
+--------------------------------------------
+13] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java; Line number 145
+vim +145 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java
+
++++ Add following code above line:145 (utils/Report.java)
+try{
++++ Add following code after line:157 (utils/Report.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 145
+
++++ Delete Line number 158 (utils/Report.java)
+
+--------------------------------------------
+14] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java; Line number 164
+vim +164 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java
+
++++ Add following code above line:164 (utils/Report.java)
+try{
++++ Add following code after line:176 (utils/Report.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 164
+
++++ Delete Line number 177 (utils/Report.java)
+
+--------------------------------------------
+15] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java; Line number 182
+vim +182 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java
+
++++ Add following code above line:182 (utils/Report.java)
+try{
++++ Add following code after line:194 (utils/Report.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 182
+
++++ Delete Line number 195 (utils/Report.java)
+
+--------------------------------------------
+16] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java; Line number 201
+vim +201 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java
+
++++ Add following code above line:201 (utils/Report.java)
+try{
++++ Add following code after line:212 (utils/Report.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 201
+
++++ Delete Line number 213 (utils/Report.java)
+
+--------------------------------------------
+17] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java; Line number 220
+vim +220 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java
+
++++ Add following code above line:220 (utils/Report.java)
+try{
++++ Add following code after line:232 (utils/Report.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 220
+
++++ Delete Line number 233 (utils/Report.java)
+
+--------------------------------------------
+18] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java; Line number 239
+vim +239 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java
+
++++ Add following code above line:239 (utils/Report.java)
+try{
++++ Add following code after line:251 (utils/Report.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 239
+
++++ Delete Line number 252 (utils/Report.java)
+
+--------------------------------------------
+19] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java; Line number 258
+vim +258 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java
+
++++ Add following code above line:258 (utils/Report.java)
+try{
++++ Add following code after line:270 (utils/Report.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 258
+
++++ Delete Line number 271 (utils/Report.java)
+
+--------------------------------------------
+20] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java; Line number 278
+vim +278 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java
+
++++ Add following code above line:278 (utils/Report.java)
+try{
++++ Add following code after line:290 (utils/Report.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 278
+
++++ Delete Line number 291 (utils/Report.java)
+
+--------------------------------------------
+21] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java; Line number 297
+vim +297 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java
+
++++ Add following code above line:297 (utils/Report.java)
+try{
++++ Add following code after line:309 (utils/Report.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 297
+
++++ Delete Line number 310 (utils/Report.java)
+
+--------------------------------------------
+22] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java; Line number 316
+vim +316 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java
+
++++ Add following code above line:316 (utils/Report.java)
+try{
++++ Add following code after line:328 (utils/Report.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 316
+
++++ Delete Line number 329 (utils/Report.java)
+
+--------------------------------------------
+23] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java; Line number 335
+vim +335 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java
+
++++ Add following code above line:335 (utils/Report.java)
+try{
++++ Add following code after line:347 (utils/Report.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 335
+
++++ Delete Line number 348 (utils/Report.java)
+
+--------------------------------------------
+24] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java; Line number 354
+vim +354 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java
+
++++ Add following code above line:354 (utils/Report.java)
+try{
++++ Add following code after line:366 (utils/Report.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 354
+
++++ Delete Line number 367 (utils/Report.java)
+
+--------------------------------------------
+25] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java; Line number 372
+vim +372 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/utils/Report.java
+
++++ Add following code above line:372 (utils/Report.java)
+try{
++++ Add following code after line:381 (utils/Report.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 372
+
++++ Delete Line number 382 (utils/Report.java)
+
+--------------------------------------------
+26] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/mains/DecisionMaking.java; Line number 46
+vim +46 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/mains/DecisionMaking.java
+
++++ Add following code above line:46 (mains/DecisionMaking.java)
+try{
++++ Add following code after line:46 (mains/DecisionMaking.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 46
+
+--------------------------------------------
+27] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/mains/Comparison.java; Line number 40
+vim +40 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/mains/Comparison.java
+
++++ Add following code above line:40 (mains/Comparison.java)
+try{
++++ Add following code after line:40 (mains/Comparison.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 40
+
+--------------------------------------------
+28] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/mains/Comparison.java; Line number 64
+vim +64 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/mains/Comparison.java
+
++++ Add following code above line:64 (mains/Comparison.java)
+try{
++++ Add following code after line:65 (mains/Comparison.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 64
+
++++ Delete Line number 66 (mains/Comparison.java)
+
+--------------------------------------------
+29] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/PoulidorProtocol.java; Line number 168
+vim +168 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/PoulidorProtocol.java
+
++++ Add following code above line:168 (protocols/specifications/PoulidorProtocol.java)
+try{
++++ Add following code after line:180 (protocols/specifications/PoulidorProtocol.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 168
+
++++ Delete Line number 181 (protocols/specifications/PoulidorProtocol.java)
+
+--------------------------------------------
+30] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/PoulidorProtocol.java; Line number 169
+vim +169 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/PoulidorProtocol.java
+
++++ Add following code above line:169 (protocols/specifications/PoulidorProtocol.java)
+try{
++++ Add following code after line:180 (protocols/specifications/PoulidorProtocol.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 169
+
++++ Delete Line number 182 (protocols/specifications/PoulidorProtocol.java)
+
+--------------------------------------------
+31] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/PoulidorProtocol.java; Line number 246
+vim +246 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/PoulidorProtocol.java
+
++++ Add following code above line:246 (protocols/specifications/PoulidorProtocol.java)
+try{
++++ Add following code after line:251 (protocols/specifications/PoulidorProtocol.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 246
+
++++ Delete Line number 252 (protocols/specifications/PoulidorProtocol.java)
+
+--------------------------------------------
+32] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/PoulidorProtocol.java; Line number 279
+vim +279 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/PoulidorProtocol.java
+
++++ Add following code above line:279 (protocols/specifications/PoulidorProtocol.java)
+try{
++++ Add following code after line:284 (protocols/specifications/PoulidorProtocol.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 279
+
++++ Delete Line number 285 (protocols/specifications/PoulidorProtocol.java)
+
+--------------------------------------------
+33] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/TMAProtocol.java; Line number 247
+vim +247 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/TMAProtocol.java
+
++++ Add following code above line:247 (protocols/specifications/TMAProtocol.java)
+try{
++++ Add following code after line:253 (protocols/specifications/TMAProtocol.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 247
+
++++ Delete Line number 254 (protocols/specifications/TMAProtocol.java)
+
+--------------------------------------------
+34] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/TMAProtocol.java; Line number 284
+vim +284 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/TMAProtocol.java
+
++++ Add following code above line:284 (protocols/specifications/TMAProtocol.java)
+try{
++++ Add following code after line:290 (protocols/specifications/TMAProtocol.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 284
+
++++ Delete Line number 291 (protocols/specifications/TMAProtocol.java)
+
+--------------------------------------------
+35] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/TMAProtocol.java; Line number 313
+vim +313 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/TMAProtocol.java
+
++++ Add following code above line:313 (protocols/specifications/TMAProtocol.java)
+try{
++++ Add following code after line:325 (protocols/specifications/TMAProtocol.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 313
+
++++ Delete Line number 326 (protocols/specifications/TMAProtocol.java)
+
+--------------------------------------------
+36] ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/TMAProtocol.java; Line number 314
+vim +314 ../../../dataset/june2020_dataset/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/TMAProtocol.java
+
++++ Add following code above line:314 (protocols/specifications/TMAProtocol.java)
+try{
++++ Add following code after line:325 (protocols/specifications/TMAProtocol.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 314
+
++++ Delete Line number 327 (protocols/specifications/TMAProtocol.java)
+
+--------------------------------------------

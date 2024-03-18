@@ -1,0 +1,14 @@
+15111
+1007
+
+SOURCE LEVEL FIXES
+
+12] ../../../../datasets/debug_supplemented_njr/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/ARMLinuxLoader.java; Line number 33
+vim +33 ../../../../datasets/debug_supplemented_njr/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/ARMLinuxLoader.java
+
++++ Add following code below line: 47 (net/katsuster/ememu/ui/ARMLinuxLoader.java)
+finally{
+    try{ s.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

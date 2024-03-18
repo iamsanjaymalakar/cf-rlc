@@ -1,0 +1,45 @@
+11001
+1332
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/learning/InputReader.java; Line number 25
+vim +25 ../../../dataset/june2020_dataset/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/learning/InputReader.java
+
++++ Add following code below line: 38 (learning/InputReader.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 25
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/learning/InputReader.java; Line number 55
+vim +55 ../../../dataset/june2020_dataset/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/learning/InputReader.java
+
++++ Add following code below line: 79 (learning/InputReader.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 55
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/hypergraph/BaseTest.java; Line number 81
+vim +81 ../../../dataset/june2020_dataset/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/hypergraph/BaseTest.java
+
++++ Add following code below line: 113 (hypergraph/BaseTest.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 81
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/hypergraph/BaseTest.java; Line number 139
+vim +139 ../../../dataset/june2020_dataset/url284ba87ea1_swabhs_forbidden_paths_tgz-pJ8-tagging_hypergraph_TaggingHypergraphGeneratorJ8/src/hypergraph/BaseTest.java
+
++++ Add following code below line: 161 (hypergraph/BaseTest.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 139
+
+--------------------------------------------

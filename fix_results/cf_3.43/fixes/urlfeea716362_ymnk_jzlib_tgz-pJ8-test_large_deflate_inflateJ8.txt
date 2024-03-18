@@ -1,0 +1,15 @@
+10458
+1002
+
+SOURCE LEVEL FIXES
+
+1] ../../../dataset/june2020_dataset/urlfeea716362_ymnk_jzlib_tgz-pJ8-test_large_deflate_inflateJ8/src/test_stream_deflate_inflate.java; Line number 17
+vim +17 ../../../dataset/june2020_dataset/urlfeea716362_ymnk_jzlib_tgz-pJ8-test_large_deflate_inflateJ8/src/test_stream_deflate_inflate.java
+
++++ Add following code below line: 23 (test_stream_deflate_inflate.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 17
+
+--------------------------------------------

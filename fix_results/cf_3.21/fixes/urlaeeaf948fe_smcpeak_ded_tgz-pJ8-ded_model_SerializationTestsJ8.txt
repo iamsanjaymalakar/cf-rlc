@@ -1,0 +1,39 @@
+16455
+1498
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONArray.java; Line number 840
+vim +840 ../../../../datasets/debug_supplemented_njr/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONArray.java
+
++++ Add following code above line:840 (org/json/JSONArray.java)
+try{
++++ Add following code after line:840 (org/json/JSONArray.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 840
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONObject.java; Line number 1194
+vim +1194 ../../../../datasets/debug_supplemented_njr/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONObject.java
+
++++ Add following code below line: 1198 (org/json/JSONObject.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 1194
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONObject.java; Line number 1401
+vim +1401 ../../../../datasets/debug_supplemented_njr/urlaeeaf948fe_smcpeak_ded_tgz-pJ8-ded_model_SerializationTestsJ8/src/org/json/JSONObject.java
+
++++ Add following code above line:1401 (org/json/JSONObject.java)
+try{
++++ Add following code after line:1401 (org/json/JSONObject.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 1401
+
+--------------------------------------------

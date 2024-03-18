@@ -1,0 +1,82 @@
+7570
+583
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/dataStructure/AdjList.java; Line number 236
+vim +236 ../../../../datasets/debug_supplemented_njr/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/dataStructure/AdjList.java
+
++++ Add following code below line: 267 (dataStructure/AdjList.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 265 (dataStructure/AdjList.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/dataStructure/PositionTable.java; Line number 31
+vim +31 ../../../../datasets/debug_supplemented_njr/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/dataStructure/PositionTable.java
+
++++ Add following code below line: 61 (dataStructure/PositionTable.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 58 (dataStructure/PositionTable.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java; Line number 99
+vim +99 ../../../../datasets/debug_supplemented_njr/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java
+
++++ Add following code below line: 268 (main/Graph.java)
+finally{
+    try{ degreeOut.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 259 (main/Graph.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java; Line number 100
+vim +100 ../../../../datasets/debug_supplemented_njr/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java
+
++++ Add following code below line: 268 (main/Graph.java)
+finally{
+    try{ violatedTerminalsCVRFileOut.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 260 (main/Graph.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java; Line number 101
+vim +101 ../../../../datasets/debug_supplemented_njr/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java
+
++++ Add following code below line: 268 (main/Graph.java)
+finally{
+    try{ violatedNodesRatioOut.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 262 (main/Graph.java)
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java; Line number 102
+vim +102 ../../../../datasets/debug_supplemented_njr/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java
+
++++ Add following code below line: 268 (main/Graph.java)
+finally{
+    try{ violatedRunsRatioOut.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 263 (main/Graph.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java; Line number 103
+vim +103 ../../../../datasets/debug_supplemented_njr/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java
+
++++ Add following code below line: 268 (main/Graph.java)
+finally{
+    try{ percCovTerOut.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 261 (main/Graph.java)
+
+--------------------------------------------

@@ -1,0 +1,139 @@
+18787
+6690
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/wikipedia/utils/URLUtils.java; Line number 61
+vim +61 ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/wikipedia/utils/URLUtils.java
+
++++ Add following code above line:61 (wikipedia/utils/URLUtils.java)
+try{
++++ Add following code after line:67 (wikipedia/utils/URLUtils.java)
+}finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java; Line number 474
+vim +474 ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/org/json/Test.java
+
++++ Add following code below line: 676 (org/json/Test.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 474
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/LogViewerServlet.java; Line number 76
+vim +76 ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/LogViewerServlet.java
+
++++ Add following code below line: 90 (websocket/server/LogViewerServlet.java)
+<NEW_VARIABLE>.close();
+// where variable <NEW_VARIABLE> points to the resource from line 76
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/LogViewerServlet.java; Line number 80
+vim +80 ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/LogViewerServlet.java
+
++++ Add following code above line:80 (websocket/server/LogViewerServlet.java)
+try{
++++ Add following code after line:80 (websocket/server/LogViewerServlet.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 80
+
+--------------------------------------------
+11] ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/LogViewerServlet.java; Line number 81
+vim +81 ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/LogViewerServlet.java
+
++++ Add following code above line:81 (websocket/server/LogViewerServlet.java)
+try{
++++ Add following code after line:81 (websocket/server/LogViewerServlet.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 81
+
+--------------------------------------------
+12] ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/LogViewerServlet.java; Line number 83
+vim +83 ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/websocket/server/LogViewerServlet.java
+
++++ Add following code below line: 90 (websocket/server/LogViewerServlet.java)
+<NEW_VARIABLE>.close();
+// where variable <NEW_VARIABLE> points to the resource from line 83
+
+--------------------------------------------
+19] ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/LogFiler.java; Line number 117
+vim +117 ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/LogFiler.java
+
++++ Add following code above line:117 (grinder/client/LogFiler.java)
+try{
++++ Add following code after line:132 (grinder/client/LogFiler.java)
+}finally{
+    try{ is.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 139 (grinder/client/LogFiler.java)
+
+--------------------------------------------
+20] ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/user/Browser.java; Line number 201
+vim +201 ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/client/user/Browser.java
+
++++ Add following code below line: 213 (grinder/client/user/Browser.java)
+finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+25] ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java; Line number 162
+vim +162 ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/grinder/controller/Controller.java
+
++++ Add following code above line:162 (grinder/controller/Controller.java)
+try{ 
++++ Add following code below line:164 (grinder/controller/Controller.java)
+} catch(Exception e){ 
+    if (br!=null) { br.close();}
+    throw e; 
+}
++++ Add following code below line: 196 (grinder/controller/Controller.java)
+finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+28] ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/trash/HttpServer.java; Line number 30
+vim +30 ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/trash/HttpServer.java
+
++++ Add following code below line: 92 (trash/HttpServer.java)
+finally{
+    try{ masterSocket.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+29] ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/trash/HttpServer.java; Line number 35
+vim +35 ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/trash/HttpServer.java
+
++++ Add following code above line:35 (trash/HttpServer.java)
+try{
++++ Add following code after line:41 (trash/HttpServer.java)
+}finally{
+    try{ client.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 80 (trash/HttpServer.java)
+
+--------------------------------------------
+30] ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/trash/HttpServer.java; Line number 58
+vim +58 ../../../../datasets/debug_supplemented_njr/urldeb33fd2fa_friedemann_distripedia_tgz-pJ8-org_json_TestJ8/src/trash/HttpServer.java
+
++++ Add following code above line:58 (trash/HttpServer.java)
+try{
++++ Add following code after line:65 (trash/HttpServer.java)
+}finally{
+    try{ fileReader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 67 (trash/HttpServer.java)
+
+--------------------------------------------

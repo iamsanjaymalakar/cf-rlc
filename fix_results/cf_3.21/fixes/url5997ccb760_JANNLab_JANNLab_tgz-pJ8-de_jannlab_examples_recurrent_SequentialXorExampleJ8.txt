@@ -1,0 +1,79 @@
+12303
+2204
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/io/Serializer.java; Line number 50
+vim +50 ../../../../datasets/debug_supplemented_njr/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/io/Serializer.java
+
++++ Add following code above line:50 (de/jannlab/io/Serializer.java)
+try{
++++ Add following code after line:54 (de/jannlab/io/Serializer.java)
+}finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 55 (de/jannlab/io/Serializer.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/io/Serializer.java; Line number 70
+vim +70 ../../../../datasets/debug_supplemented_njr/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/io/Serializer.java
+
++++ Add following code above line:69 (de/jannlab/io/Serializer.java)
+try{
++++ Add following code after line:74 (de/jannlab/io/Serializer.java)
+}finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 75 (de/jannlab/io/Serializer.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/data/SampleTools.java; Line number 243
+vim +243 ../../../../datasets/debug_supplemented_njr/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/data/SampleTools.java
+
++++ Add following code above line:243 (de/jannlab/data/SampleTools.java)
+try{
++++ Add following code after line:292 (de/jannlab/data/SampleTools.java)
+}finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 293 (de/jannlab/data/SampleTools.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/data/SampleTools.java; Line number 323
+vim +323 ../../../../datasets/debug_supplemented_njr/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/data/SampleTools.java
+
++++ Add following code above line:323 (de/jannlab/data/SampleTools.java)
+try{
++++ Add following code after line:345 (de/jannlab/data/SampleTools.java)
+}finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 346 (de/jannlab/data/SampleTools.java)
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/misc/ObjectCopy.java; Line number 45
+vim +45 ../../../../datasets/debug_supplemented_njr/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/misc/ObjectCopy.java
+
++++ Add following code below line: 62 (de/jannlab/misc/ObjectCopy.java)
+finally{
+    try{ buffer.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 48 (de/jannlab/misc/ObjectCopy.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/misc/ObjectCopy.java; Line number 52
+vim +52 ../../../../datasets/debug_supplemented_njr/url5997ccb760_JANNLab_JANNLab_tgz-pJ8-de_jannlab_examples_recurrent_SequentialXorExampleJ8/src/de/jannlab/misc/ObjectCopy.java
+
++++ Add following code below line: 62 (de/jannlab/misc/ObjectCopy.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 58 (de/jannlab/misc/ObjectCopy.java)
+
+--------------------------------------------

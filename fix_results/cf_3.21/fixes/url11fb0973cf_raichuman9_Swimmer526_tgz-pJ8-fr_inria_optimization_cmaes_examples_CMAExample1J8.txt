@@ -1,0 +1,71 @@
+17349
+134
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/tests/PaddleTest.java; Line number 93
+vim +93 ../../../../datasets/debug_supplemented_njr/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/tests/PaddleTest.java
+
++++ Add following code above line:93 (ubc/swim/tests/PaddleTest.java)
+try{
++++ Add following code after line:94 (ubc/swim/tests/PaddleTest.java)
+}finally{
+    try{ f.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/tests/BasicSwimTest.java; Line number 112
+vim +112 ../../../../datasets/debug_supplemented_njr/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/tests/BasicSwimTest.java
+
++++ Add following code above line:112 (ubc/swim/tests/BasicSwimTest.java)
+try{
++++ Add following code after line:114 (ubc/swim/tests/BasicSwimTest.java)
+}finally{
+    try{ f.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/tests/SliderCrankTest.java; Line number 157
+vim +157 ../../../../datasets/debug_supplemented_njr/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/tests/SliderCrankTest.java
+
++++ Add following code above line:157 (ubc/swim/tests/SliderCrankTest.java)
+try{
++++ Add following code after line:158 (ubc/swim/tests/SliderCrankTest.java)
+}finally{
+    try{ f.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/gui/SwimController.java; Line number 362
+vim +362 ../../../../datasets/debug_supplemented_njr/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/gui/SwimController.java
+
++++ Add following code below line: 372 (ubc/swim/gui/SwimController.java)
+finally{
+    try{ stream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 368 (ubc/swim/gui/SwimController.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/optimization/SwimmerOptimization.java; Line number 112
+vim +112 ../../../../datasets/debug_supplemented_njr/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/optimization/SwimmerOptimization.java
+
++++ Add following code below line: 125 (ubc/swim/optimization/SwimmerOptimization.java)
+finally{
+    try{ writer.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 120 (ubc/swim/optimization/SwimmerOptimization.java)
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/optimization/SwimmerOptimization.java; Line number 143
+vim +143 ../../../../datasets/debug_supplemented_njr/url11fb0973cf_raichuman9_Swimmer526_tgz-pJ8-fr_inria_optimization_cmaes_examples_CMAExample1J8/src/ubc/swim/optimization/SwimmerOptimization.java
+
++++ Add following code below line: 158 (ubc/swim/optimization/SwimmerOptimization.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 153 (ubc/swim/optimization/SwimmerOptimization.java)
+
+--------------------------------------------

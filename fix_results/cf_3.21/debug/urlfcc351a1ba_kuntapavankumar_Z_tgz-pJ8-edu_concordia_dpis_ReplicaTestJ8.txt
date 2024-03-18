@@ -1,0 +1,26 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^edu/concordia/dpis/MulticastReceiver.java^27^edu.concordia.dpis.MulticastReceiver.run()V^9 = new <Application,Ljava/net/MulticastSocket>@21^NULL^INVOKE,^false^false^Try-catch Fix;
+1^edu/concordia/dpis/MulticastReceiver.java^39^edu.concordia.dpis.MulticastReceiver.run()V^26 = new <Application,Ljava/net/DatagramSocket>@85^NULL^INVOKE,^false^false^Loop Fix;Normal Fix;
+2^edu/concordia/dpis/MulticastListener.java^35^edu.concordia.dpis.MulticastListener.joinGroup()V^3 = new <Application,Ljava/net/MulticastSocket>@1^NULL^FIELD,^false^true^Field escape;
+3^edu/concordia/dpis/commons/MessageTransformer.java^15^edu.concordia.dpis.commons.MessageTransformer.serializeMessage(Ledu/concordia/dpis/commons/Message;)[B^5 = new <Application,Ljava/io/ObjectOutputStream>@8^edu.concordia.dpis.commons.MessageTransformer.serializeMessage(Ledu/concordia/dpis/commons/Message;)[B#3,^INVOKE,^false^false^Normal Fix;
+4^edu/concordia/dpis/commons/MessageTransformer.java^23^edu.concordia.dpis.commons.MessageTransformer.deserializeMessage([B)Ledu/concordia/dpis/commons/Message;^3 = new <Application,Ljava/io/ObjectInputStream>@0^edu.concordia.dpis.commons.MessageTransformer.deserializeMessage([B)Ledu/concordia/dpis/commons/Message;#4,^INVOKE,^false^false^Try-catch Fix;
+5^edu/concordia/dpis/stationserver/StationServerImpl.java^125^edu.concordia.dpis.stationserver.StationServerImpl.<init>(Ledu/concordia/dpis/stationserver/domain/StationType;)V^33 = new <Application,Ljava/io/FileInputStream>@102^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+6^edu/concordia/dpis/stationserver/StationServerImpl.java^136^edu.concordia.dpis.stationserver.StationServerImpl.<init>(Ledu/concordia/dpis/stationserver/domain/StationType;)V^50 = new <Application,Ljava/io/FileInputStream>@154^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+7^edu/concordia/dpis/stationserver/StationServerImpl.java^153^edu.concordia.dpis.stationserver.StationServerImpl.applyDefaultUDPSettings()V^19 = new <Application,Ljava/io/FileOutputStream>@40^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+8^edu/concordia/dpis/stationserver/StationServerImpl.java^170^edu.concordia.dpis.stationserver.StationServerImpl.applyDefaultTCPSettings()V^19 = new <Application,Ljava/io/FileOutputStream>@40^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+9^edu/concordia/dpis/stationserver/FaultyStationServerImpl.java^125^edu.concordia.dpis.stationserver.FaultyStationServerImpl.<init>(Ledu/concordia/dpis/stationserver/domain/StationType;)V^33 = new <Application,Ljava/io/FileInputStream>@102^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+10^edu/concordia/dpis/stationserver/FaultyStationServerImpl.java^136^edu.concordia.dpis.stationserver.FaultyStationServerImpl.<init>(Ledu/concordia/dpis/stationserver/domain/StationType;)V^50 = new <Application,Ljava/io/FileInputStream>@154^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+11^edu/concordia/dpis/stationserver/FaultyStationServerImpl.java^153^edu.concordia.dpis.stationserver.FaultyStationServerImpl.applyDefaultUDPSettings()V^19 = new <Application,Ljava/io/FileOutputStream>@40^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+12^edu/concordia/dpis/stationserver/FaultyStationServerImpl.java^170^edu.concordia.dpis.stationserver.FaultyStationServerImpl.applyDefaultTCPSettings()V^19 = new <Application,Ljava/io/FileOutputStream>@40^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+13^edu/concordia/dpis/fifo/MulticastSender.java^19^edu.concordia.dpis.fifo.MulticastSender.<init>(ILjava/lang/String;)V^6 = new <Application,Ljava/net/MulticastSocket>@15^NULL^FIELD,^false^true^Field escape;
+14^edu/concordia/dpis/MulticastServer.java^29^edu.concordia.dpis.MulticastServer.run()V^7 = new <Application,Ljava/net/DatagramSocket>@10^edu.concordia.dpis.MulticastServer.run()V#23,edu.concordia.dpis.MulticastServer.run()V#38,edu.concordia.dpis.MulticastServer.run()V#53,^INVOKE,^false^true^Loop Fix;Could not figure out finally block location;Normal Fix;
+15^edu/concordia/dpis/stationserver/StationServerImpl.java^548^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+16^edu/concordia/dpis/stationserver/StationServerImpl.java^572^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+17^edu/concordia/dpis/stationserver/StationServerImpl.java^618^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+18^edu/concordia/dpis/stationserver/StationServerImpl.java^672^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+19^edu/concordia/dpis/stationserver/StationServerImpl.java^674^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+20^edu/concordia/dpis/stationserver/FaultyStationServerImpl.java^304^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+21^edu/concordia/dpis/stationserver/FaultyStationServerImpl.java^328^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+22^edu/concordia/dpis/stationserver/FaultyStationServerImpl.java^374^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+23^edu/concordia/dpis/stationserver/FaultyStationServerImpl.java^428^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+24^edu/concordia/dpis/stationserver/FaultyStationServerImpl.java^430^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

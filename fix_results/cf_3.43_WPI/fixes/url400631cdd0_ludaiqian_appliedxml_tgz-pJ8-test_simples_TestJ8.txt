@@ -1,0 +1,29 @@
+12112
+914
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url400631cdd0_ludaiqian_appliedxml_tgz-pJ8-test_simples_TestJ8/src/test/fromlist/Test.java; Line number 37
+vim +37 ../../../dataset/june2020_dataset/url400631cdd0_ludaiqian_appliedxml_tgz-pJ8-test_simples_TestJ8/src/test/fromlist/Test.java
+
++++ Add following code above line:37 (test/fromlist/Test.java)
+try{
++++ Add following code after line:39 (test/fromlist/Test.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 37
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url400631cdd0_ludaiqian_appliedxml_tgz-pJ8-test_simples_TestJ8/src/test/simples/Test.java; Line number 109
+vim +109 ../../../dataset/june2020_dataset/url400631cdd0_ludaiqian_appliedxml_tgz-pJ8-test_simples_TestJ8/src/test/simples/Test.java
+
++++ Add following code above line:109 (test/simples/Test.java)
+try{
++++ Add following code after line:111 (test/simples/Test.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 109
+
+--------------------------------------------

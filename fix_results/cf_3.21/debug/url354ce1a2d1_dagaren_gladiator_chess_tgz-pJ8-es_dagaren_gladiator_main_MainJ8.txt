@@ -1,0 +1,5 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^es/dagaren/gladiator/communication/xboard/EngineController.java^58^es.dagaren.gladiator.communication.xboard.EngineController.onCommandReceived(Ljava/lang/String;)V^4 = new <Application,Ljava/util/Scanner>@0^NULL^INVOKE,^false^false^Normal Fix;
+1^es/dagaren/gladiator/communication/xboard/UserController.java^55^es.dagaren.gladiator.communication.xboard.UserController.onCommandReceived(Ljava/lang/String;)V^4 = new <Application,Ljava/util/Scanner>@0^NULL^INVOKE,^false^false^Normal Fix;
+2^es/dagaren/gladiator/communication/xboard/EngineController.java^164^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+3^es/dagaren/gladiator/communication/xboard/EngineController.java^213^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

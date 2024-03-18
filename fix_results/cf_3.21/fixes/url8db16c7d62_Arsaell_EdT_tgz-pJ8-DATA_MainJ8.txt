@@ -1,0 +1,27 @@
+17885
+804
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/Main.java; Line number 27
+vim +27 ../../../../datasets/debug_supplemented_njr/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/Main.java
+
++++ Add following code below line: 57 (Main.java)
+finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/Main.java; Line number 35
+vim +35 ../../../../datasets/debug_supplemented_njr/url8db16c7d62_Arsaell_EdT_tgz-pJ8-DATA_MainJ8/src/Main.java
+
++++ Add following code below line: 50 (Main.java)
+finally{
+    try{ objectInputStream.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 38 (Main.java)
+
++++ Delete Line number 39 (Main.java)
+
+--------------------------------------------

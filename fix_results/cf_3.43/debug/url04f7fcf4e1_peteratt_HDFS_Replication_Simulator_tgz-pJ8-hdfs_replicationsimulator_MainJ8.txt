@@ -1,0 +1,4 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^hdfs/replicationsimulator/Simulator.java^46^hdfs.replicationsimulator.Simulator.init(Ljava/lang/String;)V^3 = new <Application,Ljava/io/FileReader>@0^hdfs.replicationsimulator.Simulator.init(Ljava/lang/String;)V#5,^INVOKE,^false^false^Try-catch Fix;
+1^hdfs/replicationsimulator/Simulator.java^219^hdfs.replicationsimulator.Simulator.printResults()V^5 = new <Application,Ljava/io/FileWriter>@10^NULL^INVOKE,^false^false^Try-catch Fix;
+2^hdfs/replicationsimulator/SimFileGenerator.java^51^hdfs.replicationsimulator.SimFileGenerator.parseArgs([Ljava/lang/String;)V^31 = new <Application,Ljava/io/FileWriter>@83^NULL^INVOKE,^false^false^Normal Fix;

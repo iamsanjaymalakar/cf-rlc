@@ -1,0 +1,27 @@
+17771
+1556
+
+SOURCE LEVEL FIXES
+
+10] ../../../../datasets/debug_supplemented_njr/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/Data_Compression.java; Line number 9
+vim +9 ../../../../datasets/debug_supplemented_njr/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/Data_Compression.java
+
++++ Add following code below line: 32 (Data_Compression.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 29 (Data_Compression.java)
+
+--------------------------------------------
+12] ../../../../datasets/debug_supplemented_njr/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/Data_Compression.java; Line number 18
+vim +18 ../../../../datasets/debug_supplemented_njr/url882f91ec97_WenboCao_Microsoft_Drone_tgz-pJ8-org_ejml_alg_dense_decomposition_qr_StabilityQRDecompositionJ8/src/Data_Compression.java
+
++++ Add following code below line: 32 (Data_Compression.java)
+finally{
+    try{ fi.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 27 (Data_Compression.java)
+
+--------------------------------------------

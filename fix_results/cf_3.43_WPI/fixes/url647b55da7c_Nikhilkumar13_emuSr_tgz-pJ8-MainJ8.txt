@@ -1,0 +1,27 @@
+21644
+320
+
+SOURCE LEVEL FIXES
+
+1] ../../../dataset/june2020_dataset/url647b55da7c_Nikhilkumar13_emuSr_tgz-pJ8-MainJ8/src/frontend/handlers.java; Line number 156
+vim +156 ../../../dataset/june2020_dataset/url647b55da7c_Nikhilkumar13_emuSr_tgz-pJ8-MainJ8/src/frontend/handlers.java
+
++++ Add following code below line: 177 (frontend/handlers.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 156
+
++++ Delete Line number 162 (frontend/handlers.java)
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/url647b55da7c_Nikhilkumar13_emuSr_tgz-pJ8-MainJ8/src/frontend/handlers.java; Line number 659
+vim +659 ../../../dataset/june2020_dataset/url647b55da7c_Nikhilkumar13_emuSr_tgz-pJ8-MainJ8/src/frontend/handlers.java
+
++++ Add following code below line: 679 (frontend/handlers.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 659
+
+--------------------------------------------

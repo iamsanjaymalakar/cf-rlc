@@ -1,0 +1,251 @@
+15736
+4205
+
+SOURCE LEVEL FIXES
+
+2] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/utils/Configuration.java; Line number 296
+vim +296 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/utils/Configuration.java
+
++++ Add following code above line:296 (com/kokakiwi/mclauncher/utils/Configuration.java)
+try{
++++ Add following code after line:299 (com/kokakiwi/mclauncher/utils/Configuration.java)
+}finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 300 (com/kokakiwi/mclauncher/utils/Configuration.java)
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/api/LauncherAPI.java; Line number 209
+vim +209 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/api/LauncherAPI.java
+
++++ Add following code below line: 250 (com/kokakiwi/mclauncher/api/LauncherAPI.java)
+finally{
+    try{ dis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 211 (com/kokakiwi/mclauncher/api/LauncherAPI.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/api/LauncherAPI.java; Line number 228
+vim +228 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/api/LauncherAPI.java
+
++++ Add following code below line: 250 (com/kokakiwi/mclauncher/api/LauncherAPI.java)
+finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 231 (com/kokakiwi/mclauncher/api/LauncherAPI.java)
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/api/LauncherAPI.java; Line number 233
+vim +233 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/api/LauncherAPI.java
+
++++ Add following code below line: 250 (com/kokakiwi/mclauncher/api/LauncherAPI.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 243 (com/kokakiwi/mclauncher/api/LauncherAPI.java)
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/api/LauncherAPI.java; Line number 291
+vim +291 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/api/LauncherAPI.java
+
++++ Add following code below line: 326 (com/kokakiwi/mclauncher/api/LauncherAPI.java)
+finally{
+    try{ dis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 293 (com/kokakiwi/mclauncher/api/LauncherAPI.java)
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/api/LauncherAPI.java; Line number 309
+vim +309 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/api/LauncherAPI.java
+
++++ Add following code below line: 326 (com/kokakiwi/mclauncher/api/LauncherAPI.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 319 (com/kokakiwi/mclauncher/api/LauncherAPI.java)
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/Loginer.java; Line number 111
+vim +111 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/Loginer.java
+
++++ Add following code above line:110 (com/kokakiwi/mclauncher/core/Loginer.java)
+try{
++++ Add following code after line:113 (com/kokakiwi/mclauncher/core/Loginer.java)
+}finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 114 (com/kokakiwi/mclauncher/core/Loginer.java)
+
+--------------------------------------------
+12] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/Loginer.java; Line number 127
+vim +127 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/Loginer.java
+
++++ Add following code above line:126 (com/kokakiwi/mclauncher/core/Loginer.java)
+try{
++++ Add following code after line:129 (com/kokakiwi/mclauncher/core/Loginer.java)
+}finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 131 (com/kokakiwi/mclauncher/core/Loginer.java)
+
+--------------------------------------------
+15] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/ui/LauncherFrame.java; Line number 33
+vim +33 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/ui/LauncherFrame.java
+
++++ Add following code below line: 39 (com/kokakiwi/mclauncher/ui/LauncherFrame.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 33
+
+--------------------------------------------
+16] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/ui/simple/components/TexturedPanel.java; Line number 22
+vim +22 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/ui/simple/components/TexturedPanel.java
+
++++ Add following code above line:22 (com/kokakiwi/mclauncher/ui/simple/components/TexturedPanel.java)
+try{
++++ Add following code after line:23 (com/kokakiwi/mclauncher/ui/simple/components/TexturedPanel.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 22
+
+--------------------------------------------
+17] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/ui/simple/components/LogoPanel.java; Line number 23
+vim +23 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/ui/simple/components/LogoPanel.java
+
++++ Add following code below line: 32 (com/kokakiwi/mclauncher/ui/simple/components/LogoPanel.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 23
+
+--------------------------------------------
+18] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/ui/simple/SimpleTheme.java; Line number 54
+vim +54 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/ui/simple/SimpleTheme.java
+
++++ Add following code below line: 62 (com/kokakiwi/mclauncher/ui/simple/SimpleTheme.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 54
+
+--------------------------------------------
+21] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/VersionChecker.java; Line number 85
+vim +85 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/VersionChecker.java
+
++++ Add following code above line:84 (com/kokakiwi/mclauncher/core/updater/VersionChecker.java)
+try{
++++ Add following code after line:86 (com/kokakiwi/mclauncher/core/updater/VersionChecker.java)
+}finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 87 (com/kokakiwi/mclauncher/core/updater/VersionChecker.java)
+
+--------------------------------------------
+22] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/VersionChecker.java; Line number 107
+vim +107 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/VersionChecker.java
+
++++ Add following code above line:107 (com/kokakiwi/mclauncher/core/updater/VersionChecker.java)
+try{
++++ Add following code after line:109 (com/kokakiwi/mclauncher/core/updater/VersionChecker.java)
+}finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 110 (com/kokakiwi/mclauncher/core/updater/VersionChecker.java)
+
+--------------------------------------------
+25] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java; Line number 72
+vim +72 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java
+
++++ Add following code above line:72 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+try{
++++ Add following code after line:81 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+}finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 84 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+
+--------------------------------------------
+26] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java; Line number 96
+vim +96 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java
+
++++ Add following code above line:96 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+try{
++++ Add following code after line:132 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+}finally{
+    try{ zip.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 134 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+
+--------------------------------------------
+27] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java; Line number 129
+vim +129 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java
+
++++ Add following code above line:129 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+try{
++++ Add following code after line:130 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 129
+
++++ Delete Line number 216 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+
+--------------------------------------------
+29] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java; Line number 143
+vim +143 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java
+
++++ Add following code above line:150 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+try{ 
++++ Add following code below line:150 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+} catch(Exception e){ 
+    if (jar!=null) { jar.close();}
+    throw e; 
+}
++++ Add following code above line:164 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+try{ 
++++ Add following code below line:164 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+} catch(Exception e){ 
+    if (jar!=null) { jar.close();}
+    throw e; 
+}
++++ Add following code above line:185 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+try{ 
++++ Add following code below line:185 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+} catch(Exception e){ 
+    if (jar!=null) { jar.close();}
+    throw e; 
+}
++++ Add following code above line:167 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+try{
+    jar.close();
+} catch(Exception e){ e.printStackTrace(); }
+
+--------------------------------------------
+30] ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java; Line number 185
+vim +185 ../../../../datasets/debug_supplemented_njr/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java
+
++++ Add following code above line:185 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+try{
++++ Add following code after line:186 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 185
+
++++ Delete Line number 216 (com/kokakiwi/mclauncher/core/updater/FileExtractor.java)
+
+--------------------------------------------

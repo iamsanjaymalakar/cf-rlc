@@ -1,0 +1,82 @@
+10545
+345
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/JuegoTorneo.java; Line number 158
+vim +158 ../../../../datasets/debug_supplemented_njr/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/JuegoTorneo.java
+
++++ Add following code below line: 190 (logica/JuegoTorneo.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 186 (logica/JuegoTorneo.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/Controlador.java; Line number 238
+vim +238 ../../../../datasets/debug_supplemented_njr/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/Controlador.java
+
++++ Add following code below line: 261 (logica/Controlador.java)
+finally{
+    try{ readerPenultimaLinea.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 256 (logica/Controlador.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/Controlador.java; Line number 239
+vim +239 ../../../../datasets/debug_supplemented_njr/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/Controlador.java
+
++++ Add following code below line: 261 (logica/Controlador.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 255 (logica/Controlador.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/ia/algoritmosGeneticos/Estrategia.java; Line number 232
+vim +232 ../../../../datasets/debug_supplemented_njr/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/ia/algoritmosGeneticos/Estrategia.java
+
++++ Add following code below line: 250 (logica/ia/algoritmosGeneticos/Estrategia.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 245 (logica/ia/algoritmosGeneticos/Estrategia.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/ia/algoritmosGeneticos/Estrategia.java; Line number 422
+vim +422 ../../../../datasets/debug_supplemented_njr/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/ia/algoritmosGeneticos/Estrategia.java
+
++++ Add following code below line: 432 (logica/ia/algoritmosGeneticos/Estrategia.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 427 (logica/ia/algoritmosGeneticos/Estrategia.java)
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/Torneo.java; Line number 118
+vim +118 ../../../../datasets/debug_supplemented_njr/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/logica/Torneo.java
+
++++ Add following code below line: 128 (logica/Torneo.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 123 (logica/Torneo.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/othello/UIJuego.java; Line number 392
+vim +392 ../../../../datasets/debug_supplemented_njr/urlb57eb64056_jacadenac_ISI_Othello_UN_tgz-pJ8-othello_OthelloJ8/src/othello/UIJuego.java
+
++++ Add following code below line: 424 (othello/UIJuego.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 420 (othello/UIJuego.java)
+
+--------------------------------------------

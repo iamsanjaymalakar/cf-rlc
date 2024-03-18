@@ -1,0 +1,29 @@
+23413
+1152
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url9d04094941_petermikitsh_PizzaDeliverySystem_tgz-pJ8-testdrivers_ManagerReportTestDriverJ8/src/model/database/Database.java; Line number 136
+vim +136 ../../../dataset/june2020_dataset/url9d04094941_petermikitsh_PizzaDeliverySystem_tgz-pJ8-testdrivers_ManagerReportTestDriverJ8/src/model/database/Database.java
+
++++ Add following code below line: 146 (model/database/Database.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 135
+
++++ Delete Line number 143 (model/database/Database.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url9d04094941_petermikitsh_PizzaDeliverySystem_tgz-pJ8-testdrivers_ManagerReportTestDriverJ8/src/model/database/Database.java; Line number 161
+vim +161 ../../../dataset/june2020_dataset/url9d04094941_petermikitsh_PizzaDeliverySystem_tgz-pJ8-testdrivers_ManagerReportTestDriverJ8/src/model/database/Database.java
+
++++ Add following code below line: 169 (model/database/Database.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 159
+
++++ Delete Line number 166 (model/database/Database.java)
+
+--------------------------------------------

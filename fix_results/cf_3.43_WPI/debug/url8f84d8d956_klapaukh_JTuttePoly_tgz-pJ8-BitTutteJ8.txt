@@ -1,0 +1,4 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^BitTutte.java^97^BitTutte.<init>(Ljava/lang/String;)V^22 = new <Application,Ljava/util/Scanner>@157^NULL^INVOKE,^false^false^Try-catch Fix;
+1^Tutte.java^68^Tutte.<init>(Ljava/lang/String;)V^16 = new <Application,Ljava/util/Scanner>@128^NULL^INVOKE,^false^false^Try-catch Fix;
+2^Tutte.java^69^Tutte.<init>(Ljava/lang/String;)V^16 = new <Application,Ljava/util/Scanner>@128^NULL^INVOKE,^true^false^Try-catch Fix;

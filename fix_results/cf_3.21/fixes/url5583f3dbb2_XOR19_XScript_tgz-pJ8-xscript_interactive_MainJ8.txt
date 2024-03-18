@@ -1,0 +1,61 @@
+16660
+1420
+
+SOURCE LEVEL FIXES
+
+4] ../../../../datasets/debug_supplemented_njr/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XScriptEngine.java; Line number 267
+vim +267 ../../../../datasets/debug_supplemented_njr/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XScriptEngine.java
+
++++ Add following code above line:264 (xscript/XScriptEngine.java)
+try{ 
++++ Add following code below line:264 (xscript/XScriptEngine.java)
+} catch(Exception e){ 
+    if (bais!=null) { bais.close();}
+    throw e; 
+}
++++ Add following code above line:267 (xscript/XScriptEngine.java)
+try{ 
++++ Add following code below line:267 (xscript/XScriptEngine.java)
+} catch(Exception e){ 
+    if (bais!=null) { bais.close();}
+    throw e; 
+}
++++ Add following code below line: 271 (xscript/XScriptEngine.java)
+finally{
+    try{ bais.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java; Line number 39
+vim +39 ../../../../datasets/debug_supplemented_njr/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java
+
++++ Add following code above line:39 (xscript/executils/Utils.java)
+try{
++++ Add following code after line:46 (xscript/executils/Utils.java)
+}finally{
+    try{ sysout.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+16] ../../../../datasets/debug_supplemented_njr/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java; Line number 42
+vim +42 ../../../../datasets/debug_supplemented_njr/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java
+
++++ Add following code above line:42 (xscript/executils/Utils.java)
+try{
++++ Add following code after line:47 (xscript/executils/Utils.java)
+}finally{
+    try{ syserr.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+18] ../../../../datasets/debug_supplemented_njr/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java; Line number 45
+vim +45 ../../../../datasets/debug_supplemented_njr/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java
+
++++ Add following code above line:45 (xscript/executils/Utils.java)
+try{
++++ Add following code after line:48 (xscript/executils/Utils.java)
+}finally{
+    try{ sysin.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

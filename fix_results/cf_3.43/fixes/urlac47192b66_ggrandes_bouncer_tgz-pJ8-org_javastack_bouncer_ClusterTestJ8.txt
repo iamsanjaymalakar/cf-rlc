@@ -1,0 +1,119 @@
+13056
+3140
+
+SOURCE LEVEL FIXES
+
+8] ../../../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java; Line number 82
+vim +82 ../../../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java
+
++++ Add following code above line:82 (org/javastack/bouncer/KeyGenerator.java)
+try{
++++ Add following code after line:82 (org/javastack/bouncer/KeyGenerator.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 82
+
++++ Delete Line number 175 (org/javastack/bouncer/KeyGenerator.java)
+
+--------------------------------------------
+9] ../../../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java; Line number 93
+vim +93 ../../../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java
+
++++ Add following code above line:93 (org/javastack/bouncer/KeyGenerator.java)
+try{
++++ Add following code after line:93 (org/javastack/bouncer/KeyGenerator.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 93
+
++++ Delete Line number 164 (org/javastack/bouncer/KeyGenerator.java)
+
+--------------------------------------------
+11] ../../../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/ProxyProtocol.java; Line number 79
+vim +79 ../../../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/ProxyProtocol.java
+
++++ Add following code above line:79 (org/javastack/bouncer/ProxyProtocol.java)
+try{
++++ Add following code after line:91 (org/javastack/bouncer/ProxyProtocol.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 79
+
+--------------------------------------------
+12] ../../../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/benchmark/BenchmarkLatency.java; Line number 23
+vim +23 ../../../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/benchmark/BenchmarkLatency.java
+
++++ Add following code above line:23 (org/javastack/bouncer/benchmark/BenchmarkLatency.java)
+try{ 
++++ Add following code below line:27 (org/javastack/bouncer/benchmark/BenchmarkLatency.java)
+} catch(Exception e){ 
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+    throw e; 
+}
++++ Add following code above line:56 (org/javastack/bouncer/benchmark/BenchmarkLatency.java)
+try{ 
++++ Add following code below line:56 (org/javastack/bouncer/benchmark/BenchmarkLatency.java)
+} catch(Exception e){ 
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+    throw e; 
+}
++++ Add following code below line: 63 (org/javastack/bouncer/benchmark/BenchmarkLatency.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 23
+
++++ Delete Line number 69 (org/javastack/bouncer/benchmark/BenchmarkLatency.java)
+
+--------------------------------------------
+14] ../../../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/benchmark/BenchmarkThroughput.java; Line number 31
+vim +31 ../../../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/benchmark/BenchmarkThroughput.java
+
++++ Add following code above line:31 (org/javastack/bouncer/benchmark/BenchmarkThroughput.java)
+try{
++++ Add following code after line:36 (org/javastack/bouncer/benchmark/BenchmarkThroughput.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 31
+
+--------------------------------------------
+15] ../../../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/benchmark/BenchmarkThroughput.java; Line number 34
+vim +34 ../../../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/benchmark/BenchmarkThroughput.java
+
++++ Add following code above line:34 (org/javastack/bouncer/benchmark/BenchmarkThroughput.java)
+try{
++++ Add following code after line:35 (org/javastack/bouncer/benchmark/BenchmarkThroughput.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 34
+
+--------------------------------------------
+18] ../../../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/Log.java; Line number 34
+vim +34 ../../../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/Log.java
+
++++ Add following code above line:34 (org/javastack/bouncer/Log.java)
+try{
++++ Add following code after line:34 (org/javastack/bouncer/Log.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 34
+
+--------------------------------------------
+19] ../../../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/Log.java; Line number 42
+vim +42 ../../../dataset/june2020_dataset/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/Log.java
+
++++ Add following code above line:42 (org/javastack/bouncer/Log.java)
+try{
++++ Add following code after line:42 (org/javastack/bouncer/Log.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 42
+
+--------------------------------------------

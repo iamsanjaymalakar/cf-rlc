@@ -1,0 +1,14 @@
+8743
+30
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url27db8982cd_leohinterlang_argFace_tgz-pJ8-com_fidelis_argface_ArgSampleJ8/src/com/fidelis/argface/sample/Sample.java; Line number 83
+vim +83 ../../../../datasets/debug_supplemented_njr/url27db8982cd_leohinterlang_argFace_tgz-pJ8-com_fidelis_argface_ArgSampleJ8/src/com/fidelis/argface/sample/Sample.java
+
++++ Add following code below line: 100 (com/fidelis/argface/sample/Sample.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

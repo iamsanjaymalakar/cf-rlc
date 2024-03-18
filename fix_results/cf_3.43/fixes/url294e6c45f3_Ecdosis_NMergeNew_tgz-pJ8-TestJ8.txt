@@ -1,0 +1,229 @@
+14190
+5178
+
+SOURCE LEVEL FIXES
+
+1] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java; Line number 320
+vim +320 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java
+
++++ Add following code above line:320 (Test.java)
+try{
++++ Add following code after line:322 (Test.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 320
+
++++ Delete Line number 323 (Test.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java; Line number 359
+vim +359 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java
+
++++ Add following code above line:359 (Test.java)
+try{
++++ Add following code after line:361 (Test.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 359
+
++++ Delete Line number 362 (Test.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java; Line number 549
+vim +549 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java
+
++++ Add following code above line:549 (Test.java)
+try{
++++ Add following code after line:551 (Test.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 549
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java; Line number 622
+vim +622 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java
+
++++ Add following code below line: 641 (Test.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 622
+
++++ Delete Line number 625 (Test.java)
+
+--------------------------------------------
+6] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java; Line number 1047
+vim +1047 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java
+
++++ Add following code above line:1047 (Test.java)
+try{
++++ Add following code after line:1051 (Test.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 1047
+
+--------------------------------------------
+7] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java; Line number 1048
+vim +1048 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/Test.java
+
++++ Add following code above line:1048 (Test.java)
+try{
++++ Add following code after line:1052 (Test.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 1048
+
+--------------------------------------------
+8] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/graph/suffixtree/SuffixTree.java; Line number 951
+vim +951 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/graph/suffixtree/SuffixTree.java
+
++++ Add following code above line:951 (edu/luc/nmerge/graph/suffixtree/SuffixTree.java)
+try{
++++ Add following code after line:953 (edu/luc/nmerge/graph/suffixtree/SuffixTree.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 951
+
++++ Delete Line number 954 (edu/luc/nmerge/graph/suffixtree/SuffixTree.java)
+
+--------------------------------------------
+9] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java; Line number 427
+vim +427 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java
+
++++ Add following code below line: 441 (MvdTool.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 427
+
+--------------------------------------------
+10] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java; Line number 567
+vim +567 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java
+
++++ Add following code below line: 589 (MvdTool.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 567
+
+--------------------------------------------
+11] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java; Line number 621
+vim +621 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java
+
++++ Add following code above line:621 (MvdTool.java)
+try{
++++ Add following code after line:623 (MvdTool.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 621
+
++++ Delete Line number 624 (MvdTool.java)
+
+--------------------------------------------
+12] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java; Line number 664
+vim +664 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/MvdTool.java
+
++++ Add following code above line:664 (MvdTool.java)
+try{
++++ Add following code after line:666 (MvdTool.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 664
+
++++ Delete Line number 667 (MvdTool.java)
+
+--------------------------------------------
+13] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDXMLFile.java; Line number 84
+vim +84 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDXMLFile.java
+
++++ Add following code above line:84 (edu/luc/nmerge/mvd/MVDXMLFile.java)
+try{
++++ Add following code after line:84 (edu/luc/nmerge/mvd/MVDXMLFile.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 84
+
+--------------------------------------------
+14] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDXMLFile.java; Line number 374
+vim +374 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDXMLFile.java
+
++++ Add following code below line: 384 (edu/luc/nmerge/mvd/MVDXMLFile.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 374
+
++++ Delete Line number 378 (edu/luc/nmerge/mvd/MVDXMLFile.java)
+
+--------------------------------------------
+20] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDFile.java; Line number 212
+vim +212 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDFile.java
+
++++ Add following code above line:212 (edu/luc/nmerge/mvd/MVDFile.java)
+try{
++++ Add following code after line:213 (edu/luc/nmerge/mvd/MVDFile.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 212
+
++++ Delete Line number 214 (edu/luc/nmerge/mvd/MVDFile.java)
+
+--------------------------------------------
+21] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDFile.java; Line number 269
+vim +269 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDFile.java
+
++++ Add following code above line:269 (edu/luc/nmerge/mvd/MVDFile.java)
+try{
++++ Add following code after line:278 (edu/luc/nmerge/mvd/MVDFile.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 269
+
++++ Delete Line number 275 (edu/luc/nmerge/mvd/MVDFile.java)
+
+--------------------------------------------
+23] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/XMLGuideFile.java; Line number 238
+vim +238 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/XMLGuideFile.java
+
++++ Add following code below line: 246 (edu/luc/nmerge/mvd/XMLGuideFile.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 238
+
++++ Delete Line number 241 (edu/luc/nmerge/mvd/XMLGuideFile.java)
+
+--------------------------------------------
+24] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/XMLGuideFile.java; Line number 307
+vim +307 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/XMLGuideFile.java
+
++++ Add following code below line: 331 (edu/luc/nmerge/mvd/XMLGuideFile.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 307
+
+--------------------------------------------
+25] ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDError.java; Line number 17
+vim +17 ../../../dataset/june2020_dataset/url294e6c45f3_Ecdosis_NMergeNew_tgz-pJ8-TestJ8/src/edu/luc/nmerge/mvd/MVDError.java
+
++++ Add following code below line: 23 (edu/luc/nmerge/mvd/MVDError.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 17
+
++++ Delete Line number 19 (edu/luc/nmerge/mvd/MVDError.java)
+
+--------------------------------------------

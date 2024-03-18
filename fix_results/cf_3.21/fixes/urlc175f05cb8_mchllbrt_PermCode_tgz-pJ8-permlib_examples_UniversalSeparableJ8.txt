@@ -1,0 +1,35 @@
+20193
+143
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urlc175f05cb8_mchllbrt_PermCode_tgz-pJ8-permlib_examples_UniversalSeparableJ8/src/permlab/ui/TextFrame.java; Line number 120
+vim +120 ../../../../datasets/debug_supplemented_njr/urlc175f05cb8_mchllbrt_PermCode_tgz-pJ8-permlib_examples_UniversalSeparableJ8/src/permlab/ui/TextFrame.java
+
++++ Add following code below line: 123 (permlab/ui/TextFrame.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 120
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/urlc175f05cb8_mchllbrt_PermCode_tgz-pJ8-permlib_examples_UniversalSeparableJ8/src/permlab/ui/TextFrame.java; Line number 139
+vim +139 ../../../../datasets/debug_supplemented_njr/urlc175f05cb8_mchllbrt_PermCode_tgz-pJ8-permlib_examples_UniversalSeparableJ8/src/permlab/ui/TextFrame.java
+
++++ Add following code below line: 142 (permlab/ui/TextFrame.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 139
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/urlc175f05cb8_mchllbrt_PermCode_tgz-pJ8-permlib_examples_UniversalSeparableJ8/src/permlab/ui/AnimatedPermFrame.java; Line number 555
+vim +555 ../../../../datasets/debug_supplemented_njr/urlc175f05cb8_mchllbrt_PermCode_tgz-pJ8-permlib_examples_UniversalSeparableJ8/src/permlab/ui/AnimatedPermFrame.java
+
++++ Add following code below line: 568 (permlab/ui/AnimatedPermFrame.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 555
+
+--------------------------------------------

@@ -1,0 +1,65 @@
+12668
+115
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/controllers/momcts/utils/TextOperation.java; Line number 33
+vim +33 ../../../../datasets/debug_supplemented_njr/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/controllers/momcts/utils/TextOperation.java
+
++++ Add following code below line: 40 (controllers/momcts/utils/TextOperation.java)
+finally{
+    try{ dis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/controllers/utils/TextOperation.java; Line number 33
+vim +33 ../../../../datasets/debug_supplemented_njr/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/controllers/utils/TextOperation.java
+
++++ Add following code below line: 40 (controllers/utils/TextOperation.java)
+finally{
+    try{ dis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/framework/utils/File2String.java; Line number 25
+vim +25 ../../../../datasets/debug_supplemented_njr/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/framework/utils/File2String.java
+
++++ Add following code below line: 32 (framework/utils/File2String.java)
+finally{
+    try{ dis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/framework/core/Exec.java; Line number 246
+vim +246 ../../../../datasets/debug_supplemented_njr/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/framework/core/Exec.java
+
++++ Add following code above line:246 (framework/core/Exec.java)
+try{
++++ Add following code after line:253 (framework/core/Exec.java)
+}finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 254 (framework/core/Exec.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/Easy.java; Line number 25
+vim +25 ../../../../datasets/debug_supplemented_njr/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/Easy.java
+
++++ Add following code below line: 31 (wox/serial/Easy.java)
+finally{
+    try{ file.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 27 (wox/serial/Easy.java)
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/Easy.java; Line number 37
+vim +37 ../../../../datasets/debug_supplemented_njr/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/Easy.java
+
++++ Add following code below line: 45 (wox/serial/Easy.java)
+finally{
+    try{ is.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

@@ -1,0 +1,9 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^org/sparql/Client.java^35^org.sparql.Client.select(Ljava/lang/String;)Lorg/sparql/Results;^29 = invokevirtual < Application, Ljava/net/URLConnection, getInputStream()Ljava/io/InputStream; > 27 @59 exception:28^org.sparql.Client.select(Ljava/lang/String;)Lorg/sparql/Results;#31,org.sparql.Client.select(Ljava/lang/String;)Lorg/sparql/Results;#30,^INVOKE,^false^false^Try-catch Fix;
+1^org/json/Test.java^474^org.json.Test.main([Ljava/lang/String;)V^1231 = new <Application,Ljava/io/StringWriter>@3299^NULL^INVOKE,^false^false^Try-catch Fix;
+2^org/sparqlscape/SearchTest.java^50^org.sparqlscape.SearchTest.main([Ljava/lang/String;)V^4 = new <Application,Ljava/io/InputStreamReader>@4^org.sparqlscape.SearchTest.main([Ljava/lang/String;)V#5,^INVOKE,^false^false^Normal Fix;
+3^org/sparqlscape/ConnectTest.java^50^org.sparqlscape.ConnectTest.main([Ljava/lang/String;)V^4 = new <Application,Ljava/io/InputStreamReader>@4^org.sparqlscape.ConnectTest.main([Ljava/lang/String;)V#5,^INVOKE,^false^false^Normal Fix;
+4^org/json/JSONObject.java^1559^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+5^org/json/JSONObject.java^1561^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+6^org/json/JSONArray.java^903^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+7^org/json/JSONArray.java^905^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

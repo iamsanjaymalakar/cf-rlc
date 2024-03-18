@@ -1,0 +1,161 @@
+9448
+3938
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/system/BanHandler.java; Line number 34
+vim +34 ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/system/BanHandler.java
+
++++ Add following code below line: 49 (com/gamezgalaxy/GGS/system/BanHandler.java)
+finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 43 (com/gamezgalaxy/GGS/system/BanHandler.java)
+
++++ Delete Line number 44 (com/gamezgalaxy/GGS/system/BanHandler.java)
+
++++ Delete Line number 42 (com/gamezgalaxy/GGS/system/BanHandler.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/system/heartbeat/Beater.java; Line number 52
+vim +52 ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/system/heartbeat/Beater.java
+
++++ Add following code below line: 61 (com/gamezgalaxy/GGS/system/heartbeat/Beater.java)
+finally{
+    try{ reader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 46 (com/gamezgalaxy/GGS/system/heartbeat/Beater.java)
+
++++ Delete Line number 46 (com/gamezgalaxy/GGS/system/heartbeat/Beater.java)
+
++++ Delete Line number 46 (com/gamezgalaxy/GGS/system/heartbeat/Beater.java)
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/API/plugin/CommandHandler.java; Line number 155
+vim +155 ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/API/plugin/CommandHandler.java
+
++++ Add following code above line:155 (com/gamezgalaxy/GGS/API/plugin/CommandHandler.java)
+try{
++++ Add following code after line:169 (com/gamezgalaxy/GGS/API/plugin/CommandHandler.java)
+}finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 170 (com/gamezgalaxy/GGS/API/plugin/CommandHandler.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/util/properties/Properties.java; Line number 111
+vim +111 ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/util/properties/Properties.java
+
++++ Add following code above line:111 (com/gamezgalaxy/GGS/util/properties/Properties.java)
+try{
++++ Add following code after line:119 (com/gamezgalaxy/GGS/util/properties/Properties.java)
+}finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 120 (com/gamezgalaxy/GGS/util/properties/Properties.java)
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/API/plugin/PluginHandler.java; Line number 92
+vim +92 ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/API/plugin/PluginHandler.java
+
++++ Add following code below line: 118 (com/gamezgalaxy/GGS/API/plugin/PluginHandler.java)
+finally{
+    try{ loader.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/Level.java; Line number 266
+vim +266 ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/Level.java
+
++++ Add following code above line:266 (com/gamezgalaxy/GGS/world/Level.java)
+try{
++++ Add following code after line:270 (com/gamezgalaxy/GGS/world/Level.java)
+}finally{
+    try{ gos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 272 (com/gamezgalaxy/GGS/world/Level.java)
+
++++ Delete Line number 271 (com/gamezgalaxy/GGS/world/Level.java)
+
++++ Delete Line number 273 (com/gamezgalaxy/GGS/world/Level.java)
+
+--------------------------------------------
+12] ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/Level.java; Line number 330
+vim +330 ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/Level.java
+
++++ Add following code above line:330 (com/gamezgalaxy/GGS/world/Level.java)
+try{
++++ Add following code after line:339 (com/gamezgalaxy/GGS/world/Level.java)
+}finally{
+    try{ gis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 346 (com/gamezgalaxy/GGS/world/Level.java)
+
++++ Delete Line number 337 (com/gamezgalaxy/GGS/world/Level.java)
+
++++ Delete Line number 345 (com/gamezgalaxy/GGS/world/Level.java)
+
++++ Delete Line number 347 (com/gamezgalaxy/GGS/world/Level.java)
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/groups/Group.java; Line number 154
+vim +154 ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/groups/Group.java
+
++++ Add following code above line:154 (com/gamezgalaxy/GGS/groups/Group.java)
+try{
++++ Add following code after line:162 (com/gamezgalaxy/GGS/groups/Group.java)
+}finally{
+    try{ in.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 163 (com/gamezgalaxy/GGS/groups/Group.java)
+
+--------------------------------------------
+15] ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/convert/DatToGGS.java; Line number 34
+vim +34 ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/convert/DatToGGS.java
+
++++ Add following code below line: 61 (com/gamezgalaxy/GGS/world/convert/DatToGGS.java)
+finally{
+    try{ gzis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 39 (com/gamezgalaxy/GGS/world/convert/DatToGGS.java)
+
++++ Delete Line number 46 (com/gamezgalaxy/GGS/world/convert/DatToGGS.java)
+
++++ Delete Line number 56 (com/gamezgalaxy/GGS/world/convert/DatToGGS.java)
+
++++ Delete Line number 40 (com/gamezgalaxy/GGS/world/convert/DatToGGS.java)
+
++++ Delete Line number 47 (com/gamezgalaxy/GGS/world/convert/DatToGGS.java)
+
++++ Delete Line number 52 (com/gamezgalaxy/GGS/world/convert/DatToGGS.java)
+
++++ Delete Line number 53 (com/gamezgalaxy/GGS/world/convert/DatToGGS.java)
+
++++ Delete Line number 38 (com/gamezgalaxy/GGS/world/convert/DatToGGS.java)
+
++++ Delete Line number 45 (com/gamezgalaxy/GGS/world/convert/DatToGGS.java)
+
++++ Delete Line number 55 (com/gamezgalaxy/GGS/world/convert/DatToGGS.java)
+
+--------------------------------------------
+17] ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/convert/DatToGGS.java; Line number 74
+vim +74 ../../../../datasets/debug_supplemented_njr/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/world/convert/DatToGGS.java
+
++++ Add following code below line: 86 (com/gamezgalaxy/GGS/world/convert/DatToGGS.java)
+finally{
+    try{ gzos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 81 (com/gamezgalaxy/GGS/world/convert/DatToGGS.java)
+
++++ Delete Line number 82 (com/gamezgalaxy/GGS/world/convert/DatToGGS.java)
+
+--------------------------------------------

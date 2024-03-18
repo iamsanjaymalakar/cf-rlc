@@ -1,0 +1,129 @@
+14670
+765
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 96
+vim +96 ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 106 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ bis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 99 (vsdk/toolkit/io/image/ImagePersistence.java)
+
++++ Delete Line number 100 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 177
+vim +177 ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 187 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ bis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 180 (vsdk/toolkit/io/image/ImagePersistence.java)
+
++++ Delete Line number 181 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 199
+vim +199 ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 276 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ bis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 267 (vsdk/toolkit/io/image/ImagePersistence.java)
+
++++ Delete Line number 268 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 309
+vim +309 ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 317 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ fos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 313 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 359
+vim +359 ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 367 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ fos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 363 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 435
+vim +435 ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 448 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ fos.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 444 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 462
+vim +462 ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 497 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ writer.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 492 (vsdk/toolkit/io/image/ImagePersistence.java)
+
++++ Delete Line number 493 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 511
+vim +511 ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 557 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ writer.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 552 (vsdk/toolkit/io/image/ImagePersistence.java)
+
++++ Delete Line number 553 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java; Line number 571
+vim +571 ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java
+
++++ Add following code below line: 602 (vsdk/toolkit/io/image/ImagePersistence.java)
+finally{
+    try{ writer.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 597 (vsdk/toolkit/io/image/ImagePersistence.java)
+
++++ Delete Line number 598 (vsdk/toolkit/io/image/ImagePersistence.java)
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/TargaImage.java; Line number 64
+vim +64 ../../../../datasets/debug_supplemented_njr/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/TargaImage.java
+
++++ Add following code above line:64 (vsdk/toolkit/io/image/TargaImage.java)
+try{
++++ Add following code after line:211 (vsdk/toolkit/io/image/TargaImage.java)
+}finally{
+    try{ bis.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 212 (vsdk/toolkit/io/image/TargaImage.java)
+
+--------------------------------------------

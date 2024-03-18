@@ -1,0 +1,66 @@
+16504
+175
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url1a41b8e9f2_mr1azl_INF345_tgz-pJ8-TestParserJ8/src/org/eclipse/wb/swt/SWTResourceManager.java; Line number 139
+vim +139 ../../../../datasets/debug_supplemented_njr/url1a41b8e9f2_mr1azl_INF345_tgz-pJ8-TestParserJ8/src/org/eclipse/wb/swt/SWTResourceManager.java
+
++++ Add following code below line: 144 (org/eclipse/wb/swt/SWTResourceManager.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 139
+
++++ Delete Line number 125 (org/eclipse/wb/swt/SWTResourceManager.java)
+
++++ Delete Line number 125 (org/eclipse/wb/swt/SWTResourceManager.java)
+
++++ Delete Line number 125 (org/eclipse/wb/swt/SWTResourceManager.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url1a41b8e9f2_mr1azl_INF345_tgz-pJ8-TestParserJ8/src/org/eclipse/wb/swt/SWTResourceManager.java; Line number 162
+vim +162 ../../../../datasets/debug_supplemented_njr/url1a41b8e9f2_mr1azl_INF345_tgz-pJ8-TestParserJ8/src/org/eclipse/wb/swt/SWTResourceManager.java
+
++++ Add following code below line: 167 (org/eclipse/wb/swt/SWTResourceManager.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 162
+
++++ Delete Line number 125 (org/eclipse/wb/swt/SWTResourceManager.java)
+
++++ Delete Line number 125 (org/eclipse/wb/swt/SWTResourceManager.java)
+
++++ Delete Line number 125 (org/eclipse/wb/swt/SWTResourceManager.java)
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url1a41b8e9f2_mr1azl_INF345_tgz-pJ8-TestParserJ8/src/Main.java; Line number 39
+vim +39 ../../../../datasets/debug_supplemented_njr/url1a41b8e9f2_mr1azl_INF345_tgz-pJ8-TestParserJ8/src/Main.java
+
++++ Add following code below line: 99 (Main.java)
+finally{
+    try{ file.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url1a41b8e9f2_mr1azl_INF345_tgz-pJ8-TestParserJ8/src/Main.java; Line number 72
+vim +72 ../../../../datasets/debug_supplemented_njr/url1a41b8e9f2_mr1azl_INF345_tgz-pJ8-TestParserJ8/src/Main.java
+
++++ Add following code below line: 80 (Main.java)
+finally{
+    try{ bw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 75 (Main.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url1a41b8e9f2_mr1azl_INF345_tgz-pJ8-TestParserJ8/src/xpathParser/bench/pt/DefaultParser.java; Line number 25
+vim +25 ../../../../datasets/debug_supplemented_njr/url1a41b8e9f2_mr1azl_INF345_tgz-pJ8-TestParserJ8/src/xpathParser/bench/pt/DefaultParser.java
+
++++ Add following code below line: 49 (xpathParser/bench/pt/DefaultParser.java)
+finally{
+    try{ file.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

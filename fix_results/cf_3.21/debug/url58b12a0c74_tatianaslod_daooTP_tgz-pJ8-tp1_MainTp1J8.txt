@@ -1,0 +1,5 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^encoder/MsgEncoderProvider.java^37^encoder.MsgEncoderProvider.getImplementationName()Ljava/lang/String;^2 = new <Application,Ljava/io/FileReader>@0^encoder.MsgEncoderProvider.getImplementationName()Ljava/lang/String;#5,^INVOKE,^false^false^Try-catch Fix;
+1^server/TaskExecutorProvider.java^37^server.TaskExecutorProvider.getImplementationName()Ljava/lang/String;^2 = new <Application,Ljava/io/FileReader>@0^server.TaskExecutorProvider.getImplementationName()Ljava/lang/String;#5,^INVOKE,^false^false^Try-catch Fix;
+2^server/DaooTaskServer.java^16^server.DaooTaskServer.start(Ldaoo/ioc/TaskExecutor;I)V^5 = new <Application,Ljava/net/ServerSocket>@0^NULL^INVOKE,^false^false^Try-catch Fix;
+3^server/DaooTaskServer.java^20^server.DaooTaskServer.start(Ldaoo/ioc/TaskExecutor;I)V^11 = invokevirtual < Application, Ljava/net/ServerSocket, accept()Ljava/net/Socket; > 5 @18 exception:10^server.DaooTaskServer.start(Ldaoo/ioc/TaskExecutor;I)V#12,^INVOKE,^false^false^Loop Fix;Normal Fix;

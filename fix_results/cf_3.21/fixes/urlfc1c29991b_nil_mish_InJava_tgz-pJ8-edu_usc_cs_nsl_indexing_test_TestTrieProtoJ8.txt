@@ -1,0 +1,224 @@
+8789
+651
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/indexing/TrieGenerator.java; Line number 51
+vim +51 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/indexing/TrieGenerator.java
+
++++ Add following code above line:51 (edu/usc/cs/nsl/indexing/TrieGenerator.java)
+try{
++++ Add following code after line:58 (edu/usc/cs/nsl/indexing/TrieGenerator.java)
+}finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 59 (edu/usc/cs/nsl/indexing/TrieGenerator.java)
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/indexing/TrieGenerator.java; Line number 61
+vim +61 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/indexing/TrieGenerator.java
+
++++ Add following code above line:61 (edu/usc/cs/nsl/indexing/TrieGenerator.java)
+try{
++++ Add following code after line:62 (edu/usc/cs/nsl/indexing/TrieGenerator.java)
+}finally{
+    try{ out.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/indexing/QueryServer.java; Line number 31
+vim +31 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/indexing/QueryServer.java
+
++++ Add following code above line:31 (edu/usc/cs/nsl/indexing/QueryServer.java)
+try{
++++ Add following code after line:31 (edu/usc/cs/nsl/indexing/QueryServer.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 31
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java; Line number 108
+vim +108 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java
+
++++ Add following code above line:108 (edu/usc/cs/nsl/counting/CountingUtil.java)
+try{ 
++++ Add following code below line:108 (edu/usc/cs/nsl/counting/CountingUtil.java)
+} catch(Exception e){ 
+    if (br!=null) { br.close();}
+    throw e; 
+}
++++ Add following code above line:144 (edu/usc/cs/nsl/counting/CountingUtil.java)
+try{
+    br.close();
+} catch(Exception e){ e.printStackTrace(); }
+
++++ Delete Line number 144 (edu/usc/cs/nsl/counting/CountingUtil.java)
+
+--------------------------------------------
+5] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java; Line number 192
+vim +192 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java
+
++++ Add following code above line:192 (edu/usc/cs/nsl/counting/CountingUtil.java)
+try{
++++ Add following code after line:201 (edu/usc/cs/nsl/counting/CountingUtil.java)
+}finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 202 (edu/usc/cs/nsl/counting/CountingUtil.java)
+
+--------------------------------------------
+6] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java; Line number 206
+vim +206 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java
+
++++ Add following code above line:206 (edu/usc/cs/nsl/counting/CountingUtil.java)
+try{
++++ Add following code after line:221 (edu/usc/cs/nsl/counting/CountingUtil.java)
+}finally{
+    try{ bw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 222 (edu/usc/cs/nsl/counting/CountingUtil.java)
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java; Line number 249
+vim +249 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java
+
++++ Add following code above line:249 (edu/usc/cs/nsl/counting/CountingUtil.java)
+try{
++++ Add following code after line:267 (edu/usc/cs/nsl/counting/CountingUtil.java)
+}finally{
+    try{ chunk_list_file.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 268 (edu/usc/cs/nsl/counting/CountingUtil.java)
+
+--------------------------------------------
+8] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java; Line number 270
+vim +270 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java
+
++++ Add following code above line:270 (edu/usc/cs/nsl/counting/CountingUtil.java)
+try{
++++ Add following code after line:357 (edu/usc/cs/nsl/counting/CountingUtil.java)
+}finally{
+    try{ bw_collision.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 358 (edu/usc/cs/nsl/counting/CountingUtil.java)
+
+--------------------------------------------
+9] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java; Line number 278
+vim +278 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java
+
++++ Add following code above line:278 (edu/usc/cs/nsl/counting/CountingUtil.java)
+try{
++++ Add following code after line:341 (edu/usc/cs/nsl/counting/CountingUtil.java)
+}finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+10] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java; Line number 343
+vim +343 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java
+
++++ Add following code above line:343 (edu/usc/cs/nsl/counting/CountingUtil.java)
+try{
++++ Add following code after line:354 (edu/usc/cs/nsl/counting/CountingUtil.java)
+}finally{
+    try{ bw_output.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 356 (edu/usc/cs/nsl/counting/CountingUtil.java)
+
+--------------------------------------------
+11] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java; Line number 371
+vim +371 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java
+
++++ Add following code above line:371 (edu/usc/cs/nsl/counting/CountingUtil.java)
+try{
++++ Add following code after line:407 (edu/usc/cs/nsl/counting/CountingUtil.java)
+}finally{
+    try{ bw_output.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 409 (edu/usc/cs/nsl/counting/CountingUtil.java)
+
+--------------------------------------------
+12] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java; Line number 373
+vim +373 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java
+
++++ Add following code above line:373 (edu/usc/cs/nsl/counting/CountingUtil.java)
+try{
++++ Add following code after line:378 (edu/usc/cs/nsl/counting/CountingUtil.java)
+}finally{
+    try{ br_collision.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 379 (edu/usc/cs/nsl/counting/CountingUtil.java)
+
+--------------------------------------------
+13] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java; Line number 382
+vim +382 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java
+
++++ Add following code above line:382 (edu/usc/cs/nsl/counting/CountingUtil.java)
+try{
++++ Add following code after line:404 (edu/usc/cs/nsl/counting/CountingUtil.java)
+}finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+14] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java; Line number 433
+vim +433 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java
+
++++ Add following code above line:433 (edu/usc/cs/nsl/counting/CountingUtil.java)
+try{
++++ Add following code after line:448 (edu/usc/cs/nsl/counting/CountingUtil.java)
+}finally{
+    try{ br_collision.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 449 (edu/usc/cs/nsl/counting/CountingUtil.java)
+
+--------------------------------------------
+15] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java; Line number 452
+vim +452 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java
+
++++ Add following code above line:452 (edu/usc/cs/nsl/counting/CountingUtil.java)
+try{
++++ Add following code after line:468 (edu/usc/cs/nsl/counting/CountingUtil.java)
+}finally{
+    try{ br.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 469 (edu/usc/cs/nsl/counting/CountingUtil.java)
+
+--------------------------------------------
+16] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java; Line number 470
+vim +470 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/CountingUtil.java
+
++++ Add following code above line:470 (edu/usc/cs/nsl/counting/CountingUtil.java)
+try{
++++ Add following code after line:475 (edu/usc/cs/nsl/counting/CountingUtil.java)
+}finally{
+    try{ bw_output.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 476 (edu/usc/cs/nsl/counting/CountingUtil.java)
+
+--------------------------------------------
+17] ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/InputGenerator.java; Line number 29
+vim +29 ../../../../datasets/debug_supplemented_njr/urlfc1c29991b_nil_mish_InJava_tgz-pJ8-edu_usc_cs_nsl_indexing_test_TestTrieProtoJ8/src/edu/usc/cs/nsl/counting/InputGenerator.java
+
++++ Add following code above line:29 (edu/usc/cs/nsl/counting/InputGenerator.java)
+try{
++++ Add following code after line:40 (edu/usc/cs/nsl/counting/InputGenerator.java)
+}finally{
+    try{ bw.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 41 (edu/usc/cs/nsl/counting/InputGenerator.java)
+
+--------------------------------------------

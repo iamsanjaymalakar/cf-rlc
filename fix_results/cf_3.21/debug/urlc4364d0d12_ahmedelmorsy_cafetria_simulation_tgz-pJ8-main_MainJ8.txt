@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^simulation/logging/FileLogger.java^13^simulation.logging.FileLogger.<init>(Ljava/io/File;)V^5 = new <Application,Ljava/io/PrintWriter>@5^NULL^FIELD,^false^true^Field escape;

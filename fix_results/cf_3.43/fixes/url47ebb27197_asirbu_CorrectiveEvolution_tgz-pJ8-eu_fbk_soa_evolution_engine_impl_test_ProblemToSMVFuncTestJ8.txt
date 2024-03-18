@@ -1,0 +1,71 @@
+13805
+335
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/evolution/sts/minimizer/TraceEquivalenceMinimizer.java; Line number 24
+vim +24 ../../../dataset/june2020_dataset/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/evolution/sts/minimizer/TraceEquivalenceMinimizer.java
+
++++ Add following code below line: 31 (eu/fbk/soa/evolution/sts/minimizer/TraceEquivalenceMinimizer.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 24
+
++++ Delete Line number 27 (eu/fbk/soa/evolution/sts/minimizer/TraceEquivalenceMinimizer.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/evolution/sts/minimizer/BisimulationMinimizer.java; Line number 44
+vim +44 ../../../dataset/june2020_dataset/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/evolution/sts/minimizer/BisimulationMinimizer.java
+
++++ Add following code below line: 48 (eu/fbk/soa/evolution/sts/minimizer/BisimulationMinimizer.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 44
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/util/test/IOUtilsTest.java; Line number 73
+vim +73 ../../../dataset/june2020_dataset/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/util/test/IOUtilsTest.java
+
++++ Add following code below line: 79 (eu/fbk/soa/util/test/IOUtilsTest.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 73
+
++++ Delete Line number 76 (eu/fbk/soa/util/test/IOUtilsTest.java)
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/util/IOUtils.java; Line number 146
+vim +146 ../../../dataset/june2020_dataset/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/util/IOUtils.java
+
++++ Add following code below line: 151 (eu/fbk/soa/util/IOUtils.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 146
+
++++ Delete Line number 148 (eu/fbk/soa/util/IOUtils.java)
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/util/IOUtils.java; Line number 157
+vim +157 ../../../dataset/june2020_dataset/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/util/IOUtils.java
+
++++ Add following code below line: 160 (eu/fbk/soa/util/IOUtils.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 157
+
+--------------------------------------------
+6] ../../../dataset/june2020_dataset/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/util/IOUtils.java; Line number 198
+vim +198 ../../../dataset/june2020_dataset/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/util/IOUtils.java
+
++++ Add following code below line: 202 (eu/fbk/soa/util/IOUtils.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 198
+
+--------------------------------------------

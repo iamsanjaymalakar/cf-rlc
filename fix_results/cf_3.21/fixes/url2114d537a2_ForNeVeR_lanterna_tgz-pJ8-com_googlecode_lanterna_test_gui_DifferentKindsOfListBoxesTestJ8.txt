@@ -1,0 +1,34 @@
+12246
+63
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/url2114d537a2_ForNeVeR_lanterna_tgz-pJ8-com_googlecode_lanterna_test_gui_DifferentKindsOfListBoxesTestJ8/src/com/googlecode/lanterna/test/TestShellCommand.java; Line number 34
+vim +34 ../../../../datasets/debug_supplemented_njr/url2114d537a2_ForNeVeR_lanterna_tgz-pJ8-com_googlecode_lanterna_test_gui_DifferentKindsOfListBoxesTestJ8/src/com/googlecode/lanterna/test/TestShellCommand.java
+
++++ Add following code above line:34 (com/googlecode/lanterna/test/TestShellCommand.java)
+try{
++++ Add following code after line:39 (com/googlecode/lanterna/test/TestShellCommand.java)
+}finally{
+    try{ stdout.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+1] ../../../../datasets/debug_supplemented_njr/url2114d537a2_ForNeVeR_lanterna_tgz-pJ8-com_googlecode_lanterna_test_gui_DifferentKindsOfListBoxesTestJ8/src/com/googlecode/lanterna/terminal/text/UnixTerminal.java; Line number 161
+vim +161 ../../../../datasets/debug_supplemented_njr/url2114d537a2_ForNeVeR_lanterna_tgz-pJ8-com_googlecode_lanterna_test_gui_DifferentKindsOfListBoxesTestJ8/src/com/googlecode/lanterna/terminal/text/UnixTerminal.java
+
++++ Add following code below line: 178 (com/googlecode/lanterna/terminal/text/UnixTerminal.java)
+finally{
+    try{ stdout.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+2] ../../../../datasets/debug_supplemented_njr/url2114d537a2_ForNeVeR_lanterna_tgz-pJ8-com_googlecode_lanterna_test_gui_DifferentKindsOfListBoxesTestJ8/src/com/googlecode/lanterna/terminal/text/CygwinTerminal.java; Line number 160
+vim +160 ../../../../datasets/debug_supplemented_njr/url2114d537a2_ForNeVeR_lanterna_tgz-pJ8-com_googlecode_lanterna_test_gui_DifferentKindsOfListBoxesTestJ8/src/com/googlecode/lanterna/terminal/text/CygwinTerminal.java
+
++++ Add following code below line: 177 (com/googlecode/lanterna/terminal/text/CygwinTerminal.java)
+finally{
+    try{ stdout.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------

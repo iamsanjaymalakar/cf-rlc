@@ -1,0 +1,15 @@
+10269
+43
+
+SOURCE LEVEL FIXES
+
+2] ../../../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/Speed.java; Line number 27
+vim +27 ../../../dataset/june2020_dataset/url85460dd114_a2800276_event_java_tgz-pJ8-event_CloseSemanticsTestJ8/src/event/Speed.java
+
++++ Add following code below line: 40 (event/Speed.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 27
+
+--------------------------------------------

@@ -1,0 +1,56 @@
+14241
+1125
+
+SOURCE LEVEL FIXES
+
+2] ../../../../datasets/debug_supplemented_njr/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/test/PrimitiveTest.java; Line number 26
+vim +26 ../../../../datasets/debug_supplemented_njr/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/test/PrimitiveTest.java
+
++++ Add following code below line: 270 (malictus/klang/test/PrimitiveTest.java)
+finally{
+    try{ raf.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 259 (malictus/klang/test/PrimitiveTest.java)
+
+--------------------------------------------
+3] ../../../../datasets/debug_supplemented_njr/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/test/FileReadWriteTest.java; Line number 46
+vim +46 ../../../../datasets/debug_supplemented_njr/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/test/FileReadWriteTest.java
+
++++ Add following code below line: 126 (malictus/klang/test/FileReadWriteTest.java)
+finally{
+    try{ raf.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 111 (malictus/klang/test/FileReadWriteTest.java)
+
+--------------------------------------------
+4] ../../../../datasets/debug_supplemented_njr/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/ui/klangeditor/RawEditPanel.java; Line number 471
+vim +471 ../../../../datasets/debug_supplemented_njr/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/ui/klangeditor/RawEditPanel.java
+
++++ Add following code below line: 477 (malictus/klang/ui/klangeditor/RawEditPanel.java)
+finally{
+    try{ raf.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
+--------------------------------------------
+7] ../../../../datasets/debug_supplemented_njr/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/KlangUtil.java; Line number 526
+vim +526 ../../../../datasets/debug_supplemented_njr/url2a908001cd_malictus_klang_tgz-pJ8-malictus_klang_test_PrimitiveTestJ8/src/malictus/klang/KlangUtil.java
+
++++ Add following code above line:526 (malictus/klang/KlangUtil.java)
+try{ 
++++ Add following code below line:526 (malictus/klang/KlangUtil.java)
+} catch(Exception e){ 
+    if (fin!=null) { fin.close();}
+    throw e; 
+}
++++ Add following code below line: 540 (malictus/klang/KlangUtil.java)
+finally{
+    try{ fin.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+
++++ Delete Line number 534 (malictus/klang/KlangUtil.java)
+
++++ Delete Line number 537 (malictus/klang/KlangUtil.java)
+
+--------------------------------------------

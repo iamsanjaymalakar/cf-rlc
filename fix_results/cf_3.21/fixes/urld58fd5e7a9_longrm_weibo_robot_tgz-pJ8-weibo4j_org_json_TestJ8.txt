@@ -1,0 +1,15 @@
+15700
+983
+
+SOURCE LEVEL FIXES
+
+0] ../../../../datasets/debug_supplemented_njr/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/org/json/Test.java; Line number 442
+vim +442 ../../../../datasets/debug_supplemented_njr/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/org/json/Test.java
+
++++ Add following code below line: 622 (weibo4j/org/json/Test.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 442
+
+--------------------------------------------
