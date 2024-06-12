@@ -1,0 +1,360 @@
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:41: error: (missing.creates.mustcall.for) $$ 3 $$ testClear $$ this $$ map $$ ( 1228, 1356 ) $$ Method testClear re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void testClear() throws IOException {
+	            ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:42: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 1282, 1294 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+		map = map5();
+		    ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:52: error: (missing.creates.mustcall.for) $$ 3 $$ testContainsKey $$ this $$ map $$ ( 1455, 1647 ) $$ Method testContainsKey re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testContainsKey() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:53: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 1521, 1533 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+    	map = map5();
+    	    ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:64: error: (missing.creates.mustcall.for) $$ 3 $$ testGet $$ this $$ map $$ ( 1784, 1996 ) $$ Method testGet re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testGet() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:65: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 1845, 1857 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+        map = map5();
+            ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:76: error: (missing.creates.mustcall.for) $$ 3 $$ testIsEmpty $$ this $$ map $$ ( 2105, 2270 ) $$ Method testIsEmpty re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testIsEmpty() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:77: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 2170, 2228 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+        map = new BigConcurrentHashMapImpl(testDir, "testIsEmpty");
+            ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:86: error: (missing.creates.mustcall.for) $$ 3 $$ testPutIfAbsent $$ this $$ map $$ ( 2379, 2571 ) $$ Method testPutIfAbsent re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testPutIfAbsent() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:87: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 2442, 2454 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+		map = map5();
+		    ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:96: error: (missing.creates.mustcall.for) $$ 3 $$ testPutIfAbsent2 $$ this $$ map $$ ( 2664, 2841 ) $$ Method testPutIfAbsent2 re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testPutIfAbsent2() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:97: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 2734, 2746 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+        map = map5();
+            ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:106: error: (missing.creates.mustcall.for) $$ 3 $$ testReplace $$ this $$ map $$ ( 2946, 3149 ) $$ Method testReplace re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testReplace() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:107: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 3011, 3023 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+        map = map5();
+            ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:117: error: (missing.creates.mustcall.for) $$ 3 $$ testReplace2 $$ this $$ map $$ ( 3259, 3476 ) $$ Method testReplace2 re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testReplace2() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:118: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 3325, 3337 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+        map = map5();
+            ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:128: error: (missing.creates.mustcall.for) $$ 3 $$ testReplaceValue $$ this $$ map $$ ( 3605, 3904 ) $$ Method testReplaceValue re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testReplaceValue() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:129: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 3675, 3687 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+        map = map5();
+            ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:140: error: (missing.creates.mustcall.for) $$ 3 $$ testReplaceValue2 $$ this $$ map $$ ( 4032, 4331 ) $$ Method testReplaceValue2 re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testReplaceValue2() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:141: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 4103, 4115 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+        map = map5();
+            ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:152: error: (missing.creates.mustcall.for) $$ 3 $$ testRemove $$ this $$ map $$ ( 4449, 4659 ) $$ Method testRemove re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testRemove() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:153: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 4513, 4525 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+        map = map5();
+            ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:164: error: (missing.creates.mustcall.for) $$ 3 $$ testRemove2 $$ this $$ map $$ ( 4764, 5133 ) $$ Method testRemove2 re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testRemove2() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:165: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 4829, 4841 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+        map = map5();
+            ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:179: error: (missing.creates.mustcall.for) $$ 3 $$ testSize $$ this $$ map $$ ( 5228, 5497 ) $$ Method testSize re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testSize() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:180: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 5290, 5302 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+        map = map5();
+            ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:190: error: (contracts.postcondition) $$ 3 $$ clear $$ no information about this.map $$ this.map is @CalledMethods("close") $$ ( 5504, 5643 ) $$ postcondition of clear is not satisfied.
+	public void clear() throws IOException {
+	            ^
+  found   : no information about this.map
+  required: this.map is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:203: error: (missing.creates.mustcall.for) $$ 3 $$ testConstructor1 $$ this $$ map $$ ( 5736, 6115 ) $$ Method testConstructor1 re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testConstructor1() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:206: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 5964, 6035 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+            map = new BigConcurrentHashMapImpl(testDir, "testConstructor1", config);
+                ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:215: error: (missing.creates.mustcall.for) $$ 3 $$ testConstructor2 $$ this $$ map $$ ( 6188, 6567 ) $$ Method testConstructor2 re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testConstructor2() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:218: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 6416, 6487 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+            map = new BigConcurrentHashMapImpl(testDir, "testConstructor2", config);
+                ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:228: error: (missing.creates.mustcall.for) $$ 3 $$ testConstructor3 $$ this $$ map $$ ( 6658, 6965 ) $$ Method testConstructor3 re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testConstructor3() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:231: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 6814, 6885 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+            map = new BigConcurrentHashMapImpl(testDir, "testConstructor3", config);
+                ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:241: error: (missing.creates.mustcall.for) $$ 3 $$ testContainsValue_NullPointerException $$ this $$ map $$ ( 7054, 7433 ) $$ Method testContainsValue_NullPointerException re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testContainsValue_NullPointerException() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:244: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 7228, 7321 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+        	map = new BigConcurrentHashMapImpl(testDir, "testContainsValue_NullPointerException", config);;
+        	    ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:251: error: (missing.creates.mustcall.for) $$ 3 $$ testLoop $$ this $$ map $$ ( 7443, 7898 ) $$ Method testLoop re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testLoop() throws IOException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:252: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 7505, 7560 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+        map = new BigConcurrentHashMapImpl(testDir, "testLoop");
+            ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:292: error: (missing.creates.mustcall.for) $$ 3 $$ testConcurrency $$ this $$ map $$ ( 8608, 9487 ) $$ Method testConcurrency re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void testConcurrency() throws IOException, InterruptedException {
+                ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapTest.java:293: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 8696, 8758 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+    	map = new BigConcurrentHashMapImpl(testDir, "testConcurrency");
+    	    ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/BigConcurrentHashMapImpl.java:596: error: (required.method.not.called) $$ 4 $$ method close $$ new MapEntryFactoryImpl(mapDir, mapName) $$ com.ctriposs.bigmap.MapEntryFactoryImpl $$ possible exceptional exit due to this.reload() with exception type java.io.IOException $$ ( 19598, 19638 ) $$ @MustCall method close may not have been invoked on new MapEntryFactoryImpl(mapDir, mapName) or any of its aliases.
+        this.mapEntryFactory = new MapEntryFactoryImpl(mapDir, mapName);
+                               ^
+  The type of object is: com.ctriposs.bigmap.MapEntryFactoryImpl.
+  Reason for going out of scope: possible exceptional exit due to this.reload() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/LimitTest.java:12: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$ Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "map", methods = "close"), @EnsuresCalledMethodsOnException(value = "map", methods = "close") $$ ( 236, 280 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+	private static BigConcurrentHashMapImpl map;
+	                                        ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope: Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "map", methods = "close"), @EnsuresCalledMethodsOnException(value = "map", methods = "close")
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/LimitTest.java:20: error: (flowexpr.parse.error.postcondition) $$ 2 $$ clear() $$ Invalid 'this' because "this" isn't allowed here $$ ( 437, 444 ) $$ error parsing the postcondition expression for clear()
+			clear();
+			     ^
+  cannot parse the expression Invalid 'this' because "this" isn't allowed here
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/LimitTest.java:24: error: (missing.creates.mustcall.for) $$ 3 $$ limitTest $$ com.ctriposs.bigmap.LimitTest $$ map $$ ( 456, 888 ) $$ Method limitTest re-assigns the non-final, owning field com.ctriposs.bigmap.LimitTest.map, but does not have a corresponding @CreatesMustCallFor annotation.
+	public static void limitTest() throws IOException, InterruptedException {
+	                   ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/LimitTest.java:25: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 532, 588 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+		map = new BigConcurrentHashMapImpl(testDir, "limitTest");
+		    ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/LimitTest.java:38: error: (flowexpr.parse.error) $$ 1 $$ 'this.map' in the postcondition EnsuresCalledMethods on the declaration of method 'clear': Invalid 'this' because "this" isn't allowed here $$ ( 892, 1030 ) $$ cannot parse the expression 'this.map' in the postcondition EnsuresCalledMethods on the declaration of method 'clear': Invalid 'this' because "this" isn't allowed here
+	public static void clear() throws IOException {
+	                   ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/LimitTest.java:38: error: (flowexpr.parse.error) $$ 1 $$ Invalid 'this' because "this" isn't allowed here $$ ( 892, 1030 ) $$ cannot parse the expression Invalid 'this' because "this" isn't allowed here
+	public static void clear() throws IOException {
+	                   ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/page/MappedPageFactoryImpl.java:41: error: (type.argument) $$ 4 $$ V $$ Map $$ @MustCall("close") MappedPageImpl $$ @MustCall Object $$ ( 1035, 1049 ) $$ incompatible type argument for type parameter V of Map.
+	private Map<Long, MappedPageImpl> cache;
+	                  ^
+  found   : @MustCall("close") MappedPageImpl
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/page/MappedPageFactoryImpl.java:54: error: (type.argument) $$ 4 $$ V $$ HashMap $$ @MustCall("close") MappedPageImpl $$ @MustCall Object $$ ( 1457, 1471 ) $$ incompatible type argument for type parameter V of HashMap.
+		this.cache = new HashMap<Long, MappedPageImpl>();
+		                               ^
+  found   : @MustCall("close") MappedPageImpl
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/page/MappedPageFactoryImpl.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ mpi $$ com.ctriposs.bigmap.page.MappedPageImpl $$ possible exceptional exit due to channel.close() with exception type java.io.IOException $$ ( 2058, 2104 ) $$ @MustCall method close may not have been invoked on mpi or any of its aliases.
+							mpi = new MappedPageImpl(mbb, fileName, index);
+							    ^
+  The type of object is: com.ctriposs.bigmap.page.MappedPageImpl.
+  Reason for going out of scope: possible exceptional exit due to channel.close() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/page/MappedPageFactoryImpl.java:71: error: (required.method.not.called) $$ 4 $$ method close $$ cache.put(index, mpi) $$ com.ctriposs.bigmap.page.MappedPageImpl $$ possible exceptional exit due to channel.close() with exception type java.io.IOException $$ ( 2113, 2134 ) $$ @MustCall method close may not have been invoked on cache.put(index, mpi) or any of its aliases.
+							cache.put(index, mpi);
+							         ^
+  The type of object is: com.ctriposs.bigmap.page.MappedPageImpl.
+  Reason for going out of scope: possible exceptional exit due to channel.close() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/page/MappedPageFactoryImpl.java:87: error: (return) $$ 2 $$ @MustCall("close") MappedPageImpl $$ @MustCall IMappedPage $$ ( 2544, 2547 ) $$ incompatible types in return.
+		return mpi;
+		       ^
+  type of expression: @MustCall("close") MappedPageImpl
+  method return type: @MustCall IMappedPage
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/page/MappedPageFactoryImpl.java:280: error: (type.argument) $$ 4 $$ E $$ Collection $$ @MustCall("close") MappedPageImpl $$ @MustCall Object $$ ( 7386, 7400 ) $$ incompatible type argument for type parameter E of Collection.
+		Collection<MappedPageImpl> cachedPages = cache.values();
+		           ^
+  found   : @MustCall("close") MappedPageImpl
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/page/MappedPageFactoryImpl.java:281: error: (required.method.not.called) $$ 4 $$ method close $$ mappedPage $$ com.ctriposs.bigmap.page.IMappedPage $$ regular method exit $$ ( 7438, 7460 ) $$ @MustCall method close may not have been invoked on mappedPage or any of its aliases.
+		for(IMappedPage mappedPage : cachedPages) {
+		                ^
+  The type of object is: com.ctriposs.bigmap.page.IMappedPage.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/utils/FileUtil.java:120: error: (required.method.not.called) $$ 4 $$ method close $$ to_s.getFD() $$ java.io.FileDescriptor $$ regular method exit $$ ( 3434, 3446 ) $$ @MustCall method close may not have been invoked on to_s.getFD() or any of its aliases.
+    		to_s.getFD().sync();
+    		          ^
+  The type of object is: java.io.FileDescriptor.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/ReloadTest.java:20: error: (missing.creates.mustcall.for) $$ 3 $$ TestReload $$ this $$ map $$ ( 363, 2470 ) $$ Method TestReload re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void TestReload() throws IOException {
+	            ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/ReloadTest.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 418, 475 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+		map = new BigConcurrentHashMapImpl(testDir, "TestReload");
+		    ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/ReloadTest.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 1236, 1335 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+		map = new BigConcurrentHashMapImpl(testDir, "TestReload", new BigConfig().setReloadOnStartup(true));
+		    ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/ReloadTest.java:91: error: (contracts.postcondition) $$ 3 $$ clear $$ no information about this.map $$ this.map is @CalledMethods("close") $$ ( 2474, 2613 ) $$ postcondition of clear is not satisfied.
+	public void clear() throws IOException {
+	            ^
+  found   : no information about this.map
+  required: this.map is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:23: error: (missing.creates.mustcall.for) $$ 3 $$ TestAcquireAndRelease $$ this $$ mapEntryPool $$ ( 489, 11681 ) $$ Method TestAcquireAndRelease re-assigns the non-final, owning field this.mapEntryPool, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void TestAcquireAndRelease() throws IOException {
+	            ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:24: error: (required.method.not.called) $$ 4 $$ method close $$ field mapEntryPool $$ com.ctriposs.bigmap.IMapEntryFactory $$  Non-final owning field might be overwritten $$ ( 555, 627 ) $$ @MustCall method close may not have been invoked on field mapEntryPool or any of its aliases.
+		mapEntryPool = new MapEntryFactoryImpl(testDir, "acquireAndReleaseTest");
+		             ^
+  The type of object is: com.ctriposs.bigmap.IMapEntryFactory.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:247: error: (missing.creates.mustcall.for) $$ 3 $$ TestAcquireInvalidSize $$ this $$ mapEntryPool $$ ( 11685, 12164 ) $$ Method TestAcquireInvalidSize re-assigns the non-final, owning field this.mapEntryPool, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void TestAcquireInvalidSize() throws IOException {
+	            ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:248: error: (required.method.not.called) $$ 4 $$ method close $$ field mapEntryPool $$ com.ctriposs.bigmap.IMapEntryFactory $$  Non-final owning field might be overwritten $$ ( 11752, 11825 ) $$ @MustCall method close may not have been invoked on field mapEntryPool or any of its aliases.
+		mapEntryPool = new MapEntryFactoryImpl(testDir, "TestAcquireInvalidSize");
+		             ^
+  The type of object is: com.ctriposs.bigmap.IMapEntryFactory.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:270: error: (missing.creates.mustcall.for) $$ 3 $$ TestAcquireAndReleaseRandomSize $$ this $$ mapEntryPool $$ ( 12168, 13797 ) $$ Method TestAcquireAndReleaseRandomSize re-assigns the non-final, owning field this.mapEntryPool, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void TestAcquireAndReleaseRandomSize() throws IOException {
+	            ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:271: error: (required.method.not.called) $$ 4 $$ method close $$ field mapEntryPool $$ com.ctriposs.bigmap.IMapEntryFactory $$  Non-final owning field might be overwritten $$ ( 12244, 12326 ) $$ @MustCall method close may not have been invoked on field mapEntryPool or any of its aliases.
+		mapEntryPool = new MapEntryFactoryImpl(testDir, "TestAcquireAndReleaseRandomSize");
+		             ^
+  The type of object is: com.ctriposs.bigmap.IMapEntryFactory.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:312: error: (missing.creates.mustcall.for) $$ 3 $$ TestAcquireAndReleaseBigSize $$ this $$ mapEntryPool $$ ( 13801, 15209 ) $$ Method TestAcquireAndReleaseBigSize re-assigns the non-final, owning field this.mapEntryPool, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void TestAcquireAndReleaseBigSize() throws IOException {
+	            ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:313: error: (required.method.not.called) $$ 4 $$ method close $$ field mapEntryPool $$ com.ctriposs.bigmap.IMapEntryFactory $$  Non-final owning field might be overwritten $$ ( 13874, 13953 ) $$ @MustCall method close may not have been invoked on field mapEntryPool or any of its aliases.
+		mapEntryPool = new MapEntryFactoryImpl(testDir, "TestAcquireAndReleaseBigSize");
+		             ^
+  The type of object is: com.ctriposs.bigmap.IMapEntryFactory.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:344: error: (missing.creates.mustcall.for) $$ 3 $$ TestAcquiredAndReleaseDifferentSize $$ this $$ mapEntryPool $$ ( 15213, 16572 ) $$ Method TestAcquiredAndReleaseDifferentSize re-assigns the non-final, owning field this.mapEntryPool, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void TestAcquiredAndReleaseDifferentSize() throws IOException {
+	            ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:345: error: (required.method.not.called) $$ 4 $$ method close $$ field mapEntryPool $$ com.ctriposs.bigmap.IMapEntryFactory $$  Non-final owning field might be overwritten $$ ( 15293, 15379 ) $$ @MustCall method close may not have been invoked on field mapEntryPool or any of its aliases.
+		mapEntryPool = new MapEntryFactoryImpl(testDir, "TestAcquiredAndReleaseDifferentSize");
+		             ^
+  The type of object is: com.ctriposs.bigmap.IMapEntryFactory.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:378: error: (missing.creates.mustcall.for) $$ 3 $$ TestAcquireAndReleaseSameSize $$ this $$ mapEntryPool $$ ( 16578, 20930 ) $$ Method TestAcquireAndReleaseSameSize re-assigns the non-final, owning field this.mapEntryPool, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void TestAcquireAndReleaseSameSize() throws IOException {
+	            ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:379: error: (required.method.not.called) $$ 4 $$ method close $$ field mapEntryPool $$ com.ctriposs.bigmap.IMapEntryFactory $$  Non-final owning field might be overwritten $$ ( 16652, 16732 ) $$ @MustCall method close may not have been invoked on field mapEntryPool or any of its aliases.
+		mapEntryPool = new MapEntryFactoryImpl(testDir, "TestAcquireAndReleaseSameSize");
+		             ^
+  The type of object is: com.ctriposs.bigmap.IMapEntryFactory.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:478: error: (missing.creates.mustcall.for) $$ 3 $$ TestMultiThreading $$ this $$ mapEntryPool $$ ( 20934, 22931 ) $$ Method TestMultiThreading re-assigns the non-final, owning field this.mapEntryPool, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void TestMultiThreading() throws IOException {
+	            ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:479: error: (required.method.not.called) $$ 4 $$ method close $$ field mapEntryPool $$ com.ctriposs.bigmap.IMapEntryFactory $$  Non-final owning field might be overwritten $$ ( 20997, 21066 ) $$ @MustCall method close may not have been invoked on field mapEntryPool or any of its aliases.
+		mapEntryPool = new MapEntryFactoryImpl(testDir, "TestMultiThreading");
+		             ^
+  The type of object is: com.ctriposs.bigmap.IMapEntryFactory.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:562: error: (contracts.exceptional.postcondition) $$ 3 $$ clear $$ this.mapEntryPool is @CalledMethods $$ this.mapEntryPool is @CalledMethods("close") $$ ( 24007, 24208 ) $$ on exception, postcondition of clear is not satisfied.
+	public void clear() throws IOException {
+	            ^
+  found   : this.mapEntryPool is @CalledMethods
+  required: this.mapEntryPool is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/MapEntryFactoryTest.java:562: error: (contracts.postcondition) $$ 3 $$ clear $$ no information about this.mapEntryPool $$ this.mapEntryPool is @CalledMethods("close") $$ ( 24007, 24208 ) $$ postcondition of clear is not satisfied.
+	public void clear() throws IOException {
+	            ^
+  found   : no information about this.mapEntryPool
+  required: this.mapEntryPool is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PerfTest.java:44: error: (missing.creates.mustcall.for) $$ 3 $$ testPut $$ this $$ map $$ ( 1028, 2300 ) $$ Method testPut re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void testPut() throws IOException, ClassNotFoundException {
+	            ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PerfTest.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 1219, 1281 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+		map = new BigConcurrentHashMapImpl(testDir, "testPut", config);
+		    ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PerfTest.java:84: error: (missing.creates.mustcall.for) $$ 3 $$ testPutPerf $$ this $$ map $$ ( 2304, 4762 ) $$ Method testPutPerf re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void testPutPerf() throws ExecutionException, InterruptedException, IOException {
+	            ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PerfTest.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 2696, 2762 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+		map = new BigConcurrentHashMapImpl(testDir, "testPutPerf", config);
+		    ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PerfTest.java:221: error: (contracts.postcondition) $$ 3 $$ clear $$ no information about this.map $$ this.map is @CalledMethods("close") $$ ( 6612, 6751 ) $$ postcondition of clear is not satisfied.
+	public void clear() throws IOException {
+	            ^
+  found   : no information about this.map
+  required: this.map is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PurgeTest.java:20: error: (missing.creates.mustcall.for) $$ 3 $$ scheduledPurgeTest $$ this $$ map $$ ( 362, 2188 ) $$ Method scheduledPurgeTest re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void scheduledPurgeTest() throws IOException, InterruptedException {
+	            ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PurgeTest.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 513, 586 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+		map = new BigConcurrentHashMapImpl(testDir, "scheduledPurgeTest", config); // 1 second expiration
+		    ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PurgeTest.java:69: error: (missing.creates.mustcall.for) $$ 3 $$ purgeTriggerByGetTest $$ this $$ map $$ ( 2192, 3403 ) $$ Method purgeTriggerByGetTest re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void purgeTriggerByGetTest() throws IOException, InterruptedException {
+	            ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PurgeTest.java:71: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 2346, 2422 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+		map = new BigConcurrentHashMapImpl(testDir, "purgeTriggerByGetTest", config); // 3 second expiration
+		    ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PurgeTest.java:99: error: (missing.creates.mustcall.for) $$ 3 $$ purgeTriggerByRemoveTest $$ this $$ map $$ ( 3407, 4711 ) $$ Method purgeTriggerByRemoveTest re-assigns the non-final, owning field this.map, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void purgeTriggerByRemoveTest() throws IOException, InterruptedException {
+	            ^
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PurgeTest.java:101: error: (required.method.not.called) $$ 4 $$ method close $$ field map $$ com.ctriposs.bigmap.BigConcurrentHashMapImpl $$  Non-final owning field might be overwritten $$ ( 3564, 3643 ) $$ @MustCall method close may not have been invoked on field map or any of its aliases.
+		map = new BigConcurrentHashMapImpl(testDir, "purgeTriggerByRemoveTest", config); // 3 second expiration
+		    ^
+  The type of object is: com.ctriposs.bigmap.BigConcurrentHashMapImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url027b37a4db_ctriposs_bigmap_tgz-pJ8-com_ctriposs_bigmap_LimitTestJ8/src/com/ctriposs/bigmap/PurgeTest.java:129: error: (contracts.postcondition) $$ 3 $$ clear $$ no information about this.map $$ this.map is @CalledMethods("close") $$ ( 4714, 4853 ) $$ postcondition of clear is not satisfied.
+	public void clear() throws IOException {
+	            ^
+  found   : no information about this.map
+  required: this.map is @CalledMethods("close")
+86 errors

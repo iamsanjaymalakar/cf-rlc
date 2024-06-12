@@ -1,0 +1,3 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^UDPConnector/UdpConnector.java^266^UDPConnector.UdpConnector.Send([B)Z^6 = new <Application,Ljava/net/DatagramSocket>@17^NULL^INVOKE,^false^false^Normal Fix;
+1^UDPConnector/UdpConnector.java^97^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

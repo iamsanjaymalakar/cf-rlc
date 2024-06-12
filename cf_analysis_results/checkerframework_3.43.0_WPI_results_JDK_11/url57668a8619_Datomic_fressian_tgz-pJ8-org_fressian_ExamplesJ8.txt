@@ -1,0 +1,172 @@
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/impl/RawInput.java:26: error: (mustcallalias.out.of.scope) $$ 1 $$ regular method exit $$ ( 908, 922 ) $$ This @MustCallAlias parameter might go out of scope without being assigned into an owning field of this object (if this is a constructor) or returned.
+    public RawInput(InputStream is, boolean validateAdler) {
+                                ^
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/impl/RawInput.java:28: error: (assignment) $$ 2 $$ @PolyMustCall CheckedInputStream $$ @MustCall("close") CheckedInputStream $$ ( 1001, 1042 ) $$ incompatible types in assignment.
+            this.cis = new CheckedInputStream(is, new Adler32());
+                       ^
+  found   : @PolyMustCall CheckedInputStream
+  required: @MustCall("close") CheckedInputStream
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/impl/RawInput.java:31: error: (assignment) $$ 2 $$ @PolyMustCall InputStream $$ @MustCall("close") InputStream $$ ( 1110, 1112 ) $$ incompatible types in assignment.
+            this.is = is;
+                      ^
+  found   : @PolyMustCall InputStream
+  required: @MustCall("close") InputStream
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/impl/RawOutput.java:24: error: (assignment) $$ 2 $$ @PolyMustCall CheckedOutputStream $$ @MustCall("close") CheckedOutputStream $$ ( 907, 949 ) $$ incompatible types in assignment.
+        this.os = new CheckedOutputStream(os, new Adler32());
+                  ^
+  found   : @PolyMustCall CheckedOutputStream
+  required: @MustCall("close") CheckedOutputStream
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ field rawOut $$ org.fressian.impl.RawOutput $$  Non-final owning field might be overwritten $$ ( 1549, 1586 ) $$ @MustCall method close may not have been invoked on field rawOut or any of its aliases.
+        this.rawOut = new RawOutput(this.out);
+                    ^
+  The type of object is: org.fressian.impl.RawOutput.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:48: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 1692, 1696 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:57: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 1898, 1902 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:63: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 2042, 2046 ) $$ incompatible types in return.
+            return this;
+                   ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:67: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 2126, 2130 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:72: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 2239, 2243 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:79: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 2380, 2384 ) $$ incompatible types in return.
+            return this;
+                   ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:82: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 2455, 2459 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:94: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 2779, 2783 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:99: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 2917, 2921 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:105: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 3069, 3073 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:110: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 3204, 3208 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:116: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 3347, 3351 ) $$ incompatible types in return.
+            return this;
+                   ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:141: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 4318, 4322 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:159: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 4850, 4854 ) $$ incompatible types in return.
+            return this;
+                   ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:166: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 5063, 5067 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:172: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 5205, 5209 ) $$ incompatible types in return.
+            return this;
+                   ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:194: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 6049, 6053 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:215: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 6788, 6792 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:235: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 7423, 7427 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:269: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 8528, 8532 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:277: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 8768, 8772 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:460: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 14073, 14077 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:485: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 14716, 14720 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:490: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 14834, 14838 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianWriter.java:497: error: (return) $$ 2 $$ @MustCall("close") FressianWriter $$ @MustCall Writer $$ ( 15122, 15126 ) $$ incompatible types in return.
+        return this;
+               ^
+  type of expression: @MustCall("close") FressianWriter
+  method return type: @MustCall Writer
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/FressianReader.java:37: error: (assignment) $$ 2 $$ @PolyMustCall RawInput $$ @MustCall("close") RawInput $$ ( 1360, 1391 ) $$ incompatible types in assignment.
+        this.is = new RawInput(is, validateAdler);
+                  ^
+  found   : @PolyMustCall RawInput
+  required: @MustCall("close") RawInput
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/Examples.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ w $$ org.fressian.Writer $$ possible exceptional exit due to w.writeObject(new Person("John", "Doe")) with exception type java.io.IOException $$ ( 2482, 2699 ) $$ @MustCall method close may not have been invoked on w or any of its aliases.
+        Writer w = new FressianWriter(baos, new ILookup<Class, Map<String, WriteHandler>>() {
+               ^
+  The type of object is: org.fressian.Writer.
+  Reason for going out of scope: possible exceptional exit due to w.writeObject(new Person("John", "Doe")) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/Examples.java:82: error: (required.method.not.called) $$ 4 $$ method close $$ w $$ org.fressian.Writer $$ possible exceptional exit due to w.writeObject(data, true) with exception type java.io.IOException $$ ( 2978, 3014 ) $$ @MustCall method close may not have been invoked on w or any of its aliases.
+        Writer w = new FressianWriter(baos);
+               ^
+  The type of object is: org.fressian.Writer.
+  Reason for going out of scope: possible exceptional exit due to w.writeObject(data, true) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url57668a8619_Datomic_fressian_tgz-pJ8-org_fressian_ExamplesJ8/src/org/fressian/Examples.java:120: error: (required.method.not.called) $$ 4 $$ method close $$ w $$ org.fressian.Writer $$ possible exceptional exit due to w.writeObject(bunchOfData()) with exception type java.io.IOException $$ ( 4413, 4449 ) $$ @MustCall method close may not have been invoked on w or any of its aliases.
+        Writer w = new FressianWriter(baos);
+               ^
+  The type of object is: org.fressian.Writer.
+  Reason for going out of scope: possible exceptional exit due to w.writeObject(bunchOfData()) with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+34 errors

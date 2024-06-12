@@ -1,0 +1,221 @@
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/utils/IniFile.java:57: error: (required.method.not.called) $$ 4 $$ method close $$ url.openStream() $$ java.io.InputStream $$ regular method exit $$ ( 1215, 1231 ) $$ @MustCall method close may not have been invoked on url.openStream() or any of its aliases.
+		load(url.openStream());
+		                   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/utils/IniFile.java:210: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(filename) $$ java.io.FileInputStream $$ regular method exit $$ ( 4957, 4986 ) $$ @MustCall method close may not have been invoked on new FileInputStream(filename) or any of its aliases.
+		load(new FileInputStream(filename));
+		     ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/utils/IniFile.java:320: error: (required.method.not.called) $$ 4 $$ method close $$ Resources.getInputStream("client.ini") $$ java.io.InputStream $$ possible exceptional exit due to new IniFile(Resources.getInputStream("client.ini")) with exception type java.io.IOException $$ ( 7771, 7809 ) $$ @MustCall method close may not have been invoked on Resources.getInputStream("client.ini") or any of its aliases.
+		IniFile i = new IniFile(Resources.getInputStream("client.ini"));
+		                                                ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new IniFile(Resources.getInputStream("client.ini")) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ReaderThread.java:27: error: (required.method.not.called) $$ 4 $$ method close $$ field in $$ java.io.BufferedReader $$  Non-final owning field might be overwritten $$ ( 682, 694 ) $$ @MustCall method close may not have been invoked on field in or any of its aliases.
+		this.in = in;
+		        ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ReaderThread.java:27: error: (assignment) $$ 2 $$ @PolyMustCall BufferedReader $$ @MustCall("close") BufferedReader $$ ( 692, 694 ) $$ incompatible types in assignment.
+		this.in = in;
+		          ^
+  found   : @PolyMustCall BufferedReader
+  required: @MustCall("close") BufferedReader
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:60: error: (required.method.not.called) $$ 4 $$ method close $$ field socket $$ java.net.Socket $$  The enclosing element pl.cc.ProxyHandler has an empty @MustCall annotation $$ ( 1774, 1803 ) $$ @MustCall method close may not have been invoked on field socket or any of its aliases.
+	private Socket socket = null;
+	               ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope:  The enclosing element pl.cc.ProxyHandler has an empty @MustCall annotation
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:61: error: (required.method.not.called) $$ 4 $$ method close $$ field out $$ pl.cc.core.NetPrintWriter $$  The enclosing element pl.cc.ProxyHandler has an empty @MustCall annotation $$ ( 1805, 1841 ) $$ @MustCall method close may not have been invoked on field out or any of its aliases.
+	protected NetPrintWriter out = null;
+	                         ^
+  The type of object is: pl.cc.core.NetPrintWriter.
+  Reason for going out of scope:  The enclosing element pl.cc.ProxyHandler has an empty @MustCall annotation
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:62: error: (required.method.not.called) $$ 4 $$ method closeInputStream $$ field readerThread $$ pl.cc.ReaderThread $$  The enclosing element pl.cc.ProxyHandler has an empty @MustCall annotation $$ ( 1843, 1877 ) $$ @MustCall method closeInputStream may not have been invoked on field readerThread or any of its aliases.
+	private ReaderThread readerThread;
+	                     ^
+  The type of object is: pl.cc.ReaderThread.
+  Reason for going out of scope:  The enclosing element pl.cc.ProxyHandler has an empty @MustCall annotation
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:142: error: (contracts.postcondition) $$ 3 $$ closeTCPSocket $$ no information about this.out $$ this.out is @CalledMethods("close") $$ ( 4078, 4633 ) $$ postcondition of closeTCPSocket is not satisfied.
+	private void closeTCPSocket() {
+	             ^
+  found   : no information about this.out
+  required: this.out is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:142: error: (contracts.postcondition) $$ 3 $$ closeTCPSocket $$ no information about this.readerThread $$ this.readerThread is @CalledMethods("closeInputStream") $$ ( 4078, 4633 ) $$ postcondition of closeTCPSocket is not satisfied.
+	private void closeTCPSocket() {
+	             ^
+  found   : no information about this.readerThread
+  required: this.readerThread is @CalledMethods("closeInputStream")
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:142: error: (contracts.postcondition) $$ 3 $$ closeTCPSocket $$ no information about this.socket $$ this.socket is @CalledMethods("close") $$ ( 4078, 4633 ) $$ postcondition of closeTCPSocket is not satisfied.
+	private void closeTCPSocket() {
+	             ^
+  found   : no information about this.socket
+  required: this.socket is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:161: error: (required.method.not.called) $$ 4 $$ method close $$ field socket $$ java.net.Socket $$  Non-final owning field might be overwritten $$ ( 4552, 4565 ) $$ @MustCall method close may not have been invoked on field socket or any of its aliases.
+			socket = null;
+			       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:361: error: (missing.creates.mustcall.for) $$ 3 $$ doConnect $$ this $$ out $$ ( 9792, 11287 ) $$ Method doConnect re-assigns the non-final, owning field this.out, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void doConnect(LoginCredentials loginCredentials) {
+	            ^
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:361: error: (missing.creates.mustcall.for) $$ 3 $$ doConnect $$ this $$ readerThread $$ ( 9792, 11287 ) $$ Method doConnect re-assigns the non-final, owning field this.readerThread, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void doConnect(LoginCredentials loginCredentials) {
+	            ^
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:361: error: (missing.creates.mustcall.for) $$ 3 $$ doConnect $$ this $$ socket $$ ( 9792, 11287 ) $$ Method doConnect re-assigns the non-final, owning field this.socket, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void doConnect(LoginCredentials loginCredentials) {
+	            ^
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:372: error: (required.method.not.called) $$ 4 $$ method close $$ field socket $$ java.net.Socket $$  Non-final owning field might be overwritten $$ ( 10169, 10205 ) $$ @MustCall method close may not have been invoked on field socket or any of its aliases.
+                socket =  sf.createSocket(host,port);
+                       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:375: error: (required.method.not.called) $$ 4 $$ method close $$ field socket $$ java.net.Socket $$  Non-final owning field might be overwritten $$ ( 10298, 10329 ) $$ @MustCall method close may not have been invoked on field socket or any of its aliases.
+                socket = new Socket(host, port);
+                       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:377: error: (required.method.not.called) $$ 4 $$ method close $$ field out $$ pl.cc.core.NetPrintWriter $$  Non-final owning field might be overwritten $$ ( 10348, 10398 ) $$ @MustCall method close may not have been invoked on field out or any of its aliases.
+			out = new NetPrintWriter(socket.getOutputStream());
+			    ^
+  The type of object is: pl.cc.core.NetPrintWriter.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/pl/cc/ProxyHandler.java:379: error: (required.method.not.called) $$ 4 $$ method closeInputStream $$ field readerThread $$ pl.cc.ReaderThread $$  Non-final owning field might be overwritten $$ ( 10520, 10621 ) $$ @MustCall method closeInputStream may not have been invoked on field readerThread or any of its aliases.
+			readerThread = new ReaderThread(listenerList, in, new Integer((int)(Math.random()*10000)).toString());
+			             ^
+  The type of object is: pl.cc.ReaderThread.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/DBConnection.java:24: error: (required.method.not.called) $$ 4 $$ method close $$ DriverManager.getConnection(connString, dbUser, dbPass) $$ java.sql.Connection $$ regular method exit $$ ( 667, 722 ) $$ @MustCall method close may not have been invoked on DriverManager.getConnection(connString, dbUser, dbPass) or any of its aliases.
+            conn = DriverManager.getConnection(connString, dbUser, dbPass);
+                                              ^
+  The type of object is: java.sql.Connection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/GadajAsterisk.java:41: error: (required.method.not.called) $$ 4 $$ method close $$ field echoSocket $$ java.net.Socket $$ Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "echoSocket", methods = "close"), @EnsuresCalledMethodsOnException(value = "echoSocket", methods = "close") $$ ( 1184, 1216 ) $$ @MustCall method close may not have been invoked on field echoSocket or any of its aliases.
+	static Socket echoSocket = null;
+	              ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "echoSocket", methods = "close"), @EnsuresCalledMethodsOnException(value = "echoSocket", methods = "close")
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/GadajAsterisk.java:58: error: (missing.creates.mustcall.for) $$ 3 $$ <init> $$ ccproxy.GadajAsterisk $$ echoSocket $$ ( 1666, 2661 ) $$ Method <init> re-assigns the non-final, owning field ccproxy.GadajAsterisk.echoSocket, but does not have a corresponding @CreatesMustCallFor annotation.
+	public GadajAsterisk(String asteriskIP, String asteriskPort,
+	       ^
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/GadajAsterisk.java:91: error: (contracts.postcondition) $$ 3 $$ close $$ no information about ccproxy.GadajAsterisk.echoSocket $$ ccproxy.GadajAsterisk.echoSocket is @CalledMethods("close") $$ ( 2664, 3021 ) $$ postcondition of close is not satisfied.
+	public void close() {
+	            ^
+  found   : no information about ccproxy.GadajAsterisk.echoSocket
+  required: ccproxy.GadajAsterisk.echoSocket is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/ReadConfig.java:54: error: (required.method.not.called) $$ 4 $$ method close $$ Fr $$ java.io.FileReader $$ possible exceptional exit due to new BufferedReader(Fr) with exception type java.lang.NumberFormatException $$ ( 1337, 1366 ) $$ @MustCall method close may not have been invoked on Fr or any of its aliases.
+			Fr = new FileReader(filename);
+			   ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to new BufferedReader(Fr) with exception type java.lang.NumberFormatException
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java:66: error: (required.method.not.called) $$ 4 $$ method close $$ field out $$ ccproxy.ChannelWriter $$  The enclosing element ccproxy.AgentConnection has an empty @MustCall annotation $$ ( 1812, 1830 ) $$ @MustCall method close may not have been invoked on field out or any of its aliases.
+	ChannelWriter out;
+	              ^
+  The type of object is: ccproxy.ChannelWriter.
+  Reason for going out of scope:  The enclosing element ccproxy.AgentConnection has an empty @MustCall annotation
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java:205: error: (contracts.postcondition) $$ 3 $$ runInternal $$ no information about this.out $$ this.out is @CalledMethods("close") $$ ( 7428, 14589 ) $$ postcondition of runInternal is not satisfied.
+	private void runInternal() {
+	             ^
+  found   : no information about this.out
+  required: this.out is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java:205: error: (missing.creates.mustcall.for) $$ 3 $$ runInternal $$ this $$ out $$ ( 7428, 14589 ) $$ Method runInternal re-assigns the non-final, owning field this.out, but does not have a corresponding @CreatesMustCallFor annotation.
+	private void runInternal() {
+	             ^
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java:211: error: (required.method.not.called) $$ 4 $$ method close $$ field out $$ ccproxy.ChannelWriter $$  Non-final owning field might be overwritten $$ ( 7581, 7624 ) $$ @MustCall method close may not have been invoked on field out or any of its aliases.
+			out = new ChannelWriter(sChannel, selector);
+			    ^
+  The type of object is: ccproxy.ChannelWriter.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java:309: error: (required.method.not.called) $$ 4 $$ method close $$ field out $$ ccproxy.ChannelWriter $$  Non-final owning field might be overwritten $$ ( 11704, 11731 ) $$ @MustCall method close may not have been invoked on field out or any of its aliases.
+                out=new NullChannelWriter();
+                   ^
+  The type of object is: ccproxy.ChannelWriter.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java:427: error: (contracts.postcondition) $$ 3 $$ cleanup $$ no information about this.out $$ this.out is @CalledMethods("close") $$ ( 14741, 16716 ) $$ postcondition of cleanup is not satisfied.
+	private void cleanup(Thread pingThread, Thread mainThread,
+	             ^
+  found   : no information about this.out
+  required: this.out is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java:510: error: (contracts.postcondition) $$ 3 $$ agentAuthorization $$ no information about this.out $$ this.out is @CalledMethods("close") $$ ( 17281, 29731 ) $$ postcondition of agentAuthorization is not satisfied.
+	private boolean agentAuthorization() throws IOException {
+	                ^
+  found   : no information about this.out
+  required: this.out is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java:889: error: (required.method.not.called) $$ 4 $$ method close $$ con.getOutputStream() $$ java.io.OutputStream $$ possible exceptional exit due to con.getOutputStream().write(("user=" + agentName).getBytes("UTF-8")) with exception type java.net.MalformedURLException $$ ( 29985, 30006 ) $$ @MustCall method close may not have been invoked on con.getOutputStream() or any of its aliases.
+			con.getOutputStream().write(("user="+agentName).getBytes("UTF-8"));
+			                   ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to con.getOutputStream().write(("user=" + agentName).getBytes("UTF-8")) with exception type java.net.MalformedURLException
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java:890: error: (required.method.not.called) $$ 4 $$ method close $$ con.getOutputStream() $$ java.io.OutputStream $$ possible exceptional exit due to con.getOutputStream().write("&".getBytes("UTF-8")) with exception type java.net.MalformedURLException $$ ( 30056, 30077 ) $$ @MustCall method close may not have been invoked on con.getOutputStream() or any of its aliases.
+			con.getOutputStream().write("&".getBytes("UTF-8"));
+			                   ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to con.getOutputStream().write("&".getBytes("UTF-8")) with exception type java.net.MalformedURLException
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java:891: error: (required.method.not.called) $$ 4 $$ method close $$ con.getOutputStream() $$ java.io.OutputStream $$ possible exceptional exit due to con.getOutputStream().write(("pass=" + password).getBytes("UTF-8")) with exception type java.net.MalformedURLException $$ ( 30111, 30132 ) $$ @MustCall method close may not have been invoked on con.getOutputStream() or any of its aliases.
+			con.getOutputStream().write(("pass="+password).getBytes("UTF-8"));
+			                   ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to con.getOutputStream().write(("pass=" + password).getBytes("UTF-8")) with exception type java.net.MalformedURLException
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/AgentConnection.java:893: error: (required.method.not.called) $$ 4 $$ method close $$ con.getInputStream() $$ java.io.InputStream $$ possible exceptional exit due to br.readLine() with exception type java.net.MalformedURLException $$ ( 30276, 30296 ) $$ @MustCall method close may not have been invoked on con.getInputStream() or any of its aliases.
+			BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream()));
+			                                                                               ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.net.MalformedURLException
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/ChannelWriter.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ field channel $$ java.nio.channels.SocketChannel $$  Non-final owning field might be overwritten $$ ( 505, 525 ) $$ @MustCall method close may not have been invoked on field channel or any of its aliases.
+		this.channel=channel;
+		            ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/ChannelWriter.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ field selector $$ java.nio.channels.Selector $$  Non-final owning field might be overwritten $$ ( 568, 590 ) $$ @MustCall method close may not have been invoked on field selector or any of its aliases.
+		this.selector=selector;
+		             ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/ChannelWriter.java:75: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.channel $$ this.channel is @CalledMethods("close") $$ ( 1670, 1840 ) $$ postcondition of close is not satisfied.
+	public void close() {
+	            ^
+  found   : no information about this.channel
+  required: this.channel is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/ChannelWriter.java:75: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.selector $$ this.selector is @CalledMethods("close") $$ ( 1670, 1840 ) $$ postcondition of close is not satisfied.
+	public void close() {
+	            ^
+  found   : no information about this.selector
+  required: this.selector is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/NullChannelWriter.java:17: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.channel $$ this.channel is @CalledMethods("close") $$ ( 291, 332 ) $$ postcondition of close is not satisfied.
+    public void close() {
+                ^
+  found   : no information about this.channel
+  required: this.channel is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/NullChannelWriter.java:17: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.selector $$ this.selector is @CalledMethods("close") $$ ( 291, 332 ) $$ postcondition of close is not satisfied.
+    public void close() {
+                ^
+  found   : no information about this.selector
+  required: this.selector is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/CCproxy.java:26: error: (required.method.not.called) $$ 4 $$ method close $$ vis $$ java.io.InputStream $$ possible exceptional exit due to new BufferedReader(new InputStreamReader((vis))).readLine() with exception type java.io.IOException $$ ( 650, 710 ) $$ @MustCall method close may not have been invoked on vis or any of its aliases.
+		InputStream vis=getClass().getResourceAsStream("/.version");
+		            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new BufferedReader(new InputStreamReader((vis))).readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/CCproxy.java:41: error: (required.method.not.called) $$ 4 $$ method close $$ gadajAsteriskReader $$ ccproxy.GadajAsterisk $$ possible exceptional exit due to sleep(1000) with exception type java.lang.InterruptedException $$ ( 1265, 1378 ) $$ @MustCall method close may not have been invoked on gadajAsteriskReader or any of its aliases.
+			gadajAsteriskReader = new GadajAsterisk(c.asteriskHost, c.asteriskPort,
+			                    ^
+  The type of object is: ccproxy.GadajAsterisk.
+  Reason for going out of scope: possible exceptional exit due to sleep(1000) with exception type java.lang.InterruptedException
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/CCproxy.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ gadajAsteriskWriter $$ ccproxy.GadajAsterisk $$ possible exceptional exit due to sleep(1000) with exception type java.lang.InterruptedException $$ ( 1457, 1498 ) $$ @MustCall method close may not have been invoked on gadajAsteriskWriter or any of its aliases.
+			gadajAsteriskWriter = new GadajAsterisk();
+			                    ^
+  The type of object is: ccproxy.GadajAsterisk.
+  Reason for going out of scope: possible exceptional exit due to sleep(1000) with exception type java.lang.InterruptedException
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/CCproxy.java:94: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to fis.read(bytes, offset, bytes.length - offset) with exception type java.io.IOException $$ ( 2784, 2832 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+			FileInputStream fis = new FileInputStream(file);
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to fis.read(bytes, offset, bytes.length - offset) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url2df0f7c811_przemekgalazka_legacycode_tgz-pJ8-pl_cc_core_cmd_CommandJ8/src/ccproxy/Listener.java:29: error: (reset.not.owning) $$ 2 $$ bind $$ this.serverChan.socket() $$ ( 697, 774 ) $$ Calling method bind resets the must-call obligations of the expression this.serverChan.socket(), which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+			serverChan.socket().bind(new InetSocketAddress(new Integer(port).intValue()));
+			                        ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+46 errors

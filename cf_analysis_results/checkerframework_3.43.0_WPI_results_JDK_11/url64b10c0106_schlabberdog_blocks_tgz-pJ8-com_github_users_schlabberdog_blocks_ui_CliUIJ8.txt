@@ -1,0 +1,6 @@
+../dataset/june2020_dataset_copy/url64b10c0106_schlabberdog_blocks_tgz-pJ8-com_github_users_schlabberdog_blocks_ui_CliUIJ8/src/com/github/users/schlabberdog/blocks/ui/GamePicker.java:6: error: package com.sun.java.swing.plaf.nimbus does not exist
+import com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel;
+                                     ^
+Note: ../dataset/june2020_dataset_copy/url64b10c0106_schlabberdog_blocks_tgz-pJ8-com_github_users_schlabberdog_blocks_ui_CliUIJ8/src/com/github/users/schlabberdog/blocks/ui/GamePicker.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error

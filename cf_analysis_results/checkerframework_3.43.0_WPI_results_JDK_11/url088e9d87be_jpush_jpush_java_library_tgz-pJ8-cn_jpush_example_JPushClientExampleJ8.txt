@@ -1,0 +1,8 @@
+../dataset/june2020_dataset_copy/url088e9d87be_jpush_jpush_java_library_tgz-pJ8-cn_jpush_example_JPushClientExampleJ8/src/cn/jpush/api/HttpPostClient.java:64: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to reader.read(buff) with exception type java.io.IOException $$ ( 2076, 2115 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+				InputStream in = conn.getInputStream();
+				            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to reader.read(buff) with exception type java.io.IOException
+Note: ../dataset/june2020_dataset_copy/url088e9d87be_jpush_jpush_java_library_tgz-pJ8-cn_jpush_example_JPushClientExampleJ8/src/cn/jpush/api/FunctionTests.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error

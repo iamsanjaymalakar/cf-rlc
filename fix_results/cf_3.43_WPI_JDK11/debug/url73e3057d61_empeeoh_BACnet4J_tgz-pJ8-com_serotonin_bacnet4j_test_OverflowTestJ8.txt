@@ -1,0 +1,5 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^com/serotonin/bacnet4j/npdu/ip/IpNetwork.java^124^com.serotonin.bacnet4j.npdu.ip.IpNetwork.initialize(Lcom/serotonin/bacnet4j/transport/Transport;)V^16 = new <Application,Ljava/net/DatagramSocket>@18^NULL^FIELD,^false^true^Field escape;
+1^com/serotonin/bacnet4j/npdu/ip/IpNetwork.java^126^com.serotonin.bacnet4j.npdu.ip.IpNetwork.initialize(Lcom/serotonin/bacnet4j/transport/Transport;)V^10 = new <Application,Ljava/net/DatagramSocket>@36^NULL^FIELD,^false^true^Field escape;
+2^com/serotonin/bacnet4j/npdu/mstp/MstpNode.java^94^com.serotonin.bacnet4j.npdu.mstp.MstpNode.initialize(Z)V^13 = invokevirtual < Application, Lgnu/io/SerialPort, getInputStream()Ljava/io/InputStream; > 11 @30 exception:12^NULL^FIELD,^false^true^Field escape;
+3^com/serotonin/bacnet4j/npdu/mstp/MstpNode.java^95^com.serotonin.bacnet4j.npdu.mstp.MstpNode.initialize(Z)V^16 = invokevirtual < Application, Lgnu/io/SerialPort, getOutputStream()Ljava/io/OutputStream; > 14 @41 exception:15^NULL^FIELD,^false^true^Field escape;

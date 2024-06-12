@@ -1,0 +1,10 @@
+warning: /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset_copy/urlc8dbc7ce6e_dlubarov_guava_tgz-pJ8-MainJ8/wpi-out/parse/stm/SwitchParser-org.checkerframework.checker.mustcall.MustCallChecker.ajava:(line 12,col 1): Imported package not found: a.stm.Switch
+../dataset/june2020_dataset_copy/urlc8dbc7ce6e_dlubarov_guava_tgz-pJ8-MainJ8/src/util/FileUtils.java:9: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ regular method exit $$ ( 164, 204 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+        InputStream in = new FileInputStream(f);
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+Note: ../dataset/june2020_dataset_copy/urlc8dbc7ce6e_dlubarov_guava_tgz-pJ8-MainJ8/src/d/nat/NativeDouble.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 error
+1 warning

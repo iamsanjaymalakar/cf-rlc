@@ -1,0 +1,23 @@
+../dataset/june2020_dataset_copy/url354ce1a2d1_dagaren_gladiator_chess_tgz-pJ8-es_dagaren_gladiator_main_MainJ8/src/es/dagaren/gladiator/communication/xboard/UserController.java:55: error: (required.method.not.called) $$ 4 $$ method close $$ commandScanner.useDelimiter("\\s+") $$ java.util.Scanner $$ regular method exit $$ ( 1540, 1575 ) $$ @MustCall method close may not have been invoked on commandScanner.useDelimiter("\\s+") or any of its aliases.
+      commandScanner.useDelimiter("\\s+");
+                                 ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url354ce1a2d1_dagaren_gladiator_chess_tgz-pJ8-es_dagaren_gladiator_main_MainJ8/src/es/dagaren/gladiator/communication/xboard/EngineController.java:58: error: (required.method.not.called) $$ 4 $$ method close $$ commandScanner.useDelimiter("\\s+") $$ java.util.Scanner $$ regular method exit $$ ( 1609, 1644 ) $$ @MustCall method close may not have been invoked on commandScanner.useDelimiter("\\s+") or any of its aliases.
+      commandScanner.useDelimiter("\\s+");
+                                 ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url354ce1a2d1_dagaren_gladiator_chess_tgz-pJ8-es_dagaren_gladiator_main_MainJ8/src/es/dagaren/gladiator/communication/xboard/EngineController.java:164: error: (required.method.not.called) $$ 4 $$ method close $$ commandScanner.useDelimiter("") $$ java.util.Scanner $$ regular method exit $$ ( 4450, 4481 ) $$ @MustCall method close may not have been invoked on commandScanner.useDelimiter("") or any of its aliases.
+            commandScanner.useDelimiter("");
+                                       ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url354ce1a2d1_dagaren_gladiator_chess_tgz-pJ8-es_dagaren_gladiator_main_MainJ8/src/es/dagaren/gladiator/communication/xboard/EngineController.java:213: error: (required.method.not.called) $$ 4 $$ method close $$ commandScanner.useDelimiter("") $$ java.util.Scanner $$ regular method exit $$ ( 5644, 5675 ) $$ @MustCall method close may not have been invoked on commandScanner.useDelimiter("") or any of its aliases.
+            commandScanner.useDelimiter("");
+                                       ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+Note: ../dataset/june2020_dataset_copy/url354ce1a2d1_dagaren_gladiator_chess_tgz-pJ8-es_dagaren_gladiator_main_MainJ8/src/es/dagaren/gladiator/testing/time/ClockTest.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+4 errors

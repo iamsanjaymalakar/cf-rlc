@@ -1,0 +1,33 @@
+29767
+41
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset_copy/url4913e7683c_pusuo_patchca_tgz-pJ8-org_patchca_demo_PatchcaFilterDemoPNGJ8/src/org/patchca/demo/PatchcaFilterDemoPNG.java; Line number 38
+vim +38 ../../../dataset/june2020_dataset_copy/url4913e7683c_pusuo_patchca_tgz-pJ8-org_patchca_demo_PatchcaFilterDemoPNGJ8/src/org/patchca/demo/PatchcaFilterDemoPNG.java
+
++++ Add following code above line:38 (org/patchca/demo/PatchcaFilterDemoPNG.java)
+try{
++++ Add following code after line:39 (org/patchca/demo/PatchcaFilterDemoPNG.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 38
+
++++ Delete Line number 40 (org/patchca/demo/PatchcaFilterDemoPNG.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset_copy/url4913e7683c_pusuo_patchca_tgz-pJ8-org_patchca_demo_PatchcaFilterDemoPNGJ8/src/org/patchca/demo/Sample.java; Line number 23
+vim +23 ../../../dataset/june2020_dataset_copy/url4913e7683c_pusuo_patchca_tgz-pJ8-org_patchca_demo_PatchcaFilterDemoPNGJ8/src/org/patchca/demo/Sample.java
+
++++ Add following code above line:23 (org/patchca/demo/Sample.java)
+try{
++++ Add following code after line:24 (org/patchca/demo/Sample.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 23
+
++++ Delete Line number 25 (org/patchca/demo/Sample.java)
+
+--------------------------------------------

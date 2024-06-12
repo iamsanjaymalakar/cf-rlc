@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^cz/matfyz/sykora/planning/Planner.java^70^cz.matfyz.sykora.planning.Planner.main([Ljava/lang/String;)V^28 = new <Application,Ljava/io/FileReader>@121^NULL^INVOKE,FIELD,^false^true^Field escape;

@@ -1,0 +1,50 @@
+../dataset/june2020_dataset_copy/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/ch/zhaw/regularLanguages/evolution/EAWithEvolvingLocalProblemSets.java:61: error: (argument) $$ 4 $$ problemSet $$ EvolutionCandidate.fitness $$ @CalledMethods EvolvingProblemSet</*RAW*/> $$ ? extends @CalledMethods Object $$ ( 1498, 1531 ) $$ incompatible argument for parameter problemSet of EvolutionCandidate.fitness.
+				int fitnessI = candidates.get(i).fitness(candidates.get(n).getProblemSet());
+				                                                                        ^
+  found   : @CalledMethods EvolvingProblemSet</*RAW*/>
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/ch/zhaw/regularLanguages/evolution/EAWithEvolvingLocalProblemSets.java:62: error: (argument) $$ 4 $$ problemSet $$ EvolutionCandidate.fitness $$ @CalledMethods EvolvingProblemSet</*RAW*/> $$ ? extends @CalledMethods Object $$ ( 1579, 1612 ) $$ incompatible argument for parameter problemSet of EvolutionCandidate.fitness.
+				int fitnessN = candidates.get(n).fitness(candidates.get(i).getProblemSet());
+				                                                                        ^
+  found   : @CalledMethods EvolvingProblemSet</*RAW*/>
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/ch/zhaw/regularLanguages/evolution/EAWithEvolvingLocalProblemSets.java:65: error: (argument) $$ 4 $$ reference $$ EvolutionCandidate.checkValidity $$ R extends @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 1692, 1701 ) $$ incompatible argument for parameter reference of EvolutionCandidate.checkValidity.
+					if(candidates.get(i).checkValidity(reference)){
+					                                   ^
+  found   : R extends @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/ch/zhaw/regularLanguages/evolution/EAWithEvolvingLocalProblemSets.java:72: error: (argument) $$ 4 $$ reference $$ EvolutionCandidate.checkValidity $$ R extends @CalledMethods Object $$ ? extends @CalledMethods Object $$ ( 1863, 1872 ) $$ incompatible argument for parameter reference of EvolutionCandidate.checkValidity.
+					if(candidates.get(n).checkValidity(reference)){
+					                                   ^
+  found   : R extends @CalledMethods Object
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/ch/zhaw/regularLanguages/helpers/Logger.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ field writer $$ java.io.PrintWriter $$  Non-final owning field might be overwritten $$ ( 512, 555 ) $$ @MustCall method close may not have been invoked on field writer or any of its aliases.
+			writer = new PrintWriter(filePath, "UTF-8");
+			       ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/fr/loria/graphViz/GraphViz.java:170: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to fos.write(img) with exception type java.io.IOException $$ ( 5859, 5907 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+         FileOutputStream fos = new FileOutputStream(to);
+                          ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to fos.write(img) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/fr/loria/graphViz/GraphViz.java:199: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileInputStream $$ possible exceptional exit due to in.available() with exception type java.io.IOException $$ ( 6842, 6906 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+         FileInputStream in = new FileInputStream(img.getAbsolutePath());
+                         ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to in.available() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/fr/loria/graphViz/GraphViz.java:232: error: (required.method.not.called) $$ 4 $$ method close $$ fout $$ java.io.FileWriter $$ possible exceptional exit due to fout.write(str) with exception type java.io.IOException $$ ( 8161, 8200 ) $$ @MustCall method close may not have been invoked on fout or any of its aliases.
+         FileWriter fout = new FileWriter(temp);
+                    ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to fout.write(str) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/fr/loria/graphViz/GraphViz.java:271: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to br.readLine() with exception type java.io.IOException $$ ( 9058, 9107 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+		   FileInputStream fis = new FileInputStream(input);
+		                   ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.io.IOException
+Note: ../dataset/june2020_dataset_copy/url835a90ed59_aschi_regularLanguages_tgz-pJ8-ch_zhaw_regularLanguages_evolution_runners_EvolvingLocalDivisable5LanguageJ8/src/ch/zhaw/regularLanguages/helpers/Logger.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+9 errors

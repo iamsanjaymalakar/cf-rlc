@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^hobo/FileHandler.java^15^hobo.FileHandler.<init>(Ljava/lang/String;)V^7 = new <Application,Ljava/io/FileWriter>@17^NULL^FIELD,^false^true^Field escape;

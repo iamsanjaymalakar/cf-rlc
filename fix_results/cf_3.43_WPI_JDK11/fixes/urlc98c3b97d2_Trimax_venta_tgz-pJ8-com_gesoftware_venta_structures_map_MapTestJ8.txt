@@ -1,0 +1,29 @@
+39069
+5144
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset_copy/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Connection.java; Line number 100
+vim +100 ../../../dataset/june2020_dataset_copy/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/network/Connection.java
+
++++ Add following code below line: 118 (com/gesoftware/venta/network/Connection.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 100
+
+--------------------------------------------
+12] ../../../dataset/june2020_dataset_copy/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/logging/LoggingUtility.java; Line number 125
+vim +125 ../../../dataset/june2020_dataset_copy/urlc98c3b97d2_Trimax_venta_tgz-pJ8-com_gesoftware_venta_structures_map_MapTestJ8/src/com/gesoftware/venta/logging/LoggingUtility.java
+
++++ Add following code below line: 136 (com/gesoftware/venta/logging/LoggingUtility.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 125
+
++++ Delete Line number 134 (com/gesoftware/venta/logging/LoggingUtility.java)
+
++++ Delete Line number 135 (com/gesoftware/venta/logging/LoggingUtility.java)
+
+--------------------------------------------

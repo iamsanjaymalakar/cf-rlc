@@ -1,0 +1,29 @@
+../dataset/june2020_dataset_copy/url696d9a93c9_liaosiwei_bayesnetwork_tgz-pJ8-tutorial_TutorialJ8/src/com/alibaba/DataPlot.java:17: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ com.alibaba.DataRead $$ regular method exit $$ ( 287, 320 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+        DataRead reader = new DataRead();
+                 ^
+  The type of object is: com.alibaba.DataRead.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url696d9a93c9_liaosiwei_bayesnetwork_tgz-pJ8-tutorial_TutorialJ8/src/com/alibaba/Train.java:85: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ com.alibaba.DataRead $$ regular method exit $$ ( 2536, 2569 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+        DataRead reader = new DataRead();
+                 ^
+  The type of object is: com.alibaba.DataRead.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url696d9a93c9_liaosiwei_bayesnetwork_tgz-pJ8-tutorial_TutorialJ8/src/com/alibaba/TrainV2.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ com.alibaba.DataRead $$ regular method exit $$ ( 2392, 2425 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+        DataRead reader = new DataRead();
+                 ^
+  The type of object is: com.alibaba.DataRead.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url696d9a93c9_liaosiwei_bayesnetwork_tgz-pJ8-tutorial_TutorialJ8/src/com/alibaba/DataRead.java:19: error: (missing.creates.mustcall.for) $$ 3 $$ read $$ this $$ br $$ ( 431, 3089 ) $$ Method read re-assigns the non-final, owning field this.br, but does not have a corresponding @CreatesMustCallFor annotation.
+    public Boolean read() {
+                   ^
+../dataset/june2020_dataset_copy/url696d9a93c9_liaosiwei_bayesnetwork_tgz-pJ8-tutorial_TutorialJ8/src/com/alibaba/DataRead.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ field br $$ java.io.BufferedReader $$  Non-final owning field might be overwritten $$ ( 481, 566 ) $$ @MustCall method close may not have been invoked on field br or any of its aliases.
+            br = new BufferedReader(new FileReader("E:\\workspace\\alibaba\\t_alibaba_data.csv"));
+               ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url696d9a93c9_liaosiwei_bayesnetwork_tgz-pJ8-tutorial_TutorialJ8/src/com/alibaba/DataRead.java:81: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.br $$ this.br is @CalledMethods("close") $$ ( 3204, 3367 ) $$ postcondition of close is not satisfied.
+    public void close() {
+                ^
+  found   : no information about this.br
+  required: this.br is @CalledMethods("close")
+6 errors

@@ -1,0 +1,196 @@
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/MemoryUtil.java:5: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/JvmUtil.java:38: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/unsafe/UnsafeBasedOffHeapBenchmarkWorker.java:3: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:9: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/proxyonunsafe/UnsafeBasedProxyOffHeapBenchmarkTrade.java:3: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/proxyonunsafe/ProxyOnUnsafeBasedOffHeapBenchmarkWorker.java:3: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/MemoryUtil.java:5: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/JvmUtil.java:37: error: package sun.management is not visible
+import sun.management.VMManagement;
+          ^
+  (package sun.management is declared in module java.management, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/JvmUtil.java:38: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/unsafe/UnsafeBasedOffHeapBenchmarkWorker.java:3: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:9: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/proxyonunsafe/UnsafeBasedProxyOffHeapBenchmarkTrade.java:3: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/proxyonunsafe/ProxyOnUnsafeBasedOffHeapBenchmarkWorker.java:3: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/directbytebuffer/DirectByteBufferBasedOffHeapBenchmarkWorker.java:5: error: cannot find symbol
+import sun.misc.Cleaner;
+               ^
+  symbol:   class Cleaner
+  location: package sun.misc
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/directbytebuffer/DirectByteBufferBasedOffHeapBenchmarkWorker.java:6: error: package sun.nio.ch is not visible
+import sun.nio.ch.DirectBuffer;
+              ^
+  (package sun.nio.ch is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/MemoryUtil.java:5: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/JvmUtil.java:38: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/unsafe/UnsafeBasedOffHeapBenchmarkWorker.java:3: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:9: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/proxyonunsafe/UnsafeBasedProxyOffHeapBenchmarkTrade.java:3: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/proxyonunsafe/ProxyOnUnsafeBasedOffHeapBenchmarkWorker.java:3: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/MemoryUtil.java:17: warning: Unsafe is internal proprietary API and may be removed in a future release
+	private static Unsafe unsafe;
+	               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/MemoryUtil.java:17: warning: Unsafe is internal proprietary API and may be removed in a future release
+	private static Unsafe unsafe;
+	               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/MemoryUtil.java:17: warning: Unsafe is internal proprietary API and may be removed in a future release
+	private static Unsafe unsafe;
+	               ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/MemoryUtil.java:29: warning: Unsafe is internal proprietary API and may be removed in a future release
+            Field field = Unsafe.class.getDeclaredField("theUnsafe");
+                          ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/MemoryUtil.java:31: warning: Unsafe is internal proprietary API and may be removed in a future release
+            unsafe = (Unsafe) field.get(null);
+                      ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/JvmUtil.java:141: warning: Unsafe is internal proprietary API and may be removed in a future release
+    private static Unsafe unsafe;
+                   ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/JvmUtil.java:141: warning: Unsafe is internal proprietary API and may be removed in a future release
+    private static Unsafe unsafe;
+                   ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/JvmUtil.java:141: warning: Unsafe is internal proprietary API and may be removed in a future release
+    private static Unsafe unsafe;
+                   ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/JvmUtil.java:168: warning: Unsafe is internal proprietary API and may be removed in a future release
+            Field unsafeField = Unsafe.class.getDeclaredField("theUnsafe");
+                                ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/JvmUtil.java:170: warning: Unsafe is internal proprietary API and may be removed in a future release
+            unsafe = (Unsafe) unsafeField.get(null);
+                      ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/JvmUtil.java:266: warning: Unsafe is internal proprietary API and may be removed in a future release
+    public static Unsafe getUnsafe() {
+                  ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/JvmUtil.java:266: warning: Unsafe is internal proprietary API and may be removed in a future release
+    public static Unsafe getUnsafe() {
+                  ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/common/util/JvmUtil.java:266: warning: Unsafe is internal proprietary API and may be removed in a future release
+    public static Unsafe getUnsafe() {
+                  ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/unsafe/UnsafeBasedOffHeapBenchmarkWorker.java:14: warning: Unsafe is internal proprietary API and may be removed in a future release
+	protected static final Unsafe unsafe = JvmUtil.getUnsafe();
+	                       ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/unsafe/UnsafeBasedOffHeapBenchmarkWorker.java:14: warning: Unsafe is internal proprietary API and may be removed in a future release
+	protected static final Unsafe unsafe = JvmUtil.getUnsafe();
+	                       ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/unsafe/UnsafeBasedOffHeapBenchmarkWorker.java:14: warning: Unsafe is internal proprietary API and may be removed in a future release
+	protected static final Unsafe unsafe = JvmUtil.getUnsafe();
+	                       ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:20: warning: Unsafe is internal proprietary API and may be removed in a future release
+	protected static final Unsafe UNSAFE = JvmUtil.getUnsafe();
+	                       ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:20: warning: Unsafe is internal proprietary API and may be removed in a future release
+	protected static final Unsafe UNSAFE = JvmUtil.getUnsafe();
+	                       ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:20: warning: Unsafe is internal proprietary API and may be removed in a future release
+	protected static final Unsafe UNSAFE = JvmUtil.getUnsafe();
+	                       ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:138: warning: Unsafe is internal proprietary API and may be removed in a future release
+		private final Unsafe unsafe;
+		              ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:138: warning: Unsafe is internal proprietary API and may be removed in a future release
+		private final Unsafe unsafe;
+		              ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:138: warning: Unsafe is internal proprietary API and may be removed in a future release
+		private final Unsafe unsafe;
+		              ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:143: warning: Unsafe is internal proprietary API and may be removed in a future release
+		UnsafeBasedOutputStream(Unsafe unsafe, long startAddress, long size) {
+		                        ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:143: warning: Unsafe is internal proprietary API and may be removed in a future release
+		UnsafeBasedOutputStream(Unsafe unsafe, long startAddress, long size) {
+		                        ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:143: warning: Unsafe is internal proprietary API and may be removed in a future release
+		UnsafeBasedOutputStream(Unsafe unsafe, long startAddress, long size) {
+		                        ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:191: warning: Unsafe is internal proprietary API and may be removed in a future release
+		private final Unsafe unsafe;
+		              ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:191: warning: Unsafe is internal proprietary API and may be removed in a future release
+		private final Unsafe unsafe;
+		              ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:191: warning: Unsafe is internal proprietary API and may be removed in a future release
+		private final Unsafe unsafe;
+		              ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:196: warning: Unsafe is internal proprietary API and may be removed in a future release
+		UnsafeBasedInputStream(Unsafe unsafe, long startAddress, long size) {
+		                       ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:196: warning: Unsafe is internal proprietary API and may be removed in a future release
+		UnsafeBasedInputStream(Unsafe unsafe, long startAddress, long size) {
+		                       ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/serde/SerializationDeserializationBasedOffHeapBenchmarkWorker.java:196: warning: Unsafe is internal proprietary API and may be removed in a future release
+		UnsafeBasedInputStream(Unsafe unsafe, long startAddress, long size) {
+		                       ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/proxyonunsafe/UnsafeBasedProxyOffHeapBenchmarkTrade.java:10: warning: Unsafe is internal proprietary API and may be removed in a future release
+	private final Unsafe unsafe;
+	              ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/proxyonunsafe/UnsafeBasedProxyOffHeapBenchmarkTrade.java:10: warning: Unsafe is internal proprietary API and may be removed in a future release
+	private final Unsafe unsafe;
+	              ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/proxyonunsafe/UnsafeBasedProxyOffHeapBenchmarkTrade.java:10: warning: Unsafe is internal proprietary API and may be removed in a future release
+	private final Unsafe unsafe;
+	              ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/proxyonunsafe/UnsafeBasedProxyOffHeapBenchmarkTrade.java:13: warning: Unsafe is internal proprietary API and may be removed in a future release
+	public UnsafeBasedProxyOffHeapBenchmarkTrade(Unsafe unsafe, long address) {
+	                                             ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/proxyonunsafe/UnsafeBasedProxyOffHeapBenchmarkTrade.java:13: warning: Unsafe is internal proprietary API and may be removed in a future release
+	public UnsafeBasedProxyOffHeapBenchmarkTrade(Unsafe unsafe, long address) {
+	                                             ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/proxyonunsafe/UnsafeBasedProxyOffHeapBenchmarkTrade.java:13: warning: Unsafe is internal proprietary API and may be removed in a future release
+	public UnsafeBasedProxyOffHeapBenchmarkTrade(Unsafe unsafe, long address) {
+	                                             ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/proxyonunsafe/ProxyOnUnsafeBasedOffHeapBenchmarkWorker.java:13: warning: Unsafe is internal proprietary API and may be removed in a future release
+	protected static final Unsafe unsafe = JvmUtil.getUnsafe();
+	                       ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/proxyonunsafe/ProxyOnUnsafeBasedOffHeapBenchmarkWorker.java:13: warning: Unsafe is internal proprietary API and may be removed in a future release
+	protected static final Unsafe unsafe = JvmUtil.getUnsafe();
+	                       ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/proxyonunsafe/ProxyOnUnsafeBasedOffHeapBenchmarkWorker.java:13: warning: Unsafe is internal proprietary API and may be removed in a future release
+	protected static final Unsafe unsafe = JvmUtil.getUnsafe();
+	                       ^
+../dataset/june2020_dataset_copy/url27a7ae3508_serkan_ozal_ocean_of_memories_tgz-pJ8-com_zeroturnaround_rebellabs_oceanofmemories_article1_objectlayout_ObjectMemoryLayoutDemoJ8/src/com/zeroturnaround/rebellabs/oceanofmemories/article2/benchmark/directbytebuffer/DirectByteBufferBasedOffHeapBenchmarkWorker.java:25: error: cannot find symbol
+		Cleaner cleaner = ((DirectBuffer) bb).cleaner();
+		^
+  symbol:   class Cleaner
+  location: class DirectByteBufferBasedOffHeapBenchmarkWorker
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+4 errors
+58 warnings

@@ -1,0 +1,176 @@
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XNativeFunctions.java:130: error: (required.method.not.called) $$ 4 $$ method close $$ ps $$ java.io.PrintStream $$ regular method exit $$ ( 4889, 4910 ) $$ @MustCall method close may not have been invoked on ps or any of its aliases.
+					ps = runtime.getErr();
+					   ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XNativeFunctions.java:132: error: (required.method.not.called) $$ 4 $$ method close $$ ps $$ java.io.PrintStream $$ regular method exit $$ ( 4930, 4951 ) $$ @MustCall method close may not have been invoked on ps or any of its aliases.
+					ps = runtime.getOut();
+					   ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XNativeFunctions.java:149: error: (required.method.not.called) $$ 4 $$ method close $$ runtime.getIn() $$ java.io.InputStream $$ possible exceptional exit due to runtime.getIn().read(buffer) with exception type java.io.IOException $$ ( 5356, 5371 ) $$ @MustCall method close may not have been invoked on runtime.getIn() or any of its aliases.
+				int num = runtime.getIn().read(buffer);
+				                       ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to runtime.getIn().read(buffer) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/console/Console.java:61: error: (required.method.not.called) $$ 4 $$ method close $$ getOutWithAttrs(defaultAttrs) $$ java.io.PrintStream $$ regular method exit $$ ( 1877, 1906 ) $$ @MustCall method close may not have been invoked on getOutWithAttrs(defaultAttrs) or any of its aliases.
+		out = getOutWithAttrs(defaultAttrs);
+		                     ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/console/Console.java:62: error: (required.method.not.called) $$ 4 $$ method close $$ getOutWithAttrs(errorAttrs) $$ java.io.PrintStream $$ regular method exit $$ ( 1916, 1943 ) $$ @MustCall method close may not have been invoked on getOutWithAttrs(errorAttrs) or any of its aliases.
+		err = getOutWithAttrs(errorAttrs);
+		                     ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/console/Console.java:63: error: (required.method.not.called) $$ 4 $$ method close $$ new ConsoleInputStream(io) $$ xscript.executils.console.ConsoleInputStream $$ regular method exit $$ ( 1952, 1978 ) $$ @MustCall method close may not have been invoked on new ConsoleInputStream(io) or any of its aliases.
+		in = new ConsoleInputStream(io);
+		     ^
+  The type of object is: xscript.executils.console.ConsoleInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/ArgReader.java:17: error: (type.argument) $$ 4 $$ E $$ LinkedList $$ @MustCall("close") FileArgReader $$ @MustCall Object $$ ( 320, 333 ) $$ incompatible type argument for type parameter E of LinkedList.
+	private LinkedList<FileArgReader> fileArgReader = new LinkedList<FileArgReader>();
+	                   ^
+  found   : @MustCall("close") FileArgReader
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/ArgReader.java:17: error: (type.argument) $$ 4 $$ E $$ LinkedList $$ @MustCall("close") FileArgReader $$ @MustCall Object $$ ( 366, 379 ) $$ incompatible type argument for type parameter E of LinkedList.
+	private LinkedList<FileArgReader> fileArgReader = new LinkedList<FileArgReader>();
+	                                                                 ^
+  found   : @MustCall("close") FileArgReader
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/ArgReader.java:41: error: (required.method.not.called) $$ 4 $$ method close $$ far $$ xscript.executils.ArgReader.FileArgReader $$ regular method exit $$ ( 865, 909 ) $$ @MustCall method close may not have been invoked on far or any of its aliases.
+			FileArgReader far = fileArgReader.getLast();
+			              ^
+  The type of object is: xscript.executils.ArgReader.FileArgReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/ArgReader.java:46: error: (required.method.not.called) $$ 4 $$ method close $$ fileArgReader.removeLast() $$ xscript.executils.ArgReader.FileArgReader $$ regular method exit $$ ( 974, 1000 ) $$ @MustCall method close may not have been invoked on fileArgReader.removeLast() or any of its aliases.
+				fileArgReader.removeLast();
+				                        ^
+  The type of object is: xscript.executils.ArgReader.FileArgReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/ArgReader.java:57: error: (required.method.not.called) $$ 4 $$ method close $$ far $$ xscript.executils.ArgReader.FileArgReader $$ possible exceptional exit due to far.next() with exception type java.io.IOException $$ ( 1161, 1205 ) $$ @MustCall method close may not have been invoked on far or any of its aliases.
+				FileArgReader far = fileArgReader.getLast();
+				              ^
+  The type of object is: xscript.executils.ArgReader.FileArgReader.
+  Reason for going out of scope: possible exceptional exit due to far.next() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/ArgReader.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ xscript.executils.ArgReader.FileArgReader $$ regular method exit $$ ( 1420, 1440 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+						for(FileArgReader reader:fileArgReader){
+						                  ^
+  The type of object is: xscript.executils.ArgReader.FileArgReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/ArgReader.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ r $$ xscript.executils.ArgReader.FileArgReader $$ regular method exit $$ ( 1551, 1566 ) $$ @MustCall method close may not have been invoked on r or any of its aliases.
+								for(FileArgReader r:fileArgReader){
+								                  ^
+  The type of object is: xscript.executils.ArgReader.FileArgReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/ArgReader.java:78: error: (required.method.not.called) $$ 4 $$ method close $$ far $$ xscript.executils.ArgReader.FileArgReader $$ regular method exit $$ ( 1768, 1809 ) $$ @MustCall method close may not have been invoked on far or any of its aliases.
+						FileArgReader far = new FileArgReader(f);
+						              ^
+  The type of object is: xscript.executils.ArgReader.FileArgReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/ArgReader.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ far $$ xscript.executils.ArgReader.FileArgReader $$ regular method exit $$ ( 1931, 1960 ) $$ @MustCall method close may not have been invoked on far or any of its aliases.
+								far = fileArgReader.getLast();
+								    ^
+  The type of object is: xscript.executils.ArgReader.FileArgReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/ArgReader.java:88: error: (required.method.not.called) $$ 4 $$ method close $$ fileArgReader.removeLast() $$ xscript.executils.ArgReader.FileArgReader $$ regular method exit $$ ( 2051, 2077 ) $$ @MustCall method close may not have been invoked on fileArgReader.removeLast() or any of its aliases.
+									fileArgReader.removeLast();
+									                        ^
+  The type of object is: xscript.executils.ArgReader.FileArgReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/ArgReader.java:112: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(file) $$ java.io.FileReader $$ possible exceptional exit due to st.nextToken() with exception type java.io.IOException $$ ( 2413, 2433 ) $$ @MustCall method close may not have been invoked on new FileReader(file) or any of its aliases.
+			r = new BufferedReader(new FileReader(file));
+			                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to st.nextToken() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java:39: error: (required.method.not.called) $$ 4 $$ method close $$ sysout $$ xscript.executils.MultiplexOutputStream $$ regular method exit $$ ( 946, 1005 ) $$ @MustCall method close may not have been invoked on sysout or any of its aliases.
+		MultiplexOutputStream sysout = new MultiplexOutputStream();
+		                      ^
+  The type of object is: xscript.executils.MultiplexOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java:42: error: (required.method.not.called) $$ 4 $$ method close $$ syserr $$ xscript.executils.MultiplexOutputStream $$ regular method exit $$ ( 1090, 1149 ) $$ @MustCall method close may not have been invoked on syserr or any of its aliases.
+		MultiplexOutputStream syserr = new MultiplexOutputStream();
+		                      ^
+  The type of object is: xscript.executils.MultiplexOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/Utils.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ sysin $$ java.io.InputStream $$ regular method exit $$ ( 1234, 1307 ) $$ @MustCall method close may not have been invoked on sysin or any of its aliases.
+		InputStream sysin = new InputToOutputStream(console.getIn(), System.out);
+		            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/InputToOutputStream.java:14: error: (required.method.not.called) $$ 4 $$ method close $$ field in $$ java.io.InputStream $$  Non-final owning field might be overwritten $$ ( 291, 303 ) $$ @MustCall method close may not have been invoked on field in or any of its aliases.
+		this.in = in;
+		        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/InputToOutputStream.java:15: error: (required.method.not.called) $$ 4 $$ method close $$ field out $$ java.io.OutputStream $$  Non-final owning field might be overwritten $$ ( 307, 321 ) $$ @MustCall method close may not have been invoked on field out or any of its aliases.
+		this.out = out;
+		         ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/InputToOutputStream.java:50: error: (contracts.exceptional.postcondition) $$ 3 $$ close $$ this.out is @CalledMethods $$ this.out is @CalledMethods("close") $$ ( 869, 952 ) $$ on exception, postcondition of close is not satisfied.
+	public void close() throws IOException {
+	            ^
+  found   : this.out is @CalledMethods
+  required: this.out is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/InputToOutputStream.java:50: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.in $$ this.in is @CalledMethods("close") $$ ( 869, 952 ) $$ postcondition of close is not satisfied.
+	public void close() throws IOException {
+	            ^
+  found   : no information about this.in
+  required: this.in is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/MultiplexOutputStream.java:10: error: (type.argument) $$ 4 $$ E $$ List $$ @MustCall("close") OutputStream $$ @MustCall Object $$ ( 210, 222 ) $$ incompatible type argument for type parameter E of List.
+	private List<OutputStream> ouputStreams = new LinkedList<OutputStream>();
+	             ^
+  found   : @MustCall("close") OutputStream
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/MultiplexOutputStream.java:10: error: (type.argument) $$ 4 $$ E $$ LinkedList $$ @MustCall("close") OutputStream $$ @MustCall Object $$ ( 254, 266 ) $$ incompatible type argument for type parameter E of LinkedList.
+	private List<OutputStream> ouputStreams = new LinkedList<OutputStream>();
+	                                                         ^
+  found   : @MustCall("close") OutputStream
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/MultiplexOutputStream.java:25: error: (required.method.not.called) $$ 4 $$ method close $$ ouputStream $$ java.io.OutputStream $$ regular method exit $$ ( 605, 629 ) $$ @MustCall method close may not have been invoked on ouputStream or any of its aliases.
+		for(OutputStream ouputStream:ouputStreams){
+		                 ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/MultiplexOutputStream.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ ouputStream $$ java.io.OutputStream $$ regular method exit $$ ( 873, 897 ) $$ @MustCall method close may not have been invoked on ouputStream or any of its aliases.
+		for(OutputStream ouputStream:ouputStreams){
+		                 ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/MultiplexOutputStream.java:55: error: (required.method.not.called) $$ 4 $$ method close $$ ouputStream $$ java.io.OutputStream $$ regular method exit $$ ( 1159, 1183 ) $$ @MustCall method close may not have been invoked on ouputStream or any of its aliases.
+		for(OutputStream ouputStream:ouputStreams){
+		                 ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/executils/MultiplexOutputStream.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ ouputStream $$ java.io.OutputStream $$ regular method exit $$ ( 1429, 1453 ) $$ @MustCall method close may not have been invoked on ouputStream or any of its aliases.
+		for(OutputStream ouputStream:ouputStreams){
+		                 ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/XScriptEngine.java:767: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ variable overwritten by assignment is = fileSystem.provider().newInputStream(p, StandardOpenOption.READ) $$ ( 22696, 22772 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+					is = fileSystem.provider().newInputStream(p,
+					   ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: variable overwritten by assignment is = fileSystem.provider().newInputStream(p, StandardOpenOption.READ)
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/compiler/XFileReader.java:13: error: (required.method.not.called) $$ 4 $$ method close $$ field reader $$ java.io.Reader $$  Non-final owning field might be overwritten $$ ( 255, 275 ) $$ @MustCall method close may not have been invoked on field reader or any of its aliases.
+		this.reader = reader;
+		            ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/compiler/XFileReader.java:13: error: (assignment) $$ 2 $$ @PolyMustCall Reader $$ @MustCall("close") Reader $$ ( 269, 275 ) $$ incompatible types in assignment.
+		this.reader = reader;
+		              ^
+  found   : @PolyMustCall Reader
+  required: @MustCall("close") Reader
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/compiler/tree/XTreeMakeEasy.java:30: error: (required.method.not.known) $$ 3 $$ tree $$ T $$ variable overwritten by assignment tree = (T)replace $$ ( 911, 917 ) $$ The checker cannot determine the must call methods of tree or any of its aliases, so it could not determine if they were called. Typically, this error indicates that you need to write an @MustCall annotation (often on an unconstrained generic type).
+	public <T extends XTree> T visitTree(T tree){
+	                                       ^
+  The type of object is: T.
+  Reason for going out of scope: variable overwritten by assignment tree = (T)replace
+../dataset/june2020_dataset_copy/url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8/src/xscript/compiler/main/Main.java:253: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ xscript.compiler.XFileReader $$ possible exceptional exit due to new FileOutputStream(f) with exception type java.io.FileNotFoundException $$ ( 5769, 5821 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+			XFileReader reader = new XFileReader(sourceName, r);
+			            ^
+  The type of object is: xscript.compiler.XFileReader.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(f) with exception type java.io.FileNotFoundException
+35 errors

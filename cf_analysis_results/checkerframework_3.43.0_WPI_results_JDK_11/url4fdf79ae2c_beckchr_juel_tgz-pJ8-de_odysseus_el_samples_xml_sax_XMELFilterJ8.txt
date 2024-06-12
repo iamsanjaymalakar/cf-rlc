@@ -1,0 +1,10 @@
+warning: /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset_copy/url4fdf79ae2c_beckchr_juel_tgz-pJ8-de_odysseus_el_samples_xml_sax_XMELFilterJ8/wpi-out/de/odysseus/el/tree/impl/ScannerTest-org.checkerframework.checker.mustcall.MustCallChecker.ajava:(line 21,col 1): Imported package not found: de.odysseus.el.tree.impl.Scanner
+../dataset/june2020_dataset_copy/url4fdf79ae2c_beckchr_juel_tgz-pJ8-de_odysseus_el_samples_xml_sax_XMELFilterJ8/src/javax/el/ExpressionFactoryTest.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ input $$ java.io.InputStream $$ regular method exit $$ ( 1066, 1145 ) $$ @MustCall method close may not have been invoked on input or any of its aliases.
+		InputStream input = getClass().getClassLoader().getResourceAsStream(serviceId);
+		            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 error
+1 warning

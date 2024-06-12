@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^fr/noxx90/jflam/FlameLogger.java^18^fr.noxx90.jflam.FlameLogger.<init>()V^7 = new <Application,Ljava/io/PrintWriter>@18^NULL^FIELD,^false^true^Field escape;

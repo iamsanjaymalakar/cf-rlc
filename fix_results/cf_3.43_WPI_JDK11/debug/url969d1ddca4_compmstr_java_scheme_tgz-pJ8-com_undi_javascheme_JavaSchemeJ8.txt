@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^com/undi/javascheme/SchemeReader.java^23^com.undi.javascheme.SchemeReader.<init>(Ljava/io/InputStream;)V^5 = new <Application,Ljava/io/PushbackInputStream>@5^com.undi.javascheme.SchemeReader.<init>(Ljava/io/InputStream;)V#2,^PARAM,FIELD,INVOKE,^false^true^Field escape;

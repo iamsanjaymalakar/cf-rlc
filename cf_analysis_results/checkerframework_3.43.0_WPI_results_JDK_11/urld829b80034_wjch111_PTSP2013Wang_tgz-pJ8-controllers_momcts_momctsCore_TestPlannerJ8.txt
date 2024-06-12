@@ -1,0 +1,94 @@
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/Util.java:3: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/AccessTest.java:12: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/Util.java:3: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/AccessTest.java:12: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/Util.java:3: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/AccessTest.java:12: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/framework/core/Exec.java:246: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(a_filename) $$ java.io.FileReader $$ possible exceptional exit due to in.readLine() with exception type java.io.IOException $$ ( 7699, 7725 ) $$ @MustCall method close may not have been invoked on new FileReader(a_filename) or any of its aliases.
+        BufferedReader in = new BufferedReader(new FileReader(a_filename));
+                                               ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to in.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/framework/utils/File2String.java:25: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(file) $$ java.io.FileInputStream $$ possible exceptional exit due to dis.readFully(b) with exception type java.io.IOException $$ ( 668, 693 ) $$ @MustCall method close may not have been invoked on new FileInputStream(file) or any of its aliases.
+          new DataInputStream(new FileInputStream(file));
+                              ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to dis.readFully(b) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/controllers/momcts/utils/TextOperation.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(file) $$ java.io.FileInputStream $$ possible exceptional exit due to dis.readFully(b) with exception type java.io.IOException $$ ( 959, 984 ) $$ @MustCall method close may not have been invoked on new FileInputStream(file) or any of its aliases.
+          new DataInputStream(new FileInputStream(file));
+                              ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to dis.readFully(b) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/controllers/momcts/utils/Logger.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(logFile, append) $$ java.io.FileWriter $$ regular method exit $$ ( 527, 558 ) $$ @MustCall method close may not have been invoked on new FileWriter(logFile, append) or any of its aliases.
+			fstream = new FileWriter(logFile, append);
+			          ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/controllers/utils/TextOperation.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(file) $$ java.io.FileInputStream $$ possible exceptional exit due to dis.readFully(b) with exception type java.io.IOException $$ ( 952, 977 ) $$ @MustCall method close may not have been invoked on new FileInputStream(file) or any of its aliases.
+          new DataInputStream(new FileInputStream(file));
+                              ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to dis.readFully(b) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/controllers/utils/Logger.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(logFile, append) $$ java.io.FileWriter $$ regular method exit $$ ( 520, 551 ) $$ @MustCall method close may not have been invoked on new FileWriter(logFile, append) or any of its aliases.
+			fstream = new FileWriter(logFile, append);
+			          ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/Util.java:20: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/Util.java:20: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/Util.java:20: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/Util.java:20: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                                                          ^
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/Util.java:22: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+                    new ReflectionFactory.GetReflectionFactoryAction());
+                        ^
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/Util.java:22: error: cannot find symbol
+                    new ReflectionFactory.GetReflectionFactoryAction());
+                                         ^
+  symbol:   class GetReflectionFactoryAction
+  location: class ReflectionFactory
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/AccessTest.java:40: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/AccessTest.java:40: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/AccessTest.java:40: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/AccessTest.java:40: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                                                          ^
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/AccessTest.java:42: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+                    new ReflectionFactory.GetReflectionFactoryAction());
+                        ^
+../dataset/june2020_dataset_copy/urld829b80034_wjch111_PTSP2013Wang_tgz-pJ8-controllers_momcts_momctsCore_TestPlannerJ8/src/wox/serial/AccessTest.java:42: error: cannot find symbol
+                    new ReflectionFactory.GetReflectionFactoryAction());
+                                         ^
+  symbol:   class GetReflectionFactoryAction
+  location: class ReflectionFactory
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+8 errors
+16 warnings

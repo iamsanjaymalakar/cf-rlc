@@ -1,0 +1,10 @@
+../dataset/june2020_dataset_copy/urld3c7d5e997_dku_rajkumar_java_api_for_amon_tgz-pJ8-org_json_TestJ8/src/org/amon/AmonLogger.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ connection.getOutputStream() $$ java.io.OutputStream $$ possible exceptional exit due to writer.write(yaml) with exception type java.io.IOException $$ ( 1960, 1988 ) $$ @MustCall method close may not have been invoked on connection.getOutputStream() or any of its aliases.
+		final OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream());
+		                                                                                   ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to writer.write(yaml) with exception type java.io.IOException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error

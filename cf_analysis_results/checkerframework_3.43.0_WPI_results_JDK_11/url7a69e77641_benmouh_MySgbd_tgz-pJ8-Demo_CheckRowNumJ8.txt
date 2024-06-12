@@ -1,0 +1,56 @@
+../dataset/june2020_dataset_copy/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/Demo/NextPage.java:19: error: (required.method.not.called) $$ 4 $$ method close $$ taos $$ Demo.TextAreaOutputStream $$ regular method exit $$ ( 422, 492 ) $$ @MustCall method close may not have been invoked on taos or any of its aliases.
+		TextAreaOutputStream taos = new TextAreaOutputStream(tAout, "Output");
+		                     ^
+  The type of object is: Demo.TextAreaOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/Demo/MDemo.java:109: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(table.getTable() + ".db") $$ java.io.FileReader $$ possible exceptional exit due to db.readLine() with exception type java.io.IOException $$ ( 3164, 3208 ) $$ @MustCall method close may not have been invoked on new FileReader(table.getTable() + ".db") or any of its aliases.
+		BufferedReader db = new BufferedReader(new FileReader(table.getTable()
+		                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to db.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/org/sgbd/Mysgbd/parser/SimpleCharStream.java:28: error: (required.method.not.called) $$ 4 $$ method close $$ field inputStream $$ java.io.Reader $$ Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "inputStream", methods = "close"), @EnsuresCalledMethodsOnException(value = "inputStream", methods = "close") $$ ( 821, 865 ) $$ @MustCall method close may not have been invoked on field inputStream or any of its aliases.
+  static protected java.io.Reader inputStream;
+                                  ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope: Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "inputStream", methods = "close"), @EnsuresCalledMethodsOnException(value = "inputStream", methods = "close")
+../dataset/june2020_dataset_copy/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/org/sgbd/Mysgbd/parser/SimpleCharStream.java:88: error: (flowexpr.parse.error) $$ 1 $$ 'this.inputStream' in the postcondition EnsuresCalledMethods on the declaration of method 'FillBuff': Invalid 'this' because "this" isn't allowed here $$ ( 2629, 3622 ) $$ cannot parse the expression 'this.inputStream' in the postcondition EnsuresCalledMethods on the declaration of method 'FillBuff': Invalid 'this' because "this" isn't allowed here
+  static protected void FillBuff() throws java.io.IOException
+                        ^
+../dataset/june2020_dataset_copy/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/org/sgbd/Mysgbd/parser/SimpleCharStream.java:88: error: (flowexpr.parse.error) $$ 1 $$ Invalid 'this' because "this" isn't allowed here $$ ( 2629, 3622 ) $$ cannot parse the expression Invalid 'this' because "this" isn't allowed here
+  static protected void FillBuff() throws java.io.IOException
+                        ^
+../dataset/june2020_dataset_copy/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/org/sgbd/Mysgbd/parser/SimpleCharStream.java:196: error: (flowexpr.parse.error.postcondition) $$ 2 $$ FillBuff() $$ Invalid 'this' because "this" isn't allowed here $$ ( 4735, 4745 ) $$ error parsing the postcondition expression for FillBuff()
+      FillBuff();
+              ^
+  cannot parse the expression Invalid 'this' because "this" isn't allowed here
+../dataset/june2020_dataset_copy/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/org/sgbd/Mysgbd/parser/SimpleCharStream.java:253: error: (missing.creates.mustcall.for) $$ 3 $$ <init> $$ org.sgbd.Mysgbd.parser.SimpleCharStream $$ inputStream $$ ( 5731, 6334 ) $$ Method <init> re-assigns the non-final, owning field org.sgbd.Mysgbd.parser.SimpleCharStream.inputStream, but does not have a corresponding @CreatesMustCallFor annotation.
+  public SimpleCharStream(java.io.Reader dstream, int startline,
+         ^
+../dataset/june2020_dataset_copy/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/org/sgbd/Mysgbd/parser/SimpleCharStream.java:260: error: (assignment) $$ 2 $$ @PolyMustCall Reader $$ @MustCall("close") Reader $$ ( 6124, 6131 ) $$ incompatible types in assignment.
+    inputStream = dstream;
+                  ^
+  found   : @PolyMustCall Reader
+  required: @MustCall("close") Reader
+../dataset/june2020_dataset_copy/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/org/sgbd/Mysgbd/parser/SimpleCharStream.java:284: error: (missing.creates.mustcall.for) $$ 3 $$ ReInit $$ org.sgbd.Mysgbd.parser.SimpleCharStream $$ inputStream $$ ( 6661, 7164 ) $$ Method ReInit re-assigns the non-final, owning field org.sgbd.Mysgbd.parser.SimpleCharStream.inputStream, but does not have a corresponding @CreatesMustCallFor annotation.
+  public void ReInit(java.io.Reader dstream, int startline,
+              ^
+../dataset/june2020_dataset_copy/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/org/sgbd/Mysgbd/parser/SimpleCharStream.java:287: error: (required.method.not.called) $$ 4 $$ method close $$ field inputStream $$ java.io.Reader $$  Non-final owning field might be overwritten $$ ( 6762, 6783 ) $$ @MustCall method close may not have been invoked on field inputStream or any of its aliases.
+    inputStream = dstream;
+                ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/org/sgbd/Mysgbd/data/Test.java:17: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader("test.db") $$ java.io.FileReader $$ possible exceptional exit due to db.readLine() with exception type java.io.IOException $$ ( 391, 416 ) $$ @MustCall method close may not have been invoked on new FileReader("test.db") or any of its aliases.
+	      BufferedReader db = new BufferedReader(new FileReader("test.db"));
+	                                             ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to db.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7a69e77641_benmouh_MySgbd_tgz-pJ8-Demo_CheckRowNumJ8/src/org/sgbd/Mysgbd/data/Test.java:26: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader("test.sql") $$ java.io.FileReader $$ possible exceptional exit due to sql.readLine() with exception type java.io.IOException $$ ( 691, 717 ) $$ @MustCall method close may not have been invoked on new FileReader("test.sql") or any of its aliases.
+	        BufferedReader sql = new BufferedReader(new FileReader("test.sql")); 
+	                                                ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to sql.readLine() with exception type java.io.IOException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+12 errors

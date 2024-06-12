@@ -1,0 +1,8 @@
+../dataset/june2020_dataset_copy/url49584c1d41_Arrem_GGS_tgz-pJ8-com_gamezgalaxy_test_console_MainJ8/src/com/gamezgalaxy/GGS/server/Server.java:313: error: cannot find symbol
+			Salt = new sun.misc.BASE64Encoder().encode(seedb).replace("=", "" + ((Salt != null) ? Salt.toCharArray()[0] : "A"));
+			                   ^
+  symbol:   class BASE64Encoder
+  location: package sun.misc
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 error

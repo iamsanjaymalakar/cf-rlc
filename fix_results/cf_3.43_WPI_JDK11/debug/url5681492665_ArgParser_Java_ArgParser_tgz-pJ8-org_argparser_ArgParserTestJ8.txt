@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^org/argparser/ArgParser.java^2206^org.argparser.ArgParser.prependArgs(Ljava/io/File;[Ljava/lang/String;)[Ljava/lang/String;^10 = new <Application,Ljava/io/FileReader>@18^NULL^INVOKE,^false^false^Try-catch Fix;

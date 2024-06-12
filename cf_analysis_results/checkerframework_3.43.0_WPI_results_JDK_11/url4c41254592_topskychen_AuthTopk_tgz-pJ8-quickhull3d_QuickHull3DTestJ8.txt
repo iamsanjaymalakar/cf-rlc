@@ -1,0 +1,13 @@
+../dataset/june2020_dataset_copy/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/spatialindex/rtree/BuildVerificationKDTreeStrategy.java:9: error: package javax.jws does not exist
+import javax.jws.Oneway;
+                ^
+../dataset/june2020_dataset_copy/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/utility/geo/VoronoiNeighbors.java:132: warning: unreachable catch clause
+		} catch (IOException e) {
+		  ^
+  thrown type FileNotFoundException has already been caught
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: ../dataset/june2020_dataset_copy/url4c41254592_topskychen_AuthTopk_tgz-pJ8-quickhull3d_QuickHull3DTestJ8/src/quickhull3d/QuickHull3D.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+1 warning

@@ -1,0 +1,18 @@
+../dataset/june2020_dataset_copy/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/http/HttpClient.java:42: error: package javax.activation does not exist
+import javax.activation.MimetypesFileTypeMap;
+                       ^
+../dataset/june2020_dataset_copy/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/http/HttpClient.java:452: error: cannot find symbol
+            filePart = new FilePart(fileParamName, file.getName(), file, new MimetypesFileTypeMap().getContentType(file), "UTF-8");
+                                                                             ^
+  symbol:   class MimetypesFileTypeMap
+  location: class HttpClient
+../dataset/june2020_dataset_copy/url2f44efcfa6_wangyudong_sohutw_java_sdk_2_0_tgz-pJ8-com_sohu_t_api_sdk_json_TestJ8/src/com/sohu/t/api/sdk/http/HttpClient.java:493: error: cannot find symbol
+            FilePart filePart = new FilePart(fileParamName, file.getName(), file, new MimetypesFileTypeMap().getContentType(file), "UTF-8");
+                                                                                      ^
+  symbol:   class MimetypesFileTypeMap
+  location: class HttpClient
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 errors

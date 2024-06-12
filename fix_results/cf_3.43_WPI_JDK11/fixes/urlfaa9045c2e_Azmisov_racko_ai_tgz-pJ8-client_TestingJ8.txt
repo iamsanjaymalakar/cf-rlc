@@ -1,0 +1,17 @@
+28995
+455
+
+SOURCE LEVEL FIXES
+
+1] ../../../dataset/june2020_dataset_copy/urlfaa9045c2e_Azmisov_racko_ai_tgz-pJ8-client_TestingJ8/src/models/ModelBaltar.java; Line number 47
+vim +47 ../../../dataset/june2020_dataset_copy/urlfaa9045c2e_Azmisov_racko_ai_tgz-pJ8-client_TestingJ8/src/models/ModelBaltar.java
+
++++ Add following code above line:47 (models/ModelBaltar.java)
+try{
++++ Add following code after line:50 (models/ModelBaltar.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 47
+
+--------------------------------------------

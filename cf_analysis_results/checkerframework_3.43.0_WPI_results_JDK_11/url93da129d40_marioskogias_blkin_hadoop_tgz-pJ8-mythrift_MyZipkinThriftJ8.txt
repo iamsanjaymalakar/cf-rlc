@@ -1,0 +1,6 @@
+warning: /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset_copy/url93da129d40_marioskogias_blkin_hadoop_tgz-pJ8-mythrift_MyZipkinThriftJ8/wpi-out/mythrift/Annotation-org.checkerframework.checker.mustcall.MustCallChecker.ajava:(line 18,col 1): Imported package not found: org.apache.thrift.server.AbstractNonblockingServer
+Note: ../dataset/june2020_dataset_copy/url93da129d40_marioskogias_blkin_hadoop_tgz-pJ8-mythrift_MyZipkinThriftJ8/src/hadoopCode/Recent.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning

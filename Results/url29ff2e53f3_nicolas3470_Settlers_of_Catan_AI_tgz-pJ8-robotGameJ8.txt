@@ -1,0 +1,2600 @@
+Repeating pattern between iteration 3 and iteration 5:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 3 and iteration 7:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 4 and iteration 6:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 4 and iteration 8:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 5 and iteration 7:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 5 and iteration 9:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 6 and iteration 8:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 6 and iteration 10:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 7 and iteration 9:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 7 and iteration 11:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 8 and iteration 10:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 8 and iteration 12:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 9 and iteration 11:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 9 and iteration 13:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 10 and iteration 12:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 10 and iteration 14:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 11 and iteration 13:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 11 and iteration 15:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 12 and iteration 14:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 12 and iteration 16:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 13 and iteration 15:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 13 and iteration 17:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 14 and iteration 16:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 14 and iteration 18:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 15 and iteration 17:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 15 and iteration 19:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 16 and iteration 18:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 16 and iteration 20:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 17 and iteration 19:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 17 and iteration 21:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 18 and iteration 20:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 18 and iteration 22:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 19 and iteration 21:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 19 and iteration 23:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 20 and iteration 22:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 20 and iteration 24:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 21 and iteration 23:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 21 and iteration 25:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+
+Repeating pattern between iteration 22 and iteration 24:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc: server
+
+
+Repeating pattern between iteration 23 and iteration 25:
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/client: ChannelFrame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+diff -r ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp2/soc/game/SOCGame-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+1006c1006
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+1462c1462
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3288c3288
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+3583c3583
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+4042c4042
+<     @org.checkerframework.dataflow.qual.Pure
+---
+>     @org.checkerframework.dataflow.qual.Impure
+4078c4078
+<     @org.checkerframework.dataflow.qual.Impure
+---
+>     @org.checkerframework.dataflow.qual.Pure
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCPlayingPiece-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCResourceSet-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.mustcall.MustCallChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc/game: SOCTradeOffer-org.checkerframework.checker.resourceleak.ResourceLeakChecker.ajava
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: message
+Only in ../dataset/june2020_dataset_copy/url29ff2e53f3_nicolas3470_Settlers_of_Catan_AI_tgz-pJ8-robotGameJ8/wpi-iterations/temp1/soc: server
+
+

@@ -1,0 +1,5 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^ch/thn/util/file/SingleInstanceLock.java^151^ch.thn.util.file.SingleInstanceLock.lock()Z^34 = new <Application,Ljava/io/RandomAccessFile>@47^NULL^FIELD,^false^true^Field escape;
+1^ch/thn/util/file/SingleInstanceLock.java^152^ch.thn.util.file.SingleInstanceLock.lock()Z^55 = invokevirtual < Application, Ljava/io/RandomAccessFile, getChannel()Ljava/nio/channels/FileChannel; > 53 @65 exception:54^NULL^FIELD,^false^true^Field escape;
+2^ch/thn/util/file/SingleInstanceLock.java^69^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+3^ch/thn/util/file/SingleInstanceLock.java^70^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

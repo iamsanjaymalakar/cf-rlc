@@ -1,0 +1,253 @@
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/net/contrapunctus/lzma/Command.java:24: error: (required.method.not.called) $$ 4 $$ method close $$ new LzmaOutputStream(System.out) $$ net.contrapunctus.lzma.LzmaOutputStream $$ possible exceptional exit due to copy(System.in, new LzmaOutputStream(System.out)) with exception type java.io.IOException $$ ( 564, 596 ) $$ @MustCall method close may not have been invoked on new LzmaOutputStream(System.out) or any of its aliases.
+        copy(System.in, new LzmaOutputStream(System.out));
+                        ^
+  The type of object is: net.contrapunctus.lzma.LzmaOutputStream.
+  Reason for going out of scope: possible exceptional exit due to copy(System.in, new LzmaOutputStream(System.out)) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/net/contrapunctus/lzma/DecoderThread.java:44: error: (required.method.not.called) $$ 4 $$ method close $$ field in $$ java.io.InputStream $$  Non-final owning field might be overwritten $$ ( 1224, 1232 ) $$ @MustCall method close may not have been invoked on field in or any of its aliases.
+        in = _in;
+           ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/net/contrapunctus/lzma/DecoderThread.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ field out $$ java.io.OutputStream $$  Non-final owning field might be overwritten $$ ( 1242, 1286 ) $$ @MustCall method close may not have been invoked on field out or any of its aliases.
+        out = ConcurrentBufferOutputStream.create(q);
+            ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/net/contrapunctus/lzma/DecoderThread.java:69: error: (contracts.postcondition) $$ 3 $$ run $$ no information about this.in $$ this.in is @CalledMethods("close") $$ ( 1790, 3301 ) $$ postcondition of run is not satisfied.
+    public void run()
+                ^
+  found   : no information about this.in
+  required: this.in is @CalledMethods("close")
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/net/contrapunctus/lzma/EncoderThread.java:51: error: (required.method.not.called) $$ 4 $$ method close $$ ConcurrentBufferInputStream.create(q) $$ java.io.InputStream $$ regular method exit $$ ( 1592, 1629 ) $$ @MustCall method close may not have been invoked on ConcurrentBufferInputStream.create(q) or any of its aliases.
+        in = ConcurrentBufferInputStream.create(q);
+                                               ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/net/contrapunctus/lzma/EncoderThread.java:52: error: (required.method.not.called) $$ 4 $$ method close $$ field out $$ java.io.OutputStream $$  Non-final owning field might be overwritten $$ ( 1639, 1649 ) $$ @MustCall method close may not have been invoked on field out or any of its aliases.
+        out = _out;
+            ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/net/contrapunctus/lzma/EncoderThread.java:52: error: (assignment) $$ 2 $$ @PolyMustCall OutputStream $$ @MustCall("close") OutputStream $$ ( 1645, 1649 ) $$ incompatible types in assignment.
+        out = _out;
+              ^
+  found   : @PolyMustCall OutputStream
+  required: @MustCall("close") OutputStream
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/net/contrapunctus/lzma/EncoderThread.java:68: error: (contracts.postcondition) $$ 3 $$ run $$ no information about this.out $$ this.out is @CalledMethods("close") $$ ( 2042, 2956 ) $$ postcondition of run is not satisfied.
+    public void run()
+                ^
+  found   : no information about this.out
+  required: this.out is @CalledMethods("close")
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/net/contrapunctus/lzma/LzmaInputStream.java:37: error: (required.method.not.called) $$ 4 $$ method run $$ new DecoderThread(_in) $$ net.contrapunctus.lzma.DecoderThread $$ regular method exit $$ ( 957, 979 ) $$ @MustCall method run may not have been invoked on new DecoderThread(_in) or any of its aliases.
+        dth = new DecoderThread(_in);
+              ^
+  The type of object is: net.contrapunctus.lzma.DecoderThread.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/net/contrapunctus/lzma/LzmaInputStream.java:38: error: (required.method.not.called) $$ 4 $$ method close $$ ConcurrentBufferInputStream.create(dth.q) $$ java.io.InputStream $$ regular method exit $$ ( 994, 1035 ) $$ @MustCall method close may not have been invoked on ConcurrentBufferInputStream.create(dth.q) or any of its aliases.
+        in = ConcurrentBufferInputStream.create(dth.q);
+                                               ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/net/contrapunctus/lzma/LzmaOutputStream.java:51: error: (required.method.not.called) $$ 4 $$ method close $$ ConcurrentBufferOutputStream.create(eth.q) $$ java.io.OutputStream $$ regular method exit $$ ( 1459, 1501 ) $$ @MustCall method close may not have been invoked on ConcurrentBufferOutputStream.create(eth.q) or any of its aliases.
+        out = ConcurrentBufferOutputStream.create(eth.q);
+                                                 ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/net/contrapunctus/lzma/Benchmark.java:39: error: (required.method.not.called) $$ 4 $$ method close $$ lo $$ net.contrapunctus.lzma.LzmaOutputStream $$ possible exceptional exit due to lo.write(data[k]) with exception type java.io.IOException $$ ( 1194, 1249 ) $$ @MustCall method close may not have been invoked on lo or any of its aliases.
+        final LzmaOutputStream lo = new LzmaOutputStream(baos);
+                               ^
+  The type of object is: net.contrapunctus.lzma.LzmaOutputStream.
+  Reason for going out of scope: possible exceptional exit due to lo.write(data[k]) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/net/contrapunctus/lzma/Benchmark.java:57: error: (required.method.not.called) $$ 4 $$ method close $$ li $$ net.contrapunctus.lzma.LzmaInputStream $$ possible exceptional exit due to li.read(buf) with exception type java.io.IOException $$ ( 1878, 1931 ) $$ @MustCall method close may not have been invoked on li or any of its aliases.
+        final LzmaInputStream li = new LzmaInputStream(bais);
+                              ^
+  The type of object is: net.contrapunctus.lzma.LzmaInputStream.
+  Reason for going out of scope: possible exceptional exit due to li.read(buf) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/utils/Configuration.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(file) $$ java.io.FileInputStream $$ regular method exit $$ ( 1051, 1076 ) $$ @MustCall method close may not have been invoked on new FileInputStream(file) or any of its aliases.
+            return load(new FileInputStream(file), type);
+                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/utils/Configuration.java:296: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.OutputStream $$ possible exceptional exit due to out.write(data) with exception type java.io.IOException $$ ( 7655, 7707 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+        final OutputStream out = new FileOutputStream(file);
+                           ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.write(data) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/utils/Configuration.java:323: error: (required.method.not.called) $$ 4 $$ method close $$ Configuration.class.getResourceAsStream("/config/default.yml") $$ java.io.InputStream $$ regular method exit $$ ( 8601, 8689 ) $$ @MustCall method close may not have been invoked on Configuration.class.getResourceAsStream("/config/default.yml") or any of its aliases.
+                        .getResourceAsStream("/config/default.yml"), "yaml");
+                                            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/utils/Configuration.java:331: error: (required.method.not.called) $$ 4 $$ method close $$ Configuration.class.getResourceAsStream("/config/default.yml") $$ java.io.InputStream $$ regular method exit $$ ( 8849, 8933 ) $$ @MustCall method close may not have been invoked on Configuration.class.getResourceAsStream("/config/default.yml") or any of its aliases.
+                    .getResourceAsStream("/config/default.yml"), "yaml");
+                                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/api/LauncherAPI.java:209: error: (required.method.not.called) $$ 4 $$ method close $$ LauncherAPI.class.getResourceAsStream("keys/" + keyFile) $$ java.io.InputStream $$ possible exceptional exit due to dis.readFully(bytes) with exception type java.io.IOException $$ ( 6132, 6222 ) $$ @MustCall method close may not have been invoked on LauncherAPI.class.getResourceAsStream("keys/" + keyFile) or any of its aliases.
+                                .getResourceAsStream("keys/" + keyFile));
+                                                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to dis.readFully(bytes) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/api/LauncherAPI.java:228: error: (required.method.not.called) $$ 4 $$ method close $$ connection.getOutputStream() $$ java.io.OutputStream $$ possible exceptional exit due to out.writeBytes(sb.toString()) with exception type java.io.IOException $$ ( 6895, 6923 ) $$ @MustCall method close may not have been invoked on connection.getOutputStream() or any of its aliases.
+                    connection.getOutputStream());
+                                              ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.writeBytes(sb.toString()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/api/LauncherAPI.java:233: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 7049, 7100 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+            final InputStream in = connection.getInputStream();
+                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/api/LauncherAPI.java:291: error: (required.method.not.called) $$ 4 $$ method close $$ LauncherAPI.class.getResourceAsStream("keys/" + keyFile) $$ java.io.InputStream $$ possible exceptional exit due to dis.readFully(bytes) with exception type java.io.IOException $$ ( 8810, 8900 ) $$ @MustCall method close may not have been invoked on LauncherAPI.class.getResourceAsStream("keys/" + keyFile) or any of its aliases.
+                                .getResourceAsStream("keys/" + keyFile));
+                                                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to dis.readFully(bytes) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/api/LauncherAPI.java:309: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 9501, 9552 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+            final InputStream in = connection.getInputStream();
+                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/Loginer.java:111: error: (required.method.not.called) $$ 4 $$ method close $$ new CipherOutputStream(new FileOutputStream(file), cipher) $$ javax.crypto.CipherOutputStream $$ possible exceptional exit due to out.writeUTF(username) with exception type java.io.IOException $$ ( 3129, 3187 ) $$ @MustCall method close may not have been invoked on new CipherOutputStream(new FileOutputStream(file), cipher) or any of its aliases.
+                new CipherOutputStream(new FileOutputStream(file), cipher));
+                ^
+  The type of object is: javax.crypto.CipherOutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.writeUTF(username) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/Loginer.java:111: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(file) $$ java.io.FileOutputStream $$ possible exceptional exit due to out.writeUTF(username) with exception type java.io.IOException $$ ( 3152, 3178 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(file) or any of its aliases.
+                new CipherOutputStream(new FileOutputStream(file), cipher));
+                                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.writeUTF(username) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/Loginer.java:127: error: (required.method.not.called) $$ 4 $$ method close $$ new CipherInputStream(new FileInputStream(file), cipher) $$ javax.crypto.CipherInputStream $$ possible exceptional exit due to in.readUTF() with exception type java.io.IOException $$ ( 3721, 3777 ) $$ @MustCall method close may not have been invoked on new CipherInputStream(new FileInputStream(file), cipher) or any of its aliases.
+                    new CipherInputStream(new FileInputStream(file), cipher));
+                    ^
+  The type of object is: javax.crypto.CipherInputStream.
+  Reason for going out of scope: possible exceptional exit due to in.readUTF() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/Loginer.java:127: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(file) $$ java.io.FileInputStream $$ possible exceptional exit due to in.readUTF() with exception type java.io.IOException $$ ( 3743, 3768 ) $$ @MustCall method close may not have been invoked on new FileInputStream(file) or any of its aliases.
+                    new CipherInputStream(new FileInputStream(file), cipher));
+                                          ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to in.readUTF() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/UpdaterWorker.java:153: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to new FileOutputStream(new File(dest, getFileName())) with exception type java.io.FileNotFoundException $$ ( 5123, 5174 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+            final InputStream in = connection.getInputStream();
+                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(new File(dest, getFileName())) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/UpdaterWorker.java:154: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.OutputStream $$ possible exceptional exit due to in.read(buffer, 0, buffer.length) with exception type java.io.IOException $$ ( 5188, 5286 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+            final OutputStream out = new FileOutputStream(new File(dest,
+                               ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to in.read(buffer, 0, buffer.length) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/Launcher.java:68: error: (required.method.not.called) $$ 4 $$ method close $$ new URLClassLoader(urls.toArray(new URL[0])) $$ java.net.URLClassLoader $$ possible exceptional exit due to new LauncherApplet(main.getApi()) with exception type java.awt.HeadlessException $$ ( 2180, 2224 ) $$ @MustCall method close may not have been invoked on new URLClassLoader(urls.toArray(new URL[0])) or any of its aliases.
+        classLoader = new URLClassLoader(urls.toArray(new URL[0]));
+                      ^
+  The type of object is: java.net.URLClassLoader.
+  Reason for going out of scope: possible exceptional exit due to new LauncherApplet(main.getApi()) with exception type java.awt.HeadlessException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/ui/LauncherFrame.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ LauncherFrame.class.getResourceAsStream("/" + main.getConfig().getString("window.icon")) $$ java.io.InputStream $$ regular method exit $$ ( 817, 956 ) $$ @MustCall method close may not have been invoked on LauncherFrame.class.getResourceAsStream("/" + main.getConfig().getString("window.icon")) or any of its aliases.
+                    .getResourceAsStream("/"
+                                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/VersionChecker.java:85: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(file) $$ java.io.FileInputStream $$ possible exceptional exit due to in.readUTF() with exception type java.io.IOException $$ ( 2962, 2987 ) $$ @MustCall method close may not have been invoked on new FileInputStream(file) or any of its aliases.
+                new FileInputStream(file));
+                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to in.readUTF() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/VersionChecker.java:107: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(file) $$ java.io.FileOutputStream $$ possible exceptional exit due to out.writeUTF(lastVersion) with exception type java.io.IOException $$ ( 3610, 3654 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(file) or any of its aliases.
+        final DataOutputStream out = new DataOutputStream(new FileOutputStream(
+                                                          ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to out.writeUTF(lastVersion) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java:68: error: (required.method.not.called) $$ 4 $$ method close $$ fileInput $$ java.io.FileInputStream $$ possible exceptional exit due to new FileOutputStream(uncompressed) with exception type java.io.FileNotFoundException $$ ( 2081, 2141 ) $$ @MustCall method close may not have been invoked on fileInput or any of its aliases.
+        final FileInputStream fileInput = new FileInputStream(file);
+                              ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(uncompressed) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to new FileOutputStream(uncompressed) with exception type java.io.FileNotFoundException $$ ( 2161, 2209 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+        InputStream in = new LzmaInputStream(fileInput);
+                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(uncompressed) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java:72: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.OutputStream $$ possible exceptional exit due to in.read(buffer) with exception type java.io.IOException $$ ( 2229, 2283 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+        OutputStream out = new FileOutputStream(uncompressed);
+                     ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to in.read(buffer) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java:96: error: (required.method.not.called) $$ 4 $$ method close $$ zip $$ java.util.zip.ZipFile $$ possible exceptional exit due to zip.getInputStream(entry) with exception type java.io.IOException $$ ( 2860, 2898 ) $$ @MustCall method close may not have been invoked on zip or any of its aliases.
+        final ZipFile zip = new ZipFile(file);
+                      ^
+  The type of object is: java.util.zip.ZipFile.
+  Reason for going out of scope: possible exceptional exit due to zip.getInputStream(entry) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java:130: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(e) $$ java.io.FileOutputStream $$ possible exceptional exit due to copyStream(api, source, zip.getInputStream(entry), new FileOutputStream(e), current, total, min, max) with exception type java.lang.Exception $$ ( 3945, 3968 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(e) or any of its aliases.
+                        new FileOutputStream(e), current, total, min, max);
+                        ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to copyStream(api, source, zip.getInputStream(entry), new FileOutputStream(e), current, total, min, max) with exception type java.lang.Exception
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java:143: error: (required.method.not.called) $$ 4 $$ method close $$ jar $$ java.util.jar.JarFile $$ regular method exit $$ ( 4280, 4303 ) $$ @MustCall method close may not have been invoked on jar or any of its aliases.
+            jar = new JarFile(file);
+                ^
+  The type of object is: java.util.jar.JarFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java:185: error: (required.method.not.called) $$ 4 $$ method close $$ jar.getInputStream(entry) $$ java.io.InputStream $$ possible exceptional exit due to new FileOutputStream(e) with exception type java.io.FileNotFoundException $$ ( 5581, 5606 ) $$ @MustCall method close may not have been invoked on jar.getInputStream(entry) or any of its aliases.
+                    copyStream(api, source, jar.getInputStream(entry),
+                                                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new FileOutputStream(e) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/core/updater/FileExtractor.java:186: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(e) $$ java.io.FileOutputStream $$ possible exceptional exit due to copyStream(api, source, jar.getInputStream(entry), new FileOutputStream(e), current, total, min, max) with exception type java.lang.Exception $$ ( 5637, 5660 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(e) or any of its aliases.
+                            new FileOutputStream(e), current, total, min, max);
+                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to copyStream(api, source, jar.getInputStream(entry), new FileOutputStream(e), current, total, min, max) with exception type java.lang.Exception
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/utils/lang/Translater.java:65: error: (required.method.not.called) $$ 4 $$ method close $$ Translater.class.getResourceAsStream("/lang/" + Translater.lang + ".yml") $$ java.io.InputStream $$ regular method exit $$ ( 1434, 1532 ) $$ @MustCall method close may not have been invoked on Translater.class.getResourceAsStream("/lang/" + Translater.lang + ".yml") or any of its aliases.
+                Translater.class.getResourceAsStream("/lang/" + Translater.lang
+                                                    ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/ui/simple/components/TexturedPanel.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ TexturedPanel.class.getResourceAsStream("/" + path) $$ java.io.InputStream $$ possible exceptional exit due to ImageIO.read(TexturedPanel.class.getResourceAsStream("/" + path)) with exception type java.io.IOException $$ ( 587, 638 ) $$ @MustCall method close may not have been invoked on TexturedPanel.class.getResourceAsStream("/" + path) or any of its aliases.
+        this(ImageIO.read(TexturedPanel.class.getResourceAsStream("/" + path))
+                                                                 ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to ImageIO.read(TexturedPanel.class.getResourceAsStream("/" + path)) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/ui/simple/SimpleTheme.java:54: error: (required.method.not.called) $$ 4 $$ method close $$ SimpleTheme.class.getResourceAsStream("/" + api.getConfig().getString("theme.simple.background")) $$ java.io.InputStream $$ regular method exit $$ ( 1282, 1454 ) $$ @MustCall method close may not have been invoked on SimpleTheme.class.getResourceAsStream("/" + api.getConfig().getString("theme.simple.background")) or any of its aliases.
+                        SimpleTheme.class.getResourceAsStream("/"
+                                                             ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/com/kokakiwi/mclauncher/ui/simple/components/LogoPanel.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ LogoPanel.class.getResourceAsStream("/res/logo.png") $$ java.io.InputStream $$ regular method exit $$ ( 559, 633 ) $$ @MustCall method close may not have been invoked on LogoPanel.class.getResourceAsStream("/res/logo.png") or any of its aliases.
+                    .getResourceAsStream("/res/logo.png"));
+                                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/SevenZip/LzmaAlone.java:244: error: (required.method.not.called) $$ 4 $$ method close $$ new java.io.FileInputStream(inFile) $$ java.io.FileInputStream $$ possible exceptional exit due to new java.io.FileOutputStream(outFile) with exception type java.io.FileNotFoundException $$ ( 8408, 8443 ) $$ @MustCall method close may not have been invoked on new java.io.FileInputStream(inFile) or any of its aliases.
+                    new java.io.FileInputStream(inFile));
+                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new java.io.FileOutputStream(outFile) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/SevenZip/LzmaAlone.java:246: error: (required.method.not.called) $$ 4 $$ method close $$ new java.io.FileOutputStream(outFile) $$ java.io.FileOutputStream $$ possible exceptional exit due to inStream.read(properties, 0, propertiesSize) with exception type java.io.IOException $$ ( 8561, 8598 ) $$ @MustCall method close may not have been invoked on new java.io.FileOutputStream(outFile) or any of its aliases.
+                    new java.io.FileOutputStream(outFile));
+                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to inStream.read(properties, 0, propertiesSize) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/SevenZip/LzmaBench.java:406: error: (required.method.not.called) $$ 4 $$ method close $$ inStream $$ SevenZip.LzmaBench.MyInputStream $$ possible exceptional exit due to encoder.Code(inStream, compressedStream, -1, -1, progressInfo) with exception type java.io.IOException $$ ( 10858, 10950 ) $$ @MustCall method close may not have been invoked on inStream or any of its aliases.
+        final MyInputStream inStream = new MyInputStream(rg.Buffer,
+                            ^
+  The type of object is: SevenZip.LzmaBench.MyInputStream.
+  Reason for going out of scope: possible exceptional exit due to encoder.Code(inStream, compressedStream, -1, -1, progressInfo) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/SevenZip/LzmaBench.java:410: error: (required.method.not.called) $$ 4 $$ method close $$ compressedStream $$ SevenZip.LzmaBench.MyOutputStream $$ possible exceptional exit due to encoder.Code(inStream, compressedStream, -1, -1, progressInfo) with exception type java.io.IOException $$ ( 11044, 11139 ) $$ @MustCall method close may not have been invoked on compressedStream or any of its aliases.
+        final MyOutputStream compressedStream = new MyOutputStream(
+                             ^
+  The type of object is: SevenZip.LzmaBench.MyOutputStream.
+  Reason for going out of scope: possible exceptional exit due to encoder.Code(inStream, compressedStream, -1, -1, progressInfo) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/SevenZip/LzmaBench.java:412: error: (required.method.not.called) $$ 4 $$ method close $$ crcOutStream $$ SevenZip.LzmaBench.CrcOutStream $$ possible exceptional exit due to encoder.Code(inStream, compressedStream, -1, -1, progressInfo) with exception type java.io.IOException $$ ( 11149, 11202 ) $$ @MustCall method close may not have been invoked on crcOutStream or any of its aliases.
+        final CrcOutStream crcOutStream = new CrcOutStream();
+                           ^
+  The type of object is: SevenZip.LzmaBench.CrcOutStream.
+  Reason for going out of scope: possible exceptional exit due to encoder.Code(inStream, compressedStream, -1, -1, progressInfo) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlbd77b745af_KokaKiwi_MCLauncher_tgz-pJ8-net_contrapunctus_lzma_BenchmarkJ8/src/SevenZip/LzmaBench.java:427: error: (required.method.not.called) $$ 4 $$ method close $$ inputCompressedStream $$ SevenZip.LzmaBench.MyInputStream $$ possible exceptional exit due to throw new Exception("Internal ERROR 1282"); with exception type java.lang.Exception $$ ( 11766, 11866 ) $$ @MustCall method close may not have been invoked on inputCompressedStream or any of its aliases.
+                inputCompressedStream = new MyInputStream(compressedBuffer,
+                                      ^
+  The type of object is: SevenZip.LzmaBench.MyInputStream.
+  Reason for going out of scope: possible exceptional exit due to throw new Exception("Internal ERROR 1282"); with exception type java.lang.Exception
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+50 errors

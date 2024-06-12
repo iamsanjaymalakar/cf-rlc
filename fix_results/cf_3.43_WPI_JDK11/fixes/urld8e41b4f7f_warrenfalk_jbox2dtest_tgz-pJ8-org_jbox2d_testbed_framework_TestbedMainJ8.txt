@@ -1,0 +1,25 @@
+30198
+569
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset_copy/urld8e41b4f7f_warrenfalk_jbox2dtest_tgz-pJ8-org_jbox2d_testbed_framework_TestbedMainJ8/src/org/jbox2d/testbed/framework/TestbedTest.java; Line number 411
+vim +411 ../../../dataset/june2020_dataset_copy/urld8e41b4f7f_warrenfalk_jbox2dtest_tgz-pJ8-org_jbox2d_testbed_framework_TestbedMainJ8/src/org/jbox2d/testbed/framework/TestbedTest.java
+
++++ Add following code below line: 427 (org/jbox2d/testbed/framework/TestbedTest.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 411
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset_copy/urld8e41b4f7f_warrenfalk_jbox2dtest_tgz-pJ8-org_jbox2d_testbed_framework_TestbedMainJ8/src/org/jbox2d/testbed/framework/TestbedTest.java; Line number 435
+vim +435 ../../../dataset/june2020_dataset_copy/urld8e41b4f7f_warrenfalk_jbox2dtest_tgz-pJ8-org_jbox2d_testbed_framework_TestbedMainJ8/src/org/jbox2d/testbed/framework/TestbedTest.java
+
++++ Add following code below line: 458 (org/jbox2d/testbed/framework/TestbedTest.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 435
+
+--------------------------------------------

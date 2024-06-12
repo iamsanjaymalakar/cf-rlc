@@ -1,0 +1,320 @@
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:203: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "kad.kns") $$ java.io.FileInputStream $$ possible exceptional exit due to new JsonSerializer<JKademliaNode>().read(din) with exception type java.io.IOException $$ ( 6941, 7034 ) $$ @MustCall method close may not have been invoked on new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "kad.kns") or any of its aliases.
+        din = new DataInputStream(new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "kad.kns"));
+                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new JsonSerializer<JKademliaNode>().read(din) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:204: error: (required.method.not.called) $$ 4 $$ method shutdown $$ ikad $$ kademlia.JKademliaNode $$ possible exceptional exit due to new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "routingtable.kns") with exception type java.io.FileNotFoundException $$ ( 7045, 7112 ) $$ @MustCall method shutdown may not have been invoked on ikad or any of its aliases.
+        JKademliaNode ikad = new JsonSerializer<JKademliaNode>().read(din);
+                      ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "routingtable.kns") with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:204: error: (type.argument) $$ 4 $$ T $$ JsonSerializer $$ @MustCall("shutdown") JKademliaNode $$ @MustCall Object $$ ( 7085, 7098 ) $$ incompatible type argument for type parameter T of JsonSerializer.
+        JKademliaNode ikad = new JsonSerializer<JKademliaNode>().read(din);
+                                                ^
+  found   : @MustCall("shutdown") JKademliaNode
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:209: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "routingtable.kns") $$ java.io.FileInputStream $$ possible exceptional exit due to new JsonRoutingTableSerializer(iconfig).read(din) with exception type java.io.IOException $$ ( 7215, 7317 ) $$ @MustCall method close may not have been invoked on new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "routingtable.kns") or any of its aliases.
+        din = new DataInputStream(new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "routingtable.kns"));
+                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new JsonRoutingTableSerializer(iconfig).read(din) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:215: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "node.kns") $$ java.io.FileInputStream $$ possible exceptional exit due to new JsonSerializer<Node>().read(din) with exception type java.io.IOException $$ ( 7507, 7601 ) $$ @MustCall method close may not have been invoked on new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "node.kns") or any of its aliases.
+        din = new DataInputStream(new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "node.kns"));
+                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new JsonSerializer<Node>().read(din) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:221: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "dht.kns") $$ java.io.FileInputStream $$ possible exceptional exit due to new JsonDHTSerializer().read(din) with exception type java.io.IOException $$ ( 7755, 7848 ) $$ @MustCall method close may not have been invoked on new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "dht.kns") or any of its aliases.
+        din = new DataInputStream(new FileInputStream(getStateStorageFolderName(ownerId, iconfig) + File.separator + "dht.kns"));
+                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new JsonDHTSerializer().read(din) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:344: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(getStateStorageFolderName(this.ownerId, this.config) + File.separator + "kad.kns") $$ java.io.FileOutputStream $$ possible exceptional exit due to new JsonSerializer<JKademliaNode>().write(this, dout) with exception type java.io.IOException $$ ( 11061, 11164 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(getStateStorageFolderName(this.ownerId, this.config) + File.separator + "kad.kns") or any of its aliases.
+        dout = new DataOutputStream(new FileOutputStream(getStateStorageFolderName(this.ownerId, this.config) + File.separator + "kad.kns"));
+                                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new JsonSerializer<JKademliaNode>().write(this, dout) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:345: error: (type.argument) $$ 4 $$ T $$ JsonSerializer $$ @MustCall("shutdown") JKademliaNode $$ @MustCall Object $$ ( 11194, 11207 ) $$ incompatible type argument for type parameter T of JsonSerializer.
+        new JsonSerializer<JKademliaNode>().write(this, dout);
+                           ^
+  found   : @MustCall("shutdown") JKademliaNode
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:350: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(getStateStorageFolderName(this.ownerId, this.config) + File.separator + "node.kns") $$ java.io.FileOutputStream $$ possible exceptional exit due to new JsonSerializer<Node>().write(this.localNode, dout) with exception type java.io.IOException $$ ( 11331, 11435 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(getStateStorageFolderName(this.ownerId, this.config) + File.separator + "node.kns") or any of its aliases.
+        dout = new DataOutputStream(new FileOutputStream(getStateStorageFolderName(this.ownerId, this.config) + File.separator + "node.kns"));
+                                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new JsonSerializer<Node>().write(this.localNode, dout) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:358: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(getStateStorageFolderName(this.ownerId, this.config) + File.separator + "routingtable.kns") $$ java.io.FileOutputStream $$ possible exceptional exit due to new JsonRoutingTableSerializer(this.config).write(this.getRoutingTable(), dout) with exception type java.io.IOException $$ ( 11847, 11959 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(getStateStorageFolderName(this.ownerId, this.config) + File.separator + "routingtable.kns") or any of its aliases.
+        dout = new DataOutputStream(new FileOutputStream(getStateStorageFolderName(this.ownerId, this.config) + File.separator + "routingtable.kns"));
+                                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new JsonRoutingTableSerializer(this.config).write(this.getRoutingTable(), dout) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/JKademliaNode.java:364: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(getStateStorageFolderName(this.ownerId, this.config) + File.separator + "dht.kns") $$ java.io.FileOutputStream $$ possible exceptional exit due to new JsonDHTSerializer().write(this.dht, dout) with exception type java.io.IOException $$ ( 12145, 12248 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(getStateStorageFolderName(this.ownerId, this.config) + File.separator + "dht.kns") or any of its aliases.
+        dout = new DataOutputStream(new FileOutputStream(getStateStorageFolderName(this.ownerId, this.config) + File.separator + "dht.kns"));
+                                    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new JsonDHTSerializer().write(this.dht, dout) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/KadServer.java:195: error: (contracts.postcondition) $$ 3 $$ listen $$ this.socket is @CalledMethods("isClosed") $$ this.socket is @CalledMethods("close") $$ ( 5922, 9323 ) $$ postcondition of listen is not satisfied.
+    private void listen()
+                 ^
+  found   : this.socket is @CalledMethods("isClosed")
+  required: this.socket is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/SaveStateTest2.java:23: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad1 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("Crystal", new KademliaId("ASF45678947584567464"), 4585) with exception type java.io.IOException $$ ( 481, 578 ) $$ @MustCall method shutdown may not have been invoked on kad1 or any of its aliases.
+            JKademliaNode kad1 = new JKademliaNode("JoshuaK", new KademliaId("ASF45678947584567463"), 12049);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("Crystal", new KademliaId("ASF45678947584567464"), 4585) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/SaveStateTest2.java:24: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad2 $$ kademlia.JKademliaNode $$ possible exceptional exit due to kad2.bootstrap(kad1.getNode()) with exception type java.io.IOException $$ ( 591, 687 ) $$ @MustCall method shutdown may not have been invoked on kad2 or any of its aliases.
+            JKademliaNode kad2 = new JKademliaNode("Crystal", new KademliaId("ASF45678947584567464"), 4585);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to kad2.bootstrap(kad1.getNode()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/SaveStateTest2.java:49: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad1 $$ kademlia.JKademliaNode $$ possible exceptional exit due to kad1.bootstrap(kad2.getNode()) with exception type java.io.IOException $$ ( 1537, 1581 ) $$ @MustCall method shutdown may not have been invoked on kad1 or any of its aliases.
+            kad1 = JKademliaNode.loadFromFile("JoshuaK");
+                 ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to kad1.bootstrap(kad2.getNode()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/ContentSendingTest.java:25: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad1 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("Crystal", new KademliaId("ASERTKJDHGVHERJHGFLK"), 7572) with exception type java.io.IOException $$ ( 564, 660 ) $$ @MustCall method shutdown may not have been invoked on kad1 or any of its aliases.
+            JKademliaNode kad1 = new JKademliaNode("JoshuaK", new KademliaId("ASF45678947584567467"), 7574);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("Crystal", new KademliaId("ASERTKJDHGVHERJHGFLK"), 7572) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/ContentSendingTest.java:27: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad2 $$ kademlia.JKademliaNode $$ possible exceptional exit due to kad2.bootstrap(kad1.getNode()) with exception type java.io.IOException $$ ( 758, 854 ) $$ @MustCall method shutdown may not have been invoked on kad2 or any of its aliases.
+            JKademliaNode kad2 = new JKademliaNode("Crystal", new KademliaId("ASERTKJDHGVHERJHGFLK"), 7572);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to kad2.bootstrap(kad1.getNode()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RoutingTableSimulation.java:21: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad1 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new KademliaId("ASF45678947584567464") with exception type java.lang.IllegalStateException $$ ( 438, 535 ) $$ @MustCall method shutdown may not have been invoked on kad1 or any of its aliases.
+            JKademliaNode kad1 = new JKademliaNode("JoshuaK", new KademliaId("ASF45678947584567463"), 12049);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new KademliaId("ASF45678947584567464") with exception type java.lang.IllegalStateException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RoutingTableSimulation.java:22: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad2 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new KademliaId("ASF45678947584567465") with exception type java.lang.IllegalStateException $$ ( 548, 644 ) $$ @MustCall method shutdown may not have been invoked on kad2 or any of its aliases.
+            JKademliaNode kad2 = new JKademliaNode("Crystal", new KademliaId("ASF45678947584567464"), 4585);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new KademliaId("ASF45678947584567465") with exception type java.lang.IllegalStateException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RoutingTableSimulation.java:23: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad3 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new KademliaId("ASF45678947584567466") with exception type java.lang.IllegalStateException $$ ( 657, 753 ) $$ @MustCall method shutdown may not have been invoked on kad3 or any of its aliases.
+            JKademliaNode kad3 = new JKademliaNode("Shameer", new KademliaId("ASF45678947584567465"), 8104);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new KademliaId("ASF45678947584567466") with exception type java.lang.IllegalStateException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RoutingTableSimulation.java:24: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad4 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new KademliaId("ASF45678947584567467") with exception type java.lang.IllegalStateException $$ ( 766, 861 ) $$ @MustCall method shutdown may not have been invoked on kad4 or any of its aliases.
+            JKademliaNode kad4 = new JKademliaNode("Lokesh", new KademliaId("ASF45678947584567466"), 8335);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new KademliaId("ASF45678947584567467") with exception type java.lang.IllegalStateException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RoutingTableSimulation.java:25: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad5 $$ kademlia.JKademliaNode $$ possible exceptional exit due to kad1.getRoutingTable() with exception type java.lang.IllegalStateException $$ ( 874, 970 ) $$ @MustCall method shutdown may not have been invoked on kad5 or any of its aliases.
+            JKademliaNode kad5 = new JKademliaNode("Chandu", new KademliaId("ASF45678947584567467"), 13345);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to kad1.getRoutingTable() with exception type java.lang.IllegalStateException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RoutingTableStateTesting.java:29: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new JKademliaNode("user0", new KademliaId("HRF456789SD584567460"), 1334) $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("user1", new KademliaId("ASF456789475DS567461"), 1209) with exception type java.io.IOException $$ ( 595, 667 ) $$ @MustCall method shutdown may not have been invoked on new JKademliaNode("user0", new KademliaId("HRF456789SD584567460"), 1334) or any of its aliases.
+            kads[0] = new JKademliaNode("user0", new KademliaId("HRF456789SD584567460"), 1334);
+                      ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("user1", new KademliaId("ASF456789475DS567461"), 1209) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RoutingTableStateTesting.java:30: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new JKademliaNode("user1", new KademliaId("ASF456789475DS567461"), 1209) $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("user2", new KademliaId("AFG45678947584567462"), 4585) with exception type java.io.IOException $$ ( 691, 763 ) $$ @MustCall method shutdown may not have been invoked on new JKademliaNode("user1", new KademliaId("ASF456789475DS567461"), 1209) or any of its aliases.
+            kads[1] = new JKademliaNode("user1", new KademliaId("ASF456789475DS567461"), 1209);
+                      ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("user2", new KademliaId("AFG45678947584567462"), 4585) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RoutingTableStateTesting.java:31: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new JKademliaNode("user2", new KademliaId("AFG45678947584567462"), 4585) $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("user3", new KademliaId("FSF45J38947584567463"), 8104) with exception type java.io.IOException $$ ( 787, 859 ) $$ @MustCall method shutdown may not have been invoked on new JKademliaNode("user2", new KademliaId("AFG45678947584567462"), 4585) or any of its aliases.
+            kads[2] = new JKademliaNode("user2", new KademliaId("AFG45678947584567462"), 4585);
+                      ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("user3", new KademliaId("FSF45J38947584567463"), 8104) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RoutingTableStateTesting.java:32: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new JKademliaNode("user3", new KademliaId("FSF45J38947584567463"), 8104) $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("user4", new KademliaId("ASF45678947584567464"), 8335) with exception type java.io.IOException $$ ( 883, 955 ) $$ @MustCall method shutdown may not have been invoked on new JKademliaNode("user3", new KademliaId("FSF45J38947584567463"), 8104) or any of its aliases.
+            kads[3] = new JKademliaNode("user3", new KademliaId("FSF45J38947584567463"), 8104);
+                      ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("user4", new KademliaId("ASF45678947584567464"), 8335) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RoutingTableStateTesting.java:33: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new JKademliaNode("user4", new KademliaId("ASF45678947584567464"), 8335) $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("user5", new KademliaId("GHF4567894DR84567465"), 13345) with exception type java.io.IOException $$ ( 979, 1051 ) $$ @MustCall method shutdown may not have been invoked on new JKademliaNode("user4", new KademliaId("ASF45678947584567464"), 8335) or any of its aliases.
+            kads[4] = new JKademliaNode("user4", new KademliaId("ASF45678947584567464"), 8335);
+                      ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("user5", new KademliaId("GHF4567894DR84567465"), 13345) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RoutingTableStateTesting.java:34: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new JKademliaNode("user5", new KademliaId("GHF4567894DR84567465"), 13345) $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("user6", new KademliaId("ASF45678947584567466"), 12049) with exception type java.io.IOException $$ ( 1075, 1148 ) $$ @MustCall method shutdown may not have been invoked on new JKademliaNode("user5", new KademliaId("GHF4567894DR84567465"), 13345) or any of its aliases.
+            kads[5] = new JKademliaNode("user5", new KademliaId("GHF4567894DR84567465"), 13345);
+                      ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("user6", new KademliaId("ASF45678947584567466"), 12049) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RoutingTableStateTesting.java:35: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new JKademliaNode("user6", new KademliaId("ASF45678947584567466"), 12049) $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("user7", new KademliaId("AE345678947584567467"), 14585) with exception type java.io.IOException $$ ( 1172, 1245 ) $$ @MustCall method shutdown may not have been invoked on new JKademliaNode("user6", new KademliaId("ASF45678947584567466"), 12049) or any of its aliases.
+            kads[6] = new JKademliaNode("user6", new KademliaId("ASF45678947584567466"), 12049);
+                      ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("user7", new KademliaId("AE345678947584567467"), 14585) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RoutingTableStateTesting.java:36: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new JKademliaNode("user7", new KademliaId("AE345678947584567467"), 14585) $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("user8", new KademliaId("ASAA5678947584567468"), 18104) with exception type java.io.IOException $$ ( 1269, 1342 ) $$ @MustCall method shutdown may not have been invoked on new JKademliaNode("user7", new KademliaId("AE345678947584567467"), 14585) or any of its aliases.
+            kads[7] = new JKademliaNode("user7", new KademliaId("AE345678947584567467"), 14585);
+                      ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("user8", new KademliaId("ASAA5678947584567468"), 18104) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RoutingTableStateTesting.java:37: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new JKademliaNode("user8", new KademliaId("ASAA5678947584567468"), 18104) $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("user9", new KademliaId("ASF456789475845674U9"), 18335) with exception type java.io.IOException $$ ( 1366, 1439 ) $$ @MustCall method shutdown may not have been invoked on new JKademliaNode("user8", new KademliaId("ASAA5678947584567468"), 18104) or any of its aliases.
+            kads[8] = new JKademliaNode("user8", new KademliaId("ASAA5678947584567468"), 18104);
+                      ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("user9", new KademliaId("ASF456789475845674U9"), 18335) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RoutingTableStateTesting.java:38: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new JKademliaNode("user9", new KademliaId("ASF456789475845674U9"), 18335) $$ kademlia.JKademliaNode $$ regular method exit $$ ( 1463, 1536 ) $$ @MustCall method shutdown may not have been invoked on new JKademliaNode("user9", new KademliaId("ASF456789475845674U9"), 18335) or any of its aliases.
+            kads[9] = new JKademliaNode("user9", new KademliaId("ASF456789475845674U9"), 18335);
+                      ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/AutoRefreshOperation2.java:25: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad1 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("Crystal", new KademliaId("AS84k678DJRW84567465"), 4585) with exception type java.io.IOException $$ ( 537, 640 ) $$ @MustCall method shutdown may not have been invoked on kad1 or any of its aliases.
+            final JKademliaNode kad1 = new JKademliaNode("JoshuaK", new KademliaId("ASF456789djem4567463"), 12049);
+                                ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("Crystal", new KademliaId("AS84k678DJRW84567465"), 4585) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/AutoRefreshOperation2.java:26: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad2 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("Shameer", new KademliaId("AS84k67894758456746A"), 8104) with exception type java.io.IOException $$ ( 653, 755 ) $$ @MustCall method shutdown may not have been invoked on kad2 or any of its aliases.
+            final JKademliaNode kad2 = new JKademliaNode("Crystal", new KademliaId("AS84k678DJRW84567465"), 4585);
+                                ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("Shameer", new KademliaId("AS84k67894758456746A"), 8104) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/AutoRefreshOperation2.java:27: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad3 $$ kademlia.JKademliaNode $$ possible exceptional exit due to kad2.bootstrap(kad1.getNode()) with exception type java.io.IOException $$ ( 768, 870 ) $$ @MustCall method shutdown may not have been invoked on kad3 or any of its aliases.
+            final JKademliaNode kad3 = new JKademliaNode("Shameer", new KademliaId("AS84k67894758456746A"), 8104);
+                                ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to kad2.bootstrap(kad1.getNode()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/NodeConnectionTest.java:21: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad1 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("Crystal", new KademliaId("ASERTKJDHGVHERJHGFLK"), 7572) with exception type java.io.IOException $$ ( 388, 484 ) $$ @MustCall method shutdown may not have been invoked on kad1 or any of its aliases.
+            JKademliaNode kad1 = new JKademliaNode("JoshuaK", new KademliaId("ASF45678947584567467"), 7574);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("Crystal", new KademliaId("ASERTKJDHGVHERJHGFLK"), 7572) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/NodeConnectionTest.java:24: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad2 $$ kademlia.JKademliaNode $$ possible exceptional exit due to kad1.bootstrap(kad2.getNode()) with exception type java.io.IOException $$ ( 583, 679 ) $$ @MustCall method shutdown may not have been invoked on kad2 or any of its aliases.
+            JKademliaNode kad2 = new JKademliaNode("Crystal", new KademliaId("ASERTKJDHGVHERJHGFLK"), 7572);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to kad1.bootstrap(kad2.getNode()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/NodeConnectionTest.java:40: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad3 $$ kademlia.JKademliaNode $$ possible exceptional exit due to kad3.bootstrap(kad2.getNode()) with exception type java.io.IOException $$ ( 1540, 1636 ) $$ @MustCall method shutdown may not have been invoked on kad3 or any of its aliases.
+            JKademliaNode kad3 = new JKademliaNode("Jessica", new KademliaId("ASERTKJDOLKMNBVFR45G"), 7783);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to kad3.bootstrap(kad2.getNode()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/NodeConnectionTest.java:50: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad4 $$ kademlia.JKademliaNode $$ possible exceptional exit due to kad4.bootstrap(kad2.getNode()) with exception type java.io.IOException $$ ( 2220, 2314 ) $$ @MustCall method shutdown may not have been invoked on kad4 or any of its aliases.
+            JKademliaNode kad4 = new JKademliaNode("Sandy", new KademliaId("ASERTK85OLKMN85FR4SS"), 7789);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to kad4.bootstrap(kad2.getNode()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/ContentUpdatingTest.java:24: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad1 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("Crystal", new KademliaId("ASERTKJDHGVHERJHGFLK"), 7572) with exception type java.io.IOException $$ ( 542, 638 ) $$ @MustCall method shutdown may not have been invoked on kad1 or any of its aliases.
+            JKademliaNode kad1 = new JKademliaNode("JoshuaK", new KademliaId("ASF45678947584567467"), 7574);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("Crystal", new KademliaId("ASERTKJDHGVHERJHGFLK"), 7572) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/ContentUpdatingTest.java:26: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad2 $$ kademlia.JKademliaNode $$ possible exceptional exit due to kad2.bootstrap(kad1.getNode()) with exception type java.io.IOException $$ ( 736, 832 ) $$ @MustCall method shutdown may not have been invoked on kad2 or any of its aliases.
+            JKademliaNode kad2 = new JKademliaNode("Crystal", new KademliaId("ASERTKJDHGVHERJHGFLK"), 7572);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to kad2.bootstrap(kad1.getNode()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/AutoRefreshOperation.java:25: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad1 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("Crystal", new KademliaId("AJDHR678947584567464"), 4585) with exception type java.io.IOException $$ ( 536, 639 ) $$ @MustCall method shutdown may not have been invoked on kad1 or any of its aliases.
+            final JKademliaNode kad1 = new JKademliaNode("JoshuaK", new KademliaId("ASF456789djem45674DH"), 12049);
+                                ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("Crystal", new KademliaId("AJDHR678947584567464"), 4585) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/AutoRefreshOperation.java:26: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad2 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("Shameer", new KademliaId("AS84k6789KRNS45KFJ8W"), 8104) with exception type java.io.IOException $$ ( 652, 754 ) $$ @MustCall method shutdown may not have been invoked on kad2 or any of its aliases.
+            final JKademliaNode kad2 = new JKademliaNode("Crystal", new KademliaId("AJDHR678947584567464"), 4585);
+                                ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("Shameer", new KademliaId("AS84k6789KRNS45KFJ8W"), 8104) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/AutoRefreshOperation.java:27: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad3 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("Lokesh.", new KademliaId("ASF45678947A845674GG"), 8335) with exception type java.io.IOException $$ ( 767, 869 ) $$ @MustCall method shutdown may not have been invoked on kad3 or any of its aliases.
+            final JKademliaNode kad3 = new JKademliaNode("Shameer", new KademliaId("AS84k6789KRNS45KFJ8W"), 8104);
+                                ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("Lokesh.", new KademliaId("ASF45678947A845674GG"), 8335) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/AutoRefreshOperation.java:28: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad4 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("Chandu.", new KademliaId("AS84kUD894758456dyrj"), 13345) with exception type java.io.IOException $$ ( 882, 984 ) $$ @MustCall method shutdown may not have been invoked on kad4 or any of its aliases.
+            final JKademliaNode kad4 = new JKademliaNode("Lokesh.", new KademliaId("ASF45678947A845674GG"), 8335);
+                                ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("Chandu.", new KademliaId("AS84kUD894758456dyrj"), 13345) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/AutoRefreshOperation.java:29: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad5 $$ kademlia.JKademliaNode $$ possible exceptional exit due to kad2.bootstrap(kad1.getNode()) with exception type java.io.IOException $$ ( 997, 1100 ) $$ @MustCall method shutdown may not have been invoked on kad5 or any of its aliases.
+            final JKademliaNode kad5 = new JKademliaNode("Chandu.", new KademliaId("AS84kUD894758456dyrj"), 13345);
+                                ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to kad2.bootstrap(kad1.getNode()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/SimpleMessageTest.java:22: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad1 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("Crystal", new KademliaId("12345678901234567891"), 7572) with exception type java.io.IOException $$ ( 432, 527 ) $$ @MustCall method shutdown may not have been invoked on kad1 or any of its aliases.
+            JKademliaNode kad1 = new JKademliaNode("Joshua", new KademliaId("12345678901234567890"), 7574);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("Crystal", new KademliaId("12345678901234567891"), 7572) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/SimpleMessageTest.java:23: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad2 $$ kademlia.JKademliaNode $$ possible exceptional exit due to kad1.getServer().sendMessage(kad2.getNode(), new SimpleMessage("Some Message"), new SimpleReceiver()) with exception type java.io.IOException $$ ( 540, 636 ) $$ @MustCall method shutdown may not have been invoked on kad2 or any of its aliases.
+            JKademliaNode kad2 = new JKademliaNode("Crystal", new KademliaId("12345678901234567891"), 7572);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to kad1.getServer().sendMessage(kad2.getNode(), new SimpleMessage("Some Message"), new SimpleReceiver()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RefreshOperationTest.java:24: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad1 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new JKademliaNode("Crystal", new KademliaId("ASERTKJDHGVHERJHGFLK"), 7572) with exception type java.io.IOException $$ ( 543, 639 ) $$ @MustCall method shutdown may not have been invoked on kad1 or any of its aliases.
+            JKademliaNode kad1 = new JKademliaNode("JoshuaK", new KademliaId("ASF45678947584567467"), 7574);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new JKademliaNode("Crystal", new KademliaId("ASERTKJDHGVHERJHGFLK"), 7572) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/RefreshOperationTest.java:25: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad2 $$ kademlia.JKademliaNode $$ possible exceptional exit due to kad2.bootstrap(kad1.getNode()) with exception type java.io.IOException $$ ( 652, 748 ) $$ @MustCall method shutdown may not have been invoked on kad2 or any of its aliases.
+            JKademliaNode kad2 = new JKademliaNode("Crystal", new KademliaId("ASERTKJDHGVHERJHGFLK"), 7572);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to kad2.bootstrap(kad1.getNode()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/SaveStateTest.java:20: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad1 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new KademliaId("ASF45678947584567464") with exception type java.lang.IllegalStateException $$ ( 343, 440 ) $$ @MustCall method shutdown may not have been invoked on kad1 or any of its aliases.
+            JKademliaNode kad1 = new JKademliaNode("JoshuaK", new KademliaId("ASF45678947584567463"), 12049);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new KademliaId("ASF45678947584567464") with exception type java.lang.IllegalStateException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/SaveStateTest.java:21: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad2 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new KademliaId("ASF45678947584567465") with exception type java.lang.IllegalStateException $$ ( 453, 549 ) $$ @MustCall method shutdown may not have been invoked on kad2 or any of its aliases.
+            JKademliaNode kad2 = new JKademliaNode("Crystal", new KademliaId("ASF45678947584567464"), 4585);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new KademliaId("ASF45678947584567465") with exception type java.lang.IllegalStateException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/SaveStateTest.java:22: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad3 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new KademliaId("ASF45678947584567466") with exception type java.lang.IllegalStateException $$ ( 562, 658 ) $$ @MustCall method shutdown may not have been invoked on kad3 or any of its aliases.
+            JKademliaNode kad3 = new JKademliaNode("Shameer", new KademliaId("ASF45678947584567465"), 8104);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new KademliaId("ASF45678947584567466") with exception type java.lang.IllegalStateException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/SaveStateTest.java:23: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad4 $$ kademlia.JKademliaNode $$ possible exceptional exit due to new KademliaId("ASF45678947584567467") with exception type java.lang.IllegalStateException $$ ( 671, 766 ) $$ @MustCall method shutdown may not have been invoked on kad4 or any of its aliases.
+            JKademliaNode kad4 = new JKademliaNode("Lokesh", new KademliaId("ASF45678947584567466"), 8335);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to new KademliaId("ASF45678947584567467") with exception type java.lang.IllegalStateException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/SaveStateTest.java:24: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kad5 $$ kademlia.JKademliaNode $$ possible exceptional exit due to System.out.println("Connecting Nodes 1 & 2") with exception type java.lang.IllegalStateException $$ ( 779, 875 ) $$ @MustCall method shutdown may not have been invoked on kad5 or any of its aliases.
+            JKademliaNode kad5 = new JKademliaNode("Chandu", new KademliaId("ASF45678947584567467"), 13345);
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to System.out.println("Connecting Nodes 1 & 2") with exception type java.lang.IllegalStateException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/simulations/SaveStateTest.java:79: error: (required.method.not.called) $$ 4 $$ method shutdown $$ kadR2 $$ kademlia.JKademliaNode $$ possible exceptional exit due to System.out.println(kadR2) with exception type java.lang.IllegalStateException $$ ( 2743, 2803 ) $$ @MustCall method shutdown may not have been invoked on kadR2 or any of its aliases.
+            JKademliaNode kadR2 = JKademliaNode.loadFromFile("JoshuaK");
+                          ^
+  The type of object is: kademlia.JKademliaNode.
+  Reason for going out of scope: possible exceptional exit due to System.out.println(kadR2) with exception type java.lang.IllegalStateException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/util/serializer/JsonDHTSerializer.java:62: error: (required.method.not.called) $$ 4 $$ method close $$ writer.beginArray() $$ com.google.gson.stream.JsonWriter $$ possible exceptional exit due to gson.toJson(data, DHT.class, writer) with exception type com.google.gson.JsonIOException $$ ( 1709, 1728 ) $$ @MustCall method close may not have been invoked on writer.beginArray() or any of its aliases.
+            writer.beginArray();
+                             ^
+  The type of object is: com.google.gson.stream.JsonWriter.
+  Reason for going out of scope: possible exceptional exit due to gson.toJson(data, DHT.class, writer) with exception type com.google.gson.JsonIOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/util/serializer/JsonDHTSerializer.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ writer.endArray() $$ com.google.gson.stream.JsonWriter $$ possible exceptional exit due to writer.close() with exception type java.lang.Exception $$ ( 1968, 1985 ) $$ @MustCall method close may not have been invoked on writer.endArray() or any of its aliases.
+            writer.endArray();
+                           ^
+  The type of object is: com.google.gson.stream.JsonWriter.
+  Reason for going out of scope: possible exceptional exit due to writer.close() with exception type java.lang.Exception
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/util/serializer/JsonSerializer.java:36: error: (required.method.not.called) $$ 4 $$ method close $$ writer.beginArray() $$ com.google.gson.stream.JsonWriter $$ possible exceptional exit due to gson.toJson(data.getClass().getName(), String.class, writer) with exception type com.google.gson.JsonIOException $$ ( 806, 825 ) $$ @MustCall method close may not have been invoked on writer.beginArray() or any of its aliases.
+            writer.beginArray();
+                             ^
+  The type of object is: com.google.gson.stream.JsonWriter.
+  Reason for going out of scope: possible exceptional exit due to gson.toJson(data.getClass().getName(), String.class, writer) with exception type com.google.gson.JsonIOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/util/serializer/JsonSerializer.java:44: error: (required.method.not.called) $$ 4 $$ method close $$ writer.endArray() $$ com.google.gson.stream.JsonWriter $$ possible exceptional exit due to writer.close() with exception type java.lang.Exception $$ ( 1053, 1070 ) $$ @MustCall method close may not have been invoked on writer.endArray() or any of its aliases.
+            writer.endArray();
+                           ^
+  The type of object is: com.google.gson.stream.JsonWriter.
+  Reason for going out of scope: possible exceptional exit due to writer.close() with exception type java.lang.Exception
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/util/serializer/JsonRoutingTableSerializer.java:74: error: (required.method.not.called) $$ 4 $$ method close $$ writer.beginArray() $$ com.google.gson.stream.JsonWriter $$ possible exceptional exit due to gson.toJson(data, JKademliaRoutingTable.class, writer) with exception type com.google.gson.JsonIOException $$ ( 1904, 1923 ) $$ @MustCall method close may not have been invoked on writer.beginArray() or any of its aliases.
+            writer.beginArray();
+                             ^
+  The type of object is: com.google.gson.stream.JsonWriter.
+  Reason for going out of scope: possible exceptional exit due to gson.toJson(data, JKademliaRoutingTable.class, writer) with exception type com.google.gson.JsonIOException
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/util/serializer/JsonRoutingTableSerializer.java:82: error: (required.method.not.called) $$ 4 $$ method close $$ writer.endArray() $$ com.google.gson.stream.JsonWriter $$ possible exceptional exit due to writer.close() with exception type java.lang.Exception $$ ( 2185, 2202 ) $$ @MustCall method close may not have been invoked on writer.endArray() or any of its aliases.
+            writer.endArray();
+                           ^
+  The type of object is: com.google.gson.stream.JsonWriter.
+  Reason for going out of scope: possible exceptional exit due to writer.close() with exception type java.lang.Exception
+../dataset/june2020_dataset_copy/url147ce07ebe_JoshuaKissoon_Kademlia_tgz-pJ8-kademlia_simulations_RoutingTableStateTestingJ8/src/kademlia/dht/DHT.java:136: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(folder + File.separator + hashCode + ".kct") $$ java.io.FileInputStream $$ possible exceptional exit due to this.getSerializer().read(din) with exception type java.io.IOException $$ ( 4668, 4732 ) $$ @MustCall method close may not have been invoked on new FileInputStream(folder + File.separator + hashCode + ".kct") or any of its aliases.
+        DataInputStream din = new DataInputStream(new FileInputStream(folder + File.separator + hashCode + ".kct"));
+                                                  ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to this.getSerializer().read(din) with exception type java.io.IOException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+63 errors

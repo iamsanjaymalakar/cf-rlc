@@ -1,0 +1,40 @@
+../dataset/june2020_dataset_copy/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/dataStructure/PositionTable.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(fname) $$ java.io.FileReader $$ possible exceptional exit due to in.readLine() with exception type java.io.IOException $$ ( 668, 689 ) $$ @MustCall method close may not have been invoked on new FileReader(fname) or any of its aliases.
+	    BufferedReader in = new BufferedReader(new FileReader(fname));
+	                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to in.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/dataStructure/AdjList.java:236: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(fname) $$ java.io.FileReader $$ possible exceptional exit due to in.readLine() with exception type java.io.IOException $$ ( 5415, 5436 ) $$ @MustCall method close may not have been invoked on new FileReader(fname) or any of its aliases.
+	    BufferedReader in = new BufferedReader(new FileReader(fname));
+	                                           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to in.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java:99: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(dir + algoName + outDegreeFile) $$ java.io.FileWriter $$ possible exceptional exit due to new FileWriter(dir + algoName + violatedTerminalsCVRFile) with exception type java.io.IOException $$ ( 4475, 4517 ) $$ @MustCall method close may not have been invoked on new FileWriter(dir + algoName + outDegreeFile) or any of its aliases.
+			PrintWriter degreeOut = new PrintWriter(new BufferedWriter(new FileWriter(dir+algoName+outDegreeFile)));
+			                                                           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(dir + algoName + violatedTerminalsCVRFile) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java:100: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(dir + algoName + violatedTerminalsCVRFile) $$ java.io.FileWriter $$ possible exceptional exit due to new FileWriter(dir + algoName + violatedNodesRatioFile) with exception type java.io.IOException $$ ( 4601, 4654 ) $$ @MustCall method close may not have been invoked on new FileWriter(dir + algoName + violatedTerminalsCVRFile) or any of its aliases.
+			PrintWriter violatedTerminalsCVRFileOut = new PrintWriter(new BufferedWriter(new FileWriter(dir+algoName+violatedTerminalsCVRFile)));
+			                                                                             ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(dir + algoName + violatedNodesRatioFile) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java:101: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(dir + algoName + violatedNodesRatioFile) $$ java.io.FileWriter $$ possible exceptional exit due to new FileWriter(dir + algoName + violatedRunsRatioFile) with exception type java.io.IOException $$ ( 4732, 4783 ) $$ @MustCall method close may not have been invoked on new FileWriter(dir + algoName + violatedNodesRatioFile) or any of its aliases.
+			PrintWriter violatedNodesRatioOut = new PrintWriter(new BufferedWriter(new FileWriter(dir+algoName+violatedNodesRatioFile)));
+			                                                                       ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(dir + algoName + violatedRunsRatioFile) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java:102: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(dir + algoName + violatedRunsRatioFile) $$ java.io.FileWriter $$ possible exceptional exit due to new FileWriter(dir + algoName + percCovTerFile) with exception type java.io.IOException $$ ( 4860, 4910 ) $$ @MustCall method close may not have been invoked on new FileWriter(dir + algoName + violatedRunsRatioFile) or any of its aliases.
+			PrintWriter violatedRunsRatioOut = new PrintWriter(new BufferedWriter(new FileWriter(dir+algoName+violatedRunsRatioFile)));
+			                                                                      ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(dir + algoName + percCovTerFile) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url594c007908_hugobraga_College_tgz-pJ8-main_GraphJ8/src/main/Graph.java:103: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(dir + algoName + percCovTerFile) $$ java.io.FileWriter $$ possible exceptional exit due to new FileWriter(dir + tempFile) with exception type java.io.IOException $$ ( 4980, 5023 ) $$ @MustCall method close may not have been invoked on new FileWriter(dir + algoName + percCovTerFile) or any of its aliases.
+			PrintWriter percCovTerOut = new PrintWriter(new BufferedWriter(new FileWriter(dir+algoName+percCovTerFile)));			
+			                                                               ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to new FileWriter(dir + tempFile) with exception type java.io.IOException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+7 errors

@@ -1,0 +1,58 @@
+../dataset/june2020_dataset_copy/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/quantum/McalcDescription.java:63: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileInputStream $$ possible exceptional exit due to p.load(in) with exception type java.io.IOException $$ ( 1982, 2032 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+		final FileInputStream in = new FileInputStream(f);
+		                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to p.load(in) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/quantum/McalcDescription.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.FileOutputStream $$ possible exceptional exit due to p.store(out, "---MBQC Pattern description---") with exception type java.io.IOException $$ ( 2868, 2921 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+			final FileOutputStream out = new FileOutputStream(f);
+			                       ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to p.store(out, "---MBQC Pattern description---") with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/experiments/ExperimTest.java:39: error: (required.method.not.called) $$ 4 $$ method finalize $$ ws $$ martin.experiments.Worksheet $$ possible exceptional exit due to perform(items, ws, rule, null) with exception type java.lang.Exception $$ ( 1226, 1312 ) $$ @MustCall method finalize may not have been invoked on ws or any of its aliases.
+			final Worksheet ws = new Worksheet("C:\\Users\\Martin\\Desktop\\data\\"+n+"_all.csv");
+			                ^
+  The type of object is: martin.experiments.Worksheet.
+  Reason for going out of scope: possible exceptional exit due to perform(items, ws, rule, null) with exception type java.lang.Exception
+../dataset/june2020_dataset_copy/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/experiments/ExperimTest.java:91: error: (required.method.not.called) $$ 4 $$ method finalize $$ ws $$ martin.experiments.Worksheet $$ possible exceptional exit due to MathsParser.items(lab_cluster, ",") with exception type java.lang.Exception $$ ( 3464, 3511 ) $$ @MustCall method finalize may not have been invoked on ws or any of its aliases.
+		final Worksheet ws = new Worksheet(input_file);
+		                ^
+  The type of object is: martin.experiments.Worksheet.
+  Reason for going out of scope: possible exceptional exit due to MathsParser.items(lab_cluster, ",") with exception type java.lang.Exception
+../dataset/june2020_dataset_copy/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/experiments/Worksheet.java:22: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(filename) $$ java.io.FileReader $$ possible exceptional exit due to file.readLine() with exception type java.io.IOException $$ ( 846, 870 ) $$ @MustCall method close may not have been invoked on new FileReader(filename) or any of its aliases.
+		file= new BufferedReader(new FileReader(filename));
+		                         ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to file.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/gui/EvaluatorGUI.java:400: error: (required.method.not.called) $$ 4 $$ method close $$ new PrintLogger() $$ martin.gui.EvaluatorGUI.PrintLogger $$ regular method exit $$ ( 14687, 14704 ) $$ @MustCall method close may not have been invoked on new PrintLogger() or any of its aliases.
+	final PrintLogger logger = new PrintLogger();
+	                           ^
+  The type of object is: martin.gui.EvaluatorGUI.PrintLogger.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/gui/quantum/Item.java:74: error: (required.method.not.called) $$ 4 $$ method close $$ this.getClass().getResourceAsStream(getIconFileName()) $$ java.io.InputStream $$ regular method exit $$ ( 2526, 2580 ) $$ @MustCall method close may not have been invoked on this.getClass().getResourceAsStream(getIconFileName()) or any of its aliases.
+			return icon = ImageIO.read(this.getClass().getResourceAsStream(getIconFileName()));
+			                                                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/gui/quantum/Visualizer.java:503: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.FileOutputStream $$ possible exceptional exit due to p.store(out, "---MBQC Graphical Pattern description---") with exception type java.io.IOException $$ ( 13638, 13667 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+		out = new FileOutputStream(f);
+		    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to p.store(out, "---MBQC Graphical Pattern description---") with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/gui/quantum/Visualizer.java:513: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileInputStream $$ possible exceptional exit due to p.load(in) with exception type java.io.IOException $$ ( 13849, 13899 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			final FileInputStream in = new FileInputStream(f);
+			                      ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to p.load(in) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/gui/CircuitSimulatorGUI.java:102: error: (required.method.not.called) $$ 4 $$ method close $$ new Scanner(file) $$ java.util.Scanner $$ regular method exit $$ ( 3749, 3766 ) $$ @MustCall method close may not have been invoked on new Scanner(file) or any of its aliases.
+						txtInputCirc.setText(new Scanner(file).useDelimiter("\\Z").next());
+						                     ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/gui/CircuitSimulatorGUI.java:102: error: (required.method.not.called) $$ 4 $$ method close $$ new Scanner(file).useDelimiter("\\Z") $$ java.util.Scanner $$ regular method exit $$ ( 3749, 3786 ) $$ @MustCall method close may not have been invoked on new Scanner(file).useDelimiter("\\Z") or any of its aliases.
+						txtInputCirc.setText(new Scanner(file).useDelimiter("\\Z").next());
+						                                                   ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+Note: ../dataset/june2020_dataset_copy/url416ee5b4ee_martinmarinov_HonProj_tgz-pJ8-martin_gui_MainJ8/src/martin/experiments/Worksheet.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+11 errors

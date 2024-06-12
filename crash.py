@@ -34,7 +34,7 @@ def write_errors_to_log(errors_by_project, output_file_path):
                 out_file.write("\n---\n")
             out_file.write('\n\n\n')
 
-root_directory = '/home/smala009/RLF/dataset/june2020_dataset'
+root_directory = '/home/smala009/RLF/dataset/june2020_dataset_copy'
 output_log_file = 'errors_summary.log'
 
 errors_by_project = parse_logs_in_directory(root_directory)

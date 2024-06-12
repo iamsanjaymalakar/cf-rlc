@@ -1,0 +1,17 @@
+50216
+227
+
+SOURCE LEVEL FIXES
+
+7] ../../../dataset/june2020_dataset_copy/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/Graphics_Renderer/MapEditor.java; Line number 351
+vim +351 ../../../dataset/june2020_dataset_copy/urlb44e9843ba_QuasimodoNZ_SWEN222_Game_Project_tgz-pJ8-Game_World_GameWorldLevelBuilderJ8/src/Graphics_Renderer/MapEditor.java
+
++++ Add following code below line: 380 (Graphics_Renderer/MapEditor.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 351
+
++++ Delete Line number 376 (Graphics_Renderer/MapEditor.java)
+
+--------------------------------------------

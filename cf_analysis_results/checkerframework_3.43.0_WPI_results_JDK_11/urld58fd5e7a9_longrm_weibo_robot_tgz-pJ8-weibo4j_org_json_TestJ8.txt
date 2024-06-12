@@ -1,0 +1,303 @@
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/http/HttpClient.java:47: error: package javax.activation does not exist
+import javax.activation.MimetypesFileTypeMap;
+                       ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/http/ImageItem.java:17: error: package com.sun.imageio.plugins.bmp is not visible
+import com.sun.imageio.plugins.bmp.BMPImageReader;
+                              ^
+  (package com.sun.imageio.plugins.bmp is declared in module java.desktop, which does not export it)
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/http/ImageItem.java:18: error: package com.sun.imageio.plugins.gif is not visible
+import com.sun.imageio.plugins.gif.GIFImageReader;
+                              ^
+  (package com.sun.imageio.plugins.gif is declared in module java.desktop, which does not export it)
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/http/ImageItem.java:19: error: package com.sun.imageio.plugins.jpeg is not visible
+import com.sun.imageio.plugins.jpeg.JPEGImageReader;
+                              ^
+  (package com.sun.imageio.plugins.jpeg is declared in module java.desktop, which does not export it)
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/http/ImageItem.java:20: error: package com.sun.imageio.plugins.png is not visible
+import com.sun.imageio.plugins.png.PNGImageReader;
+                              ^
+  (package com.sun.imageio.plugins.png is declared in module java.desktop, which does not export it)
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/WeiboSupport.java:222: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public void forceUsePost(boolean forceUsePost) {
+                ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/http/HttpClient.java:510: error: cannot find symbol
+    		FilePart filePart=new FilePart(fileParamName,file.getName(), file,new MimetypesFileTypeMap().getContentType(file),"UTF-8");
+    		                                                                      ^
+  symbol:   class MimetypesFileTypeMap
+  location: class HttpClient
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/RateLimitStatus.java:87: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public Date getDateTime() {
+                ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:1806: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public User updatePrivacy(String comment) throws WeiboException{
+                ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:1863: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public IDs getFriendsIDs() throws WeiboException {
+               ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:1876: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public IDs getFriendsIDs(long cursor) throws WeiboException {
+               ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:1890: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public IDs getFriendsIDs(int userId) throws WeiboException {
+               ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:1904: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public IDs getFriendsIDs(int userId, long cursor) throws WeiboException {
+               ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:1920: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public IDs getFriendsIDs(String screenName) throws WeiboException {
+               ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:1934: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public IDs getFriendsIDs(String screenName, long cursor) throws WeiboException {
+               ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:1949: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public IDs getFollowersIDs() throws WeiboException {
+               ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:1962: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public IDs getFollowersIDs(long cursor) throws WeiboException {
+               ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:1978: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public IDs getFollowersIDs(int userId) throws WeiboException {
+               ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:1992: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public IDs getFollowersIDs(int userId, long cursor) throws WeiboException {
+               ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2006: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public IDs getFollowersIDs(String screenName) throws WeiboException {
+               ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2020: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public IDs getFollowersIDs(String screenName, long cursor) throws WeiboException {
+               ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2540: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<User> getFriends(String id, Paging paging) throws WeiboException {
+	                  ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2556: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<User> getFriends(String id, int page) throws WeiboException {
+	                  ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2571: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<User> getFriends(int page) throws WeiboException {
+	                  ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2585: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<User> getFriends() throws WeiboException {
+	                  ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2601: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<User> getFriends(Paging paging) throws WeiboException {
+	                  ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2616: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<User> getFriends(String id) throws WeiboException {
+	                  ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2633: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<User> getFollowers(String id, Paging paging) throws WeiboException {
+	                  ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2650: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<User> getFollowers(String id, int page) throws WeiboException {
+	                  ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2664: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<User> getFollowers() throws WeiboException {
+	                  ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2680: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<User> getFollowers(Paging paging) throws WeiboException {
+	                  ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2696: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<User> getFollowers(int page) throws WeiboException {
+	                  ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2712: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<User> getFollowers(String id) throws WeiboException {
+	                  ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2727: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getPublicTimeline(int sinceID) throws
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2743: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getPublicTimeline(long sinceID) throws
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2761: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getFriendsTimelineByPage(int page) throws
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2778: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getFriendsTimeline(int page) throws
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2796: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getFriendsTimeline(long sinceId, int page) throws
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2812: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getFriendsTimeline(String id) throws
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2829: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getFriendsTimelineByPage(String id, int page) throws
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2847: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getFriendsTimeline(String id, int page) throws
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2866: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getFriendsTimeline(long sinceId, String id, int page) throws
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2884: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getFriendsTimeline(String id, Paging paging) throws
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2900: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getFriendsTimeline(Date since) throws
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2918: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getFriendsTimeline(long sinceId) throws
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2936: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getFriendsTimeline(String id,Date since) throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2953: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getFriendsTimeline(String id, long sinceId) throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2970: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getUserTimeline(String id, int count
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:2990: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getUserTimeline(String id, int count,long sinceId) throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3006: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getUserTimeline(String id, Date since) throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3023: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getUserTimeline(String id, int count) throws
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3041: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getUserTimeline(int count, Date since) throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3059: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getUserTimeline(int count, long sinceId) throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3076: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getUserTimeline(String id, long sinceId) throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3092: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getUserTimeline(long sinceId) throws
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3106: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public Status update(String status) throws WeiboException {
+	              ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3119: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public Status update(String status, long inReplyToStatusId) throws WeiboException {
+	              ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3133: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getReplies() throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3149: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getReplies(long sinceId) throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3165: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getRepliesByPage(int page) throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3185: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getReplies(int page) throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3206: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> getReplies(long sinceId, int page) throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3223: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public Status show(int id) throws WeiboException {
+	              ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3240: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public Status show(long id) throws WeiboException {
+	              ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3254: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public User getUserDetail(String id) throws WeiboException {
+	            ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3268: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public User create(String id) throws WeiboException {
+	            ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3282: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public User destroy(String id) throws WeiboException {
+	            ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3297: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public boolean exists(String userA, String userB) throws WeiboException {
+	               ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3311: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public IDs getFriendsIDs(Paging paging) throws WeiboException {
+	           ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3326: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public IDs getFriendsIDs(int userId, Paging paging) throws WeiboException {
+	           ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3342: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public IDs getFriendsIDs(String screenName, Paging paging) throws WeiboException {
+	           ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3357: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public IDs getFollowersIDs(Paging paging) throws WeiboException {
+	           ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3373: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public IDs getFollowersIDs(int userId, Paging paging) throws WeiboException {
+	           ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3389: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public IDs getFollowersIDs(String screenName, Paging paging) throws WeiboException {
+	           ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3404: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public User updateLocation(String location) throws WeiboException {
+	            ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3416: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> favorites() throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3429: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> favorites(int page) throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3443: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> favorites(String id) throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3458: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Status> favorites(String id, int page) throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3471: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public User follow(String id) throws WeiboException {
+	            ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3483: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public User leave(String id) throws WeiboException {
+	            ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3498: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public User block(String id) throws WeiboException {
+	            ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3511: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public User unblock(String id) throws WeiboException {
+	            ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3525: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public User getAuthenticatedUser() throws WeiboException {
+	            ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3536: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public String getDowntimeSchedule() throws WeiboException {
+	              ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3548: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Trends> getDailyTrends() throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3560: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Trends> getDailyTrends(Date date, boolean excludeHashTags) throws WeiboException {
+	                    ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3574: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public List<Trends> getWeeklyTrends() throws WeiboException {
+                        ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3588: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public List<Trends> getWeeklyTrends(Date date, boolean excludeHashTags) throws WeiboException {
+                        ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3608: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Tag>gettags(String user_id)throws WeiboException{
+	                ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3619: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public List<Tag> getSuggestions()throws WeiboException{
+	                 ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3630: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public List<Status> getFavorites() throws WeiboException {
+                        ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3645: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public List<Status> getFavorites(String id) throws WeiboException {
+                        ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/Weibo.java:3661: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public List<Status> getFavorites(String id, int page) throws WeiboException {
+                        ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/User.java:600: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public boolean isFollowing() {
+                   ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/User.java:608: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public boolean isNotifications() {
+                   ^
+../dataset/june2020_dataset_copy/urld58fd5e7a9_longrm_weibo_robot_tgz-pJ8-weibo4j_org_json_TestJ8/src/weibo4j/User.java:617: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public boolean isNotificationEnabled() {
+                   ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+6 errors
+91 warnings

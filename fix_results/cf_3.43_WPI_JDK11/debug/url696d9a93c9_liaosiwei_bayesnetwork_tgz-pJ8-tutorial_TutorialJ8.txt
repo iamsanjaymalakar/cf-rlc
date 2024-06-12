@@ -1,0 +1,5 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^com/alibaba/DataPlot.java^17^com.alibaba.DataPlot.main([Ljava/lang/String;)V^3 = new <Application,Lcom/alibaba/DataRead>@0^NULL^FIELD,INVOKE,^false^true^Field escape;
+1^com/alibaba/Train.java^85^com.alibaba.Train.main([Ljava/lang/String;)V^3 = new <Application,Lcom/alibaba/DataRead>@0^NULL^FIELD,INVOKE,^false^true^Field escape;
+2^com/alibaba/TrainV2.java^81^com.alibaba.TrainV2.main([Ljava/lang/String;)V^3 = new <Application,Lcom/alibaba/DataRead>@0^NULL^FIELD,INVOKE,^false^true^Field escape;
+3^com/alibaba/DataRead.java^21^com.alibaba.DataRead.read()Ljava/lang/Boolean;^3 = new <Application,Ljava/io/BufferedReader>@1^com.alibaba.DataRead.read()Ljava/lang/Boolean;#4,^FIELD,^false^true^Field escape;

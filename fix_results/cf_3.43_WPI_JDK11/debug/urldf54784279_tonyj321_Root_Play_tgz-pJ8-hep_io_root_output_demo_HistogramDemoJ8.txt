@@ -1,0 +1,4 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^hep/io/root/output/TKey.java^71^hep.io.root.output.TKey.writeRecord(Lhep/io/root/output/RootRandomAccessFile;)V^31 = new <Application,Lhep/io/root/output/RootBufferedOutputStream>@91^NULL^INVOKE,ARRAY,^false^true^Array (or collection/map) escape;
+1^hep/io/root/output/TDirectory.java^54^hep.io.root.output.TDirectory.addOwnRecords(Lhep/io/root/output/Pointer;)V^5 = invokespecial < Application, Lhep/io/root/output/TDirectory, getTFile()Lhep/io/root/output/TFile; > 1 @1 exception:4^NULL^INVOKE,FIELD,^false^true^Field escape;
+2^hep/io/root/output/TDirectory.java^81^hep.io.root.output.TDirectory.add(Ljava/lang/Object;)V^21 = invokespecial < Application, Lhep/io/root/output/TDirectory, getTFile()Lhep/io/root/output/TFile; > 1 @43 exception:20^NULL^INVOKE,FIELD,^false^true^Field escape;

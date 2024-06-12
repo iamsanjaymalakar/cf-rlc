@@ -1,0 +1,17 @@
+36684
+146
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset_copy/url53f943c5cb_Praznat_AGP_tgz-pJ8-AMath_TestingJ8/src/Game/DefFile.java; Line number 23
+vim +23 ../../../dataset/june2020_dataset_copy/url53f943c5cb_Praznat_AGP_tgz-pJ8-AMath_TestingJ8/src/Game/DefFile.java
+
++++ Add following code below line: 40 (Game/DefFile.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 22
+
++++ Delete Line number 31 (Game/DefFile.java)
+
+--------------------------------------------

@@ -1,0 +1,123 @@
+24722
+7546
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/TestClientNonPPNServer.java; Line number 92
+vim +92 ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/TestClientNonPPNServer.java
+
++++ Add following code below line: 109 (ping/pong/net/client/io/TestClientNonPPNServer.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 92
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/TestClientNonPPNServer.java; Line number 104
+vim +104 ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/TestClientNonPPNServer.java
+
++++ Add following code above line:140 (ping/pong/net/client/io/TestClientNonPPNServer.java)
+try{
+    <NEW_VARIABLE>.close();
+} catch(Exception e){ e.printStackTrace(); }
+// where variable <NEW_VARIABLE> points to the resource from line 104
+
+--------------------------------------------
+15] ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java; Line number 154
+vim +154 ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java
+
++++ Add following code above line:154 (ping/pong/net/server/io/ServerConnectionManagerTest.java)
+try{
++++ Add following code after line:154 (ping/pong/net/server/io/ServerConnectionManagerTest.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 154
+
+--------------------------------------------
+16] ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java; Line number 161
+vim +161 ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java
+
++++ Add following code above line:161 (ping/pong/net/server/io/ServerConnectionManagerTest.java)
+try{
++++ Add following code after line:162 (ping/pong/net/server/io/ServerConnectionManagerTest.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 161
+
+--------------------------------------------
+22] ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 91
+vim +91 ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:91 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:97 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 91
+
+--------------------------------------------
+23] ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 125
+vim +125 ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:125 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:125 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 125
+
+--------------------------------------------
+24] ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 132
+vim +132 ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:132 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:139 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 132
+
++++ Delete Line number 147 (ping/pong/net/server/ClientExample.java)
+
+--------------------------------------------
+25] ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 199
+vim +199 ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:199 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:203 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 199
+
+--------------------------------------------
+26] ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 221
+vim +221 ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:221 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:225 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 221
+
+--------------------------------------------
+27] ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java; Line number 243
+vim +243 ../../../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java
+
++++ Add following code above line:243 (ping/pong/net/server/ClientExample.java)
+try{
++++ Add following code after line:247 (ping/pong/net/server/ClientExample.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 243
+
+--------------------------------------------

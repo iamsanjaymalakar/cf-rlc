@@ -1,0 +1,46 @@
+../dataset/june2020_dataset_copy/url748e34f967_Diab1o_java_7z_archiver_tgz-pJ8-com_swemel_sevenzip_TestJ8/src/com/swemel/sevenzip/archive/SevenZipFolderInStream.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ new InStreamWithCRC(updateItems.get(off + _fileIndex).getFullName()) $$ com.swemel.sevenzip.common.InStreamWithCRC $$ regular method exit $$ ( 1040, 1108 ) $$ @MustCall method close may not have been invoked on new InStreamWithCRC(updateItems.get(off + _fileIndex).getFullName()) or any of its aliases.
+            stream = new InStreamWithCRC(updateItems.get(off + _fileIndex).getFullName());
+                     ^
+  The type of object is: com.swemel.sevenzip.common.InStreamWithCRC.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url748e34f967_Diab1o_java_7z_archiver_tgz-pJ8-com_swemel_sevenzip_TestJ8/src/com/swemel/sevenzip/common/InStreamWithCRC.java:9: error: (required.method.not.called) $$ 4 $$ method close $$ field stream $$ java.io.RandomAccessFile $$  [[checkOwningField() did not find a reason!]] $$ ( 145, 177 ) $$ @MustCall method close may not have been invoked on field stream or any of its aliases.
+    private RandomAccessFile stream;
+                             ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope:  [[checkOwningField() did not find a reason!]]
+../dataset/june2020_dataset_copy/url748e34f967_Diab1o_java_7z_archiver_tgz-pJ8-com_swemel_sevenzip_TestJ8/src/com/swemel/sevenzip/common/InStreamWithCRC.java:16: error: (required.method.not.called) $$ 4 $$ method close $$ field stream $$ java.io.RandomAccessFile $$  Non-final owning field might be overwritten $$ ( 424, 478 ) $$ @MustCall method close may not have been invoked on field stream or any of its aliases.
+        stream = new RandomAccessFile(new File(fileName), "r");
+               ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url748e34f967_Diab1o_java_7z_archiver_tgz-pJ8-com_swemel_sevenzip_TestJ8/src/com/swemel/common/RandomAccessOutputStream.java:20: error: (required.method.not.called) $$ 4 $$ method close $$ field stream $$ java.io.RandomAccessFile $$  Non-final owning field might be overwritten $$ ( 663, 712 ) $$ @MustCall method close may not have been invoked on field stream or any of its aliases.
+        stream = new java.io.RandomAccessFile(file, mode);
+               ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url748e34f967_Diab1o_java_7z_archiver_tgz-pJ8-com_swemel_sevenzip_TestJ8/src/com/swemel/common/RandomAccessOutputStream.java:85: error: (contracts.exceptional.postcondition) $$ 3 $$ close $$ this.stream is @CalledMethods $$ this.stream is @CalledMethods("close") $$ ( 2279, 2495 ) $$ on exception, postcondition of close is not satisfied.
+    public void close() throws IOException {
+                ^
+  found   : this.stream is @CalledMethods
+  required: this.stream is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url748e34f967_Diab1o_java_7z_archiver_tgz-pJ8-com_swemel_sevenzip_TestJ8/src/com/swemel/sevenzip/SevenZip.java:23: error: (argument) $$ 4 $$ arg0 $$ LogManager.getLogger $$ @MustCall Class<@MustCall("createArchive") SevenZip> $$ @MustCallUnknown Class<? extends @MustCall Object> $$ ( 778, 792 ) $$ incompatible argument for parameter arg0 of LogManager.getLogger.
+    private final Logger logger = LogManager.getLogger(SevenZip.class);
+                                                               ^
+  found   : @MustCall Class<@MustCall("createArchive") SevenZip>
+  required: @MustCallUnknown Class<? extends @MustCall Object>
+../dataset/june2020_dataset_copy/url748e34f967_Diab1o_java_7z_archiver_tgz-pJ8-com_swemel_sevenzip_TestJ8/src/com/swemel/sevenzip/SevenZip.java:68: error: (required.method.not.called) $$ 4 $$ method close $$ field outStream $$ com.swemel.common.RandomAccessOutputStream $$  Non-final owning field might be overwritten $$ ( 2408, 2477 ) $$ @MustCall method close may not have been invoked on field outStream or any of its aliases.
+        outStream = new RandomAccessOutputStream(new File(archiveName), "rw");
+                  ^
+  The type of object is: com.swemel.common.RandomAccessOutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url748e34f967_Diab1o_java_7z_archiver_tgz-pJ8-com_swemel_sevenzip_TestJ8/src/com/swemel/sevenzip/SevenZip.java:102: error: (contracts.exceptional.postcondition) $$ 3 $$ createArchive $$ no information about this.outStream $$ this.outStream is @CalledMethods("close") $$ ( 3712, 7234 ) $$ on exception, postcondition of createArchive is not satisfied.
+    public void createArchive() throws IOException {
+                ^
+  found   : no information about this.outStream
+  required: this.outStream is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url748e34f967_Diab1o_java_7z_archiver_tgz-pJ8-com_swemel_sevenzip_TestJ8/src/com/swemel/sevenzip/SevenZip.java:150: error: (required.method.not.called) $$ 4 $$ method close $$ inStream $$ com.swemel.sevenzip.archive.SevenZipFolderInStream $$ possible exceptional exit due to encoder.code(inStream, outStream) with exception type java.io.IOException $$ ( 5563, 5626 ) $$ @MustCall method close may not have been invoked on inStream or any of its aliases.
+            SevenZipFolderInStream inStream = new SevenZipFolderInStream();
+                                   ^
+  The type of object is: com.swemel.sevenzip.archive.SevenZipFolderInStream.
+  Reason for going out of scope: possible exceptional exit due to encoder.code(inStream, outStream) with exception type java.io.IOException
+9 errors

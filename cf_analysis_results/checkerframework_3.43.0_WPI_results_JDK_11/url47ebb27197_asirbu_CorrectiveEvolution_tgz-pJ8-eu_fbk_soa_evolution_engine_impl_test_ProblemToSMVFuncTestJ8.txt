@@ -1,0 +1,327 @@
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/StateFormula.java:9: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/StateFormula.java:10: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElementWrapper;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/StateFormula.java:11: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElements;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/DomainObject.java:8: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/DomainObject.java:9: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/DomainObject.java:10: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAttribute;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/DomainObject.java:11: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/DomainObject.java:12: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElementWrapper;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/DomainObject.java:13: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElements;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/DomainObject.java:14: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlRootElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/DomainObject.java:18: error: cannot find symbol
+@XmlRootElement(name = "object", namespace = "http://soa.fbk.eu/Object")
+ ^
+  symbol: class XmlRootElement
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/DomainObject.java:19: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectState.java:3: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectState.java:4: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectState.java:5: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlRootElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectState.java:6: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlValue;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectState.java:13: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.NONE)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectState.java:14: error: cannot find symbol
+@XmlRootElement(name = "state", namespace = "http://soa.fbk.eu/Object")
+ ^
+  symbol: class XmlRootElement
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectEvent.java:3: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectEvent.java:4: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectEvent.java:5: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAttribute;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectEvent.java:6: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectEvent.java:7: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlValue;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectEvent.java:9: error: cannot find symbol
+@XmlType(name = "event", namespace = "http://soa.fbk.eu/Object")
+ ^
+  symbol: class XmlType
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectEvent.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.NONE)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectTransition.java:5: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectTransition.java:6: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectTransition.java:7: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectTransition.java:8: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlRootElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectTransition.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectTransition.java:11: error: cannot find symbol
+@XmlRootElement(name = "transition", namespace = "http://soa.fbk.eu/Object")
+ ^
+  symbol: class XmlRootElement
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/node/ProcessNode.java:6: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/node/ProcessNode.java:7: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/node/ProcessNode.java:8: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAttribute;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/node/ProcessNode.java:13: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.NONE)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/node/ActivityNode.java:5: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/node/ActivityNode.java:6: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/node/ActivityNode.java:7: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAttribute;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/node/ActivityNode.java:12: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.NONE)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/Activity.java:8: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/Activity.java:9: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/Activity.java:10: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAttribute;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/Activity.java:11: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/Activity.java:19: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.NONE)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/Effect.java:7: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/Effect.java:8: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/Effect.java:9: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/Effect.java:10: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElements;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/Effect.java:11: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlRootElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/Effect.java:18: error: cannot find symbol
+@XmlRootElement(name="effect", namespace = "http://soa.fbk.eu/Process")
+ ^
+  symbol: class XmlRootElement
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/Effect.java:19: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.NONE)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/EventLiteral.java:5: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/EventLiteral.java:6: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/EventLiteral.java:7: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAttribute;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectLiteral.java:5: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectLiteral.java:6: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectLiteral.java:7: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAttribute;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/ObjectLiteral.java:12: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.NONE)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/EventLiteral.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.NONE)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/StateLiteralClause.java:7: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/StateLiteralClause.java:8: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/StateLiteralClause.java:9: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/StateLiteralClause.java:10: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElements;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/StateLiteralClause.java:17: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.NONE)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/StateLiteral.java:3: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/StateLiteral.java:4: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/StateLiteral.java:5: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAttribute;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/domain/StateLiteral.java:8: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.NONE)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/DefaultProcessModel.java:11: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/DefaultProcessModel.java:12: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/DefaultProcessModel.java:13: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAttribute;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/DefaultProcessModel.java:14: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlRootElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/DefaultProcessModel.java:29: error: cannot find symbol
+@XmlRootElement(name="process", namespace = "http://soa.fbk.eu/Process")
+ ^
+  symbol: class XmlRootElement
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/DefaultProcessModel.java:30: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.NONE)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLProcessEdge.java:5: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAttribute;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLProcessEdge.java:6: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLProcessEdge.java:7: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlRootElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLProcessEdge.java:13: error: cannot find symbol
+@XmlRootElement(name="edge", namespace = "http://soa.fbk.eu/Process")
+ ^
+  symbol: class XmlRootElement
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLAdapter.java:7: error: package javax.xml.bind does not exist
+import javax.xml.bind.JAXBContext;
+                     ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLAdapter.java:8: error: package javax.xml.bind does not exist
+import javax.xml.bind.JAXBElement;
+                     ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLAdapter.java:9: error: package javax.xml.bind does not exist
+import javax.xml.bind.JAXBException;
+                     ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLAdapter.java:10: error: package javax.xml.bind does not exist
+import javax.xml.bind.Marshaller;
+                     ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLAdapter.java:11: error: package javax.xml.bind does not exist
+import javax.xml.bind.Unmarshaller;
+                     ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/GoalWithPriorities.java:7: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/GoalWithPriorities.java:8: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/GoalWithPriorities.java:9: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/GoalWithPriorities.java:10: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElementWrapper;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/GoalWithPriorities.java:11: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElements;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/GoalWithPriorities.java:12: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlRootElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/GoalWithPriorities.java:17: error: cannot find symbol
+@XmlRootElement(name = "goal", namespace = "http://soa.fbk.eu/Goal")
+ ^
+  symbol: class XmlRootElement
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/process/GoalWithPriorities.java:18: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLProcessModel.java:6: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLProcessModel.java:7: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLProcessModel.java:8: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAttribute;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLProcessModel.java:9: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLProcessModel.java:10: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElementWrapper;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLProcessModel.java:11: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlElements;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLProcessModel.java:12: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlRootElement;
+                                ^
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLProcessModel.java:19: error: cannot find symbol
+@XmlRootElement(name = "process", namespace = "http://soa.fbk.eu/Process")
+ ^
+  symbol: class XmlRootElement
+../dataset/june2020_dataset_copy/url47ebb27197_asirbu_CorrectiveEvolution_tgz-pJ8-eu_fbk_soa_evolution_engine_impl_test_ProblemToSMVFuncTestJ8/src/eu/fbk/soa/xml/XMLProcessModel.java:20: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.NONE)
+ ^
+  symbol: class XmlAccessorType
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+100 errors

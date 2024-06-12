@@ -1,0 +1,157 @@
+105152
+28021
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java; Line number 316
+vim +316 ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java
+
++++ Add following code below line: 325 (com/jgraph/example/GraphEdX.java)
+try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+// where variable <NEW_VARIABLE> points to the resource from line 315
+
++++ Delete Line number 320 (com/jgraph/example/GraphEdX.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java; Line number 352
+vim +352 ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java
+
++++ Add following code below line: 373 (com/jgraph/example/GraphEdX.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 351
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java; Line number 388
+vim +388 ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java
+
++++ Add following code below line: 395 (com/jgraph/example/GraphEdX.java)
+try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+// where variable <NEW_VARIABLE> points to the resource from line 387
+
++++ Delete Line number 391 (com/jgraph/example/GraphEdX.java)
+
+--------------------------------------------
+3] ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java; Line number 421
+vim +421 ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/GraphEdX.java
+
++++ Add following code below line: 453 (com/jgraph/example/GraphEdX.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 420
+
+--------------------------------------------
+4] ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/SerialGraph.java; Line number 55
+vim +55 ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/SerialGraph.java
+
++++ Add following code below line: 63 (com/jgraph/example/SerialGraph.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 54
+
++++ Delete Line number 58 (com/jgraph/example/SerialGraph.java)
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/SerialGraph.java; Line number 69
+vim +69 ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/example/SerialGraph.java
+
++++ Add following code below line: 77 (com/jgraph/example/SerialGraph.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 68
+
++++ Delete Line number 71 (com/jgraph/example/SerialGraph.java)
+
+--------------------------------------------
+6] ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphLayoutExample.java; Line number 282
+vim +282 ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphLayoutExample.java
+
++++ Add following code below line: 302 (com/jgraph/layout/JGraphLayoutExample.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 281
+
+--------------------------------------------
+7] ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphWordBrowser.java; Line number 320
+vim +320 ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphWordBrowser.java
+
++++ Add following code above line:319 (com/jgraph/layout/JGraphWordBrowser.java)
+try{
++++ Add following code after line:324 (com/jgraph/layout/JGraphWordBrowser.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 320
+
++++ Delete Line number 325 (com/jgraph/layout/JGraphWordBrowser.java)
+
+--------------------------------------------
+8] ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphWordBrowser.java; Line number 327
+vim +327 ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/JGraphWordBrowser.java
+
++++ Add following code above line:326 (com/jgraph/layout/JGraphWordBrowser.java)
+try{
++++ Add following code after line:332 (com/jgraph/layout/JGraphWordBrowser.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 327
+
++++ Delete Line number 333 (com/jgraph/layout/JGraphWordBrowser.java)
+
+--------------------------------------------
+9] ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/svg/SVGExample.java; Line number 104
+vim +104 ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/jgraph/layout/svg/SVGExample.java
+
++++ Add following code below line: 120 (com/jgraph/layout/svg/SVGExample.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 104
+
++++ Delete Line number 116 (com/jgraph/layout/svg/SVGExample.java)
+
+--------------------------------------------
+10] ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java; Line number 1708
+vim +1708 ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java
+
++++ Add following code above line:1707 (com/mxgraph/util/mxUtils.java)
+try{
++++ Add following code after line:1716 (com/mxgraph/util/mxUtils.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 1707
+
++++ Delete Line number 1718 (com/mxgraph/util/mxUtils.java)
+
+--------------------------------------------
+11] ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java; Line number 1735
+vim +1735 ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java
+
++++ Add following code above line:1735 (com/mxgraph/util/mxUtils.java)
+try{
++++ Add following code after line:1737 (com/mxgraph/util/mxUtils.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 1735
+
++++ Delete Line number 1738 (com/mxgraph/util/mxUtils.java)
+
+--------------------------------------------
+12] ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java; Line number 2427
+vim +2427 ../../../dataset/june2020_dataset_copy/url20b0f880a5_jgraph_legacy_jgraph5_tgz-pJ8-org_jgraph_example_HelloWorldJ8/src/com/mxgraph/util/mxUtils.java
+
++++ Add following code below line: 2432 (com/mxgraph/util/mxUtils.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 2427
+
+--------------------------------------------

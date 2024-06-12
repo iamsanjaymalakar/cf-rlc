@@ -1,0 +1,33 @@
+../dataset/june2020_dataset_copy/urlefa3b0a07b_jhngzhu_Database_RelationalOperator_tgz-pJ8-tests_ROTestJ8/src/relop/HashTableDup.java:27: error: (argument) $$ 4 $$ key $$ Hashtable.put $$ @CalledMethods SearchKey $$ ? extends @CalledMethods Object $$ ( 705, 708 ) $$ incompatible argument for parameter key of Hashtable.put.
+      put(key, value);
+          ^
+  found   : @CalledMethods SearchKey
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/urlefa3b0a07b_jhngzhu_Database_RelationalOperator_tgz-pJ8-tests_ROTestJ8/src/relop/HashTableDup.java:27: error: (argument) $$ 4 $$ value $$ Hashtable.put $$ @CalledMethods Tuple $$ ? extends @CalledMethods Object $$ ( 710, 715 ) $$ incompatible argument for parameter value of Hashtable.put.
+      put(key, value);
+               ^
+  found   : @CalledMethods Tuple
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/urlefa3b0a07b_jhngzhu_Database_RelationalOperator_tgz-pJ8-tests_ROTestJ8/src/relop/HashTableDup.java:32: error: (argument) $$ 4 $$ key $$ Hashtable.put $$ @CalledMethods SearchKey $$ ? extends @CalledMethods Object $$ ( 826, 829 ) $$ incompatible argument for parameter key of Hashtable.put.
+      put(key, new Tuple[] { (Tuple) existing, value });
+          ^
+  found   : @CalledMethods SearchKey
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/urlefa3b0a07b_jhngzhu_Database_RelationalOperator_tgz-pJ8-tests_ROTestJ8/src/relop/HashTableDup.java:32: error: (argument) $$ 4 $$ value $$ Hashtable.put $$ @CalledMethods Tuple @CalledMethods [] $$ ? extends @CalledMethods Object $$ ( 831, 870 ) $$ incompatible argument for parameter value of Hashtable.put.
+      put(key, new Tuple[] { (Tuple) existing, value });
+               ^
+  found   : @CalledMethods Tuple @CalledMethods []
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/urlefa3b0a07b_jhngzhu_Database_RelationalOperator_tgz-pJ8-tests_ROTestJ8/src/relop/HashTableDup.java:40: error: (argument) $$ 4 $$ key $$ Hashtable.put $$ @CalledMethods SearchKey $$ ? extends @CalledMethods Object $$ ( 1110, 1113 ) $$ incompatible argument for parameter key of Hashtable.put.
+      put(key, a);
+          ^
+  found   : @CalledMethods SearchKey
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/urlefa3b0a07b_jhngzhu_Database_RelationalOperator_tgz-pJ8-tests_ROTestJ8/src/relop/HashTableDup.java:40: error: (argument) $$ 4 $$ value $$ Hashtable.put $$ @CalledMethods({"add", "addAll"}) ArrayList<@CalledMethods Tuple> $$ ? extends @CalledMethods Object $$ ( 1115, 1116 ) $$ incompatible argument for parameter value of Hashtable.put.
+      put(key, a);
+               ^
+  found   : @CalledMethods({"add", "addAll"}) ArrayList<@CalledMethods Tuple>
+  required: ? extends @CalledMethods Object
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+6 errors

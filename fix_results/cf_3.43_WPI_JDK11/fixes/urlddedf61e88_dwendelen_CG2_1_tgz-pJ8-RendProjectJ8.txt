@@ -1,0 +1,17 @@
+16590
+1304
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset_copy/urlddedf61e88_dwendelen_CG2_1_tgz-pJ8-RendProjectJ8/src/ImagePack/RGBEFormat.java; Line number 28
+vim +28 ../../../dataset/june2020_dataset_copy/urlddedf61e88_dwendelen_CG2_1_tgz-pJ8-RendProjectJ8/src/ImagePack/RGBEFormat.java
+
++++ Add following code above line:28 (ImagePack/RGBEFormat.java)
+try{
++++ Add following code after line:30 (ImagePack/RGBEFormat.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 28
+
+--------------------------------------------

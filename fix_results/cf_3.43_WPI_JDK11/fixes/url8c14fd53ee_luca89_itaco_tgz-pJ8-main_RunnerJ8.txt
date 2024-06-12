@@ -1,0 +1,72 @@
+33970
+3015
+
+SOURCE LEVEL FIXES
+
+4] ../../../dataset/june2020_dataset_copy/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java; Line number 139
+vim +139 ../../../dataset/june2020_dataset_copy/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java
+
++++ Add following code above line:139 (compilatore/JasminTarget.java)
+try{
++++ Add following code after line:147 (compilatore/JasminTarget.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 139
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset_copy/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java; Line number 162
+vim +162 ../../../dataset/june2020_dataset_copy/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java
+
++++ Add following code above line:162 (compilatore/JasminTarget.java)
+try{
++++ Add following code after line:171 (compilatore/JasminTarget.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 162
+
+--------------------------------------------
+7] ../../../dataset/june2020_dataset_copy/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java; Line number 391
+vim +391 ../../../dataset/june2020_dataset_copy/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java
+
++++ Add following code above line:391 (compilatore/JasminTarget.java)
+try{
++++ Add following code after line:392 (compilatore/JasminTarget.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 391
+
++++ Delete Line number 393 (compilatore/JasminTarget.java)
+
+--------------------------------------------
+8] ../../../dataset/june2020_dataset_copy/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java; Line number 421
+vim +421 ../../../dataset/june2020_dataset_copy/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/compilatore/JasminTarget.java
+
++++ Add following code above line:421 (compilatore/JasminTarget.java)
+try{ 
++++ Add following code below line:421 (compilatore/JasminTarget.java)
+} catch(Exception e){ 
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+    throw e; 
+}
++++ Add following code below line: 426 (compilatore/JasminTarget.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 421
+
++++ Delete Line number 427 (compilatore/JasminTarget.java)
+
+--------------------------------------------
+9] ../../../dataset/june2020_dataset_copy/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/main/FileItaco.java; Line number 221
+vim +221 ../../../dataset/june2020_dataset_copy/url8c14fd53ee_luca89_itaco_tgz-pJ8-main_RunnerJ8/src/main/FileItaco.java
+
++++ Add following code below line: 231 (main/FileItaco.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 220
+
+--------------------------------------------

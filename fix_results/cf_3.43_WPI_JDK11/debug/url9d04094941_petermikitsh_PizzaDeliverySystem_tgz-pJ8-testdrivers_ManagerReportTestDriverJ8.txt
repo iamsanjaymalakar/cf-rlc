@@ -1,0 +1,3 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^model/database/Database.java^136^model.database.Database.save()V^3 = new <Application,Ljava/beans/XMLEncoder>@0^model.database.Database.save()V#4,model.database.Database.save()V#5,^INVOKE,^false^false^Try-catch Fix;
+1^model/database/Database.java^161^model.database.Database.load()V^3 = new <Application,Ljava/beans/XMLDecoder>@0^NULL^INVOKE,^false^false^Try-catch Fix;

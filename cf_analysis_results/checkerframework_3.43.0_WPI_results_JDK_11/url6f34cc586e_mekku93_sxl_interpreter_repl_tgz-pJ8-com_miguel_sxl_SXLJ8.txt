@@ -1,0 +1,6 @@
+../dataset/june2020_dataset_copy/url6f34cc586e_mekku93_sxl_interpreter_repl_tgz-pJ8-com_miguel_sxl_SXLJ8/src/com/miguel/sxl/SXLSymbolTable.java:7: error: package org.omg.DynamicAny.DynAnyPackage does not exist
+import org.omg.DynamicAny.DynAnyPackage.TypeMismatch;
+                                       ^
+Note: ../dataset/june2020_dataset_copy/url6f34cc586e_mekku93_sxl_interpreter_repl_tgz-pJ8-com_miguel_sxl_SXLJ8/src/com/miguel/sxl/SXLVistor.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error

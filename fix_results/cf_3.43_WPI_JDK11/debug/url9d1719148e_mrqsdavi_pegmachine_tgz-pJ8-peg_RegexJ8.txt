@@ -1,0 +1,3 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^peg/AnalizadorLexico.java^258^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+1^peg/AnalizadorLexico.java^367^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

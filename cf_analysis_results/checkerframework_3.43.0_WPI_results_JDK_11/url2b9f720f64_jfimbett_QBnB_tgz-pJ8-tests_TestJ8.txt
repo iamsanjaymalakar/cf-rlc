@@ -1,0 +1,76 @@
+../dataset/june2020_dataset_copy/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/algorithms/StdOut.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ field out $$ java.io.PrintWriter $$ Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "out", methods = "close"), @EnsuresCalledMethodsOnException(value = "out", methods = "close") $$ ( 1182, 1213 ) $$ @MustCall method close may not have been invoked on field out or any of its aliases.
+    private static PrintWriter out;
+                               ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "out", methods = "close"), @EnsuresCalledMethodsOnException(value = "out", methods = "close")
+../dataset/june2020_dataset_copy/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/algorithms/StdOut.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ field out $$ java.io.PrintWriter $$ Field assignment outside method or declaration might overwrite field's current value $$ ( 1309, 1386 ) $$ @MustCall method close may not have been invoked on field out or any of its aliases.
+            out = new PrintWriter(new OutputStreamWriter(System.out, CHARSET_NAME), true);
+                ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: Field assignment outside method or declaration might overwrite field's current value
+../dataset/june2020_dataset_copy/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/algorithms/StdOut.java:52: error: (flowexpr.parse.error) $$ 1 $$ 'this.out' in the postcondition EnsuresCalledMethods on the declaration of method 'close': Invalid 'this' because "this" isn't allowed here $$ ( 1637, 1694 ) $$ cannot parse the expression 'this.out' in the postcondition EnsuresCalledMethods on the declaration of method 'close': Invalid 'this' because "this" isn't allowed here
+    public static void close() {
+                       ^
+../dataset/june2020_dataset_copy/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/algorithms/StdIn.java:320: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static int[] readInts() {
+                        ^
+../dataset/june2020_dataset_copy/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/algorithms/StdIn.java:331: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static double[] readDoubles() {
+                           ^
+../dataset/june2020_dataset_copy/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/algorithms/StdIn.java:340: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static String[] readStrings() {
+                           ^
+../dataset/june2020_dataset_copy/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/algorithms/StdIn.java:109: error: (required.method.not.called) $$ 4 $$ method close $$ scanner.useDelimiter(EMPTY_PATTERN) $$ java.util.Scanner $$ regular method exit $$ ( 4507, 4542 ) $$ @MustCall method close may not have been invoked on scanner.useDelimiter(EMPTY_PATTERN) or any of its aliases.
+        scanner.useDelimiter(EMPTY_PATTERN);
+                            ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/algorithms/StdIn.java:111: error: (required.method.not.called) $$ 4 $$ method close $$ scanner.useDelimiter(WHITESPACE_PATTERN) $$ java.util.Scanner $$ regular method exit $$ ( 4598, 4638 ) $$ @MustCall method close may not have been invoked on scanner.useDelimiter(WHITESPACE_PATTERN) or any of its aliases.
+        scanner.useDelimiter(WHITESPACE_PATTERN);
+                            ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/algorithms/StdIn.java:132: error: (required.method.not.called) $$ 4 $$ method close $$ scanner.useDelimiter(EMPTY_PATTERN) $$ java.util.Scanner $$ possible exceptional exit due to null with exception type java.lang.AssertionError $$ ( 5202, 5237 ) $$ @MustCall method close may not have been invoked on scanner.useDelimiter(EMPTY_PATTERN) or any of its aliases.
+        scanner.useDelimiter(EMPTY_PATTERN);
+                            ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: possible exceptional exit due to null with exception type java.lang.AssertionError
+../dataset/june2020_dataset_copy/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/algorithms/StdIn.java:136: error: (required.method.not.called) $$ 4 $$ method close $$ scanner.useDelimiter(WHITESPACE_PATTERN) $$ java.util.Scanner $$ regular method exit $$ ( 5406, 5446 ) $$ @MustCall method close may not have been invoked on scanner.useDelimiter(WHITESPACE_PATTERN) or any of its aliases.
+        scanner.useDelimiter(WHITESPACE_PATTERN);
+                            ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/algorithms/StdIn.java:149: error: (required.method.not.called) $$ 4 $$ method close $$ scanner.useDelimiter(EVERYTHING_PATTERN) $$ java.util.Scanner $$ regular method exit $$ ( 5757, 5797 ) $$ @MustCall method close may not have been invoked on scanner.useDelimiter(EVERYTHING_PATTERN) or any of its aliases.
+        String result = scanner.useDelimiter(EVERYTHING_PATTERN).next();
+                                            ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/algorithms/StdIn.java:151: error: (required.method.not.called) $$ 4 $$ method close $$ scanner.useDelimiter(WHITESPACE_PATTERN) $$ java.util.Scanner $$ regular method exit $$ ( 5893, 5933 ) $$ @MustCall method close may not have been invoked on scanner.useDelimiter(WHITESPACE_PATTERN) or any of its aliases.
+        scanner.useDelimiter(WHITESPACE_PATTERN); // but let's do it anyway
+                            ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/algorithms/StdIn.java:310: error: (required.method.not.called) $$ 4 $$ method close $$ StdIn.scanner.useLocale(LOCALE) $$ java.util.Scanner $$ regular method exit $$ ( 11907, 11938 ) $$ @MustCall method close may not have been invoked on StdIn.scanner.useLocale(LOCALE) or any of its aliases.
+        StdIn.scanner.useLocale(LOCALE);
+                               ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/tests/Test.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ fr $$ java.io.FileReader $$ possible exceptional exit due to bf.readLine() with exception type java.io.IOException $$ ( 1606, 1640 ) $$ @MustCall method close may not have been invoked on fr or any of its aliases.
+			FileReader fr = new FileReader(f);
+			           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to bf.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/tests/KnapsackInstances.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ fr $$ java.io.FileReader $$ possible exceptional exit due to bf.readLine() with exception type java.io.IOException $$ ( 501, 534 ) $$ @MustCall method close may not have been invoked on fr or any of its aliases.
+		FileReader fr= new FileReader(f);
+		           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to bf.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url2b9f720f64_jfimbett_QBnB_tgz-pJ8-tests_TestJ8/src/knapSavings/KnapSavings.java:151: error: (required.method.not.called) $$ 4 $$ method close $$ fr $$ java.io.FileReader $$ possible exceptional exit due to bf.readLine() with exception type java.io.IOException $$ ( 3154, 3187 ) $$ @MustCall method close may not have been invoked on fr or any of its aliases.
+		FileReader fr= new FileReader(f);
+		           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to bf.readLine() with exception type java.io.IOException
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+13 errors
+3 warnings

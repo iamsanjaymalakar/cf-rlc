@@ -1,0 +1,51 @@
+24064
+1037
+
+SOURCE LEVEL FIXES
+
+14] ../../../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/Networker.java; Line number 109
+vim +109 ../../../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/Networker.java
+
++++ Add following code below line: 127 (org/pcj/internal/Networker.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 109
+
++++ Delete Line number 111 (org/pcj/internal/Networker.java)
+
+--------------------------------------------
+16] ../../../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/test/PcjMicroBenchmarkBroadcast.java; Line number 88
+vim +88 ../../../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/test/PcjMicroBenchmarkBroadcast.java
+
++++ Add following code above line:101 (org/pcj/test/PcjMicroBenchmarkBroadcast.java)
+try{ 
++++ Add following code below line:102 (org/pcj/test/PcjMicroBenchmarkBroadcast.java)
+} catch(Exception e){ 
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+    throw e; 
+}
++++ Add following code above line:132 (org/pcj/test/PcjMicroBenchmarkBroadcast.java)
+try{
+    <NEW_VARIABLE>.close();
+} catch(Exception e){ e.printStackTrace(); }
+// where variable <NEW_VARIABLE> points to the resource from line 88
+
+--------------------------------------------
+17] ../../../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/test/PcjMicroBenchmarkPingPong.java; Line number 172
+vim +172 ../../../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/test/PcjMicroBenchmarkPingPong.java
+
++++ Add following code above line:179 (org/pcj/test/PcjMicroBenchmarkPingPong.java)
+try{ 
++++ Add following code below line:180 (org/pcj/test/PcjMicroBenchmarkPingPong.java)
+} catch(Exception e){ 
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+    throw e; 
+}
++++ Add following code above line:190 (org/pcj/test/PcjMicroBenchmarkPingPong.java)
+try{
+    <NEW_VARIABLE>.close();
+} catch(Exception e){ e.printStackTrace(); }
+// where variable <NEW_VARIABLE> points to the resource from line 172
+
+--------------------------------------------

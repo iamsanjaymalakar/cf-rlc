@@ -1,0 +1,9 @@
+warning: MustCallChecker did not find annotation file or directory ../dataset/june2020_dataset_copy/url3f8d6440dd_huiwq1990_CognativeModel_tgz-pJ8-clarion_samples_HelloWorldJ8/wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset_copy/url3f8d6440dd_huiwq1990_CognativeModel_tgz-pJ8-clarion_samples_HelloWorldJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+warning: ResourceLeakChecker did not find annotation file or directory ../dataset/june2020_dataset_copy/url3f8d6440dd_huiwq1990_CognativeModel_tgz-pJ8-clarion_samples_HelloWorldJ8/wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset_copy/url3f8d6440dd_huiwq1990_CognativeModel_tgz-pJ8-clarion_samples_HelloWorldJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+2 warnings

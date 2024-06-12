@@ -1,0 +1,21 @@
+../dataset/june2020_dataset_copy/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/com/skm/test/AngelListTest.java:10: error: package javax.xml.bind does not exist
+import javax.xml.bind.DatatypeConverter;
+                     ^
+../dataset/june2020_dataset_copy/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/com/skm/MainAction.java:12: error: package javax.xml.bind does not exist
+import javax.xml.bind.DatatypeConverter;
+                     ^
+../dataset/june2020_dataset_copy/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/com/skm/test/AngelListTest.java:46: error: cannot find symbol
+						Calendar dtCal = DatatypeConverter.parseDateTime(jobsObj.getString("created_at"));
+						                 ^
+  symbol:   variable DatatypeConverter
+  location: class AngelListTest
+../dataset/june2020_dataset_copy/urlabf490b498_anilasj_skillmonster_tgz-pJ8-org_json_TestJ8/src/com/skm/MainAction.java:139: error: cannot find symbol
+						Calendar dtCal = DatatypeConverter.parseDateTime(jobsObj.getString("created_at"));
+						                 ^
+  symbol:   variable DatatypeConverter
+  location: class MainAction
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 errors

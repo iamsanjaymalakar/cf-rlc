@@ -1,0 +1,30 @@
+../dataset/june2020_dataset_copy/url1a41b8e9f2_mr1azl_INF345_tgz-pJ8-TestParserJ8/src/xpathParser/bench/pt/DefaultParser.java:25: error: (required.method.not.called) $$ 4 $$ method close $$ file $$ java.io.FileInputStream $$ possible exceptional exit due to builderFactory.newDocumentBuilder() with exception type javax.xml.parsers.ParserConfigurationException $$ ( 422, 492 ) $$ @MustCall method close may not have been invoked on file or any of its aliases.
+			     FileInputStream file = new FileInputStream(new File("benchmark.xml"));
+			                     ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to builderFactory.newDocumentBuilder() with exception type javax.xml.parsers.ParserConfigurationException
+../dataset/june2020_dataset_copy/url1a41b8e9f2_mr1azl_INF345_tgz-pJ8-TestParserJ8/src/org/eclipse/wb/swt/SWTResourceManager.java:139: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(path) $$ java.io.FileInputStream $$ possible exceptional exit due to getImage(new FileInputStream(path)) with exception type java.io.IOException $$ ( 4543, 4568 ) $$ @MustCall method close may not have been invoked on new FileInputStream(path) or any of its aliases.
+				image = getImage(new FileInputStream(path));
+				                 ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to getImage(new FileInputStream(path)) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url1a41b8e9f2_mr1azl_INF345_tgz-pJ8-TestParserJ8/src/org/eclipse/wb/swt/SWTResourceManager.java:162: error: (required.method.not.called) $$ 4 $$ method close $$ clazz.getResourceAsStream(path) $$ java.io.InputStream $$ regular method exit $$ ( 5285, 5316 ) $$ @MustCall method close may not have been invoked on clazz.getResourceAsStream(path) or any of its aliases.
+				image = getImage(clazz.getResourceAsStream(path));
+				                                          ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url1a41b8e9f2_mr1azl_INF345_tgz-pJ8-TestParserJ8/src/Main.java:39: error: (required.method.not.called) $$ 4 $$ method close $$ file $$ java.io.FileInputStream $$ possible exceptional exit due to builder.parse(file) with exception type java.io.FileNotFoundException $$ ( 1141, 1200 ) $$ @MustCall method close may not have been invoked on file or any of its aliases.
+ 		        FileInputStream file = new FileInputStream(new File(path));
+ 		                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to builder.parse(file) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset_copy/url1a41b8e9f2_mr1azl_INF345_tgz-pJ8-TestParserJ8/src/Main.java:72: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileWriter $$ possible exceptional exit due to bw.write(xml) with exception type java.io.IOException $$ ( 2222, 2276 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+ 					FileWriter fw = new FileWriter(out.getAbsoluteFile());
+ 					           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bw.write(xml) with exception type java.io.IOException
+Note: ../dataset/june2020_dataset_copy/url1a41b8e9f2_mr1azl_INF345_tgz-pJ8-TestParserJ8/src/xx/Utils.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors

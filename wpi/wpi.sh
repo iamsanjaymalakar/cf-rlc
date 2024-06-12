@@ -22,8 +22,17 @@ SRC_FILES="$PROJECT_PATH/cf_srcs.txt"
 # Populate the source files information in SRC_FILES
 find $PROJECT_PATH/src -name "*.java" > "$SRC_FILES"
 
-# The compile and clean commands for the project's build system.
-BUILD_CMD="$JAVAC_WITH_FLAGS \
+
+BUILD_CMD="javac \
+-J--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED \
+-J--add-exports=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED \
+-J--add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED \
+-J--add-exports=jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED \
+-J--add-exports=jdk.compiler/com.sun.tools.javac.model=ALL-UNNAMED \
+-J--add-exports=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED \
+-J--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED \
+-J--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED \
+-J--add-opens=jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED \
 $CF_DIST_JAR_ARG \
 -processor org.checkerframework.checker.resourceleak.ResourceLeakChecker \
 -Adetailedmsgtext \
@@ -37,8 +46,7 @@ $CF_DIST_JAR_ARG \
 -g \
 -d $COMPILED_CLASSES_FOLDER \
 -cp $lib_folder:$CHECKER_QUAL_JAR \
-@${SRC_FILES} \
--source 8 -target 8"
+@${SRC_FILES}"
 
 echo $BUILD_CMD
 

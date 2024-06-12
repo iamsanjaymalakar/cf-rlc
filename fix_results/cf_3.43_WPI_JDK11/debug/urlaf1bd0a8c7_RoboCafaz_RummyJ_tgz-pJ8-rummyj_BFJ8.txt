@@ -1,0 +1,4 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^rummyj/FilePrinter.java^31^rummyj.FilePrinter.openBuffer(Ljava/lang/String;Ljava/lang/String;)V^4 = new <Application,Ljava/io/FileWriter>@0^NULL^FIELD,^false^true^Field escape;
+1^rummyj/FilePrinter.java^32^rummyj.FilePrinter.openBuffer(Ljava/lang/String;Ljava/lang/String;)V^19 = new <Application,Ljava/io/BufferedWriter>@33^rummyj.FilePrinter.openBuffer(Ljava/lang/String;Ljava/lang/String;)V#20,^FIELD,^false^true^Field escape;
+2^rummyj/FilePrinter.java^10^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

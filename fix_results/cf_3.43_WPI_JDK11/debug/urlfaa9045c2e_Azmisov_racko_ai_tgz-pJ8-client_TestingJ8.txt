@@ -1,0 +1,3 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^NeuralNetworks/Network.java^40^NeuralNetworks.Network.<init>(Ljava/lang/String;)V^10 = new <Application,Ljava/util/Scanner>@26^NULL^INVOKE,^false^true^Finally method location not found;Try-catch Fix;
+1^models/ModelBaltar.java^47^models.ModelBaltar.<init>()V^53 = new <Application,Ljava/io/FileReader>@174^models.ModelBaltar.<init>()V#55,^INVOKE,^false^false^Loop Fix;Normal Fix;

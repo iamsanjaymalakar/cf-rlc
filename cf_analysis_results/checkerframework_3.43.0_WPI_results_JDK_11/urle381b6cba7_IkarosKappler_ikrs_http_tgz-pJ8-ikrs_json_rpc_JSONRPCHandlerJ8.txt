@@ -1,0 +1,323 @@
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/fileio/htaccess/HypertextAccessFile.java:158: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileInputStream $$ possible exceptional exit due to read(in, strictMode) with exception type java.io.IOException $$ ( 4588, 4635 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+	FileInputStream in = new FileInputStream(file);
+	                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to read(in, strictMode) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/HTTPHandler.java:395: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(fileHandlersFile) $$ java.io.FileInputStream $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 13224, 13261 ) $$ @MustCall method close may not have been invoked on new FileInputStream(fileHandlersFile) or any of its aliases.
+	    BufferedReader reader = new BufferedReader( new InputStreamReader( new FileInputStream(fileHandlersFile) ) );
+	                                                                       ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/util/HexDumpOutputStream.java:94: error: (required.method.not.called) $$ 4 $$ method close $$ field coreWriter $$ java.io.Writer $$  Non-final owning field might be overwritten $$ ( 2606, 2630 ) $$ @MustCall method close may not have been invoked on field coreWriter or any of its aliases.
+	this.coreWriter = writer;
+	                ^
+  The type of object is: java.io.Writer.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/util/HexDumpOutputStream.java:94: error: (assignment) $$ 2 $$ @PolyMustCall Writer $$ @MustCall("close") Writer $$ ( 2624, 2630 ) $$ incompatible types in assignment.
+	this.coreWriter = writer;
+	                  ^
+  found   : @PolyMustCall Writer
+  required: @MustCall("close") Writer
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/util/HexDumpOutputStream.java:125: error: (contracts.exceptional.postcondition) $$ 3 $$ close $$ this.coreWriter is @CalledMethods $$ this.coreWriter is @CalledMethods("close") $$ ( 3489, 3602 ) $$ on exception, postcondition of close is not satisfied.
+    public void	close() 
+               	^
+  found   : this.coreWriter is @CalledMethods
+  required: this.coreWriter is @CalledMethods("close")
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/util/HexDumpOutputStream.java:281: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to in.read() with exception type java.io.IOException $$ ( 6855, 6937 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+	    java.io.InputStream in = new java.io.FileInputStream( new java.io.File(argv[0]) );
+	                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to in.read() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/socketmngr/ServerSocketThread.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ field serverSocket $$ java.net.ServerSocket $$  The enclosing element ikrs.yuccasrv.socketmngr.ServerSocketThread has an empty @MustCall annotation $$ ( 1551, 1585 ) $$ @MustCall method close may not have been invoked on field serverSocket or any of its aliases.
+    private ServerSocket serverSocket;
+                         ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  The enclosing element ikrs.yuccasrv.socketmngr.ServerSocketThread has an empty @MustCall annotation
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/socketmngr/ServerSocketThread.java:102: error: (required.method.not.called) $$ 4 $$ method close $$ field serverSocket $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 2552, 2687 ) $$ @MustCall method close may not have been invoked on field serverSocket or any of its aliases.
+		this.serverSocket = createSSLServerSocket( bindPort,
+		                  ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/socketmngr/ServerSocketThread.java:115: error: (required.method.not.called) $$ 4 $$ method close $$ field serverSocket $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 2895, 2990 ) $$ @MustCall method close may not have been invoked on field serverSocket or any of its aliases.
+	    this.serverSocket = new ServerSocket( bindPort,
+	                      ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/socketmngr/ServerSocketThread.java:272: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(fileName) $$ java.io.FileInputStream $$ possible exceptional exit due to keyStore.load(new FileInputStream(fileName), (password == null ? new char[0] : password)) with exception type java.io.IOException $$ ( 8598, 8627 ) $$ @MustCall method close may not have been invoked on new FileInputStream(fileName) or any of its aliases.
+	keyStore.load( new FileInputStream(fileName), 
+	               ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to keyStore.load(new FileInputStream(fileName), (password == null ? new char[0] : password)) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/socketmngr/ServerSocketThread.java:301: error: (required.method.not.called) $$ 4 $$ method close $$ sock $$ java.net.Socket $$ possible exceptional exit due to this.bindSettings.get(Constants.KEY_CONNECTION_COUNT) with exception type java.lang.SecurityException $$ ( 9119, 9160 ) $$ @MustCall method close may not have been invoked on sock or any of its aliases.
+		Socket sock = this.serverSocket.accept();
+		       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to this.bindSettings.get(Constants.KEY_CONNECTION_COUNT) with exception type java.lang.SecurityException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/ErrorResponseBuilder.java:281: error: (required.method.not.called) $$ 4 $$ method close $$ tmpFileResource.getInputStream() $$ java.io.InputStream $$ possible exceptional exit due to new ReplacingResource(this.getHTTPHandler(), this.getHTTPHandler().getLogger(), tmpFileResource.getInputStream(), true, errorDocumentReplacementMap) with exception type java.util.MissingResourceException $$ ( 9850, 9882 ) $$ @MustCall method close may not have been invoked on tmpFileResource.getInputStream() or any of its aliases.
+						  tmpFileResource.getInputStream(),						  
+						                                ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new ReplacingResource(this.getHTTPHandler(), this.getHTTPHandler().getLogger(), tmpFileResource.getInputStream(), true, errorDocumentReplacementMap) with exception type java.util.MissingResourceException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/JSONRPCExampleHandler.java:205: error: (required.method.not.called) $$ 4 $$ method close $$ postData.getInputStream() $$ java.io.InputStream $$ regular method exit $$ ( 6848, 6873 ) $$ @MustCall method close may not have been invoked on postData.getInputStream() or any of its aliases.
+	    JSONRPCResponse response = rpc.call( new InputStreamReader(postData.getInputStream()) );
+	                                                                                      ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/LightDBExampleHandler.java:212: error: (required.method.not.called) $$ 4 $$ method close $$ postData.getInputStream() $$ java.io.InputStream $$ regular method exit $$ ( 6792, 6817 ) $$ @MustCall method close may not have been invoked on postData.getInputStream() or any of its aliases.
+	    JSONRPCResponse response = this.rpcHandler.call( new InputStreamReader(postData.getInputStream()) );
+	                                                                                                  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/ReadLimitInputStream.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ field in $$ ikrs.io.BytePositionInputStream $$  Non-final owning field might be overwritten $$ ( 972, 1015 ) $$ @MustCall method close may not have been invoked on field in or any of its aliases.
+	this.in = new BytePositionInputStream( in );
+	        ^
+  The type of object is: ikrs.io.BytePositionInputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/ReadLimitInputStream.java:45: error: (assignment) $$ 2 $$ @PolyMustCall BytePositionInputStream $$ @MustCall("close") BytePositionInputStream $$ ( 982, 1015 ) $$ incompatible types in assignment.
+	this.in = new BytePositionInputStream( in );
+	          ^
+  found   : @PolyMustCall BytePositionInputStream
+  required: @MustCall("close") BytePositionInputStream
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/ReadLimitInputStream.java:66: error: (contracts.postcondition.override) $$ 6 $$ this.in $$ close $$ ikrs.io.BytePositionInputStream $$ @CalledMethods("close") $$ ikrs.io.ReadLimitInputStream $$ no information $$ ( 1463, 1542 ) $$ Subclass postcondition is weaker for 'this.in' in close.
+    public synchronized void close() 
+                             ^
+    In superclass ikrs.io.BytePositionInputStream: @CalledMethods("close")
+    In subclass ikrs.io.ReadLimitInputStream: no information
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/BytePositionInputStream.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ field in $$ java.io.InputStream $$  Non-final owning field might be overwritten $$ ( 1038, 1050 ) $$ @MustCall method close may not have been invoked on field in or any of its aliases.
+	this.in = in;
+	        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/BytePositionInputStream.java:47: error: (assignment) $$ 2 $$ @PolyMustCall InputStream $$ @MustCall("close") InputStream $$ ( 1048, 1050 ) $$ incompatible types in assignment.
+	this.in = in;
+	          ^
+  found   : @PolyMustCall InputStream
+  required: @MustCall("close") InputStream
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/MultiStopMarkInputStream.java:346: error: (required.method.not.called) $$ 4 $$ method close $$ new StopMarkInputStream(in, this.stopMarks.get(this.stopMarks.size() - 1)) $$ ikrs.io.StopMarkInputStream $$ regular method exit $$ ( 10486, 10582 ) $$ @MustCall method close may not have been invoked on new StopMarkInputStream(in, this.stopMarks.get(this.stopMarks.size() - 1)) or any of its aliases.
+	    new StopMarkInputStream( in, 
+	    ^
+  The type of object is: ikrs.io.StopMarkInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/MultiStopMarkInputStream.java:351: error: (required.method.not.called) $$ 4 $$ method close $$ new StopMarkInputStream(this.currentStreams[i + 1], this.stopMarks.get(i)) $$ ikrs.io.StopMarkInputStream $$ regular method exit $$ ( 10670, 10772 ) $$ @MustCall method close may not have been invoked on new StopMarkInputStream(this.currentStreams[i + 1], this.stopMarks.get(i)) or any of its aliases.
+	    this.currentStreams[i] = new StopMarkInputStream( this.currentStreams[i+1], 
+	                             ^
+  The type of object is: ikrs.io.StopMarkInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/MultiStopMarkInputStream.java:388: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ ikrs.io.MultiStopMarkInputStream $$ regular method exit $$ ( 11547, 11733 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+	    MultiStopMarkInputStream in = 
+	                             ^
+  The type of object is: ikrs.io.MultiStopMarkInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/StopMarkInputStream.java:370: error: (required.method.not.called) $$ 4 $$ method close $$ fin $$ java.io.FileInputStream $$ possible exceptional exit due to new StopMarkInputStream(fin, stopMark.getBytes(java.nio.charset.StandardCharsets.UTF_8.name())) with exception type java.lang.IllegalArgumentException $$ ( 9667, 9791 ) $$ @MustCall method close may not have been invoked on fin or any of its aliases.
+	    java.io.FileInputStream fin = new java.io.FileInputStream( new java.io.File( "document_root_alpha/example.POST_DATA.txt") );
+	                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new StopMarkInputStream(fin, stopMark.getBytes(java.nio.charset.StandardCharsets.UTF_8.name())) with exception type java.lang.IllegalArgumentException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/StopMarkInputStream.java:371: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ ikrs.io.StopMarkInputStream $$ possible exceptional exit due to in.read() with exception type java.io.IOException $$ ( 9797, 9933 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+	    StopMarkInputStream in = new StopMarkInputStream( fin,
+	                        ^
+  The type of object is: ikrs.io.StopMarkInputStream.
+  Reason for going out of scope: possible exceptional exit due to in.read() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/fileio/htaccess/HypertextPasswordFile.java:61: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileInputStream $$ possible exceptional exit due to getPasswordData(in, username, strictMode) with exception type java.io.IOException $$ ( 1579, 1626 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+	FileInputStream in = new FileInputStream(file);
+	                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to getPasswordData(in, username, strictMode) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/fileio/FileCopy.java:161: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.FileOutputStream $$ possible exceptional exit due to in.close() with exception type java.io.IOException $$ ( 5063, 5108 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+	    out = new FileOutputStream( destinationFile );
+	        ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to in.close() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/fileio/inifile/IniFile.java:96: error: (required.method.not.called) $$ 4 $$ method close $$ fin $$ java.io.FileInputStream $$ possible exceptional exit due to read(new BufferedReader(new InputStreamReader(fin)), mainSection) with exception type java.io.IOException $$ ( 2654, 2704 ) $$ @MustCall method close may not have been invoked on fin or any of its aliases.
+	FileInputStream fin = new FileInputStream( file );
+	                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to read(new BufferedReader(new InputStreamReader(fin)), mainSection) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/ReplacingInputStream.java:104: error: (required.method.not.called) $$ 4 $$ method close $$ new MultiStopMarkInputStream(in, keyList) $$ ikrs.io.MultiStopMarkInputStream $$ regular method exit $$ ( 3752, 3795 ) $$ @MustCall method close may not have been invoked on new MultiStopMarkInputStream(in, keyList) or any of its aliases.
+	this.multiIn        = new MultiStopMarkInputStream( in, keyList );
+	                      ^
+  The type of object is: ikrs.io.MultiStopMarkInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/ReplacingInputStream.java:226: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ ikrs.io.ReplacingInputStream $$ regular method exit $$ ( 6965, 7141 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+	    ReplacingInputStream in = 
+	                         ^
+  The type of object is: ikrs.io.ReplacingInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/MultipartMIMETokenizer.java:89: error: (owning.override.return) $$ 4 $$ getNextToken $$ ikrs.io.MultipartMIMETokenizer $$ getNextToken $$ ikrs.io.ByteSequenceTokenizer $$ ( 2366, 4160 ) $$ Incompatible ownership for return.
+    public InputStream getNextToken() 
+                       ^
+  found   : no ownership annotation or @Owning
+  required: @NotOwning
+  Consequence: method getNextToken in ikrs.io.MultipartMIMETokenizer cannot override method getNextToken in ikrs.io.ByteSequenceTokenizer
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/MultipartMIMETokenizer.java:178: error: (required.method.not.called) $$ 4 $$ method close $$ fin $$ java.io.FileInputStream $$ possible exceptional exit due to tokenizer.getNextToken() with exception type java.io.IOException $$ ( 4768, 4856 ) $$ @MustCall method close may not have been invoked on fin or any of its aliases.
+	    java.io.FileInputStream fin = new java.io.FileInputStream( new java.io.File(filename) );
+	                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to tokenizer.getNextToken() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/MultipartMIMETokenizer.java:184: error: (required.method.not.called) $$ 4 $$ method close $$ token $$ java.io.InputStream $$ possible exceptional exit due to token.read() with exception type java.io.IOException $$ ( 5014, 5046 ) $$ @MustCall method close may not have been invoked on token or any of its aliases.
+	    while( (token = tokenizer.getNextToken()) != null ) {
+	                  ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to token.read() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/ByteSequenceTokenizer.java:32: error: (required.method.not.called) $$ 4 $$ method close $$ field currentToken $$ ikrs.io.StopMarkInputStream $$  The enclosing element ikrs.io.ByteSequenceTokenizer has an empty @MustCall annotation $$ ( 640, 681 ) $$ @MustCall method close may not have been invoked on field currentToken or any of its aliases.
+    private StopMarkInputStream currentToken;
+                                ^
+  The type of object is: ikrs.io.StopMarkInputStream.
+  Reason for going out of scope:  The enclosing element ikrs.io.ByteSequenceTokenizer has an empty @MustCall annotation
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/ByteSequenceTokenizer.java:68: error: (missing.creates.mustcall.for) $$ 3 $$ getNextToken $$ this $$ currentToken $$ ( 1817, 2275 ) $$ Method getNextToken re-assigns the non-final, owning field this.currentToken, but does not have a corresponding @CreatesMustCallFor annotation.
+    public InputStream getNextToken() 
+                       ^
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/ByteSequenceTokenizer.java:139: error: (required.method.not.called) $$ 4 $$ method close $$ fin $$ java.io.FileInputStream $$ possible exceptional exit due to tokenizer.getNextToken() with exception type java.io.IOException $$ ( 3177, 3265 ) $$ @MustCall method close may not have been invoked on fin or any of its aliases.
+	    java.io.FileInputStream fin = new java.io.FileInputStream( new java.io.File(filename) );
+	                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to tokenizer.getNextToken() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/json/parser/ConfigurableJSONBuilder.java:287: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.Reader $$ possible exceptional exit due to b.parse() with exception type java.io.IOException $$ ( 8630, 8680 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+	    Reader reader = new java.io.FileReader( argv[0] );
+	           ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope: possible exceptional exit due to b.parse() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/json/parser/JSONParser.java:867: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.Reader $$ possible exceptional exit due to p.parse() with exception type java.io.IOException $$ ( 25480, 25530 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+	    Reader reader = new java.io.FileReader( argv[0] );
+	           ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope: possible exceptional exit due to p.parse() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/json/parser/JSONBuilderExample.java:261: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.Reader $$ possible exceptional exit due to b.parse() with exception type java.io.IOException $$ ( 6677, 6727 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+	    Reader reader = new java.io.FileReader( argv[0] );
+	           ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope: possible exceptional exit due to b.parse() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/json/parser/JSONBuilder.java:214: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.Reader $$ possible exceptional exit due to b.parse() with exception type java.io.IOException $$ ( 5606, 5656 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+	    Reader reader = new java.io.FileReader( argv[0] );
+	           ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope: possible exceptional exit due to b.parse() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/Yucca.java:199: error: (contracts.postcondition) $$ 3 $$ performQuit $$ no information about this.yuccaLine $$ this.yuccaLine is @CalledMethods("interrupt") $$ ( 6021, 6601 ) $$ postcondition of performQuit is not satisfied.
+    public void performQuit( boolean forceQuit ) {
+                ^
+  found   : no information about this.yuccaLine
+  required: this.yuccaLine is @CalledMethods("interrupt")
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/Yucca.java:239: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.BufferedReader $$ regular method exit $$ ( 6927, 6997 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+	    reader = new BufferedReader( new FileReader( new File(licenseFile) ) );
+	           ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/Yucca.java:267: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.BufferedReader $$ regular method exit $$ ( 7504, 7574 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+	    reader = new BufferedReader( new FileReader( new File(licenseFile) ) );
+	           ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/Yucca.java:1005: error: (required.method.not.called) $$ 4 $$ method performQuit $$ yucca $$ ikrs.yuccasrv.Yucca $$ possible exceptional exit due to myCall.getParamAt(i) with exception type java.lang.IndexOutOfBoundsException $$ ( 31196, 31229 ) $$ @MustCall method performQuit may not have been invoked on yucca or any of its aliases.
+	    yucca = new Yucca( serverConfig );
+	          ^
+  The type of object is: ikrs.yuccasrv.Yucca.
+  Reason for going out of scope: possible exceptional exit due to myCall.getParamAt(i) with exception type java.lang.IndexOutOfBoundsException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/Yucca.java:1081: error: (required.method.not.called) $$ 4 $$ method interrupt $$ field yuccaLine $$ ikrs.yuccasrv.commandline.YuccaLine $$  Non-final owning field might be overwritten $$ ( 33593, 33658 ) $$ @MustCall method interrupt may not have been invoked on field yuccaLine or any of its aliases.
+	    yucca.yuccaLine = new YuccaLine( new YuccaCommandFactory(yucca) );
+	                    ^
+  The type of object is: ikrs.yuccasrv.commandline.YuccaLine.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/Yucca.java:1095: error: (required.method.not.called) $$ 4 $$ method performQuit $$ runYucca(argv) $$ ikrs.yuccasrv.Yucca $$ regular method exit $$ ( 33793, 33809 ) $$ @MustCall method performQuit may not have been invoked on runYucca(argv) or any of its aliases.
+	runYucca( argv );
+	        ^
+  The type of object is: ikrs.yuccasrv.Yucca.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/commandline/YuccaLine.java:45: error: (required.method.not.called) $$ 4 $$ method interrupt $$ cl $$ ikrs.yuccasrv.commandline.YuccaLine $$ regular method exit $$ ( 844, 884 ) $$ @MustCall method interrupt may not have been invoked on cl or any of its aliases.
+	YuccaLine cl = new YuccaLine( factory );
+	          ^
+  The type of object is: ikrs.yuccasrv.commandline.YuccaLine.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/util/AbstractCommandLine.java:86: error: (missing.creates.mustcall.for) $$ 3 $$ runCommandLine $$ this $$ bufferedReader $$ ( 1766, 3261 ) $$ Method runCommandLine re-assigns the non-final, owning field this.bufferedReader, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void runCommandLine() 
+                ^
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/util/AbstractCommandLine.java:89: error: (required.method.not.called) $$ 4 $$ method close $$ field bufferedReader $$ java.io.BufferedReader $$  Non-final owning field might be overwritten $$ ( 1820, 1896 ) $$ @MustCall method close may not have been invoked on field bufferedReader or any of its aliases.
+	this.bufferedReader = new BufferedReader( new InputStreamReader(System.in) );
+	                    ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/util/AbstractCommandLine.java:182: error: (required.method.not.called) $$ 4 $$ method interrupt $$ cl $$ ikrs.util.AbstractCommandLine<ikrs.util.Command> $$ regular method exit $$ ( 3963, 4041 ) $$ @MustCall method interrupt may not have been invoked on cl or any of its aliases.
+	AbstractCommandLine<Command> cl = new AbstractCommandLine<Command>( factory );
+	                             ^
+  The type of object is: ikrs.util.AbstractCommandLine<ikrs.util.Command>.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/commandline/YuccaCommandFactory.java:126: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static String[] getImplementedCommands() {
+                           ^
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/SocketWrapper.java:20: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+public class SocketWrapper {
+       ^
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/filehandler/PHPHandler.java:224: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ ikrs.io.BytePositionInputStream $$ possible exceptional exit due to HTTPHeaders.read(in) with exception type java.io.EOFException $$ ( 7543, 7592 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+	BytePositionInputStream in = ir.getInputStream();
+	                        ^
+  The type of object is: ikrs.io.BytePositionInputStream.
+  Reason for going out of scope: possible exceptional exit due to HTTPHeaders.read(in) with exception type java.io.EOFException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/resource/ProcessableResource.java:140: error: (required.method.not.called) $$ 4 $$ method close $$ this.postData.getInputStream() $$ java.io.InputStream $$ possible exceptional exit due to CustomUtil.transfer(this.postData.getInputStream(), process.getOutputStream(), this.postData.getContentLength(), 256) with exception type java.lang.IllegalArgumentException $$ ( 4329, 4359 ) $$ @MustCall method close may not have been invoked on this.postData.getInputStream() or any of its aliases.
+	    long readLength = CustomUtil.transfer( this.postData.getInputStream(),
+	                                                                       ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to CustomUtil.transfer(this.postData.getInputStream(), process.getOutputStream(), this.postData.getContentLength(), 256) with exception type java.lang.IllegalArgumentException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/resource/ProcessableResource.java:210: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to this.bufferedResource.open(true) with exception type ikrs.httpd.ReadOnlyException $$ ( 6819, 7008 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+	    in = new java.io.SequenceInputStream( new BufferedInputStream(new ByteArrayInputStream(bufferedOutputStream.toByteArray())), // process.getInputStream(), 
+	       ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to this.bufferedResource.open(true) with exception type ikrs.httpd.ReadOnlyException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/resource/ProcessableResource.java:360: error: (required.method.not.called) $$ 4 $$ method close $$ pr.getInputStream() $$ java.io.InputStream $$ possible exceptional exit due to pr.getInputStream().read() with exception type java.io.IOException $$ ( 11101, 11120 ) $$ @MustCall method close may not have been invoked on pr.getInputStream() or any of its aliases.
+	    while( (b = pr.getInputStream().read()) != -1 ) {
+	                                 ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to pr.getInputStream().read() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/filehandler/PHPDirectoryResource.java:62: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+public class PHPDirectoryResource
+       ^
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/filehandler/PHPDirectoryResource.java:141: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to CustomUtil.transfer(in, out, -1, 256) with exception type java.lang.IllegalArgumentException $$ ( 4877, 4920 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+	    InputStream in = resource.getInputStream();
+	                ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to CustomUtil.transfer(in, out, -1, 256) with exception type java.lang.IllegalArgumentException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/HTTPPackage.java:10: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+public interface HTTPPackage {
+       ^
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/Run.java:29: error: (required.method.not.called) $$ 4 $$ method performQuit $$ yucca $$ ikrs.yuccasrv.Yucca $$ regular method exit $$ ( 587, 624 ) $$ @MustCall method performQuit may not have been invoked on yucca or any of its aliases.
+	Yucca yucca = Yucca.runYucca( argv );
+	      ^
+  The type of object is: ikrs.yuccasrv.Yucca.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/AbstractPreparedResponse.java:352: error: (required.method.not.called) $$ 4 $$ method close $$ resourceIn $$ java.io.InputStream $$ possible exceptional exit due to resourceIn.read(buffer) with exception type java.io.IOException $$ ( 10129, 10197 ) $$ @MustCall method close may not have been invoked on resourceIn or any of its aliases.
+		InputStream resourceIn = this.responseDataResource.getInputStream();
+		            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to resourceIn.read(buffer) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/AbstractPreparedResponse.java:361: error: (required.method.not.called) $$ 4 $$ method close $$ hexOut $$ ikrs.util.HexDumpOutputStream $$ possible exceptional exit due to resourceIn.read(buffer) with exception type java.io.IOException $$ ( 10482, 10571 ) $$ @MustCall method close may not have been invoked on hexOut or any of its aliases.
+		ikrs.util.HexDumpOutputStream hexOut = this.getHTTPHandler().createHexDumpOutputStream();
+		                              ^
+  The type of object is: ikrs.util.HexDumpOutputStream.
+  Reason for going out of scope: possible exceptional exit due to resourceIn.read(buffer) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/HTTPRequestDistributor.java:87: error: (required.method.not.called) $$ 4 $$ method close $$ field socket $$ java.net.Socket $$  Non-final owning field might be overwritten $$ ( 2221, 2243 ) $$ @MustCall method close may not have been invoked on field socket or any of its aliases.
+	this.socket   = socket;
+	              ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/HTTPRequestDistributor.java:87: error: (assignment) $$ 2 $$ @PolyMustCall Socket $$ @MustCall("close") Socket $$ ( 2237, 2243 ) $$ incompatible types in assignment.
+	this.socket   = socket;
+	                ^
+  found   : @PolyMustCall Socket
+  required: @MustCall("close") Socket
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/HTTPRequestDistributor.java:120: error: (contracts.exceptional.postcondition) $$ 3 $$ run $$ no information about this.socket $$ this.socket is @CalledMethods("close") $$ ( 2945, 6652 ) $$ on exception, postcondition of run is not satisfied.
+    public void run() {
+                ^
+  found   : no information about this.socket
+  required: this.socket is @CalledMethods("close")
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/HTTPRequestDistributor.java:120: error: (contracts.postcondition) $$ 3 $$ run $$ no information about this.socket $$ this.socket is @CalledMethods("close") $$ ( 2945, 6652 ) $$ postcondition of run is not satisfied.
+    public void run() {
+                ^
+  found   : no information about this.socket
+  required: this.socket is @CalledMethods("close")
+../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/response/successful/OK.java:617: error: package javax.xml.bind does not exist
+		byte[] authBytes  = javax.xml.bind.DatatypeConverter.parseBase64Binary(base64);
+		                                  ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+62 errors
+4 warnings

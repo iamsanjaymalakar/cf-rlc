@@ -1,0 +1,2 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^zz/spider/DownloadImage.java^54^zz.spider.DownloadImage.run()V^40 = new <Application,Ljava/io/FileOutputStream>@101^zz.spider.DownloadImage.run()V#47,zz.spider.DownloadImage.run()V#88,zz.spider.DownloadImage.run()V#120,^INVOKE,^false^true^Escaped-try-catch and no post-dominator found;Try-catch Fix;

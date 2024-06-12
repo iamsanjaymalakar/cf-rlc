@@ -1,0 +1,11 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^Centralizador/Test.java^16^Centralizador.Test.main([Ljava/lang/String;)V^7 = new <Application,Ljava/io/FileReader>@25^NULL^FIELD,INVOKE,^false^true^Field escape;
+1^atuador/Test.java^16^atuador.Test.main([Ljava/lang/String;)V^7 = new <Application,Ljava/io/FileReader>@25^NULL^FIELD,INVOKE,^false^true^Field escape;
+2^gramatica/Centralizador/Test.java^17^gramatica.Centralizador.Test.main([Ljava/lang/String;)V^7 = new <Application,Ljava/io/FileReader>@25^NULL^FIELD,INVOKE,^false^true^Field escape;
+3^gramatica/java_cup/Main.java^354^gramatica.java_cup.Main.parse_args([Ljava/lang/String;)V^137 = new <Application,Ljava/io/FileInputStream>@546^NULL^INVOKE,^false^false^Loop Fix;Normal Fix;
+4^gramatica/java_cup/Main.java^396^gramatica.java_cup.Main.open_files()V^14 = new <Application,Ljava/io/PrintWriter>@31^gramatica.java_cup.Main.open_files()V#15,gramatica.java_cup.Main.open_files()V#16,^FIELD,^false^true^Field escape;
+5^gramatica/java_cup/Main.java^407^gramatica.java_cup.Main.open_files()V^50 = new <Application,Ljava/io/PrintWriter>@128^gramatica.java_cup.Main.open_files()V#51,gramatica.java_cup.Main.open_files()V#52,^FIELD,^false^true^Field escape;
+6^gramatica/Atuador/Test.java^16^gramatica.Atuador.Test.main([Ljava/lang/String;)V^7 = new <Application,Ljava/io/FileReader>@25^NULL^FIELD,INVOKE,^false^true^Field escape;
+7^gramatica/Monitor/Test.java^16^gramatica.Monitor.Test.main([Ljava/lang/String;)V^7 = new <Application,Ljava/io/FileReader>@25^NULL^FIELD,INVOKE,^false^true^Field escape;
+8^agentes/jade/Centralizador/AgenteCentralizador.java^400^agentes.jade.Centralizador.AgenteCentralizador.updateOutputFile(Ljava/lang/String;Ljava/io/File;)V^5 = new <Application,Ljava/io/FileWriter>@0^agentes.jade.Centralizador.AgenteCentralizador.updateOutputFile(Ljava/lang/String;Ljava/io/File;)V#10,^INVOKE,^false^false^Try-catch Fix;
+9^monitor/Test.java^16^monitor.Test.main([Ljava/lang/String;)V^7 = new <Application,Ljava/io/FileReader>@25^NULL^FIELD,INVOKE,^false^true^Field escape;

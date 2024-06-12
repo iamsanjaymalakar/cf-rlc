@@ -1,0 +1,53 @@
+../dataset/june2020_dataset_copy/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/TargaImage.java:64: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to dis.readShort() with exception type java.io.IOException $$ ( 1721, 1772 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+        FileInputStream fis = new FileInputStream(srcFile);
+                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to dis.readShort() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java:96: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to ImageIO.read(bis) with exception type java.io.IOException $$ ( 3698, 3734 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+                fis = new FileInputStream(inImageFd);
+                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to ImageIO.read(bis) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java:177: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to ImageIO.read(bis) with exception type java.io.IOException $$ ( 6529, 6565 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+                fis = new FileInputStream(inImageFd);
+                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to ImageIO.read(bis) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java:199: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to readAsciiLine(bis) with exception type java.lang.Exception $$ ( 7374, 7410 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+                fis = new FileInputStream(inImageFd);
+                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to readAsciiLine(bis) with exception type java.lang.Exception
+../dataset/june2020_dataset_copy/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java:309: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to exportJPG(fos, img) with exception type java.lang.Exception $$ ( 11271, 11319 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+            FileOutputStream fos = new FileOutputStream(fd);
+                             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to exportJPG(fos, img) with exception type java.lang.Exception
+../dataset/june2020_dataset_copy/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java:359: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to exportPNG(fos, img) with exception type java.lang.Exception $$ ( 12808, 12856 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+            FileOutputStream fos = new FileOutputStream(fd);
+                             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to exportPNG(fos, img) with exception type java.lang.Exception
+../dataset/june2020_dataset_copy/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java:435: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to ImageIO.write(bimg, "gif", fos) with exception type java.io.IOException $$ ( 15128, 15176 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+            FileOutputStream fos = new FileOutputStream(fd);
+                             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to ImageIO.write(bimg, "gif", fos) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java:462: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to writer.write(arr, 0, arr.length) with exception type java.io.IOException $$ ( 15992, 16040 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+            FileOutputStream fos = new FileOutputStream(fd);
+                             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to writer.write(arr, 0, arr.length) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java:511: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to writeBytes(writer, magic) with exception type java.lang.Exception $$ ( 17626, 17674 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+            FileOutputStream fos = new FileOutputStream(fd);
+                             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to writeBytes(writer, magic) with exception type java.lang.Exception
+../dataset/june2020_dataset_copy/url4aac7e6f55_simon0191_tetris3d_tgz-pJ8-Tetris3dJ8/src/vsdk/toolkit/io/image/ImagePersistence.java:571: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to writer.write(arr, 0, arr.length) with exception type java.io.IOException $$ ( 19665, 19713 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+            FileOutputStream fos = new FileOutputStream(fd);
+                             ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to writer.write(arr, 0, arr.length) with exception type java.io.IOException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+10 errors

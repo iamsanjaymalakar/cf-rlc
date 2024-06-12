@@ -1,0 +1,30 @@
+../dataset/june2020_dataset_copy/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/UnsafeAccess.java:3: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/UnsafeAccess.java:3: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/UnsafeAccess.java:3: warning: Unsafe is internal proprietary API and may be removed in a future release
+import sun.misc.Unsafe;
+               ^
+../dataset/june2020_dataset_copy/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/UnsafeAccess.java:23: warning: Unsafe is internal proprietary API and may be removed in a future release
+    public static final Unsafe unsafe;
+                        ^
+../dataset/june2020_dataset_copy/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/UnsafeAccess.java:23: warning: Unsafe is internal proprietary API and may be removed in a future release
+    public static final Unsafe unsafe;
+                        ^
+../dataset/june2020_dataset_copy/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/UnsafeAccess.java:23: warning: Unsafe is internal proprietary API and may be removed in a future release
+    public static final Unsafe unsafe;
+                        ^
+../dataset/june2020_dataset_copy/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/UnsafeAccess.java:27: warning: Unsafe is internal proprietary API and may be removed in a future release
+            Field field = Unsafe.class.getDeclaredField("theUnsafe");
+                          ^
+../dataset/june2020_dataset_copy/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/UnsafeAccess.java:29: warning: Unsafe is internal proprietary API and may be removed in a future release
+            unsafe = (Unsafe) field.get(null);
+                      ^
+../dataset/june2020_dataset_copy/urldac7fd8c97_vitalymaryin_unsafe_utils_tgz-pJ8-org_vit_unsafeutils_TcpTestJ8/src/org/vit/unsafeutils/UnsafeAccess.java:31: error: package sun.security.action is not visible
+                    (new sun.security.action.GetPropertyAction("os.arch", ""));
+                                     ^
+  (package sun.security.action is declared in module java.base, which does not export it to the unnamed module)
+1 error
+8 warnings

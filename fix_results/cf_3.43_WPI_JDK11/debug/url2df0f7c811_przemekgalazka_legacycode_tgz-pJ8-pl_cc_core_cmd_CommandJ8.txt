@@ -1,0 +1,29 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^pl/cc/utils/IniFile.java^57^pl.cc.utils.IniFile.<init>(Ljava/net/URL;)V^6 = invokevirtual < Application, Ljava/net/URL, openStream()Ljava/io/InputStream; > 2 @6 exception:5^NULL^INVOKE,^false^false^Normal Fix;
+1^pl/cc/utils/IniFile.java^210^pl.cc.utils.IniFile.load(Ljava/lang/String;)V^4 = new <Application,Ljava/io/FileInputStream>@1^NULL^INVOKE,^false^false^Normal Fix;
+2^pl/cc/utils/IniFile.java^320^pl.cc.utils.IniFile.main([Ljava/lang/String;)V^6 = invokestatic < Application, Lpl/cc/utils/Resources, getInputStream(Ljava/lang/String;)Ljava/io/InputStream; > 4 @6 exception:5^NULL^INVOKE,^false^false^Normal Fix;
+3^pl/cc/ProxyHandler.java^372^pl.cc.ProxyHandler.doConnect(Lpl/cc/core/LoginCredentials;)V^23 = invokevirtual < Application, Ljavax/net/ssl/SSLSocketFactory, createSocket(Ljava/lang/String;I)Ljava/net/Socket; > 12,20,21 @70 exception:22^NULL^FIELD,^false^true^Field escape;
+4^pl/cc/ProxyHandler.java^375^pl.cc.ProxyHandler.doConnect(Lpl/cc/core/LoginCredentials;)V^16 = new <Application,Ljava/net/Socket>@90^NULL^FIELD,^false^true^Field escape;
+5^pl/cc/ProxyHandler.java^377^pl.cc.ProxyHandler.doConnect(Lpl/cc/core/LoginCredentials;)V^27 = new <Application,Lpl/cc/core/NetPrintWriter>@109^pl.cc.ProxyHandler.doConnect(Lpl/cc/core/LoginCredentials;)V#30,^FIELD,^false^true^Field escape;
+6^pl/cc/ProxyHandler.java^379^pl.cc.ProxyHandler.doConnect(Lpl/cc/core/LoginCredentials;)V^32 = new <Application,Ljava/io/BufferedReader>@126^pl.cc.ProxyHandler.doConnect(Lpl/cc/core/LoginCredentials;)V#33,pl.cc.ProxyHandler.doConnect(Lpl/cc/core/LoginCredentials;)V#36,^INVOKE,FIELD,^false^true^Field escape;
+7^ccproxy/DBConnection.java^24^ccproxy.DBConnection.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V^40 = invokestatic < Application, Ljava/sql/DriverManager, getConnection(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection; > 18,5,6 @82 exception:39^NULL^FIELD,^false^true^Field escape;
+8^ccproxy/ReadConfig.java^54^ccproxy.ReadConfig.<init>(Lccproxy/Parametry;Ljava/lang/String;)V^26 = new <Application,Ljava/io/FileReader>@177^ccproxy.ReadConfig.<init>(Lccproxy/Parametry;Ljava/lang/String;)V#28,^INVOKE,^false^false^Try-catch Fix;
+9^ccproxy/AgentConnection.java^211^ccproxy.AgentConnection.runInternal()V^7 = new <Application,Lccproxy/ChannelWriter>@11^ccproxy.AgentConnection.runInternal()V#8,^FIELD,^false^true^Field escape;
+10^ccproxy/AgentConnection.java^309^ccproxy.AgentConnection.runInternal()V^342 = new <Application,Lccproxy/NullChannelWriter>@1316^NULL^FIELD,^false^true^Field escape;
+11^ccproxy/AgentConnection.java^889^ccproxy.AgentConnection.externAuth(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z^17 = invokevirtual < Application, Ljava/net/HttpURLConnection, getOutputStream()Ljava/io/OutputStream; > 11 @35 exception:16^NULL^INVOKE,^false^false^Try-catch Fix;
+12^ccproxy/AgentConnection.java^890^ccproxy.AgentConnection.externAuth(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z^32 = invokevirtual < Application, Ljava/net/HttpURLConnection, getOutputStream()Ljava/io/OutputStream; > 11 @69 exception:31^NULL^INVOKE,^false^false^Try-catch Fix;
+13^ccproxy/AgentConnection.java^891^ccproxy.AgentConnection.externAuth(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z^38 = invokevirtual < Application, Ljava/net/HttpURLConnection, getOutputStream()Ljava/io/OutputStream; > 11 @86 exception:37^NULL^INVOKE,^false^false^Try-catch Fix;
+14^ccproxy/AgentConnection.java^893^ccproxy.AgentConnection.externAuth(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z^51 = new <Application,Ljava/io/BufferedReader>@118^ccproxy.AgentConnection.externAuth(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z#52,ccproxy.AgentConnection.externAuth(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z#54,^INVOKE,^false^false^Try-catch Fix;
+15^ccproxy/CCproxy.java^26^ccproxy.CCproxy.start(Ljava/lang/String;)V^9 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 6,7 @11 exception:8^ccproxy.CCproxy.start(Ljava/lang/String;)V#12,ccproxy.CCproxy.start(Ljava/lang/String;)V#11,^INVOKE,^false^false^Normal Fix;
+16^ccproxy/CCproxy.java^41^ccproxy.CCproxy.start(Ljava/lang/String;)V^63 = new <Application,Lccproxy/GadajAsterisk>@184^NULL^INVOKE,FIELD,^false^true^Field escape;
+17^ccproxy/CCproxy.java^45^ccproxy.CCproxy.start(Ljava/lang/String;)V^72 = new <Application,Lccproxy/GadajAsterisk>@225^NULL^INVOKE,^false^false^Try-catch Fix;
+18^ccproxy/CCproxy.java^94^ccproxy.CCproxy.checkLicense(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z^8 = new <Application,Ljava/io/FileInputStream>@10^NULL^INVOKE,^false^false^Try-catch Fix;
+19^pl/cc/ReaderThread.java^27^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+20^pl/cc/ProxyHandler.java^60^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+21^pl/cc/ProxyHandler.java^61^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+22^pl/cc/ProxyHandler.java^62^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+23^pl/cc/ProxyHandler.java^161^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+24^ccproxy/GadajAsterisk.java^41^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+25^ccproxy/AgentConnection.java^66^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+26^ccproxy/ChannelWriter.java^21^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+27^ccproxy/ChannelWriter.java^23^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

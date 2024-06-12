@@ -1,0 +1,23 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^risiko/XMI2XMLtransformer.java^26^risiko.XMI2XMLtransformer.main([Ljava/lang/String;)V^21 = new <Application,Ljava/io/FileInputStream>@48^NULL^INVOKE,^false^false^Normal Fix;
+1^risiko/ExecutorTest.java^43^risiko.ExecutorTest.main([Ljava/lang/String;)V^20 = new <Application,Ljava/io/FileInputStream>@51^NULL^INVOKE,^false^false^Normal Fix;
+2^risiko/main/Client.java^30^risiko.main.Client.run()V^8 = invokestatic < Application, Ljava/nio/channels/SocketChannel, open(Ljava/net/SocketAddress;)Ljava/nio/channels/SocketChannel; > 3 @13 exception:7^NULL^FIELD,^false^true^Field escape;
+3^risiko/main/MainNio.java^28^risiko.main.MainNio.<init>(I)V^21 = invokestatic < Application, Ljava/nio/channels/Selector, open()Ljava/nio/channels/Selector; > @54 exception:20^NULL^FIELD,^false^true^Field escape;
+4^risiko/main/MainNio.java^30^risiko.main.MainNio.<init>(I)V^28 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 25,26 @79 exception:27^NULL^INVOKE,^false^false^Normal Fix;
+5^risiko/main/MainThreadNio.java^15^risiko.main.MainThreadNio.run()V^4 = invokestatic < Application, Ljava/nio/channels/Selector, open()Ljava/nio/channels/Selector; > @1 exception:3^NULL^FIELD,^false^true^Field escape;
+6^risiko/main/NioChatServer.java^20^risiko.main.NioChatServer.<init>(I)V^26 = invokestatic < Application, Ljava/nio/channels/Selector, open()Ljava/nio/channels/Selector; > @66 exception:25^NULL^FIELD,^false^true^Field escape;
+7^risiko/main/Main.java^16^risiko.main.Main.<init>()V^11 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 9,5 @21 exception:10^NULL^INVOKE,^false^false^Try-catch Fix;
+8^risiko/main/Main.java^18^risiko.main.Main.<init>()V^20 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 18,14 @44 exception:19^NULL^INVOKE,^false^false^Try-catch Fix;
+9^risiko/main/Main.java^20^risiko.main.Main.<init>()V^28 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 26,5 @67 exception:27^NULL^INVOKE,^false^false^Try-catch Fix;
+10^risiko/main/Main.java^22^risiko.main.Main.<init>()V^36 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 34,5 @90 exception:35^NULL^INVOKE,^false^false^Try-catch Fix;
+11^risiko/main/Main.java^24^risiko.main.Main.<init>()V^44 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 42,5 @113 exception:43^NULL^INVOKE,^false^false^Try-catch Fix;
+12^risiko/main/Main.java^25^risiko.main.Main.<init>()V^50 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 48,5 @128 exception:49^NULL^INVOKE,^false^false^Try-catch Fix;
+13^risiko/main/Main.java^32^risiko.main.Main.main([Ljava/lang/String;)V^3 = new <Application,Ljava/net/ServerSocket>@0^NULL^INVOKE,^false^false^Normal Fix;
+14^risiko/main/Main.java^35^risiko.main.Main.main([Ljava/lang/String;)V^9 = invokevirtual < Application, Ljava/net/ServerSocket, accept()Ljava/net/Socket; > 3 @20 exception:8^NULL^INVOKE,FIELD,^false^true^Field escape;
+15^risiko/main/Client2.java^44^risiko.main.Client2.<init>(Ljava/net/SocketAddress;)V^12 = invokestatic < Application, Ljava/nio/channels/Selector, open()Ljava/nio/channels/Selector; > @36 exception:11^NULL^FIELD,^false^true^Field escape;
+16^risiko/main/Client2.java^45^risiko.main.Client2.<init>(Ljava/net/SocketAddress;)V^14 = invokestatic < Application, Ljava/nio/channels/SocketChannel, open(Ljava/net/SocketAddress;)Ljava/nio/channels/SocketChannel; > 2 @44 exception:13^NULL^FIELD,^false^true^Field escape;
+17^risiko/tcp/ClientTcp.java^92^risiko.tcp.ClientTcp.run()V^4 = invokestatic < Application, Ljava/nio/channels/Selector, open()Ljava/nio/channels/Selector; > @0 exception:3^NULL^INVOKE,^false^false^Try-catch Fix;
+18^risiko/tcp/ClientTcp.java^93^risiko.tcp.ClientTcp.run()V^7 = invokestatic < Application, Ljava/nio/channels/SocketChannel, open(Ljava/net/SocketAddress;)Ljava/nio/channels/SocketChannel; > 5 @8 exception:6^NULL^INVOKE,^false^false^Try-catch Fix;
+19^risiko/EngineTest.java^15^risiko.EngineTest.main([Ljava/lang/String;)V^11 = new <Application,Ljava/io/FileInputStream>@29^NULL^INVOKE,^false^false^Normal Fix;
+20^risiko/EngineTest.java^17^risiko.EngineTest.main([Ljava/lang/String;)V^16 = new <Application,Ljava/io/FileInputStream>@48^NULL^INVOKE,^false^false^Normal Fix;
+21^risiko/main/MainThread.java^13^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

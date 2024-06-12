@@ -1,0 +1,18 @@
+../dataset/june2020_dataset_copy/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/tffsr/Tffsr.java:166: error: (required.method.not.called) $$ 4 $$ method close $$ url.openStream() $$ java.io.InputStream $$ possible exceptional exit due to load(url.openStream()) with exception type java.io.IOException $$ ( 5036, 5052 ) $$ @MustCall method close may not have been invoked on url.openStream() or any of its aliases.
+    return load(url.openStream());
+                              ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to load(url.openStream()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/utils/Utils.java:58: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(filename) $$ java.io.FileWriter $$ possible exceptional exit due to out.write(dot) with exception type java.io.IOException $$ ( 1586, 1610 ) $$ @MustCall method close may not have been invoked on new FileWriter(filename) or any of its aliases.
+	  BufferedWriter out = new BufferedWriter(new FileWriter(filename));
+	                                          ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(dot) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url47fcfc0133_baliosian_tau_fst_tgz-pJ8-uy_edu_fing_mina_fsa_test_old_TestComposition1J8/src/uy/edu/fing/mina/fsa/utils/Utils.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(filename) $$ java.io.FileWriter $$ possible exceptional exit due to out.write(tfs.toString() + "\n") with exception type java.io.IOException $$ ( 1851, 1875 ) $$ @MustCall method close may not have been invoked on new FileWriter(filename) or any of its aliases.
+	  BufferedWriter out = new BufferedWriter(new FileWriter(filename));
+	                                          ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(tfs.toString() + "\n") with exception type java.io.IOException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+3 errors

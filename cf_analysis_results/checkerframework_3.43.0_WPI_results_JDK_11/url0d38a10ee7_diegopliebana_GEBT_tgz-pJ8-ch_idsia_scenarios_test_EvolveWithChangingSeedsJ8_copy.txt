@@ -1,0 +1,87 @@
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/Util.java:3: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/AccessTest.java:12: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/Util.java:3: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/AccessTest.java:12: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/Util.java:3: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/AccessTest.java:12: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/ch/idsia/mario/engine/LevelScene.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ LevelScene.class.getResourceAsStream("resources/tiles.dat") $$ java.io.InputStream $$ regular method exit $$ ( 3449, 3508 ) $$ @MustCall method close may not have been invoked on LevelScene.class.getResourceAsStream("resources/tiles.dat") or any of its aliases.
+            Level.loadBehaviors(new DataInputStream(LevelScene.class.getResourceAsStream("resources/tiles.dat")));
+                                                                                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/ch/idsia/utils/StatisticalSummary.java:245: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(path) $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(path)) with exception type java.io.IOException $$ ( 6378, 6404 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(path) or any of its aliases.
+                            new FileOutputStream(path));
+                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(path)) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/ch/idsia/utils/StatisticalSummary.java:257: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(path) $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(new FileInputStream(path)) with exception type java.io.IOException $$ ( 6729, 6754 ) $$ @MustCall method close may not have been invoked on new FileInputStream(path) or any of its aliases.
+                            new FileInputStream(path));
+                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(new FileInputStream(path)) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/ch/idsia/maibe/tasks/ProgressTask.java:88: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(fileName + fileTimeStamp + ".txt", true) $$ java.io.FileWriter $$ possible exceptional exit due to out.write(this.fitnessEvaluations + " " + fitness + "\n") with exception type java.io.IOException $$ ( 3079, 3134 ) $$ @MustCall method close may not have been invoked on new FileWriter(fileName + fileTimeStamp + ".txt", true) or any of its aliases.
+            BufferedWriter out = new BufferedWriter(new FileWriter(fileName + fileTimeStamp + ".txt", true));
+                                                    ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(this.fitnessEvaluations + " " + fitness + "\n") with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/ch/idsia/scenarios/champ/GamePlayEvaluation.java:61: error: package grammaticalbehaviorsNoAstar.GEBT_Mario does not exist
+            ((grammaticalbehaviorsNoAstar.GEBT_Mario.GEBT_MarioAgent)agent).loadBehaviorTree("RunRightSafe.xml");
+                                                    ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/Util.java:20: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/Util.java:20: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/Util.java:20: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/Util.java:20: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                                                          ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/Util.java:22: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+                    new ReflectionFactory.GetReflectionFactoryAction());
+                        ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/Util.java:22: error: cannot find symbol
+                    new ReflectionFactory.GetReflectionFactoryAction());
+                                         ^
+  symbol:   class GetReflectionFactoryAction
+  location: class ReflectionFactory
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/AccessTest.java:40: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/AccessTest.java:40: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/AccessTest.java:40: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/AccessTest.java:40: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                                                          ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/AccessTest.java:42: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+                    new ReflectionFactory.GetReflectionFactoryAction());
+                        ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8_copy/src/wox/serial/AccessTest.java:42: error: cannot find symbol
+                    new ReflectionFactory.GetReflectionFactoryAction());
+                                         ^
+  symbol:   class GetReflectionFactoryAction
+  location: class ReflectionFactory
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+7 errors
+16 warnings

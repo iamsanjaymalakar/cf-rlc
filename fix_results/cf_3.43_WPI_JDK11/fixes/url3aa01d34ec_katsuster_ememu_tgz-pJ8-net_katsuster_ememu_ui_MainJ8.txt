@@ -1,0 +1,15 @@
+36476
+3856
+
+SOURCE LEVEL FIXES
+
+13] ../../../dataset/june2020_dataset_copy/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/ARMLinuxLoader.java; Line number 33
+vim +33 ../../../dataset/june2020_dataset_copy/url3aa01d34ec_katsuster_ememu_tgz-pJ8-net_katsuster_ememu_ui_MainJ8/src/net/katsuster/ememu/ui/ARMLinuxLoader.java
+
++++ Add following code below line: 47 (net/katsuster/ememu/ui/ARMLinuxLoader.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 33
+
+--------------------------------------------

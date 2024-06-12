@@ -1,0 +1,493 @@
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:97: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 4429, 4435 ) $$ incompatible argument for parameter key of HashMap.put.
+                		message.put("type", "JOINING_NETWORK_RELAY_SIMPLIFIED");
+                		            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:97: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 4437, 4471 ) $$ incompatible argument for parameter value of HashMap.put.
+                		message.put("type", "JOINING_NETWORK_RELAY_SIMPLIFIED");
+                		                    ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:98: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 4504, 4513 ) $$ incompatible argument for parameter key of HashMap.put.
+                		message.put("node_id",String.valueOf(node_id));
+                		            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:98: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 4514, 4537 ) $$ incompatible argument for parameter value of HashMap.put.
+                		message.put("node_id",String.valueOf(node_id));
+                		                                    ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:99: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 4570, 4581 ) $$ incompatible argument for parameter key of HashMap.put.
+                		message.put("target_id", String.valueOf(closestNode));
+                		            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:99: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 4583, 4610 ) $$ incompatible argument for parameter value of HashMap.put.
+                		message.put("target_id", String.valueOf(closestNode));
+                		                                       ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:100: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 4643, 4655 ) $$ incompatible argument for parameter key of HashMap.put.
+                		message.put("gateway_id", String.valueOf(nodeID));
+                		            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:100: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 4657, 4679 ) $$ incompatible argument for parameter value of HashMap.put.
+                		message.put("gateway_id", String.valueOf(nodeID));
+                		                                        ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:118: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 5756, 5767 ) $$ incompatible argument for parameter key of HashMap.put.
+	            		message.put("target_id", String.valueOf(closestNode.getId()));
+	            		            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:118: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 5769, 5804 ) $$ incompatible argument for parameter value of HashMap.put.
+	            		message.put("target_id", String.valueOf(closestNode.getId()));
+	            		                                       ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:150: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 7876, 7882 ) $$ incompatible argument for parameter key of HashMap.put.
+            		message.put("type", "ACK_INDEX");
+            		            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:150: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 7884, 7895 ) $$ incompatible argument for parameter value of HashMap.put.
+            		message.put("type", "ACK_INDEX");
+            		                    ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:151: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 7924, 7933 ) $$ incompatible argument for parameter key of HashMap.put.
+            		message.put("node_id", String.valueOf(nodeID));
+            		            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:151: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 7935, 7957 ) $$ incompatible argument for parameter value of HashMap.put.
+            		message.put("node_id", String.valueOf(nodeID));
+            		                                     ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:152: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 7986, 7995 ) $$ incompatible argument for parameter key of HashMap.put.
+            		message.put("keyword", jsonObj.get("keyword"));         		
+            		            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:158: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 8353, 8364 ) $$ incompatible argument for parameter key of HashMap.put.
+        			message.put("target_id", String.valueOf(closestNode.getId()));
+        			            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:158: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 8366, 8401 ) $$ incompatible argument for parameter value of HashMap.put.
+        			message.put("target_id", String.valueOf(closestNode.getId()));
+        			                                       ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:173: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 9097, 9108 ) $$ incompatible argument for parameter key of HashMap.put.
+            		message.put("sender_id", String.valueOf(nodeID)); //I am the sender of the SEARCH_RESPONSE
+            		            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:173: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 9110, 9132 ) $$ incompatible argument for parameter value of HashMap.put.
+            		message.put("sender_id", String.valueOf(nodeID)); //I am the sender of the SEARCH_RESPONSE
+            		                                       ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:174: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 9202, 9211 ) $$ incompatible argument for parameter key of HashMap.put.
+            		message.put("node_id", String.valueOf((sender_id)));
+            		            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:174: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 9213, 9240 ) $$ incompatible argument for parameter value of HashMap.put.
+            		message.put("node_id", String.valueOf((sender_id)));
+            		                                     ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:182: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 9613, 9622 ) $$ incompatible argument for parameter key of HashMap.put.
+        				message.put("node_id", String.valueOf(closestNode.getId()));
+        				            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:182: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 9624, 9659 ) $$ incompatible argument for parameter value of HashMap.put.
+        				message.put("node_id", String.valueOf(closestNode.getId()));
+        				                                     ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:233: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 12105, 12111 ) $$ incompatible argument for parameter key of HashMap.put.
+                	message.put("type", "ACK");
+                	            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:233: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 12113, 12118 ) $$ incompatible argument for parameter value of HashMap.put.
+                	message.put("type", "ACK");
+                	                    ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:234: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 12150, 12159 ) $$ incompatible argument for parameter key of HashMap.put.
+                	message.put("node_id", String.valueOf(nodeID));
+                	            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:234: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 12161, 12183 ) $$ incompatible argument for parameter value of HashMap.put.
+                	message.put("node_id", String.valueOf(nodeID));
+                	                                     ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:235: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 12215, 12227 ) $$ incompatible argument for parameter key of HashMap.put.
+                	message.put("ip_address",NetworkProperties.nAddress);
+                	            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:235: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 12228, 12254 ) $$ incompatible argument for parameter value of HashMap.put.
+                	message.put("ip_address",NetworkProperties.nAddress);
+                	                                          ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:240: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 12518, 12530 ) $$ incompatible argument for parameter key of HashMap.put.
+            		message.put("ip_address",NetworkProperties.nAddress);//current's address changes each hop
+            		            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:240: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 12531, 12557 ) $$ incompatible argument for parameter value of HashMap.put.
+            		message.put("ip_address",NetworkProperties.nAddress);//current's address changes each hop
+            		                                          ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:288: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 14651, 14657 ) $$ incompatible argument for parameter key of HashMap.put.
+        sendJSON.put("type",MessageType.JOINING_NETWORK_SIMPLIFIED.name());
+                     ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:288: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 14658, 14703 ) $$ incompatible argument for parameter value of HashMap.put.
+        sendJSON.put("type",MessageType.JOINING_NETWORK_SIMPLIFIED.name());
+                                                                       ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:289: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 14727, 14736 ) $$ incompatible argument for parameter key of HashMap.put.
+        sendJSON.put("node_id",Integer.toString(nodeHash));
+                     ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:289: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 14737, 14763 ) $$ incompatible argument for parameter value of HashMap.put.
+        sendJSON.put("node_id",Integer.toString(nodeHash));
+                                               ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:290: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 14787, 14798 ) $$ incompatible argument for parameter key of HashMap.put.
+        sendJSON.put("target_id",Integer.toString(bootHash));
+                     ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:290: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 14799, 14825 ) $$ incompatible argument for parameter value of HashMap.put.
+        sendJSON.put("target_id",Integer.toString(bootHash));
+                                                 ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:291: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 14849, 14861 ) $$ incompatible argument for parameter key of HashMap.put.
+        sendJSON.put("ip_address",NetworkProperties.nAddress.toString());
+                     ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:291: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 14862, 14899 ) $$ incompatible argument for parameter value of HashMap.put.
+        sendJSON.put("ip_address",NetworkProperties.nAddress.toString());
+                                                                     ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:305: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 15407, 15413 ) $$ incompatible argument for parameter key of HashMap.put.
+			message.put("type", "LEAVE_NETWORK");
+			            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:305: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 15415, 15430 ) $$ incompatible argument for parameter value of HashMap.put.
+			message.put("type", "LEAVE_NETWORK");
+			                    ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:306: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 15448, 15457 ) $$ incompatible argument for parameter key of HashMap.put.
+			message.put("node_id", String.valueOf(nodeID));
+			            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:306: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 15459, 15481 ) $$ incompatible argument for parameter value of HashMap.put.
+			message.put("node_id", String.valueOf(nodeID));
+			                                     ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:320: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 16058, 16064 ) $$ incompatible argument for parameter key of HashMap.put.
+		template.put("type", "INDEX");
+		             ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:320: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 16066, 16073 ) $$ incompatible argument for parameter value of HashMap.put.
+		template.put("type", "INDEX");
+		                     ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:333: error: (argument) $$ 4 $$ e $$ ArrayList.add $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 16626, 16630 ) $$ incompatible argument for parameter e of ArrayList.add.
+					links.add(word);
+					          ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:334: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 16650, 16659 ) $$ incompatible argument for parameter key of HashMap.put.
+					message.put("keyword", word);
+					            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:334: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 16661, 16665 ) $$ incompatible argument for parameter value of HashMap.put.
+					message.put("keyword", word);
+					                       ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:335: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 16685, 16691 ) $$ incompatible argument for parameter key of HashMap.put.
+					message.put("link", links);
+					            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:335: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods("add") JSONArray $$ ? extends @CalledMethods Object $$ ( 16693, 16698 ) $$ incompatible argument for parameter value of HashMap.put.
+					message.put("link", links);
+					                    ^
+  found   : @CalledMethods("add") JSONArray
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:336: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 16718, 16729 ) $$ incompatible argument for parameter key of HashMap.put.
+					message.put("sender_id", String.valueOf(nodeID));
+					            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:336: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 16731, 16753 ) $$ incompatible argument for parameter value of HashMap.put.
+					message.put("sender_id", String.valueOf(nodeID));
+					                                       ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:337: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 16773, 16784 ) $$ incompatible argument for parameter key of HashMap.put.
+					message.put("target_id", String.valueOf(wordHash));
+					            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:337: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 16786, 16810 ) $$ incompatible argument for parameter value of HashMap.put.
+					message.put("target_id", String.valueOf(wordHash));
+					                                       ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:370: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 18470, 18476 ) $$ incompatible argument for parameter key of HashMap.put.
+			        sendJSON.put("type","SEARCH");
+			                     ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:370: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 18477, 18485 ) $$ incompatible argument for parameter value of HashMap.put.
+			        sendJSON.put("type","SEARCH");
+			                            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:371: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 18512, 18521 ) $$ incompatible argument for parameter key of HashMap.put.
+			        sendJSON.put("node_id",Integer.toString(targetHash));
+			                     ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:371: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 18522, 18550 ) $$ incompatible argument for parameter value of HashMap.put.
+			        sendJSON.put("node_id",Integer.toString(targetHash));
+			                                               ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:372: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 18577, 18583 ) $$ incompatible argument for parameter key of HashMap.put.
+			        sendJSON.put("word", word);
+			                     ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:372: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 18585, 18589 ) $$ incompatible argument for parameter value of HashMap.put.
+			        sendJSON.put("word", word);
+			                             ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:373: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 18616, 18627 ) $$ incompatible argument for parameter key of HashMap.put.
+			        sendJSON.put("sender_id",Integer.toString(nodeID));
+			                     ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:373: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 18628, 18652 ) $$ incompatible argument for parameter value of HashMap.put.
+			        sendJSON.put("sender_id",Integer.toString(nodeID));
+			                                                 ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:438: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 21695, 21701 ) $$ incompatible argument for parameter key of HashMap.put.
+    	backJson.put("type", "ROUTING_INFO");
+    	             ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:438: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 21703, 21717 ) $$ incompatible argument for parameter value of HashMap.put.
+    	backJson.put("type", "ROUTING_INFO");
+    	                     ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:439: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 21738, 21750 ) $$ incompatible argument for parameter key of HashMap.put.
+    	backJson.put("gateway_id",String.valueOf(gateway_id));//different gateway id depending on the received message-> JOIN OR JOIN_RELAY
+    	             ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:439: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 21751, 21777 ) $$ incompatible argument for parameter value of HashMap.put.
+    	backJson.put("gateway_id",String.valueOf(gateway_id));//different gateway id depending on the received message-> JOIN OR JOIN_RELAY
+    	                                        ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:440: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 21875, 21884 ) $$ incompatible argument for parameter key of HashMap.put.
+    	backJson.put("node_id",(String)jsonObj.get("node_id")); // send back to requesting node
+    	             ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:440: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 21885, 21915 ) $$ incompatible argument for parameter value of HashMap.put.
+    	backJson.put("node_id",(String)jsonObj.get("node_id")); // send back to requesting node
+    	                       ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:441: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 21968, 21980 ) $$ incompatible argument for parameter key of HashMap.put.
+    	backJson.put("ip_address", NetworkProperties.nAddress);// current's  address
+    	             ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:441: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 21982, 22008 ) $$ incompatible argument for parameter value of HashMap.put.
+    	backJson.put("ip_address", NetworkProperties.nAddress);// current's  address
+    	                                            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:445: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 22209, 22218 ) $$ incompatible argument for parameter key of HashMap.put.
+			jsonContact.put("node_id",String.valueOf(entry.getKey()));
+			                ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:445: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 22219, 22249 ) $$ incompatible argument for parameter value of HashMap.put.
+			jsonContact.put("node_id",String.valueOf(entry.getKey()));
+			                                        ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:446: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 22271, 22283 ) $$ incompatible argument for parameter key of HashMap.put.
+			jsonContact.put("ip_address", entry.getValue().getIp());
+			                ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:446: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 22285, 22309 ) $$ incompatible argument for parameter value of HashMap.put.
+			jsonContact.put("ip_address", entry.getValue().getIp());
+			                                                    ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:447: error: (argument) $$ 4 $$ e $$ ArrayList.add $$ @CalledMethods("put") JSONObject $$ ? extends @CalledMethods Object $$ ( 22325, 22336 ) $$ incompatible argument for parameter e of ArrayList.add.
+			table.add(jsonContact);
+			          ^
+  found   : @CalledMethods("put") JSONObject
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:449: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 22361, 22374 ) $$ incompatible argument for parameter key of HashMap.put.
+    	backJson.put("route_table", table); 	
+    	             ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:449: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods JSONArray $$ ? extends @CalledMethods Object $$ ( 22376, 22381 ) $$ incompatible argument for parameter value of HashMap.put.
+    	backJson.put("route_table", table); 	
+    	                            ^
+  found   : @CalledMethods JSONArray
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:455: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 22556, 22562 ) $$ incompatible argument for parameter key of HashMap.put.
+	  	message.put("type", "PING");
+	  	            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:455: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 22564, 22570 ) $$ incompatible argument for parameter value of HashMap.put.
+	  	message.put("type", "PING");
+	  	                    ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:456: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 22589, 22600 ) $$ incompatible argument for parameter key of HashMap.put.
+	  	message.put("sender_id", String.valueOf(nodeID));
+	  	            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:456: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 22602, 22624 ) $$ incompatible argument for parameter value of HashMap.put.
+	  	message.put("sender_id", String.valueOf(nodeID));
+	  	                                       ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:457: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 22643, 22654 ) $$ incompatible argument for parameter key of HashMap.put.
+	  	message.put("target_id",String.valueOf(target.getId()));
+	  	            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:457: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 22655, 22685 ) $$ incompatible argument for parameter value of HashMap.put.
+	  	message.put("target_id",String.valueOf(target.getId()));
+	  	                                      ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:515: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 25174, 25180 ) $$ incompatible argument for parameter key of HashMap.put.
+                message.put("type","REFRESH_ROUTING_TABLE");
+                            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Controller.java:515: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 25181, 25204 ) $$ incompatible argument for parameter value of HashMap.put.
+                message.put("type","REFRESH_ROUTING_TABLE");
+                                   ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/SearchResponse.java:35: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 1130, 1136 ) $$ incompatible argument for parameter key of HashMap.put.
+		jsonObj.put("word", word);
+		            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/SearchResponse.java:35: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 1138, 1142 ) $$ incompatible argument for parameter value of HashMap.put.
+		jsonObj.put("word", word);
+		                    ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/SearchResponse.java:39: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 1258, 1263 ) $$ incompatible argument for parameter key of HashMap.put.
+			curr.put("url", url.url);
+			         ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/SearchResponse.java:39: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 1265, 1272 ) $$ incompatible argument for parameter value of HashMap.put.
+			curr.put("url", url.url);
+			                   ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/SearchResponse.java:40: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 1287, 1293 ) $$ incompatible argument for parameter key of HashMap.put.
+			curr.put("rank", String.valueOf(url.rank));
+			         ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/SearchResponse.java:40: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 1295, 1319 ) $$ incompatible argument for parameter value of HashMap.put.
+			curr.put("rank", String.valueOf(url.rank));
+			                               ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/SearchResponse.java:41: error: (argument) $$ 4 $$ e $$ ArrayList.add $$ @CalledMethods("put") JSONObject $$ ? extends @CalledMethods Object $$ ( 1338, 1342 ) $$ incompatible argument for parameter e of ArrayList.add.
+			jsonUrls.add(curr);
+			             ^
+  found   : @CalledMethods("put") JSONObject
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/SearchResponse.java:43: error: (argument) $$ 4 $$ key $$ HashMap.put $$ @CalledMethods String $$ ? extends @CalledMethods Object $$ ( 1363, 1373 ) $$ incompatible argument for parameter key of HashMap.put.
+		jsonObj.put("response", jsonUrls);
+		            ^
+  found   : @CalledMethods String
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/SearchResponse.java:43: error: (argument) $$ 4 $$ value $$ HashMap.put $$ @CalledMethods JSONArray $$ ? extends @CalledMethods Object $$ ( 1375, 1383 ) $$ incompatible argument for parameter value of HashMap.put.
+		jsonObj.put("response", jsonUrls);
+		                        ^
+  found   : @CalledMethods JSONArray
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Sender.java:14: error: (required.method.not.called) $$ 4 $$ method close $$ new DatagramSocket() $$ java.net.DatagramSocket $$ regular method exit $$ ( 380, 400 ) $$ @MustCall method close may not have been invoked on new DatagramSocket() or any of its aliases.
+            socket = new DatagramSocket();
+                     ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Main.java:28: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.DatagramSocket $$ regular method exit $$ ( 1123, 1172 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+            DatagramSocket socket = new DatagramSocket(port);
+                           ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Main.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.DatagramSocket $$ regular method exit $$ ( 1906, 1955 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+            DatagramSocket socket = new DatagramSocket(port);
+                           ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url10fb6bd43e_guwere_P2PSearch_tgz-pJ8-MainJ8/src/Main.java:65: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.DatagramSocket $$ regular method exit $$ ( 2662, 2695 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+            socket = new DatagramSocket(port);
+                   ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+98 errors

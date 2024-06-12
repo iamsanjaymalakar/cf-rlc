@@ -1,0 +1,9 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^Data_Storage/XMLReader.java^28^Data_Storage.XMLReader.<init>(Ljava/lang/String;)V^5 = new <Application,Ljava/io/FileInputStream>@5^NULL^FIELD,^false^true^Field escape;
+1^Data_Storage/XMLReader.java^41^Data_Storage.XMLReader.<init>(Ljava/io/File;)V^14 = new <Application,Ljava/io/FileInputStream>@19^NULL^FIELD,^false^true^Field escape;
+2^Data_Storage/XMLWriter.java^44^Data_Storage.XMLWriter.<init>(Ljava/lang/String;)V^24 = new <Application,Ljava/io/FileOutputStream>@63^NULL^FIELD,^false^true^Field escape;
+3^Data_Storage/XMLWriter.java^65^Data_Storage.XMLWriter.<init>(Ljava/io/File;)V^24 = new <Application,Ljava/io/FileOutputStream>@63^NULL^FIELD,^false^true^Field escape;
+4^User_Interface/MediaPlayer.java^35^User_Interface.MediaPlayer.playWelcome()V^6 = invokestatic < Application, Ljavax/sound/sampled/AudioSystem, getAudioInputStream(Ljava/io/File;)Ljavax/sound/sampled/AudioInputStream; > 2 @9 exception:5^NULL^FIELD,^false^true^Field escape;
+5^User_Interface/MediaPlayer.java^48^User_Interface.MediaPlayer.playMain()V^6 = invokestatic < Application, Ljavax/sound/sampled/AudioSystem, getAudioInputStream(Ljava/io/File;)Ljavax/sound/sampled/AudioInputStream; > 2 @9 exception:5^NULL^FIELD,^false^true^Field escape;
+6^User_Interface/MediaPlayer.java^61^User_Interface.MediaPlayer.playWinning()V^6 = invokestatic < Application, Ljavax/sound/sampled/AudioSystem, getAudioInputStream(Ljava/io/File;)Ljavax/sound/sampled/AudioInputStream; > 2 @9 exception:5^NULL^FIELD,^false^true^Field escape;
+7^Graphics_Renderer/MapEditor.java^351^Graphics_Renderer.MapEditor.createOutputFile()V^15 = new <Application,Ljava/io/BufferedWriter>@42^Graphics_Renderer.MapEditor.createOutputFile()V#16,^INVOKE,^false^false^Try-catch Fix;

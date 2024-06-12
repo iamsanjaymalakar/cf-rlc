@@ -1,0 +1,192 @@
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/calculator/CalculatorGrammar.java:74: error: (override.param) $$ 7 $$ state $$ @MustCall Stack<@MustCall BigInteger> $$ @PolyMustCall Stack<@MustCall BigInteger> $$ @MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$1> $$ @MustCall Stack<@MustCall BigInteger> transformAfter(@MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$1> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall Stack<@MustCall BigInteger> p1) $$ @MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>> $$ @PolyMustCall Stack<@MustCall BigInteger> transformAfter(@MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall Stack<@MustCall BigInteger> p1) $$ ( 2678, 2701 ) $$ Incompatible parameter type for state.
+            public Stack<BigInteger> transformAfter(Tree<ASTValueData> node, Stack<BigInteger> state) {
+                                                                                               ^
+  found   : @MustCall Stack<@MustCall BigInteger>
+  required: @PolyMustCall Stack<@MustCall BigInteger>
+  Consequence: method in @MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$1>
+    @MustCall Stack<@MustCall BigInteger> transformAfter(@MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$1> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall Stack<@MustCall BigInteger> p1)
+  cannot override method in @MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>>
+    @PolyMustCall Stack<@MustCall BigInteger> transformAfter(@MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall Stack<@MustCall BigInteger> p1)
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/calculator/CalculatorGrammar.java:81: error: (override.param) $$ 7 $$ state $$ @MustCall Stack<@MustCall BigInteger> $$ @PolyMustCall Stack<@MustCall BigInteger> $$ @MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$2> $$ @MustCall Stack<@MustCall BigInteger> transformAfter(@MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$2> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall Stack<@MustCall BigInteger> p1) $$ @MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>> $$ @PolyMustCall Stack<@MustCall BigInteger> transformAfter(@MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall Stack<@MustCall BigInteger> p1) $$ ( 2982, 3005 ) $$ Incompatible parameter type for state.
+            public Stack<BigInteger> transformAfter(Tree<ASTValueData> node, Stack<BigInteger> state) {
+                                                                                               ^
+  found   : @MustCall Stack<@MustCall BigInteger>
+  required: @PolyMustCall Stack<@MustCall BigInteger>
+  Consequence: method in @MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$2>
+    @MustCall Stack<@MustCall BigInteger> transformAfter(@MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$2> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall Stack<@MustCall BigInteger> p1)
+  cannot override method in @MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>>
+    @PolyMustCall Stack<@MustCall BigInteger> transformAfter(@MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall Stack<@MustCall BigInteger> p1)
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/calculator/CalculatorGrammar.java:93: error: (override.param) $$ 7 $$ state $$ @MustCall Stack<@MustCall BigInteger> $$ @PolyMustCall Stack<@MustCall BigInteger> $$ @MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$3> $$ @MustCall Stack<@MustCall BigInteger> transformAfter(@MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$3> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall Stack<@MustCall BigInteger> p1) $$ @MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>> $$ @PolyMustCall Stack<@MustCall BigInteger> transformAfter(@MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall Stack<@MustCall BigInteger> p1) $$ ( 3510, 3533 ) $$ Incompatible parameter type for state.
+            public Stack<BigInteger> transformAfter(Tree<ASTValueData> node, Stack<BigInteger> state) {
+                                                                                               ^
+  found   : @MustCall Stack<@MustCall BigInteger>
+  required: @PolyMustCall Stack<@MustCall BigInteger>
+  Consequence: method in @MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$3>
+    @MustCall Stack<@MustCall BigInteger> transformAfter(@MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$3> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall Stack<@MustCall BigInteger> p1)
+  cannot override method in @MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>>
+    @PolyMustCall Stack<@MustCall BigInteger> transformAfter(@MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall Stack<@MustCall BigInteger> p1)
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/calculator/CalculatorGrammar.java:113: error: (override.param) $$ 7 $$ state $$ @MustCall Stack<@MustCall BigInteger> $$ @PolyMustCall Stack<@MustCall BigInteger> $$ @MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$4> $$ @MustCall Stack<@MustCall BigInteger> transformAfter(@MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$4> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall Stack<@MustCall BigInteger> p1) $$ @MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>> $$ @PolyMustCall Stack<@MustCall BigInteger> transformAfter(@MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall Stack<@MustCall BigInteger> p1) $$ ( 4393, 4416 ) $$ Incompatible parameter type for state.
+            public Stack<BigInteger> transformAfter(Tree<ASTValueData> node, Stack<BigInteger> state) {
+                                                                                               ^
+  found   : @MustCall Stack<@MustCall BigInteger>
+  required: @PolyMustCall Stack<@MustCall BigInteger>
+  Consequence: method in @MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$4>
+    @MustCall Stack<@MustCall BigInteger> transformAfter(@MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$4> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall Stack<@MustCall BigInteger> p1)
+  cannot override method in @MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>>
+    @PolyMustCall Stack<@MustCall BigInteger> transformAfter(@MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall Stack<@MustCall BigInteger> p1)
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/calculator/CalculatorGrammar.java:131: error: (override.param) $$ 7 $$ state $$ @MustCall Stack<@MustCall BigInteger> $$ @PolyMustCall Stack<@MustCall BigInteger> $$ @MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$5> $$ @MustCall Stack<@MustCall BigInteger> transformAfter(@MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$5> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall Stack<@MustCall BigInteger> p1) $$ @MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>> $$ @PolyMustCall Stack<@MustCall BigInteger> transformAfter(@MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall Stack<@MustCall BigInteger> p1) $$ ( 5166, 5189 ) $$ Incompatible parameter type for state.
+            public Stack<BigInteger> transformAfter(Tree<ASTValueData> node, Stack<BigInteger> state) {
+                                                                                               ^
+  found   : @MustCall Stack<@MustCall BigInteger>
+  required: @PolyMustCall Stack<@MustCall BigInteger>
+  Consequence: method in @MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$5>
+    @MustCall Stack<@MustCall BigInteger> transformAfter(@MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$5> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall Stack<@MustCall BigInteger> p1)
+  cannot override method in @MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>>
+    @PolyMustCall Stack<@MustCall BigInteger> transformAfter(@MustCall TreeTransformerAdapter<@MustCall Stack<@MustCall BigInteger>> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall Stack<@MustCall BigInteger> p1)
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/calculator/CalculatorGrammar.java:139: error: (override.param) $$ 7 $$ state $$ @MustCall Object $$ @PolyMustCall Object $$ @MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$6> $$ @MustCall Object transformAfter(@MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$6> this, @MustCall Tree</*RAW*/> p0, @MustCall Object p1) $$ @MustCall TreeTransformerAdapter</*RAW*/> $$ @PolyMustCall Object transformAfter(@MustCall TreeTransformerAdapter</*RAW*/> this, @MustCall Tree</*RAW*/> p0, @PolyMustCall Object p1) $$ ( 5417, 5429 ) $$ Incompatible parameter type for state.
+            public Object transformAfter(Tree node, Object state) {
+                                                           ^
+  found   : @MustCall Object
+  required: @PolyMustCall Object
+  Consequence: method in @MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$6>
+    @MustCall Object transformAfter(@MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$6> this, @MustCall Tree</*RAW*/> p0, @MustCall Object p1)
+  cannot override method in @MustCall TreeTransformerAdapter</*RAW*/>
+    @PolyMustCall Object transformAfter(@MustCall TreeTransformerAdapter</*RAW*/> this, @MustCall Tree</*RAW*/> p0, @PolyMustCall Object p1)
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/calculator/CalculatorGrammar.java:151: error: (override.param) $$ 7 $$ state $$ @MustCall Object $$ @PolyMustCall Object $$ @MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$7> $$ @MustCall Object transformAfter(@MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$7> this, @MustCall Tree</*RAW*/> p0, @MustCall Object p1) $$ @MustCall TreeTransformerAdapter</*RAW*/> $$ @PolyMustCall Object transformAfter(@MustCall TreeTransformerAdapter</*RAW*/> this, @MustCall Tree</*RAW*/> p0, @PolyMustCall Object p1) $$ ( 5981, 5993 ) $$ Incompatible parameter type for state.
+            public Object transformAfter(Tree node, Object state) {
+                                                           ^
+  found   : @MustCall Object
+  required: @PolyMustCall Object
+  Consequence: method in @MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$7>
+    @MustCall Object transformAfter(@MustCall CalculatorGrammar.@MustCall <anonymous erilex.calculator.CalculatorGrammar$7> this, @MustCall Tree</*RAW*/> p0, @MustCall Object p1)
+  cannot override method in @MustCall TreeTransformerAdapter</*RAW*/>
+    @PolyMustCall Object transformAfter(@MustCall TreeTransformerAdapter</*RAW*/> this, @MustCall Tree</*RAW*/> p0, @PolyMustCall Object p1)
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/tree/DeepTreeTransformer.java:115: error: (required.method.not.known) $$ 3 $$ state1 $$ S $$ variable overwritten by assignment state1 = transform((D)s, state1) $$ ( 4620, 4628 ) $$ The checker cannot determine the must call methods of state1 or any of its aliases, so it could not determine if they were called. Typically, this error indicates that you need to write an @MustCall annotation (often on an unconstrained generic type).
+    private S eval(D node, S state1) {
+                             ^
+  The type of object is: S.
+  Reason for going out of scope: variable overwritten by assignment state1 = transform((D)s, state1)
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/tree/DeepTreeTransformer.java:117: error: (argument) $$ 4 $$ state $$ DeepTreeTransformer.transform $$ S extends @PolyMustCall Object $$ S extends @MustCall Object $$ ( 4709, 4715 ) $$ incompatible argument for parameter state of DeepTreeTransformer.transform.
+            state1 = transform((D) s, state1);
+                                      ^
+  found   : S extends @PolyMustCall Object
+  required: S extends @MustCall Object
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/tree/TreeTransformerAdapter.java:39: error: (override.return) $$ 6 $$ S extends @PolyMustCall Object $$ S extends @MustCall Object $$ @MustCall TreeTransformerAdapter<S extends @MustCall Object> $$ S extends @PolyMustCall Object transform(@MustCall TreeTransformerAdapter<S extends @MustCall Object> this, @MustCall Tree<@MustCall ASTValueData> p0, S extends @PolyMustCall Object p1) $$ @MustCall GenericTreeTransformer<@MustCall Tree<@MustCall ASTValueData>, S extends @MustCall Object> $$ S extends @MustCall Object transform(@MustCall GenericTreeTransformer<@MustCall Tree<@MustCall ASTValueData>, S extends @MustCall Object> this, @MustCall Tree<@MustCall ASTValueData> p0, S extends @MustCall Object p1) $$ ( 1094, 1095 ) $$ Incompatible return type.
+    public S transform(Tree<ASTValueData> node, S state) {
+           ^
+  found   : S extends @PolyMustCall Object
+  required: S extends @MustCall Object
+  Consequence: method in @MustCall TreeTransformerAdapter<S extends @MustCall Object>
+    S extends @PolyMustCall Object transform(@MustCall TreeTransformerAdapter<S extends @MustCall Object> this, @MustCall Tree<@MustCall ASTValueData> p0, S extends @PolyMustCall Object p1)
+  cannot override method in @MustCall GenericTreeTransformer<@MustCall Tree<@MustCall ASTValueData>, S extends @MustCall Object>
+    S extends @MustCall Object transform(@MustCall GenericTreeTransformer<@MustCall Tree<@MustCall ASTValueData>, S extends @MustCall Object> this, @MustCall Tree<@MustCall ASTValueData> p0, S extends @MustCall Object p1)
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/tree/TreeTransformerAdapter.java:42: error: (argument) $$ 4 $$ state $$ ASTTreeTransformer.subtreeTransformer $$ S extends @PolyMustCall Object $$ S extends @MustCall Object $$ ( 1283, 1288 ) $$ incompatible argument for parameter state of ASTTreeTransformer.subtreeTransformer.
+            state = subtreeTransformer(s, state);
+                                          ^
+  found   : S extends @PolyMustCall Object
+  required: S extends @MustCall Object
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/data/FileStream.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(file, "r") $$ java.io.RandomAccessFile $$ regular method exit $$ ( 1287, 1318 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(file, "r") or any of its aliases.
+        this.reader = new RandomAccessFile(file, "r");
+                      ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/codegen/Class.java:109: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(file) $$ java.io.FileWriter $$ possible exceptional exit due to codeGen(w) with exception type java.io.IOException $$ ( 3205, 3225 ) $$ @MustCall method close may not have been invoked on new FileWriter(file) or any of its aliases.
+        Writer w = new BufferedWriter(new FileWriter(file));
+                                      ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to codeGen(w) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/esl/ESL.java:304: error: (owning.override.param) $$ 5 $$ scg $$ transform $$ erilex.esl.ESL$1 $$ transform $$ erilex.tree.TreeTransformerAdapter $$ ( 10811, 12393 ) $$ Incompatible ownership for parameter scg.
+            public SupportCodeGenerator transform(Tree<ASTValueData> node, SupportCodeGenerator scg) {
+                                        ^
+  found   : no ownership annotation or @NotOwning
+  required: @Owning
+  Consequence: method transform in erilex.esl.ESL$1 cannot override method transform in erilex.tree.TreeTransformerAdapter
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/esl/ESL.java:304: error: (override.param) $$ 7 $$ scg $$ @MustCall SupportCodeGenerator $$ @PolyMustCall SupportCodeGenerator $$ @MustCall ESL.@MustCall <anonymous erilex.esl.ESL$1> $$ @MustCall SupportCodeGenerator transform(@MustCall ESL.@MustCall <anonymous erilex.esl.ESL$1> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall SupportCodeGenerator p1) $$ @MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> $$ @PolyMustCall SupportCodeGenerator transform(@MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall SupportCodeGenerator p1) $$ ( 10896, 10920 ) $$ Incompatible parameter type for scg.
+            public SupportCodeGenerator transform(Tree<ASTValueData> node, SupportCodeGenerator scg) {
+                                                                                                ^
+  found   : @MustCall SupportCodeGenerator
+  required: @PolyMustCall SupportCodeGenerator
+  Consequence: method in @MustCall ESL.@MustCall <anonymous erilex.esl.ESL$1>
+    @MustCall SupportCodeGenerator transform(@MustCall ESL.@MustCall <anonymous erilex.esl.ESL$1> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall SupportCodeGenerator p1)
+  cannot override method in @MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator>
+    @PolyMustCall SupportCodeGenerator transform(@MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall SupportCodeGenerator p1)
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/esl/ESL.java:364: error: (owning.override.param) $$ 5 $$ scg $$ transform $$ erilex.esl.ESL$2 $$ transform $$ erilex.tree.TreeTransformerAdapter $$ ( 13567, 14102 ) $$ Incompatible ownership for parameter scg.
+            public SupportCodeGenerator transform(Tree<ASTValueData> node, SupportCodeGenerator scg) {
+                                        ^
+  found   : no ownership annotation or @NotOwning
+  required: @Owning
+  Consequence: method transform in erilex.esl.ESL$2 cannot override method transform in erilex.tree.TreeTransformerAdapter
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/esl/ESL.java:364: error: (override.param) $$ 7 $$ scg $$ @MustCall SupportCodeGenerator $$ @PolyMustCall SupportCodeGenerator $$ @MustCall ESL.@MustCall <anonymous erilex.esl.ESL$2> $$ @MustCall SupportCodeGenerator transform(@MustCall ESL.@MustCall <anonymous erilex.esl.ESL$2> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall SupportCodeGenerator p1) $$ @MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> $$ @PolyMustCall SupportCodeGenerator transform(@MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall SupportCodeGenerator p1) $$ ( 13652, 13676 ) $$ Incompatible parameter type for scg.
+            public SupportCodeGenerator transform(Tree<ASTValueData> node, SupportCodeGenerator scg) {
+                                                                                                ^
+  found   : @MustCall SupportCodeGenerator
+  required: @PolyMustCall SupportCodeGenerator
+  Consequence: method in @MustCall ESL.@MustCall <anonymous erilex.esl.ESL$2>
+    @MustCall SupportCodeGenerator transform(@MustCall ESL.@MustCall <anonymous erilex.esl.ESL$2> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall SupportCodeGenerator p1)
+  cannot override method in @MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator>
+    @PolyMustCall SupportCodeGenerator transform(@MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall SupportCodeGenerator p1)
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/esl/ESL.java:379: error: (owning.override.param) $$ 5 $$ scg $$ transform $$ erilex.esl.ESL$3 $$ transform $$ erilex.tree.TreeTransformerAdapter $$ ( 14216, 15676 ) $$ Incompatible ownership for parameter scg.
+            public SupportCodeGenerator transform(Tree<ASTValueData> node, SupportCodeGenerator scg) {
+                                        ^
+  found   : no ownership annotation or @NotOwning
+  required: @Owning
+  Consequence: method transform in erilex.esl.ESL$3 cannot override method transform in erilex.tree.TreeTransformerAdapter
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/esl/ESL.java:379: error: (override.param) $$ 7 $$ scg $$ @MustCall SupportCodeGenerator $$ @PolyMustCall SupportCodeGenerator $$ @MustCall ESL.@MustCall <anonymous erilex.esl.ESL$3> $$ @MustCall SupportCodeGenerator transform(@MustCall ESL.@MustCall <anonymous erilex.esl.ESL$3> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall SupportCodeGenerator p1) $$ @MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> $$ @PolyMustCall SupportCodeGenerator transform(@MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall SupportCodeGenerator p1) $$ ( 14301, 14325 ) $$ Incompatible parameter type for scg.
+            public SupportCodeGenerator transform(Tree<ASTValueData> node, SupportCodeGenerator scg) {
+                                                                                                ^
+  found   : @MustCall SupportCodeGenerator
+  required: @PolyMustCall SupportCodeGenerator
+  Consequence: method in @MustCall ESL.@MustCall <anonymous erilex.esl.ESL$3>
+    @MustCall SupportCodeGenerator transform(@MustCall ESL.@MustCall <anonymous erilex.esl.ESL$3> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall SupportCodeGenerator p1)
+  cannot override method in @MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator>
+    @PolyMustCall SupportCodeGenerator transform(@MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall SupportCodeGenerator p1)
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/esl/ESL.java:415: error: (owning.override.param) $$ 5 $$ scg $$ transform $$ erilex.esl.ESL$4 $$ transform $$ erilex.tree.TreeTransformerAdapter $$ ( 15799, 16932 ) $$ Incompatible ownership for parameter scg.
+            public SupportCodeGenerator transform(Tree<ASTValueData> node, SupportCodeGenerator scg) {
+                                        ^
+  found   : no ownership annotation or @NotOwning
+  required: @Owning
+  Consequence: method transform in erilex.esl.ESL$4 cannot override method transform in erilex.tree.TreeTransformerAdapter
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/esl/ESL.java:415: error: (override.param) $$ 7 $$ scg $$ @MustCall SupportCodeGenerator $$ @PolyMustCall SupportCodeGenerator $$ @MustCall ESL.@MustCall <anonymous erilex.esl.ESL$4> $$ @MustCall SupportCodeGenerator transform(@MustCall ESL.@MustCall <anonymous erilex.esl.ESL$4> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall SupportCodeGenerator p1) $$ @MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> $$ @PolyMustCall SupportCodeGenerator transform(@MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall SupportCodeGenerator p1) $$ ( 15884, 15908 ) $$ Incompatible parameter type for scg.
+            public SupportCodeGenerator transform(Tree<ASTValueData> node, SupportCodeGenerator scg) {
+                                                                                                ^
+  found   : @MustCall SupportCodeGenerator
+  required: @PolyMustCall SupportCodeGenerator
+  Consequence: method in @MustCall ESL.@MustCall <anonymous erilex.esl.ESL$4>
+    @MustCall SupportCodeGenerator transform(@MustCall ESL.@MustCall <anonymous erilex.esl.ESL$4> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall SupportCodeGenerator p1)
+  cannot override method in @MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator>
+    @PolyMustCall SupportCodeGenerator transform(@MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall SupportCodeGenerator p1)
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/esl/ESL.java:445: error: (owning.override.param) $$ 5 $$ scg $$ transform $$ erilex.esl.ESL$5 $$ transform $$ erilex.tree.TreeTransformerAdapter $$ ( 17050, 20167 ) $$ Incompatible ownership for parameter scg.
+            public SupportCodeGenerator transform(Tree<ASTValueData> node, SupportCodeGenerator scg) {
+                                        ^
+  found   : no ownership annotation or @NotOwning
+  required: @Owning
+  Consequence: method transform in erilex.esl.ESL$5 cannot override method transform in erilex.tree.TreeTransformerAdapter
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/esl/ESL.java:445: error: (override.param) $$ 7 $$ scg $$ @MustCall SupportCodeGenerator $$ @PolyMustCall SupportCodeGenerator $$ @MustCall ESL.@MustCall <anonymous erilex.esl.ESL$5> $$ @MustCall SupportCodeGenerator transform(@MustCall ESL.@MustCall <anonymous erilex.esl.ESL$5> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall SupportCodeGenerator p1) $$ @MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> $$ @PolyMustCall SupportCodeGenerator transform(@MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall SupportCodeGenerator p1) $$ ( 17135, 17159 ) $$ Incompatible parameter type for scg.
+            public SupportCodeGenerator transform(Tree<ASTValueData> node, SupportCodeGenerator scg) {
+                                                                                                ^
+  found   : @MustCall SupportCodeGenerator
+  required: @PolyMustCall SupportCodeGenerator
+  Consequence: method in @MustCall ESL.@MustCall <anonymous erilex.esl.ESL$5>
+    @MustCall SupportCodeGenerator transform(@MustCall ESL.@MustCall <anonymous erilex.esl.ESL$5> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall SupportCodeGenerator p1)
+  cannot override method in @MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator>
+    @PolyMustCall SupportCodeGenerator transform(@MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall SupportCodeGenerator p1)
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/esl/ESL.java:507: error: (owning.override.param) $$ 5 $$ scg $$ transform $$ erilex.esl.ESL$6 $$ transform $$ erilex.tree.TreeTransformerAdapter $$ ( 20285, 22651 ) $$ Incompatible ownership for parameter scg.
+            public SupportCodeGenerator transform(Tree<ASTValueData> node2, SupportCodeGenerator scg) {
+                                        ^
+  found   : no ownership annotation or @NotOwning
+  required: @Owning
+  Consequence: method transform in erilex.esl.ESL$6 cannot override method transform in erilex.tree.TreeTransformerAdapter
+../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/esl/ESL.java:507: error: (override.param) $$ 7 $$ scg $$ @MustCall SupportCodeGenerator $$ @PolyMustCall SupportCodeGenerator $$ @MustCall ESL.@MustCall <anonymous erilex.esl.ESL$6> $$ @MustCall SupportCodeGenerator transform(@MustCall ESL.@MustCall <anonymous erilex.esl.ESL$6> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall SupportCodeGenerator p1) $$ @MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> $$ @PolyMustCall SupportCodeGenerator transform(@MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall SupportCodeGenerator p1) $$ ( 20371, 20395 ) $$ Incompatible parameter type for scg.
+            public SupportCodeGenerator transform(Tree<ASTValueData> node2, SupportCodeGenerator scg) {
+                                                                                                 ^
+  found   : @MustCall SupportCodeGenerator
+  required: @PolyMustCall SupportCodeGenerator
+  Consequence: method in @MustCall ESL.@MustCall <anonymous erilex.esl.ESL$6>
+    @MustCall SupportCodeGenerator transform(@MustCall ESL.@MustCall <anonymous erilex.esl.ESL$6> this, @MustCall Tree<@MustCall ASTValueData> p0, @MustCall SupportCodeGenerator p1)
+  cannot override method in @MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator>
+    @PolyMustCall SupportCodeGenerator transform(@MustCall TreeTransformerAdapter<@MustCall SupportCodeGenerator> this, @MustCall Tree<@MustCall ASTValueData> p0, @PolyMustCall SupportCodeGenerator p1)
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+25 errors

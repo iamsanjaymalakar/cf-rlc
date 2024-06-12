@@ -1,0 +1,62 @@
+../dataset/june2020_dataset_copy/url9ef4af9ae5_stevenreyn_RegionViewer_tgz-pJ8-net_slreynolds_ds_SecondTestJ8/src/net/slreynolds/ds/AbstractJavaTest.java:25: error: (required.method.not.called) $$ 4 $$ method finishExportSession $$ new SimpleGraphVizExporter() $$ net.slreynolds.ds.export.SimpleGraphVizExporter $$ regular method exit $$ ( 747, 775 ) $$ @MustCall method finishExportSession may not have been invoked on new SimpleGraphVizExporter() or any of its aliases.
+			    ObjectSaver simpleGvizSaver = new ObjectSaver(new SimpleGraphVizExporter());
+			                                                  ^
+  The type of object is: net.slreynolds.ds.export.SimpleGraphVizExporter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url9ef4af9ae5_stevenreyn_RegionViewer_tgz-pJ8-net_slreynolds_ds_SecondTestJ8/src/net/slreynolds/ds/SimpleGrapVizExporterExample.java:25: error: (required.method.not.called) $$ 4 $$ method finishExportSession $$ new SimpleGraphVizExporter() $$ net.slreynolds.ds.export.SimpleGraphVizExporter $$ regular method exit $$ ( 761, 789 ) $$ @MustCall method finishExportSession may not have been invoked on new SimpleGraphVizExporter() or any of its aliases.
+	    ObjectSaver gvizSaver = new ObjectSaver(new SimpleGraphVizExporter());
+	                                            ^
+  The type of object is: net.slreynolds.ds.export.SimpleGraphVizExporter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url9ef4af9ae5_stevenreyn_RegionViewer_tgz-pJ8-net_slreynolds_ds_SecondTestJ8/src/net/slreynolds/ds/FirstTest.java:41: error: (required.method.not.called) $$ 4 $$ method finishExportSession $$ exporter $$ net.slreynolds.ds.export.TulipExporter $$ possible exceptional exit due to exporter.export(g, options) with exception type net.slreynolds.ds.export.ExportException $$ ( 1218, 1263 ) $$ @MustCall method finishExportSession may not have been invoked on exporter or any of its aliases.
+		TulipExporter exporter = new TulipExporter();
+		              ^
+  The type of object is: net.slreynolds.ds.export.TulipExporter.
+  Reason for going out of scope: possible exceptional exit due to exporter.export(g, options) with exception type net.slreynolds.ds.export.ExportException
+../dataset/june2020_dataset_copy/url9ef4af9ae5_stevenreyn_RegionViewer_tgz-pJ8-net_slreynolds_ds_SecondTestJ8/src/net/slreynolds/ds/export/SimpleGraphVizExporter.java:21: error: (missing.creates.mustcall.for) $$ 3 $$ resetExportSession $$ this $$ ostream $$ ( 476, 729 ) $$ Method resetExportSession re-assigns the non-final, owning field this.ostream, but does not have a corresponding @CreatesMustCallFor annotation.
+    protected void resetExportSession(Map<String,Object> opts) throws IOException {
+                   ^
+../dataset/june2020_dataset_copy/url9ef4af9ae5_stevenreyn_RegionViewer_tgz-pJ8-net_slreynolds_ds_SecondTestJ8/src/net/slreynolds/ds/export/SimpleGraphVizExporter.java:23: error: (required.method.not.called) $$ 4 $$ method close $$ field ostream $$ java.io.PrintStream $$  Non-final owning field might be overwritten $$ ( 612, 643 ) $$ @MustCall method close may not have been invoked on field ostream or any of its aliases.
+    	ostream = makePrintStream(opts);
+    	        ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url9ef4af9ae5_stevenreyn_RegionViewer_tgz-pJ8-net_slreynolds_ds_SecondTestJ8/src/net/slreynolds/ds/export/TulipExporter.java:25: error: (missing.creates.mustcall.for) $$ 3 $$ resetExportSession $$ this $$ ostream $$ ( 638, 852 ) $$ Method resetExportSession re-assigns the non-final, owning field this.ostream, but does not have a corresponding @CreatesMustCallFor annotation.
+    protected void resetExportSession(Map<String,Object> opts) throws IOException {
+                   ^
+../dataset/june2020_dataset_copy/url9ef4af9ae5_stevenreyn_RegionViewer_tgz-pJ8-net_slreynolds_ds_SecondTestJ8/src/net/slreynolds/ds/export/TulipExporter.java:29: error: (required.method.not.called) $$ 4 $$ method close $$ field ostream $$ java.io.PrintStream $$  Non-final owning field might be overwritten $$ ( 814, 845 ) $$ @MustCall method close may not have been invoked on field ostream or any of its aliases.
+    	ostream = makePrintStream(opts);
+    	        ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url9ef4af9ae5_stevenreyn_RegionViewer_tgz-pJ8-net_slreynolds_ds_SecondTestJ8/src/net/slreynolds/ds/export/TulipExporter.java:55: error: (contracts.postcondition) $$ 3 $$ finishExportSession $$ no information about this.ostream $$ this.ostream is @CalledMethods("close") $$ ( 1502, 3897 ) $$ postcondition of finishExportSession is not satisfied.
+    protected void  finishExportSession() {
+                    ^
+  found   : no information about this.ostream
+  required: this.ostream is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url9ef4af9ae5_stevenreyn_RegionViewer_tgz-pJ8-net_slreynolds_ds_SecondTestJ8/src/net/slreynolds/ds/export/GraphMLExporter.java:19: error: (missing.creates.mustcall.for) $$ 3 $$ resetExportSession $$ this $$ ostream $$ ( 400, 653 ) $$ Method resetExportSession re-assigns the non-final, owning field this.ostream, but does not have a corresponding @CreatesMustCallFor annotation.
+    protected void resetExportSession(Map<String,Object> opts) throws IOException {
+                   ^
+../dataset/june2020_dataset_copy/url9ef4af9ae5_stevenreyn_RegionViewer_tgz-pJ8-net_slreynolds_ds_SecondTestJ8/src/net/slreynolds/ds/export/GraphMLExporter.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ field ostream $$ java.io.PrintStream $$  Non-final owning field might be overwritten $$ ( 536, 567 ) $$ @MustCall method close may not have been invoked on field ostream or any of its aliases.
+    	ostream = makePrintStream(opts);
+    	        ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url9ef4af9ae5_stevenreyn_RegionViewer_tgz-pJ8-net_slreynolds_ds_SecondTestJ8/src/net/slreynolds/ds/model/TestArrays.java:55: error: (required.method.not.called) $$ 4 $$ method finishExportSession $$ new SimpleGraphVizExporter() $$ net.slreynolds.ds.export.SimpleGraphVizExporter $$ regular method exit $$ ( 1676, 1704 ) $$ @MustCall method finishExportSession may not have been invoked on new SimpleGraphVizExporter() or any of its aliases.
+		ObjectSaver simpleGvizSaver = new ObjectSaver(new SimpleGraphVizExporter());
+		                                              ^
+  The type of object is: net.slreynolds.ds.export.SimpleGraphVizExporter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url9ef4af9ae5_stevenreyn_RegionViewer_tgz-pJ8-net_slreynolds_ds_SecondTestJ8/src/net/slreynolds/ds/model/TestArrays.java:83: error: (required.method.not.called) $$ 4 $$ method finishExportSession $$ new SimpleGraphVizExporter() $$ net.slreynolds.ds.export.SimpleGraphVizExporter $$ regular method exit $$ ( 2942, 2970 ) $$ @MustCall method finishExportSession may not have been invoked on new SimpleGraphVizExporter() or any of its aliases.
+		ObjectSaver simpleGvizSaver = new ObjectSaver(new SimpleGraphVizExporter());
+		                                              ^
+  The type of object is: net.slreynolds.ds.export.SimpleGraphVizExporter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url9ef4af9ae5_stevenreyn_RegionViewer_tgz-pJ8-net_slreynolds_ds_SecondTestJ8/src/net/slreynolds/ds/model/TestArrays.java:150: error: (required.method.not.called) $$ 4 $$ method finishExportSession $$ new SimpleGraphVizExporter() $$ net.slreynolds.ds.export.SimpleGraphVizExporter $$ regular method exit $$ ( 5614, 5642 ) $$ @MustCall method finishExportSession may not have been invoked on new SimpleGraphVizExporter() or any of its aliases.
+		ObjectSaver simpleGvizSaver = new ObjectSaver(new SimpleGraphVizExporter());
+		                                              ^
+  The type of object is: net.slreynolds.ds.export.SimpleGraphVizExporter.
+  Reason for going out of scope: regular method exit
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+13 errors

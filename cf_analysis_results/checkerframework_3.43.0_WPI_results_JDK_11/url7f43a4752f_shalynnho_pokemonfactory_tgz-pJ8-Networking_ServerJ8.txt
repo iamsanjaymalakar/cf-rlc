@@ -1,0 +1,125 @@
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Networking/Server.java:119: error: (required.method.not.called) $$ 4 $$ method close $$ ss.accept() $$ java.net.Socket $$ regular method exit $$ ( 3356, 3367 ) $$ @MustCall method close may not have been invoked on ss.accept() or any of its aliases.
+				s = ss.accept();
+				             ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Networking/Server.java:471: error: (required.method.not.called) $$ 4 $$ method close $$ saveKitConfigs $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(saveKitConfigs) with exception type java.io.IOException $$ ( 15587, 15671 ) $$ @MustCall method close may not have been invoked on saveKitConfigs or any of its aliases.
+			FileOutputStream saveKitConfigs = new FileOutputStream(
+			                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(saveKitConfigs) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Networking/Server.java:478: error: (required.method.not.called) $$ 4 $$ method close $$ savePartTypes $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(savePartTypes) with exception type java.io.IOException $$ ( 15841, 15924 ) $$ @MustCall method close may not have been invoked on savePartTypes or any of its aliases.
+			FileOutputStream savePartTypes = new FileOutputStream(
+			                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(savePartTypes) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ConsoleWriter.java:197: error: (required.method.not.called) $$ 4 $$ method close $$ output $$ java.io.OutputStream $$ possible exceptional exit due to output.write(new String(data).getBytes("UTF-8")) with exception type java.io.IOException $$ ( 4820, 4871 ) $$ @MustCall method close may not have been invoked on output or any of its aliases.
+			OutputStream output = connection.getOutputStream();
+			             ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to output.write(new String(data).getBytes("UTF-8")) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ConsoleWriter.java:200: error: (required.method.not.called) $$ 4 $$ method close $$ response $$ java.io.InputStream $$ regular method exit $$ ( 4929, 4980 ) $$ @MustCall method close may not have been invoked on response or any of its aliases.
+			InputStream response = connection.getInputStream();
+			            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V1_JUnit_FCS_Test_Normative.java:723: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException $$ ( 25400, 25482 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+			fos = new FileOutputStream(FILEPATH + test + "(" + date.toString()
+			    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_StandAgent_Test_NormativeScenario.java:182: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException $$ ( 5668, 5751 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+			fos = new FileOutputStream(FILEPATH + test + "(" + date.toString()
+			    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_KitRobotAgent_Test_NormativeScenario.java:355: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException $$ ( 12581, 12663 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+			fos = new FileOutputStream(FILEPATH + test + "(" + date.toString()
+			    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_ConveyorAgent_Test_NormativeScenario.java:200: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException $$ ( 6314, 6396 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+			fos = new FileOutputStream(FILEPATH + test + "(" + date.toString()
+			    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/agent/test/V0_JUnit_GantryFeederLaneNestNormativeScenario.java:225: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException $$ ( 7382, 7464 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+			fos = new FileOutputStream(FILEPATH + test + "(" + date.toString()
+			    ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(fos) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Networking/Client.java:73: error: (required.method.not.called) $$ 4 $$ method close $$ new Socket("localhost", Constants.SERVER_PORT) $$ java.net.Socket $$ possible exceptional exit due to socket.getOutputStream() with exception type java.io.IOException $$ ( 1906, 1952 ) $$ @MustCall method close may not have been invoked on new Socket("localhost", Constants.SERVER_PORT) or any of its aliases.
+			socket = new Socket("localhost", Constants.SERVER_PORT);
+			         ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to socket.getOutputStream() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java:61: error: (required.method.not.called) $$ 4 $$ method close $$ audioIn $$ javax.sound.sampled.AudioInputStream $$ regular method exit $$ ( 1720, 1784 ) $$ @MustCall method close may not have been invoked on audioIn or any of its aliases.
+			AudioInputStream audioIn = AudioSystem.getAudioInputStream(url);
+			                 ^
+  The type of object is: javax.sound.sampled.AudioInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java:72: error: (required.method.not.called) $$ 4 $$ method close $$ pokeAudioIn $$ javax.sound.sampled.AudioInputStream $$ possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException $$ ( 2009, 2082 ) $$ @MustCall method close may not have been invoked on pokeAudioIn or any of its aliases.
+			AudioInputStream pokeAudioIn = AudioSystem.getAudioInputStream(fluteURL);
+			                 ^
+  The type of object is: javax.sound.sampled.AudioInputStream.
+  Reason for going out of scope: possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java:80: error: (required.method.not.called) $$ 4 $$ method close $$ recoverAudioIn $$ javax.sound.sampled.AudioInputStream $$ possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException $$ ( 2219, 2298 ) $$ @MustCall method close may not have been invoked on recoverAudioIn or any of its aliases.
+			AudioInputStream recoverAudioIn = AudioSystem.getAudioInputStream(recoveryURL);
+			                 ^
+  The type of object is: javax.sound.sampled.AudioInputStream.
+  Reason for going out of scope: possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java:88: error: (required.method.not.called) $$ 4 $$ method close $$ audioIn $$ javax.sound.sampled.AudioInputStream $$ possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException $$ ( 2436, 2509 ) $$ @MustCall method close may not have been invoked on audioIn or any of its aliases.
+			AudioInputStream audioIn = AudioSystem.getAudioInputStream(completedURL);
+			                 ^
+  The type of object is: javax.sound.sampled.AudioInputStream.
+  Reason for going out of scope: possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FPMMusicAgent.java:96: error: (required.method.not.called) $$ 4 $$ method close $$ audioIn $$ javax.sound.sampled.AudioInputStream $$ possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException $$ ( 2642, 2717 ) $$ @MustCall method close may not have been invoked on audioIn or any of its aliases.
+			AudioInputStream audioIn = AudioSystem.getAudioInputStream(messageToneURL);
+			                 ^
+  The type of object is: javax.sound.sampled.AudioInputStream.
+  Reason for going out of scope: possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java:126: error: (required.method.not.called) $$ 4 $$ method close $$ audioIn $$ javax.sound.sampled.AudioInputStream $$ possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException $$ ( 4023, 4087 ) $$ @MustCall method close may not have been invoked on audioIn or any of its aliases.
+			AudioInputStream audioIn = AudioSystem.getAudioInputStream(url);
+			                 ^
+  The type of object is: javax.sound.sampled.AudioInputStream.
+  Reason for going out of scope: possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java:135: error: (required.method.not.called) $$ 4 $$ method close $$ pokeAudioIn $$ javax.sound.sampled.AudioInputStream $$ possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException $$ ( 4222, 4295 ) $$ @MustCall method close may not have been invoked on pokeAudioIn or any of its aliases.
+			AudioInputStream pokeAudioIn = AudioSystem.getAudioInputStream(fluteURL);
+			                 ^
+  The type of object is: javax.sound.sampled.AudioInputStream.
+  Reason for going out of scope: possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java:143: error: (required.method.not.called) $$ 4 $$ method close $$ recoverAudioIn $$ javax.sound.sampled.AudioInputStream $$ possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException $$ ( 4440, 4519 ) $$ @MustCall method close may not have been invoked on recoverAudioIn or any of its aliases.
+			AudioInputStream recoverAudioIn = AudioSystem.getAudioInputStream(recoveryURL);
+			                 ^
+  The type of object is: javax.sound.sampled.AudioInputStream.
+  Reason for going out of scope: possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java:151: error: (required.method.not.called) $$ 4 $$ method close $$ audioIn $$ javax.sound.sampled.AudioInputStream $$ possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException $$ ( 4665, 4738 ) $$ @MustCall method close may not have been invoked on audioIn or any of its aliases.
+			AudioInputStream audioIn = AudioSystem.getAudioInputStream(completedURL);
+			                 ^
+  The type of object is: javax.sound.sampled.AudioInputStream.
+  Reason for going out of scope: possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/manager/FactoryProductionManager.java:159: error: (required.method.not.called) $$ 4 $$ method close $$ audioIn $$ javax.sound.sampled.AudioInputStream $$ possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException $$ ( 4879, 4954 ) $$ @MustCall method close may not have been invoked on audioIn or any of its aliases.
+			AudioInputStream audioIn = AudioSystem.getAudioInputStream(messageToneURL);
+			                 ^
+  The type of object is: javax.sound.sampled.AudioInputStream.
+  Reason for going out of scope: possible exceptional exit due to AudioSystem.getClip() with exception type javax.sound.sampled.LineUnavailableException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ReadSaveData.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ possible exceptional exit due to new ObjectInputStream(buffer) with exception type java.io.IOException $$ ( 750, 810 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+    		InputStream is = new FileInputStream("KitConfigBackup.sav");
+    		            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(buffer) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/ReadSaveData.java:58: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ possible exceptional exit due to new ObjectInputStream(buffer) with exception type java.io.IOException $$ ( 1565, 1625 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+    		InputStream is = new FileInputStream("PartTypesBackup.sav");
+    		            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(buffer) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7f43a4752f_shalynnho_pokemonfactory_tgz-pJ8-Networking_ServerJ8/src/Utils/StringUtil.java:381: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(path) $$ java.io.FileReader $$ possible exceptional exit due to fromReader(new FileReader(path)) with exception type java.io.IOException $$ ( 12868, 12888 ) $$ @MustCall method close may not have been invoked on new FileReader(path) or any of its aliases.
+		return fromReader(new FileReader(path));
+		                  ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to fromReader(new FileReader(path)) with exception type java.io.IOException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+24 errors

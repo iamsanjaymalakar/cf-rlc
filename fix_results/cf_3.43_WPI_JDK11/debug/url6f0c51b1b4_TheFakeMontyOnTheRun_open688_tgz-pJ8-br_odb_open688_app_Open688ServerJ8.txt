@@ -1,0 +1,6 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^br/odb/open688/app/net/TelnetClientServer.java^28^br.odb.open688.app.net.TelnetClientServer.openServer()V^3 = new <Application,Ljava/net/ServerSocket>@1^NULL^FIELD,^false^true^Field escape;
+1^br/odb/open688/app/net/TelnetClientServer.java^29^br.odb.open688.app.net.TelnetClientServer.openServer()V^8 = invokevirtual < Application, Ljava/net/ServerSocket, accept()Ljava/net/Socket; > 6 @20 exception:7^NULL^FIELD,^false^true^Field escape;
+2^br/odb/open688/app/net/TelnetClientServer.java^31^br.odb.open688.app.net.TelnetClientServer.openServer()V^12 = new <Application,Ljava/io/DataOutputStream>@35^br.odb.open688.app.net.TelnetClientServer.openServer()V#15,^FIELD,^false^true^Field escape;
+3^br/odb/open688/app/net/TelnetClientServer.java^115^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+4^br/odb/open688/app/net/HTTPStatusTicker.java^32^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

@@ -1,0 +1,10 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^Trading_Engine/myDatabase.java^18^Trading_Engine.myDatabase.<init>()V^22 = invokestatic < Application, Ljava/sql/DriverManager, getConnection(Ljava/lang/String;)Ljava/sql/Connection; > 20 @41 exception:21^NULL^FIELD,^false^true^Field escape;
+1^Trading_Engine/myDatabase.java^114^Trading_Engine.myDatabase.insertAll(Ljava/io/File;Ljava/lang/String;)Ljava/util/LinkedList;^11 = new <Application,Ljava/io/BufferedReader>@22^Trading_Engine.myDatabase.insertAll(Ljava/io/File;Ljava/lang/String;)Ljava/util/LinkedList;#12,^INVOKE,^false^false^Try-catch Fix;
+2^Test/myDatabaseTest.java^47^Test.myDatabaseTest.testInsertSmallData()V^42 = new <Application,Ljava/io/BufferedReader>@93^Test.myDatabaseTest.testInsertSmallData()V#43,^INVOKE,^false^false^Try-catch Fix;
+3^gui/Mainmenu.java^35^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+4^gui/Mainmenu.java^45^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+5^Trading_Engine/myDatabase.java^8^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+6^Trading_Engine/Main.java^26^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+7^Test/myDatabaseTest.java^25^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+8^Test/myDatabaseTest.java^29^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

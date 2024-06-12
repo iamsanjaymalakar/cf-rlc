@@ -1,0 +1,26 @@
+../dataset/june2020_dataset_copy/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/net/oauth/http/HttpMessage.java:107: error: (required.method.not.called) $$ 4 $$ method close $$ raw $$ java.io.InputStream $$ possible exceptional exit due to new ExcerptInputStream(raw) with exception type java.io.IOException $$ ( 3030, 3059 ) $$ @MustCall method close may not have been invoked on raw or any of its aliases.
+            InputStream raw = openBody();
+                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new ExcerptInputStream(raw) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/net/oauth/client/OAuthResponseMessage.java:57: error: (owning.override.return) $$ 4 $$ getBodyAsStream $$ net.oauth.client.OAuthResponseMessage $$ getBodyAsStream $$ net.oauth.OAuthMessage $$ ( 1799, 1915 ) $$ Incompatible ownership for return.
+    public InputStream getBodyAsStream() throws IOException
+                       ^
+  found   : no ownership annotation or @Owning
+  required: @NotOwning
+  Consequence: method getBodyAsStream in net.oauth.client.OAuthResponseMessage cannot override method getBodyAsStream in net.oauth.OAuthMessage
+../dataset/june2020_dataset_copy/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/net/oauth/signature/pem/PEMReader.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(fileName) $$ java.io.FileInputStream $$ possible exceptional exit due to this(new FileInputStream(fileName)) with exception type java.io.IOException $$ ( 2317, 2346 ) $$ @MustCall method close may not have been invoked on new FileInputStream(fileName) or any of its aliases.
+        this(new FileInputStream(fileName));
+             ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to this(new FileInputStream(fileName)) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url24d793285d_auzll_gengweibo_tgz-pJ8-org_json_TestJ8/src/com/gengweibo/web/GuiceInit.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ Thread.currentThread().getContextClassLoader().getResourceAsStream("database.properties") $$ java.io.InputStream $$ possible exceptional exit due to throw new ExceptionInInitializerError(e); with exception type java.lang.ExceptionInInitializerError $$ ( 1450, 1599 ) $$ @MustCall method close may not have been invoked on Thread.currentThread().getContextClassLoader().getResourceAsStream("database.properties") or any of its aliases.
+                            .getResourceAsStream("database.properties"));
+                                                ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to throw new ExceptionInInitializerError(e); with exception type java.lang.ExceptionInInitializerError
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 errors

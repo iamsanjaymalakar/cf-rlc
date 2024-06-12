@@ -1,0 +1,261 @@
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/handlers/MessageHandler.java:37: error: (required.method.not.called) $$ 4 $$ method onWebsocketClose $$ new Connection(new URI("ws://" + hostname + ":" + port), new Draft_10()) $$ minewebsocket.handlers.MessageHandler.Connection $$ regular method exit $$ ( 1293, 1365 ) $$ @MustCall method onWebsocketClose may not have been invoked on new Connection(new URI("ws://" + hostname + ":" + port), new Draft_10()) or any of its aliases.
+        connection = new Connection(new URI("ws://" + hostname + ":" + port), new Draft_10());
+                     ^
+  The type of object is: minewebsocket.handlers.MessageHandler.Connection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/client/WebSocketClient.java:40: error: (required.method.not.called) $$ 4 $$ method closeConnection $$ field engine $$ minewebsocket.org.java_websocket.WebSocketImpl $$ Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "engine", methods = "closeConnection"), @EnsuresCalledMethodsOnException(value = "engine", methods = "closeConnection") $$ ( 1714, 1750 ) $$ @MustCall method closeConnection may not have been invoked on field engine or any of its aliases.
+	private WebSocketImpl engine = null;
+	                      ^
+  The type of object is: minewebsocket.org.java_websocket.WebSocketImpl.
+  Reason for going out of scope: Postconditions written on MustCall methods are missing: @EnsuresCalledMethods(value = "engine", methods = "closeConnection"), @EnsuresCalledMethodsOnException(value = "engine", methods = "closeConnection")
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/client/WebSocketClient.java:86: error: (required.method.not.called) $$ 4 $$ method closeConnection $$ field engine $$ minewebsocket.org.java_websocket.WebSocketImpl $$  Non-final owning field might be overwritten $$ ( 3076, 3130 ) $$ @MustCall method closeConnection may not have been invoked on field engine or any of its aliases.
+		this.engine = new WebSocketImpl( this, protocolDraft );
+		            ^
+  The type of object is: minewebsocket.org.java_websocket.WebSocketImpl.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/client/WebSocketClient.java:159: error: (missing.creates.mustcall.for) $$ 3 $$ run $$ this $$ socket $$ ( 4869, 6179 ) $$ Method run re-assigns the non-final, owning field this.socket, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void run() {
+	            ^
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/client/WebSocketClient.java:275: error: (contracts.postcondition) $$ 3 $$ onWebsocketClose $$ no information about this.socket $$ this.socket is @CalledMethods("close") $$ ( 8093, 8465 ) $$ postcondition of onWebsocketClose is not satisfied.
+	public final void onWebsocketClose( WebSocket conn, int code, String reason, boolean remote ) {
+	                  ^
+  found   : no information about this.socket
+  required: this.socket is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/client/WebSocketClient.java:375: error: (missing.creates.mustcall.for) $$ 3 $$ setSocket $$ this $$ socket $$ ( 10814, 10984 ) $$ Method setSocket re-assigns the non-final, owning field this.socket, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void setSocket( Socket socket ) {
+	            ^
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:84: error: (type.argument) $$ 4 $$ E $$ List $$ @MustCall("closeConnection") WebSocketImpl $$ @MustCall Object $$ ( 3026, 3039 ) $$ incompatible type argument for type parameter E of List.
+	private List<WebSocketImpl> iqueue;
+	             ^
+  found   : @MustCall("closeConnection") WebSocketImpl
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:164: error: (type.argument) $$ 4 $$ E $$ LinkedList $$ @MustCall("closeConnection") WebSocketImpl $$ @MustCall Object $$ ( 6472, 6485 ) $$ incompatible type argument for type parameter E of LinkedList.
+		iqueue = new LinkedList<WebSocketImpl>();
+		                        ^
+  found   : @MustCall("closeConnection") WebSocketImpl
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:271: error: (contracts.exceptional.postcondition) $$ 3 $$ run $$ this.server is @CalledMethods $$ this.server is @CalledMethods("close") $$ ( 9788, 13626 ) $$ on exception, postcondition of run is not satisfied.
+	public void run() {
+	            ^
+  found   : this.server is @CalledMethods
+  required: this.server is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:271: error: (contracts.postcondition) $$ 3 $$ run $$ no information about this.server $$ this.server is @CalledMethods("close") $$ ( 9788, 13626 ) $$ postcondition of run is not satisfied.
+	public void run() {
+	            ^
+  found   : no information about this.server
+  required: this.server is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:271: error: (missing.creates.mustcall.for) $$ 3 $$ run $$ this $$ server $$ ( 9788, 13626 ) $$ Method run re-assigns the non-final, owning field this.server, but does not have a corresponding @CreatesMustCallFor annotation.
+	public void run() {
+	            ^
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:282: error: (required.method.not.called) $$ 4 $$ method close $$ field server $$ java.nio.channels.ServerSocketChannel $$  Non-final owning field might be overwritten $$ ( 10134, 10169 ) $$ @MustCall method close may not have been invoked on field server or any of its aliases.
+			server = ServerSocketChannel.open();
+			       ^
+  The type of object is: java.nio.channels.ServerSocketChannel.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:286: error: (reset.not.owning) $$ 2 $$ bind $$ socket $$ ( 10310, 10332 ) $$ Calling method bind resets the must-call obligations of the expression socket, which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+			socket.bind( address );
+			           ^
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:287: error: (required.method.not.called) $$ 4 $$ method close $$ Selector.open() $$ java.nio.channels.Selector $$ possible exceptional exit due to server.register(selector, server.validOps()) with exception type java.nio.channels.ClosedChannelException $$ ( 10348, 10363 ) $$ @MustCall method close may not have been invoked on Selector.open() or any of its aliases.
+			selector = Selector.open();
+			                        ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: possible exceptional exit due to server.register(selector, server.validOps()) with exception type java.nio.channels.ClosedChannelException
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:318: error: (required.method.not.called) $$ 4 $$ method closeConnection $$ w $$ minewebsocket.org.java_websocket.WebSocketImpl $$ possible exceptional exit due to channel.register(selector, SelectionKey.OP_READ, w) with exception type java.nio.channels.ClosedByInterruptException $$ ( 11104, 11176 ) $$ @MustCall method closeConnection may not have been invoked on w or any of its aliases.
+							WebSocketImpl w = wsf.createWebSocket( this, drafts, channel.socket() );
+							              ^
+  The type of object is: minewebsocket.org.java_websocket.WebSocketImpl.
+  Reason for going out of scope: possible exceptional exit due to channel.register(selector, SelectionKey.OP_READ, w) with exception type java.nio.channels.ClosedByInterruptException
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:320: error: (required.method.not.called) $$ 4 $$ method close $$ field channel $$ java.nio.channels.ByteChannel $$  Non-final owning field might be overwritten $$ ( 11254, 11299 ) $$ @MustCall method close may not have been invoked on field channel or any of its aliases.
+							w.channel = wsf.wrapChannel( channel, w.key );
+							          ^
+  The type of object is: java.nio.channels.ByteChannel.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:359: error: (required.method.not.called) $$ 4 $$ method closeConnection $$ conn $$ minewebsocket.org.java_websocket.WebSocketImpl $$ regular method exit $$ ( 12364, 12389 ) $$ @MustCall method closeConnection may not have been invoked on conn or any of its aliases.
+						conn = iqueue.remove( 0 );
+						     ^
+  The type of object is: minewebsocket.org.java_websocket.WebSocketImpl.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:630: error: (required.method.not.called) $$ 4 $$ method close $$ getSocket(conn) $$ java.net.Socket $$ regular method exit $$ ( 20409, 20426 ) $$ @MustCall method close may not have been invoked on getSocket(conn) or any of its aliases.
+		return (InetSocketAddress) getSocket( conn ).getLocalSocketAddress();
+		                                    ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:635: error: (required.method.not.called) $$ 4 $$ method close $$ getSocket(conn) $$ java.net.Socket $$ regular method exit $$ ( 20565, 20582 ) $$ @MustCall method close may not have been invoked on getSocket(conn) or any of its aliases.
+		return (InetSocketAddress) getSocket( conn ).getRemoteSocketAddress();
+		                                    ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:682: error: (type.argument) $$ 4 $$ E $$ BlockingQueue $$ @MustCall("closeConnection") WebSocketImpl $$ @MustCall Object $$ ( 22438, 22451 ) $$ incompatible type argument for type parameter E of BlockingQueue.
+		private BlockingQueue<WebSocketImpl> iqueue;
+		                      ^
+  found   : @MustCall("closeConnection") WebSocketImpl
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:685: error: (type.argument) $$ 4 $$ E $$ LinkedBlockingQueue $$ @MustCall("closeConnection") WebSocketImpl $$ @MustCall Object $$ ( 22527, 22540 ) $$ incompatible type argument for type parameter E of LinkedBlockingQueue.
+			iqueue = new LinkedBlockingQueue<WebSocketImpl>();
+			                                 ^
+  found   : @MustCall("closeConnection") WebSocketImpl
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:705: error: (required.method.not.called) $$ 4 $$ method closeConnection $$ ws $$ minewebsocket.org.java_websocket.WebSocketImpl $$ possible exceptional exit due to null with exception type java.lang.AssertionError $$ ( 23036, 23054 ) $$ @MustCall method closeConnection may not have been invoked on ws or any of its aliases.
+					ws = iqueue.take();
+					   ^
+  The type of object is: minewebsocket.org.java_websocket.WebSocketImpl.
+  Reason for going out of scope: possible exceptional exit due to null with exception type java.lang.AssertionError
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:723: error: (override.return) $$ 6 $$ @MustCall("closeConnection") WebSocketImpl $$ @MustCall WebSocket $$ @MustCall WebSocketServerFactory $$ @MustCall("closeConnection") WebSocketImpl createWebSocket(@MustCall WebSocketServerFactory this, @MustCall WebSocketAdapter p0, @MustCall Draft p1, @MustCall("close") Socket p2) $$ @MustCall WebSocketFactory $$ @MustCall WebSocket createWebSocket(@MustCall WebSocketFactory this, @MustCall WebSocketAdapter p0, @MustCall Draft p1, @MustCall("close") Socket p2) $$ ( 23409, 23422 ) $$ Incompatible return type.
+		public WebSocketImpl createWebSocket( WebSocketAdapter a, Draft d, Socket s );
+		       ^
+  found   : @MustCall("closeConnection") WebSocketImpl
+  required: @MustCall WebSocket
+  Consequence: method in @MustCall WebSocketServerFactory
+    @MustCall("closeConnection") WebSocketImpl createWebSocket(@MustCall WebSocketServerFactory this, @MustCall WebSocketAdapter p0, @MustCall Draft p1, @MustCall("close") Socket p2)
+  cannot override method in @MustCall WebSocketFactory
+    @MustCall WebSocket createWebSocket(@MustCall WebSocketFactory this, @MustCall WebSocketAdapter p0, @MustCall Draft p1, @MustCall("close") Socket p2)
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/WebSocketServer.java:725: error: (override.return) $$ 6 $$ @MustCall("closeConnection") WebSocketImpl $$ @MustCall WebSocket $$ @MustCall WebSocketServerFactory $$ @MustCall("closeConnection") WebSocketImpl createWebSocket(@MustCall WebSocketServerFactory this, @MustCall WebSocketAdapter p0, @MustCall List<@MustCall Draft> p1, @MustCall("close") Socket p2) $$ @MustCall WebSocketFactory $$ @MustCall WebSocket createWebSocket(@MustCall WebSocketFactory this, @MustCall WebSocketAdapter p0, @MustCall List<@MustCall Draft> p1, @MustCall("close") Socket p2) $$ ( 23491, 23504 ) $$ Incompatible return type.
+		public WebSocketImpl createWebSocket( WebSocketAdapter a, List<Draft> drafts, Socket s );
+		       ^
+  found   : @MustCall("closeConnection") WebSocketImpl
+  required: @MustCall WebSocket
+  Consequence: method in @MustCall WebSocketServerFactory
+    @MustCall("closeConnection") WebSocketImpl createWebSocket(@MustCall WebSocketServerFactory this, @MustCall WebSocketAdapter p0, @MustCall List<@MustCall Draft> p1, @MustCall("close") Socket p2)
+  cannot override method in @MustCall WebSocketFactory
+    @MustCall WebSocket createWebSocket(@MustCall WebSocketFactory this, @MustCall WebSocketAdapter p0, @MustCall List<@MustCall Draft> p1, @MustCall("close") Socket p2)
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/WebSocketImpl.java:158: error: (flowexpr.parse.error.postcondition) $$ 2 $$ decodeFrames(ByteBuffer) $$ Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 5717, 5745 ) $$ error parsing the postcondition expression for decodeFrames(ByteBuffer)
+			decodeFrames( socketBuffer );;
+			            ^
+  cannot parse the expression Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/WebSocketImpl.java:164: error: (flowexpr.parse.error.postcondition) $$ 2 $$ decodeFrames(ByteBuffer) $$ Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 6024, 6052 ) $$ error parsing the postcondition expression for decodeFrames(ByteBuffer)
+					decodeFrames( socketBuffer );
+					            ^
+  cannot parse the expression Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/WebSocketImpl.java:166: error: (flowexpr.parse.error.postcondition) $$ 2 $$ decodeFrames(ByteBuffer) $$ Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 6111, 6144 ) $$ error parsing the postcondition expression for decodeFrames(ByteBuffer)
+					decodeFrames( tmpHandshakeBytes );
+					            ^
+  cannot parse the expression Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/WebSocketImpl.java:317: error: (flowexpr.parse.error) $$ 1 $$ 'this.this' in the postcondition EnsuresCalledMethods on the declaration of method 'decodeFrames': Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 11564, 14375 ) $$ cannot parse the expression 'this.this' in the postcondition EnsuresCalledMethods on the declaration of method 'decodeFrames': Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+	private void decodeFrames( ByteBuffer socketBuffer ) {
+	             ^
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/WebSocketImpl.java:449: error: (contracts.postcondition) $$ 3 $$ closeConnection $$ no information about this.channel $$ this.channel is @CalledMethods("close") $$ ( 16386, 17026 ) $$ postcondition of closeConnection is not satisfied.
+	protected synchronized void closeConnection( int code, String message, boolean remote ) {
+	                            ^
+  found   : no information about this.channel
+  required: this.channel is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/AbstractWrappedByteChannel.java:16: error: (assignment) $$ 2 $$ @PolyMustCall ByteChannel $$ @MustCall("close") ByteChannel $$ ( 401, 407 ) $$ incompatible types in assignment.
+		this.channel = towrap;
+		               ^
+  found   : @PolyMustCall ByteChannel
+  required: @MustCall("close") ByteChannel
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/AbstractWrappedByteChannel.java:20: error: (assignment) $$ 2 $$ @PolyMustCall WrappedByteChannel $$ @MustCall("close") ByteChannel $$ ( 496, 502 ) $$ incompatible types in assignment.
+		this.channel = towrap;
+		               ^
+  found   : @PolyMustCall WrappedByteChannel
+  required: @MustCall("close") ByteChannel
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/AbstractWrappedByteChannel.java:30: error: (contracts.conditional.postcondition) $$ 4 $$ isOpen $$ false $$ no information about this $$ this is @CalledMethods("close") $$ ( 649, 673 ) $$ conditional postcondition is not satisfied when isOpen returns false.
+		return channel.isOpen();
+		^
+  found   : no information about this
+  required: this is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/SSLSocketChannel2.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ field socketChannel $$ java.nio.channels.SocketChannel $$  Non-final owning field might be overwritten $$ ( 2465, 2493 ) $$ @MustCall method close may not have been invoked on field socketChannel or any of its aliases.
+		this.socketChannel = channel;
+		                   ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/SSLSocketChannel2.java:69: error: (assignment) $$ 2 $$ @PolyMustCall SocketChannel $$ @MustCall("close") SocketChannel $$ ( 2486, 2493 ) $$ incompatible types in assignment.
+		this.socketChannel = channel;
+		                     ^
+  found   : @PolyMustCall SocketChannel
+  required: @MustCall("close") SocketChannel
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/SSLSocketChannel2.java:299: error: (contracts.exceptional.postcondition) $$ 3 $$ close $$ this.socketChannel is @CalledMethods $$ this.socketChannel is @CalledMethods("close") $$ ( 9693, 9974 ) $$ on exception, postcondition of close is not satisfied.
+	public void close() throws IOException {
+	            ^
+  found   : this.socketChannel is @CalledMethods
+  required: this.socketChannel is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/SSLSocketChannel2.java:299: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.socketChannel $$ this.socketChannel is @CalledMethods("close") $$ ( 9693, 9974 ) $$ postcondition of close is not satisfied.
+	public void close() throws IOException {
+	            ^
+  found   : no information about this.socketChannel
+  required: this.socketChannel is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/SSLSocketChannel2.java:335: error: (contracts.conditional.postcondition) $$ 4 $$ isOpen $$ false $$ no information about this $$ this is @CalledMethods("close") $$ ( 10720, 10750 ) $$ conditional postcondition is not satisfied when isOpen returns false.
+		return socketChannel.isOpen();
+		^
+  found   : no information about this
+  required: this is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/util/Base64.java:929: error: (flowexpr.parse.error.postcondition) $$ 2 $$ close() $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 42773, 42786 ) $$ error parsing the postcondition expression for close()
+                try{ b64os.close(); } catch( Exception e ){}
+                                ^
+  cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/util/Base64.java:1421: error: (flowexpr.parse.error.postcondition) $$ 2 $$ close() $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 63634, 63645 ) $$ error parsing the postcondition expression for close()
+            try{ bos.close(); } catch( Exception e ){}
+                          ^
+  cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/util/Base64.java:1453: error: (flowexpr.parse.error.postcondition) $$ 2 $$ close() $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 64848, 64859 ) $$ error parsing the postcondition expression for close()
+                try{ bos.close(); } catch( Exception e ){}
+                              ^
+  cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/util/Base64.java:2021: error: (flowexpr.parse.error) $$ 1 $$ 'this.super' in the postcondition EnsuresCalledMethods on the declaration of method 'close': Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 85583, 85937 ) $$ cannot parse the expression 'this.super' in the postcondition EnsuresCalledMethods on the declaration of method 'close': Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+        public void close() throws java.io.IOException {
+                    ^
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/util/Base64.java:2021: error: (flowexpr.parse.error) $$ 1 $$ Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 85583, 85937 ) $$ cannot parse the expression Invalid 'this.super' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+        public void close() throws java.io.IOException {
+                    ^
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/DefaultWebSocketServerFactory.java:15: error: (override.return) $$ 6 $$ @MustCall("closeConnection") WebSocketImpl $$ @MustCall WebSocket $$ @MustCall DefaultWebSocketServerFactory $$ @MustCall("closeConnection") WebSocketImpl createWebSocket(@MustCall DefaultWebSocketServerFactory this, @MustCall WebSocketAdapter p0, @MustCall Draft p1, @MustCall("close") Socket p2) $$ @MustCall WebSocketFactory $$ @MustCall WebSocket createWebSocket(@MustCall WebSocketFactory this, @MustCall WebSocketAdapter p0, @MustCall Draft p1, @MustCall("close") Socket p2) $$ ( 530, 543 ) $$ Incompatible return type.
+	public WebSocketImpl createWebSocket( WebSocketAdapter a, Draft d, Socket s ) {
+	       ^
+  found   : @MustCall("closeConnection") WebSocketImpl
+  required: @MustCall WebSocket
+  Consequence: method in @MustCall DefaultWebSocketServerFactory
+    @MustCall("closeConnection") WebSocketImpl createWebSocket(@MustCall DefaultWebSocketServerFactory this, @MustCall WebSocketAdapter p0, @MustCall Draft p1, @MustCall("close") Socket p2)
+  cannot override method in @MustCall WebSocketFactory
+    @MustCall WebSocket createWebSocket(@MustCall WebSocketFactory this, @MustCall WebSocketAdapter p0, @MustCall Draft p1, @MustCall("close") Socket p2)
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/DefaultWebSocketServerFactory.java:19: error: (override.return) $$ 6 $$ @MustCall("closeConnection") WebSocketImpl $$ @MustCall WebSocket $$ @MustCall DefaultWebSocketServerFactory $$ @MustCall("closeConnection") WebSocketImpl createWebSocket(@MustCall DefaultWebSocketServerFactory this, @MustCall WebSocketAdapter p0, @MustCall List<@MustCall Draft> p1, @MustCall("close") Socket p2) $$ @MustCall WebSocketFactory $$ @MustCall WebSocket createWebSocket(@MustCall WebSocketFactory this, @MustCall WebSocketAdapter p0, @MustCall List<@MustCall Draft> p1, @MustCall("close") Socket p2) $$ ( 661, 674 ) $$ Incompatible return type.
+	public WebSocketImpl createWebSocket( WebSocketAdapter a, List<Draft> d, Socket s ) {
+	       ^
+  found   : @MustCall("closeConnection") WebSocketImpl
+  required: @MustCall WebSocket
+  Consequence: method in @MustCall DefaultWebSocketServerFactory
+    @MustCall("closeConnection") WebSocketImpl createWebSocket(@MustCall DefaultWebSocketServerFactory this, @MustCall WebSocketAdapter p0, @MustCall List<@MustCall Draft> p1, @MustCall("close") Socket p2)
+  cannot override method in @MustCall WebSocketFactory
+    @MustCall WebSocket createWebSocket(@MustCall WebSocketFactory this, @MustCall WebSocketAdapter p0, @MustCall List<@MustCall Draft> p1, @MustCall("close") Socket p2)
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/DefaultWebSocketServerFactory.java:23: error: (override.return) $$ 6 $$ @PolyMustCall SocketChannel $$ @MustCall("close") ByteChannel $$ @MustCall DefaultWebSocketServerFactory $$ @PolyMustCall SocketChannel wrapChannel(@MustCall DefaultWebSocketServerFactory this, @PolyMustCall SocketChannel p0, @MustCall SelectionKey p1) $$ @MustCall WebSocketServerFactory $$ @MustCall("close") ByteChannel wrapChannel(@MustCall WebSocketServerFactory this, @MustCall("close") SocketChannel p0, @MustCall SelectionKey p1) throws @MustCall IOException $$ ( 798, 811 ) $$ Incompatible return type.
+	public SocketChannel wrapChannel( SocketChannel channel, SelectionKey key ) {
+	       ^
+  found   : @PolyMustCall SocketChannel
+  required: @MustCall("close") ByteChannel
+  Consequence: method in @MustCall DefaultWebSocketServerFactory
+    @PolyMustCall SocketChannel wrapChannel(@MustCall DefaultWebSocketServerFactory this, @PolyMustCall SocketChannel p0, @MustCall SelectionKey p1)
+  cannot override method in @MustCall WebSocketServerFactory
+    @MustCall("close") ByteChannel wrapChannel(@MustCall WebSocketServerFactory this, @MustCall("close") SocketChannel p0, @MustCall SelectionKey p1) throws @MustCall IOException
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/DefaultWebSocketServerFactory.java:23: error: (mustcallalias.out.of.scope) $$ 1 $$ regular method exit $$ ( 825, 846 ) $$ This @MustCallAlias parameter might go out of scope without being assigned into an owning field of this object (if this is a constructor) or returned.
+	public SocketChannel wrapChannel( SocketChannel channel, SelectionKey key ) {
+	                                                ^
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/DefaultSSLWebSocketServerFactory.java:36: error: (override.return) $$ 6 $$ @PolyMustCall ByteChannel $$ @MustCall("close") ByteChannel $$ @MustCall DefaultSSLWebSocketServerFactory $$ @PolyMustCall ByteChannel wrapChannel(@MustCall DefaultSSLWebSocketServerFactory this, @PolyMustCall SocketChannel p0, @MustCall SelectionKey p1) throws @MustCall IOException $$ @MustCall WebSocketServerFactory $$ @MustCall("close") ByteChannel wrapChannel(@MustCall WebSocketServerFactory this, @MustCall("close") SocketChannel p0, @MustCall SelectionKey p1) throws @MustCall IOException $$ ( 1176, 1187 ) $$ Incompatible return type.
+	public ByteChannel wrapChannel( SocketChannel channel, SelectionKey key ) throws IOException {
+	       ^
+  found   : @PolyMustCall ByteChannel
+  required: @MustCall("close") ByteChannel
+  Consequence: method in @MustCall DefaultSSLWebSocketServerFactory
+    @PolyMustCall ByteChannel wrapChannel(@MustCall DefaultSSLWebSocketServerFactory this, @PolyMustCall SocketChannel p0, @MustCall SelectionKey p1) throws @MustCall IOException
+  cannot override method in @MustCall WebSocketServerFactory
+    @MustCall("close") ByteChannel wrapChannel(@MustCall WebSocketServerFactory this, @MustCall("close") SocketChannel p0, @MustCall SelectionKey p1) throws @MustCall IOException
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/DefaultSSLWebSocketServerFactory.java:43: error: (override.return) $$ 6 $$ @MustCall("closeConnection") WebSocketImpl $$ @MustCall WebSocket $$ @MustCall DefaultSSLWebSocketServerFactory $$ @MustCall("closeConnection") WebSocketImpl createWebSocket(@MustCall DefaultSSLWebSocketServerFactory this, @MustCall WebSocketAdapter p0, @MustCall Draft p1, @MustCall("close") Socket p2) $$ @MustCall WebSocketFactory $$ @MustCall WebSocket createWebSocket(@MustCall WebSocketFactory this, @MustCall WebSocketAdapter p0, @MustCall Draft p1, @MustCall("close") Socket p2) $$ ( 1421, 1434 ) $$ Incompatible return type.
+	public WebSocketImpl createWebSocket( WebSocketAdapter a, Draft d, Socket c ) {
+	       ^
+  found   : @MustCall("closeConnection") WebSocketImpl
+  required: @MustCall WebSocket
+  Consequence: method in @MustCall DefaultSSLWebSocketServerFactory
+    @MustCall("closeConnection") WebSocketImpl createWebSocket(@MustCall DefaultSSLWebSocketServerFactory this, @MustCall WebSocketAdapter p0, @MustCall Draft p1, @MustCall("close") Socket p2)
+  cannot override method in @MustCall WebSocketFactory
+    @MustCall WebSocket createWebSocket(@MustCall WebSocketFactory this, @MustCall WebSocketAdapter p0, @MustCall Draft p1, @MustCall("close") Socket p2)
+../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/org/java_websocket/server/DefaultSSLWebSocketServerFactory.java:48: error: (override.return) $$ 6 $$ @MustCall("closeConnection") WebSocketImpl $$ @MustCall WebSocket $$ @MustCall DefaultSSLWebSocketServerFactory $$ @MustCall("closeConnection") WebSocketImpl createWebSocket(@MustCall DefaultSSLWebSocketServerFactory this, @MustCall WebSocketAdapter p0, @MustCall List<@MustCall Draft> p1, @MustCall("close") Socket p2) $$ @MustCall WebSocketFactory $$ @MustCall WebSocket createWebSocket(@MustCall WebSocketFactory this, @MustCall WebSocketAdapter p0, @MustCall List<@MustCall Draft> p1, @MustCall("close") Socket p2) $$ ( 1553, 1566 ) $$ Incompatible return type.
+	public WebSocketImpl createWebSocket( WebSocketAdapter a, List<Draft> d, Socket s ) {
+	       ^
+  found   : @MustCall("closeConnection") WebSocketImpl
+  required: @MustCall WebSocket
+  Consequence: method in @MustCall DefaultSSLWebSocketServerFactory
+    @MustCall("closeConnection") WebSocketImpl createWebSocket(@MustCall DefaultSSLWebSocketServerFactory this, @MustCall WebSocketAdapter p0, @MustCall List<@MustCall Draft> p1, @MustCall("close") Socket p2)
+  cannot override method in @MustCall WebSocketFactory
+    @MustCall WebSocket createWebSocket(@MustCall WebSocketFactory this, @MustCall WebSocketAdapter p0, @MustCall List<@MustCall Draft> p1, @MustCall("close") Socket p2)
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: ../dataset/june2020_dataset_copy/url6544f14c72_charles_d_burton_java_websocket_example_tgz-pJ8-minewebsocket_MineWebSocketJ8/src/minewebsocket/handlers/MessageHandler.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+49 errors

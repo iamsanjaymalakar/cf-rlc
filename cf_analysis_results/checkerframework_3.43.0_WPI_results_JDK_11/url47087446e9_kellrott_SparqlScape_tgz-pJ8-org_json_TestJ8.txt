@@ -1,0 +1,20 @@
+../dataset/june2020_dataset_copy/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/sparqlscape/SearchTest.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File(args[0])) $$ java.io.FileInputStream $$ possible exceptional exit due to p.getLine() with exception type java.io.IOException $$ ( 1165, 1203 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File(args[0])) or any of its aliases.
+		CSVParser p = new CSVParser( new InputStreamReader( new FileInputStream(new File(args[0])) ), new CSVStrategy('\t', '"',	'#'));
+		                                                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to p.getLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/sparqlscape/ConnectTest.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(new File(args[0])) $$ java.io.FileInputStream $$ possible exceptional exit due to p.getLine() with exception type java.io.IOException $$ ( 1166, 1204 ) $$ @MustCall method close may not have been invoked on new FileInputStream(new File(args[0])) or any of its aliases.
+		CSVParser p = new CSVParser( new InputStreamReader( new FileInputStream(new File(args[0])) ), new CSVStrategy('\t', '"',	'#'));
+		                                                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to p.getLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url47087446e9_kellrott_SparqlScape_tgz-pJ8-org_json_TestJ8/src/org/sparql/Client.java:35: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to br.readLine() with exception type java.net.MalformedURLException $$ ( 831, 870 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+			InputStream in = conn.getInputStream();
+			            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to br.readLine() with exception type java.net.MalformedURLException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 errors

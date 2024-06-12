@@ -1,0 +1,114 @@
+Note: Multiple elements named 'sun.nio.cs.ArrayDecoder' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.nio.cs.ArrayEncoder' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.nio.cs.ISO_8859_1' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.nio.cs.US_ASCII' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.nio.cs.UTF_8' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.awt.AWTAccessor' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.awt.SunToolkit' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.swing.SwingAccessor' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.swing.SwingUtilities2' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'java.awt.peer.ComponentPeer' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'java.awt.peer.ContainerPeer' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'java.awt.peer.LightweightPeer' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.awt.AppContext' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.awt.PeerEvent' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.awt.dnd.SunDropTargetEvent' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.java2d.pipe.Region' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.security.action.GetBooleanAction' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.logging.PlatformLogger' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.awt.ComponentFactory' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.awt.ConstrainableGraphics' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.awt.EmbeddedFrame' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.awt.RequestFocusController' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.awt.SubRegionShowable' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.awt.im.CompositionArea' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.awt.image.VSyncedBSManager' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.font.FontManager' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.font.FontManagerFactory' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.font.SunFontManager' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.java2d.SunGraphics2D' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.java2d.SunGraphicsEnvironment' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.java2d.pipe.hw.ExtendedBufferCapabilities' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.security.action.GetPropertyAction' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.java2d.pipe.hw.ExtendedBufferCapabilities.VSyncType' in modules 'unnamed module, java.desktop' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.calendar.BaseCalendar' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.calendar.CalendarDate' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.calendar.CalendarSystem' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.calendar.CalendarUtils' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.calendar.Era' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.calendar.Gregorian' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.calendar.JulianCalendar' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.calendar.ZoneInfo' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.BuddhistCalendar' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.locale.provider.CalendarDataUtility' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.locale.provider.LocaleProviderAdapter' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.locale.provider.TimeZoneNameUtility' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.spi.CalendarProvider' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/model/BaseTask.java:123: error: incompatible types: Enumeration<TreeNode> cannot be converted to Enumeration<Task>
+		Enumeration<Task> e = this.children();
+		                                   ^
+../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/model/BaseTask.java:200: error: incompatible types: Enumeration<TreeNode> cannot be converted to Enumeration<E>
+		Enumeration<E> tasks = this.children();
+		                                    ^
+  where E is a type-variable:
+    E extends BaseTask declared in class BaseTask
+../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/model/BaseTask.java:218: error: incompatible types: Enumeration<TreeNode> cannot be converted to Enumeration<E>
+		Enumeration<E> tasks = this.children();
+		                                    ^
+  where E is a type-variable:
+    E extends BaseTask declared in class BaseTask
+../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/model/BaseTask.java:254: error: incompatible types: Enumeration<TreeNode> cannot be converted to Enumeration<E>
+		Enumeration<E> enu = this.children();
+		                                  ^
+  where E is a type-variable:
+    E extends BaseTask declared in class BaseTask
+../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/model/BaseTask.java:336: error: incompatible types: Enumeration<TreeNode> cannot be converted to Enumeration<Task>
+		Enumeration<Task> enu = this.children();
+		                                     ^
+../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/model/TaskTreeModel.java:135: error: incompatible types: Enumeration<CAP#1> cannot be converted to Enumeration<Task>
+		Enumeration<Task> tasks = parent.children();
+		                                         ^
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends TreeNode from capture of ? extends TreeNode
+../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/model/TaskTreeModel.java:181: error: incompatible types: Enumeration<CAP#1> cannot be converted to Enumeration<Task>
+		Enumeration<Task> enu = parent.children();
+		                                       ^
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends TreeNode from capture of ? extends TreeNode
+../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/model/TaskTreeModel.java:204: error: incompatible types: Enumeration<CAP#1> cannot be converted to Enumeration<Task>
+		Enumeration<Task> enu = parent.children();
+		                                       ^
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends TreeNode from capture of ? extends TreeNode
+../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/model/TaskTreeModel.java:209: error: incompatible types: Enumeration<CAP#1> cannot be converted to Enumeration<Task>
+		enu = parent.children();
+		                     ^
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends TreeNode from capture of ? extends TreeNode
+../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/common/CalendarUtils.java:51: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public static int getDaysOfMonth(Time Time) {
+	                  ^
+../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/common/CalendarUtils.java:70: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public static void truncateTime(Time time, int field) {
+	                   ^
+../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/common/CalendarUtils.java:236: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public static Time cloneTimeByDateOffset(Time time, int offset) {
+	                   ^
+../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/common/CalendarUtils.java:249: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public static Time cloneTimeByHourOffset(Time time, int offset) {
+	                   ^
+../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/common/CalendarUtils.java:262: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public static Time cloneTimeByWeekOffset(Time time, int offset) {
+	                   ^
+../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/common/CalendarUtils.java:275: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public static Time cloneTimeByMonthOffset(Time time, int offset) {
+	                   ^
+../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/common/CalendarUtils.java:288: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+	public static Time cloneTimeByYearOffset(Time time, int offset) {
+	                   ^
+Note: ../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/ui/timeaxis/TimeAxisUtils.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: ../dataset/june2020_dataset_copy/url8af84d296f_mrcosta_gantt_generator_tgz-pJ8-org_gantt_generator_mrcpsp_RunJ8/src/org/swiftgantt/common/SystemUtil.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+9 errors
+7 warnings

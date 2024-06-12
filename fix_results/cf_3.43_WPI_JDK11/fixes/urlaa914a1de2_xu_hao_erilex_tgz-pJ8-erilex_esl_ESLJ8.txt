@@ -1,0 +1,19 @@
+19821
+261
+
+SOURCE LEVEL FIXES
+
+1] ../../../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/codegen/Class.java; Line number 109
+vim +109 ../../../dataset/june2020_dataset_copy/urlaa914a1de2_xu_hao_erilex_tgz-pJ8-erilex_esl_ESLJ8/src/erilex/codegen/Class.java
+
++++ Add following code above line:109 (erilex/codegen/Class.java)
+try{
++++ Add following code after line:111 (erilex/codegen/Class.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 109
+
++++ Delete Line number 112 (erilex/codegen/Class.java)
+
+--------------------------------------------

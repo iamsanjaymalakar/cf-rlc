@@ -1,0 +1,45 @@
+../dataset/june2020_dataset_copy/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/io/Generic_StaticIO.java:348: error: (required.method.not.called) $$ 4 $$ method close $$ bis $$ java.io.BufferedInputStream $$ regular method exit $$ ( 12859, 12890 ) $$ @MustCall method close may not have been invoked on bis or any of its aliases.
+        bis = getBufferedInputStream(f);
+            ^
+  The type of object is: java.io.BufferedInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/io/Generic_StaticIO.java:364: error: (required.method.not.called) $$ 4 $$ method close $$ bos $$ java.io.BufferedOutputStream $$ regular method exit $$ ( 13401, 13433 ) $$ @MustCall method close may not have been invoked on bos or any of its aliases.
+        bos = getBufferedOutputStream(f);
+            ^
+  The type of object is: java.io.BufferedOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/io/Generic_ReadCSV.java:50: error: (required.method.not.called) $$ 4 $$ method close $$ pw $$ java.io.PrintWriter $$ regular method exit $$ ( 1539, 1565 ) $$ @MustCall method close may not have been invoked on pw or any of its aliases.
+            pw = new PrintWriter(test);
+               ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/io/Generic_ReadCSV.java:58: error: (required.method.not.called) $$ 4 $$ method close $$ br $$ java.io.BufferedReader $$ regular method exit $$ ( 1852, 1894 ) $$ @MustCall method close may not have been invoked on br or any of its aliases.
+                br = Generic_StaticIO.getBufferedReader(f);
+                   ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler.java:107: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(this._File, "rw") $$ java.io.RandomAccessFile $$ regular method exit $$ ( 3294, 3332 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(this._File, "rw") or any of its aliases.
+                this._RandomAccessFile = new RandomAccessFile(this._File, "rw");
+                                         ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/io/AbstractDataHandler.java:114: error: (required.method.not.called) $$ 4 $$ method close $$ new RandomAccessFile(this._File, "r") $$ java.io.RandomAccessFile $$ regular method exit $$ ( 3605, 3642 ) $$ @MustCall method close may not have been invoked on new RandomAccessFile(this._File, "r") or any of its aliases.
+                this._RandomAccessFile = new RandomAccessFile(this._File, "r");
+                                         ^
+  The type of object is: java.io.RandomAccessFile.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/logging/Generic_Log.java:129: error: (required.method.not.called) $$ 4 $$ method close $$ fileInputStream $$ java.io.FileInputStream $$ possible exceptional exit due to logging_Properties.load(fileInputStream) with exception type java.io.IOException $$ ( 5569, 5646 ) $$ @MustCall method close may not have been invoked on fileInputStream or any of its aliases.
+            FileInputStream fileInputStream = new FileInputStream(loggingPropertiesFile);
+                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to logging_Properties.load(fileInputStream) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url64d634b8f0_agdturner_generic_tgz-pJ8-uk_ac_leeds_ccg_andyt_generic_visualisation_charts_Generic_BarChartJ8/src/uk/ac/leeds/ccg/andyt/generic/logging/Generic_Log.java:138: error: (required.method.not.called) $$ 4 $$ method close $$ fileInputStream $$ java.io.FileInputStream $$ possible exceptional exit due to logManager.readConfiguration(fileInputStream) with exception type java.io.IOException $$ ( 5925, 6002 ) $$ @MustCall method close may not have been invoked on fileInputStream or any of its aliases.
+            FileInputStream fileInputStream = new FileInputStream(loggingPropertiesFile);
+                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to logManager.readConfiguration(fileInputStream) with exception type java.io.IOException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+8 errors

@@ -1,0 +1,26 @@
+../dataset/june2020_dataset_copy/url9d1719148e_mrqsdavi_pegmachine_tgz-pJ8-peg_RegexJ8/src/peg/parser.java:209: error: (required.method.not.called) $$ 4 $$ method yyclose $$ scanner $$ peg.AnalizadorLexico $$ regular method exit $$ ( 10320, 10385 ) $$ @MustCall method yyclose may not have been invoked on scanner or any of its aliases.
+                        scanner = new AnalizadorLexico( new java.io.FileReader(argv[i]) );
+                                ^
+  The type of object is: peg.AnalizadorLexico.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url9d1719148e_mrqsdavi_pegmachine_tgz-pJ8-peg_RegexJ8/src/peg/AnalizadorLexico.java:258: error: (required.method.not.called) $$ 4 $$ method close $$ field zzReader $$ java.io.Reader $$  Non-final owning field might be overwritten $$ ( 7818, 7836 ) $$ @MustCall method close may not have been invoked on field zzReader or any of its aliases.
+    this.zzReader = in;
+                  ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url9d1719148e_mrqsdavi_pegmachine_tgz-pJ8-peg_RegexJ8/src/peg/AnalizadorLexico.java:258: error: (assignment) $$ 2 $$ @PolyMustCall Reader $$ @MustCall("close") Reader $$ ( 7834, 7836 ) $$ incompatible types in assignment.
+    this.zzReader = in;
+                    ^
+  found   : @PolyMustCall Reader
+  required: @MustCall("close") Reader
+../dataset/june2020_dataset_copy/url9d1719148e_mrqsdavi_pegmachine_tgz-pJ8-peg_RegexJ8/src/peg/AnalizadorLexico.java:366: error: (missing.creates.mustcall.for) $$ 3 $$ yyreset $$ this $$ zzReader $$ ( 10721, 11001 ) $$ Method yyreset re-assigns the non-final, owning field this.zzReader, but does not have a corresponding @CreatesMustCallFor annotation.
+  public final void yyreset(java.io.Reader reader) {
+                    ^
+../dataset/june2020_dataset_copy/url9d1719148e_mrqsdavi_pegmachine_tgz-pJ8-peg_RegexJ8/src/peg/AnalizadorLexico.java:367: error: (required.method.not.called) $$ 4 $$ method close $$ field zzReader $$ java.io.Reader $$  Non-final owning field might be overwritten $$ ( 10776, 10793 ) $$ @MustCall method close may not have been invoked on field zzReader or any of its aliases.
+    zzReader = reader;
+             ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+Note: ../dataset/june2020_dataset_copy/url9d1719148e_mrqsdavi_pegmachine_tgz-pJ8-peg_RegexJ8/src/peg/EstadoMaquina.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors

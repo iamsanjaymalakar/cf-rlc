@@ -1,0 +1,29 @@
+23965
+2583
+
+SOURCE LEVEL FIXES
+
+3] ../../../dataset/june2020_dataset_copy/url75694980d5_fabioalmeid_tp01ftc_tgz-pJ8-agentes_jade_Centralizador_ExemploParserGramaticaCentralizadorJ8/src/gramatica/java_cup/Main.java; Line number 354
+vim +354 ../../../dataset/june2020_dataset_copy/url75694980d5_fabioalmeid_tp01ftc_tgz-pJ8-agentes_jade_Centralizador_ExemploParserGramaticaCentralizadorJ8/src/gramatica/java_cup/Main.java
+
++++ Add following code above line:354 (gramatica/java_cup/Main.java)
+try{
++++ Add following code after line:354 (gramatica/java_cup/Main.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 354
+
+--------------------------------------------
+8] ../../../dataset/june2020_dataset_copy/url75694980d5_fabioalmeid_tp01ftc_tgz-pJ8-agentes_jade_Centralizador_ExemploParserGramaticaCentralizadorJ8/src/agentes/jade/Centralizador/AgenteCentralizador.java; Line number 400
+vim +400 ../../../dataset/june2020_dataset_copy/url75694980d5_fabioalmeid_tp01ftc_tgz-pJ8-agentes_jade_Centralizador_ExemploParserGramaticaCentralizadorJ8/src/agentes/jade/Centralizador/AgenteCentralizador.java
+
++++ Add following code below line: 409 (agentes/jade/Centralizador/AgenteCentralizador.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 400
+
++++ Delete Line number 405 (agentes/jade/Centralizador/AgenteCentralizador.java)
+
+--------------------------------------------

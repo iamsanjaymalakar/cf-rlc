@@ -1,0 +1,12 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^minewebsocket/org/java_websocket/client/WebSocketClient.java^86^minewebsocket.org.java_websocket.client.WebSocketClient.<init>(Ljava/net/URI;Lminewebsocket/org/java_websocket/drafts/Draft;Ljava/util/Map;I)V^16 = new <Application,Lminewebsocket/org/java_websocket/WebSocketImpl>@103^NULL^FIELD,^false^true^Field escape;
+1^minewebsocket/org/java_websocket/client/WebSocketClient.java^40^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+2^minewebsocket/org/java_websocket/server/WebSocketServer.java^282^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+3^minewebsocket/org/java_websocket/server/WebSocketServer.java^287^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+4^minewebsocket/org/java_websocket/server/WebSocketServer.java^318^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+5^minewebsocket/org/java_websocket/server/WebSocketServer.java^320^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+6^minewebsocket/org/java_websocket/server/WebSocketServer.java^359^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+7^minewebsocket/org/java_websocket/server/WebSocketServer.java^630^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+8^minewebsocket/org/java_websocket/server/WebSocketServer.java^635^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+9^minewebsocket/org/java_websocket/server/WebSocketServer.java^705^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+10^minewebsocket/org/java_websocket/SSLSocketChannel2.java^69^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

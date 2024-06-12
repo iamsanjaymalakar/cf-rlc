@@ -1,0 +1,6 @@
+../dataset/june2020_dataset_copy/url47af6b1535_rolandotr_db_comparison_tgz-pJ8-methodology_HistoryJ8/src/protocols/specifications/BrandsAndChaumProtocol.java:5: error: package org.omg.CORBA does not exist
+import org.omg.CORBA.TCKind;
+                    ^
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error

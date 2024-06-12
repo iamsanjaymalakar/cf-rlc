@@ -1,0 +1,5 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^de/codesourcery/dcpu16/parser/Lexer.java^58^de.codesourcery.dcpu16.parser.Lexer.createInputStream(I)Ljava/io/InputStream;^6 = invokeinterface < Application, Lde/codesourcery/dcpu16/util/IInputStreamProvider, createInputStream()Ljava/io/InputStream; > 4 @4 exception:5^NULL^INVOKE,RETURN,FIELD,^false^true^Field escape;
+1^de/codesourcery/dcpu16/parser/Lexer.java^81^de.codesourcery.dcpu16.parser.Lexer.<init>(Lde/codesourcery/dcpu16/util/IInputStreamProvider;Z)V^17 = invokeinterface < Application, Lde/codesourcery/dcpu16/util/IInputStreamProvider, createInputStream()Ljava/io/InputStream; > 2 @63 exception:16^NULL^INVOKE,FIELD,^false^true^Field escape;
+2^de/codesourcery/dcpu16/parser/Lexer.java^410^de.codesourcery.dcpu16.parser.Lexer.setIgnoreWhitespace(Z)V^33 = invokespecial < Application, Lde/codesourcery/dcpu16/parser/Lexer, createInputStream(I)Ljava/io/InputStream; > 1,31 @45 exception:32^NULL^INVOKE,FIELD,^false^true^Field escape;
+3^de/codesourcery/dcpu16/parser/Lexer.java^52^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

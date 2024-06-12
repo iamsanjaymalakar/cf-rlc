@@ -1,0 +1,8 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^soc/client/SOCPlayerClient.java^846^soc.client.SOCPlayerClient.connect()V^36 = new <Application,Ljava/net/Socket>@111^NULL^FIELD,^false^true^Field escape;
+1^soc/client/SOCConnectOrPracticePanel.java^133^soc.client.SOCConnectOrPracticePanel.checkCanLaunchServer()Z^12 = new <Application,Ljava/net/ServerSocket>@50^soc.client.SOCConnectOrPracticePanel.checkCanLaunchServer()Z#30,^INVOKE,^false^false^Loop Fix;Normal Fix;
+2^soc/server/SOCServer.java^5471^soc.server.SOCServer.endGameTurn(Lsoc/game/SOCGame;Lsoc/game/SOCPlayer;)V^59 = new <Application,Ljava/io/FileWriter>@185^soc.server.SOCServer.endGameTurn(Lsoc/game/SOCGame;Lsoc/game/SOCPlayer;)V#62,^INVOKE,^false^false^Try-catch Fix;
+3^soc/server/SOCServer.java^7716^soc.server.SOCServer.sendGameStateOVER(Lsoc/game/SOCGame;)V^96 = new <Application,Ljava/io/FileWriter>@288^soc.server.SOCServer.sendGameStateOVER(Lsoc/game/SOCGame;)V#99,^INVOKE,^false^false^Loop Fix;Normal Fix;
+4^soc/client/SOCConnectOrPracticePanel.java^136^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+5^soc/server/genericServer/Server.java^1063^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL
+6^soc/server/genericServer/Server.java^1069^UNMATCHED^UNMATCHED^NULL^NULL^NULL^true^NULL

@@ -1,0 +1,60 @@
+../dataset/june2020_dataset_copy/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/tools/PropTools.java:19: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to props.load(fis) with exception type java.io.IOException $$ ( 368, 414 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+			fis = new FileInputStream(new File(propsFile));
+			    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to props.load(fis) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/tools/PropTools.java:47: error: (required.method.not.called) $$ 4 $$ method close $$ sF $$ java.io.FileOutputStream $$ possible exceptional exit due to prop.store(sF, "") with exception type java.io.IOException $$ ( 1001, 1054 ) $$ @MustCall method close may not have been invoked on sF or any of its aliases.
+    		FileOutputStream sF=new FileOutputStream( propFile );
+    		                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to prop.store(sF, "") with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/service/Service.java:113: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(new File(path_log).getAbsoluteFile()) $$ java.io.FileReader $$ possible exceptional exit due to in.readLine() with exception type java.io.IOException $$ ( 3155, 3208 ) $$ @MustCall method close may not have been invoked on new FileReader(new File(path_log).getAbsoluteFile()) or any of its aliases.
+            BufferedReader in = new BufferedReader(new FileReader( new File(path_log).getAbsoluteFile()));
+                                                   ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to in.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/service/Service.java:160: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(new File(dat_time_path).getAbsoluteFile()) $$ java.io.FileReader $$ possible exceptional exit due to in.readLine() with exception type java.io.IOException $$ ( 4792, 4850 ) $$ @MustCall method close may not have been invoked on new FileReader(new File(dat_time_path).getAbsoluteFile()) or any of its aliases.
+                BufferedReader in = new BufferedReader(new FileReader( new File(dat_time_path).getAbsoluteFile()));
+                                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to in.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/http_server/HttpServer.java:43: error: (required.method.not.called) $$ 4 $$ method close $$ clientSocket $$ java.net.Socket $$ possible exceptional exit due to new ClientSession(clientSocket) with exception type java.io.IOException $$ ( 1373, 1417 ) $$ @MustCall method close may not have been invoked on clientSocket or any of its aliases.
+                Socket clientSocket = serverSocket.accept();
+                       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to new ClientSession(clientSocket) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/http_server/ClientSession.java:25: error: (contracts.postcondition) $$ 3 $$ run $$ no information about this.socket $$ this.socket is @CalledMethods("close") $$ ( 654, 1952 ) $$ postcondition of run is not satisfied.
+    @Override public void run() {
+                          ^
+  found   : no information about this.socket
+  required: this.socket is @CalledMethods("close")
+../dataset/june2020_dataset_copy/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/http_server/ClientSession.java:62: error: (required.method.not.called) $$ 4 $$ method close $$ field socket $$ java.net.Socket $$  Non-final owning field might be overwritten $$ ( 2023, 2043 ) $$ @MustCall method close may not have been invoked on field socket or any of its aliases.
+        this.socket = socket;
+                    ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/http_server/ClientSession.java:62: error: (assignment) $$ 2 $$ @PolyMustCall Socket $$ @MustCall("close") Socket $$ ( 2037, 2043 ) $$ incompatible types in assignment.
+        this.socket = socket;
+                      ^
+  found   : @PolyMustCall Socket
+  required: @MustCall("close") Socket
+../dataset/june2020_dataset_copy/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/devices/Device.java:196: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(new File(dat_time_path).getAbsoluteFile()) $$ java.io.FileReader $$ possible exceptional exit due to in.readLine() with exception type java.io.IOException $$ ( 6531, 6589 ) $$ @MustCall method close may not have been invoked on new FileReader(new File(dat_time_path).getAbsoluteFile()) or any of its aliases.
+                BufferedReader in = new BufferedReader(new FileReader( new File(dat_time_path).getAbsoluteFile()));
+                                                       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to in.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/devices/Device.java:265: error: (required.method.not.called) $$ 4 $$ method close $$ serialPort.getInputStream() $$ java.io.InputStream $$ possible exceptional exit due to serialPort.getOutputStream() with exception type java.io.IOException $$ ( 8642, 8669 ) $$ @MustCall method close may not have been invoked on serialPort.getInputStream() or any of its aliases.
+                portInputStream = serialPort.getInputStream();
+                                                           ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to serialPort.getOutputStream() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlce7759b8da_Palachsuper_EBA4_tgz-pJ8-json_TestJ8/src/terminal/devices/Device.java:266: error: (required.method.not.called) $$ 4 $$ method close $$ serialPort.getOutputStream() $$ java.io.OutputStream $$ possible exceptional exit due to serialPort.addEventListener(this) with exception type java.util.TooManyListenersException $$ ( 8706, 8734 ) $$ @MustCall method close may not have been invoked on serialPort.getOutputStream() or any of its aliases.
+                portOutputStream = serialPort.getOutputStream();
+                                                             ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope: possible exceptional exit due to serialPort.addEventListener(this) with exception type java.util.TooManyListenersException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+11 errors

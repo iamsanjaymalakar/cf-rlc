@@ -1,0 +1,13 @@
+../dataset/june2020_dataset_copy/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/workflow/DvfsPolicy.java:16: error: package sun.nio.cs.ext is not visible
+import sun.nio.cs.ext.ISCII91;
+                 ^
+  (package sun.nio.cs.ext is declared in module jdk.charsets, which is not in the module graph)
+../dataset/june2020_dataset_copy/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/workflow/DvfsPolicy_2.java:16: error: package sun.nio.cs.ext is not visible
+import sun.nio.cs.ext.ISCII91;
+                 ^
+  (package sun.nio.cs.ext is declared in module jdk.charsets, which is not in the module graph)
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: ../dataset/june2020_dataset_copy/url80587fc7d5_dennervidal_CloudSim_DVFS_tgz-pJ8-Examples_Dvfs_example_simpleJ8/src/org/cloudbus/cloudsim/xml/SimulationXMLParse.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors

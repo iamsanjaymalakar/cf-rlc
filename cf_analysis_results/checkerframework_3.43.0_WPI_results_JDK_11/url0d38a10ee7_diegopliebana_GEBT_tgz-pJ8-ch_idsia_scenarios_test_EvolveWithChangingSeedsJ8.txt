@@ -1,0 +1,234 @@
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/Util.java:3: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/AccessTest.java:12: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/Util.java:3: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/AccessTest.java:12: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/Util.java:3: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/AccessTest.java:12: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+import sun.reflect.ReflectionFactory;
+                  ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/LevelScene.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ LevelScene.class.getResourceAsStream("resources/tiles.dat") $$ java.io.InputStream $$ regular method exit $$ ( 3449, 3508 ) $$ @MustCall method close may not have been invoked on LevelScene.class.getResourceAsStream("resources/tiles.dat") or any of its aliases.
+            Level.loadBehaviors(new DataInputStream(LevelScene.class.getResourceAsStream("resources/tiles.dat")));
+                                                                                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/utils/StatisticalSummary.java:245: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(path) $$ java.io.FileOutputStream $$ possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(path)) with exception type java.io.IOException $$ ( 6378, 6404 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(path) or any of its aliases.
+                            new FileOutputStream(path));
+                            ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectOutputStream(new FileOutputStream(path)) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/utils/StatisticalSummary.java:257: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(path) $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(new FileInputStream(path)) with exception type java.io.IOException $$ ( 6729, 6754 ) $$ @MustCall method close may not have been invoked on new FileInputStream(path) or any of its aliases.
+                            new FileInputStream(path));
+                            ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(new FileInputStream(path)) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/maibe/tasks/ProgressTask.java:88: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(fileName + fileTimeStamp + ".txt", true) $$ java.io.FileWriter $$ possible exceptional exit due to out.write(this.fitnessEvaluations + " " + fitness + "\n") with exception type java.io.IOException $$ ( 3079, 3134 ) $$ @MustCall method close may not have been invoked on new FileWriter(fileName + fileTimeStamp + ".txt", true) or any of its aliases.
+            BufferedWriter out = new BufferedWriter(new FileWriter(fileName + fileTimeStamp + ".txt", true));
+                                                    ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to out.write(this.fitnessEvaluations + " " + fitness + "\n") with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/Art.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ Art.class.getResourceAsStream(imageName) $$ java.io.InputStream $$ possible exceptional exit due to null with exception type java.lang.AssertionError $$ ( 2270, 2310 ) $$ @MustCall method close may not have been invoked on Art.class.getResourceAsStream(imageName) or any of its aliases.
+        { source = ImageIO.read(Art.class.getResourceAsStream(imageName));        }
+                                                             ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to null with exception type java.lang.AssertionError
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/Recorder.java:48: error: (contracts.postcondition) $$ 3 $$ getBytes $$ no information about this.dos $$ this.dos is @CalledMethods("close") $$ ( 955, 1243 ) $$ postcondition of getBytes is not satisfied.
+    public byte[] getBytes()
+                  ^
+  found   : no information about this.dos
+  required: this.dos is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/mapedit/LevelEditor.java:36: error: (required.method.not.called) $$ 4 $$ method close $$ LevelScene.class.getResourceAsStream("resources/tiles.dat") $$ java.io.InputStream $$ possible exceptional exit due to Toolkit.getDefaultToolkit().getScreenSize() with exception type java.awt.HeadlessException $$ ( 1081, 1140 ) $$ @MustCall method close may not have been invoked on LevelScene.class.getResourceAsStream("resources/tiles.dat") or any of its aliases.
+            Level.loadBehaviors(new DataInputStream(LevelScene.class.getResourceAsStream("resources/tiles.dat")));
+                                                                                        ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to Toolkit.getDefaultToolkit().getScreenSize() with exception type java.awt.HeadlessException
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/mapedit/LevelEditor.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream("SAVEDtiles.dat") $$ java.io.FileOutputStream $$ possible exceptional exit due to Level.saveBehaviors(new DataOutputStream(new FileOutputStream("SAVEDtiles.dat"))) with exception type java.io.IOException $$ ( 3710, 3748 ) $$ @MustCall method close may not have been invoked on new FileOutputStream("SAVEDtiles.dat") or any of its aliases.
+                        Level.saveBehaviors(new DataOutputStream(new FileOutputStream("SAVEDtiles.dat")));
+                                                                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to Level.saveBehaviors(new DataOutputStream(new FileOutputStream("SAVEDtiles.dat"))) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/mapedit/LevelEditor.java:124: error: (required.method.not.called) $$ 4 $$ method close $$ LevelScene.class.getResourceAsStream(nameField.getText().trim()) $$ java.io.InputStream $$ possible exceptional exit due to Level.load(new DataInputStream(LevelScene.class.getResourceAsStream(nameField.getText().trim()))) with exception type java.io.IOException $$ ( 4795, 4859 ) $$ @MustCall method close may not have been invoked on LevelScene.class.getResourceAsStream(nameField.getText().trim()) or any of its aliases.
+                levelEditView.setLevel(Level.load(new DataInputStream(LevelScene.class.getResourceAsStream(nameField.getText().trim()))));
+                                                                                                          ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to Level.load(new DataInputStream(LevelScene.class.getResourceAsStream(nameField.getText().trim()))) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/ch/idsia/mario/engine/mapedit/LevelEditor.java:128: error: (required.method.not.called) $$ 4 $$ method close $$ new FileOutputStream(nameField.getText().trim()) $$ java.io.FileOutputStream $$ possible exceptional exit due to levelEditView.getLevel().save(new DataOutputStream(new FileOutputStream(nameField.getText().trim()))) with exception type java.io.IOException $$ ( 5008, 5056 ) $$ @MustCall method close may not have been invoked on new FileOutputStream(nameField.getText().trim()) or any of its aliases.
+                levelEditView.getLevel().save(new DataOutputStream(new FileOutputStream(nameField.getText().trim())));
+                                                                   ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to levelEditView.getLevel().save(new DataOutputStream(new FileOutputStream(nameField.getText().trim()))) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviorsNoAstar/bt/behaviortree/BehaviorTree.java:36: error: (required.method.not.called) $$ 4 $$ method open $$ field m_xmlReader $$ grammaticalbehaviorsNoAstar.bt.behaviortree.XML_BTReader $$  Non-final owning field might be overwritten $$ ( 724, 746 ) $$ @MustCall method open may not have been invoked on field m_xmlReader or any of its aliases.
+        m_xmlReader = a_reader;
+                    ^
+  The type of object is: grammaticalbehaviorsNoAstar.bt.behaviortree.XML_BTReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviorsNoAstar/bt/behaviortree/BehaviorTree.java:36: error: (assignment) $$ 2 $$ @PolyMustCall XML_BTReader $$ @MustCall("open") XML_BTReader $$ ( 738, 746 ) $$ incompatible types in assignment.
+        m_xmlReader = a_reader;
+                      ^
+  found   : @PolyMustCall XML_BTReader
+  required: @MustCall("open") XML_BTReader
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviorsNoAstar/bt/behaviortree/XML_BTReader.java:27: error: (contracts.postcondition) $$ 3 $$ open $$ no information about this.m_reader $$ this.m_reader is @CalledMethods("close") $$ ( 456, 1362 ) $$ postcondition of open is not satisfied.
+    public boolean open(BehaviorTree a_bt, String a_filename)
+                   ^
+  found   : no information about this.m_reader
+  required: this.m_reader is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviorsNoAstar/bt/behaviortree/XML_BTReader.java:27: error: (missing.creates.mustcall.for) $$ 3 $$ open $$ this $$ m_reader $$ ( 456, 1362 ) $$ Method open re-assigns the non-final, owning field this.m_reader, but does not have a corresponding @CreatesMustCallFor annotation.
+    public boolean open(BehaviorTree a_bt, String a_filename)
+                   ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviorsNoAstar/bt/behaviortree/XML_BTReader.java:33: error: (required.method.not.called) $$ 4 $$ method close $$ field m_reader $$ java.io.BufferedReader $$  Non-final owning field might be overwritten $$ ( 624, 681 ) $$ @MustCall method close may not have been invoked on field m_reader or any of its aliases.
+            m_reader = new BufferedReader(new FileReader(a_filename));
+                     ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviorsNoAstar/bt/behaviortree/Main.java:21: error: (required.method.not.called) $$ 4 $$ method open $$ new MarioXMLReader() $$ grammaticalbehaviorsNoAstar.GEBT_Mario.MarioXMLReader $$ regular method exit $$ ( 466, 486 ) $$ @MustCall method open may not have been invoked on new MarioXMLReader() or any of its aliases.
+        BehaviorTree bt = new BehaviorTree(null,new MarioXMLReader());
+                                                ^
+  The type of object is: grammaticalbehaviorsNoAstar.GEBT_Mario.MarioXMLReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviorsNoAstar/GEBT_Mario/GEBT_MarioAgent.java:115: error: (missing.creates.mustcall.for) $$ 3 $$ loadBehaviorTree $$ this $$ m_behaviorTree $$ ( 3278, 3464 ) $$ Method loadBehaviorTree re-assigns the non-final, owning field this.m_behaviorTree, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void loadBehaviorTree(BTStream a_stream)
+                ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviorsNoAstar/GEBT_Mario/GEBT_MarioAgent.java:118: error: (required.method.not.called) $$ 4 $$ method load $$ field m_behaviorTree $$ grammaticalbehaviorsNoAstar.bt.behaviortree.BehaviorTree $$  Non-final owning field might be overwritten $$ ( 3357, 3418 ) $$ @MustCall method load may not have been invoked on field m_behaviorTree or any of its aliases.
+        m_behaviorTree = new BehaviorTree(this, new MarioXMLReader());
+                       ^
+  The type of object is: grammaticalbehaviorsNoAstar.bt.behaviortree.BehaviorTree.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviorsNoAstar/GEBT_Mario/GEBT_MarioAgent.java:123: error: (missing.creates.mustcall.for) $$ 3 $$ loadBehaviorTree $$ this $$ m_behaviorTree $$ ( 3475, 3663 ) $$ Method loadBehaviorTree re-assigns the non-final, owning field this.m_behaviorTree, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void loadBehaviorTree(String a_filename)
+                ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviorsNoAstar/GEBT_Mario/GEBT_MarioAgent.java:126: error: (required.method.not.called) $$ 4 $$ method load $$ field m_behaviorTree $$ grammaticalbehaviorsNoAstar.bt.behaviortree.BehaviorTree $$  Non-final owning field might be overwritten $$ ( 3554, 3615 ) $$ @MustCall method load may not have been invoked on field m_behaviorTree or any of its aliases.
+        m_behaviorTree = new BehaviorTree(this, new MarioXMLReader());
+                       ^
+  The type of object is: grammaticalbehaviorsNoAstar.bt.behaviortree.BehaviorTree.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/bt/behaviortree/XML_BTReader.java:27: error: (contracts.postcondition) $$ 3 $$ openDouble $$ no information about this.m_reader $$ this.m_reader is @CalledMethods("close") $$ ( 445, 1444 ) $$ postcondition of openDouble is not satisfied.
+    public BehaviorTree openDouble(BTInterface a_bt, String a_filename)
+                        ^
+  found   : no information about this.m_reader
+  required: this.m_reader is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/bt/behaviortree/XML_BTReader.java:27: error: (missing.creates.mustcall.for) $$ 3 $$ openDouble $$ this $$ m_reader $$ ( 445, 1444 ) $$ Method openDouble re-assigns the non-final, owning field this.m_reader, but does not have a corresponding @CreatesMustCallFor annotation.
+    public BehaviorTree openDouble(BTInterface a_bt, String a_filename)
+                        ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/bt/behaviortree/XML_BTReader.java:34: error: (required.method.not.called) $$ 4 $$ method openDouble $$ a_bt.getReader() $$ grammaticalbehaviors.bt.behaviortree.XML_BTReader $$ regular method exit $$ ( 635, 651 ) $$ @MustCall method openDouble may not have been invoked on a_bt.getReader() or any of its aliases.
+            bt_temp = new BehaviorTree(a_bt.getAgent(),a_bt.getReader());
+                                                                     ^
+  The type of object is: grammaticalbehaviors.bt.behaviortree.XML_BTReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/bt/behaviortree/XML_BTReader.java:37: error: (required.method.not.called) $$ 4 $$ method close $$ field m_reader $$ java.io.BufferedReader $$  Non-final owning field might be overwritten $$ ( 722, 779 ) $$ @MustCall method close may not have been invoked on field m_reader or any of its aliases.
+            m_reader = new BufferedReader(new FileReader(a_filename));
+                     ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/bt/behaviortree/XML_BTReader.java:64: error: (contracts.postcondition) $$ 3 $$ open $$ no information about this.m_reader $$ this.m_reader is @CalledMethods("close") $$ ( 1450, 2383 ) $$ postcondition of open is not satisfied.
+    public boolean open(BTInterface a_bt, String a_filename)
+                   ^
+  found   : no information about this.m_reader
+  required: this.m_reader is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/bt/behaviortree/XML_BTReader.java:64: error: (missing.creates.mustcall.for) $$ 3 $$ open $$ this $$ m_reader $$ ( 1450, 2383 ) $$ Method open re-assigns the non-final, owning field this.m_reader, but does not have a corresponding @CreatesMustCallFor annotation.
+    public boolean open(BTInterface a_bt, String a_filename)
+                   ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/bt/behaviortree/XML_BTReader.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ field m_reader $$ java.io.BufferedReader $$  Non-final owning field might be overwritten $$ ( 1617, 1674 ) $$ @MustCall method close may not have been invoked on field m_reader or any of its aliases.
+            m_reader = new BufferedReader(new FileReader(a_filename));
+                     ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/bt/behaviortree/XML_BTReader.java:101: error: (required.method.not.called) $$ 4 $$ method openDouble $$ a_bt.getReader() $$ grammaticalbehaviors.bt.behaviortree.XML_BTReader $$ regular method exit $$ ( 2555, 2571 ) $$ @MustCall method openDouble may not have been invoked on a_bt.getReader() or any of its aliases.
+        BehaviorTree bt_temp = new BehaviorTree(a_bt.getAgent(),a_bt.getReader());
+                                                                              ^
+  The type of object is: grammaticalbehaviors.bt.behaviortree.XML_BTReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/bt/behaviortree/BehaviorTreeDouble.java:40: error: (required.method.not.called) $$ 4 $$ method openDouble $$ field m_xmlReader $$ grammaticalbehaviors.bt.behaviortree.XML_BTReader $$  Non-final owning field might be overwritten $$ ( 882, 904 ) $$ @MustCall method openDouble may not have been invoked on field m_xmlReader or any of its aliases.
+        m_xmlReader = a_reader;
+                    ^
+  The type of object is: grammaticalbehaviors.bt.behaviortree.XML_BTReader.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/bt/behaviortree/BehaviorTreeDouble.java:40: error: (assignment) $$ 2 $$ @PolyMustCall XML_BTReader $$ @MustCall("openDouble") XML_BTReader $$ ( 896, 904 ) $$ incompatible types in assignment.
+        m_xmlReader = a_reader;
+                      ^
+  found   : @PolyMustCall XML_BTReader
+  required: @MustCall("openDouble") XML_BTReader
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/bt/behaviortree/BehaviorTreeDouble.java:45: error: (contracts.postcondition) $$ 3 $$ load $$ no information about this.m_xmlReader $$ this.m_xmlReader is @CalledMethods("openDouble") $$ ( 976, 1296 ) $$ postcondition of load is not satisfied.
+    public boolean load(String a_filename)
+                   ^
+  found   : no information about this.m_xmlReader
+  required: this.m_xmlReader is @CalledMethods("openDouble")
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/bt/behaviortree/Main.java:21: error: (required.method.not.called) $$ 4 $$ method openDouble $$ new MarioXMLReader() $$ grammaticalbehaviors.GEBT_Mario.MarioXMLReader $$ regular method exit $$ ( 452, 472 ) $$ @MustCall method openDouble may not have been invoked on new MarioXMLReader() or any of its aliases.
+        BehaviorTree bt = new BehaviorTree(null,new MarioXMLReader());
+                                                ^
+  The type of object is: grammaticalbehaviors.GEBT_Mario.MarioXMLReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/GEBT_Mario/GEBT_MarioAgent.java:186: error: (required.method.not.called) $$ 4 $$ method openDouble $$ new MarioXMLReader() $$ grammaticalbehaviors.GEBT_Mario.MarioXMLReader $$ regular method exit $$ ( 5791, 5811 ) $$ @MustCall method openDouble may not have been invoked on new MarioXMLReader() or any of its aliases.
+        m_behaviorTree = new BehaviorTree(this, new MarioXMLReader());
+                                                ^
+  The type of object is: grammaticalbehaviors.GEBT_Mario.MarioXMLReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/GEBT_Mario/GEBT_MarioAgent.java:194: error: (required.method.not.called) $$ 4 $$ method openDouble $$ new MarioXMLReader() $$ grammaticalbehaviors.GEBT_Mario.MarioXMLReader $$ regular method exit $$ ( 5996, 6016 ) $$ @MustCall method openDouble may not have been invoked on new MarioXMLReader() or any of its aliases.
+        m_behaviorTree = new BehaviorTree(this, new MarioXMLReader());
+                                                ^
+  The type of object is: grammaticalbehaviors.GEBT_Mario.MarioXMLReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/GEBT_Mario/Map.java:283: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileWriter $$ possible exceptional exit due to bw.newLine() with exception type java.io.IOException $$ ( 8962, 9003 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+            FileWriter fw = new FileWriter(filename);
+                       ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bw.newLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/grammaticalbehaviors/GEBT_Mario/Map.java:313: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileWriter $$ possible exceptional exit due to bw.write("void setup() { size(" + m_lastCell * 10 + ", 240); background(134,183,183); }") with exception type java.io.IOException $$ ( 9774, 9815 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+            FileWriter fw = new FileWriter(filename);
+                       ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to bw.write("void setup() { size(" + m_lastCell * 10 + ", 240); background(134,183,183); }") with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/Util.java:20: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/Util.java:20: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/Util.java:20: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/Util.java:20: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                                                          ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/Util.java:22: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+                    new ReflectionFactory.GetReflectionFactoryAction());
+                        ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/Util.java:22: error: cannot find symbol
+                    new ReflectionFactory.GetReflectionFactoryAction());
+                                         ^
+  symbol:   class GetReflectionFactoryAction
+  location: class ReflectionFactory
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/AccessTest.java:40: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/AccessTest.java:40: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/AccessTest.java:40: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                         ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/AccessTest.java:40: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+    private static final ReflectionFactory reflFactory = (ReflectionFactory)
+                                                          ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/AccessTest.java:42: warning: ReflectionFactory is internal proprietary API and may be removed in a future release
+                    new ReflectionFactory.GetReflectionFactoryAction());
+                        ^
+../dataset/june2020_dataset_copy/url0d38a10ee7_diegopliebana_GEBT_tgz-pJ8-ch_idsia_scenarios_test_EvolveWithChangingSeedsJ8/src/wox/serial/AccessTest.java:42: error: cannot find symbol
+                    new ReflectionFactory.GetReflectionFactoryAction());
+                                         ^
+  symbol:   class GetReflectionFactoryAction
+  location: class ReflectionFactory
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+38 errors
+16 warnings

@@ -1,0 +1,144 @@
+Note: Multiple elements named 'sun.nio.ch.Interruptible' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.security.util.SecurityConstants' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.nio.cs.ArrayDecoder' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.nio.cs.ArrayEncoder' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.nio.cs.ISO_8859_1' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.nio.cs.US_ASCII' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.nio.cs.UTF_8' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.invoke.util.Wrapper' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.reflect.generics.factory.CoreReflectionFactory' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.reflect.generics.factory.GenericsFactory' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.reflect.generics.repository.ClassRepository' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.reflect.generics.repository.MethodRepository' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.reflect.generics.repository.ConstructorRepository' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.reflect.generics.scope.ClassScope' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.reflect.annotation' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getPackageElement.
+Note: Multiple elements named 'sun.reflect.misc.ReflectUtil' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.reflect.annotation.AnnotationType' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.nio.cs.ThreadLocalCoders' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.security.action.GetPropertyAction' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.nio.fs.DefaultFileSystemProvider' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.security.action' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getPackageElement.
+Note: Multiple elements named 'sun.net.InetAddressCachePolicy' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.net.util.IPAddressUtil' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+../dataset/june2020_dataset_copy/url80e7c3d65d_sblit_dcl_tgz-pJ8-org_dclayer_DCLJ8/src/org/dclayer/net/a2s/ApplicationConnection.java:66: error: (required.method.not.called) $$ 4 $$ method close $$ field socket $$ java.net.Socket $$  The enclosing element org.dclayer.net.a2s.ApplicationConnection has an empty @MustCall annotation $$ ( 3124, 3146 ) $$ @MustCall method close may not have been invoked on field socket or any of its aliases.
+	private Socket socket;
+	               ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope:  The enclosing element org.dclayer.net.a2s.ApplicationConnection has an empty @MustCall annotation
+../dataset/june2020_dataset_copy/url80e7c3d65d_sblit_dcl_tgz-pJ8-org_dclayer_DCLJ8/src/org/dclayer/net/a2s/ApplicationConnection.java:106: error: (required.method.not.called) $$ 4 $$ method close $$ field socket $$ java.net.Socket $$  Non-final owning field might be overwritten $$ ( 4627, 4647 ) $$ @MustCall method close may not have been invoked on field socket or any of its aliases.
+		this.socket = socket;
+		            ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url80e7c3d65d_sblit_dcl_tgz-pJ8-org_dclayer_DCLJ8/src/org/dclayer/net/a2s/ApplicationConnection.java:106: error: (assignment) $$ 2 $$ @PolyMustCall Socket $$ @MustCall("close") Socket $$ ( 4641, 4647 ) $$ incompatible types in assignment.
+		this.socket = socket;
+		              ^
+  found   : @PolyMustCall Socket
+  required: @MustCall("close") Socket
+../dataset/june2020_dataset_copy/url80e7c3d65d_sblit_dcl_tgz-pJ8-org_dclayer_DCLJ8/src/org/dclayer/net/a2s/ApplicationConnection.java:366: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.socket $$ this.socket is @CalledMethods("close") $$ ( 13911, 14056 ) $$ postcondition of close is not satisfied.
+	private void close() {
+	             ^
+  found   : no information about this.socket
+  required: this.socket is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url80e7c3d65d_sblit_dcl_tgz-pJ8-org_dclayer_DCLJ8/src/org/dclayer/DCLService.java:341: error: (override.return) $$ 6 $$ @PolyMustCall ApplicationConnection $$ @MustCall ApplicationConnection $$ @MustCall DCLService $$ @PolyMustCall ApplicationConnection onApplicationConnection(@MustCall DCLService this, @PolyMustCall Socket p0) $$ @MustCall ApplicationConnectionActionListener $$ @MustCall ApplicationConnection onApplicationConnection(@MustCall ApplicationConnectionActionListener this, @MustCall("close") Socket p0) $$ ( 11775, 11796 ) $$ Incompatible return type.
+	public ApplicationConnection onApplicationConnection(Socket socket) {
+	       ^
+  found   : @PolyMustCall ApplicationConnection
+  required: @MustCall ApplicationConnection
+  Consequence: method in @MustCall DCLService
+    @PolyMustCall ApplicationConnection onApplicationConnection(@MustCall DCLService this, @PolyMustCall Socket p0)
+  cannot override method in @MustCall ApplicationConnectionActionListener
+    @MustCall ApplicationConnection onApplicationConnection(@MustCall ApplicationConnectionActionListener this, @MustCall("close") Socket p0)
+Note: Multiple elements named 'sun.security.jca' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getPackageElement.
+Note: Multiple elements named 'sun.security.jca.GetInstance.Instance' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.security.provider.SunEntries' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.security.util.Debug' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.net.NetProperties' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.nio.ch.DefaultSelectorProvider' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+../dataset/june2020_dataset_copy/url80e7c3d65d_sblit_dcl_tgz-pJ8-org_dclayer_DCLJ8/src/org/dclayer/net/socket/UDPSocket.java:31: error: (required.method.not.called) $$ 4 $$ method close $$ new java.net.DatagramSocket(port) $$ java.net.DatagramSocket $$ regular method exit $$ ( 835, 868 ) $$ @MustCall method close may not have been invoked on new java.net.DatagramSocket(port) or any of its aliases.
+		this.socket = new java.net.DatagramSocket(port);
+		              ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url80e7c3d65d_sblit_dcl_tgz-pJ8-org_dclayer_DCLJ8/src/org/dclayer/net/socket/TCPSocket.java:26: error: (reset.not.owning) $$ 2 $$ bind $$ this.serverSocket $$ ( 788, 873 ) $$ Calling method bind resets the must-call obligations of the expression this.serverSocket, which is non-owning. Either annotate its declaration with an @Owning annotation, extract it into a local variable, or write a corresponding @CreatesMustCallFor annotation on the method that encloses this statement.
+		this.serverSocket.bind(new InetSocketAddress(InetAddress.getLoopbackAddress(), port));
+		                      ^
+../dataset/june2020_dataset_copy/url80e7c3d65d_sblit_dcl_tgz-pJ8-org_dclayer_DCLJ8/src/org/dclayer/net/socket/TCPSocket.java:38: error: (required.method.not.called) $$ 4 $$ method close $$ connectionSocket $$ java.net.Socket $$ regular method exit $$ ( 1077, 1117 ) $$ @MustCall method close may not have been invoked on connectionSocket or any of its aliases.
+				connectionSocket = serverSocket.accept();
+				                 ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+Note: Multiple elements named 'sun.reflect.generics.repository.FieldRepository' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.reflect.annotation.AnnotationParser' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.reflect.annotation.ExceptionProxy' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.reflect.annotation.TypeNotPresentExceptionProxy' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.reflect.generics.scope.MethodScope' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+../dataset/june2020_dataset_copy/url80e7c3d65d_sblit_dcl_tgz-pJ8-org_dclayer_DCLJ8/src/org/dclayer/application/applicationchannel/AbsApplicationChannel.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ new OutputStream(){
+		this.bufferedOutputStream = new BufferedOutputStream(new OutputStream() {
+		                                                     ^
+      
+      () {
+          super();
+      }
+      Data bufData = new Data();
+      Data singleByteData = new Data(1);
+      
+      @Override()
+      public void write(int b) throws IOException {
+          singleByteData.setByte(0, (byte)b);
+          dataCallback.callback(singleByteData);
+      }
+      
+      @Override()
+      public void write(byte[] b, int off, int len) throws IOException {
+          bufData.reset(b, off, len);
+          dataCallback.callback(bufData);
+      }
+  } $$ <anonymous java.io.OutputStream> $$ regular method exit $$ ( 2852, 3266 ) $$ @MustCall method close may not have been invoked on new OutputStream(){
+      
+      () {
+          super();
+      }
+      Data bufData = new Data();
+      Data singleByteData = new Data(1);
+      
+      @Override()
+      public void write(int b) throws IOException {
+          singleByteData.setByte(0, (byte)b);
+          dataCallback.callback(singleByteData);
+      }
+      
+      @Override()
+      public void write(byte[] b, int off, int len) throws IOException {
+          bufData.reset(b, off, len);
+          dataCallback.callback(bufData);
+      }
+  } or any of its aliases.
+  The type of object is: <anonymous java.io.OutputStream>.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url80e7c3d65d_sblit_dcl_tgz-pJ8-org_dclayer_DCLJ8/src/org/dclayer/application/applicationchannel/AbsApplicationChannel.java:103: error: (required.method.not.called) $$ 4 $$ method close $$ new ByteBufInputStream(asyncPipeByteBuf) $$ org.dclayer.net.buf.ByteBufInputStream $$ regular method exit $$ ( 3371, 3411 ) $$ @MustCall method close may not have been invoked on new ByteBufInputStream(asyncPipeByteBuf) or any of its aliases.
+		this.byteBufInputStream = new ByteBufInputStream(asyncPipeByteBuf);
+		                          ^
+  The type of object is: org.dclayer.net.buf.ByteBufInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url80e7c3d65d_sblit_dcl_tgz-pJ8-org_dclayer_DCLJ8/src/org/dclayer/application/ApplicationInstance.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.net.Socket $$ possible exceptional exit due to socket.getInputStream() with exception type java.io.IOException $$ ( 3224, 3270 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+			Socket socket = new Socket(inetAddress, port);
+			       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to socket.getInputStream() with exception type java.io.IOException
+Note: Multiple elements named 'sun.util.calendar.CalendarUtils' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.calendar.ZoneInfoFile' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.BuddhistCalendar' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.calendar.ZoneInfo' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.calendar.BaseCalendar' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.calendar.CalendarDate' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.calendar.CalendarSystem' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.calendar.Era' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Multiple elements named 'sun.util.calendar.Gregorian' in modules 'java.base, unnamed module' were found by javax.lang.model.util.Elements.getTypeElement.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+11 errors

@@ -1,0 +1,486 @@
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:1: error: package exists in another module: java.base
+package java.lang.invoke;
+^
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:3: error: Hidden is not public in LambdaForm; cannot be accessed from outside package
+import java.lang.invoke.LambdaForm.Hidden;
+                                  ^
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/fr/umlv/stream/Test.java:3: error: cannot find symbol
+import java.lang.invoke.EscapableStream;
+                       ^
+  symbol:   class EscapableStream
+  location: package java.lang.invoke
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/fr/umlv/stream/ForEachTest.java:3: error: cannot find symbol
+import java.lang.invoke.EscapableStream;
+                       ^
+  symbol:   class EscapableStream
+  location: package java.lang.invoke
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:27: error: cannot find symbol
+  private final @Stable Iterable<?> iterable;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:28: error: cannot find symbol
+  private final @Stable int op0;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:29: error: cannot find symbol
+  private final @Stable int op1;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:30: error: cannot find symbol
+  private final @Stable int op2;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:31: error: cannot find symbol
+  private final @Stable int op3;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:32: error: cannot find symbol
+  private final @Stable int op4;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:33: error: cannot find symbol
+  private final @Stable int op5;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:34: error: cannot find symbol
+  private final @Stable int op6;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:35: error: cannot find symbol
+  private final @Stable int op7;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:36: error: cannot find symbol
+  private final @Stable Object lambda0;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:37: error: cannot find symbol
+  private final @Stable Object lambda1;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:38: error: cannot find symbol
+  private final @Stable Object lambda2;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:39: error: cannot find symbol
+  private final @Stable Object lambda3;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:40: error: cannot find symbol
+  private final @Stable Object lambda4;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:41: error: cannot find symbol
+  private final @Stable Object lambda5;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:42: error: cannot find symbol
+  private final @Stable Object lambda6;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:43: error: cannot find symbol
+  private final @Stable Object lambda7;
+                 ^
+  symbol:   class Stable
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:51: error: cannot find symbol
+  @ForceInline
+   ^
+  symbol:   class ForceInline
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:74: error: cannot find symbol
+  @ForceInline
+   ^
+  symbol:   class ForceInline
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:81: error: cannot find symbol
+  @ForceInline
+   ^
+  symbol:   class ForceInline
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:87: error: cannot find symbol
+  @ForceInline
+   ^
+  symbol:   class ForceInline
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:122: error: cannot find symbol
+  @ForceInline
+   ^
+  symbol:   class ForceInline
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:157: error: cannot find symbol
+  @ForceInline
+   ^
+  symbol:   class ForceInline
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:192: error: cannot find symbol
+  @ForceInline
+   ^
+  symbol:   class ForceInline
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:228: error: cannot find symbol
+  @ForceInline
+   ^
+  symbol:   class ForceInline
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:526: error: cannot find symbol
+  @ForceInline
+   ^
+  symbol:   class ForceInline
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:296: error: cannot find symbol
+    private final @Stable Iterator<?> iterator;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:297: error: cannot find symbol
+    private final @Stable int op0;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:298: error: cannot find symbol
+    private final @Stable int op1;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:299: error: cannot find symbol
+    private final @Stable int op2;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:300: error: cannot find symbol
+    private final @Stable int op3;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:301: error: cannot find symbol
+    private final @Stable int op4;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:302: error: cannot find symbol
+    private final @Stable int op5;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:303: error: cannot find symbol
+    private final @Stable int op6;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:304: error: cannot find symbol
+    private final @Stable int op7;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:305: error: cannot find symbol
+    private final @Stable Object lambda0;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:306: error: cannot find symbol
+    private final @Stable Object lambda1;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:307: error: cannot find symbol
+    private final @Stable Object lambda2;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:308: error: cannot find symbol
+    private final @Stable Object lambda3;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:309: error: cannot find symbol
+    private final @Stable Object lambda4;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:310: error: cannot find symbol
+    private final @Stable Object lambda5;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:311: error: cannot find symbol
+    private final @Stable Object lambda6;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:312: error: cannot find symbol
+    private final @Stable Object lambda7;
+                   ^
+  symbol:   class Stable
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:323: error: cannot find symbol
+    @ForceInline
+     ^
+  symbol:   class ForceInline
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:347: error: cannot find symbol
+    @ForceInline
+     ^
+  symbol:   class ForceInline
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:393: error: cannot find symbol
+    @DontInline
+     ^
+  symbol:   class DontInline
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:399: error: cannot find symbol
+    @ForceInline
+     ^
+  symbol:   class ForceInline
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:410: error: Hidden is not public in LambdaForm; cannot be accessed from outside package
+    @Hidden
+     ^
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:411: error: cannot find symbol
+    @ForceInline
+     ^
+  symbol:   class ForceInline
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:424: error: Hidden is not public in LambdaForm; cannot be accessed from outside package
+    @Hidden
+     ^
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:425: error: cannot find symbol
+    @ForceInline
+     ^
+  symbol:   class ForceInline
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:438: error: Hidden is not public in LambdaForm; cannot be accessed from outside package
+    @Hidden
+     ^
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:439: error: cannot find symbol
+    @ForceInline
+     ^
+  symbol:   class ForceInline
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:452: error: Hidden is not public in LambdaForm; cannot be accessed from outside package
+    @Hidden
+     ^
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:453: error: cannot find symbol
+    @ForceInline
+     ^
+  symbol:   class ForceInline
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:466: error: Hidden is not public in LambdaForm; cannot be accessed from outside package
+    @Hidden
+     ^
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:467: error: cannot find symbol
+    @ForceInline
+     ^
+  symbol:   class ForceInline
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:480: error: Hidden is not public in LambdaForm; cannot be accessed from outside package
+    @Hidden
+     ^
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:481: error: cannot find symbol
+    @ForceInline
+     ^
+  symbol:   class ForceInline
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:494: error: Hidden is not public in LambdaForm; cannot be accessed from outside package
+    @Hidden
+     ^
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:495: error: cannot find symbol
+    @ForceInline
+     ^
+  symbol:   class ForceInline
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:508: error: Hidden is not public in LambdaForm; cannot be accessed from outside package
+    @Hidden
+     ^
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:509: error: cannot find symbol
+    @ForceInline
+     ^
+  symbol:   class ForceInline
+  location: class StreamIterator<T>
+  where T is a type-variable:
+    T extends Object declared in class StreamIterator
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:76: error: cannot find symbol
+    return new EscapableStream<>(iterable,
+               ^
+  symbol:   class EscapableStream
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:116: error: cannot find symbol
+    return new EscapableStream<>(iterable,
+               ^
+  symbol:   class EscapableStream
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:151: error: cannot find symbol
+    return new EscapableStream<>(iterable,
+               ^
+  symbol:   class EscapableStream
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:186: error: cannot find symbol
+    return new EscapableStream<>(iterable,
+               ^
+  symbol:   class EscapableStream
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/java/lang/invoke/EscapableStream.java:222: error: cannot find symbol
+    return new EscapableStream<>(iterable,
+               ^
+  symbol:   class EscapableStream
+  location: class EscapableStream<T>
+  where T is a type-variable:
+    T extends Object declared in class EscapableStream
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/fr/umlv/stream/Test.java:10: error: cannot find symbol
+    Stream<Integer> stream = EscapableStream.stream(list);
+                             ^
+  symbol:   variable EscapableStream
+  location: class Test
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/fr/umlv/stream/Test.java:18: error: cannot find symbol
+    Stream<Integer> stream = EscapableStream.stream(list);
+                             ^
+  symbol:   variable EscapableStream
+  location: class Test
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/fr/umlv/stream/Test.java:26: error: cannot find symbol
+    Stream<Integer> stream = EscapableStream.stream(list);
+                             ^
+  symbol:   variable EscapableStream
+  location: class Test
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/fr/umlv/stream/Test.java:34: error: cannot find symbol
+    Stream<Integer> stream = EscapableStream.stream(list);
+                             ^
+  symbol:   variable EscapableStream
+  location: class Test
+../dataset/june2020_dataset_copy/url866860ad1a_forax_lambda_perf_tgz-pJ8-perf_TestJ8/src/fr/umlv/stream/ForEachTest.java:11: error: cannot find symbol
+    Stream<Integer> stream = EscapableStream.stream(list);
+                             ^
+  symbol:   variable EscapableStream
+  location: class ForEachTest
+77 errors

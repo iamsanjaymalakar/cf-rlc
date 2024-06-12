@@ -1,0 +1,394 @@
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/XMLImport.java:5: error: package javax.xml.bind does not exist
+import javax.xml.bind.JAXB;
+                     ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Items.java:7: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Items.java:8: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Items.java:9: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlRootElement;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Items.java:19: error: cannot find symbol
+@XmlRootElement
+ ^
+  symbol: class XmlRootElement
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Items.java:20: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Shoes.java:3: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Shoes.java:4: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:5: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:6: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:7: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlIDREF;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:8: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlTransient;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:14: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Shoes.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Pants.java:3: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Pants.java:4: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Pants.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Gloves.java:3: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Gloves.java:4: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Gloves.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Armor.java:3: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Armor.java:4: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Armor.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSet.java:5: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSet.java:6: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSet.java:7: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAttribute;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSet.java:8: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlID;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSet.java:9: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlTransient;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSet.java:11: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Scroll_Pre.java:3: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Scroll_Pre.java:4: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Scroll.java:6: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Scroll.java:7: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Scroll.java:11: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Scroll_Pre.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Scroll_Suf.java:3: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Scroll_Suf.java:4: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Scroll_Suf.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSetBonus.java:3: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSetBonus.java:4: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSetBonus.java:6: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java:15: error: package javax.xml.bind does not exist
+import javax.xml.bind.JAXBContext;
+                     ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java:16: error: package javax.xml.bind does not exist
+import javax.xml.bind.Marshaller;
+                     ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/logic/ItemLogic.java:8: error: package javax.xml.ws.handler.MessageContext does not exist
+import javax.xml.ws.handler.MessageContext.Scope;
+                                          ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSets.java:5: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSets.java:6: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlAccessorType;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSets.java:7: error: package javax.xml.bind.annotation does not exist
+import javax.xml.bind.annotation.XmlRootElement;
+                                ^
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSets.java:9: error: cannot find symbol
+@XmlRootElement
+ ^
+  symbol: class XmlRootElement
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSets.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+ ^
+  symbol: class XmlAccessorType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Items.java:20: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+                 ^
+  symbol: variable XmlAccessType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Shoes.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+                 ^
+  symbol: variable XmlAccessType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:14: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+                 ^
+  symbol: variable XmlAccessType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Pants.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+                 ^
+  symbol: variable XmlAccessType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Gloves.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+                 ^
+  symbol: variable XmlAccessType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Armor.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+                 ^
+  symbol: variable XmlAccessType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSet.java:11: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+                 ^
+  symbol: variable XmlAccessType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Scroll_Pre.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+                 ^
+  symbol: variable XmlAccessType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Scroll.java:11: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+                 ^
+  symbol: variable XmlAccessType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ext/Scroll_Suf.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+                 ^
+  symbol: variable XmlAccessType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSet.java:24: error: cannot find symbol
+	@XmlAttribute
+	 ^
+  symbol:   class XmlAttribute
+  location: class ItemSet
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSet.java:25: error: cannot find symbol
+	@XmlID
+	 ^
+  symbol:   class XmlID
+  location: class ItemSet
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSet.java:28: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class ItemSet
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSet.java:30: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class ItemSet
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSet.java:32: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class ItemSet
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSet.java:34: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class ItemSet
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSet.java:36: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class ItemSet
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSetBonus.java:6: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+                 ^
+  symbol: variable XmlAccessType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:55: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:57: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:91: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:93: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:95: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:97: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:99: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:101: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:103: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:105: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:107: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:215: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:217: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:219: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:222: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:225: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:228: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:251: error: cannot find symbol
+	@XmlIDREF
+	 ^
+  symbol:   class XmlIDREF
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:254: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/Item.java:257: error: cannot find symbol
+	@XmlTransient
+	 ^
+  symbol:   class XmlTransient
+  location: class Item
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/modell/ItemSets.java:10: error: cannot find symbol
+@XmlAccessorType(XmlAccessType.FIELD)
+                 ^
+  symbol: variable XmlAccessType
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/XMLImport.java:18: error: cannot find symbol
+		Items i = JAXB.unmarshal( new File(filename), Items.class );
+		          ^
+  symbol:   variable JAXB
+  location: class XMLImport
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java:1959: error: cannot find symbol
+			JAXBContext context = JAXBContext.newInstance(ItemSets.class);
+			^
+  symbol:   class JAXBContext
+  location: class StaticImport
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java:1959: error: cannot find symbol
+			JAXBContext context = JAXBContext.newInstance(ItemSets.class);
+			                      ^
+  symbol:   variable JAXBContext
+  location: class StaticImport
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java:1960: error: cannot find symbol
+			Marshaller m = context.createMarshaller();
+			^
+  symbol:   class Marshaller
+  location: class StaticImport
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java:1961: error: cannot find symbol
+			m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+			              ^
+  symbol:   variable Marshaller
+  location: class StaticImport
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java:2094: error: cannot find symbol
+			JAXBContext context = JAXBContext.newInstance(Items.class);
+			^
+  symbol:   class JAXBContext
+  location: class StaticImport
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java:2094: error: cannot find symbol
+			JAXBContext context = JAXBContext.newInstance(Items.class);
+			                      ^
+  symbol:   variable JAXBContext
+  location: class StaticImport
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java:2095: error: cannot find symbol
+			Marshaller m = context.createMarshaller();
+			^
+  symbol:   class Marshaller
+  location: class StaticImport
+../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/inport/StaticImport.java:2096: error: cannot find symbol
+			m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+			              ^
+  symbol:   variable Marshaller
+  location: class StaticImport
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: ../dataset/june2020_dataset_copy/url78eec0e0b6_Orikuro_vic_tgz-pJ8-net_nexon_vindictus_itemcomparer_inport_StaticImportJ8/src/net/nexon/vindictus/itemcomparer/GUI.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+97 errors

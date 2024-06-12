@@ -1,0 +1,474 @@
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/TestClientNonPPNServer.java:55: error: (required.method.not.called) $$ 4 $$ method shutdown $$ server $$ ping.pong.net.server.io.IoServer<byte[]> $$ regular method exit $$ ( 1679, 1757 ) $$ @MustCall method shutdown may not have been invoked on server or any of its aliases.
+        IoServer<byte[]> server = new IoServer<byte[]>(createConnectionConfiguration);
+                         ^
+  The type of object is: ping.pong.net.server.io.IoServer<byte[]>.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/TestClientNonPPNServer.java:92: error: (required.method.not.called) $$ 4 $$ method close $$ tcpServerSocket $$ java.net.ServerSocket $$ regular method exit $$ ( 3082, 3138 ) $$ @MustCall method close may not have been invoked on tcpServerSocket or any of its aliases.
+            tcpServerSocket = socketFactory.createServerSocket(5111);
+                            ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/TestClientNonPPNServer.java:104: error: (required.method.not.called) $$ 4 $$ method close $$ acceptingSocket $$ java.net.Socket $$ regular method exit $$ ( 3361, 3403 ) $$ @MustCall method close may not have been invoked on acceptingSocket or any of its aliases.
+            acceptingSocket = tcpServerSocket.accept();
+                            ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/TestClientNonPPNServer.java:155: error: (argument) $$ 4 $$ message $$ MessageSender.sendMessage $$ @CalledMethods Envelope</*RAW*/> $$ ? extends @CalledMethods Object $$ ( 5501, 5560 ) $$ incompatible argument for parameter message of MessageSender.sendMessage.
+                client.sendMessage(EnvelopeFactory.createTcpEnvelope("hello world".getBytes()));
+                                                                    ^
+  found   : @CalledMethods Envelope</*RAW*/>
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/IoClient.java:108: error: (required.method.not.called) $$ 4 $$ method close $$ tcpSocket $$ java.net.Socket $$ possible exceptional exit due to sslSocket.startHandshake() with exception type java.io.IOException $$ ( 3470, 3551 ) $$ @MustCall method close may not have been invoked on tcpSocket or any of its aliases.
+                Socket tcpSocket = factory.createSocket(config.getIpAddress(), config.getPort());
+                       ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to sslSocket.startHandshake() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/IoClient.java:126: error: (required.method.not.called) $$ 4 $$ method close $$ udpSocket $$ java.net.DatagramSocket $$ regular method exit $$ ( 4259, 4378 ) $$ @MustCall method close may not have been invoked on udpSocket or any of its aliases.
+                udpSocket = config.getUdpPort() == ConnectionConfiguration.UDP_DISABLED ? null : new DatagramSocket(localSocketAddress);
+                          ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/AbstractIoConnection.java:151: error: (missing.creates.mustcall.for) $$ 3 $$ initTcp $$ this $$ ioTcpReadRunnable $$ ( 4442, 6662 ) $$ Method initTcp re-assigns the non-final, owning field this.ioTcpReadRunnable, but does not have a corresponding @CreatesMustCallFor annotation.
+    protected final boolean initTcp()
+                            ^
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/AbstractIoConnection.java:151: error: (missing.creates.mustcall.for) $$ 3 $$ initTcp $$ this $$ ioTcpWriteRunnable $$ ( 4442, 6662 ) $$ Method initTcp re-assigns the non-final, owning field this.ioTcpWriteRunnable, but does not have a corresponding @CreatesMustCallFor annotation.
+    protected final boolean initTcp()
+                            ^
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/AbstractIoConnection.java:192: error: (required.method.not.called) $$ 4 $$ method close $$ field ioTcpReadRunnable $$ ping.pong.net.connection.io.IoTcpReadRunnable<MessageType> $$  Non-final owning field might be overwritten $$ ( 5797, 6208 ) $$ @MustCall method close may not have been invoked on field ioTcpReadRunnable or any of its aliases.
+        this.ioTcpReadRunnable = new IoTcpReadRunnable<MessageType>(this, new RunnableEventListener()
+                               ^
+  The type of object is: ping.pong.net.connection.io.IoTcpReadRunnable<MessageType>.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/AbstractIoConnection.java:199: error: (required.method.not.called) $$ 4 $$ method close $$ field ioTcpReadRunnable $$ ping.pong.net.connection.io.IoTcpReadRunnable<MessageType> $$  Non-final owning field might be overwritten $$ ( 6135, 6159 ) $$ @MustCall method close may not have been invoked on field ioTcpReadRunnable or any of its aliases.
+                ioTcpReadRunnable = null;
+                                  ^
+  The type of object is: ping.pong.net.connection.io.IoTcpReadRunnable<MessageType>.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/AbstractIoConnection.java:202: error: (required.method.not.called) $$ 4 $$ method close $$ field ioTcpWriteRunnable $$ ping.pong.net.connection.io.IoTcpWriteRunnable<MessageType> $$  Non-final owning field might be overwritten $$ ( 6218, 6627 ) $$ @MustCall method close may not have been invoked on field ioTcpWriteRunnable or any of its aliases.
+        this.ioTcpWriteRunnable = new IoTcpWriteRunnable<MessageType>(new RunnableEventListener()
+                                ^
+  The type of object is: ping.pong.net.connection.io.IoTcpWriteRunnable<MessageType>.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/AbstractIoConnection.java:209: error: (required.method.not.called) $$ 4 $$ method close $$ field ioTcpWriteRunnable $$ ping.pong.net.connection.io.IoTcpWriteRunnable<MessageType> $$  Non-final owning field might be overwritten $$ ( 6553, 6578 ) $$ @MustCall method close may not have been invoked on field ioTcpWriteRunnable or any of its aliases.
+                ioTcpWriteRunnable = null;
+                                   ^
+  The type of object is: ping.pong.net.connection.io.IoTcpWriteRunnable<MessageType>.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/AbstractIoConnection.java:296: error: (flowexpr.parse.error) $$ 1 $$ 'this.this' in the postcondition EnsuresCalledMethods on the declaration of method 'run': Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 8556, 9367 ) $$ cannot parse the expression 'this.this' in the postcondition EnsuresCalledMethods on the declaration of method 'run': Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+    public void run()
+                ^
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/AbstractIoConnection.java:296: error: (flowexpr.parse.error) $$ 1 $$ Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 8556, 9367 ) $$ cannot parse the expression Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+    public void run()
+                ^
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/AbstractIoConnection.java:358: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.ioTcpReadRunnable $$ this.ioTcpReadRunnable is @CalledMethods("close") $$ ( 10041, 10891 ) $$ postcondition of close is not satisfied.
+    public synchronized void close()
+                             ^
+  found   : no information about this.ioTcpReadRunnable
+  required: this.ioTcpReadRunnable is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/AbstractIoConnection.java:358: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.ioTcpWriteRunnable $$ this.ioTcpWriteRunnable is @CalledMethods("close") $$ ( 10041, 10891 ) $$ postcondition of close is not satisfied.
+    public synchronized void close()
+                             ^
+  found   : no information about this.ioTcpWriteRunnable
+  required: this.ioTcpWriteRunnable is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoTcpReadRunnable.java:64: error: (missing.creates.mustcall.for) $$ 3 $$ init $$ this $$ inputStream $$ ( 2170, 2318 ) $$ Method init re-assigns the non-final, owning field this.inputStream, but does not have a corresponding @CreatesMustCallFor annotation.
+    protected void init()
+                   ^
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoTcpReadRunnable.java:67: error: (required.method.not.called) $$ 4 $$ method close $$ field inputStream $$ java.io.InputStream $$  Non-final owning field might be overwritten $$ ( 2261, 2311 ) $$ @MustCall method close may not have been invoked on field inputStream or any of its aliases.
+        this.inputStream = dataReader.init(this.tcpSocket);
+                         ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoTcpReadRunnable.java:84: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.inputStream $$ this.inputStream is @CalledMethods("close") $$ ( 2682, 3346 ) $$ postcondition of close is not satisfied.
+    public void close()
+                ^
+  found   : no information about this.inputStream
+  required: this.inputStream is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoTcpReadRunnable.java:84: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.tcpSocket $$ this.tcpSocket is @CalledMethods("close") $$ ( 2682, 3346 ) $$ postcondition of close is not satisfied.
+    public void close()
+                ^
+  found   : no information about this.tcpSocket
+  required: this.tcpSocket is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoTcpReadRunnable.java:113: error: (flowexpr.parse.error) $$ 1 $$ 'this.this' in the postcondition EnsuresCalledMethods on the declaration of method 'run': Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 3352, 4262 ) $$ cannot parse the expression 'this.this' in the postcondition EnsuresCalledMethods on the declaration of method 'run': Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+    public void run()
+                ^
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoTcpReadRunnable.java:113: error: (flowexpr.parse.error) $$ 1 $$ Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 3352, 4262 ) $$ cannot parse the expression Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+    public void run()
+                ^
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoTcpWriteRunnable.java:57: error: (missing.creates.mustcall.for) $$ 3 $$ init $$ this $$ outputStream $$ ( 1806, 1900 ) $$ Method init re-assigns the non-final, owning field this.outputStream, but does not have a corresponding @CreatesMustCallFor annotation.
+    protected void init()
+                   ^
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoTcpWriteRunnable.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ field outputStream $$ java.io.OutputStream $$  Non-final owning field might be overwritten $$ ( 1842, 1893 ) $$ @MustCall method close may not have been invoked on field outputStream or any of its aliases.
+        this.outputStream = dataWriter.init(this.tcpSocket);
+                          ^
+  The type of object is: java.io.OutputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoTcpWriteRunnable.java:76: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.outputStream $$ this.outputStream is @CalledMethods("close") $$ ( 2257, 2887 ) $$ postcondition of close is not satisfied.
+    public void close()
+                ^
+  found   : no information about this.outputStream
+  required: this.outputStream is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoTcpWriteRunnable.java:76: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.tcpSocket $$ this.tcpSocket is @CalledMethods("close") $$ ( 2257, 2887 ) $$ postcondition of close is not satisfied.
+    public void close()
+                ^
+  found   : no information about this.tcpSocket
+  required: this.tcpSocket is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoTcpWriteRunnable.java:113: error: (flowexpr.parse.error) $$ 1 $$ 'this.this' in the postcondition EnsuresCalledMethods on the declaration of method 'run': Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 3157, 3737 ) $$ cannot parse the expression 'this.this' in the postcondition EnsuresCalledMethods on the declaration of method 'run': Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+    public void run()
+                ^
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/IoTcpWriteRunnable.java:113: error: (flowexpr.parse.error) $$ 1 $$ Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 3157, 3737 ) $$ cannot parse the expression Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+    public void run()
+                ^
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/ClientIoConnectionFactory.java:24: error: (return) $$ 2 $$ @MustCall("close") ClientIoNonPPNConnection<Message extends @MustCall Object> $$ @MustCall Connection<Message extends @MustCall Object> $$ ( 779, 877 ) $$ incompatible types in return.
+        return new ClientIoNonPPNConnection<Message>(configuration, dataReader, dataWriter, tcpSocket, udpSocket);
+               ^
+  type of expression: @MustCall("close") ClientIoNonPPNConnection<Message extends @MustCall Object>
+  method return type: @MustCall Connection<Message extends @MustCall Object>
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/ClientIoConnectionFactory.java:30: error: (return) $$ 2 $$ @MustCall("close") ClientIoConnection<Message extends @MustCall Object> $$ @MustCall Connection<Message extends @MustCall Object> $$ ( 1126, 1206 ) $$ incompatible types in return.
+        return new ClientIoConnection<Message>(configuration, null, null, tcpSocket, udpSocket);
+               ^
+  type of expression: @MustCall("close") ClientIoConnection<Message extends @MustCall Object>
+  method return type: @MustCall Connection<Message extends @MustCall Object>
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/ClientIoConnectionTest.java:120: error: (required.method.not.called) $$ 4 $$ method close $$ updSocket $$ java.net.DatagramSocket $$ regular method exit $$ ( 3229, 3261 ) $$ @MustCall method close may not have been invoked on updSocket or any of its aliases.
+            updSocket = new DatagramSocket();
+                      ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/ClientIoConnectionTest.java:126: error: (required.method.not.called) $$ 4 $$ method close $$ instance $$ ping.pong.net.client.io.ClientIoConnection $$ regular method exit $$ ( 3434, 3533 ) $$ @MustCall method close may not have been invoked on instance or any of its aliases.
+        ClientIoConnection instance = new ClientIoConnection(connConfig, null, null, tcpSocket, updSocket);
+                           ^
+  The type of object is: ping.pong.net.client.io.ClientIoConnection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/IoClientTest.java:51: error: (required.method.not.called) $$ 4 $$ method shutdown $$ server $$ ping.pong.net.server.io.IoServer $$ possible exceptional exit due to this.wait() with exception type java.lang.InterruptedException $$ ( 1203, 1236 ) $$ @MustCall method shutdown may not have been invoked on server or any of its aliases.
+        IoServer server = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: possible exceptional exit due to this.wait() with exception type java.lang.InterruptedException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/IoClientTest.java:86: error: (required.method.not.called) $$ 4 $$ method shutdown $$ server $$ ping.pong.net.server.io.IoServer $$ possible exceptional exit due to this.wait() with exception type java.lang.InterruptedException $$ ( 2145, 2178 ) $$ @MustCall method shutdown may not have been invoked on server or any of its aliases.
+        IoServer server = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: possible exceptional exit due to this.wait() with exception type java.lang.InterruptedException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/IoClientTest.java:131: error: (required.method.not.called) $$ 4 $$ method shutdown $$ server $$ ping.pong.net.server.io.IoServer $$ possible exceptional exit due to this.wait() with exception type java.lang.InterruptedException $$ ( 3519, 3552 ) $$ @MustCall method shutdown may not have been invoked on server or any of its aliases.
+        IoServer server = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: possible exceptional exit due to this.wait() with exception type java.lang.InterruptedException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/IoClientTest.java:182: error: (required.method.not.called) $$ 4 $$ method shutdown $$ server $$ ping.pong.net.server.io.IoServer $$ possible exceptional exit due to this.wait() with exception type java.lang.InterruptedException $$ ( 4846, 4879 ) $$ @MustCall method shutdown may not have been invoked on server or any of its aliases.
+        IoServer server = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: possible exceptional exit due to this.wait() with exception type java.lang.InterruptedException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/client/io/IoClientTest.java:302: error: (required.method.not.called) $$ 4 $$ method shutdown $$ server $$ ping.pong.net.server.io.IoServer $$ possible exceptional exit due to this.wait() with exception type java.lang.InterruptedException $$ ( 9055, 9088 ) $$ @MustCall method shutdown may not have been invoked on server or any of its aliases.
+        IoServer server = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: possible exceptional exit due to this.wait() with exception type java.lang.InterruptedException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ServerExample.java:23: error: (required.method.not.called) $$ 4 $$ method shutdown $$ server $$ ping.pong.net.server.io.IoServer<java.lang.String> $$ regular method exit $$ ( 863, 983 ) $$ @MustCall method shutdown may not have been invoked on server or any of its aliases.
+        IoServer<String> server = new IoServer<String>(ConnectionConfigFactory.createPPNConfig("localhost", 5011, 5012, false));
+                         ^
+  The type of object is: ping.pong.net.server.io.IoServer<java.lang.String>.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServerTest.java:129: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.IoServer $$ regular method exit $$ ( 3108, 3143 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        IoServer instance = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServerTest.java:142: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.IoServer $$ regular method exit $$ ( 3421, 3456 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        IoServer instance = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServerTest.java:150: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.IoServer $$ regular method exit $$ ( 3598, 3633 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        IoServer instance = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServerTest.java:153: error: (required.method.not.called) $$ 4 $$ method shutdown $$ field serverConnectionManager $$ ping.pong.net.server.io.ServerConnectionManager<MessageType> $$  Non-final owning field might be overwritten $$ ( 3741, 3870 ) $$ @MustCall method shutdown may not have been invoked on field serverConnectionManager or any of its aliases.
+        instance.serverConnectionManager = new ServerConnectionManager(ConnectionConfigFactory.createConnectionConfiguration(), instance);
+                                         ^
+  The type of object is: ping.pong.net.server.io.ServerConnectionManager<MessageType>.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServerTest.java:179: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.IoServer $$ regular method exit $$ ( 4479, 4514 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        IoServer instance = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServerTest.java:194: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.IoServer $$ regular method exit $$ ( 4929, 4964 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        IoServer instance = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServerTest.java:206: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.IoServer $$ regular method exit $$ ( 5267, 5302 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        IoServer instance = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServerTest.java:229: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.IoServer $$ regular method exit $$ ( 5869, 5904 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        IoServer instance = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServerTest.java:231: error: (required.method.not.called) $$ 4 $$ method shutdown $$ field serverConnectionManager $$ ping.pong.net.server.io.ServerConnectionManager<MessageType> $$  Non-final owning field might be overwritten $$ ( 5958, 6087 ) $$ @MustCall method shutdown may not have been invoked on field serverConnectionManager or any of its aliases.
+        instance.serverConnectionManager = new ServerConnectionManager(ConnectionConfigFactory.createConnectionConfiguration(), instance);
+                                         ^
+  The type of object is: ping.pong.net.server.io.ServerConnectionManager<MessageType>.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServerTest.java:243: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.IoServer $$ regular method exit $$ ( 6414, 6449 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        IoServer instance = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServerTest.java:268: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.IoServer $$ regular method exit $$ ( 7180, 7215 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        IoServer instance = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServerTest.java:295: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.IoServer $$ regular method exit $$ ( 8037, 8072 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        IoServer instance = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServerTest.java:327: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.IoServer $$ regular method exit $$ ( 8980, 9015 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        IoServer instance = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServerTest.java:360: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.IoServer $$ regular method exit $$ ( 9979, 10014 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        IoServer instance = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServerTest.java:373: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.IoServer $$ regular method exit $$ ( 10345, 10380 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        IoServer instance = new IoServer();
+                 ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:54: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new IoServer() $$ ping.pong.net.server.io.IoServer $$ regular method exit $$ ( 1456, 1470 ) $$ @MustCall method shutdown may not have been invoked on new IoServer() or any of its aliases.
+        ServerConnectionManager instance = new ServerConnectionManager(ConnectionConfigFactory.createConnectionConfiguration(), new IoServer());
+                                                                                                                                ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:68: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.ServerConnectionManager $$ possible exceptional exit due to ServerSocketFactory.getDefault().createServerSocket() with exception type java.io.IOException $$ ( 1913, 2067 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        ServerConnectionManager instance = new ServerConnectionManager(ConnectionConfigFactory.createPPNConfig("localhost", 20111, 20112, false), new IoServer());
+                                ^
+  The type of object is: ping.pong.net.server.io.ServerConnectionManager.
+  Reason for going out of scope: possible exceptional exit due to ServerSocketFactory.getDefault().createServerSocket() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:68: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new IoServer() $$ ping.pong.net.server.io.IoServer $$ possible exceptional exit due to ServerSocketFactory.getDefault().createServerSocket() with exception type java.io.IOException $$ ( 2051, 2065 ) $$ @MustCall method shutdown may not have been invoked on new IoServer() or any of its aliases.
+        ServerConnectionManager instance = new ServerConnectionManager(ConnectionConfigFactory.createPPNConfig("localhost", 20111, 20112, false), new IoServer());
+                                                                                                                                                  ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: possible exceptional exit due to ServerSocketFactory.getDefault().createServerSocket() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:69: error: (required.method.not.called) $$ 4 $$ method close $$ field tcpServerSocket $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 2076, 2156 ) $$ @MustCall method close may not have been invoked on field tcpServerSocket or any of its aliases.
+        instance.tcpServerSocket = ServerSocketFactory.getDefault().createServerSocket();
+                                 ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:70: error: (required.method.not.called) $$ 4 $$ method close $$ field udpServerSocket $$ java.net.DatagramSocket $$  Non-final owning field might be overwritten $$ ( 2166, 2248 ) $$ @MustCall method close may not have been invoked on field udpServerSocket or any of its aliases.
+        instance.udpServerSocket = new DatagramSocket(instance.configuration.getUdpPort());
+                                 ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:82: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new IoServer() $$ ping.pong.net.server.io.IoServer $$ regular method exit $$ ( 2647, 2661 ) $$ @MustCall method shutdown may not have been invoked on new IoServer() or any of its aliases.
+        ServerConnectionManager instance = new ServerConnectionManager(ConnectionConfigFactory.createConnectionConfiguration(), new IoServer());
+                                                                                                                                ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:92: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new IoServer(createConnectionConfiguration) $$ ping.pong.net.server.io.IoServer $$ regular method exit $$ ( 3072, 3115 ) $$ @MustCall method shutdown may not have been invoked on new IoServer(createConnectionConfiguration) or any of its aliases.
+        ServerConnectionManager instance = new ServerConnectionManager(createConnectionConfiguration, new IoServer(createConnectionConfiguration));
+                                                                                                      ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:104: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.ServerConnectionManager $$ possible exceptional exit due to ServerSocketFactory.getDefault().createServerSocket(7011) with exception type java.io.IOException $$ ( 3531, 3670 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        ServerConnectionManager instance = new ServerConnectionManager(createConnectionConfiguration, new IoServer(createConnectionConfiguration));
+                                ^
+  The type of object is: ping.pong.net.server.io.ServerConnectionManager.
+  Reason for going out of scope: possible exceptional exit due to ServerSocketFactory.getDefault().createServerSocket(7011) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:104: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new IoServer(createConnectionConfiguration) $$ ping.pong.net.server.io.IoServer $$ possible exceptional exit due to ServerSocketFactory.getDefault().createServerSocket(7011) with exception type java.io.IOException $$ ( 3625, 3668 ) $$ @MustCall method shutdown may not have been invoked on new IoServer(createConnectionConfiguration) or any of its aliases.
+        ServerConnectionManager instance = new ServerConnectionManager(createConnectionConfiguration, new IoServer(createConnectionConfiguration));
+                                                                                                      ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: possible exceptional exit due to ServerSocketFactory.getDefault().createServerSocket(7011) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:105: error: (required.method.not.called) $$ 4 $$ method close $$ field tcpServerSocket $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 3679, 3763 ) $$ @MustCall method close may not have been invoked on field tcpServerSocket or any of its aliases.
+        instance.tcpServerSocket = ServerSocketFactory.getDefault().createServerSocket(7011);
+                                 ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:106: error: (required.method.not.called) $$ 4 $$ method close $$ field udpServerSocket $$ java.net.DatagramSocket $$  Non-final owning field might be overwritten $$ ( 3773, 3855 ) $$ @MustCall method close may not have been invoked on field udpServerSocket or any of its aliases.
+        instance.udpServerSocket = new DatagramSocket(instance.configuration.getUdpPort());
+                                 ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:108: error: (flowexpr.parse.error.postcondition) $$ 2 $$ run() $$ Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 3909, 3923 ) $$ error parsing the postcondition expression for run()
+        instance.run();
+                    ^
+  cannot parse the expression Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:117: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.ServerConnectionManager $$ possible exceptional exit due to wait(100) with exception type java.lang.InterruptedException $$ ( 4248, 4387 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        ServerConnectionManager instance = new ServerConnectionManager(createConnectionConfiguration, new IoServer(createConnectionConfiguration));
+                                ^
+  The type of object is: ping.pong.net.server.io.ServerConnectionManager.
+  Reason for going out of scope: possible exceptional exit due to wait(100) with exception type java.lang.InterruptedException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:117: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new IoServer(createConnectionConfiguration) $$ ping.pong.net.server.io.IoServer $$ possible exceptional exit due to wait(100) with exception type java.lang.InterruptedException $$ ( 4342, 4385 ) $$ @MustCall method shutdown may not have been invoked on new IoServer(createConnectionConfiguration) or any of its aliases.
+        ServerConnectionManager instance = new ServerConnectionManager(createConnectionConfiguration, new IoServer(createConnectionConfiguration));
+                                                                                                      ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: possible exceptional exit due to wait(100) with exception type java.lang.InterruptedException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ java.net.Socket $$ possible exceptional exit due to th.join(1500) with exception type java.lang.InterruptedException $$ ( 4530, 4605 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+        Socket client = SocketFactory.getDefault().createSocket("localhost", 6011);
+               ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to th.join(1500) with exception type java.lang.InterruptedException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:143: error: (required.method.not.called) $$ 4 $$ method shutdown $$ instance $$ ping.pong.net.server.io.ServerConnectionManager $$ possible exceptional exit due to wait(500) with exception type java.lang.InterruptedException $$ ( 5410, 5549 ) $$ @MustCall method shutdown may not have been invoked on instance or any of its aliases.
+        ServerConnectionManager instance = new ServerConnectionManager(createConnectionConfiguration, new IoServer(createConnectionConfiguration));
+                                ^
+  The type of object is: ping.pong.net.server.io.ServerConnectionManager.
+  Reason for going out of scope: possible exceptional exit due to wait(500) with exception type java.lang.InterruptedException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:143: error: (required.method.not.called) $$ 4 $$ method shutdown $$ new IoServer(createConnectionConfiguration) $$ ping.pong.net.server.io.IoServer $$ possible exceptional exit due to wait(500) with exception type java.lang.InterruptedException $$ ( 5504, 5547 ) $$ @MustCall method shutdown may not have been invoked on new IoServer(createConnectionConfiguration) or any of its aliases.
+        ServerConnectionManager instance = new ServerConnectionManager(createConnectionConfiguration, new IoServer(createConnectionConfiguration));
+                                                                                                      ^
+  The type of object is: ping.pong.net.server.io.IoServer.
+  Reason for going out of scope: possible exceptional exit due to wait(500) with exception type java.lang.InterruptedException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:154: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(absolutePath) $$ java.io.FileInputStream $$ possible exceptional exit due to ks.load(new FileInputStream(absolutePath), (ConnectionConfiguration.DEFAULT_KEY_STORE_PASSWORD).toCharArray()) with exception type java.io.IOException $$ ( 5921, 5954 ) $$ @MustCall method close may not have been invoked on new FileInputStream(absolutePath) or any of its aliases.
+        ks.load(new FileInputStream(absolutePath), (ConnectionConfiguration.DEFAULT_KEY_STORE_PASSWORD).toCharArray());
+                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to ks.load(new FileInputStream(absolutePath), (ConnectionConfiguration.DEFAULT_KEY_STORE_PASSWORD).toCharArray()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManagerTest.java:161: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ javax.net.ssl.SSLSocket $$ possible exceptional exit due to client.startHandshake() with exception type java.io.IOException $$ ( 6345, 6416 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+        SSLSocket client = (SSLSocket) factory.createSocket("localhost", 8011);
+                  ^
+  The type of object is: javax.net.ssl.SSLSocket.
+  Reason for going out of scope: possible exceptional exit due to client.startHandshake() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerIoConnectionTest.java:38: error: (required.method.not.called) $$ 4 $$ method close $$ instance $$ ping.pong.net.server.io.ServerIoConnection $$ regular method exit $$ ( 779, 913 ) $$ @MustCall method close may not have been invoked on instance or any of its aliases.
+        ServerIoConnection instance = new ServerIoConnection(ConnectionConfigFactory.createConnectionConfiguration(), null, null, null, null);
+                           ^
+  The type of object is: ping.pong.net.server.io.ServerIoConnection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManager.java:54: error: (contracts.postcondition) $$ 3 $$ shutdown $$ this.tcpServerSocket is @CalledMethods $$ this.tcpServerSocket is @CalledMethods("close") $$ ( 2012, 3138 ) $$ postcondition of shutdown is not satisfied.
+    public void shutdown()
+                ^
+  found   : this.tcpServerSocket is @CalledMethods
+  required: this.tcpServerSocket is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManager.java:54: error: (contracts.postcondition) $$ 3 $$ shutdown $$ this.udpServerSocket is @CalledMethods $$ this.udpServerSocket is @CalledMethods("close") $$ ( 2012, 3138 ) $$ postcondition of shutdown is not satisfied.
+    public void shutdown()
+                ^
+  found   : this.udpServerSocket is @CalledMethods
+  required: this.udpServerSocket is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManager.java:100: error: (required.method.not.called) $$ 4 $$ method close $$ field tcpServerSocket $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 3028, 3055 ) $$ @MustCall method close may not have been invoked on field tcpServerSocket or any of its aliases.
+        this.tcpServerSocket = null;
+                             ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManager.java:101: error: (required.method.not.called) $$ 4 $$ method close $$ field udpServerSocket $$ java.net.DatagramSocket $$  Non-final owning field might be overwritten $$ ( 3065, 3092 ) $$ @MustCall method close may not have been invoked on field udpServerSocket or any of its aliases.
+        this.udpServerSocket = null;
+                             ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManager.java:115: error: (flowexpr.parse.error) $$ 1 $$ 'this.this' in the postcondition EnsuresCalledMethods on the declaration of method 'run': Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 3254, 8289 ) $$ cannot parse the expression 'this.this' in the postcondition EnsuresCalledMethods on the declaration of method 'run': Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+    public void run()
+                ^
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManager.java:115: error: (flowexpr.parse.error) $$ 1 $$ Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr $$ ( 3254, 8289 ) $$ cannot parse the expression Invalid 'this.this' because the expression did not parse. Error message: Unexpected expression type: ThisExpr
+    public void run()
+                ^
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManager.java:115: error: (missing.creates.mustcall.for) $$ 3 $$ run $$ this $$ tcpServerSocket $$ ( 3254, 8289 ) $$ Method run re-assigns the non-final, owning field this.tcpServerSocket, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void run()
+                ^
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManager.java:115: error: (missing.creates.mustcall.for) $$ 3 $$ run $$ this $$ udpServerSocket $$ ( 3254, 8289 ) $$ Method run re-assigns the non-final, owning field this.udpServerSocket, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void run()
+                ^
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManager.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ field tcpServerSocket $$ java.net.ServerSocket $$  Non-final owning field might be overwritten $$ ( 3575, 3650 ) $$ @MustCall method close may not have been invoked on field tcpServerSocket or any of its aliases.
+                tcpServerSocket = socketFactory.createServerSocket(configuration.getPort());
+                                ^
+  The type of object is: java.net.ServerSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManager.java:136: error: (required.method.not.called) $$ 4 $$ method close $$ field udpServerSocket $$ java.net.DatagramSocket $$  Non-final owning field might be overwritten $$ ( 3939, 4107 ) $$ @MustCall method close may not have been invoked on field udpServerSocket or any of its aliases.
+                udpServerSocket = this.configuration.getUdpPort() == ConnectionConfiguration.UDP_DISABLED ? null : new DatagramSocket(new InetSocketAddress(configuration.getUdpPort()));
+                                ^
+  The type of object is: java.net.DatagramSocket.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManager.java:173: error: (required.method.not.called) $$ 4 $$ method close $$ acceptingSocket $$ java.net.Socket $$ regular method exit $$ ( 5842, 5884 ) $$ @MustCall method close may not have been invoked on acceptingSocket or any of its aliases.
+                    acceptingSocket = tcpServerSocket.accept();
+                                    ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/ServerConnectionManager.java:199: error: (required.method.not.called) $$ 4 $$ method close $$ ioServerConnection $$ ping.pong.net.connection.Connection $$ regular method exit $$ ( 7122, 7281 ) $$ @MustCall method close may not have been invoked on ioServerConnection or any of its aliases.
+                    final Connection ioServerConnection = new ServerIoConnection<MessageType>(configuration, customDataReader, customDataWriter, acceptingSocket, udpServerSocket);
+                                     ^
+  The type of object is: ping.pong.net.connection.Connection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServer.java:86: error: (missing.creates.mustcall.for) $$ 3 $$ start $$ this $$ serverConnectionManager $$ ( 2159, 2747 ) $$ Method start re-assigns the non-final, owning field this.serverConnectionManager, but does not have a corresponding @CreatesMustCallFor annotation.
+    public void start()
+                ^
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/io/IoServer.java:101: error: (contracts.postcondition) $$ 3 $$ shutdown $$ no information about this.serverConnectionManager $$ this.serverConnectionManager is @CalledMethods("shutdown") $$ ( 2753, 3085 ) $$ postcondition of shutdown is not satisfied.
+    public void shutdown()
+                ^
+  found   : no information about this.serverConnectionManager
+  required: this.serverConnectionManager is @CalledMethods("shutdown")
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ServerMultiClient.java:18: error: (required.method.not.called) $$ 4 $$ method shutdown $$ server $$ ping.pong.net.server.io.IoServer<java.lang.String> $$ regular method exit $$ ( 732, 808 ) $$ @MustCall method shutdown may not have been invoked on server or any of its aliases.
+        final IoServer<String> server = new IoServer<String>(createPPNServerConfig);
+                               ^
+  The type of object is: ping.pong.net.server.io.IoServer<java.lang.String>.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ java.net.Socket $$ possible exceptional exit due to client.getInputStream() with exception type java.io.IOException $$ ( 3822, 3890 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+            Socket client = (SSLSocket) factory.createSocket("localhost", 5011);
+                   ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to client.getInputStream() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(absolutePath) $$ java.io.FileInputStream $$ possible exceptional exit due to ks.load(new FileInputStream(absolutePath), (ConnectionConfiguration.DEFAULT_KEY_STORE_PASSWORD).toCharArray()) with exception type java.io.IOException $$ ( 5393, 5426 ) $$ @MustCall method close may not have been invoked on new FileInputStream(absolutePath) or any of its aliases.
+            ks.load(new FileInputStream(absolutePath), (ConnectionConfiguration.DEFAULT_KEY_STORE_PASSWORD).toCharArray());
+                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to ks.load(new FileInputStream(absolutePath), (ConnectionConfiguration.DEFAULT_KEY_STORE_PASSWORD).toCharArray()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java:132: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ javax.net.ssl.SSLSocket $$ possible exceptional exit due to client.startHandshake() with exception type java.io.IOException $$ ( 5841, 5912 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+            SSLSocket client = (SSLSocket) factory.createSocket("localhost", 5011);
+                      ^
+  The type of object is: javax.net.ssl.SSLSocket.
+  Reason for going out of scope: possible exceptional exit due to client.startHandshake() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java:199: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ java.net.Socket $$ possible exceptional exit due to client.getInputStream() with exception type java.io.IOException $$ ( 9131, 9177 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+        Socket client = new Socket("localhost", 5011);
+               ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to client.getInputStream() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java:221: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ java.net.Socket $$ possible exceptional exit due to client.getInputStream() with exception type java.io.IOException $$ ( 10381, 10427 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+        Socket client = new Socket("localhost", 5011);
+               ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to client.getInputStream() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/ClientExample.java:243: error: (required.method.not.called) $$ 4 $$ method close $$ client $$ java.net.Socket $$ possible exceptional exit due to client.getInputStream() with exception type java.io.IOException $$ ( 11546, 11592 ) $$ @MustCall method close may not have been invoked on client or any of its aliases.
+        Socket client = new Socket("localhost", 5011);
+               ^
+  The type of object is: java.net.Socket.
+  Reason for going out of scope: possible exceptional exit due to client.getInputStream() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/MyClient.java:43: error: (argument) $$ 4 $$ message $$ MessageSender.sendMessage $$ @CalledMethods Envelope</*RAW*/> $$ ? extends @CalledMethods Object $$ ( 1744, 1821 ) $$ incompatible argument for parameter message of MessageSender.sendMessage.
+                    client.sendMessage(EnvelopeFactory.createTcpEnvelope("Hello I am Connection: " + client.getId()));
+                                                                        ^
+  found   : @CalledMethods Envelope</*RAW*/>
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/MyClient.java:44: error: (argument) $$ 4 $$ message $$ MessageSender.sendMessage $$ @CalledMethods Envelope</*RAW*/> $$ ? extends @CalledMethods Object $$ ( 1863, 1945 ) $$ incompatible argument for parameter message of MessageSender.sendMessage.
+                    client.sendMessage(EnvelopeFactory.createUdpEnvelope("Hello I am Connection(UDP): " + client.getId()));
+                                                                        ^
+  found   : @CalledMethods Envelope</*RAW*/>
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/MyClient.java:77: error: (argument) $$ 4 $$ message $$ MessageSender.sendMessage $$ @CalledMethods Envelope</*RAW*/> $$ ? extends @CalledMethods Object $$ ( 3032, 3109 ) $$ incompatible argument for parameter message of MessageSender.sendMessage.
+                client.sendMessage(EnvelopeFactory.createTcpEnvelope("Hello I am Connection: " + client.getId()));
+                                                                    ^
+  found   : @CalledMethods Envelope</*RAW*/>
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/server/MyClient.java:78: error: (argument) $$ 4 $$ message $$ MessageSender.sendMessage $$ @CalledMethods Envelope</*RAW*/> $$ ? extends @CalledMethods Object $$ ( 3147, 3229 ) $$ incompatible argument for parameter message of MessageSender.sendMessage.
+                client.sendMessage(EnvelopeFactory.createUdpEnvelope("Hello I am Connection(UDP): " + client.getId()));
+                                                                    ^
+  found   : @CalledMethods Envelope</*RAW*/>
+  required: ? extends @CalledMethods Object
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/AbstractIoConnectionTest.java:44: error: (required.method.not.called) $$ 4 $$ method close $$ instance $$ ping.pong.net.connection.io.AbstractIoConnection $$ regular method exit $$ ( 998, 1061 ) $$ @MustCall method close may not have been invoked on instance or any of its aliases.
+        AbstractIoConnection instance = new AbstractIoConnectionImpl();
+                             ^
+  The type of object is: ping.pong.net.connection.io.AbstractIoConnection.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/io/AbstractIoConnectionTest.java:52: error: (required.method.not.called) $$ 4 $$ method close $$ instance $$ ping.pong.net.connection.io.AbstractIoConnection $$ regular method exit $$ ( 1280, 1370 ) $$ @MustCall method close may not have been invoked on instance or any of its aliases.
+        AbstractIoConnection instance = new AbstractIoConnectionImpl(null, null, null, tcpSocket);
+                             ^
+  The type of object is: ping.pong.net.connection.io.AbstractIoConnection.
+  Reason for going out of scope: regular method exit
+Note: ../dataset/june2020_dataset_copy/url7a45f192ca_mfullen_ping_pong_net_tgz-pJ8-ping_pong_net_client_io_TestClientNonPPNServerJ8/src/ping/pong/net/connection/ConnectionUtilsTest.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+100 errors

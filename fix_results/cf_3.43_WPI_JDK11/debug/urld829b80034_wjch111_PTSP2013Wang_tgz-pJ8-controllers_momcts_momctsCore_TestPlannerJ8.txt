@@ -1,0 +1,7 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^framework/core/Exec.java^246^framework.core.Exec.readForces(Ljava/lang/String;)[I^3 = new <Application,Ljava/io/BufferedReader>@0^framework.core.Exec.readForces(Ljava/lang/String;)[I#4,^INVOKE,^false^false^Normal Fix;
+1^framework/utils/File2String.java^25^framework.utils.File2String.get(Ljava/lang/String;)Ljava/lang/String;^9 = new <Application,Ljava/io/DataInputStream>@17^framework.utils.File2String.get(Ljava/lang/String;)Ljava/lang/String;#10,^INVOKE,^false^false^Try-catch Fix;
+2^controllers/momcts/utils/TextOperation.java^33^controllers.momcts.utils.TextOperation.get(Ljava/lang/String;)Ljava/lang/String;^9 = new <Application,Ljava/io/DataInputStream>@17^controllers.momcts.utils.TextOperation.get(Ljava/lang/String;)Ljava/lang/String;#10,^INVOKE,^false^false^Try-catch Fix;
+3^controllers/momcts/utils/Logger.java^23^controllers.momcts.utils.Logger.initialize()V^3 = new <Application,Ljava/io/FileWriter>@1^NULL^FIELD,^false^true^Field escape;
+4^controllers/utils/TextOperation.java^33^controllers.utils.TextOperation.get(Ljava/lang/String;)Ljava/lang/String;^9 = new <Application,Ljava/io/DataInputStream>@17^controllers.utils.TextOperation.get(Ljava/lang/String;)Ljava/lang/String;#10,^INVOKE,^false^false^Try-catch Fix;
+5^controllers/utils/Logger.java^23^controllers.utils.Logger.initialize()V^3 = new <Application,Ljava/io/FileWriter>@1^NULL^FIELD,^false^true^Field escape;

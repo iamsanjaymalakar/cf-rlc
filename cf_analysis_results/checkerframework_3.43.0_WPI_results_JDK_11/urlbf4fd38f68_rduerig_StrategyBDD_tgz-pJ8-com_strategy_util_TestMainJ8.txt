@@ -1,0 +1,53 @@
+../dataset/june2020_dataset_copy/urlbf4fd38f68_rduerig_StrategyBDD_tgz-pJ8-com_strategy_util_TestMainJ8/src/com/strategy/api/interpreter/GtpInterpreter.java:25: error: (required.method.not.called) $$ 4 $$ method close $$ field scanner $$ java.util.Scanner $$  The enclosing element com.strategy.api.interpreter.GtpInterpreter has an empty @MustCall annotation $$ ( 699, 723 ) $$ @MustCall method close may not have been invoked on field scanner or any of its aliases.
+	private Scanner scanner;
+	                ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope:  The enclosing element com.strategy.api.interpreter.GtpInterpreter has an empty @MustCall annotation
+../dataset/june2020_dataset_copy/urlbf4fd38f68_rduerig_StrategyBDD_tgz-pJ8-com_strategy_util_TestMainJ8/src/com/strategy/api/interpreter/GtpInterpreter.java:29: error: (required.method.not.called) $$ 4 $$ method close $$ field scanner $$ java.util.Scanner $$  Non-final owning field might be overwritten $$ ( 785, 822 ) $$ @MustCall method close may not have been invoked on field scanner or any of its aliases.
+		this.scanner = new Scanner(System.in);
+		             ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/urlbf4fd38f68_rduerig_StrategyBDD_tgz-pJ8-com_strategy_util_TestMainJ8/src/com/strategy/api/interpreter/GtpInterpreter.java:81: error: (contracts.postcondition) $$ 3 $$ exit $$ no information about this.scanner $$ this.scanner is @CalledMethods("close") $$ ( 2019, 2133 ) $$ postcondition of exit is not satisfied.
+	private void exit() {
+	             ^
+  found   : no information about this.scanner
+  required: this.scanner is @CalledMethods("close")
+../dataset/june2020_dataset_copy/urlbf4fd38f68_rduerig_StrategyBDD_tgz-pJ8-com_strategy_util_TestMainJ8/src/com/strategy/api/interpreter/StrategyInterpreter.java:66: error: (required.method.not.called) $$ 4 $$ method close $$ field scanner $$ java.util.Scanner $$  The enclosing element com.strategy.api.interpreter.StrategyInterpreter has an empty @MustCall annotation $$ ( 2842, 2866 ) $$ @MustCall method close may not have been invoked on field scanner or any of its aliases.
+	private Scanner scanner;
+	                ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope:  The enclosing element com.strategy.api.interpreter.StrategyInterpreter has an empty @MustCall annotation
+../dataset/june2020_dataset_copy/urlbf4fd38f68_rduerig_StrategyBDD_tgz-pJ8-com_strategy_util_TestMainJ8/src/com/strategy/api/interpreter/StrategyInterpreter.java:79: error: (required.method.not.called) $$ 4 $$ method close $$ field scanner $$ java.util.Scanner $$  Non-final owning field might be overwritten $$ ( 3339, 3376 ) $$ @MustCall method close may not have been invoked on field scanner or any of its aliases.
+		this.scanner = new Scanner(System.in);
+		             ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/urlbf4fd38f68_rduerig_StrategyBDD_tgz-pJ8-com_strategy_util_TestMainJ8/src/com/strategy/api/interpreter/StrategyInterpreter.java:384: error: (contracts.postcondition) $$ 3 $$ exit $$ no information about this.scanner $$ this.scanner is @CalledMethods("close") $$ ( 10520, 10695 ) $$ postcondition of exit is not satisfied.
+	private void exit() {
+	             ^
+  found   : no information about this.scanner
+  required: this.scanner is @CalledMethods("close")
+../dataset/june2020_dataset_copy/urlbf4fd38f68_rduerig_StrategyBDD_tgz-pJ8-com_strategy_util_TestMainJ8/src/com/strategy/util/preferences/Preferences.java:233: error: (required.method.not.called) $$ 4 $$ method close $$ new PrintStream(value) $$ java.io.PrintStream $$ regular method exit $$ ( 6367, 6389 ) $$ @MustCall method close may not have been invoked on new PrintStream(value) or any of its aliases.
+			return new PrintStream(value);
+			       ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlbf4fd38f68_rduerig_StrategyBDD_tgz-pJ8-com_strategy_util_TestMainJ8/src/com/strategy/util/preferences/Preferences.java:264: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.InputStream $$ possible exceptional exit due to new GameParser(in) with exception type com.strategy.util.GameParser.GameParserException $$ ( 7446, 7492 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+		InputStream in = new FileInputStream(hgfFile);
+		            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to new GameParser(in) with exception type com.strategy.util.GameParser.GameParserException
+../dataset/june2020_dataset_copy/urlbf4fd38f68_rduerig_StrategyBDD_tgz-pJ8-com_strategy_util_TestMainJ8/src/com/strategy/util/TestMain.java:94: error: (required.method.not.called) $$ 4 $$ method close $$ new PrintStream("operations" + SIZE + ".log") $$ java.io.PrintStream $$ regular method exit $$ ( 3338, 3383 ) $$ @MustCall method close may not have been invoked on new PrintStream("operations" + SIZE + ".log") or any of its aliases.
+				new PrintStream("operations" + SIZE + ".log"));
+				^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlbf4fd38f68_rduerig_StrategyBDD_tgz-pJ8-com_strategy_util_TestMainJ8/src/com/strategy/util/TestMain.java:185: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.PrintStream $$ regular method exit $$ ( 6530, 6574 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+		PrintStream out = new PrintStream(filename);
+		            ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+10 errors

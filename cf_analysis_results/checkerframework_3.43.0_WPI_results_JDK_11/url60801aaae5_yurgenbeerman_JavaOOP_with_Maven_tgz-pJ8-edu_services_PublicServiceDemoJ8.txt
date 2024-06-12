@@ -1,0 +1,8 @@
+../dataset/june2020_dataset_copy/url60801aaae5_yurgenbeerman_JavaOOP_with_Maven_tgz-pJ8-edu_services_PublicServiceDemoJ8/src/edu/services/servants/PublicServantTest.java:7: error: package org.omg.CORBA does not exist
+import org.omg.CORBA.Environment;
+                    ^
+Note: ../dataset/june2020_dataset_copy/url60801aaae5_yurgenbeerman_JavaOOP_with_Maven_tgz-pJ8-edu_services_PublicServiceDemoJ8/src/edu/sandbox/collectionsandthreads/CollectionsTests.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error

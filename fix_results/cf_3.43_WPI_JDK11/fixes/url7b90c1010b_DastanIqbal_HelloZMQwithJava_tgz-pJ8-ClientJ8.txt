@@ -1,0 +1,12 @@
+Warning: App class not in appMethodsMap - Lzmq/Transfer for warning: zmq/Transfer.java,60
+Warning: App class not in appMethodsMap - Lzmq/Transfer for warning: zmq/Transfer.java,60
+Warning: App class not in appMethodsMap - Lzmq/Transfer for warning: zmq/Transfer.java,60
+Warning: App class not in appMethodsMap - Lzmq/Transfer for warning: zmq/Transfer.java,60
+Warning: App class not in appMethodsMap - Lzmq/Transfer for warning: zmq/Transfer.java,60
+Warning: App class not in appMethodsMap - Lzmq/Transfer for warning: zmq/Transfer.java,60
+Warning: App class not in appMethodsMap - Lzmq/Transfer for warning: zmq/Transfer.java,60
+21133
+123
+
+SOURCE LEVEL FIXES
+

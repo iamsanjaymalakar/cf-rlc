@@ -1,0 +1,467 @@
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/PrimitiveTypes.java:79: warning: (mustcallalias.method.return.and.param) $$ 1 $$ there is no @MustCallAlias annotation on the return type, even though the parameter value is annotated with @MustCallAlias $$ ( 3077, 3880 ) $$ @MustCallAlias annotations must appear in pairs (one on a return type and one on a parameter type).
+    public static <T> double convertToDouble(T value) {
+                             ^
+  But there is no @MustCallAlias annotation on the return type, even though the parameter value is annotated with @MustCallAlias
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/PrimitiveTypes.java:79: error: (mustcallalias.out.of.scope) $$ 1 $$ regular method exit $$ ( 3118, 3125 ) $$ This @MustCallAlias parameter might go out of scope without being assigned into an owning field of this object (if this is a constructor) or returned.
+    public static <T> double convertToDouble(T value) {
+                                               ^
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/PrimitiveTypes.java:98: warning: (mustcallalias.method.return.and.param) $$ 1 $$ there is no @MustCallAlias annotation on the return type, even though the parameter value is annotated with @MustCallAlias $$ ( 3886, 4681 ) $$ @MustCallAlias annotations must appear in pairs (one on a return type and one on a parameter type).
+    public static <T> float convertToFloat(T value) {
+                            ^
+  But there is no @MustCallAlias annotation on the return type, even though the parameter value is annotated with @MustCallAlias
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/PrimitiveTypes.java:98: error: (mustcallalias.out.of.scope) $$ 1 $$ regular method exit $$ ( 3925, 3932 ) $$ This @MustCallAlias parameter might go out of scope without being assigned into an owning field of this object (if this is a constructor) or returned.
+    public static <T> float convertToFloat(T value) {
+                                             ^
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/PrimitiveTypes.java:117: warning: (mustcallalias.method.return.and.param) $$ 1 $$ there is no @MustCallAlias annotation on the return type, even though the parameter value is annotated with @MustCallAlias $$ ( 4687, 5474 ) $$ @MustCallAlias annotations must appear in pairs (one on a return type and one on a parameter type).
+    public static <T> long convertToLong(T value) {
+                           ^
+  But there is no @MustCallAlias annotation on the return type, even though the parameter value is annotated with @MustCallAlias
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/PrimitiveTypes.java:117: error: (mustcallalias.out.of.scope) $$ 1 $$ regular method exit $$ ( 4724, 4731 ) $$ This @MustCallAlias parameter might go out of scope without being assigned into an owning field of this object (if this is a constructor) or returned.
+    public static <T> long convertToLong(T value) {
+                                           ^
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/PrimitiveTypes.java:136: warning: (mustcallalias.method.return.and.param) $$ 1 $$ there is no @MustCallAlias annotation on the return type, even though the parameter value is annotated with @MustCallAlias $$ ( 5480, 6259 ) $$ @MustCallAlias annotations must appear in pairs (one on a return type and one on a parameter type).
+    public static <T> int convertToInt(T value) {
+                          ^
+  But there is no @MustCallAlias annotation on the return type, even though the parameter value is annotated with @MustCallAlias
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/PrimitiveTypes.java:136: error: (mustcallalias.out.of.scope) $$ 1 $$ regular method exit $$ ( 5515, 5522 ) $$ This @MustCallAlias parameter might go out of scope without being assigned into an owning field of this object (if this is a constructor) or returned.
+    public static <T> int convertToInt(T value) {
+                                         ^
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/PrimitiveTypes.java:155: warning: (mustcallalias.method.return.and.param) $$ 1 $$ there is no @MustCallAlias annotation on the return type, even though the parameter value is annotated with @MustCallAlias $$ ( 6265, 7102 ) $$ @MustCallAlias annotations must appear in pairs (one on a return type and one on a parameter type).
+    public static <T> char convertToChar(T value) {
+                           ^
+  But there is no @MustCallAlias annotation on the return type, even though the parameter value is annotated with @MustCallAlias
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/PrimitiveTypes.java:155: error: (mustcallalias.out.of.scope) $$ 1 $$ regular method exit $$ ( 6302, 6309 ) $$ This @MustCallAlias parameter might go out of scope without being assigned into an owning field of this object (if this is a constructor) or returned.
+    public static <T> char convertToChar(T value) {
+                                           ^
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/PrimitiveTypes.java:174: warning: (mustcallalias.method.return.and.param) $$ 1 $$ there is no @MustCallAlias annotation on the return type, even though the parameter value is annotated with @MustCallAlias $$ ( 7108, 7915 ) $$ @MustCallAlias annotations must appear in pairs (one on a return type and one on a parameter type).
+    public static <T> short convertToShort(T value) {
+                            ^
+  But there is no @MustCallAlias annotation on the return type, even though the parameter value is annotated with @MustCallAlias
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/PrimitiveTypes.java:174: error: (mustcallalias.out.of.scope) $$ 1 $$ regular method exit $$ ( 7147, 7154 ) $$ This @MustCallAlias parameter might go out of scope without being assigned into an owning field of this object (if this is a constructor) or returned.
+    public static <T> short convertToShort(T value) {
+                                             ^
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/PrimitiveTypes.java:193: warning: (mustcallalias.method.return.and.param) $$ 1 $$ there is no @MustCallAlias annotation on the return type, even though the parameter value is annotated with @MustCallAlias $$ ( 7921, 8720 ) $$ @MustCallAlias annotations must appear in pairs (one on a return type and one on a parameter type).
+    public static <T> byte convertToByte(T value) {
+                           ^
+  But there is no @MustCallAlias annotation on the return type, even though the parameter value is annotated with @MustCallAlias
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/PrimitiveTypes.java:193: error: (mustcallalias.out.of.scope) $$ 1 $$ regular method exit $$ ( 7958, 7965 ) $$ This @MustCallAlias parameter might go out of scope without being assigned into an owning field of this object (if this is a constructor) or returned.
+    public static <T> byte convertToByte(T value) {
+                                           ^
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/PrimitiveTypes.java:212: warning: (mustcallalias.method.return.and.param) $$ 1 $$ there is no @MustCallAlias annotation on the return type, even though the parameter value is annotated with @MustCallAlias $$ ( 8726, 8960 ) $$ @MustCallAlias annotations must appear in pairs (one on a return type and one on a parameter type).
+    public static <T> boolean convertToBoolean(T value) {
+                              ^
+  But there is no @MustCallAlias annotation on the return type, even though the parameter value is annotated with @MustCallAlias
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/PrimitiveTypes.java:212: error: (mustcallalias.out.of.scope) $$ 1 $$ regular method exit $$ ( 8769, 8776 ) $$ This @MustCallAlias parameter might go out of scope without being assigned into an owning field of this object (if this is a constructor) or returned.
+    public static <T> boolean convertToBoolean(T value) {
+                                                 ^
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/LoopbackSocketChannel.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ new LoopbackSocketChannel() $$ org.pcj.internal.network.LoopbackSocketChannel $$ regular method exit $$ ( 808, 835 ) $$ @MustCall method close may not have been invoked on new LoopbackSocketChannel() or any of its aliases.
+        private static final SocketChannel INSTANCE = new LoopbackSocketChannel();
+                                                      ^
+  The type of object is: org.pcj.internal.network.LoopbackSocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/LoopbackSocketChannel.java:72: error: (creates.mustcall.for.override.invalid) $$ 4 $$ org.pcj.internal.network.LoopbackSocketChannel#bind(java.net.SocketAddress) $$ java.nio.channels.NetworkChannel#bind(java.net.SocketAddress) $$ this $$  $$ ( 1885, 2030 ) $$ Method org.pcj.internal.network.LoopbackSocketChannel#bind(java.net.SocketAddress) cannot override method java.nio.channels.NetworkChannel#bind(java.net.SocketAddress), which defines fewer @CreatesMustCallFor targets.
+    public SocketChannel bind(SocketAddress local) throws IOException {
+                         ^
+  found:    this
+  required: 
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/LoopbackSocketChannel.java:97: error: (owning.override.return) $$ 4 $$ shutdownInput $$ org.pcj.internal.network.LoopbackSocketChannel $$ shutdownInput $$ java.nio.channels.SocketChannel $$ ( 2556, 2691 ) $$ Incompatible ownership for return.
+    public SocketChannel shutdownInput() throws IOException {
+                         ^
+  found   : no ownership annotation or @Owning
+  required: @NotOwning
+  Consequence: method shutdownInput in org.pcj.internal.network.LoopbackSocketChannel cannot override method shutdownInput in java.nio.channels.SocketChannel
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/LoopbackSocketChannel.java:102: error: (owning.override.return) $$ 4 $$ shutdownOutput $$ org.pcj.internal.network.LoopbackSocketChannel $$ shutdownOutput $$ java.nio.channels.SocketChannel $$ ( 2697, 2796 ) $$ Incompatible ownership for return.
+    public SocketChannel shutdownOutput() throws IOException {
+                         ^
+  found   : no ownership annotation or @Owning
+  required: @NotOwning
+  Consequence: method shutdownOutput in org.pcj.internal.network.LoopbackSocketChannel cannot override method shutdownOutput in java.nio.channels.SocketChannel
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/CloneInputStream.java:40: error: (required.method.not.called) $$ 4 $$ method close $$ cloneInputStream $$ org.pcj.internal.network.CloneInputStream $$ possible exceptional exit due to in.read() with exception type java.io.IOException $$ ( 1089, 1148 ) $$ @MustCall method close may not have been invoked on cloneInputStream or any of its aliases.
+        CloneInputStream cloneInputStream = new CloneInputStream();
+                         ^
+  The type of object is: org.pcj.internal.network.CloneInputStream.
+  Reason for going out of scope: possible exceptional exit due to in.read() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/CloneInputStream.java:94: error: (required.method.not.called) $$ 4 $$ method close $$ cloneInputStream $$ org.pcj.internal.network.CloneInputStream $$ possible exceptional exit due to in.readLong() with exception type java.io.IOException $$ ( 2586, 2645 ) $$ @MustCall method close may not have been invoked on cloneInputStream or any of its aliases.
+        CloneInputStream cloneInputStream = new CloneInputStream();
+                         ^
+  The type of object is: org.pcj.internal.network.CloneInputStream.
+  Reason for going out of scope: possible exceptional exit due to in.readLong() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/MessageDataInputStream.java:28: error: (required.method.not.called) $$ 4 $$ method close $$ field objectInputStream $$ java.io.ObjectInputStream $$  Non-final owning field might be overwritten $$ ( 733, 762 ) $$ @MustCall method close may not have been invoked on field objectInputStream or any of its aliases.
+        this.objectInputStream = null;
+                               ^
+  The type of object is: java.io.ObjectInputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/MessageDataInputStream.java:37: error: (contracts.exceptional.postcondition) $$ 3 $$ close $$ this.input is @CalledMethods $$ this.input is @CalledMethods("close") $$ ( 876, 1055 ) $$ on exception, postcondition of close is not satisfied.
+    public void close() throws IOException {
+                ^
+  found   : this.input is @CalledMethods
+  required: this.input is @CalledMethods("close")
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/MessageDataInputStream.java:37: error: (contracts.postcondition) $$ 3 $$ close $$ no information about this.objectInputStream $$ this.objectInputStream is @CalledMethods("close") $$ ( 876, 1055 ) $$ postcondition of close is not satisfied.
+    public void close() throws IOException {
+                ^
+  found   : no information about this.objectInputStream
+  required: this.objectInputStream is @CalledMethods("close")
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/MessageDataInputStream.java:170: error: (missing.creates.mustcall.for) $$ 3 $$ readObject $$ this $$ objectInputStream $$ ( 4916, 5173 ) $$ Method readObject re-assigns the non-final, owning field this.objectInputStream, but does not have a corresponding @CreatesMustCallFor annotation.
+    public Object readObject() throws IOException, ClassNotFoundException {
+                  ^
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/MessageDataOutputStream.java:26: error: (assignment) $$ 2 $$ @PolyMustCall OutputStream $$ @MustCall("close") OutputStream $$ ( 682, 688 ) $$ incompatible types in assignment.
+        this.output = output;
+                      ^
+  found   : @PolyMustCall OutputStream
+  required: @MustCall("close") OutputStream
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/MessageBytesInputStream.java:33: error: (contracts.postcondition) $$ 3 $$ offerNextBytes $$ no information about this.messageInputStream $$ this.messageInputStream is @CalledMethods("close") $$ ( 880, 2338 ) $$ postcondition of offerNextBytes is not satisfied.
+    public void offerNextBytes(ByteBuffer byteBuffer) {
+                ^
+  found   : no information about this.messageInputStream
+  required: this.messageInputStream is @CalledMethods("close")
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/MessageBytesInputStream.java:79: error: (missing.creates.mustcall.for) $$ 3 $$ reset $$ this $$ messageInputStream $$ ( 2602, 2727 ) $$ Method reset re-assigns the non-final, owning field this.messageInputStream, but does not have a corresponding @CreatesMustCallFor annotation.
+    final public void reset() {
+                      ^
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/MessageBytesInputStream.java:81: error: (required.method.not.called) $$ 4 $$ method close $$ field messageInputStream $$ org.pcj.internal.network.MessageBytesInputStream.MessageInputStream $$  Non-final owning field might be overwritten $$ ( 2674, 2719 ) $$ @MustCall method close may not have been invoked on field messageInputStream or any of its aliases.
+        messageInputStream = new MessageInputStream();
+                           ^
+  The type of object is: org.pcj.internal.network.MessageBytesInputStream.MessageInputStream.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:59: error: (type.argument) $$ 4 $$ K $$ ConcurrentMap $$ @MustCall("close") SocketChannel $$ @MustCall Object $$ ( 1943, 1956 ) $$ incompatible type argument for type parameter K of ConcurrentMap.
+    private final ConcurrentMap<SocketChannel, MessageBytesInputStream> readMap;
+                                ^
+  found   : @MustCall("close") SocketChannel
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:59: error: (type.argument) $$ 4 $$ V $$ ConcurrentMap $$ @MustCall("offerNextBytes") MessageBytesInputStream $$ @MustCall Object $$ ( 1958, 1981 ) $$ incompatible type argument for type parameter V of ConcurrentMap.
+    private final ConcurrentMap<SocketChannel, MessageBytesInputStream> readMap;
+                                               ^
+  found   : @MustCall("offerNextBytes") MessageBytesInputStream
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:60: error: (type.argument) $$ 4 $$ K $$ ConcurrentMap $$ @MustCall("close") SocketChannel $$ @MustCall Object $$ ( 2025, 2038 ) $$ incompatible type argument for type parameter K of ConcurrentMap.
+    private final ConcurrentMap<SocketChannel, Queue<MessageBytesOutputStream>> writeMap;
+                                ^
+  found   : @MustCall("close") SocketChannel
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:60: error: (type.argument) $$ 4 $$ E $$ Queue $$ @MustCall("close") MessageBytesOutputStream $$ @MustCall Object $$ ( 2046, 2070 ) $$ incompatible type argument for type parameter E of Queue.
+    private final ConcurrentMap<SocketChannel, Queue<MessageBytesOutputStream>> writeMap;
+                                                     ^
+  found   : @MustCall("close") MessageBytesOutputStream
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:61: error: (type.argument) $$ 4 $$ E $$ Queue $$ @MustCall("close") ServerSocketChannel $$ @MustCall Object $$ ( 2108, 2127 ) $$ incompatible type argument for type parameter E of Queue.
+    private final Queue<ServerSocketChannel> serverSocketChannels;
+                        ^
+  found   : @MustCall("close") ServerSocketChannel
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:66: error: (type.arguments.not.inferred) $$ 2 $$ ConcurrentHashMap constructor $$ @MustCall("close") SocketChannel <: @MustCall Object $$ ( 2345, 2370 ) $$ Could not infer type arguments for ConcurrentHashMap constructor
+        this.writeMap = new ConcurrentHashMap<>();
+                        ^
+  unsatisfiable constraint: @MustCall("close") SocketChannel <: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:67: error: (type.arguments.not.inferred) $$ 2 $$ ConcurrentHashMap constructor $$ @MustCall("close") SocketChannel <: @MustCall Object @MustCall("offerNextBytes") MessageBytesInputStream <: @MustCall Object $$ ( 2396, 2421 ) $$ Could not infer type arguments for ConcurrentHashMap constructor
+        this.readMap = new ConcurrentHashMap<>();
+                       ^
+  unsatisfiable constraint: @MustCall("close") SocketChannel <: @MustCall Object @MustCall("offerNextBytes") MessageBytesInputStream <: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:69: error: (type.arguments.not.inferred) $$ 2 $$ ConcurrentLinkedQueue constructor $$ @MustCall("close") ServerSocketChannel <: @MustCall Object $$ ( 2523, 2552 ) $$ Could not infer type arguments for ConcurrentLinkedQueue constructor
+        this.serverSocketChannels = new ConcurrentLinkedQueue<>();
+                                    ^
+  unsatisfiable constraint: @MustCall("close") ServerSocketChannel <: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:72: error: (required.method.not.called) $$ 4 $$ method close $$ Selector.open() $$ java.nio.channels.Selector $$ regular method exit $$ ( 2600, 2615 ) $$ @MustCall method close may not have been invoked on Selector.open() or any of its aliases.
+            this.selector = Selector.open();
+                                         ^
+  The type of object is: java.nio.channels.Selector.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:89: error: (required.method.not.called) $$ 4 $$ method close $$ socketChannel.setOption(StandardSocketOptions.TCP_NODELAY, true) $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to socketChannel.setOption(StandardSocketOptions.SO_KEEPALIVE, true) with exception type java.io.IOException $$ ( 3212, 3276 ) $$ @MustCall method close may not have been invoked on socketChannel.setOption(StandardSocketOptions.TCP_NODELAY, true) or any of its aliases.
+        socketChannel.setOption(StandardSocketOptions.TCP_NODELAY, true);
+                               ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to socketChannel.setOption(StandardSocketOptions.SO_KEEPALIVE, true) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:90: error: (required.method.not.called) $$ 4 $$ method close $$ socketChannel.setOption(StandardSocketOptions.SO_KEEPALIVE, true) $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to socketChannel.setOption(StandardSocketOptions.SO_REUSEADDR, true) with exception type java.io.IOException $$ ( 3287, 3352 ) $$ @MustCall method close may not have been invoked on socketChannel.setOption(StandardSocketOptions.SO_KEEPALIVE, true) or any of its aliases.
+        socketChannel.setOption(StandardSocketOptions.SO_KEEPALIVE, true);
+                               ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to socketChannel.setOption(StandardSocketOptions.SO_REUSEADDR, true) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:91: error: (required.method.not.called) $$ 4 $$ method close $$ socketChannel.setOption(StandardSocketOptions.SO_REUSEADDR, true) $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 3363, 3428 ) $$ @MustCall method close may not have been invoked on socketChannel.setOption(StandardSocketOptions.SO_REUSEADDR, true) or any of its aliases.
+        socketChannel.setOption(StandardSocketOptions.SO_REUSEADDR, true);
+                               ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:93: error: (required.method.not.called) $$ 4 $$ method offerNextBytes $$ readMap.put(socketChannel, new MessageBytesInputStream()) $$ org.pcj.internal.network.MessageBytesInputStream $$ regular method exit $$ ( 3441, 3498 ) $$ @MustCall method offerNextBytes may not have been invoked on readMap.put(socketChannel, new MessageBytesInputStream()) or any of its aliases.
+        readMap.put(socketChannel, new MessageBytesInputStream());
+                   ^
+  The type of object is: org.pcj.internal.network.MessageBytesInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:93: error: (required.method.not.called) $$ 4 $$ method offerNextBytes $$ new MessageBytesInputStream() $$ org.pcj.internal.network.MessageBytesInputStream $$ regular method exit $$ ( 3468, 3497 ) $$ @MustCall method offerNextBytes may not have been invoked on new MessageBytesInputStream() or any of its aliases.
+        readMap.put(socketChannel, new MessageBytesInputStream());
+                                   ^
+  The type of object is: org.pcj.internal.network.MessageBytesInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:94: error: (type.arguments.not.inferred) $$ 2 $$ ConcurrentLinkedQueue constructor $$ @MustCall("close") MessageBytesOutputStream <: @MustCall Object $$ ( 3537, 3566 ) $$ Could not infer type arguments for ConcurrentLinkedQueue constructor
+        writeMap.put(socketChannel, new ConcurrentLinkedQueue<>());
+                                    ^
+  unsatisfiable constraint: @MustCall("close") MessageBytesOutputStream <: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:99: error: (required.method.not.called) $$ 4 $$ method close $$ serverSocketChannel.setOption(StandardSocketOptions.SO_REUSEADDR, true) $$ java.nio.channels.ServerSocketChannel $$ possible exceptional exit due to serverSocketChannel.configureBlocking(false) with exception type java.io.IOException $$ ( 3772, 3843 ) $$ @MustCall method close may not have been invoked on serverSocketChannel.setOption(StandardSocketOptions.SO_REUSEADDR, true) or any of its aliases.
+        serverSocketChannel.setOption(StandardSocketOptions.SO_REUSEADDR, true);
+                                     ^
+  The type of object is: java.nio.channels.ServerSocketChannel.
+  Reason for going out of scope: possible exceptional exit due to serverSocketChannel.configureBlocking(false) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:137: error: (type.argument) $$ 4 $$ E $$ Queue $$ @MustCall("close") MessageBytesOutputStream $$ @MustCall Object $$ ( 4992, 5016 ) $$ incompatible type argument for type parameter E of Queue.
+        Queue<MessageBytesOutputStream> queue = writeMap.get(socket);
+              ^
+  found   : @MustCall("close") MessageBytesOutputStream
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:157: error: (type.argument) $$ 4 $$ E $$ Set $$ @MustCall("close") SocketChannel $$ @MustCall Object $$ ( 5738, 5751 ) $$ incompatible type argument for type parameter E of Set.
+        Set<SocketChannel> sockets = writeMap.keySet();
+            ^
+  found   : @MustCall("close") SocketChannel
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:158: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 5796, 5816 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+        for (SocketChannel socket : sockets) {
+                           ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:297: error: (required.method.not.called) $$ 4 $$ method offerNextBytes $$ messageBytes $$ org.pcj.internal.network.MessageBytesInputStream $$ regular method exit $$ ( 10481, 10540 ) $$ @MustCall method offerNextBytes may not have been invoked on messageBytes or any of its aliases.
+        MessageBytesInputStream messageBytes = readMap.get(socket);
+                                ^
+  The type of object is: org.pcj.internal.network.MessageBytesInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:310: error: (type.argument) $$ 4 $$ E $$ Queue $$ @MustCall("close") MessageBytesOutputStream $$ @MustCall Object $$ ( 10956, 10980 ) $$ incompatible type argument for type parameter E of Queue.
+        Queue<MessageBytesOutputStream> queue = writeMap.get(socket);
+              ^
+  found   : @MustCall("close") MessageBytesOutputStream
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:313: error: (required.method.not.called) $$ 4 $$ method close $$ messageBytes $$ org.pcj.internal.network.MessageBytesOutputStream $$ regular method exit $$ ( 11063, 11116 ) $$ @MustCall method close may not have been invoked on messageBytes or any of its aliases.
+            MessageBytesOutputStream messageBytes = queue.peek();
+                                     ^
+  The type of object is: org.pcj.internal.network.MessageBytesOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/SelectorProc.java:326: error: (required.method.not.called) $$ 4 $$ method close $$ queue.poll() $$ org.pcj.internal.network.MessageBytesOutputStream $$ regular method exit $$ ( 11560, 11572 ) $$ @MustCall method close may not have been invoked on queue.poll() or any of its aliases.
+                queue.poll();
+                          ^
+  The type of object is: org.pcj.internal.network.MessageBytesOutputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/network/LoopbackMessageBytesStream.java:52: error: (contracts.exceptional.postcondition) $$ 3 $$ close $$ this.messageDataInputStream is @CalledMethods $$ this.messageDataInputStream is @CalledMethods("close") $$ ( 1563, 1704 ) $$ on exception, postcondition of close is not satisfied.
+    public void close() throws IOException {
+                ^
+  found   : this.messageDataInputStream is @CalledMethods
+  required: this.messageDataInputStream is @CalledMethods("close")
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/InternalGroup.java:83: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 2993, 3089 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+        SocketChannel socket = InternalPCJ.getNodeData().getSocketChannelByPhysicalId().get(physicalId);
+                      ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/InternalGroup.java:103: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 3921, 4017 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+        SocketChannel socket = InternalPCJ.getNodeData().getSocketChannelByPhysicalId().get(physicalId);
+                      ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/InternalGroup.java:127: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 4948, 5044 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+        SocketChannel socket = InternalPCJ.getNodeData().getSocketChannelByPhysicalId().get(physicalId);
+                      ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/InternalGroup.java:149: error: (required.method.not.called) $$ 4 $$ method close $$ masterSocket $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 5835, 5943 ) $$ @MustCall method close may not have been invoked on masterSocket or any of its aliases.
+        SocketChannel masterSocket = InternalPCJ.getNodeData().getSocketChannelByPhysicalId().get(physicalMasterId);
+                      ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/futures/GroupBarrierState.java:116: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 3524, 3588 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+                socket = nodeData.getSocketChannelByPhysicalId().get(physicalId);
+                       ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/futures/GroupBarrierState.java:119: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 3684, 3746 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+                socket = nodeData.getSocketChannelByPhysicalId().get(parentId);
+                       ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/futures/GroupJoinState.java:59: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to commonGroup.getGroupThreadId(globalThreadId) with exception type java.util.NoSuchElementException $$ ( 1961, 2034 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+                socket = nodeData.getSocketChannelByPhysicalId().get(requesterPhysicalId);
+                       ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to commonGroup.getGroupThreadId(globalThreadId) with exception type java.util.NoSuchElementException
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/futures/GroupJoinState.java:66: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 2305, 2367 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+                socket = nodeData.getSocketChannelByPhysicalId().get(parentId);
+                       ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageValueBroadcastRequest.java:73: error: (required.method.not.called) $$ 4 $$ method close $$ clonedData $$ org.pcj.internal.network.CloneInputStream $$ possible exceptional exit due to group.getGlobalThreadId(requesterThreadId) with exception type java.util.NoSuchElementException $$ ( 2267, 2324 ) $$ @MustCall method close may not have been invoked on clonedData or any of its aliases.
+        CloneInputStream clonedData = CloneInputStream.clone(in);
+                         ^
+  The type of object is: org.pcj.internal.network.CloneInputStream.
+  Reason for going out of scope: possible exceptional exit due to group.getGlobalThreadId(requesterThreadId) with exception type java.util.NoSuchElementException
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageValueBroadcastRequest.java:81: error: (type.arguments.not.inferred) $$ 2 $$ Stream.map $$ @MustCall("close") SocketChannel <: @MustCall Object $$ ( 2639, 2722 ) $$ Could not infer type arguments for Stream.map
+        group.getChildrenNodes().stream().map(nodeData.getSocketChannelByPhysicalId()::get)
+                                             ^
+  unsatisfiable constraint: @MustCall("close") SocketChannel <: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageValueBroadcastRequest.java:105: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 3752, 3857 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+        SocketChannel socket = InternalPCJ.getNodeData().getSocketChannelByPhysicalId().get(requesterPhysicalId);
+                      ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageByeCompleted.java:38: error: (required.method.not.called) $$ 4 $$ method close $$ nodeData.getSocketChannelByPhysicalId().get(physicalId * 2 + 1) $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 1175, 1238 ) $$ @MustCall method close may not have been invoked on nodeData.getSocketChannelByPhysicalId().get(physicalId * 2 + 1) or any of its aliases.
+            InternalPCJ.getNetworker().send(nodeData.getSocketChannelByPhysicalId().get(physicalId * 2 + 1), this);
+                                                                                       ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageByeCompleted.java:41: error: (required.method.not.called) $$ 4 $$ method close $$ nodeData.getSocketChannelByPhysicalId().get(physicalId * 2 + 2) $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 1366, 1429 ) $$ @MustCall method close may not have been invoked on nodeData.getSocketChannelByPhysicalId().get(physicalId * 2 + 2) or any of its aliases.
+            InternalPCJ.getNetworker().send(nodeData.getSocketChannelByPhysicalId().get(physicalId * 2 + 2), this);
+                                                                                       ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageGroupJoinRequest.java:98: error: (type.arguments.not.inferred) $$ 2 $$ Stream.map $$ @MustCall("close") SocketChannel <: @MustCall Object $$ ( 3515, 3605 ) $$ Could not infer type arguments for Stream.map
+                .map(nodeData.getSocketChannelByPhysicalId()::get)
+                    ^
+  unsatisfiable constraint: @MustCall("close") SocketChannel <: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/NodeData.java:26: error: (type.argument) $$ 4 $$ V $$ ConcurrentMap $$ @MustCall("close") SocketChannel $$ @MustCall Object $$ ( 787, 800 ) $$ incompatible type argument for type parameter V of ConcurrentMap.
+    private final ConcurrentMap<Integer, SocketChannel> socketChannelByPhysicalId; // physicalId -> socket
+                                         ^
+  found   : @MustCall("close") SocketChannel
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/NodeData.java:109: error: (type.arguments.not.inferred) $$ 2 $$ ConcurrentHashMap constructor $$ @MustCall("close") SocketChannel <: @MustCall Object $$ ( 4108, 4133 ) $$ Could not infer type arguments for ConcurrentHashMap constructor
+        this.socketChannelByPhysicalId = new ConcurrentHashMap<>();
+                                         ^
+  unsatisfiable constraint: @MustCall("close") SocketChannel <: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/NodeData.java:145: error: (type.argument) $$ 4 $$ V $$ ConcurrentMap $$ @MustCall("close") SocketChannel $$ @MustCall Object $$ ( 5324, 5337 ) $$ incompatible type argument for type parameter V of ConcurrentMap.
+    public ConcurrentMap<Integer, SocketChannel> getSocketChannelByPhysicalId() {
+                                  ^
+  found   : @MustCall("close") SocketChannel
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageHelloBonjour.java:49: error: (required.method.not.called) $$ 4 $$ method close $$ nodeData.getSocketChannelByPhysicalId().put(physicalId, sender) $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 1300, 1363 ) $$ @MustCall method close may not have been invoked on nodeData.getSocketChannelByPhysicalId().put(physicalId, sender) or any of its aliases.
+        nodeData.getSocketChannelByPhysicalId().put(physicalId, sender);
+                                                   ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageHelloInform.java:92: error: (required.method.not.called) $$ 4 $$ method close $$ socketChannel $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 3336, 3424 ) $$ @MustCall method close may not have been invoked on socketChannel or any of its aliases.
+                SocketChannel socketChannel = connectToNode(nodeInfo.getHostname(), nodeInfo.getPort());
+                              ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageHelloInform.java:93: error: (required.method.not.called) $$ 4 $$ method close $$ nodeData.getSocketChannelByPhysicalId().put(currentPhysicalId, socketChannel) $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 3442, 3519 ) $$ @MustCall method close may not have been invoked on nodeData.getSocketChannelByPhysicalId().put(currentPhysicalId, socketChannel) or any of its aliases.
+                nodeData.getSocketChannelByPhysicalId().put(currentPhysicalId, socketChannel);
+                                                           ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageHelloInform.java:99: error: (required.method.not.called) $$ 4 $$ method close $$ nodeData.getSocketChannelByPhysicalId().put(physicalId, InternalPCJ.getLoopbackSocketChannel()) $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 3645, 3740 ) $$ @MustCall method close may not have been invoked on nodeData.getSocketChannelByPhysicalId().put(physicalId, InternalPCJ.getLoopbackSocketChannel()) or any of its aliases.
+        nodeData.getSocketChannelByPhysicalId().put(physicalId, InternalPCJ.getLoopbackSocketChannel());
+                                                   ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageHelloInform.java:99: error: (required.method.not.called) $$ 4 $$ method close $$ InternalPCJ.getLoopbackSocketChannel() $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 3701, 3739 ) $$ @MustCall method close may not have been invoked on InternalPCJ.getLoopbackSocketChannel() or any of its aliases.
+        nodeData.getSocketChannelByPhysicalId().put(physicalId, InternalPCJ.getLoopbackSocketChannel());
+                                                                                                    ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageHelloGo.java:45: error: (required.method.not.called) $$ 4 $$ method close $$ nodeData.getSocketChannelByPhysicalId().get(physicalId * 2 + 1) $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 1386, 1449 ) $$ @MustCall method close may not have been invoked on nodeData.getSocketChannelByPhysicalId().get(physicalId * 2 + 1) or any of its aliases.
+            InternalPCJ.getNetworker().send(nodeData.getSocketChannelByPhysicalId().get(physicalId * 2 + 1), this);
+                                                                                       ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageHelloGo.java:48: error: (required.method.not.called) $$ 4 $$ method close $$ nodeData.getSocketChannelByPhysicalId().get(physicalId * 2 + 2) $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 1577, 1640 ) $$ @MustCall method close may not have been invoked on nodeData.getSocketChannelByPhysicalId().get(physicalId * 2 + 2) or any of its aliases.
+            InternalPCJ.getNetworker().send(nodeData.getSocketChannelByPhysicalId().get(physicalId * 2 + 2), this);
+                                                                                       ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageGroupJoinInform.java:104: error: (type.arguments.not.inferred) $$ 2 $$ Stream.map $$ @MustCall("close") SocketChannel <: @MustCall Object $$ ( 3659, 3749 ) $$ Could not infer type arguments for Stream.map
+                .map(nodeData.getSocketChannelByPhysicalId()::get)
+                    ^
+  unsatisfiable constraint: @MustCall("close") SocketChannel <: @MustCall Object
+error: (type.argument) $$ 4 $$ V $$ Entry $$ @MustCall("close") SocketChannel $$ @MustCall Object $$ ( -1, -1 ) $$ incompatible type argument for type parameter V of Entry.
+  found   : @MustCall("close") SocketChannel
+  required: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageHello.java:73: error: (required.method.not.called) $$ 4 $$ method close $$ nodeData.getSocketChannelByPhysicalId().put(currentPhysicalId, sender) $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 2188, 2258 ) $$ @MustCall method close may not have been invoked on nodeData.getSocketChannelByPhysicalId().put(currentPhysicalId, sender) or any of its aliases.
+        nodeData.getSocketChannelByPhysicalId().put(currentPhysicalId, sender);
+                                                   ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageHello.java:106: error: (required.method.not.called) $$ 4 $$ method close $$ socketChannel $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 4013, 4105 ) $$ @MustCall method close may not have been invoked on socketChannel or any of its aliases.
+                    SocketChannel socketChannel = nodeData.getSocketChannelByPhysicalId().remove(oldPhysicalId);
+                                  ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageHello.java:111: error: (required.method.not.called) $$ 4 $$ method close $$ nodeData.getSocketChannelByPhysicalId().put(nextPhysicalId, socketChannel) $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 4282, 4356 ) $$ @MustCall method close may not have been invoked on nodeData.getSocketChannelByPhysicalId().put(nextPhysicalId, socketChannel) or any of its aliases.
+                    nodeData.getSocketChannelByPhysicalId().put(nextPhysicalId, socketChannel);
+                                                               ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageHello.java:125: error: (required.method.not.called) $$ 4 $$ method close $$ socketChannel $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 4907, 4956 ) $$ @MustCall method close may not have been invoked on socketChannel or any of its aliases.
+                        SocketChannel socketChannel = element.getValue();
+                                      ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageGroupBarrierGo.java:57: error: (type.arguments.not.inferred) $$ 2 $$ Stream.map $$ @MustCall("close") SocketChannel <: @MustCall Object $$ ( 1512, 1612 ) $$ Could not infer type arguments for Stream.map
+                .map(nodeData.getSocketChannelByPhysicalId()::get)
+                    ^
+  unsatisfiable constraint: @MustCall("close") SocketChannel <: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageValueBroadcastBytes.java:78: error: (required.method.not.called) $$ 4 $$ method close $$ CloneInputStream.readFrom(in) $$ org.pcj.internal.network.CloneInputStream $$ possible exceptional exit due to group.getGlobalThreadId(requesterThreadId) with exception type java.util.NoSuchElementException $$ ( 2407, 2436 ) $$ @MustCall method close may not have been invoked on CloneInputStream.readFrom(in) or any of its aliases.
+        clonedData = CloneInputStream.readFrom(in);
+                                              ^
+  The type of object is: org.pcj.internal.network.CloneInputStream.
+  Reason for going out of scope: possible exceptional exit due to group.getGlobalThreadId(requesterThreadId) with exception type java.util.NoSuchElementException
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageValueBroadcastBytes.java:89: error: (type.arguments.not.inferred) $$ 2 $$ Stream.map $$ @MustCall("close") SocketChannel <: @MustCall Object $$ ( 2844, 2911 ) $$ Could not infer type arguments for Stream.map
+        children.stream().map(nodeData.getSocketChannelByPhysicalId()::get)
+                             ^
+  unsatisfiable constraint: @MustCall("close") SocketChannel <: @MustCall Object
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/message/MessageValueBroadcastBytes.java:112: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 3951, 4056 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+        SocketChannel socket = InternalPCJ.getNodeData().getSocketChannelByPhysicalId().get(requesterPhysicalId);
+                      ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/InternalPCJ.java:97: error: (required.method.not.called) $$ 4 $$ method close $$ node0Socket $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to helloPhase(currentJvm.getPort(), currentJvm.getThreadIds()) with exception type java.io.UncheckedIOException $$ ( 3702, 3771 ) $$ @MustCall method close may not have been invoked on node0Socket or any of its aliases.
+            SocketChannel node0Socket = connectToNode0(isCurrentJvmNode0, node0);
+                          ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to helloPhase(currentJvm.getPort(), currentJvm.getThreadIds()) with exception type java.io.UncheckedIOException
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/InternalPCJ.java:101: error: (required.method.not.called) $$ 4 $$ method close $$ nodeData.getSocketChannelByPhysicalId().put(0, node0Socket) $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to helloPhase(currentJvm.getPort(), currentJvm.getThreadIds()) with exception type java.io.UncheckedIOException $$ ( 3897, 3956 ) $$ @MustCall method close may not have been invoked on nodeData.getSocketChannelByPhysicalId().put(0, node0Socket) or any of its aliases.
+            nodeData.getSocketChannelByPhysicalId().put(0, node0Socket);
+                                                       ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to helloPhase(currentJvm.getPort(), currentJvm.getThreadIds()) with exception type java.io.UncheckedIOException
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/InternalPCJ.java:225: error: (required.method.not.called) $$ 4 $$ method close $$ networker.bind(inetAddress, bindingPort, Configuration.BACKLOG_COUNT) $$ java.nio.channels.ServerSocketChannel $$ regular method exit $$ ( 9413, 9482 ) $$ @MustCall method close may not have been invoked on networker.bind(inetAddress, bindingPort, Configuration.BACKLOG_COUNT) or any of its aliases.
+                    networker.bind(inetAddress, bindingPort, Configuration.BACKLOG_COUNT);
+                                  ^
+  The type of object is: java.nio.channels.ServerSocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/InternalPCJ.java:391: error: (required.method.not.called) $$ 4 $$ method close $$ masterSocketChannel $$ java.nio.channels.SocketChannel $$ regular method exit $$ ( 17008, 17122 ) $$ @MustCall method close may not have been invoked on masterSocketChannel or any of its aliases.
+        SocketChannel masterSocketChannel = nodeData.getSocketChannelByPhysicalId().get(commonGroup.getGroupMasterNode());
+                      ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/Networker.java:72: error: (required.method.not.called) $$ 4 $$ method close $$ socket $$ java.nio.channels.SocketChannel $$ possible exceptional exit due to waitForConnectionEstablished(socket) with exception type java.lang.InterruptedException $$ ( 2561, 2626 ) $$ @MustCall method close may not have been invoked on socket or any of its aliases.
+        SocketChannel socket = selectorProc.connectTo(hostAddress, port);
+                      ^
+  The type of object is: java.nio.channels.SocketChannel.
+  Reason for going out of scope: possible exceptional exit due to waitForConnectionEstablished(socket) with exception type java.lang.InterruptedException
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/Networker.java:109: error: (required.method.not.called) $$ 4 $$ method close $$ loopbackMessageBytesStream $$ org.pcj.internal.network.LoopbackMessageBytesStream $$ possible exceptional exit due to loopbackMessageBytesStream.writeMessage() with exception type java.io.IOException $$ ( 3900, 3996 ) $$ @MustCall method close may not have been invoked on loopbackMessageBytesStream or any of its aliases.
+                LoopbackMessageBytesStream loopbackMessageBytesStream = new LoopbackMessageBytesStream(message);
+                                           ^
+  The type of object is: org.pcj.internal.network.LoopbackMessageBytesStream.
+  Reason for going out of scope: possible exceptional exit due to loopbackMessageBytesStream.writeMessage() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/Networker.java:131: error: (required.method.not.called) $$ 4 $$ method close $$ messageDataInputStream $$ org.pcj.internal.network.MessageDataInputStream $$ possible exceptional exit due to throw new UncheckedIOException(ex); with exception type java.io.UncheckedIOException $$ ( 5019, 5108 ) $$ @MustCall method close may not have been invoked on messageDataInputStream or any of its aliases.
+        MessageDataInputStream messageDataInputStream = messageBytes.getMessageDataInputStream();
+                               ^
+  The type of object is: org.pcj.internal.network.MessageDataInputStream.
+  Reason for going out of scope: possible exceptional exit due to throw new UncheckedIOException(ex); with exception type java.io.UncheckedIOException
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/Networker.java:168: error: (assignment) $$ 2 $$ @PolyMustCall MessageDataInputStream $$ @MustCall("close") MessageDataInputStream $$ ( 6732, 6754 ) $$ incompatible types in assignment.
+            this.messageDataInputStream = messageDataInputStream;
+                                          ^
+  found   : @PolyMustCall MessageDataInputStream
+  required: @MustCall("close") MessageDataInputStream
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/internal/Networker.java:172: error: (contracts.postcondition) $$ 3 $$ run $$ this.messageDataInputStream is @CalledMethods $$ this.messageDataInputStream is @CalledMethods("close") $$ ( 6778, 7198 ) $$ postcondition of run is not satisfied.
+        public void run() {
+                    ^
+  found   : this.messageDataInputStream is @CalledMethods
+  required: this.messageDataInputStream is @CalledMethods("close")
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/test/PcjMicroBenchmarkBroadcast.java:88: error: (required.method.not.called) $$ 4 $$ method close $$ nf $$ java.util.Scanner $$ regular method exit $$ ( 2418, 2462 ) $$ @MustCall method close may not have been invoked on nf or any of its aliases.
+            nf = new Scanner(new File(nodesDescription));
+               ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urld856362767_hpdcj_PCJ_tgz-pJ8-org_pcj_test_StorageExampleMainJ8/src/org/pcj/test/PcjMicroBenchmarkPingPong.java:172: error: (required.method.not.called) $$ 4 $$ method close $$ nf $$ java.util.Scanner $$ regular method exit $$ ( 5222, 5289 ) $$ @MustCall method close may not have been invoked on nf or any of its aliases.
+            nf = new Scanner(new File(args.length > 0 ? args[0] : "nodes.txt"));
+               ^
+  The type of object is: java.util.Scanner.
+  Reason for going out of scope: regular method exit
+91 errors
+8 warnings

@@ -1,0 +1,10 @@
+../dataset/june2020_dataset_copy/url7d636e8121_laforge49_JActor2_tgz-pJ8-org_agilewiki_jactor2_core_revisited_EHJ8/src/org/agilewiki/jactor2/metrics/MetricsTimerImpl.java:58: error: (required.method.not.called) $$ 4 $$ method close $$ ConsoleReporter.forRegistry(REGISTRY).convertDurationsTo(TimeUnit.MILLISECONDS).convertRatesTo(TimeUnit.SECONDS).build() $$ com.codahale.metrics.ConsoleReporter $$ regular method exit $$ ( 1711, 1873 ) $$ @MustCall method close may not have been invoked on ConsoleReporter.forRegistry(REGISTRY).convertDurationsTo(TimeUnit.MILLISECONDS).convertRatesTo(TimeUnit.SECONDS).build() or any of its aliases.
+                    .convertRatesTo(TimeUnit.SECONDS).build();
+                                                           ^
+  The type of object is: com.codahale.metrics.ConsoleReporter.
+  Reason for going out of scope: regular method exit
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error

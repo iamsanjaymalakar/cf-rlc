@@ -1,0 +1,4 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^be/demmel/fun/jgwcaconstants/bll/NamedPipeGWCAConnection.java^67^be.demmel.fun.jgwcaconstants.bll.NamedPipeGWCAConnection.open()V^3 = new <Application,Ljava/io/RandomAccessFile>@1^NULL^FIELD,^false^true^Field escape;
+1^be/demmel/fun/jgwcaconstants/JCommander.java^40^be.demmel.fun.jgwcaconstants.JCommander.main([Ljava/lang/String;)V^13 = new <Application,Lbe/demmel/fun/jgwcaconstants/bll/NamedPipeGWCAConnection>@24^NULL^FIELD,^false^true^Field escape;
+2^be/demmel/fun/jgwcaconstants/Version.java^58^be.demmel.fun.jgwcaconstants.Version.loadProperties()Ljava/util/Properties;^5 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 2,3 @4 exception:4^NULL^ARRAY,^false^true^Array (or collection/map) escape;

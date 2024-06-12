@@ -1,0 +1,45 @@
+17738
+2218
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset_copy/url4e79c36700_JacenLakiir_Tivoo_tgz-pJ8-MainJ8/src/tivoo/input/CalendarParser.java; Line number 47
+vim +47 ../../../dataset/june2020_dataset_copy/url4e79c36700_JacenLakiir_Tivoo_tgz-pJ8-MainJ8/src/tivoo/input/CalendarParser.java
+
++++ Add following code above line:47 (tivoo/input/CalendarParser.java)
+try{
++++ Add following code after line:49 (tivoo/input/CalendarParser.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 47
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset_copy/url4e79c36700_JacenLakiir_Tivoo_tgz-pJ8-MainJ8/src/tivoo/output/HTMLBuilder.java; Line number 233
+vim +233 ../../../dataset/june2020_dataset_copy/url4e79c36700_JacenLakiir_Tivoo_tgz-pJ8-MainJ8/src/tivoo/output/HTMLBuilder.java
+
++++ Add following code above line:233 (tivoo/output/HTMLBuilder.java)
+try{
++++ Add following code after line:248 (tivoo/output/HTMLBuilder.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 233
+
++++ Delete Line number 249 (tivoo/output/HTMLBuilder.java)
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset_copy/url4e79c36700_JacenLakiir_Tivoo_tgz-pJ8-MainJ8/src/tivoo/output/HTMLBuilder.java; Line number 273
+vim +273 ../../../dataset/june2020_dataset_copy/url4e79c36700_JacenLakiir_Tivoo_tgz-pJ8-MainJ8/src/tivoo/output/HTMLBuilder.java
+
++++ Add following code above line:273 (tivoo/output/HTMLBuilder.java)
+try{
++++ Add following code after line:281 (tivoo/output/HTMLBuilder.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 273
+
++++ Delete Line number 282 (tivoo/output/HTMLBuilder.java)
+
+--------------------------------------------

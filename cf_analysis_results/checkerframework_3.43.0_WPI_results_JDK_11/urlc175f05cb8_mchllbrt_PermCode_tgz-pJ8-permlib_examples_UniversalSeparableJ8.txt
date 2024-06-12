@@ -1,0 +1,45 @@
+../dataset/june2020_dataset_copy/urlc175f05cb8_mchllbrt_PermCode_tgz-pJ8-permlib_examples_UniversalSeparableJ8/src/permlab/utilities/ExportType.java:204: error: (required.method.not.called) $$ 4 $$ method close $$ fos $$ java.io.PrintStream $$ possible exceptional exit due to new FileInputStream(infile) with exception type java.io.FileNotFoundException $$ ( 7934, 7980 ) $$ @MustCall method close may not have been invoked on fos or any of its aliases.
+                        PrintStream fos = new PrintStream(savingFile);
+                                    ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: possible exceptional exit due to new FileInputStream(infile) with exception type java.io.FileNotFoundException
+../dataset/june2020_dataset_copy/urlc175f05cb8_mchllbrt_PermCode_tgz-pJ8-permlib_examples_UniversalSeparableJ8/src/permlab/utilities/ExportType.java:206: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ regular method exit $$ ( 8089, 8139 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+                        FileInputStream fis = new FileInputStream(infile);
+                                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlc175f05cb8_mchllbrt_PermCode_tgz-pJ8-permlib_examples_UniversalSeparableJ8/src/permlab/utilities/ExportType.java:341: error: (required.method.not.called) $$ 4 $$ method close $$ fileWriter $$ java.io.FileWriter $$ possible exceptional exit due to fileWriter.write(result.toString()) with exception type java.io.IOException $$ ( 13989, 14040 ) $$ @MustCall method close may not have been invoked on fileWriter or any of its aliases.
+                            FileWriter fileWriter = new FileWriter(savingFile);
+                                       ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to fileWriter.write(result.toString()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlc175f05cb8_mchllbrt_PermCode_tgz-pJ8-permlib_examples_UniversalSeparableJ8/src/permlab/utilities/ExportType.java:471: error: (required.method.not.called) $$ 4 $$ method close $$ new PrintStream(savingFile) $$ java.io.PrintStream $$ regular method exit $$ ( 19450, 19477 ) $$ @MustCall method close may not have been invoked on new PrintStream(savingFile) or any of its aliases.
+                        this.out = new PrintStream(savingFile);
+                                   ^
+  The type of object is: java.io.PrintStream.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/urlc175f05cb8_mchllbrt_PermCode_tgz-pJ8-permlib_examples_UniversalSeparableJ8/src/permlab/utilities/ExportType.java:751: error: (required.method.not.called) $$ 4 $$ method close $$ fileWriter $$ java.io.FileWriter $$ possible exceptional exit due to fileWriter.write(result.toString()) with exception type java.io.IOException $$ ( 30800, 30851 ) $$ @MustCall method close may not have been invoked on fileWriter or any of its aliases.
+                            FileWriter fileWriter = new FileWriter(savingFile);
+                                       ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to fileWriter.write(result.toString()) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlc175f05cb8_mchllbrt_PermCode_tgz-pJ8-permlib_examples_UniversalSeparableJ8/src/permlab/ui/TextFrame.java:120: error: (required.method.not.called) $$ 4 $$ method close $$ new FileWriter(file.getAbsolutePath()) $$ java.io.FileWriter $$ possible exceptional exit due to textArea.write(new FileWriter(file.getAbsolutePath())) with exception type java.io.IOException $$ ( 3944, 3982 ) $$ @MustCall method close may not have been invoked on new FileWriter(file.getAbsolutePath()) or any of its aliases.
+                textArea.write(new FileWriter(file.getAbsolutePath()));
+                               ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to textArea.write(new FileWriter(file.getAbsolutePath())) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlc175f05cb8_mchllbrt_PermCode_tgz-pJ8-permlib_examples_UniversalSeparableJ8/src/permlab/ui/TextFrame.java:139: error: (required.method.not.called) $$ 4 $$ method close $$ new FileReader(file.getAbsolutePath()) $$ java.io.FileReader $$ possible exceptional exit due to textArea.read(new FileReader(file.getAbsolutePath()), null) with exception type java.io.IOException $$ ( 4719, 4757 ) $$ @MustCall method close may not have been invoked on new FileReader(file.getAbsolutePath()) or any of its aliases.
+                textArea.read(new FileReader(file.getAbsolutePath()), null);
+                              ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to textArea.read(new FileReader(file.getAbsolutePath()), null) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlc175f05cb8_mchllbrt_PermCode_tgz-pJ8-permlib_examples_UniversalSeparableJ8/src/permlab/ui/AnimatedPermFrame.java:555: error: (required.method.not.called) $$ 4 $$ method close $$ ImageIO.createImageOutputStream(savingFile) $$ javax.imageio.stream.ImageOutputStream $$ possible exceptional exit due to wr.prepareWriteSequence(meta) with exception type java.io.IOException $$ ( 24706, 24749 ) $$ @MustCall method close may not have been invoked on ImageIO.createImageOutputStream(savingFile) or any of its aliases.
+                    wr.setOutput(ImageIO.createImageOutputStream(savingFile));
+                                                                ^
+  The type of object is: javax.imageio.stream.ImageOutputStream.
+  Reason for going out of scope: possible exceptional exit due to wr.prepareWriteSequence(meta) with exception type java.io.IOException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+8 errors

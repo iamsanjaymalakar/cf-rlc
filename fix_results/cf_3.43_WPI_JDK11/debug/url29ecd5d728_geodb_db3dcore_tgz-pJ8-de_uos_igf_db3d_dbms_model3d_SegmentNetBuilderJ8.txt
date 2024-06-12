@@ -1,0 +1,3 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^de/uos/igf/db3d/resources/DB3DProperties.java^76^de.uos.igf.db3d.resources.DB3DProperties.<clinit>()V^33 = new <Application,Ljava/io/FileInputStream>@91^NULL^ARRAY,^false^true^Array (or collection/map) escape;
+1^de/uos/igf/db3d/resources/DB3DProperties.java^95^de.uos.igf.db3d.resources.DB3DProperties.store(Ljava/lang/String;)V^9 = new <Application,Ljava/io/FileOutputStream>@15^NULL^ARRAY,^false^true^Array (or collection/map) escape;

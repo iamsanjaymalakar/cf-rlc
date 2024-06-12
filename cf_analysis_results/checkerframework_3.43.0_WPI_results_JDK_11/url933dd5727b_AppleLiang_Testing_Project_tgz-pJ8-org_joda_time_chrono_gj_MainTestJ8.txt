@@ -1,0 +1,15 @@
+../dataset/june2020_dataset_copy/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/TestSerialization.java:293: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to new ObjectInputStream(fis) with exception type java.io.IOException $$ ( 11339, 11419 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+        FileInputStream fis = new FileInputStream("src/resources/" + filename + ".dat");
+                        ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to new ObjectInputStream(fis) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url933dd5727b_AppleLiang_Testing_Project_tgz-pJ8-org_joda_time_chrono_gj_MainTestJ8/src/org/joda/time/tz/TestCompiler.java:145: error: (required.method.not.called) $$ 4 $$ method close $$ out $$ java.io.FileOutputStream $$ possible exceptional exit due to in.read(buf) with exception type java.io.IOException $$ ( 5579, 5633 ) $$ @MustCall method close may not have been invoked on out or any of its aliases.
+        FileOutputStream out = new FileOutputStream(tempFile);
+                         ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to in.read(buf) with exception type java.io.IOException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors

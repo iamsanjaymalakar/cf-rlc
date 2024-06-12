@@ -1,0 +1,43 @@
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+An exception has occurred in the compiler (11.0.22). Please file a bug against the Java compiler via the Java bug reporting page (https://bugreport.java.com) after checking the Bug Database (https://bugs.java.com) for duplicates. Include your program and the following diagnostic in your report. Thank you.
+com.sun.tools.javac.util.ClientCodeException: java.lang.Error: Problem while parsing ../dataset/june2020_dataset_copy/url4c27590fbe_Hoten_Java_Delaunay_tgz-pJ8-com_hoten_delaunay_examples_TestDriverJ8/wpi-out/com/hoten/delaunay/voronoi/nodename/as3delaunay/Site-org.checkerframework.checker.mustcall.MustCallChecker.ajava that corresponds to ../dataset/june2020_dataset_copy/url4c27590fbe_Hoten_Java_Delaunay_tgz-pJ8-com_hoten_delaunay_examples_TestDriverJ8/src/com/hoten/delaunay/voronoi/nodename/as3delaunay/Site.java
+	at jdk.compiler/com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:832)
+	at jdk.compiler/com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:132)
+	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1414)
+	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1371)
+	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:973)
+	at jdk.compiler/com.sun.tools.javac.main.Main.compile(Main.java:311)
+	at jdk.compiler/com.sun.tools.javac.main.Main.compile(Main.java:170)
+	at jdk.compiler/com.sun.tools.javac.Main.compile(Main.java:57)
+	at jdk.compiler/com.sun.tools.javac.Main.main(Main.java:43)
+Caused by: java.lang.Error: Problem while parsing ../dataset/june2020_dataset_copy/url4c27590fbe_Hoten_Java_Delaunay_tgz-pJ8-com_hoten_delaunay_examples_TestDriverJ8/wpi-out/com/hoten/delaunay/voronoi/nodename/as3delaunay/Site-org.checkerframework.checker.mustcall.MustCallChecker.ajava that corresponds to ../dataset/june2020_dataset_copy/url4c27590fbe_Hoten_Java_Delaunay_tgz-pJ8-com_hoten_delaunay_examples_TestDriverJ8/src/com/hoten/delaunay/voronoi/nodename/as3delaunay/Site.java
+	at org.checkerframework.framework.type.AnnotatedTypeFactory.setRoot(AnnotatedTypeFactory.java:1015)
+	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.setRoot(GenericAnnotatedTypeFactory.java:443)
+	at org.checkerframework.checker.mustcall.MustCallAnnotatedTypeFactory.setRoot(MustCallAnnotatedTypeFactory.java:153)
+	at org.checkerframework.common.basetype.BaseTypeVisitor.setRoot(BaseTypeVisitor.java:387)
+	at org.checkerframework.framework.source.SourceChecker.setRoot(SourceChecker.java:685)
+	at org.checkerframework.common.basetype.BaseTypeChecker.setRoot(BaseTypeChecker.java:167)
+	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:1074)
+	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:559)
+	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:552)
+	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+	at jdk.compiler/com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:828)
+	... 8 more
+Caused by: java.lang.AssertionError
+	at org.checkerframework.framework.ajava.JointJavacJavaParserVisitor.visitClassMembers(JointJavacJavaParserVisitor.java:562)
+	at org.checkerframework.framework.ajava.JointJavacJavaParserVisitor.visitClass(JointJavacJavaParserVisitor.java:479)
+	at org.checkerframework.framework.stub.AnnotationFileParser$AjavaAnnotationCollectorVisitor.visitClass(AnnotationFileParser.java:3123)
+	at org.checkerframework.framework.stub.AnnotationFileParser$AjavaAnnotationCollectorVisitor.visitClass(AnnotationFileParser.java:3113)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)
+	at org.checkerframework.framework.ajava.JointJavacJavaParserVisitor.visitLists(JointJavacJavaParserVisitor.java:2300)
+	at org.checkerframework.framework.ajava.JointJavacJavaParserVisitor.visitCompilationUnit(JointJavacJavaParserVisitor.java:668)
+	at org.checkerframework.framework.ajava.JointJavacJavaParserVisitor.visitCompilationUnit(JointJavacJavaParserVisitor.java:188)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:591)
+	at org.checkerframework.framework.stub.AnnotationFileParser.processCompilationUnit(AnnotationFileParser.java:825)
+	at org.checkerframework.framework.stub.AnnotationFileParser.processStubUnit(AnnotationFileParser.java:790)
+	at org.checkerframework.framework.stub.AnnotationFileParser.process(AnnotationFileParser.java:779)
+	at org.checkerframework.framework.stub.AnnotationFileParser.parseAjavaFile(AnnotationFileParser.java:696)
+	at org.checkerframework.framework.stub.AnnotationFileElementTypes.parseAjavaFileWithTree(AnnotationFileElementTypes.java:286)
+	at org.checkerframework.framework.type.AnnotatedTypeFactory.setRoot(AnnotatedTypeFactory.java:1013)
+	... 18 more

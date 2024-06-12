@@ -1,0 +1,11 @@
+../dataset/june2020_dataset_copy/urlb879d9e865_ogotalski_elevator_tgz-pJ8-ElevatorTaskJ8/src/by/epam/lab/controller/Configuration.java:54: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(PROPERTIES_FILENAME) $$ java.io.FileInputStream $$ possible exceptional exit due to prop.load(new FileInputStream(PROPERTIES_FILENAME)) with exception type java.io.IOException $$ ( 1959, 1999 ) $$ @MustCall method close may not have been invoked on new FileInputStream(PROPERTIES_FILENAME) or any of its aliases.
+		prop.load(new FileInputStream(PROPERTIES_FILENAME));
+		          ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to prop.load(new FileInputStream(PROPERTIES_FILENAME)) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/urlb879d9e865_ogotalski_elevator_tgz-pJ8-ElevatorTaskJ8/src/by/epam/lab/view/LogViewFrame.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.FileReader $$ possible exceptional exit due to logArea.read(reader, LOGFILE_NAME) with exception type java.io.IOException $$ ( 841, 878 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+			reader = new FileReader(LOGFILE_NAME);
+			       ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to logArea.read(reader, LOGFILE_NAME) with exception type java.io.IOException
+2 errors

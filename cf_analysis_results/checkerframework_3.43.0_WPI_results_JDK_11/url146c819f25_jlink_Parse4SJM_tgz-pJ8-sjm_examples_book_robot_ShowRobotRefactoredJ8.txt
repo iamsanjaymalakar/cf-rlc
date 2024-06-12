@@ -1,0 +1,55 @@
+../dataset/june2020_dataset_copy/url146c819f25_jlink_Parse4SJM_tgz-pJ8-sjm_examples_book_robot_ShowRobotRefactoredJ8/src/sjm/examples/book/query/QueryBuilder.java:104: error: (vector.copyinto) $$ 2 $$ /*INFERENCE FAILED for:*/ ? extends @MustCall Object $$ @MustCall Term $$ ( 2933, 2942 ) $$ incompatible component type in Vector.copyinto.
+		terms.copyInto(termArray);
+		               ^
+  found   : /*INFERENCE FAILED for:*/ ? extends @MustCall Object
+  required: @MustCall Term
+../dataset/june2020_dataset_copy/url146c819f25_jlink_Parse4SJM_tgz-pJ8-sjm_examples_book_robot_ShowRobotRefactoredJ8/src/sjm/examples/book/query/QueryBuilder.java:104: error: (vector.copyinto) $$ 2 $$ /*INFERENCE FAILED for:*/ ? extends @CalledMethods Object $$ @CalledMethods Term $$ ( 2933, 2942 ) $$ incompatible component type in Vector.copyinto.
+		terms.copyInto(termArray);
+		               ^
+  found   : /*INFERENCE FAILED for:*/ ? extends @CalledMethods Object
+  required: @CalledMethods Term
+../dataset/june2020_dataset_copy/url146c819f25_jlink_Parse4SJM_tgz-pJ8-sjm_examples_book_robot_ShowRobotRefactoredJ8/src/sjm/examples/book/query/QueryBuilder.java:124: error: (vector.copyinto) $$ 2 $$ /*INFERENCE FAILED for:*/ ? extends @MustCall Object $$ @MustCall Structure $$ ( 3528, 3534 ) $$ incompatible component type in Vector.copyinto.
+		structures.copyInto(sarray);
+		                    ^
+  found   : /*INFERENCE FAILED for:*/ ? extends @MustCall Object
+  required: @MustCall Structure
+../dataset/june2020_dataset_copy/url146c819f25_jlink_Parse4SJM_tgz-pJ8-sjm_examples_book_robot_ShowRobotRefactoredJ8/src/sjm/examples/book/query/QueryBuilder.java:124: error: (vector.copyinto) $$ 2 $$ /*INFERENCE FAILED for:*/ ? extends @CalledMethods Object $$ @CalledMethods Structure $$ ( 3528, 3534 ) $$ incompatible component type in Vector.copyinto.
+		structures.copyInto(sarray);
+		                    ^
+  found   : /*INFERENCE FAILED for:*/ ? extends @CalledMethods Object
+  required: @CalledMethods Structure
+../dataset/june2020_dataset_copy/url146c819f25_jlink_Parse4SJM_tgz-pJ8-sjm_examples_book_robot_ShowRobotRefactoredJ8/src/sjm/examples/book/coffee/ShowCoffee.java:30: error: (required.method.not.called) $$ 4 $$ method close $$ is $$ java.io.InputStream $$ possible exceptional exit due to r.readLine() with exception type java.io.IOException $$ ( 664, 733 ) $$ @MustCall method close may not have been invoked on is or any of its aliases.
+		InputStream is = ClassLoader.getSystemResourceAsStream("coffee.txt");
+		            ^
+  The type of object is: java.io.InputStream.
+  Reason for going out of scope: possible exceptional exit due to r.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url146c819f25_jlink_Parse4SJM_tgz-pJ8-sjm_examples_book_robot_ShowRobotRefactoredJ8/src/sjm/parse/tokens/Tokenizer.java:233: error: (required.method.not.called) $$ 4 $$ method close $$ new PushbackReader(new StringReader(s), symbolMax) $$ java.io.PushbackReader $$ regular method exit $$ ( 6635, 6685 ) $$ @MustCall method close may not have been invoked on new PushbackReader(new StringReader(s), symbolMax) or any of its aliases.
+		setReader(new PushbackReader(new StringReader(s), symbolMax));
+		          ^
+  The type of object is: java.io.PushbackReader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url146c819f25_jlink_Parse4SJM_tgz-pJ8-sjm_examples_book_robot_ShowRobotRefactoredJ8/src/sjm/examples/book/tokens/ShowSuppliedReader.java:21: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileWriter $$ possible exceptional exit due to fw.write(s) with exception type java.io.IOException $$ ( 404, 447 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+		FileWriter fw = new FileWriter("temp.txt");
+		           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope: possible exceptional exit due to fw.write(s) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url146c819f25_jlink_Parse4SJM_tgz-pJ8-sjm_examples_book_robot_ShowRobotRefactoredJ8/src/sjm/examples/book/tokens/ShowSuppliedReader.java:25: error: (required.method.not.called) $$ 4 $$ method close $$ fr $$ java.io.FileReader $$ possible exceptional exit due to t.nextToken() with exception type java.io.IOException $$ ( 484, 527 ) $$ @MustCall method close may not have been invoked on fr or any of its aliases.
+		FileReader fr = new FileReader("temp.txt");
+		           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to t.nextToken() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url146c819f25_jlink_Parse4SJM_tgz-pJ8-sjm_examples_book_robot_ShowRobotRefactoredJ8/src/sjm/examples/book/tokens/ShowSuppliedReader.java:26: error: (required.method.not.called) $$ 4 $$ method close $$ pr $$ java.io.PushbackReader $$ possible exceptional exit due to t.nextToken() with exception type java.io.IOException $$ ( 531, 577 ) $$ @MustCall method close may not have been invoked on pr or any of its aliases.
+		PushbackReader pr = new PushbackReader(fr, 4);
+		               ^
+  The type of object is: java.io.PushbackReader.
+  Reason for going out of scope: possible exceptional exit due to t.nextToken() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url146c819f25_jlink_Parse4SJM_tgz-pJ8-sjm_examples_book_robot_ShowRobotRefactoredJ8/src/sjm/examples/book/utensil/FileString.java:41: error: (required.method.not.called) $$ 4 $$ method close $$ in $$ java.io.FileReader $$ possible exceptional exit due to out.close() with exception type java.io.IOException $$ ( 1016, 1057 ) $$ @MustCall method close may not have been invoked on in or any of its aliases.
+		FileReader in = new FileReader(fileName);
+		           ^
+  The type of object is: java.io.FileReader.
+  Reason for going out of scope: possible exceptional exit due to out.close() with exception type java.io.IOException
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+10 errors

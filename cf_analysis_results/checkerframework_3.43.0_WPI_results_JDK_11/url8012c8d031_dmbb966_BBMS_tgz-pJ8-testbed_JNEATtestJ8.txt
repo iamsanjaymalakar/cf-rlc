@@ -1,0 +1,30 @@
+warning: MustCallChecker did not find annotation file or directory ../dataset/june2020_dataset_copy/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset_copy/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+warning: ResourceLeakChecker did not find annotation file or directory ../dataset/june2020_dataset_copy/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/wpi-out on classpath or within directory /home/smala009/RLF/cf-rlc/../dataset/june2020_dataset_copy/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8
+    Classpath:
+    file:/home/smala009/RLF/rlfixer/code/tools/checker-framework-3.43.0/checker/dist/checker.jar
+../dataset/june2020_dataset_copy/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/utilities/FIO.java:185: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.BufferedReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 5189, 5246 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+			BufferedReader reader = Files.newBufferedReader(p, cSet);
+			               ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/utilities/FIO.java:225: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.BufferedReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 6279, 6336 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+			BufferedReader reader = Files.newBufferedReader(p, cSet);
+			               ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/utilities/FIO.java:284: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.BufferedReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 7987, 8045 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+			BufferedReader reader = Files.newBufferedReader(p,  cSet);
+			               ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/jneat/Population.java:595: error: (required.method.not.called) $$ 4 $$ method close $$ reader $$ java.io.BufferedReader $$ possible exceptional exit due to reader.readLine() with exception type java.io.IOException $$ ( 21457, 21515 ) $$ @MustCall method close may not have been invoked on reader or any of its aliases.
+			BufferedReader reader = Files.newBufferedReader(p,  cSet);
+			               ^
+  The type of object is: java.io.BufferedReader.
+  Reason for going out of scope: possible exceptional exit due to reader.readLine() with exception type java.io.IOException
+Note: ../dataset/june2020_dataset_copy/url8012c8d031_dmbb966_BBMS_tgz-pJ8-testbed_JNEATtestJ8/src/gui/GUIMainDisp.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+4 errors
+2 warnings

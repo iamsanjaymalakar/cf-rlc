@@ -1,0 +1,30 @@
+../dataset/june2020_dataset_copy/url1f1de5fc71_cooijmanstim_hobo_tgz-pJ8-hobo_TestingEnviromentJ8/src/hobo/FileHandler.java:15: error: (required.method.not.called) $$ 4 $$ method close $$ field fileWriter $$ java.io.FileWriter $$  Non-final owning field might be overwritten $$ ( 244, 277 ) $$ @MustCall method close may not have been invoked on field fileWriter or any of its aliases.
+			fileWriter = new FileWriter(file);
+			           ^
+  The type of object is: java.io.FileWriter.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url1f1de5fc71_cooijmanstim_hobo_tgz-pJ8-hobo_TestingEnviromentJ8/src/hobo/FileHandler.java:22: error: (contracts.postcondition) $$ 3 $$ writeFile $$ no information about this.fileWriter $$ this.fileWriter is @CalledMethods("close") $$ ( 379, 699 ) $$ postcondition of writeFile is not satisfied.
+	public void writeFile(String input) {
+	            ^
+  found   : no information about this.fileWriter
+  required: this.fileWriter is @CalledMethods("close")
+../dataset/june2020_dataset_copy/url1f1de5fc71_cooijmanstim_hobo_tgz-pJ8-hobo_TestingEnviromentJ8/src/hobo/TestingEnviroment.java:10: error: (required.method.not.called) $$ 4 $$ method writeFile $$ field fileHandler $$ hobo.FileHandler $$  [[checkOwningField() did not find a reason!]] $$ ( 163, 187 ) $$ @MustCall method writeFile may not have been invoked on field fileHandler or any of its aliases.
+	FileHandler fileHandler;
+	            ^
+  The type of object is: hobo.FileHandler.
+  Reason for going out of scope:  [[checkOwningField() did not find a reason!]]
+../dataset/june2020_dataset_copy/url1f1de5fc71_cooijmanstim_hobo_tgz-pJ8-hobo_TestingEnviromentJ8/src/hobo/TestingEnviroment.java:14: error: (required.method.not.called) $$ 4 $$ method writeFile $$ field fileHandler $$ hobo.FileHandler $$  Non-final owning field might be overwritten $$ ( 239, 295 ) $$ @MustCall method writeFile may not have been invoked on field fileHandler or any of its aliases.
+		fileHandler = new FileHandler("src/fileOutput/test.txt");
+		            ^
+  The type of object is: hobo.FileHandler.
+  Reason for going out of scope:  Non-final owning field might be overwritten
+../dataset/june2020_dataset_copy/url1f1de5fc71_cooijmanstim_hobo_tgz-pJ8-hobo_TestingEnviromentJ8/src/hobo/TestingEnviroment.java:33: error: (required.method.not.called) $$ 4 $$ method <init> $$ new TestingEnviroment() $$ hobo.TestingEnviroment $$ regular method exit $$ ( 1065, 1088 ) $$ @MustCall method <init> may not have been invoked on new TestingEnviroment() or any of its aliases.
+		new TestingEnviroment();
+		^
+  The type of object is: hobo.TestingEnviroment.
+  Reason for going out of scope: regular method exit
+Note: ../dataset/june2020_dataset_copy/url1f1de5fc71_cooijmanstim_hobo_tgz-pJ8-hobo_TestingEnviromentJ8/src/hobo/graphics/MissionChooserFrame.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors

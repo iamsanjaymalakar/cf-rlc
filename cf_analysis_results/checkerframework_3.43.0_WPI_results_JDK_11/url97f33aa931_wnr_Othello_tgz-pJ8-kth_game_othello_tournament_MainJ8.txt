@@ -1,0 +1,7 @@
+../dataset/june2020_dataset_copy/url97f33aa931_wnr_Othello_tgz-pJ8-kth_game_othello_tournament_MainJ8/src/kth/game/othello/board/BoardImpl.java:3: error: package sun.reflect.generics.reflectiveObjects is not visible
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+                           ^
+  (package sun.reflect.generics.reflectiveObjects is declared in module java.base, which does not export it to the unnamed module)
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 error

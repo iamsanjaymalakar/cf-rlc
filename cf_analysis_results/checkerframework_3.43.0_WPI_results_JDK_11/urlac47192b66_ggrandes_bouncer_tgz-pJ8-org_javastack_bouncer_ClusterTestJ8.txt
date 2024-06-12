@@ -1,0 +1,91 @@
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/SSLFactory.java:25: error: package javax.xml.bind does not exist
+import javax.xml.bind.DatatypeConverter;
+                     ^
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:29: error: package javax.xml.bind does not exist
+import javax.xml.bind.DatatypeConverter;
+                     ^
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:31: error: package sun.security.util is not visible
+import sun.security.util.ObjectIdentifier;
+                   ^
+  (package sun.security.util is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:32: error: package sun.security.x509 is not visible
+import sun.security.x509.AlgorithmId;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:33: error: package sun.security.x509 is not visible
+import sun.security.x509.AuthorityKeyIdentifierExtension;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:34: error: package sun.security.x509 is not visible
+import sun.security.x509.BasicConstraintsExtension;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:35: error: package sun.security.x509 is not visible
+import sun.security.x509.CertificateAlgorithmId;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:36: error: package sun.security.x509 is not visible
+import sun.security.x509.CertificateExtensions;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:37: error: package sun.security.x509 is not visible
+import sun.security.x509.CertificateIssuerName;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:38: error: package sun.security.x509 is not visible
+import sun.security.x509.CertificateSerialNumber;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:39: error: package sun.security.x509 is not visible
+import sun.security.x509.CertificateSubjectName;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:40: error: package sun.security.x509 is not visible
+import sun.security.x509.CertificateValidity;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:41: error: package sun.security.x509 is not visible
+import sun.security.x509.CertificateVersion;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:42: error: package sun.security.x509 is not visible
+import sun.security.x509.CertificateX509Key;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:43: error: package sun.security.x509 is not visible
+import sun.security.x509.ExtendedKeyUsageExtension;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:44: error: package sun.security.x509 is not visible
+import sun.security.x509.KeyIdentifier;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:45: error: package sun.security.x509 is not visible
+import sun.security.x509.SubjectKeyIdentifierExtension;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:46: error: package sun.security.x509 is not visible
+import sun.security.x509.X500Name;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:47: error: package sun.security.x509 is not visible
+import sun.security.x509.X509CertImpl;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:48: error: package sun.security.x509 is not visible
+import sun.security.x509.X509CertInfo;
+                   ^
+  (package sun.security.x509 is declared in module java.base, which does not export it to the unnamed module)
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/SSLFactory.java:90: error: cannot find symbol
+			final byte[] encoded = DatatypeConverter.parseBase64Binary(builder.toString());
+			                       ^
+  symbol:   variable DatatypeConverter
+  location: class SSLFactory
+../dataset/june2020_dataset_copy/urlac47192b66_ggrandes_bouncer_tgz-pJ8-org_javastack_bouncer_ClusterTestJ8/src/org/javastack/bouncer/KeyGenerator.java:148: error: cannot find symbol
+		final byte[] buf = DatatypeConverter.printBase64Binary(bufIn).getBytes();
+		                   ^
+  symbol:   variable DatatypeConverter
+  location: class KeyGenerator
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+22 errors

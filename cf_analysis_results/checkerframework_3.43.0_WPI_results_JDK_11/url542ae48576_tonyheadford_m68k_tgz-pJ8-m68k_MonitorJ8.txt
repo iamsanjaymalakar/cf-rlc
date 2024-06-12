@@ -1,0 +1,18 @@
+../dataset/june2020_dataset_copy/url542ae48576_tonyheadford_m68k_tgz-pJ8-m68k_MonitorJ8/src/m68k/Monitor.java:96: error: (required.method.not.called) $$ 4 $$ method close $$ con.writer() $$ java.io.PrintWriter $$ regular method exit $$ ( 3241, 3253 ) $$ @MustCall method close may not have been invoked on con.writer() or any of its aliases.
+			writer = con.writer();
+			                   ^
+  The type of object is: java.io.PrintWriter.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url542ae48576_tonyheadford_m68k_tgz-pJ8-m68k_MonitorJ8/src/m68k/Monitor.java:97: error: (required.method.not.called) $$ 4 $$ method close $$ con.reader() $$ java.io.Reader $$ regular method exit $$ ( 3286, 3298 ) $$ @MustCall method close may not have been invoked on con.reader() or any of its aliases.
+			reader = new BufferedReader(con.reader());
+			                                      ^
+  The type of object is: java.io.Reader.
+  Reason for going out of scope: regular method exit
+../dataset/june2020_dataset_copy/url542ae48576_tonyheadford_m68k_tgz-pJ8-m68k_MonitorJ8/src/m68k/Monitor.java:919: error: (required.method.not.called) $$ 4 $$ method close $$ fis $$ java.io.FileInputStream $$ possible exceptional exit due to fis.read(buffer) with exception type java.io.IOException $$ ( 18716, 18761 ) $$ @MustCall method close may not have been invoked on fis or any of its aliases.
+			FileInputStream fis = new FileInputStream(f);
+			                ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to fis.read(buffer) with exception type java.io.IOException
+Note: ../dataset/june2020_dataset_copy/url542ae48576_tonyheadford_m68k_tgz-pJ8-m68k_MonitorJ8/src/m68k/Monitor.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+3 errors

@@ -1,0 +1,15 @@
+../dataset/june2020_dataset_copy/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/resources/DB3DProperties.java:76: error: (required.method.not.called) $$ 4 $$ method close $$ new FileInputStream(propertiesFile) $$ java.io.FileInputStream $$ possible exceptional exit due to db3dProperties.load(new FileInputStream(propertiesFile)) with exception type java.io.IOException $$ ( 1972, 2007 ) $$ @MustCall method close may not have been invoked on new FileInputStream(propertiesFile) or any of its aliases.
+				db3dProperties.load(new FileInputStream(propertiesFile));
+				                    ^
+  The type of object is: java.io.FileInputStream.
+  Reason for going out of scope: possible exceptional exit due to db3dProperties.load(new FileInputStream(propertiesFile)) with exception type java.io.IOException
+../dataset/june2020_dataset_copy/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/resources/DB3DProperties.java:95: error: (required.method.not.called) $$ 4 $$ method close $$ fw $$ java.io.FileOutputStream $$ possible exceptional exit due to db3dProperties.store(fw, comments) with exception type java.io.IOException $$ ( 2463, 2522 ) $$ @MustCall method close may not have been invoked on fw or any of its aliases.
+				FileOutputStream fw = new FileOutputStream(propertiesFile);
+				                 ^
+  The type of object is: java.io.FileOutputStream.
+  Reason for going out of scope: possible exceptional exit due to db3dProperties.store(fw, comments) with exception type java.io.IOException
+Note: ../dataset/june2020_dataset_copy/url29ecd5d728_geodb_db3dcore_tgz-pJ8-de_uos_igf_db3d_dbms_model3d_SegmentNetBuilderJ8/src/de/uos/igf/db3d/dbms/impl/Object3DImpl.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors

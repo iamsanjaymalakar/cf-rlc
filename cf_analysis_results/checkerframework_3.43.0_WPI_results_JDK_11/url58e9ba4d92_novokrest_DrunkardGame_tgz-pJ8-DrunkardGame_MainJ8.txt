@@ -1,0 +1,5 @@
+../dataset/june2020_dataset_copy/url58e9ba4d92_novokrest_DrunkardGame_tgz-pJ8-DrunkardGame_MainJ8/src/DrunkardGame/States/PolicemanStates/WaitingState.java:9: error: package com.sun.jndi.url.dns is not visible
+import com.sun.jndi.url.dns.dnsURLContext;
+                       ^
+  (package com.sun.jndi.url.dns is declared in module jdk.naming.dns, which is not in the module graph)
+1 error

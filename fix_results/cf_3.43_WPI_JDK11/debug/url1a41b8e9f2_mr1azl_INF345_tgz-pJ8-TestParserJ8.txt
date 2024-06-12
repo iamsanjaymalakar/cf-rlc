@@ -1,0 +1,6 @@
+Index^Source File^Line Number^Matched Method^MatchedInstruction^Aliases^Classification^Duplicate^Unfixable^Comments
+0^xpathParser/bench/pt/DefaultParser.java^25^xpathParser.bench.pt.DefaultParser.main([Ljava/lang/String;)V^3 = new <Application,Ljava/io/FileInputStream>@0^NULL^INVOKE,^false^false^Try-catch Fix;
+1^org/eclipse/wb/swt/SWTResourceManager.java^139^org.eclipse.wb.swt.SWTResourceManager.getImage(Ljava/lang/String;)Lorg/eclipse/swt/graphics/Image;^8 = new <Application,Ljava/io/FileInputStream>@17^NULL^INVOKE,^false^false^Try-catch Fix;
+2^org/eclipse/wb/swt/SWTResourceManager.java^162^org.eclipse.wb.swt.SWTResourceManager.getImage(Ljava/lang/Class;Ljava/lang/String;)Lorg/eclipse/swt/graphics/Image;^23 = invokevirtual < Application, Ljava/lang/Class, getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream; > 1,2 @46 exception:22^NULL^INVOKE,^false^false^Try-catch Fix;
+3^Main.java^39^Main.main([Ljava/lang/String;)V^9 = new <Application,Ljava/io/FileInputStream>@14^NULL^INVOKE,^false^false^Try-catch Fix;
+4^Main.java^72^Main.main([Ljava/lang/String;)V^73 = new <Application,Ljava/io/FileWriter>@183^Main.main([Ljava/lang/String;)V#77,^INVOKE,^false^false^Try-catch Fix;

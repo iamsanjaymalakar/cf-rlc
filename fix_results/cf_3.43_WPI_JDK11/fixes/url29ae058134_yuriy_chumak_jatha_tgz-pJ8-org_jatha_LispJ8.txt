@@ -1,0 +1,17 @@
+20519
+4694
+
+SOURCE LEVEL FIXES
+
+3] ../../../dataset/june2020_dataset_copy/url29ae058134_yuriy_chumak_jatha_tgz-pJ8-org_jatha_LispJ8/src/org/jatha/Lisp.java; Line number 384
+vim +384 ../../../dataset/june2020_dataset_copy/url29ae058134_yuriy_chumak_jatha_tgz-pJ8-org_jatha_LispJ8/src/org/jatha/Lisp.java
+
++++ Add following code below line: 400 (org/jatha/Lisp.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 384
+
++++ Delete Line number 390 (org/jatha/Lisp.java)
+
+--------------------------------------------

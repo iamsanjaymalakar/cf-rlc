@@ -1,0 +1,117 @@
+39750
+10840
+
+SOURCE LEVEL FIXES
+
+0] ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/fileio/htaccess/HypertextAccessFile.java; Line number 158
+vim +158 ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/fileio/htaccess/HypertextAccessFile.java
+
++++ Add following code above line:158 (ikrs/io/fileio/htaccess/HypertextAccessFile.java)
+try{
++++ Add following code after line:161 (ikrs/io/fileio/htaccess/HypertextAccessFile.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 158
+
++++ Delete Line number 163 (ikrs/io/fileio/htaccess/HypertextAccessFile.java)
+
+--------------------------------------------
+1] ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/HTTPHandler.java; Line number 395
+vim +395 ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/httpd/HTTPHandler.java
+
++++ Add following code below line: 485 (ikrs/httpd/HTTPHandler.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 395
+
+--------------------------------------------
+2] ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/util/HexDumpOutputStream.java; Line number 281
+vim +281 ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/util/HexDumpOutputStream.java
+
++++ Add following code below line: 301 (ikrs/util/HexDumpOutputStream.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 281
+
++++ Delete Line number 293 (ikrs/util/HexDumpOutputStream.java)
+
+--------------------------------------------
+5] ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/socketmngr/ServerSocketThread.java; Line number 272
+vim +272 ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/socketmngr/ServerSocketThread.java
+
++++ Add following code above line:272 (ikrs/yuccasrv/socketmngr/ServerSocketThread.java)
+try{
++++ Add following code after line:274 (ikrs/yuccasrv/socketmngr/ServerSocketThread.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 272
+
+--------------------------------------------
+6] ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/socketmngr/ServerSocketThread.java; Line number 301
+vim +301 ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/socketmngr/ServerSocketThread.java
+
++++ Add following code above line:301 (ikrs/yuccasrv/socketmngr/ServerSocketThread.java)
+try{
++++ Add following code after line:312 (ikrs/yuccasrv/socketmngr/ServerSocketThread.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 301
+
+--------------------------------------------
+16] ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/fileio/htaccess/HypertextPasswordFile.java; Line number 61
+vim +61 ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/fileio/htaccess/HypertextPasswordFile.java
+
++++ Add following code above line:61 (ikrs/io/fileio/htaccess/HypertextPasswordFile.java)
+try{
++++ Add following code after line:65 (ikrs/io/fileio/htaccess/HypertextPasswordFile.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 61
+
++++ Delete Line number 66 (ikrs/io/fileio/htaccess/HypertextPasswordFile.java)
+
+--------------------------------------------
+18] ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/fileio/inifile/IniFile.java; Line number 96
+vim +96 ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/io/fileio/inifile/IniFile.java
+
++++ Add following code above line:96 (ikrs/io/fileio/inifile/IniFile.java)
+try{
++++ Add following code after line:98 (ikrs/io/fileio/inifile/IniFile.java)
+}finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 96
+
++++ Delete Line number 99 (ikrs/io/fileio/inifile/IniFile.java)
+
+--------------------------------------------
+28] ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/Yucca.java; Line number 239
+vim +239 ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/Yucca.java
+
++++ Add following code below line: 255 (ikrs/yuccasrv/Yucca.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 239
+
++++ Delete Line number 247 (ikrs/yuccasrv/Yucca.java)
+
+--------------------------------------------
+29] ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/Yucca.java; Line number 267
+vim +267 ../../../dataset/june2020_dataset_copy/urle381b6cba7_IkarosKappler_ikrs_http_tgz-pJ8-ikrs_json_rpc_JSONRPCHandlerJ8/src/ikrs/yuccasrv/Yucca.java
+
++++ Add following code below line: 281 (ikrs/yuccasrv/Yucca.java)
+finally{
+    try{ <NEW_VARIABLE>.close(); } catch(Exception e){ e.printStackTrace(); }
+}
+// where variable <NEW_VARIABLE> points to the resource from line 267
+
++++ Delete Line number 275 (ikrs/yuccasrv/Yucca.java)
+
+--------------------------------------------
